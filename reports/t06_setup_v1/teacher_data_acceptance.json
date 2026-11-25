@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "files_sha256_verified": 5172,
+  "train_images": 2522,
+  "new_val_images": 64,
+  "old8_separate": true,
+  "no_split_overlap": true,
+  "complete_official_Train_zip_MD5": "de2b196043ed9b4af1690b3f9a7d558f",
+  "test_downloaded": false,
+  "source_manifest_sha256": "f02e8a7ebb480724695388b8fcf68d2f89486809c426eb072fd2d8e2d304371d"
+}

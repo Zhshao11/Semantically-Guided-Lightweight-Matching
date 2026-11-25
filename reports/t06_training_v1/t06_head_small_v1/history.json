@@ -1,0 +1,14 @@
+[
+  {
+    "epoch": 1,
+    "step": 300,
+    "train_loss": 0.9658908569812774,
+    "probe": {
+      "loss": 0.952764667570591,
+      "average_precision": 0.4296531402726358,
+      "ROC_AUC": 0.6554348510206996,
+      "positive_fraction": 0.2760470548083999,
+      "supervised_queries": 93763
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "observed_date": "2026-11-26",
+  "model_id": "wu-pr-gw/segformer-b2-finetuned-with-LoveDA",
+  "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "cardData": null,
+  "license_tags": [],
+  "files": [
+    ".gitattributes",
+    "config.json",
+    "preprocessor_config.json",
+    "pytorch_model.bin"
+  ],
+  "conclusion": "unresolved; neither original nor adapted weights released"
+}

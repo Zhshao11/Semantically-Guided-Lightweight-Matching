@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "matcher_checkpoint_unchanged": true,
+  "protected_matching_code_unchanged": true,
+  "train_label_pairs": 7912,
+  "label_supervision_mask_consistent": true,
+  "labels_from_OS_validation_or_test": false,
+  "ambiguity_not_used_in_training": true,
+  "matcher_backbone_descriptor_gradients": false,
+  "scoring_validation_pairs": 952,
+  "uniform_T05_reproduction_exact": true,
+  "teacher_updates_each": 1000,
+  "teacher_plan_and_cropped_annotations_identical": true,
+  "LoveDA_train_images": 2522,
+  "fixed_val64_Urban_Rural": [
+    32,
+    32
+  ],
+  "old8_disjoint_from_new64": true,
+  "GT0_masked_not_land_cover": true,
+  "fold_FP32_gate": true,
+  "fold_BF16_gate": false,
+  "ungated_folded_model_timed": false,
+  "all_custom_baselines_same_optimization": true,
+  "profiler_not_used_for_formal_timing": true,
+  "formal_timing_rounds": 3,
+  "formal_timing_original_pairs": 24,
+  "OS_review_train_images": 32,
+  "OS_semantic_accuracy_claim": false,
+  "SC": "waiting teacher finalization",
+  "license": "unresolved; no original or derived weights published",
+  "source_sha256": {
+    "sglm/t06_appearance.py": "b4415739005aee629048f4d141b93cca7f50cb9892c89e0ebe429c1884656aa9",
+    "sglm/t06_runtime.py": "84decfa57a7acda2df3423196801934d856c480d9076accd0f750734a7039fdf",
+    "sglm/inference_fusion.py": "29cef2aacc87cf1585d9e6b34c9c50513e5b360e189e488dfd1d1461c636db35",
+    "sglm/semantic_targets.py": "acc1688482945c08abdb95ce6dc64b4d2fd9d540ee7d2713935dae353339d231",
+    "scripts/train_t06_teacher.py": "e829b06d32e45a298efc7c79aecc1c2dead44829cf09e17da3f65a27f43478c3",
+    "scripts/train_t06_head.py": "4573575865d379e55dff9b1f318da6a44f19c049e7d5611d680966e5a2938a1c",
+    "scripts/generate_t06_labels.py": "0f3a247eb1a4f2bd7504abf93bae065fd175011c2a88f7a7151f610dafc5fcea",
+    "scripts/diagnose_t06_efficiency.py": "3dbc8bdafe02bc3d4845d09b321c7d1dc7fcd9f7a95d0c84d0cafd130cfa2574"
+  }
+}

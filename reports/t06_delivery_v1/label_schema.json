@@ -1,0 +1,16 @@
+{
+  "shape": [
+    7912,
+    1024
+  ],
+  "geometric_correctness": "int8:1 positive,0 negative,-1 ignored; only this target trains the scorer",
+  "ambiguity_margin": "float32 logit best(correct<=5px)-best(wrong>=8px),NaN if not measurable; diagnostic only",
+  "predicted_candidate": "int16:0..1023 SAR grid,1024 no-match",
+  "raw_SAR_candidate": "best SAR cell before no-match",
+  "prediction_error_px": "raw_SAR_candidate relative to forwardA; no-match stays a negative label when GT otherwise supervisable",
+  "optical_valid": "source coarse cell valid",
+  "is_supervisable": "exactly geometric_correctness>=0",
+  "GT_reliable": "geometric eroded valid-region test only; not proof of exact original optical/SAR registration",
+  "features": "FP32 promotion of frozen BF16 coarse64 and masked SAR GAP64; feature cache not a trainable backbone",
+  "dataset_split": "7912 deduplicated OS train; no val/test scoring labels"
+}

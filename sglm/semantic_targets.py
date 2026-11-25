@@ -1,4 +1,5 @@
 """Standalone semantic distillation preparation, independent of matching labels/models."""
+import math
 import torch
 import torch.nn.functional as F
 
@@ -57,3 +58,37 @@ def masked_semantic_kl(student_logits,targets,mask):
         raise ValueError('Valid soft targets must be finite distributions')
     per_pixel=(teacher*(teacher.clamp_min(1e-12).log()-student_logits.float().log_softmax(1))).sum(1)
     return per_pixel[mask].mean()
+
+
+def semantic_supervision_fields(aggregation):
+    """Seven-class conditional target, retained mass and entropy-based weight.
+
+    A high conditional confidence cannot recover probability excluded as Ignore.
+    The pre-existing coverage/mass/confidence mask is applied independently.
+    """
+    p=aggregation['probabilities'];a=aggregation['retained_mass']
+    if p.shape[1]!=7:raise ValueError('Expected seven land-cover classes without Ignore')
+    entropy=-(p*p.clamp_min(1e-12).log()).sum(1)/math.log(7)
+    reliability=(1-entropy).clamp(0,1)
+    weight=aggregation['mask'].float()*a*reliability
+    return dict(conditional_probabilities=p,valid_class_mass=a,distribution_reliability=reliability,
+        supervision_weight=weight,effective_class_mass=p*weight[:,None])
+
+
+def weighted_semantic_kl(student_logits,targets,weight):
+    """Detached teacher/weights; divide by grid cells, preserving absolute reliability.
+
+    Normalizing by sum(weight) would cancel a uniformly weak teacher's weight.
+    This interface is prepared for later semantic heads; B0/A use no semantic loss.
+    """
+    if student_logits.shape!=targets.shape or weight.shape!=targets.shape[:1]+targets.shape[2:]:
+        raise ValueError('Student/teacher/weight shape mismatch')
+    teacher=targets.detach().float();weight=weight.detach().float()
+    if not torch.isfinite(student_logits).all() or not torch.isfinite(weight).all() or (weight<0).any():
+        raise ValueError('Finite logits and nonnegative finite weights required')
+    active=weight>0
+    if not active.any():return student_logits.sum()*0
+    if not torch.isfinite(teacher).all() or (teacher<0).any() or not torch.allclose(teacher.sum(1)[active],torch.ones_like(weight[active]),atol=1e-5):
+        raise ValueError('Active semantic targets must be distributions')
+    per_cell=(teacher*(teacher.clamp_min(1e-12).log()-student_logits.float().log_softmax(1))).sum(1)
+    return (per_cell*weight).mean()

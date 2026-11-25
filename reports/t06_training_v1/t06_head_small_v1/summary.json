@@ -1,0 +1,43 @@
+{
+  "initial_train_probe": {
+    "loss": 1.0055709928274155,
+    "average_precision": 0.2846416222731539,
+    "ROC_AUC": 0.496174183524423,
+    "positive_fraction": 0.2760470548083999,
+    "supervised_queries": 93763
+  },
+  "final_train_probe": {
+    "loss": 0.952764667570591,
+    "average_precision": 0.4296531402726358,
+    "ROC_AUC": 0.6554348510206996,
+    "positive_fraction": 0.2760470548083999,
+    "supervised_queries": 93763
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 300,
+      "train_loss": 0.9658908569812774,
+      "probe": {
+        "loss": 0.952764667570591,
+        "average_precision": 0.4296531402726358,
+        "ROC_AUC": 0.6554348510206996,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    }
+  ],
+  "head_parameters": 3489,
+  "width": 16,
+  "small_fit": true,
+  "train_pairs": 128,
+  "steps": 300,
+  "backbone_instantiated_in_training": false,
+  "backbone_gradients": false,
+  "descriptor_gradients": false,
+  "validation_labels_used": false,
+  "test_used": false,
+  "ambiguity_margin_used": false,
+  "cache_summary_sha256": "570ee10e0bd34f94b4b7ae1c856464ec4d266fcf23a30335565c97bc4a2b8e10",
+  "checkpoint_sha256": "e510ca2503b76940da064e459f0b6d6d0732c268ecbb51debef8be94e45d9b90"
+}

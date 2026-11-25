@@ -1,0 +1,1030 @@
+{
+  "samples": [
+    {
+      "pair_id": "osdataset/256/train/106",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt106.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar106.png",
+      "optical_sha256": "bc616371a3592d8086ecbada53f7dbdee41493fe4eb79ab769b41d99ec4b5174",
+      "sar_sha256": "0b17d394f30143cb505f45aeb76029ab8afce2633b1779818c9c98955a1b5d80",
+      "A_forward": [
+        [
+          0.9127884058465544,
+          -0.22863253779429202,
+          39.264726801054536
+        ],
+        [
+          0.17793730386432507,
+          0.9039328585555171,
+          -16.04357770620885
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 9.908568576818588,
+        "uniform_scale": 0.9297917062276877,
+        "translation_px": [
+          -1.0054000222819965,
+          -5.605131997678971
+        ],
+        "shear_deg": [
+          -4.285614828111872,
+          1.122227708462371
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1081",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1081.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1081.png",
+      "optical_sha256": "7b2ca8d80a3643e0d4f0ee9edbe33a039b21731050b30bebd74a250584ea0dc2",
+      "sar_sha256": "9d190d714288e7df4d07136b8178940da5c9010b863477d8cdae12ad563306bc",
+      "A_forward": [
+        [
+          0.9437048437003736,
+          -0.17204263074797518,
+          14.12889193092785
+        ],
+        [
+          0.07219583104204731,
+          0.9273282752016045,
+          -6.835690549912201
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 9.314545161296103,
+        "uniform_scale": 0.9429469827868269,
+        "translation_px": [
+          -14.984175917641348,
+          -6.896367003846585
+        ],
+        "shear_deg": [
+          -1.1957582395866573,
+          -4.9397930166357975
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1182",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1182.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1182.png",
+      "optical_sha256": "311cf7334b326164425f5fecb92b39e3d2aaad842fc05fbf947f5de267c6bd6c",
+      "sar_sha256": "8cf3c00297762ae9542e5e6d113bba07f9850d863200749c73b581b2f2d5b9b1",
+      "A_forward": [
+        [
+          0.9355103186734038,
+          -0.02556477754037314,
+          7.01582388227186
+        ],
+        [
+          -0.04262023898501376,
+          0.9369906338910241,
+          24.39846975438529
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -1.2437115487868518,
+        "uniform_scale": 0.9362150057585024,
+        "translation_px": [
+          -4.466119623266724,
+          10.930695104901606
+        ],
+        "shear_deg": [
+          -2.8065772875468085,
+          -1.3647817970210707
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1262",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1262.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1262.png",
+      "optical_sha256": "6add63c7262fe87fd5ee8fa5c7b1a5f14f831464285834c76c75f85f7d362ba8",
+      "sar_sha256": "c13eef3afddaf73d65bddd0e7dcf28ac531f3de6abd11f61e97f6bb547a1f7b6",
+      "A_forward": [
+        [
+          0.9847637000945059,
+          -0.010342008329517661,
+          -0.006962130909244024
+        ],
+        [
+          0.054630805174737125,
+          0.985217498553837,
+          -3.6860720073161133
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 0.5870519964345728,
+        "uniform_scale": 0.9852717470464737,
+        "translation_px": [
+          -3.268196430873246,
+          1.3945867180770897
+        ],
+        "shear_deg": [
+          -0.01437019371509951,
+          2.5882370718740555
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1500",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1500.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1500.png",
+      "optical_sha256": "20108dfa5753e976d10fea8f36ec8e062711a77c880dd5b5b9e75ebf4460a690",
+      "sar_sha256": "97ac17e55f1530ad994dede60d44841938ab6e5d886fce96a8138aee3faa3d8b",
+      "A_forward": [
+        [
+          0.9839072531894165,
+          -0.1886359842966602,
+          18.76531004072531
+        ],
+        [
+          0.17327033608742415,
+          0.9817697562966149,
+          -24.66002884494381
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 7.919523889214922,
+        "uniform_scale": 0.9983968511684868,
+        "translation_px": [
+          -7.337603175448262,
+          -4.8924170659788295
+        ],
+        "shear_deg": [
+          -2.956666743196117,
+          2.068103842059587
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1580",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1580.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1580.png",
+      "optical_sha256": "41d39eb5df609ca156c0ef8eabce42aa6ab2b58c1dbf602c4ced0c2715528153",
+      "sar_sha256": "8df9b8dd1d449c6c8f1b5f554864b2a14b44592ed49aaa57d765abd4b8f737e7",
+      "A_forward": [
+        [
+          1.0581297450228304,
+          -0.19038574154770524,
+          14.97045431663011
+        ],
+        [
+          0.10008725287764597,
+          1.0485888025980994,
+          -15.261259945248383
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.031495808526628,
+        "uniform_scale": 1.0627889228429734,
+        "translation_px": [
+          -1.8921852402914254,
+          3.69493712790916
+        ],
+        "shear_deg": [
+          -4.259240044360796,
+          -0.6280318969733569
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1963",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1963.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1963.png",
+      "optical_sha256": "bced26acfe12d89f34b8a4ffaccde4d0117a7d68c8c849b2375ed558d3cb0f9a",
+      "sar_sha256": "fa775ddd2da3bee1864968aaf692884985d8b25a16e5b7577313d1796aa2233a",
+      "A_forward": [
+        [
+          0.9643379550508424,
+          0.14140167791021338,
+          -10.058859229306108
+        ],
+        [
+          -0.05803485711514031,
+          0.9570197405435046,
+          4.628864126595417
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.016752673606222,
+        "uniform_scale": 0.9657187173702032,
+        "translation_px": [
+          3.4229439732285023,
+          -8.25056323628813
+        ],
+        "shear_deg": [
+          3.388010617330245,
+          1.5727870361747334
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/2299",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt2299.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar2299.png",
+      "optical_sha256": "041661602d61506870a40b9f5c6e3d3f710d13f3b886ed87036e6a4c5219e77a",
+      "sar_sha256": "c0cb0ae5489aa6861aff4ae6eeeace526f0341b8a3c1b83245cf8fabe9bd3f17",
+      "A_forward": [
+        [
+          1.0270020681159038,
+          0.17721065032004082,
+          -32.94736487985449
+        ],
+        [
+          -0.15553750374739048,
+          1.0231904747982794,
+          17.210217894469622
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -9.974442991899952,
+        "uniform_scale": 1.0384195236526728,
+        "translation_px": [
+          -6.910243279271551,
+          0.33597170345795746
+        ],
+        "shear_deg": [
+          -0.1486187348531569,
+          1.362550843515839
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/5427",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt5427.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar5427.png",
+      "optical_sha256": "f39b0f402719ab8692c61322e264bf67dbcaab28118e6ca286ea3876a7428059",
+      "sar_sha256": "960690524c9ae370c13d1a8a884f041a5351caaa13bb505889680b27d44f4a0a",
+      "A_forward": [
+        [
+          1.0252158809628815,
+          0.17330925170618997,
+          -25.91819546334135
+        ],
+        [
+          -0.15572758210316737,
+          1.022570084592733,
+          17.27372925477235
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -8.558000618592366,
+        "uniform_scale": 1.0369747515361916,
+        "translation_px": [
+          -0.6062410480347324,
+          0.2961483221919501
+        ],
+        "shear_deg": [
+          1.061307146905671,
+          -0.07905363847559777
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4310",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4310.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4310.png",
+      "optical_sha256": "abde272946712a68eced398c8165b07e37ee5af03d4475eb8cddc98d2fa60340",
+      "sar_sha256": "19fceaf0be48b06f26260d42c67dac4903433488edf06275604186060a36bfb0",
+      "A_forward": [
+        [
+          1.0464313369745144,
+          0.1202876557803649,
+          -35.01801350482211
+        ],
+        [
+          -0.04030884830063135,
+          1.0431603840150523,
+          -3.335667699243288
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -2.3419630809347947,
+        "uniform_scale": 1.0472044534219325,
+        "translation_px": [
+          -13.761341928575007,
+          -2.972096895654616
+        ],
+        "shear_deg": [
+          4.235807654255778,
+          0.13600315156485276
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/5242",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt5242.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar5242.png",
+      "optical_sha256": "d456945813e8d68cad9f9bf139301312c4f8818a775768acc7b0d67c7200478e",
+      "sar_sha256": "2c0a6e40d32bf1e11b88e6581411e8664c2ccc131f02be210347f79fb3e706da",
+      "A_forward": [
+        [
+          1.0001054160949523,
+          -0.09705258636556477,
+          19.70558447329094
+        ],
+        [
+          -0.03912867281430765,
+          0.9938146065724016,
+          20.490231174376007
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 2.644863059878171,
+        "uniform_scale": 0.9972344482699971,
+        "translation_px": [
+          7.344820263787845,
+          14.712687728532995
+        ],
+        "shear_deg": [
+          -2.9327636730578166,
+          -4.885391813033467
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/7629",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt7629.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar7629.png",
+      "optical_sha256": "c60d2eb6d294452be41ad5b3475a7c40a027477c83817dba4d840b7ccf1cacc8",
+      "sar_sha256": "6264935860dbddc244618e32f7bcbd16b5e4c2dbcc42d4b38b5daadc329d5f90",
+      "A_forward": [
+        [
+          1.0506315055591358,
+          -0.1745541700925148,
+          11.147942383821558
+        ],
+        [
+          0.06632064450483148,
+          1.0391599972064587,
+          -25.252482601822393
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.0501060936524595,
+        "uniform_scale": 1.0517696696980205,
+        "translation_px": [
+          -4.65219734418427,
+          -11.803700783632891
+        ],
+        "shear_deg": [
+          -3.4852046612818843,
+          -2.438128077580858
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/6537",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt6537.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar6537.png",
+      "optical_sha256": "5f7387e33c878dba43d689d6186990c8bdb118f092d5de10dfc0bb43a273ae99",
+      "sar_sha256": "b65b44ffb6eb04284471198345c767081c1d2711798b0ceac5f82bd74ca54335",
+      "A_forward": [
+        [
+          0.9960955964005755,
+          -0.05847321970411179,
+          4.529353578705539
+        ],
+        [
+          -0.03378336613500455,
+          0.9960467932994345,
+          20.790097285485416
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 0.030309071556020584,
+        "uniform_scale": 0.9960775858635528,
+        "translation_px": [
+          -3.4237933924953268,
+          15.97868424895022
+        ],
+        "shear_deg": [
+          -3.3294005072975397,
+          -1.9727959553899743
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4249",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4249.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4249.png",
+      "optical_sha256": "6f2834b97f3fe7de8d3d7a905e1fe47161cac3f5215a97d8e3bc17c588664a63",
+      "sar_sha256": "1a0a99fe94141e7584b0a499861e449a4f99461f1311c0b34e8c158b5c83a61d",
+      "A_forward": [
+        [
+          0.937496294859619,
+          0.2027301584689387,
+          -12.240686565363973
+        ],
+        [
+          -0.18690891895765904,
+          0.9347205698458613,
+          20.694344836048927
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -9.950868962755928,
+        "uniform_scale": 0.9556914182671319,
+        "translation_px": [
+          5.638186234027135,
+          -11.459669675705282
+        ],
+        "shear_deg": [
+          2.2863943001682054,
+          -1.3243679037812317
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/7485",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt7485.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar7485.png",
+      "optical_sha256": "3b4ded9833363dbb813e936455474adc462b8f85d44686b95465efb7b7474d89",
+      "sar_sha256": "28a382e51829054a1ec61dd41121e34836ce4047bfb664ae398495798faa3636",
+      "A_forward": [
+        [
+          0.9207193979430314,
+          -0.027316022151666428,
+          2.271515603040399
+        ],
+        [
+          0.11436637323827864,
+          0.9273328074176851,
+          -14.060413786187794
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 4.344542502928368,
+        "uniform_scale": 0.926737452229768,
+        "translation_px": [
+          -11.31955398356057,
+          -8.743768252552414
+        ],
+        "shear_deg": [
+          2.657294586577139,
+          2.7361361288557013
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/1154",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1154.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1154.png",
+      "optical_sha256": "2c3b2f74579f9017d11aaafe6f6ef66b1196326fd0fd16fb89484bb8c0b59d3d",
+      "sar_sha256": "0d98f41cc1e12885eefb91e33e0e9b6ba7eaa177e8098ba84e0df96465949b13",
+      "A_forward": [
+        [
+          1.0134121183640852,
+          -0.22966597927848995,
+          18.0250664410879
+        ],
+        [
+          0.07546578916265875,
+          0.9892280532739137,
+          3.2004004057093027
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 8.913403835272064,
+        "uniform_scale": 1.0128665775508672,
+        "translation_px": [
+          -9.54730082549871,
+          11.448865316372288
+        ],
+        "shear_deg": [
+          -4.157219450540451,
+          -4.654617914828036
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/5218",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt5218.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar5218.png",
+      "optical_sha256": "6fa3b3d91c73e6ec21f3a5a1215546f11edf27133226a18f45708dae28b74386",
+      "sar_sha256": "2c3f392c25acec78994cf96fb7ae485bb0d3361e8d4ce83299511968e209c335",
+      "A_forward": [
+        [
+          0.9419802734663271,
+          0.07871848931680521,
+          -11.373211732878573
+        ],
+        [
+          0.00372171431395547,
+          0.9360736656640498,
+          10.534962269010393
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -4.098078142315133,
+        "uniform_scale": 0.9393058314747889,
+        "translation_px": [
+          -8.734119478029204,
+          2.858873216206071
+        ],
+        "shear_deg": [
+          0.7088621033100315,
+          4.3244495634690345
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4410",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4410.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4410.png",
+      "optical_sha256": "89aad5e8a4f5b5f20005e1d65a41392c28d80e6224f9991188427890755dfddf",
+      "sar_sha256": "45a14d1973e05296942c7d9ab316d3674c23d41580ba9ee4d48636a4a4783da2",
+      "A_forward": [
+        [
+          0.9410331346919939,
+          0.058146035478524684,
+          8.144249748825473
+        ],
+        [
+          -0.12538375855840386,
+          0.9476610609490422,
+          19.803614240231326
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.629716424010642,
+        "uniform_scale": 0.9487942359964361,
+        "translation_px": [
+          8.039593945566594,
+          -2.856029704962282
+        ],
+        "shear_deg": [
+          -2.118597079765565,
+          -1.9597028150951834
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/3127",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt3127.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar3127.png",
+      "optical_sha256": "21e244bbdfc938ea06ee048811c8f2666b74de00d5fbce41c8398ec2b84802e6",
+      "sar_sha256": "2f548fba7bdd5f1b45f453fe754bf50de6f905900a07c21ce7de06ec9461973a",
+      "A_forward": [
+        [
+          0.9891790069758857,
+          0.07234076883139634,
+          1.9718105324417365
+        ],
+        [
+          -0.07276111899277837,
+          0.989239878502506,
+          25.928120080697497
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -8.239807652343236,
+        "uniform_scale": 0.9893954843155977,
+        "translation_px": [
+          9.815581947870175,
+          15.279161918187782
+        ],
+        "shear_deg": [
+          -4.0573478709438895,
+          4.032873926129163
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/6090",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt6090.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar6090.png",
+      "optical_sha256": "cd8726fa4c9df2fe4edaa7a4e8e76628d8c0e5588b0a7127dce6730e30782239",
+      "sar_sha256": "8c21db86fbc335c287491adc8097ba1aeb3eac7ef77ce0393b0019bf8f7272b4",
+      "A_forward": [
+        [
+          0.9925065473614988,
+          0.08062900980850447,
+          -9.483430107467413
+        ],
+        [
+          -0.14514089624064633,
+          1.0026930661273288,
+          11.833818199588137
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -8.973000469498382,
+        "uniform_scale": 1.0029976834281977,
+        "translation_px": [
+          -0.1586465682919851,
+          -6.3282801398598565
+        ],
+        "shear_deg": [
+          -4.375598403562668,
+          0.6532260827503498
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/74",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt74.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar74.png",
+      "optical_sha256": "061a81ff8546ada5a1abed3402caac35a868cfca770434e68cabf5d51a76b410",
+      "sar_sha256": "7a58a2a643d5cae7fd1a47ce5c5dee8996fce261bd8a3c378d5fb39ea615e56f",
+      "A_forward": [
+        [
+          1.0831899716544737,
+          -0.028923262537015295,
+          8.180011022784896
+        ],
+        [
+          -0.03499113535765238,
+          1.0842159267303546,
+          1.7225939841389106
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -0.9196339123073862,
+        "uniform_scale": 1.0836120532975508,
+        "translation_px": [
+          15.099016435260829,
+          7.998754884158448
+        ],
+        "shear_deg": [
+          -2.447731676090761,
+          -0.9305931857776786
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/3210",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt3210.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar3210.png",
+      "optical_sha256": "2668661002cc74aa11f5ab2a58327331040af76089bb6fc3007186600eb060f7",
+      "sar_sha256": "6faf947cf6b4b5926c73ef49b2d9546ee9baccd218d0019b609555481723098e",
+      "A_forward": [
+        [
+          1.066517292230008,
+          0.08848254485886063,
+          -6.140886192667239
+        ],
+        [
+          -0.07148591710869054,
+          1.0641500969258433,
+          3.423830806773168
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -7.928832273164581,
+        "uniform_scale": 1.0661825514693684,
+        "translation_px": [
+          13.6215930361635,
+          2.488513733460124
+        ],
+        "shear_deg": [
+          -3.1757046410767797,
+          4.09417896543966
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/345",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt345.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar345.png",
+      "optical_sha256": "6a1a3d6e4439cad66178ed07cf828fe6d71ab655838fc6b031e25b7170f76caf",
+      "sar_sha256": "404fa590ebe7dfbe16b335421bb90294001cb0b64c9b2ed53dd44a560cb7320f",
+      "A_forward": [
+        [
+          0.9327772592425209,
+          0.07436680275710272,
+          -14.246827761037721
+        ],
+        [
+          -0.08152117952718411,
+          0.9335103497306658,
+          10.354423929322351
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.850531367920668,
+        "uniform_scale": 0.9362283597104968,
+        "translation_px": [
+          -13.335959856085726,
+          -8.516956869733722
+        ],
+        "shear_deg": [
+          -1.2957618814165728,
+          0.8557894480526098
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/3027",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt3027.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar3027.png",
+      "optical_sha256": "5f42572217067c34c4a8fcf2fc6f8bf62b0dd6cc855ca6fb4350dd8adcd9ad39",
+      "sar_sha256": "987b4b661d47b50ce60ec93e79f0ff0e3f5e75e645c1e2e9b4b4a65b0a2a49dc",
+      "A_forward": [
+        [
+          1.0022373066286083,
+          0.08840279599683734,
+          -25.344264771623216
+        ],
+        [
+          -0.13307806195471683,
+          1.0078601162391052,
+          19.18822180106403
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -7.173503060079143,
+        "uniform_scale": 1.0110103951207452,
+        "translation_px": [
+          -13.787651686878881,
+          3.222933722323546
+        ],
+        "shear_deg": [
+          -2.1607270117880315,
+          -0.3900439139217653
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/5616",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt5616.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar5616.png",
+      "optical_sha256": "7cd0afca7ebd3a753db2f4f3b070ad0e61f803ad1862ff1c92b9d5970b5da29e",
+      "sar_sha256": "74528a6a7a28f6b46d6cbf427e0658fb26cea7afb9221986174255e9556c90d9",
+      "A_forward": [
+        [
+          1.038927520002197,
+          0.20106087023210714,
+          -32.49423351999792
+        ],
+        [
+          -0.14443842088029113,
+          1.029809600202155,
+          0.068431115495585
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -9.147815933186216,
+        "uniform_scale": 1.0486770088979895,
+        "translation_px": [
+          -1.8957137651241283,
+          -14.546743520966768
+        ],
+        "shear_deg": [
+          1.899684960238833,
+          1.2329200013214248
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/7524",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt7524.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar7524.png",
+      "optical_sha256": "e905268ff6a4c887fc9c29154a7213d553f6d5a30910c9cd38f87c8320c1f263",
+      "sar_sha256": "599fd392af118f36db8b3a49f9e0a9a72ae302c2bb75c82a76a7be13fae8da1f",
+      "A_forward": [
+        [
+          1.005734472487903,
+          0.17930904616021512,
+          -27.331743853369034
+        ],
+        [
+          -0.09204228110603895,
+          0.9916782321412352,
+          7.033277365505285
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -9.150159927181312,
+        "uniform_scale": 1.0075732575826941,
+        "translation_px": [
+          -3.7386952257339843,
+          -5.763138877507192
+        ],
+        "shear_deg": [
+          1.0989678245383043,
+          3.921160705260826
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4477",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4477.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4477.png",
+      "optical_sha256": "5854e32256d1c6b0c9c6aa152e01b3960eb902be14dfe6f2db81f208f1c39293",
+      "sar_sha256": "84b11ff0bca6ef69fb1d99f40dd6054500f79098ad8bbfb1f87a6bf2b4ff8cfe",
+      "A_forward": [
+        [
+          0.980193888165653,
+          -0.005606587911716914,
+          -0.6386730326139229
+        ],
+        [
+          -0.008573620136415118,
+          0.9795057998194925,
+          6.36141263609251
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 2.7780733697983067,
+        "uniform_scale": 0.978626381539018,
+        "translation_px": [
+          -3.8787922502370726,
+          2.6552655456848804
+        ],
+        "shear_deg": [
+          2.4501219510855847,
+          -3.2792188347990034
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/3567",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt3567.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar3567.png",
+      "optical_sha256": "84c075f642c3453e647d4a5ccd8eb071864b5cbf7c0f2861984c4f3bc46bdc35",
+      "sar_sha256": "f093b7776a42e10e3c533f1a17aab3e339bcf1b6510c02bd2614bf7851e9d9c0",
+      "A_forward": [
+        [
+          1.0133432139893908,
+          -0.006044698438552225,
+          2.234169798289713
+        ],
+        [
+          -0.052413581803354745,
+          1.0135652870634013,
+          11.107700743235384
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -0.21765588426052318,
+        "uniform_scale": 1.0135350110898256,
+        "translation_px": [
+          3.164730531021629,
+          6.154543163891347
+        ],
+        "shear_deg": [
+          -0.5593522776147619,
+          -2.743239515201874
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/7338",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt7338.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar7338.png",
+      "optical_sha256": "910247af51b6e3751c01cbf4f9bbef9d54dc99174c3d8808d7106f099d39089b",
+      "sar_sha256": "ceea1e894bc9ed7ef44be963c3c5b5afbea01d2cbf099eb4ec2be192e65ff6c2",
+      "A_forward": [
+        [
+          0.9874059591368071,
+          -0.053038345369784155,
+          0.9556921906775813
+        ],
+        [
+          0.15796724339361187,
+          0.9964905146238292,
+          -10.63604760659041
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 4.948226660701874,
+        "uniform_scale": 0.9973514915645652,
+        "translation_px": [
+          -7.4124370540269915,
+          9.057316540633334
+        ],
+        "shear_deg": [
+          1.9015257221077642,
+          4.141048254109119
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/6225",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt6225.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar6225.png",
+      "optical_sha256": "0532faff53009a8bdabc62b9482e22b1ca48bafea0ecd720dd0a51be93590c5d",
+      "sar_sha256": "ee430bf6fa754c232ed35751abad6262b987b3c2b42d40b62d18a5cbc38e3077",
+      "A_forward": [
+        [
+          0.9029277079694782,
+          -0.05336097362306816,
+          9.143614691337277
+        ],
+        [
+          0.06643360768534218,
+          0.904186055830392,
+          0.2522028119242776
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 5.498247182879268,
+        "uniform_scale": 0.9051388111255186,
+        "translation_px": [
+          -10.036626679495448,
+          -3.4937900898196084
+        ],
+        "shear_deg": [
+          2.1208266380680154,
+          -1.290247943548315
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4931",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4931.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4931.png",
+      "optical_sha256": "b32a43aeb66ca73575b4a831bcd73e0d98ec46beaaa46b3c3fdd83b890d503d8",
+      "sar_sha256": "54d6a53487fd369fabf838bd9548601e704b2f09841fcebbf13f0127370af81b",
+      "A_forward": [
+        [
+          0.945546940958031,
+          -0.043672638010314506,
+          9.288124924348764
+        ],
+        [
+          0.05255175575396031,
+          0.946158385748603,
+          1.1947209413058744
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 3.939353709349195,
+        "uniform_scale": 0.9469232565822232,
+        "translation_px": [
+          -3.2229014498173676,
+          1.0302639828827047
+        ],
+        "shear_deg": [
+          1.296579429092473,
+          -0.7582326433648259
+        ]
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/4748",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt4748.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar4748.png",
+      "optical_sha256": "905058616e07191a8e707a58f30ba1adacf6862eafed1eb777af8c0145101a5a",
+      "sar_sha256": "7d92237e5bd94922cfae15e99cb00dfbbefce78c4512ff27fc765e26c41b8325",
+      "A_forward": [
+        [
+          0.9515818783175779,
+          -0.08549958552638937,
+          11.78483954331604
+        ],
+        [
+          0.10488799209221715,
+          0.9546005507667791,
+          -16.445827999031167
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 8.849599311936004,
+        "uniform_scale": 0.9563899447545754,
+        "translation_px": [
+          -5.289668125807417,
+          -8.861038784509141
+        ],
+        "shear_deg": [
+          3.731512245114992,
+          -2.5595708715977636
+        ]
+      }
+    }
+  ],
+  "split": "train",
+  "semantic_GT": false
+}
