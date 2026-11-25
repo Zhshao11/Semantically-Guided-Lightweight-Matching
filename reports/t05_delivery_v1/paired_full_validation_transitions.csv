@@ -1,0 +1,5 @@
+K,both_success,full_success_sparse_failure,full_failure_sparse_success,both_failure
+1024,520,0,0,432
+512,449,71,76,356
+256,407,113,85,347
+128,334,186,66,366

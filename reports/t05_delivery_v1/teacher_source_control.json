@@ -1,0 +1,4567 @@
+{
+  "protocol": "T05-C-fixed-source-domain-control-v1",
+  "weights_sha256": "f1117b6abbc21949a0cdffec4aa2806202c9c534fd7de3171129ab10cc182b3b",
+  "teacher_revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "source_manifest_sha256": "852d87300a51a6befb812442e8369b72f59a3feff8b96a9c9e5e8e16c300fb83",
+  "source_manifest": {
+    "protocol": "T05-C-LoveDA-Val-fixed8-v1",
+    "official_archive": "https://zenodo.org/api/records/5706578/files/Val.zip/content",
+    "archive_size": 2425958254,
+    "official_dataset_record": "https://zenodo.org/records/5706578",
+    "dataset_license": "CC-BY-4.0",
+    "seed": 20261126,
+    "selection": "4 seeded images each Rural/Urban, selected before teacher predictions",
+    "labels": "native PNG IDs 0=ignore/no-data; 1..7=land cover; inspect before evaluation",
+    "samples": [
+      {
+        "pair_id": "Rural/2554",
+        "domain": "Rural",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Rural/image/2554.png",
+            "archive_member": "Val/Rural/images_png/2554.png",
+            "bytes": 762456,
+            "sha256": "69f24b97bb8415f3c096cf106a2bcc70939d09ab6c95eeadfc6214bcb5ce819b",
+            "zip_CRC32": 3653984820,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Rural/label/2554.png",
+            "archive_member": "Val/Rural/masks_png/2554.png",
+            "bytes": 3000,
+            "sha256": "5907691c313d1833bd86acdf0adee4e7e607cf1199a8d2446457bf8cc03e377f",
+            "zip_CRC32": 3012337052,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Rural/2977",
+        "domain": "Rural",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Rural/image/2977.png",
+            "archive_member": "Val/Rural/images_png/2977.png",
+            "bytes": 854257,
+            "sha256": "58384fdb4f12a631c806e8991cf09b82a9a1ad8348a36d02d876e38054db1cd6",
+            "zip_CRC32": 2294273201,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Rural/label/2977.png",
+            "archive_member": "Val/Rural/masks_png/2977.png",
+            "bytes": 2640,
+            "sha256": "06499fe7ee1fd098cd731f3d697d9f73004a85b0141afb3f49ee5de3265a795f",
+            "zip_CRC32": 2076434135,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Rural/3008",
+        "domain": "Rural",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Rural/image/3008.png",
+            "archive_member": "Val/Rural/images_png/3008.png",
+            "bytes": 1162681,
+            "sha256": "3691e92b81ea18cd1946d7fd6b934099f91d603a80045a5590b36b94b49eaa96",
+            "zip_CRC32": 4153859482,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Rural/label/3008.png",
+            "archive_member": "Val/Rural/masks_png/3008.png",
+            "bytes": 10391,
+            "sha256": "84b050077595520a2b76446bf4911f6d852946a99ade27858f9346b8604ecbc2",
+            "zip_CRC32": 4088094955,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Rural/3160",
+        "domain": "Rural",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Rural/image/3160.png",
+            "archive_member": "Val/Rural/images_png/3160.png",
+            "bytes": 1782691,
+            "sha256": "14e5c9d31f9ee167bfef204c9448f8e9f0a807f3903a5ac83b062a2ceac852a2",
+            "zip_CRC32": 3234825856,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Rural/label/3160.png",
+            "archive_member": "Val/Rural/masks_png/3160.png",
+            "bytes": 10141,
+            "sha256": "e2e865097749a9c92cdc66af6b8465e6bfe8fd1dda5c1f873ff7849ca277a28c",
+            "zip_CRC32": 2367565930,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Urban/3596",
+        "domain": "Urban",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Urban/image/3596.png",
+            "archive_member": "Val/Urban/images_png/3596.png",
+            "bytes": 1770087,
+            "sha256": "53c16cf4376551f7cfd63238abea4d4a9e213bf1ed084a92a894ae86c031e684",
+            "zip_CRC32": 1876335255,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Urban/label/3596.png",
+            "archive_member": "Val/Urban/masks_png/3596.png",
+            "bytes": 15584,
+            "sha256": "b2d2f7ff08bba590a1114074d6ede01d405441123b89f787ed48d58503a81594",
+            "zip_CRC32": 1909899622,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Urban/3812",
+        "domain": "Urban",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Urban/image/3812.png",
+            "archive_member": "Val/Urban/images_png/3812.png",
+            "bytes": 1800288,
+            "sha256": "6feca188b92d15d219a368ad20176a4af5fe844ec19143e580487520155d8e24",
+            "zip_CRC32": 1291571152,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Urban/label/3812.png",
+            "archive_member": "Val/Urban/masks_png/3812.png",
+            "bytes": 12598,
+            "sha256": "acb242accd68fa228f13f4f304f933e103c61c0b3ba4bb8edfeeb293de096df9",
+            "zip_CRC32": 2028106279,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Urban/3846",
+        "domain": "Urban",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Urban/image/3846.png",
+            "archive_member": "Val/Urban/images_png/3846.png",
+            "bytes": 1824426,
+            "sha256": "4ef8caf44905c009b85ff39e71684851e8947e55f3b4256215afd772bc1fa695",
+            "zip_CRC32": 1453271455,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Urban/label/3846.png",
+            "archive_member": "Val/Urban/masks_png/3846.png",
+            "bytes": 9553,
+            "sha256": "ed88c8b8f12d5463fae2612362812ef1c6bb153d1b3c713d63ab9a1b4551e6e5",
+            "zip_CRC32": 1145755930,
+            "CRC_verified": true
+          }
+        }
+      },
+      {
+        "pair_id": "Urban/4168",
+        "domain": "Urban",
+        "split": "Val",
+        "files": {
+          "image": {
+            "path": "Urban/image/4168.png",
+            "archive_member": "Val/Urban/images_png/4168.png",
+            "bytes": 1711083,
+            "sha256": "3e756b433a9205d1028fe892c84124014407b9f04be025493d8de6024e090893",
+            "zip_CRC32": 833261201,
+            "CRC_verified": true
+          },
+          "label": {
+            "path": "Urban/label/4168.png",
+            "archive_member": "Val/Urban/masks_png/4168.png",
+            "bytes": 4427,
+            "sha256": "f14eb5e5334ec2d6937af72545d1c179780c90193f18a80263e098870f8bd011",
+            "zip_CRC32": 1410011068,
+            "CRC_verified": true
+          }
+        }
+      }
+    ],
+    "range_requests": 27,
+    "downloaded_bytes": 13086008,
+    "whole_archive_checksum_verified": false,
+    "member_CRC_verified": true,
+    "test_or_train_data_downloaded": false
+  },
+  "class_mapping_verified": {
+    "native_GT_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "GT_zero_ignored": true,
+    "GT1_to_7_match_teacher1_to_7": true,
+    "predicted_zero_penalized": true,
+    "no_reduce_labels": true,
+    "teacher_id2label": [
+      "Ignore",
+      "Background",
+      "Building",
+      "Road",
+      "Water",
+      "Barren",
+      "Forest",
+      "Agricultural"
+    ]
+  },
+  "input_policy": "identical saved512 bilinear processor for RGB and PIL L->RGB; logits restored to native size, GT never resized",
+  "native_source": "LoveDA1024; OS256. Same512 network input does not imply equal physical ground resolution",
+  "precision": "FP32, eval, inference_mode",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.44.2",
+  "summary": {
+    "RGB": {
+      "valid_GT_pixels": 8388608,
+      "overall_accuracy": 0.832823634147644,
+      "mean_IoU": 0.6363317737006339,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 1838135,
+          "predicted_pixels": 1602902,
+          "IoU": 0.5069333076414404,
+          "precision": 0.7221695399968308,
+          "recall": 0.6297508072040411
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 256437,
+          "predicted_pixels": 224450,
+          "IoU": 0.6456841118233058,
+          "precision": 0.8406148362664291,
+          "recall": 0.7357596602674341
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 505422,
+          "predicted_pixels": 533806,
+          "IoU": 0.6697564040148911,
+          "precision": 0.7808923091909795,
+          "recall": 0.8247464495016046
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 348444,
+          "predicted_pixels": 311809,
+          "IoU": 0.7138388778137719,
+          "precision": 0.8819662036695541,
+          "recall": 0.7892372949455293
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 629954,
+          "predicted_pixels": 554084,
+          "IoU": 0.7675691330232225,
+          "precision": 0.9279639910194122,
+          "recall": 0.8162024528775117
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 310209,
+          "predicted_pixels": 132352,
+          "IoU": 0.3187825366600811,
+          "precision": 0.8082839700193424,
+          "recall": 0.3448578216621697
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 4500007,
+          "predicted_pixels": 5029205,
+          "IoU": 0.8317580449277251,
+          "precision": 0.8603725638545258,
+          "recall": 0.9615518375860305
+        }
+      ],
+      "GT_background_fraction": 0.2191227674484253,
+      "predicted_background_fraction_on_valid_GT": 0.19108080863952637,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1157567,
+          35683,
+          63845,
+          27155,
+          7189,
+          25156,
+          521540
+        ],
+        [
+          0,
+          61277,
+          188676,
+          0,
+          0,
+          5445,
+          218,
+          821
+        ],
+        [
+          0,
+          41506,
+          50,
+          416845,
+          892,
+          15663,
+          0,
+          30466
+        ],
+        [
+          0,
+          61960,
+          0,
+          0,
+          275005,
+          1004,
+          0,
+          10475
+        ],
+        [
+          0,
+          46744,
+          0,
+          2596,
+          2815,
+          514170,
+          0,
+          63629
+        ],
+        [
+          0,
+          123633,
+          0,
+          212,
+          0,
+          4102,
+          106978,
+          75284
+        ],
+        [
+          0,
+          110215,
+          41,
+          50308,
+          5942,
+          6511,
+          0,
+          4326990
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    },
+    "gray_RGB": {
+      "valid_GT_pixels": 8388608,
+      "overall_accuracy": 0.7403256893157959,
+      "mean_IoU": 0.41163321350443394,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 1838135,
+          "predicted_pixels": 2153632,
+          "IoU": 0.44750388912459343,
+          "precision": 0.5730212961174426,
+          "recall": 0.6713745181937126
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 256437,
+          "predicted_pixels": 356733,
+          "IoU": 0.45115598796797457,
+          "precision": 0.5343800545506022,
+          "recall": 0.7433833651150185
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 505422,
+          "predicted_pixels": 486548,
+          "IoU": 0.6186786809327918,
+          "precision": 0.7792509680442629,
+          "recall": 0.7501513586666192
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 348444,
+          "predicted_pixels": 29062,
+          "IoU": 0.06939483129325315,
+          "precision": 0.8429220287660864,
+          "recall": 0.0703039799795663
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 629954,
+          "predicted_pixels": 189551,
+          "IoU": 0.28649494667240183,
+          "precision": 0.9627962922907292,
+          "recall": 0.2897021052330805
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 310209,
+          "predicted_pixels": 97450,
+          "IoU": 0.25402670111972436,
+          "precision": 0.8473986659825552,
+          "recall": 0.2662043976802736
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 4500007,
+          "predicted_pixels": 5075632,
+          "IoU": 0.7541774574202983,
+          "precision": 0.8111060849171098,
+          "recall": 0.9148599102179175
+        }
+      ],
+      "GT_background_fraction": 0.2191227674484253,
+      "predicted_background_fraction_on_valid_GT": 0.2567329406738281,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1234077,
+          90519,
+          59861,
+          106,
+          66,
+          14871,
+          438635
+        ],
+        [
+          0,
+          65259,
+          190631,
+          0,
+          0,
+          0,
+          0,
+          547
+        ],
+        [
+          0,
+          77963,
+          1569,
+          379143,
+          0,
+          2984,
+          0,
+          43763
+        ],
+        [
+          0,
+          52045,
+          573,
+          0,
+          24497,
+          0,
+          0,
+          271329
+        ],
+        [
+          0,
+          272281,
+          13335,
+          1103,
+          0,
+          182499,
+          0,
+          160736
+        ],
+        [
+          0,
+          177796,
+          165,
+          2169,
+          0,
+          3754,
+          82579,
+          43746
+        ],
+        [
+          0,
+          274211,
+          59941,
+          44272,
+          4459,
+          248,
+          0,
+          4116876
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    }
+  },
+  "domain_summary": {
+    "Rural/RGB": {
+      "valid_GT_pixels": 4194304,
+      "overall_accuracy": 0.8996109962463379,
+      "mean_IoU": 0.5567167167303481,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 678798,
+          "predicted_pixels": 710238,
+          "IoU": 0.5989234884866679,
+          "precision": 0.7325769671574881,
+          "recall": 0.7665078565346392
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 13794,
+          "predicted_pixels": 7793,
+          "IoU": 0.3410573398769957,
+          "precision": 0.7044783780315668,
+          "recall": 0.3979991300565463
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 126266,
+          "predicted_pixels": 136072,
+          "IoU": 0.6217830228920802,
+          "precision": 0.7391601505085543,
+          "recall": 0.7965643957993442
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 44738,
+          "predicted_pixels": 41122,
+          "IoU": 0.7286784247402754,
+          "precision": 0.8801128349788434,
+          "recall": 0.8089767088381242
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 251007,
+          "predicted_pixels": 175387,
+          "IoU": 0.6815831713117243,
+          "precision": 0.9854037072302965,
+          "recall": 0.6885345827008809
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 89460,
+          "predicted_pixels": 0,
+          "IoU": 0.0,
+          "precision": null,
+          "recall": 0.0
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 2990241,
+          "predicted_pixels": 3123692,
+          "IoU": 0.9249915698046934,
+          "precision": 0.9405056580482327,
+          "recall": 0.9824793386218703
+        }
+      ],
+      "GT_background_fraction": 0.16183805465698242,
+      "predicted_background_fraction_on_valid_GT": 0.16933393478393555,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          520304,
+          2303,
+          32525,
+          795,
+          189,
+          0,
+          122682
+        ],
+        [
+          0,
+          8304,
+          5490,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8789,
+          0,
+          100579,
+          0,
+          0,
+          0,
+          16898
+        ],
+        [
+          0,
+          6629,
+          0,
+          0,
+          36192,
+          78,
+          0,
+          1839
+        ],
+        [
+          0,
+          31256,
+          0,
+          475,
+          2026,
+          172827,
+          0,
+          44423
+        ],
+        [
+          0,
+          89248,
+          0,
+          212,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          45708,
+          0,
+          2281,
+          2109,
+          2293,
+          0,
+          2937850
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    },
+    "Rural/gray_RGB": {
+      "valid_GT_pixels": 4194304,
+      "overall_accuracy": 0.8525650501251221,
+      "mean_IoU": 0.4075394387270925,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 678798,
+          "predicted_pixels": 944786,
+          "IoU": 0.504389699702844,
+          "precision": 0.5761653961849562,
+          "recall": 0.8019366586230366
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 13794,
+          "predicted_pixels": 7104,
+          "IoU": 0.2545323568255493,
+          "precision": 0.5968468468468469,
+          "recall": 0.3073800202986806
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 126266,
+          "predicted_pixels": 125603,
+          "IoU": 0.6173441212354717,
+          "precision": 0.7654196157735086,
+          "recall": 0.7614005353776947
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 44738,
+          "predicted_pixels": 10217,
+          "IoU": 0.22837408914122223,
+          "precision": 1.0,
+          "recall": 0.22837408914122223
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 251007,
+          "predicted_pixels": 89829,
+          "IoU": 0.35653419832441147,
+          "precision": 0.997239198922397,
+          "recall": 0.3568864613337477
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 89460,
+          "predicted_pixels": 0,
+          "IoU": 0.0,
+          "precision": null,
+          "recall": 0.0
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 2990241,
+          "predicted_pixels": 3016765,
+          "IoU": 0.8916016058601488,
+          "precision": 0.938550732324195,
+          "recall": 0.9468758538191403
+        }
+      ],
+      "GT_background_fraction": 0.16183805465698242,
+      "predicted_background_fraction_on_valid_GT": 0.22525453567504883,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          544353,
+          2864,
+          26497,
+          0,
+          0,
+          0,
+          105084
+        ],
+        [
+          0,
+          9554,
+          4240,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13230,
+          0,
+          96139,
+          0,
+          0,
+          0,
+          16897
+        ],
+        [
+          0,
+          15049,
+          0,
+          0,
+          10217,
+          0,
+          0,
+          19472
+        ],
+        [
+          0,
+          116538,
+          0,
+          963,
+          0,
+          89581,
+          0,
+          43925
+        ],
+        [
+          0,
+          89313,
+          0,
+          147,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          156749,
+          0,
+          1857,
+          0,
+          248,
+          0,
+          2831387
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    },
+    "Urban/RGB": {
+      "valid_GT_pixels": 4194304,
+      "overall_accuracy": 0.7660362720489502,
+      "mean_IoU": 0.636048575708178,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 1159337,
+          "predicted_pixels": 892664,
+          "IoU": 0.4504459482957268,
+          "precision": 0.7138889884659849,
+          "recall": 0.5496788250525947
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 242643,
+          "predicted_pixels": 216657,
+          "IoU": 0.6634433603511593,
+          "precision": 0.8455115689776929,
+          "recall": 0.7549609920747765
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 379156,
+          "predicted_pixels": 397734,
+          "IoU": 0.6866033901837507,
+          "precision": 0.7951696359878713,
+          "recall": 0.8341315975482387
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 303706,
+          "predicted_pixels": 270687,
+          "IoU": 0.7116425293521664,
+          "precision": 0.8822477621755016,
+          "recall": 0.7863295423863869
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 378947,
+          "predicted_pixels": 378697,
+          "IoU": 0.8199427817852948,
+          "precision": 0.9013617747169901,
+          "recall": 0.9007671257458167
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 220749,
+          "predicted_pixels": 132352,
+          "IoU": 0.4346525924029855,
+          "precision": 0.8082839700193424,
+          "recall": 0.48461374683464026
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 1509766,
+          "predicted_pixels": 1905513,
+          "IoU": 0.6856094275861626,
+          "precision": 0.729011032724521,
+          "recall": 0.9201028503754887
+        }
+      ],
+      "GT_background_fraction": 0.27640748023986816,
+      "predicted_background_fraction_on_valid_GT": 0.2128276824951172,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          637263,
+          33380,
+          31320,
+          26360,
+          7000,
+          25156,
+          398858
+        ],
+        [
+          0,
+          52973,
+          183186,
+          0,
+          0,
+          5445,
+          218,
+          821
+        ],
+        [
+          0,
+          32717,
+          50,
+          316266,
+          892,
+          15663,
+          0,
+          13568
+        ],
+        [
+          0,
+          55331,
+          0,
+          0,
+          238813,
+          926,
+          0,
+          8636
+        ],
+        [
+          0,
+          15488,
+          0,
+          2121,
+          789,
+          341343,
+          0,
+          19206
+        ],
+        [
+          0,
+          34385,
+          0,
+          0,
+          0,
+          4102,
+          106978,
+          75284
+        ],
+        [
+          0,
+          64507,
+          41,
+          48027,
+          3833,
+          4218,
+          0,
+          1389140
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    },
+    "Urban/gray_RGB": {
+      "valid_GT_pixels": 4194304,
+      "overall_accuracy": 0.6280863285064697,
+      "mean_IoU": 0.3842849140836252,
+      "classes_in_mIoU": 7,
+      "per_class": [
+        {
+          "id": 1,
+          "name": "Background",
+          "GT_pixels": 1159337,
+          "predicted_pixels": 1208846,
+          "IoU": 0.4109269276163433,
+          "precision": 0.5705639924357611,
+          "recall": 0.5949296882614805
+        },
+        {
+          "id": 2,
+          "name": "Building",
+          "GT_pixels": 242643,
+          "predicted_pixels": 349629,
+          "IoU": 0.4592257336509962,
+          "precision": 0.5331108117461653,
+          "recall": 0.7681696978688856
+        },
+        {
+          "id": 3,
+          "name": "Road",
+          "GT_pixels": 379156,
+          "predicted_pixels": 360945,
+          "IoU": 0.6191333568148555,
+          "precision": 0.7840640540802616,
+          "recall": 0.7464051735960924
+        },
+        {
+          "id": 4,
+          "name": "Water",
+          "GT_pixels": 303706,
+          "predicted_pixels": 18845,
+          "IoU": 0.04632287824673745,
+          "precision": 0.7577606792252587,
+          "recall": 0.04701915668442507
+        },
+        {
+          "id": 5,
+          "name": "Barren",
+          "GT_pixels": 378947,
+          "predicted_pixels": 99722,
+          "IoU": 0.24087559073080822,
+          "precision": 0.9317703214937526,
+          "recall": 0.2452005161671685
+        },
+        {
+          "id": 6,
+          "name": "Forest",
+          "GT_pixels": 220749,
+          "predicted_pixels": 97450,
+          "IoU": 0.35047534165181227,
+          "precision": 0.8473986659825552,
+          "recall": 0.37408549982106376
+        },
+        {
+          "id": 7,
+          "name": "Agricultural",
+          "GT_pixels": 1509766,
+          "predicted_pixels": 2058867,
+          "IoU": 0.5630345698738232,
+          "precision": 0.6243671883613657,
+          "recall": 0.8514491649699357
+        }
+      ],
+      "GT_background_fraction": 0.27640748023986816,
+      "predicted_background_fraction_on_valid_GT": 0.2882113456726074,
+      "predicted_Ignore_fraction_on_valid_GT": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          689724,
+          87655,
+          33364,
+          106,
+          66,
+          14871,
+          333551
+        ],
+        [
+          0,
+          55705,
+          186391,
+          0,
+          0,
+          0,
+          0,
+          547
+        ],
+        [
+          0,
+          64733,
+          1569,
+          283004,
+          0,
+          2984,
+          0,
+          26866
+        ],
+        [
+          0,
+          36996,
+          573,
+          0,
+          14280,
+          0,
+          0,
+          251857
+        ],
+        [
+          0,
+          155743,
+          13335,
+          140,
+          0,
+          92918,
+          0,
+          116811
+        ],
+        [
+          0,
+          88483,
+          165,
+          2022,
+          0,
+          3754,
+          82579,
+          43746
+        ],
+        [
+          0,
+          117462,
+          59941,
+          42415,
+          4459,
+          0,
+          0,
+          1285489
+        ]
+      ],
+      "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+    }
+  },
+  "pairs": [
+    {
+      "pair_id": "Rural/2554",
+      "domain": "Rural",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 112554,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 936022
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.9370527267456055,
+        "mean_IoU": 0.6778715185122723,
+        "classes_in_mIoU": 2,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 112554,
+            "predicted_pixels": 49721,
+            "IoU": 0.42171894165060453,
+            "precision": 0.9681020092113997,
+            "recall": 0.42766138919985075
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 936022,
+            "predicted_pixels": 998855,
+            "IoU": 0.93402409537394,
+            "precision": 0.9355071556932688,
+            "recall": 0.9983055953813051
+          }
+        ],
+        "GT_background_fraction": 0.10733985900878906,
+        "predicted_background_fraction_on_valid_GT": 0.047417640686035156,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            48135,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64419
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1586,
+            0,
+            0,
+            0,
+            0,
+            0,
+            934436
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.047417640686035156,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.9525823593139648
+      },
+      "raw_mean_probability": {
+        "Ignore": 3.3588756309654855e-07,
+        "Background": 0.05337495356798172,
+        "Building": 0.00014289311366155744,
+        "Road": 0.003395521780475974,
+        "Water": 0.0004577099171001464,
+        "Barren": 0.00011100123811047524,
+        "Forest": 3.140828630421311e-05,
+        "Agricultural": 0.9424864053726196
+      },
+      "max_probability_mean": 0.9607433676719666
+    },
+    {
+      "pair_id": "Rural/2554",
+      "domain": "Rural",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 112554,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 936022
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.9026355743408203,
+        "mean_IoU": 0.49735357632274524,
+        "classes_in_mIoU": 2,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 112554,
+            "predicted_pixels": 10490,
+            "IoU": 0.09305403796782417,
+            "precision": 0.9985700667302193,
+            "recall": 0.09306643922028537
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 936022,
+            "predicted_pixels": 1038086,
+            "IoU": 0.9016531146776663,
+            "precision": 0.9016661432675135,
+            "recall": 0.9999839747356366
+          }
+        ],
+        "GT_background_fraction": 0.10733985900878906,
+        "predicted_background_fraction_on_valid_GT": 0.010004043579101562,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10475,
+            0,
+            0,
+            0,
+            0,
+            0,
+            102079
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            936007
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.010004043579101562,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.9899959564208984
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.233557552244747e-07,
+        "Background": 0.022673403844237328,
+        "Building": 0.00010042564099421725,
+        "Road": 0.0013569992734119296,
+        "Water": 8.377573067264166e-06,
+        "Barren": 4.961634112987667e-05,
+        "Forest": 1.8217373508377932e-05,
+        "Agricultural": 0.9757928252220154
+      },
+      "max_probability_mean": 0.9775685667991638
+    },
+    {
+      "pair_id": "Rural/2977",
+      "domain": "Rural",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 16897,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 1031679
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.9838857650756836,
+        "mean_IoU": 0.4919428825378418,
+        "classes_in_mIoU": 2,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 16897,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 1031679,
+            "predicted_pixels": 1048576,
+            "IoU": 0.9838857650756836,
+            "precision": 0.9838857650756836,
+            "recall": 1.0
+          }
+        ],
+        "GT_background_fraction": 0.0,
+        "predicted_background_fraction_on_valid_GT": 0.0,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16897
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1031679
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.0,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 1.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.541458457017143e-07,
+        "Background": 0.0006018509739078581,
+        "Building": 5.8025030739372596e-05,
+        "Road": 3.189694325556047e-05,
+        "Water": 1.099710334528936e-05,
+        "Barren": 1.4197156815498602e-05,
+        "Forest": 3.5910829865315463e-06,
+        "Agricultural": 0.9992792010307312
+      },
+      "max_probability_mean": 0.9992792010307312
+    },
+    {
+      "pair_id": "Rural/2977",
+      "domain": "Rural",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 16897,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 1031679
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.9838857650756836,
+        "mean_IoU": 0.4919428825378418,
+        "classes_in_mIoU": 2,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 16897,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 1031679,
+            "predicted_pixels": 1048576,
+            "IoU": 0.9838857650756836,
+            "precision": 0.9838857650756836,
+            "recall": 1.0
+          }
+        ],
+        "GT_background_fraction": 0.0,
+        "predicted_background_fraction_on_valid_GT": 0.0,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16897
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1031679
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.0,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 1.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.8966029813327623e-07,
+        "Background": 0.0004770506056956947,
+        "Building": 8.626268390798941e-05,
+        "Road": 2.9013273888267577e-05,
+        "Water": 1.4678287698188797e-05,
+        "Barren": 7.71048780734418e-06,
+        "Forest": 3.920930339518236e-06,
+        "Agricultural": 0.9993811249732971
+      },
+      "max_probability_mean": 0.9993811249732971
+    },
+    {
+      "pair_id": "Rural/3008",
+      "domain": "Rural",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 519881,
+        "2": 0,
+        "3": 84445,
+        "4": 22770,
+        "5": 0,
+        "6": 89460,
+        "7": 332020
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.7814407348632812,
+        "mean_IoU": 0.551984002901784,
+        "classes_in_mIoU": 5,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 519881,
+            "predicted_pixels": 583739,
+            "IoU": 0.6592021961930449,
+            "precision": 0.7511387794887784,
+            "recall": 0.8434026248314518
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 84445,
+            "predicted_pixels": 112562,
+            "IoU": 0.6654859326389828,
+            "precision": 0.699339030934063,
+            "recall": 0.9321925513647936
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 22770,
+            "predicted_pixels": 16936,
+            "IoU": 0.6849565032887758,
+            "precision": 0.9530585734529995,
+            "recall": 0.7088713219148002
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 89460,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 332020,
+            "predicted_pixels": 335339,
+            "IoU": 0.7502753823881161,
+            "precision": 0.8530800175344949,
+            "recall": 0.8616077344738269
+          }
+        ],
+        "GT_background_fraction": 0.49579715728759766,
+        "predicted_background_fraction_on_valid_GT": 0.556696891784668,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            438469,
+            0,
+            31350,
+            795,
+            0,
+            0,
+            49267
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5725,
+            0,
+            78719,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            6629,
+            0,
+            0,
+            16141,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            89248,
+            0,
+            212,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            43668,
+            0,
+            2281,
+            0,
+            0,
+            0,
+            286071
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.556696891784668,
+        "Building": 0.0,
+        "Road": 0.10734748840332031,
+        "Water": 0.01615142822265625,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.31980419158935547
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.0912498510151636e-05,
+        "Background": 0.5425848364830017,
+        "Building": 8.007671567611396e-05,
+        "Road": 0.11107391119003296,
+        "Water": 0.018408577889204025,
+        "Barren": 8.51377408253029e-05,
+        "Forest": 0.0032541058026254177,
+        "Agricultural": 0.3245024085044861
+      },
+      "max_probability_mean": 0.8741567134857178
+    },
+    {
+      "pair_id": "Rural/3008",
+      "domain": "Rural",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 519881,
+        "2": 0,
+        "3": 84445,
+        "4": 22770,
+        "5": 0,
+        "6": 89460,
+        "7": 332020
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.7289772033691406,
+        "mean_IoU": 0.4494841670174562,
+        "classes_in_mIoU": 5,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 519881,
+            "predicted_pixels": 749733,
+            "IoU": 0.6363134892556892,
+            "precision": 0.6585211001783301,
+            "recall": 0.9496692512324936
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 84445,
+            "predicted_pixels": 104849,
+            "IoU": 0.6809398643128619,
+            "precision": 0.7313565222367404,
+            "recall": 0.9080703416424892
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 22770,
+            "predicted_pixels": 8456,
+            "IoU": 0.37136583223539743,
+            "precision": 1.0,
+            "recall": 0.37136583223539743
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 89460,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 332020,
+            "predicted_pixels": 185538,
+            "IoU": 0.5588016492833328,
+            "precision": 0.9999838308055493,
+            "recall": 0.5588066983916632
+          }
+        ],
+        "GT_background_fraction": 0.49579715728759766,
+        "predicted_background_fraction_on_valid_GT": 0.715001106262207,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            493715,
+            0,
+            26163,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7763,
+            0,
+            76682,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14314,
+            0,
+            0,
+            8456,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            89313,
+            0,
+            147,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            144628,
+            0,
+            1857,
+            0,
+            0,
+            0,
+            185535
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.715001106262207,
+        "Building": 0.0,
+        "Road": 0.0999917984008789,
+        "Water": 0.00806427001953125,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.1769428253173828
+      },
+      "raw_mean_probability": {
+        "Ignore": 8.294146027765237e-06,
+        "Background": 0.7088720202445984,
+        "Building": 0.00010425322398077697,
+        "Road": 0.10381654649972916,
+        "Water": 0.013093910180032253,
+        "Barren": 0.0006974113057367504,
+        "Forest": 0.0036975122056901455,
+        "Agricultural": 0.1697099506855011
+      },
+      "max_probability_mean": 0.9307932257652283
+    },
+    {
+      "pair_id": "Rural/3160",
+      "domain": "Rural",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 46363,
+        "2": 13794,
+        "3": 24924,
+        "4": 21968,
+        "5": 251007,
+        "6": 0,
+        "7": 690520
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.8960647583007812,
+        "mean_IoU": 0.6515962117016515,
+        "classes_in_mIoU": 6,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 46363,
+            "predicted_pixels": 76778,
+            "IoU": 0.37678469605661835,
+            "precision": 0.4389278178644924,
+            "recall": 0.7268727217824559
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 13794,
+            "predicted_pixels": 7793,
+            "IoU": 0.3410573398769957,
+            "precision": 0.7044783780315668,
+            "recall": 0.3979991300565463
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 24924,
+            "predicted_pixels": 23510,
+            "IoU": 0.8226085647625498,
+            "precision": 0.9298170991067631,
+            "recall": 0.8770662814957471
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 21968,
+            "predicted_pixels": 24186,
+            "IoU": 0.7681492548749186,
+            "precision": 0.8290333250640867,
+            "recall": 0.9127367079388201
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 251007,
+            "predicted_pixels": 175387,
+            "IoU": 0.6815831713117243,
+            "precision": 0.9854037072302965,
+            "recall": 0.6885345827008809
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 690520,
+            "predicted_pixels": 740922,
+            "IoU": 0.9193942433271027,
+            "precision": 0.925419949738299,
+            "recall": 0.9929676186062677
+          }
+        ],
+        "GT_background_fraction": 0.04421520233154297,
+        "predicted_background_fraction_on_valid_GT": 0.07322120666503906,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            33700,
+            2303,
+            1175,
+            0,
+            189,
+            0,
+            8996
+          ],
+          [
+            0,
+            8304,
+            5490,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3064,
+            0,
+            21860,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            20051,
+            78,
+            0,
+            1839
+          ],
+          [
+            0,
+            31256,
+            0,
+            475,
+            2026,
+            172827,
+            0,
+            44423
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            454,
+            0,
+            0,
+            2109,
+            2293,
+            0,
+            685664
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.07322120666503906,
+        "Building": 0.007431983947753906,
+        "Road": 0.022420883178710938,
+        "Water": 0.023065567016601562,
+        "Barren": 0.16726207733154297,
+        "Forest": 0.0,
+        "Agricultural": 0.7065982818603516
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.1139412890770473e-05,
+        "Background": 0.0868157371878624,
+        "Building": 0.009817846119403839,
+        "Road": 0.021940240636467934,
+        "Water": 0.0259572584182024,
+        "Barren": 0.15223050117492676,
+        "Forest": 0.00022822234313935041,
+        "Agricultural": 0.7029991745948792
+      },
+      "max_probability_mean": 0.8956440091133118
+    },
+    {
+      "pair_id": "Rural/3160",
+      "domain": "Rural",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 46363,
+        "2": 13794,
+        "3": 24924,
+        "4": 21968,
+        "5": 251007,
+        "6": 0,
+        "7": 690520
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.7947616577148438,
+        "mean_IoU": 0.42329366770565646,
+        "classes_in_mIoU": 6,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 46363,
+            "predicted_pixels": 184563,
+            "IoU": 0.21053873130533698,
+            "precision": 0.21761133054837645,
+            "recall": 0.8662726743308241
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 13794,
+            "predicted_pixels": 7104,
+            "IoU": 0.2545323568255493,
+            "precision": 0.5968468468468469,
+            "recall": 0.3073800202986806
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 24924,
+            "predicted_pixels": 20754,
+            "IoU": 0.7420388238434842,
+            "precision": 0.9375060229353378,
+            "recall": 0.7806531856844808
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 21968,
+            "predicted_pixels": 1761,
+            "IoU": 0.08016205389657684,
+            "precision": 1.0,
+            "recall": 0.08016205389657684
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 251007,
+            "predicted_pixels": 89829,
+            "IoU": 0.35653419832441147,
+            "precision": 0.997239198922397,
+            "recall": 0.3568864613337477
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 690520,
+            "predicted_pixels": 744565,
+            "IoU": 0.89595584203858,
+            "precision": 0.9108217549844541,
+            "recall": 0.9821091351445288
+          }
+        ],
+        "GT_background_fraction": 0.04421520233154297,
+        "predicted_background_fraction_on_valid_GT": 0.17601299285888672,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            40163,
+            2864,
+            334,
+            0,
+            0,
+            0,
+            3002
+          ],
+          [
+            0,
+            9554,
+            4240,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5467,
+            0,
+            19457,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            735,
+            0,
+            0,
+            1761,
+            0,
+            0,
+            19472
+          ],
+          [
+            0,
+            116538,
+            0,
+            963,
+            0,
+            89581,
+            0,
+            43925
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12106,
+            0,
+            0,
+            0,
+            248,
+            0,
+            678166
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.17601299285888672,
+        "Building": 0.00677490234375,
+        "Road": 0.019792556762695312,
+        "Water": 0.0016794204711914062,
+        "Barren": 0.08566761016845703,
+        "Forest": 0.0,
+        "Agricultural": 0.7100725173950195
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.991578028537333e-05,
+        "Background": 0.18364779651165009,
+        "Building": 0.010651351884007454,
+        "Road": 0.019275052472949028,
+        "Water": 0.00547385448589921,
+        "Barren": 0.0766867846250534,
+        "Forest": 0.00038224138552322984,
+        "Agricultural": 0.7038630843162537
+      },
+      "max_probability_mean": 0.8672762513160706
+    },
+    {
+      "pair_id": "Urban/3596",
+      "domain": "Urban",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 122999,
+        "2": 8486,
+        "3": 52055,
+        "4": 193300,
+        "5": 200519,
+        "6": 5012,
+        "7": 466205
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.8406782150268555,
+        "mean_IoU": 0.4892627340002713,
+        "classes_in_mIoU": 7,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 122999,
+            "predicted_pixels": 17008,
+            "IoU": 0.08097653626108911,
+            "precision": 0.616650987770461,
+            "recall": 0.08526898592671485
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 8486,
+            "predicted_pixels": 2580,
+            "IoU": 0.30403016733443317,
+            "precision": 1.0,
+            "recall": 0.30403016733443317
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 52055,
+            "predicted_pixels": 36967,
+            "IoU": 0.5075443260910061,
+            "precision": 0.8107501284929802,
+            "recall": 0.5757564114878494
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 193300,
+            "predicted_pixels": 207787,
+            "IoU": 0.8798338980985456,
+            "precision": 0.9034443925750889,
+            "recall": 0.9711536471805484
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 200519,
+            "predicted_pixels": 214534,
+            "IoU": 0.8556987266614207,
+            "precision": 0.8921150027501469,
+            "recall": 0.9544681551374185
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 5012,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 466205,
+            "predicted_pixels": 569700,
+            "IoU": 0.7967554835554045,
+            "precision": 0.8063243812532912,
+            "recall": 0.9853240527235873
+          }
+        ],
+        "GT_background_fraction": 0.11730098724365234,
+        "predicted_background_fraction_on_valid_GT": 0.0162200927734375,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10488,
+            0,
+            4872,
+            14727,
+            5152,
+            0,
+            87760
+          ],
+          [
+            0,
+            163,
+            2580,
+            0,
+            0,
+            5445,
+            0,
+            298
+          ],
+          [
+            0,
+            2425,
+            0,
+            29971,
+            892,
+            9777,
+            0,
+            8990
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            187724,
+            179,
+            0,
+            5392
+          ],
+          [
+            0,
+            3327,
+            0,
+            2121,
+            783,
+            191389,
+            0,
+            2899
+          ],
+          [
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4998
+          ],
+          [
+            0,
+            586,
+            0,
+            3,
+            3661,
+            2592,
+            0,
+            459363
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.0162200927734375,
+        "Building": 0.002460479736328125,
+        "Road": 0.035254478454589844,
+        "Water": 0.19816112518310547,
+        "Barren": 0.20459556579589844,
+        "Forest": 0.0,
+        "Agricultural": 0.5433082580566406
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.124698519561207e-05,
+        "Background": 0.05213279649615288,
+        "Building": 0.004792067222297192,
+        "Road": 0.03313834220170975,
+        "Water": 0.19336338341236115,
+        "Barren": 0.19463792443275452,
+        "Forest": 0.0010973582975566387,
+        "Agricultural": 0.5208269357681274
+      },
+      "max_probability_mean": 0.9005863070487976
+    },
+    {
+      "pair_id": "Urban/3596",
+      "domain": "Urban",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 122999,
+        "2": 8486,
+        "3": 52055,
+        "4": 193300,
+        "5": 200519,
+        "6": 5012,
+        "7": 466205
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.46781158447265625,
+        "mean_IoU": 0.12192666879361196,
+        "classes_in_mIoU": 7,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 122999,
+            "predicted_pixels": 149627,
+            "IoU": 0.035565195261012754,
+            "precision": 0.0625756046702801,
+            "recall": 0.07612257010219595
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 8486,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 52055,
+            "predicted_pixels": 15707,
+            "IoU": 0.2812115940932897,
+            "precision": 0.9469026548672567,
+            "recall": 0.285717030064355
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 193300,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 200519,
+            "predicted_pixels": 2260,
+            "IoU": 0.011270752397528413,
+            "precision": 1.0,
+            "recall": 0.011270752397528413
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 5012,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 466205,
+            "predicted_pixels": 880982,
+            "IoU": 0.5254391398034529,
+            "precision": 0.5267303985779506,
+            "recall": 0.9953561201617315
+          }
+        ],
+        "GT_background_fraction": 0.11730098724365234,
+        "predicted_background_fraction_on_valid_GT": 0.14269542694091797,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9363,
+            0,
+            694,
+            0,
+            0,
+            0,
+            112942
+          ],
+          [
+            0,
+            8025,
+            0,
+            0,
+            0,
+            0,
+            0,
+            461
+          ],
+          [
+            0,
+            13959,
+            0,
+            14873,
+            0,
+            0,
+            0,
+            23223
+          ],
+          [
+            0,
+            5860,
+            0,
+            0,
+            0,
+            0,
+            0,
+            187440
+          ],
+          [
+            0,
+            110255,
+            0,
+            140,
+            0,
+            2260,
+            0,
+            87864
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5012
+          ],
+          [
+            0,
+            2165,
+            0,
+            0,
+            0,
+            0,
+            0,
+            464040
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.14269542694091797,
+        "Building": 0.0,
+        "Road": 0.014979362487792969,
+        "Water": 0.0,
+        "Barren": 0.002155303955078125,
+        "Forest": 0.0,
+        "Agricultural": 0.8401699066162109
+      },
+      "raw_mean_probability": {
+        "Ignore": 7.4648978625191376e-06,
+        "Background": 0.1780332773923874,
+        "Building": 0.0035159520339220762,
+        "Road": 0.016660051420331,
+        "Water": 0.0011847730493173003,
+        "Barren": 0.009533124975860119,
+        "Forest": 0.0002794141764752567,
+        "Agricultural": 0.7907857894897461
+      },
+      "max_probability_mean": 0.8707727789878845
+    },
+    {
+      "pair_id": "Urban/3812",
+      "domain": "Urban",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 113151,
+        "2": 1886,
+        "3": 11776,
+        "4": 110406,
+        "5": 178428,
+        "6": 27040,
+        "7": 605889
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.7924470901489258,
+        "mean_IoU": 0.32045097038523157,
+        "classes_in_mIoU": 7,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 113151,
+            "predicted_pixels": 134084,
+            "IoU": 0.20206052237499758,
+            "precision": 0.3099474955997733,
+            "recall": 0.36728796033618794
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 1886,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 11776,
+            "predicted_pixels": 36,
+            "IoU": 0.0030570652173913045,
+            "precision": 1.0,
+            "recall": 0.0030570652173913045
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 110406,
+            "predicted_pixels": 62900,
+            "IoU": 0.41801876989289544,
+            "precision": 0.8122257551669316,
+            "recall": 0.4627375323804866
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 178428,
+            "predicted_pixels": 164163,
+            "IoU": 0.7784278202006883,
+            "precision": 0.913445782545397,
+            "recall": 0.840417423274374
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 27040,
+            "predicted_pixels": 219,
+            "IoU": 0.007354028085735403,
+            "precision": 0.908675799086758,
+            "recall": 0.007359467455621302
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 605889,
+            "predicted_pixels": 687174,
+            "IoU": 0.8342385869249134,
+            "precision": 0.855829818939599,
+            "recall": 0.9706464385390723
+          }
+        ],
+        "GT_background_fraction": 0.1079092025756836,
+        "predicted_background_fraction_on_valid_GT": 0.12787246704101562,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            41559,
+            0,
+            0,
+            11633,
+            1848,
+            20,
+            58091
+          ],
+          [
+            0,
+            1363,
+            0,
+            0,
+            0,
+            0,
+            0,
+            523
+          ],
+          [
+            0,
+            1276,
+            0,
+            36,
+            0,
+            5886,
+            0,
+            4578
+          ],
+          [
+            0,
+            55326,
+            0,
+            0,
+            51089,
+            747,
+            0,
+            3244
+          ],
+          [
+            0,
+            12161,
+            0,
+            0,
+            6,
+            149954,
+            0,
+            16307
+          ],
+          [
+            0,
+            6412,
+            0,
+            0,
+            0,
+            4102,
+            199,
+            16327
+          ],
+          [
+            0,
+            15987,
+            0,
+            0,
+            172,
+            1626,
+            0,
+            588104
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.12787246704101562,
+        "Building": 0.0,
+        "Road": 3.4332275390625e-05,
+        "Water": 0.059986114501953125,
+        "Barren": 0.15655803680419922,
+        "Forest": 0.00020885467529296875,
+        "Agricultural": 0.6553401947021484
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.8089927834807895e-05,
+        "Background": 0.14484864473342896,
+        "Building": 0.002679668366909027,
+        "Road": 0.001322797848843038,
+        "Water": 0.07525809109210968,
+        "Barren": 0.14891262352466583,
+        "Forest": 0.0021381049882620573,
+        "Agricultural": 0.6248220205307007
+      },
+      "max_probability_mean": 0.8601662516593933
+    },
+    {
+      "pair_id": "Urban/3812",
+      "domain": "Urban",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 113151,
+        "2": 1886,
+        "3": 11776,
+        "4": 110406,
+        "5": 178428,
+        "6": 27040,
+        "7": 605889
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.6640253067016602,
+        "mean_IoU": 0.22920495128102067,
+        "classes_in_mIoU": 7,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 113151,
+            "predicted_pixels": 173147,
+            "IoU": 0.2768790948054786,
+            "precision": 0.35854505131477876,
+            "recall": 0.5486562204487808
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 1886,
+            "predicted_pixels": 81892,
+            "IoU": 0.013451721384849877,
+            "precision": 0.01357885996190104,
+            "recall": 0.5896076352067868
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 11776,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 110406,
+            "predicted_pixels": 14386,
+            "IoU": 0.12921673664398436,
+            "precision": 0.9926317252884749,
+            "recall": 0.12934079669583176
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 178428,
+            "predicted_pixels": 97462,
+            "IoU": 0.4894294722294204,
+            "precision": 0.930188175904455,
+            "recall": 0.5080929002174547
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 27040,
+            "predicted_pixels": 0,
+            "IoU": 0.0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 605889,
+            "predicted_pixels": 681689,
+            "IoU": 0.6954576339034115,
+            "precision": 0.7747667924816155,
+            "recall": 0.8716943202467778
+          }
+        ],
+        "GT_background_fraction": 0.1079092025756836,
+        "predicted_background_fraction_on_valid_GT": 0.16512584686279297,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            62081,
+            12850,
+            0,
+            106,
+            66,
+            0,
+            38048
+          ],
+          [
+            0,
+            688,
+            1112,
+            0,
+            0,
+            0,
+            0,
+            86
+          ],
+          [
+            0,
+            4148,
+            1001,
+            0,
+            0,
+            2984,
+            0,
+            3643
+          ],
+          [
+            0,
+            31136,
+            573,
+            0,
+            14280,
+            0,
+            0,
+            64417
+          ],
+          [
+            0,
+            45488,
+            13335,
+            0,
+            0,
+            90658,
+            0,
+            28947
+          ],
+          [
+            0,
+            4723,
+            165,
+            0,
+            0,
+            3754,
+            0,
+            18398
+          ],
+          [
+            0,
+            24883,
+            52856,
+            0,
+            0,
+            0,
+            0,
+            528150
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.16512584686279297,
+        "Building": 0.07809829711914062,
+        "Road": 0.0,
+        "Water": 0.013719558715820312,
+        "Barren": 0.09294700622558594,
+        "Forest": 0.0,
+        "Agricultural": 0.6501092910766602
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.747836358845234e-05,
+        "Background": 0.1815204620361328,
+        "Building": 0.12904499471187592,
+        "Road": 0.0034386140760034323,
+        "Water": 0.01363380067050457,
+        "Barren": 0.07892017066478729,
+        "Forest": 0.00063791882712394,
+        "Agricultural": 0.5927864909172058
+      },
+      "max_probability_mean": 0.7750130295753479
+    },
+    {
+      "pair_id": "Urban/3846",
+      "domain": "Urban",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 564849,
+        "2": 232271,
+        "3": 145905,
+        "4": 0,
+        "5": 0,
+        "6": 105551,
+        "7": 0
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.8569660186767578,
+        "mean_IoU": 0.7394416699110256,
+        "classes_in_mIoU": 4,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 564849,
+            "predicted_pixels": 597837,
+            "IoU": 0.7718469978665041,
+            "precision": 0.8471974802496333,
+            "recall": 0.8966750405860682
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 232271,
+            "predicted_pixels": 211376,
+            "IoU": 0.6866077911808425,
+            "precision": 0.8544300204375141,
+            "recall": 0.7775658605680433
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 145905,
+            "predicted_pixels": 131655,
+            "IoU": 0.8701991752688462,
+            "precision": 0.9809578063879077,
+            "recall": 0.8851512970768651
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 105551,
+            "predicted_pixels": 107708,
+            "IoU": 0.6291127153279096,
+            "precision": 0.7646043005162105,
+            "recall": 0.7802294625346988
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          }
+        ],
+        "GT_background_fraction": 0.5386819839477539,
+        "predicted_background_fraction_on_valid_GT": 0.5701417922973633,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            506486,
+            30720,
+            2507,
+            0,
+            0,
+            25136,
+            0
+          ],
+          [
+            0,
+            51447,
+            180606,
+            0,
+            0,
+            0,
+            218,
+            0
+          ],
+          [
+            0,
+            16707,
+            50,
+            129148,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            23197,
+            0,
+            0,
+            0,
+            0,
+            82354,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.5701417922973633,
+        "Building": 0.2015838623046875,
+        "Road": 0.12555599212646484,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.10271835327148438,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 6.558363111253129e-06,
+        "Background": 0.5616041421890259,
+        "Building": 0.2054375261068344,
+        "Road": 0.12530888617038727,
+        "Water": 9.561898332322016e-05,
+        "Barren": 6.938965816516429e-05,
+        "Forest": 0.10737017542123795,
+        "Agricultural": 0.00010756017582025379
+      },
+      "max_probability_mean": 0.8857029676437378
+    },
+    {
+      "pair_id": "Urban/3846",
+      "domain": "Urban",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 564849,
+        "2": 232271,
+        "3": 145905,
+        "4": 0,
+        "5": 0,
+        "6": 105551,
+        "7": 0
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.8010053634643555,
+        "mean_IoU": 0.6302759944412315,
+        "classes_in_mIoU": 4,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 564849,
+            "predicted_pixels": 607058,
+            "IoU": 0.7009081422199774,
+            "precision": 0.7955055365385185,
+            "recall": 0.8549506151201471
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 232271,
+            "predicted_pixels": 239358,
+            "IoU": 0.647036843024271,
+            "precision": 0.7740664611168209,
+            "recall": 0.7976846011770733
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 145905,
+            "predicted_pixels": 135354,
+            "IoU": 0.740992008715514,
+            "precision": 0.8844068147228749,
+            "recall": 0.8204516637538124
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 105551,
+            "predicted_pixels": 66806,
+            "IoU": 0.4321669838051634,
+            "precision": 0.7785228871658234,
+            "recall": 0.49274758173773814
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          }
+        ],
+        "GT_background_fraction": 0.5386819839477539,
+        "predicted_background_fraction_on_valid_GT": 0.5789356231689453,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            482918,
+            53511,
+            13624,
+            0,
+            0,
+            14796,
+            0
+          ],
+          [
+            0,
+            46992,
+            185279,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25629,
+            568,
+            119708,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            51519,
+            0,
+            2022,
+            0,
+            0,
+            52010,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.5789356231689453,
+        "Building": 0.2282695770263672,
+        "Road": 0.12908363342285156,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.06371116638183594,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 8.778304618317634e-06,
+        "Background": 0.5561362504959106,
+        "Building": 0.24325375258922577,
+        "Road": 0.1342402696609497,
+        "Water": 4.647985770134255e-05,
+        "Barren": 0.0001268611231353134,
+        "Forest": 0.06614124029874802,
+        "Agricultural": 4.6493401896441355e-05
+      },
+      "max_probability_mean": 0.8483425974845886
+    },
+    {
+      "pair_id": "Urban/4168",
+      "domain": "Urban",
+      "mode": "RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 358338,
+        "2": 0,
+        "3": 169420,
+        "4": 0,
+        "5": 0,
+        "6": 83146,
+        "7": 437672
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.5740537643432617,
+        "mean_IoU": 0.31789000460364625,
+        "classes_in_mIoU": 5,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 358338,
+            "predicted_pixels": 143735,
+            "IoU": 0.18597213134503227,
+            "precision": 0.547744112429123,
+            "recall": 0.21970876658350497
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 2701,
+            "IoU": 0.0,
+            "precision": 0.0,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 169420,
+            "predicted_pixels": 229076,
+            "IoU": 0.6508730865629596,
+            "precision": 0.6858466185894637,
+            "recall": 0.9273462401133278
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 83146,
+            "predicted_pixels": 24425,
+            "IoU": 0.2937603733192216,
+            "precision": 1.0,
+            "recall": 0.2937603733192216
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 437672,
+            "predicted_pixels": 648639,
+            "IoU": 0.4588444317910179,
+            "precision": 0.5267537104614431,
+            "recall": 0.780659946261127
+          }
+        ],
+        "GT_background_fraction": 0.3417377471923828,
+        "predicted_background_fraction_on_valid_GT": 0.13707637786865234,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            78730,
+            2660,
+            23941,
+            0,
+            0,
+            0,
+            253007
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12309,
+            0,
+            157111,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4762,
+            0,
+            0,
+            0,
+            0,
+            24425,
+            53959
+          ],
+          [
+            0,
+            47934,
+            41,
+            48024,
+            0,
+            0,
+            0,
+            341673
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.13707637786865234,
+        "Building": 0.0025758743286132812,
+        "Road": 0.21846389770507812,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.023293495178222656,
+        "Agricultural": 0.6185903549194336
+      },
+      "raw_mean_probability": {
+        "Ignore": 3.8768863305449486e-05,
+        "Background": 0.1806250661611557,
+        "Building": 0.00969967432320118,
+        "Road": 0.2127087265253067,
+        "Water": 0.0038052364252507687,
+        "Barren": 0.00033344278926961124,
+        "Forest": 0.02401602640748024,
+        "Agricultural": 0.5687729716300964
+      },
+      "max_probability_mean": 0.8236855268478394
+    },
+    {
+      "pair_id": "Urban/4168",
+      "domain": "Urban",
+      "mode": "gray_RGB",
+      "native_hw": [
+        1024,
+        1024
+      ],
+      "GT_ignored_fraction": 0.0,
+      "GT_value_histogram": {
+        "0": 0,
+        "1": 358338,
+        "2": 0,
+        "3": 169420,
+        "4": 0,
+        "5": 0,
+        "6": 83146,
+        "7": 437672
+      },
+      "metrics": {
+        "valid_GT_pixels": 1048576,
+        "overall_accuracy": 0.579503059387207,
+        "mean_IoU": 0.2896169214727751,
+        "classes_in_mIoU": 6,
+        "per_class": [
+          {
+            "id": 1,
+            "name": "Background",
+            "GT_pixels": 358338,
+            "predicted_pixels": 279014,
+            "IoU": 0.26965078985637164,
+            "precision": 0.48514411463224066,
+            "recall": 0.3777494990762911
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "GT_pixels": 0,
+            "predicted_pixels": 28379,
+            "IoU": 0.0,
+            "precision": 0.0,
+            "recall": null
+          },
+          {
+            "id": 3,
+            "name": "Road",
+            "GT_pixels": 169420,
+            "predicted_pixels": 209884,
+            "IoU": 0.642854977239357,
+            "precision": 0.7071668159554801,
+            "recall": 0.8760653995986306
+          },
+          {
+            "id": 4,
+            "name": "Water",
+            "GT_pixels": 0,
+            "predicted_pixels": 4459,
+            "IoU": 0.0,
+            "precision": 0.0,
+            "recall": null
+          },
+          {
+            "id": 5,
+            "name": "Barren",
+            "GT_pixels": 0,
+            "predicted_pixels": 0,
+            "IoU": null,
+            "precision": null,
+            "recall": null
+          },
+          {
+            "id": 6,
+            "name": "Forest",
+            "GT_pixels": 83146,
+            "predicted_pixels": 30644,
+            "IoU": 0.3673231516083681,
+            "precision": 0.9975525388330505,
+            "recall": 0.3676544872874221
+          },
+          {
+            "id": 7,
+            "name": "Agricultural",
+            "GT_pixels": 437672,
+            "predicted_pixels": 496196,
+            "IoU": 0.45787261013255404,
+            "precision": 0.5910950511491426,
+            "recall": 0.6701342557897239
+          }
+        ],
+        "GT_background_fraction": 0.3417377471923828,
+        "predicted_background_fraction_on_valid_GT": 0.26608848571777344,
+        "predicted_Ignore_fraction_on_valid_GT": 0.0,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            135362,
+            21294,
+            19046,
+            0,
+            0,
+            75,
+            182561
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            20997,
+            0,
+            148423,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32241,
+            0,
+            0,
+            0,
+            0,
+            30569,
+            20336
+          ],
+          [
+            0,
+            90414,
+            7085,
+            42415,
+            4459,
+            0,
+            0,
+            293299
+          ]
+        ],
+        "definition": "Ignore GT=0 excluded; predictions=0 remain false negatives on GT1..7; no class shifting"
+      },
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.26608848571777344,
+        "Building": 0.02706432342529297,
+        "Road": 0.20016098022460938,
+        "Water": 0.004252433776855469,
+        "Barren": 0.0,
+        "Forest": 0.029224395751953125,
+        "Agricultural": 0.4732093811035156
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.008011688303668e-05,
+        "Background": 0.3008933663368225,
+        "Building": 0.028983457013964653,
+        "Road": 0.2010008692741394,
+        "Water": 0.010184678249061108,
+        "Barren": 0.0003160255146212876,
+        "Forest": 0.030660083517432213,
+        "Agricultural": 0.4279414117336273
+      },
+      "max_probability_mean": 0.7700607776641846
+    }
+  ],
+  "OS_train_diagnostic": [
+    {
+      "pair_id": "osdataset/256/train/106",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 1.0,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 3.944697368751804e-07,
+        "Background": 0.9980593323707581,
+        "Building": 0.00010490801651030779,
+        "Road": 0.0013730241917073727,
+        "Water": 7.240046397782862e-05,
+        "Barren": 0.00033535086549818516,
+        "Forest": 9.330925422545988e-06,
+        "Agricultural": 4.520525180851109e-05
+      },
+      "max_probability_mean": 0.9980593323707581
+    },
+    {
+      "pair_id": "osdataset/256/train/1081",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.704925537109375,
+        "Building": 0.0003204345703125,
+        "Road": 0.2947540283203125,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 6.669514732493553e-06,
+        "Background": 0.6632661819458008,
+        "Building": 0.008109234273433685,
+        "Road": 0.32423368096351624,
+        "Water": 4.2973355448339134e-05,
+        "Barren": 0.0005056990776211023,
+        "Forest": 0.0037860972806811333,
+        "Agricultural": 4.949378126184456e-05
+      },
+      "max_probability_mean": 0.8673830628395081
+    },
+    {
+      "pair_id": "osdataset/256/train/1182",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.2866363525390625,
+        "Building": 0.0,
+        "Road": 0.340789794921875,
+        "Water": 0.0,
+        "Barren": 0.3725738525390625,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.5146786154218717e-06,
+        "Background": 0.31367412209510803,
+        "Building": 2.862354631361086e-05,
+        "Road": 0.32619497179985046,
+        "Water": 3.128678508801386e-05,
+        "Barren": 0.3593304753303528,
+        "Forest": 0.00011030700989067554,
+        "Agricultural": 0.0006286792922765017
+      },
+      "max_probability_mean": 0.8292213678359985
+    },
+    {
+      "pair_id": "osdataset/256/train/1262",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.8449859619140625,
+        "Building": 0.0,
+        "Road": 0.01416015625,
+        "Water": 0.0583953857421875,
+        "Barren": 0.0,
+        "Forest": 0.08245849609375,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 8.76324611454038e-06,
+        "Background": 0.8053868412971497,
+        "Building": 0.00670491810888052,
+        "Road": 0.03640473634004593,
+        "Water": 0.058945104479789734,
+        "Barren": 0.0007831740658730268,
+        "Forest": 0.09164734929800034,
+        "Agricultural": 0.00011918782547581941
+      },
+      "max_probability_mean": 0.892861008644104
+    },
+    {
+      "pair_id": "osdataset/256/train/1500",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.8149261474609375,
+        "Building": 0.001922607421875,
+        "Road": 0.079010009765625,
+        "Water": 0.0072021484375,
+        "Barren": 0.0,
+        "Forest": 0.0969390869140625,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 9.187903742713388e-06,
+        "Background": 0.7616661190986633,
+        "Building": 0.017684468999505043,
+        "Road": 0.08945925533771515,
+        "Water": 0.013448694720864296,
+        "Barren": 0.0016575002809986472,
+        "Forest": 0.11587891727685928,
+        "Agricultural": 0.00019583976245485246
+      },
+      "max_probability_mean": 0.8747441172599792
+    },
+    {
+      "pair_id": "osdataset/256/train/1580",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.35400390625,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.64599609375
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.890748646677821e-06,
+        "Background": 0.3549383878707886,
+        "Building": 0.0011941412230953574,
+        "Road": 0.0005637942813336849,
+        "Water": 3.924034535884857e-05,
+        "Barren": 0.000257016479736194,
+        "Forest": 0.0049051642417907715,
+        "Agricultural": 0.6380993723869324
+      },
+      "max_probability_mean": 0.9360677599906921
+    },
+    {
+      "pair_id": "osdataset/256/train/1963",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.6888885498046875,
+        "Building": 0.3047637939453125,
+        "Road": 0.00634765625,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.5496065063634887e-05,
+        "Background": 0.6614800095558167,
+        "Building": 0.3141137957572937,
+        "Road": 0.020071834325790405,
+        "Water": 4.034613084513694e-05,
+        "Barren": 0.0013787492644041777,
+        "Forest": 0.002820611232891679,
+        "Agricultural": 6.915113772265613e-05
+      },
+      "max_probability_mean": 0.8808044195175171
+    },
+    {
+      "pair_id": "osdataset/256/train/2299",
+      "split": "train",
+      "semantic_GT": false,
+      "raw_prediction_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.198089599609375,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.801910400390625
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.273686732223723e-06,
+        "Background": 0.19273297488689423,
+        "Building": 0.0007846145308576524,
+        "Road": 0.00035021337680518627,
+        "Water": 0.0008358033373951912,
+        "Barren": 0.0004494194290600717,
+        "Forest": 0.000919784011784941,
+        "Agricultural": 0.8039249181747437
+      },
+      "max_probability_mean": 0.9439546465873718
+    }
+  ],
+  "OS_semantic_accuracy_claim": false,
+  "BN_or_model_buffers_changed": false,
+  "teacher_training_performed": false,
+  "community_checkpoint_license": "unresolved; not free redistribution/deployment permission"
+}

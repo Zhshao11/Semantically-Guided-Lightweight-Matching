@@ -1,0 +1,105 @@
+{
+  "kept_frozen_subset_unchanged": true,
+  "review_used_for_model_or_threshold_selection": false,
+  "subsets_sha256": "5caa7172b05f26532e37f9815d54aca7bd86d5941aa0f0eec1a9b95870fdfe02",
+  "montage_sha256": "386149efd4e3a489aba8dd91ff92e91bcc6c23197e3a8bf76e3fd49e70a2d2ea",
+  "original_satellite_scene_ids": "unresolved; visual content labels only",
+  "reviewed_inputs": [
+    {
+      "pair_id": "osdataset/256/val/3",
+      "visual_content": "built-up"
+    },
+    {
+      "pair_id": "osdataset/256/val/24",
+      "visual_content": "built-up"
+    },
+    {
+      "pair_id": "osdataset/256/val/104",
+      "visual_content": "industrial"
+    },
+    {
+      "pair_id": "osdataset/256/val/147",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/173",
+      "visual_content": "rural road / fields"
+    },
+    {
+      "pair_id": "osdataset/256/val/221",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/244",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/307",
+      "visual_content": "farmland / buildings"
+    },
+    {
+      "pair_id": "osdataset/256/val/314",
+      "visual_content": "industrial / fields"
+    },
+    {
+      "pair_id": "osdataset/256/val/406",
+      "visual_content": "dense built-up"
+    },
+    {
+      "pair_id": "osdataset/256/val/427",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/592",
+      "visual_content": "warehouse / fields"
+    },
+    {
+      "pair_id": "osdataset/256/val/645",
+      "visual_content": "built-up / open land"
+    },
+    {
+      "pair_id": "osdataset/256/val/715",
+      "visual_content": "fields / road"
+    },
+    {
+      "pair_id": "osdataset/256/val/726",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/734",
+      "visual_content": "dense built-up / junction"
+    },
+    {
+      "pair_id": "osdataset/256/val/756",
+      "visual_content": "built-up / roads"
+    },
+    {
+      "pair_id": "osdataset/256/val/793",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/820",
+      "visual_content": "built-up / industrial"
+    },
+    {
+      "pair_id": "osdataset/256/val/823",
+      "visual_content": "rural parcels"
+    },
+    {
+      "pair_id": "osdataset/256/val/844",
+      "visual_content": "fields / buildings"
+    },
+    {
+      "pair_id": "osdataset/256/val/851",
+      "visual_content": "farmland"
+    },
+    {
+      "pair_id": "osdataset/256/val/906",
+      "visual_content": "built-up / open land"
+    },
+    {
+      "pair_id": "osdataset/256/val/937",
+      "visual_content": "farmland"
+    }
+  ]
+}

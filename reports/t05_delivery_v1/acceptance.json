@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "unchanged_source_best": true,
+  "full_reproduction_pairs": 952,
+  "all_validation_pairs": 952,
+  "budgets": 4,
+  "diagnostic_pairs_per_budget": 96,
+  "timing_pairs": 24,
+  "timing_repetitions_per_budget": 480,
+  "exclusive_GPU_pair_boundary_checks": 48,
+  "source_validation_images": 8,
+  "source_input_modes": 2,
+  "source_GT_observed_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "preprocessor_matches_T04_sha256": "e5a25d8fc054bf780be930e161b47d188bec1b0bf0a44fd5fdfb3f3312c0be0b",
+  "model_config_matches_T04_sha256": "7bad6bc16075fe0b5af4bc0493cf6240873938b7a859d7401dce18faba44acf3",
+  "matching_source_hashes_unchanged": true,
+  "timing_stage_workloads_equal_validation": true,
+  "model_RANSAC_config_unchanged": true,
+  "training_performed": false,
+  "test_used": false
+}

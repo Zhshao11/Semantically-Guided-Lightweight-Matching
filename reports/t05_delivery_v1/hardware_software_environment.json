@@ -1,0 +1,20 @@
+{
+  "capture": "post-run metadata on same zzvr host",
+  "cpu_model": "Intel(R) Xeon(R) Platinum 8457C",
+  "logical_cpus": 192,
+  "affinity_cpu_count": 192,
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "cudnn": 91900,
+  "opencv": "5.0.0",
+  "numpy": "2.2.6",
+  "opencv_default_threads": 192,
+  "benchmark_torch_threads": 4,
+  "CPU_affinity_pinned": false,
+  "CUDA_LAUNCH_BLOCKING_in_login_environment": null,
+  "formal_timing_gpu": "GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17",
+  "model_and_inputs": "batch1 native256",
+  "training_performed": false
+}

@@ -1,0 +1,139 @@
+{
+  "protocol": {
+    "protocol": "T05-frozen-epoch18-uniform-screen-source-teacher-v1",
+    "seed": 20261126,
+    "checkpoint_source": "runs/t03_main_lr1e3_v1/best.pt",
+    "expected_epoch": 18,
+    "budgets": [
+      1024,
+      512,
+      256,
+      128
+    ],
+    "uniform_grids_rows_cols": {
+      "1024": [
+        32,
+        32
+      ],
+      "512": [
+        16,
+        32
+      ],
+      "256": [
+        16,
+        16
+      ],
+      "128": [
+        8,
+        16
+      ]
+    },
+    "selection": "row-major grid; floor((i+0.5)*32/grid_size); content-independent; gather before cross-image bmm",
+    "mutual_matching": "same argmax/no-match rule, reverse candidates restricted to selected queries; no hidden dense reverse correlation",
+    "precision": "BF16 autocast as T03; unchanged FP32 logits and existing geometry",
+    "diagnostic_pairs": 96,
+    "timing_pairs": 24,
+    "subset_selection": "before predictions: 8 input-only brightness/contrast strata; deterministic seed; distinct verified 512 parents for timing; no asserted satellite scene identities",
+    "coarse_correctness_thresholds_px": [
+      3,
+      5,
+      8
+    ],
+    "near_collinear_singular_ratio": 0.01,
+    "success_failure_split_px": 5,
+    "timing": {
+      "warmup_per_pair_per_budget": 5,
+      "repeats_per_pair_per_budget": 20,
+      "batch_size": 1,
+      "threads": 4,
+      "budget_order": "seeded interleaving per repeat",
+      "primary": "no-hook prediction, coordinate transfer and affine RANSAC; GPU inputs resident, excludes I/O and host-to-device",
+      "stages": "separate calls with synchronization; not summed to claim overall latency",
+      "exclusive_physical_gpu_required": true
+    },
+    "teacher": {
+      "source_validation_per_domain": 4,
+      "domains": [
+        "Rural",
+        "Urban"
+      ],
+      "same_teacher_as_T04": true,
+      "input_resize_hw": [
+        512,
+        512
+      ],
+      "ground_truth_ids": {
+        "ignore": 0,
+        "valid": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "prediction_zero": "counts as wrong on valid ground truth; never erase predicted Ignore to improve scores"
+    },
+    "forbidden": [
+      "training",
+      "threshold changes",
+      "RANSAC changes",
+      "test selection",
+      "semantic scoring",
+      "final reliability labels"
+    ]
+  },
+  "frozen_unix": 1795623334.3266437,
+  "candidate_epoch": 18,
+  "candidate_step": 35604,
+  "source_checkpoint": "runs/t03_main_lr1e3_v1/best.pt",
+  "frozen_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "checkpoint_best_record": {
+    "epoch": 18,
+    "score": 0.5462184873949579
+  },
+  "candidate_config_sha256": "c531159cbdf29ddeac3e19e9427184249c24107cba44b91d034a5dd5ee32447e",
+  "validation_plan_sha256": "0b1c9033e3935bb8234126f852a3d39495cd59c3790bcd7e042d0a416b12ac51",
+  "subsets_sha256": "5caa7172b05f26532e37f9815d54aca7bd86d5941aa0f0eec1a9b95870fdfe02",
+  "training_code_revision": "85c7dea0d5be270647d991b285053ff0a4871120",
+  "preparation_base_revision": "8861878092ff26adf19f577d0f75c42bff0cd772",
+  "original_code_verification": {
+    "sglm/model.py": {
+      "sha256": "faf8bbebf0f0f89cd67136c61bb5cb8c5593b7935ad4a8e6443541678166220a",
+      "equal_to_training_revision": true
+    },
+    "sglm/t02/model.py": {
+      "sha256": "598f7cc7c04477ca5b855532dd106c9ce4ccaec36608f62ea2e71f602d019e0a",
+      "equal_to_training_revision": true
+    },
+    "sglm/t02/loss.py": {
+      "sha256": "4e4491ab5f306f1e968375f0a3994a3aaadae610e5ab4ad7ad7683c7cf559abb",
+      "equal_to_training_revision": true
+    },
+    "sglm/evaluation.py": {
+      "sha256": "cc543598f71e25e869fb56c2abe1e343c32a4e400a9271d8ffdbcbf121b4be8b",
+      "equal_to_training_revision": true
+    },
+    "sglm/geometry.py": {
+      "sha256": "6c977bf49c725ae576ba3490d066b00afd7ed7cb772ba3d5fa21442852944c95",
+      "equal_to_training_revision": true
+    }
+  },
+  "source_plan_sha256": "6ae1c1680d6d192cefde8c114b9084682356aa852d86131bfa5490924273880f",
+  "original_training_environment": {
+    "torch": "2.11.0+cu128",
+    "device": "NVIDIA GeForce RTX 5090",
+    "physical_visible_devices": "4",
+    "plan_sha256": "6ae1c1680d6d192cefde8c114b9084682356aa852d86131bfa5490924273880f",
+    "initialization": "from scratch",
+    "initial_state_sha256": "5374cedb4b5d5d8ec15dbebc2060b201a2d866badfd5a076f8c3724b0ceb1cbc",
+    "parameters": 37219,
+    "learning_rate": 0.001,
+    "code_revision": "85c7dea0d5be270647d991b285053ff0a4871120"
+  },
+  "test_used": false,
+  "training_performed": false
+}

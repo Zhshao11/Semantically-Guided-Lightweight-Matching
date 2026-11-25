@@ -1,0 +1,14 @@
+{
+  "url": "https://huggingface.co/api/models/wu-pr-gw/segformer-b2-finetuned-with-LoveDA/revision/5c74556c08bebb5f45f50b6f78f61a62c5d220c7?blobs=true",
+  "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "cardData": null,
+  "files": [
+    ".gitattributes",
+    "config.json",
+    "preprocessor_config.json",
+    "pytorch_model.bin"
+  ],
+  "license_tags": [],
+  "observed_date": "2026-11-26",
+  "conclusion": "No explicit checkpoint license found; unresolved, not freely redistributable/deployable by assumption"
+}

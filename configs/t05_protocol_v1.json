@@ -1,0 +1,20 @@
+{
+  "protocol": "T05-frozen-epoch18-uniform-screen-source-teacher-v1",
+  "seed": 20261126,
+  "checkpoint_source": "runs/t03_main_lr1e3_v1/best.pt",
+  "expected_epoch": 18,
+  "budgets": [1024,512,256,128],
+  "uniform_grids_rows_cols": {"1024":[32,32],"512":[16,32],"256":[16,16],"128":[8,16]},
+  "selection": "row-major grid; floor((i+0.5)*32/grid_size); content-independent; gather before cross-image bmm",
+  "mutual_matching": "same argmax/no-match rule, reverse candidates restricted to selected queries; no hidden dense reverse correlation",
+  "precision": "BF16 autocast as T03; unchanged FP32 logits and existing geometry",
+  "diagnostic_pairs": 96,
+  "timing_pairs": 24,
+  "subset_selection": "before predictions: 8 input-only brightness/contrast strata; deterministic seed; distinct verified 512 parents for timing; no asserted satellite scene identities",
+  "coarse_correctness_thresholds_px": [3,5,8],
+  "near_collinear_singular_ratio": 0.01,
+  "success_failure_split_px": 5,
+  "timing": {"warmup_per_pair_per_budget":5,"repeats_per_pair_per_budget":20,"batch_size":1,"threads":4,"budget_order":"seeded interleaving per repeat","primary":"no-hook prediction, coordinate transfer and affine RANSAC; GPU inputs resident, excludes I/O and host-to-device","stages":"separate calls with synchronization; not summed to claim overall latency","exclusive_physical_gpu_required":true},
+  "teacher": {"source_validation_per_domain":4,"domains":["Rural","Urban"],"same_teacher_as_T04":true,"input_resize_hw":[512,512],"ground_truth_ids":{"ignore":0,"valid":[1,2,3,4,5,6,7]},"prediction_zero":"counts as wrong on valid ground truth; never erase predicted Ignore to improve scores"},
+  "forbidden": ["training","threshold changes","RANSAC changes","test selection","semantic scoring","final reliability labels"]
+}

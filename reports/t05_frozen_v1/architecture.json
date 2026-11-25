@@ -1,0 +1,1160 @@
+{
+  "total_parameters": 37219,
+  "trainable_parameters": 37219,
+  "components_nonoverlapping": {
+    "backbone.adapters.0": 464,
+    "backbone.adapters.1": 176,
+    "backbone.stages.0": 1056,
+    "backbone.stages.1": 3136,
+    "backbone.stages.2": 15552,
+    "backbone.down.0": 848,
+    "backbone.down.1": 2720,
+    "backbone.lateral.0": 320,
+    "backbone.lateral.1": 1152,
+    "backbone.lateral.2": 4352,
+    "backbone.up.0": 576,
+    "backbone.up.1": 2176,
+    "backbone.fuse.0": 528,
+    "backbone.fuse.1": 1568,
+    "backbone.descriptor": 2080,
+    "local.project": 512,
+    "local.log_temperature": 1,
+    "log_temperature": 1,
+    "no_match": 1
+  },
+  "leaves": [
+    {
+      "name": "backbone.adapters.0.0",
+      "type": "Conv2d",
+      "structure": "3, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False",
+      "direct_parameters": 432
+    },
+    {
+      "name": "backbone.adapters.0.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.adapters.0.2",
+      "type": "ReLU",
+      "structure": "",
+      "direct_parameters": 0
+    },
+    {
+      "name": "backbone.adapters.1.0",
+      "type": "Conv2d",
+      "structure": "1, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False",
+      "direct_parameters": 144
+    },
+    {
+      "name": "backbone.adapters.1.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.adapters.1.2",
+      "type": "ReLU",
+      "structure": "",
+      "direct_parameters": 0
+    },
+    {
+      "name": "backbone.stages.0.0.dw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False",
+      "direct_parameters": 144
+    },
+    {
+      "name": "backbone.stages.0.0.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.0.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.0.pw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 256
+    },
+    {
+      "name": "backbone.stages.0.0.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.0.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.1.dw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False",
+      "direct_parameters": 144
+    },
+    {
+      "name": "backbone.stages.0.1.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.1.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.1.pw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 256
+    },
+    {
+      "name": "backbone.stages.0.1.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.0.1.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.stages.1.0.dw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False",
+      "direct_parameters": 288
+    },
+    {
+      "name": "backbone.stages.1.0.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.0.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.0.pw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 1024
+    },
+    {
+      "name": "backbone.stages.1.0.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.0.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.1.dw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False",
+      "direct_parameters": 288
+    },
+    {
+      "name": "backbone.stages.1.1.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.1.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.1.pw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 1024
+    },
+    {
+      "name": "backbone.stages.1.1.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.1.1.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.stages.2.0.dw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False",
+      "direct_parameters": 576
+    },
+    {
+      "name": "backbone.stages.2.0.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.0.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.0.pw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 4096
+    },
+    {
+      "name": "backbone.stages.2.0.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.0.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.1.dw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False",
+      "direct_parameters": 576
+    },
+    {
+      "name": "backbone.stages.2.1.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.1.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.1.pw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 4096
+    },
+    {
+      "name": "backbone.stages.2.1.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.1.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.2.dw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False",
+      "direct_parameters": 576
+    },
+    {
+      "name": "backbone.stages.2.2.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.2.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.2.pw.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 4096
+    },
+    {
+      "name": "backbone.stages.2.2.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.stages.2.2.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.down.0.0.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=16, bias=False",
+      "direct_parameters": 144
+    },
+    {
+      "name": "backbone.down.0.0.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.down.0.0.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.down.0.1.conv",
+      "type": "Conv2d",
+      "structure": "16, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 512
+    },
+    {
+      "name": "backbone.down.0.1.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.down.0.1.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.down.1.0.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=32, bias=False",
+      "direct_parameters": 288
+    },
+    {
+      "name": "backbone.down.1.0.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.down.1.0.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.down.1.1.conv",
+      "type": "Conv2d",
+      "structure": "32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 2048
+    },
+    {
+      "name": "backbone.down.1.1.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.down.1.1.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.lateral.0.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 256
+    },
+    {
+      "name": "backbone.lateral.0.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.lateral.0.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.lateral.1.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 1024
+    },
+    {
+      "name": "backbone.lateral.1.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.lateral.1.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.lateral.2.conv",
+      "type": "Conv2d",
+      "structure": "64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 4096
+    },
+    {
+      "name": "backbone.lateral.2.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.lateral.2.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 128
+    },
+    {
+      "name": "backbone.up.0.conv",
+      "type": "Conv2d",
+      "structure": "32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 512
+    },
+    {
+      "name": "backbone.up.0.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.up.0.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.up.1.conv",
+      "type": "Conv2d",
+      "structure": "64, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 2048
+    },
+    {
+      "name": "backbone.up.1.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.up.1.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.fuse.0.dw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False",
+      "direct_parameters": 144
+    },
+    {
+      "name": "backbone.fuse.0.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.fuse.0.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.fuse.0.pw.conv",
+      "type": "Conv2d",
+      "structure": "16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 256
+    },
+    {
+      "name": "backbone.fuse.0.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.fuse.0.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 32
+    },
+    {
+      "name": "backbone.fuse.1.dw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False",
+      "direct_parameters": 288
+    },
+    {
+      "name": "backbone.fuse.1.dw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.fuse.1.dw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.fuse.1.pw.conv",
+      "type": "Conv2d",
+      "structure": "32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False",
+      "direct_parameters": 1024
+    },
+    {
+      "name": "backbone.fuse.1.pw.bn.norms.0",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.fuse.1.pw.bn.norms.1",
+      "type": "BatchNorm2d",
+      "structure": "32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True",
+      "direct_parameters": 64
+    },
+    {
+      "name": "backbone.descriptor",
+      "type": "Conv2d",
+      "structure": "64, 32, kernel_size=(1, 1), stride=(1, 1)",
+      "direct_parameters": 2080
+    },
+    {
+      "name": "local.project",
+      "type": "Linear",
+      "structure": "in_features=16, out_features=32, bias=False",
+      "direct_parameters": 512
+    }
+  ],
+  "actual_shapes": {
+    "optical_coarse": [
+      1,
+      64,
+      32,
+      32
+    ],
+    "sar_coarse": [
+      1,
+      64,
+      32,
+      32
+    ],
+    "optical_fine": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "sar_fine": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "optical_descriptors": [
+      1,
+      1024,
+      32
+    ],
+    "sar_descriptors": [
+      1,
+      1024,
+      32
+    ],
+    "coarse_correlation": [
+      1,
+      1024,
+      1024
+    ],
+    "row_logits": [
+      1,
+      1024,
+      1025
+    ],
+    "reverse_logits": [
+      1,
+      1024,
+      1025
+    ],
+    "optical_coarse_mask": [
+      1,
+      32,
+      32
+    ],
+    "sar_coarse_mask": [
+      1,
+      32,
+      32
+    ]
+  },
+  "parameter_shapes": {
+    "log_temperature": [],
+    "no_match": [],
+    "backbone.adapters.0.0.weight": [
+      16,
+      3,
+      3,
+      3
+    ],
+    "backbone.adapters.0.1.weight": [
+      16
+    ],
+    "backbone.adapters.0.1.bias": [
+      16
+    ],
+    "backbone.adapters.1.0.weight": [
+      16,
+      1,
+      3,
+      3
+    ],
+    "backbone.adapters.1.1.weight": [
+      16
+    ],
+    "backbone.adapters.1.1.bias": [
+      16
+    ],
+    "backbone.stages.0.0.dw.conv.weight": [
+      16,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.0.0.dw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.stages.0.0.dw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.stages.0.0.dw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.stages.0.0.dw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.stages.0.0.pw.conv.weight": [
+      16,
+      16,
+      1,
+      1
+    ],
+    "backbone.stages.0.0.pw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.stages.0.0.pw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.stages.0.0.pw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.stages.0.0.pw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.stages.0.1.dw.conv.weight": [
+      16,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.0.1.dw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.stages.0.1.dw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.stages.0.1.dw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.stages.0.1.dw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.stages.0.1.pw.conv.weight": [
+      16,
+      16,
+      1,
+      1
+    ],
+    "backbone.stages.0.1.pw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.stages.0.1.pw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.stages.0.1.pw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.stages.0.1.pw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.stages.1.0.dw.conv.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.1.0.dw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.stages.1.0.dw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.stages.1.0.dw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.stages.1.0.dw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.stages.1.0.pw.conv.weight": [
+      32,
+      32,
+      1,
+      1
+    ],
+    "backbone.stages.1.0.pw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.stages.1.0.pw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.stages.1.0.pw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.stages.1.0.pw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.stages.1.1.dw.conv.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.1.1.dw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.stages.1.1.dw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.stages.1.1.dw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.stages.1.1.dw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.stages.1.1.pw.conv.weight": [
+      32,
+      32,
+      1,
+      1
+    ],
+    "backbone.stages.1.1.pw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.stages.1.1.pw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.stages.1.1.pw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.stages.1.1.pw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.stages.2.0.dw.conv.weight": [
+      64,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.2.0.dw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.0.dw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.0.dw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.0.dw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.stages.2.0.pw.conv.weight": [
+      64,
+      64,
+      1,
+      1
+    ],
+    "backbone.stages.2.0.pw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.0.pw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.0.pw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.0.pw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.stages.2.1.dw.conv.weight": [
+      64,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.2.1.dw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.1.dw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.1.dw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.1.dw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.stages.2.1.pw.conv.weight": [
+      64,
+      64,
+      1,
+      1
+    ],
+    "backbone.stages.2.1.pw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.1.pw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.1.pw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.1.pw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.stages.2.2.dw.conv.weight": [
+      64,
+      1,
+      3,
+      3
+    ],
+    "backbone.stages.2.2.dw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.2.dw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.2.dw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.2.dw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.stages.2.2.pw.conv.weight": [
+      64,
+      64,
+      1,
+      1
+    ],
+    "backbone.stages.2.2.pw.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.stages.2.2.pw.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.stages.2.2.pw.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.stages.2.2.pw.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.down.0.0.conv.weight": [
+      16,
+      1,
+      3,
+      3
+    ],
+    "backbone.down.0.0.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.down.0.0.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.down.0.0.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.down.0.0.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.down.0.1.conv.weight": [
+      32,
+      16,
+      1,
+      1
+    ],
+    "backbone.down.0.1.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.down.0.1.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.down.0.1.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.down.0.1.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.down.1.0.conv.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "backbone.down.1.0.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.down.1.0.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.down.1.0.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.down.1.0.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.down.1.1.conv.weight": [
+      64,
+      32,
+      1,
+      1
+    ],
+    "backbone.down.1.1.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.down.1.1.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.down.1.1.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.down.1.1.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.lateral.0.conv.weight": [
+      16,
+      16,
+      1,
+      1
+    ],
+    "backbone.lateral.0.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.lateral.0.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.lateral.0.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.lateral.0.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.lateral.1.conv.weight": [
+      32,
+      32,
+      1,
+      1
+    ],
+    "backbone.lateral.1.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.lateral.1.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.lateral.1.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.lateral.1.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.lateral.2.conv.weight": [
+      64,
+      64,
+      1,
+      1
+    ],
+    "backbone.lateral.2.bn.norms.0.weight": [
+      64
+    ],
+    "backbone.lateral.2.bn.norms.0.bias": [
+      64
+    ],
+    "backbone.lateral.2.bn.norms.1.weight": [
+      64
+    ],
+    "backbone.lateral.2.bn.norms.1.bias": [
+      64
+    ],
+    "backbone.up.0.conv.weight": [
+      16,
+      32,
+      1,
+      1
+    ],
+    "backbone.up.0.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.up.0.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.up.0.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.up.0.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.up.1.conv.weight": [
+      32,
+      64,
+      1,
+      1
+    ],
+    "backbone.up.1.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.up.1.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.up.1.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.up.1.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.fuse.0.dw.conv.weight": [
+      16,
+      1,
+      3,
+      3
+    ],
+    "backbone.fuse.0.dw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.fuse.0.dw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.fuse.0.dw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.fuse.0.dw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.fuse.0.pw.conv.weight": [
+      16,
+      16,
+      1,
+      1
+    ],
+    "backbone.fuse.0.pw.bn.norms.0.weight": [
+      16
+    ],
+    "backbone.fuse.0.pw.bn.norms.0.bias": [
+      16
+    ],
+    "backbone.fuse.0.pw.bn.norms.1.weight": [
+      16
+    ],
+    "backbone.fuse.0.pw.bn.norms.1.bias": [
+      16
+    ],
+    "backbone.fuse.1.dw.conv.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "backbone.fuse.1.dw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.fuse.1.dw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.fuse.1.dw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.fuse.1.dw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.fuse.1.pw.conv.weight": [
+      32,
+      32,
+      1,
+      1
+    ],
+    "backbone.fuse.1.pw.bn.norms.0.weight": [
+      32
+    ],
+    "backbone.fuse.1.pw.bn.norms.0.bias": [
+      32
+    ],
+    "backbone.fuse.1.pw.bn.norms.1.weight": [
+      32
+    ],
+    "backbone.fuse.1.pw.bn.norms.1.bias": [
+      32
+    ],
+    "backbone.descriptor.weight": [
+      32,
+      64,
+      1,
+      1
+    ],
+    "backbone.descriptor.bias": [
+      32
+    ],
+    "local.log_temperature": [],
+    "local.project.weight": [
+      32,
+      16
+    ]
+  },
+  "buffers_numel": 4024,
+  "note": "Shared backbone convolution counted once, both modality BN affine parameter sets counted; running stats are buffers, not parameters",
+  "repr": "B0Full(\n  (backbone): Backbone(\n    (adapters): ModuleList(\n      (0): Sequential(\n        (0): Conv2d(3, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n        (2): ReLU()\n      )\n      (1): Sequential(\n        (0): Conv2d(1, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n        (2): ReLU()\n      )\n    )\n    (stages): ModuleList(\n      (0): ModuleList(\n        (0-1): 2 x DSRes(\n          (dw): ModalConv(\n            (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n          (pw): ModalConv(\n            (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n        )\n      )\n      (1): ModuleList(\n        (0-1): 2 x DSRes(\n          (dw): ModalConv(\n            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n          (pw): ModalConv(\n            (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n        )\n      )\n      (2): ModuleList(\n        (0-2): 3 x DSRes(\n          (dw): ModalConv(\n            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n          (pw): ModalConv(\n            (conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)\n            (bn): ModalBN(\n              (norms): ModuleList(\n                (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n          )\n        )\n      )\n    )\n    (down): ModuleList(\n      (0): ModuleList(\n        (0): ModalConv(\n          (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=16, bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n        (1): ModalConv(\n          (conv): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n      )\n      (1): ModuleList(\n        (0): ModalConv(\n          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=32, bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n        (1): ModalConv(\n          (conv): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n      )\n    )\n    (lateral): ModuleList(\n      (0): ModalConv(\n        (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n        (bn): ModalBN(\n          (norms): ModuleList(\n            (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          )\n        )\n      )\n      (1): ModalConv(\n        (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n        (bn): ModalBN(\n          (norms): ModuleList(\n            (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          )\n        )\n      )\n      (2): ModalConv(\n        (conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)\n        (bn): ModalBN(\n          (norms): ModuleList(\n            (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          )\n        )\n      )\n    )\n    (up): ModuleList(\n      (0): ModalConv(\n        (conv): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n        (bn): ModalBN(\n          (norms): ModuleList(\n            (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          )\n        )\n      )\n      (1): ModalConv(\n        (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n        (bn): ModalBN(\n          (norms): ModuleList(\n            (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          )\n        )\n      )\n    )\n    (fuse): ModuleList(\n      (0): DSRes(\n        (dw): ModalConv(\n          (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n        (pw): ModalConv(\n          (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n      )\n      (1): DSRes(\n        (dw): ModalConv(\n          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n        (pw): ModalConv(\n          (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n          (bn): ModalBN(\n            (norms): ModuleList(\n              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n            )\n          )\n        )\n      )\n    )\n    (descriptor): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))\n  )\n  (local): LocalCorrelation(\n    (project): Linear(in_features=16, out_features=32, bias=False)\n  )\n)",
+  "B0_disabled": [
+    "semantics",
+    "joint_score",
+    "query_selection",
+    "dynamic_budget",
+    "local_cross_attention"
+  ]
+}

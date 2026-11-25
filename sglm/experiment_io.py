@@ -22,7 +22,7 @@ def write_csv(path,rows):
     rows=list(rows)
     fields=list(dict.fromkeys(k for row in rows for k in row))
     with Path(path).open('w',newline='') as stream:
-        writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(stream,fieldnames=fields,lineterminator='\n');writer.writeheader();writer.writerows(rows)
 
 
 def flatten_diagnostic(record):

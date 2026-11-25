@@ -1,0 +1,6670 @@
+{
+  "passed": true,
+  "reference_epoch": 18,
+  "pairs": [
+    {
+      "pair_id": "osdataset/256/val/1",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/2",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/3",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/4",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/5",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/6",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/7",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/8",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/9",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/10",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/11",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/12",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/13",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/14",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/15",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/16",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/17",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/18",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/19",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/20",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/21",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/22",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/23",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/24",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/25",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/26",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/27",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/28",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/29",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/30",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/31",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/32",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/33",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/34",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/35",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/36",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/37",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/38",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/39",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/40",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/41",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/42",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/43",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/44",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/45",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/46",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/47",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/48",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/49",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/50",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/51",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/52",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/53",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/54",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/55",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/56",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/57",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/58",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/59",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/60",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/61",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/62",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/63",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/64",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/65",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/66",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/67",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/68",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/69",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/70",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/71",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/72",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/73",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/74",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/75",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/76",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/77",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/78",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/79",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/80",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/81",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/82",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/83",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/84",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/85",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/86",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/87",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/88",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/89",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/90",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/91",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/92",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/93",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/94",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/95",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/96",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/97",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/98",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/99",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/100",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/101",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/102",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/103",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/104",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/105",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/106",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/107",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/108",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/109",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/110",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/111",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/112",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/113",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/114",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/115",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/116",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/117",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/118",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/119",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/120",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/121",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/122",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/123",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/124",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/125",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/126",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/127",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/128",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/129",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/130",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/131",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/132",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/133",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/134",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/135",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/136",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/137",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/138",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/139",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/140",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/141",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/142",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/143",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/144",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/145",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/146",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/147",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/148",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/149",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/150",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/151",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/152",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/153",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/154",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/155",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/156",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/157",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/158",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/159",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/160",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/161",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/162",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/163",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/164",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/165",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/166",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/167",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/168",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/169",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/170",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/171",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/172",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/173",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/174",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/175",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/176",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/177",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/178",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/179",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/180",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/181",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/182",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/183",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/184",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/185",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/186",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/187",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/188",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/189",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/190",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/191",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/192",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/193",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/194",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/195",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/196",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/197",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/198",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/199",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/200",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/201",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/202",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/203",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/204",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/205",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/206",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/207",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/208",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/209",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/210",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/211",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/212",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/213",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/214",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/215",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/216",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/217",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/218",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/219",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/220",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/221",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/222",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/223",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/224",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/225",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/226",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/227",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/228",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/229",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/230",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/231",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/232",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/233",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/234",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/235",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/236",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/237",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/238",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/239",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/240",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/241",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/242",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/243",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/244",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/245",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/246",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/247",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/248",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/249",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/250",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/251",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/252",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/253",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/254",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/255",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/256",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/257",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/258",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/259",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/260",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/261",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/262",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/263",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/264",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/265",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/266",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/267",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/268",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/269",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/270",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/271",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/272",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/273",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/274",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/275",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/276",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/277",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/278",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/279",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/280",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/281",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/282",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/283",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/284",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/285",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/286",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/287",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/288",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/289",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/290",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/291",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/292",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/293",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/294",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/295",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/296",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/297",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/298",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/299",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/300",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/301",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/302",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/303",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/304",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/305",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/306",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/307",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/308",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/309",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/310",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/311",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/312",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/313",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/314",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/315",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/316",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/317",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/318",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/319",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/320",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/321",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/322",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/323",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/324",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/325",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/326",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/327",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/328",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/329",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/330",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/331",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/332",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/333",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/334",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/335",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/336",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/337",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/338",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/339",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/340",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/341",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/342",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/343",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/344",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/345",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/346",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/347",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/348",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/349",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/350",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/351",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/352",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/353",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/354",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/355",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/356",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/357",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/358",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/359",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/360",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/361",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/362",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/363",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/364",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/365",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/366",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/367",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/368",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/369",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/370",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/371",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/372",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/373",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/374",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/375",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/376",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/377",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/378",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/379",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/380",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/381",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/382",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/383",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/384",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/385",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/386",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/387",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/388",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/389",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/390",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/391",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/392",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/393",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/394",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/395",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/396",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/397",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/398",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/399",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/400",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/401",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/402",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/403",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/404",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/405",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/406",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/407",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/408",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/409",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/410",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/411",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/412",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/413",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/414",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/415",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/416",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/417",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/418",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/419",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/420",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/421",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/422",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/423",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/424",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/425",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/426",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/427",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/428",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/429",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/430",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/431",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/432",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/433",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/434",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/435",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/436",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/437",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/438",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/439",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/440",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/441",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/442",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/443",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/444",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/445",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/446",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/447",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/448",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/449",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/450",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/451",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/452",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/453",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/454",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/455",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/456",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/457",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/458",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/459",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/460",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/461",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/462",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/463",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/464",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/465",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/466",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/467",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/468",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/469",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/470",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/471",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/472",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/473",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/474",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/475",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/476",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/477",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/478",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/479",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/480",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/481",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/482",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/483",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/484",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/485",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/486",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/487",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/488",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/489",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/490",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/491",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/492",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/493",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/494",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/495",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/496",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/497",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/498",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/499",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/500",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/501",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/502",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/503",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/504",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/505",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/506",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/507",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/508",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/509",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/510",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/511",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/512",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/513",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/514",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/515",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/516",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/517",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/518",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/519",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/520",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/521",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/522",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/523",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/524",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/525",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/526",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/527",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/528",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/529",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/530",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/531",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/532",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/533",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/534",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/535",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/536",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/537",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/538",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/539",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/540",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/541",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/542",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/543",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/544",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/545",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/546",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/547",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/548",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/549",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/550",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/551",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/552",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/553",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/554",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/555",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/556",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/557",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/558",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/559",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/560",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/561",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/562",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/563",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/564",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/565",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/566",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/567",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/568",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/569",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/570",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/571",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/572",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/573",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/574",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/575",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/576",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/577",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/578",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/579",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/580",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/581",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/582",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/583",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/584",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/585",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/586",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/587",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/588",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/589",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/590",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/591",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/592",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/593",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/594",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/595",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/596",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/597",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/598",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/599",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/600",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/601",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/602",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/603",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/604",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/605",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/606",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/607",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/608",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/609",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/610",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/611",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/612",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/613",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/614",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/615",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/616",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/617",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/618",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/619",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/620",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/621",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/622",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/623",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/624",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/625",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/626",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/627",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/628",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/629",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/630",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/631",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/632",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/633",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/634",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/635",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/636",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/637",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/638",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/639",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/640",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/641",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/642",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/643",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/644",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/645",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/646",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/647",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/648",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/649",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/650",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/651",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/652",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/653",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/654",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/655",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/656",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/657",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/658",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/659",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/660",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/661",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/662",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/663",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/664",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/665",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/666",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/667",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/668",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/669",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/670",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/671",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/672",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/673",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/674",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/675",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/676",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/677",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/678",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/679",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/680",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/681",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/682",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/683",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/684",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/685",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/686",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/687",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/688",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/689",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/690",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/691",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/692",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/693",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/694",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/695",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/696",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/697",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/698",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/699",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/700",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/701",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/702",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/703",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/704",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/705",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/706",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/707",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/708",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/709",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/710",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/711",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/712",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/713",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/714",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/715",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/716",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/717",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/718",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/719",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/720",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/721",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/722",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/723",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/724",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/725",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/726",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/727",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/728",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/729",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/730",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/731",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/732",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/733",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/734",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/735",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/736",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/737",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/738",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/739",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/740",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/741",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/742",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/743",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/744",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/745",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/746",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/747",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/748",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/749",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/750",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/751",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/752",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/753",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/754",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/755",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/756",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/757",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/758",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/759",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/760",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/761",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/762",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/763",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/764",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/765",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/766",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/767",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/768",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/769",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/770",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/771",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/772",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/773",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/774",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/775",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/776",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/777",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/778",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/779",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/780",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/781",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/782",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/783",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/784",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/785",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/786",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/787",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/788",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/789",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/790",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/791",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/792",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/793",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/794",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/795",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/796",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/797",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/798",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/799",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/800",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/801",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/802",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/803",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/804",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/805",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/806",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/807",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/808",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/809",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/810",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/811",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/812",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/813",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/814",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/815",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/816",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/817",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/818",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/819",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/820",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/821",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/822",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/823",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/824",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/825",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/826",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/827",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/828",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/829",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/830",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/831",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/832",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/833",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/834",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/835",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/836",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/837",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/838",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/839",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/840",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/841",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/842",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/843",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/844",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/845",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/846",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/847",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/848",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/849",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/850",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/851",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/852",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/853",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/854",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/855",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/856",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/857",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/858",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/859",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/860",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/861",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/862",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/863",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/864",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/865",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/866",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/867",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/868",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/869",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/870",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/871",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/872",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/873",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/874",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/875",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/876",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/877",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/878",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/879",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/880",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/881",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/882",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/883",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/884",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/885",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/886",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/887",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/888",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/889",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/890",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/891",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/892",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/893",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/894",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/895",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/896",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/897",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/898",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/899",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/900",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/901",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/902",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/903",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/904",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/905",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/906",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/907",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/908",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/909",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/910",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/911",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/912",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/913",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/914",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/915",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/916",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/917",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/918",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/919",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/920",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/921",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/922",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/923",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/924",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/925",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/926",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/927",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/928",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/929",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/930",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/931",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/932",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/933",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/934",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/935",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/936",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/937",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/938",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/939",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/940",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/941",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/942",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/943",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/944",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/945",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/946",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/947",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/948",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/949",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/950",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/951",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    },
+    {
+      "pair_id": "osdataset/256/val/952",
+      "original_B0_predictions_bitwise_equal": true,
+      "matrix_exact": true,
+      "RMSE_delta_px": 0.0,
+      "success_flags_equal": true
+    }
+  ]
+}

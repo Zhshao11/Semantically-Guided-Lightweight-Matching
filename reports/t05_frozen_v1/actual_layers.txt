@@ -1,0 +1,202 @@
+B0Full(
+  (backbone): Backbone(
+    (adapters): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(3, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+      )
+      (1): Sequential(
+        (0): Conv2d(1, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+      )
+    )
+    (stages): ModuleList(
+      (0): ModuleList(
+        (0-1): 2 x DSRes(
+          (dw): ModalConv(
+            (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+          (pw): ModalConv(
+            (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+        )
+      )
+      (1): ModuleList(
+        (0-1): 2 x DSRes(
+          (dw): ModalConv(
+            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+          (pw): ModalConv(
+            (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+        )
+      )
+      (2): ModuleList(
+        (0-2): 3 x DSRes(
+          (dw): ModalConv(
+            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+          (pw): ModalConv(
+            (conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn): ModalBN(
+              (norms): ModuleList(
+                (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              )
+            )
+          )
+        )
+      )
+    )
+    (down): ModuleList(
+      (0): ModuleList(
+        (0): ModalConv(
+          (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=16, bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+        (1): ModalConv(
+          (conv): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+      )
+      (1): ModuleList(
+        (0): ModalConv(
+          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=32, bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+        (1): ModalConv(
+          (conv): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+      )
+    )
+    (lateral): ModuleList(
+      (0): ModalConv(
+        (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): ModalBN(
+          (norms): ModuleList(
+            (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+      (1): ModalConv(
+        (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): ModalBN(
+          (norms): ModuleList(
+            (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+      (2): ModalConv(
+        (conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): ModalBN(
+          (norms): ModuleList(
+            (0-1): 2 x BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (up): ModuleList(
+      (0): ModalConv(
+        (conv): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): ModalBN(
+          (norms): ModuleList(
+            (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+      (1): ModalConv(
+        (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): ModalBN(
+          (norms): ModuleList(
+            (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (fuse): ModuleList(
+      (0): DSRes(
+        (dw): ModalConv(
+          (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+        (pw): ModalConv(
+          (conv): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+      )
+      (1): DSRes(
+        (dw): ModalConv(
+          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+        (pw): ModalConv(
+          (conv): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): ModalBN(
+            (norms): ModuleList(
+              (0-1): 2 x BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            )
+          )
+        )
+      )
+    )
+    (descriptor): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (local): LocalCorrelation(
+    (project): Linear(in_features=16, out_features=32, bias=False)
+  )
+)
