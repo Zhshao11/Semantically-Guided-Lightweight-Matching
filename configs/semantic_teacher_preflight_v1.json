@@ -1,0 +1,17 @@
+{
+  "protocol": "semantic-teacher-preflight-v1-not-production-cache",
+  "model_id": "wu-pr-gw/segformer-b2-finetuned-with-LoveDA",
+  "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "weights_sha256": "f1117b6abbc21949a0cdffec4aa2806202c9c534fd7de3171129ab10cc182b3b",
+  "expected_hidden_sizes": [64,128,320,512],
+  "expected_depths": [3,4,6,3],
+  "source_classes": ["Ignore","Background","Building","Road","Water","Barren","Forest","Agricultural"],
+  "target_classes": ["Background","Building","Road","Water","Barren","Forest","Agricultural"],
+  "class_mapping": [[0,1,0,0,0,0,0,0],[0,0,1,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,1,0,0,0],[0,0,0,0,0,1,0,0],[0,0,0,0,0,0,1,0],[0,0,0,0,0,0,0,1]],
+  "preprocessing": {"input": "uint8 optical grayscale repeated to RGB", "resize_hw": [512,512], "rescale": 0.00392156862745098, "mean": [0.485,0.456,0.406], "std": [0.229,0.224,0.225], "do_reduce_labels": false, "policy": "saved image processor; no double rescale, no recoloring"},
+  "aggregation": {"policy": "resize logits to native256 -> softmax8 -> masked8x8 area mean -> explicit8to7 mapping", "factor": 8, "min_valid_fraction": 1.0, "min_retained_mass": 0.8, "min_confidence": 0.6},
+  "sample_count": 8,
+  "selection": "first8 fixed T02 training optical images; no validation/test sampling",
+  "license": {"community_checkpoint": "no model card or license file found; unresolved", "upstream_code": "NVIDIA research/evaluation non-commercial license; do not infer checkpoint license from framework", "production_teacher_ready": false},
+  "forbidden_outputs": ["final matchability labels", "reliability labels from early matching checkpoints", "large-scale joint scorer training"]
+}

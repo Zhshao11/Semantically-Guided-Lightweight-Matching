@@ -1,0 +1,417 @@
+{
+  "protocol": "semantic-teacher-preflight-v1-not-production-cache",
+  "model_id": "wu-pr-gw/segformer-b2-finetuned-with-LoveDA",
+  "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "weights_sha256": "f1117b6abbc21949a0cdffec4aa2806202c9c534fd7de3171129ab10cc182b3b",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.44.2",
+  "device": "cuda",
+  "source_classes": [
+    "Ignore",
+    "Background",
+    "Building",
+    "Road",
+    "Water",
+    "Barren",
+    "Forest",
+    "Agricultural"
+  ],
+  "config": {
+    "protocol": "semantic-teacher-preflight-v1-not-production-cache",
+    "model_id": "wu-pr-gw/segformer-b2-finetuned-with-LoveDA",
+    "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+    "weights_sha256": "f1117b6abbc21949a0cdffec4aa2806202c9c534fd7de3171129ab10cc182b3b",
+    "expected_hidden_sizes": [
+      64,
+      128,
+      320,
+      512
+    ],
+    "expected_depths": [
+      3,
+      4,
+      6,
+      3
+    ],
+    "source_classes": [
+      "Ignore",
+      "Background",
+      "Building",
+      "Road",
+      "Water",
+      "Barren",
+      "Forest",
+      "Agricultural"
+    ],
+    "target_classes": [
+      "Background",
+      "Building",
+      "Road",
+      "Water",
+      "Barren",
+      "Forest",
+      "Agricultural"
+    ],
+    "class_mapping": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "preprocessing": {
+      "input": "uint8 optical grayscale repeated to RGB",
+      "resize_hw": [
+        512,
+        512
+      ],
+      "rescale": 0.00392156862745098,
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "do_reduce_labels": false,
+      "policy": "saved image processor; no double rescale, no recoloring"
+    },
+    "aggregation": {
+      "policy": "resize logits to native256 -> softmax8 -> masked8x8 area mean -> explicit8to7 mapping",
+      "factor": 8,
+      "min_valid_fraction": 1.0,
+      "min_retained_mass": 0.8,
+      "min_confidence": 0.6
+    },
+    "sample_count": 8,
+    "selection": "first8 fixed T02 training optical images; no validation/test sampling",
+    "license": {
+      "community_checkpoint": "no model card or license file found; unresolved",
+      "upstream_code": "NVIDIA research/evaluation non-commercial license; do not infer checkpoint license from framework",
+      "production_teacher_ready": false
+    },
+    "forbidden_outputs": [
+      "final matchability labels",
+      "reliability labels from early matching checkpoints",
+      "large-scale joint scorer training"
+    ]
+  },
+  "eval": true,
+  "buffers_unchanged": true,
+  "preprocessing_independently_verified": true,
+  "semantic_GT_available": false,
+  "accuracy_claim": false,
+  "production_teacher_ready": false,
+  "preview_only": true,
+  "matchability_labels_generated": false,
+  "samples": [
+    {
+      "pair_id": "osdataset/256/train/106",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt106.png",
+      "optical_sha256": "bc616371a3592d8086ecbada53f7dbdee41493fe4eb79ab769b41d99ec4b5174",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 1.0,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 3.944697368751804e-07,
+        "Background": 0.9980593323707581,
+        "Building": 0.00010490801651030779,
+        "Road": 0.0013730241917073727,
+        "Water": 7.240046397782862e-05,
+        "Barren": 0.00033535086549818516,
+        "Forest": 9.330925422545988e-06,
+        "Agricultural": 4.520525180851109e-05
+      },
+      "native_max_probability_mean": 0.9980593323707581,
+      "coarse_retained_mass_mean": 0.9999996423721313,
+      "coarse_conditional_confidence_mean": 0.9980597496032715,
+      "mask_fraction": 1.0
+    },
+    {
+      "pair_id": "osdataset/256/train/1081",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1081.png",
+      "optical_sha256": "7b2ca8d80a3643e0d4f0ee9edbe33a039b21731050b30bebd74a250584ea0dc2",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.704925537109375,
+        "Building": 0.0003204345703125,
+        "Road": 0.2947540283203125,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 6.669514732493553e-06,
+        "Background": 0.6632661819458008,
+        "Building": 0.008109234273433685,
+        "Road": 0.32423368096351624,
+        "Water": 4.2973355448339134e-05,
+        "Barren": 0.0005056990776211023,
+        "Forest": 0.0037860972806811333,
+        "Agricultural": 4.949378126184456e-05
+      },
+      "native_max_probability_mean": 0.8673830628395081,
+      "coarse_retained_mass_mean": 0.9999933242797852,
+      "coarse_conditional_confidence_mean": 0.8614873886108398,
+      "mask_fraction": 0.9306640625
+    },
+    {
+      "pair_id": "osdataset/256/train/1182",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1182.png",
+      "optical_sha256": "311cf7334b326164425f5fecb92b39e3d2aaad842fc05fbf947f5de267c6bd6c",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.2866363525390625,
+        "Building": 0.0,
+        "Road": 0.340789794921875,
+        "Water": 0.0,
+        "Barren": 0.3725738525390625,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 1.5146786154218717e-06,
+        "Background": 0.31367412209510803,
+        "Building": 2.862354631361086e-05,
+        "Road": 0.32619497179985046,
+        "Water": 3.128678508801386e-05,
+        "Barren": 0.3593304753303528,
+        "Forest": 0.00011030700989067554,
+        "Agricultural": 0.0006286792922765017
+      },
+      "native_max_probability_mean": 0.8292213678359985,
+      "coarse_retained_mass_mean": 0.9999985098838806,
+      "coarse_conditional_confidence_mean": 0.8190963268280029,
+      "mask_fraction": 0.873046875
+    },
+    {
+      "pair_id": "osdataset/256/train/1262",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1262.png",
+      "optical_sha256": "6add63c7262fe87fd5ee8fa5c7b1a5f14f831464285834c76c75f85f7d362ba8",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.8449859619140625,
+        "Building": 0.0,
+        "Road": 0.01416015625,
+        "Water": 0.0583953857421875,
+        "Barren": 0.0,
+        "Forest": 0.08245849609375,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 8.76324611454038e-06,
+        "Background": 0.8053868412971497,
+        "Building": 0.00670491810888052,
+        "Road": 0.03640473634004593,
+        "Water": 0.058945104479789734,
+        "Barren": 0.0007831740658730268,
+        "Forest": 0.09164734929800034,
+        "Agricultural": 0.00011918782547581941
+      },
+      "native_max_probability_mean": 0.892861008644104,
+      "coarse_retained_mass_mean": 0.9999912977218628,
+      "coarse_conditional_confidence_mean": 0.8883901834487915,
+      "mask_fraction": 0.921875
+    },
+    {
+      "pair_id": "osdataset/256/train/1500",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1500.png",
+      "optical_sha256": "20108dfa5753e976d10fea8f36ec8e062711a77c880dd5b5b9e75ebf4460a690",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.8149261474609375,
+        "Building": 0.001922607421875,
+        "Road": 0.079010009765625,
+        "Water": 0.0072021484375,
+        "Barren": 0.0,
+        "Forest": 0.0969390869140625,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 9.187903742713388e-06,
+        "Background": 0.7616661190986633,
+        "Building": 0.017684468999505043,
+        "Road": 0.08945925533771515,
+        "Water": 0.013448694720864296,
+        "Barren": 0.0016575002809986472,
+        "Forest": 0.11587891727685928,
+        "Agricultural": 0.00019583976245485246
+      },
+      "native_max_probability_mean": 0.8747441172599792,
+      "coarse_retained_mass_mean": 0.9999908208847046,
+      "coarse_conditional_confidence_mean": 0.866131067276001,
+      "mask_fraction": 0.9365234375
+    },
+    {
+      "pair_id": "osdataset/256/train/1580",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1580.png",
+      "optical_sha256": "41d39eb5df609ca156c0ef8eabce42aa6ab2b58c1dbf602c4ced0c2715528153",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.35400390625,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.64599609375
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.890748646677821e-06,
+        "Background": 0.3549383878707886,
+        "Building": 0.0011941412230953574,
+        "Road": 0.0005637942813336849,
+        "Water": 3.924034535884857e-05,
+        "Barren": 0.000257016479736194,
+        "Forest": 0.0049051642417907715,
+        "Agricultural": 0.6380993723869324
+      },
+      "native_max_probability_mean": 0.9360677599906921,
+      "coarse_retained_mass_mean": 0.9999971389770508,
+      "coarse_conditional_confidence_mean": 0.9327776432037354,
+      "mask_fraction": 0.9599609375
+    },
+    {
+      "pair_id": "osdataset/256/train/1963",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1963.png",
+      "optical_sha256": "bced26acfe12d89f34b8a4ffaccde4d0117a7d68c8c849b2375ed558d3cb0f9a",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.6888885498046875,
+        "Building": 0.3047637939453125,
+        "Road": 0.00634765625,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.0
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.5496065063634887e-05,
+        "Background": 0.6614800095558167,
+        "Building": 0.3141137957572937,
+        "Road": 0.020071834325790405,
+        "Water": 4.034613084513694e-05,
+        "Barren": 0.0013787492644041777,
+        "Forest": 0.002820611232891679,
+        "Agricultural": 6.915113772265613e-05
+      },
+      "native_max_probability_mean": 0.8808044195175171,
+      "coarse_retained_mass_mean": 0.9999744892120361,
+      "coarse_conditional_confidence_mean": 0.872075617313385,
+      "mask_fraction": 0.923828125
+    },
+    {
+      "pair_id": "osdataset/256/train/2299",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt2299.png",
+      "optical_sha256": "041661602d61506870a40b9f5c6e3d3f710d13f3b886ed87036e6a4c5219e77a",
+      "raw_argmax_fraction": {
+        "Ignore": 0.0,
+        "Background": 0.198089599609375,
+        "Building": 0.0,
+        "Road": 0.0,
+        "Water": 0.0,
+        "Barren": 0.0,
+        "Forest": 0.0,
+        "Agricultural": 0.801910400390625
+      },
+      "raw_mean_probability": {
+        "Ignore": 2.273686732223723e-06,
+        "Background": 0.19273297488689423,
+        "Building": 0.0007846145308576524,
+        "Road": 0.00035021337680518627,
+        "Water": 0.0008358033373951912,
+        "Barren": 0.0004494194290600717,
+        "Forest": 0.000919784011784941,
+        "Agricultural": 0.8039249181747437
+      },
+      "native_max_probability_mean": 0.9439546465873718,
+      "coarse_retained_mass_mean": 0.9999977350234985,
+      "coarse_conditional_confidence_mean": 0.9414236545562744,
+      "mask_fraction": 0.96484375
+    }
+  ]
+}

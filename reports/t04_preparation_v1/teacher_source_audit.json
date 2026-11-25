@@ -1,0 +1,134 @@
+{
+  "model_id": "wu-pr-gw/segformer-b2-finetuned-with-LoveDA",
+  "revision": "5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "metadata_url": "https://huggingface.co/api/models/wu-pr-gw/segformer-b2-finetuned-with-LoveDA/revision/5c74556c08bebb5f45f50b6f78f61a62c5d220c7",
+  "checkpoint_bytes": 109548221,
+  "weights_sha256": "f1117b6abbc21949a0cdffec4aa2806202c9c534fd7de3171129ab10cc182b3b",
+  "config": {
+    "_name_or_path": "./checkpoints/segformer-finetuned-with-LoveDA-maxIoU0.54-20230709/checkpoint-17616",
+    "architectures": [
+      "SegformerForSemanticSegmentation"
+    ],
+    "attention_probs_dropout_prob": 0.0,
+    "classifier_dropout_prob": 0.1,
+    "decoder_hidden_size": 768,
+    "depths": [
+      3,
+      4,
+      6,
+      3
+    ],
+    "downsampling_rates": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "drop_path_rate": 0.1,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.0,
+    "hidden_sizes": [
+      64,
+      128,
+      320,
+      512
+    ],
+    "id2label": {
+      "0": "Ignore",
+      "1": "Background",
+      "2": "Building",
+      "3": "Road",
+      "4": "Water",
+      "5": "Barren",
+      "6": "Forest",
+      "7": "Agricultural"
+    },
+    "image_size": 224,
+    "initializer_range": 0.02,
+    "label2id": {
+      "Agricultural": 7,
+      "Background": 1,
+      "Barren": 5,
+      "Building": 2,
+      "Forest": 6,
+      "Ignore": 0,
+      "Road": 3,
+      "Water": 4
+    },
+    "layer_norm_eps": 1e-06,
+    "mlp_ratios": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "model_type": "segformer",
+    "num_attention_heads": [
+      1,
+      2,
+      5,
+      8
+    ],
+    "num_channels": 3,
+    "num_encoder_blocks": 4,
+    "patch_sizes": [
+      7,
+      3,
+      3,
+      3
+    ],
+    "reshape_last_stage": true,
+    "semantic_loss_ignore_index": 255,
+    "sr_ratios": [
+      8,
+      4,
+      2,
+      1
+    ],
+    "strides": [
+      4,
+      2,
+      2,
+      2
+    ],
+    "torch_dtype": "float32",
+    "transformers_version": "4.30.2"
+  },
+  "preprocessor": {
+    "do_normalize": true,
+    "do_reduce_labels": false,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "SegformerFeatureExtractor",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resample": 2,
+    "rescale_factor": 0.00392156862745098,
+    "size": {
+      "height": 512,
+      "width": 512
+    }
+  },
+  "upstream_license_url": "https://github.com/NVlabs/SegFormer/blob/master/LICENSE",
+  "upstream_license_text": "NVIDIA Source Code License for SegFormer\n\n1. Definitions\n\n“Licensor” means any person or entity that distributes its Work.\n\n“Software” means the original work of authorship made available under this License.\n\n“Work” means the Software and any additions to or derivative works of the Software that are made available under\nthis License.\n\nThe terms “reproduce,” “reproduction,” “derivative works,” and “distribution” have the meaning as provided under\nU.S. copyright law; provided, however, that for the purposes of this License, derivative works shall not include\nworks that remain separable from, or merely link (or bind by name) to the interfaces of, the Work.\n\nWorks, including the Software, are “made available” under this License by including in or with the Work either\n(a) a copyright notice referencing the applicability of this License to the Work, or (b) a copy of this License.\n\n2. License Grant\n\n2.1 Copyright Grant. Subject to the terms and conditions of this License, each Licensor grants to you a perpetual,\nworldwide, non-exclusive, royalty-free, copyright license to reproduce, prepare derivative works of, publicly\ndisplay, publicly perform, sublicense and distribute its Work and any resulting derivative works in any form.\n\n3. Limitations\n\n3.1 Redistribution. You may reproduce or distribute the Work only if (a) you do so under this License, (b) you\ninclude a complete copy of this License with your distribution, and (c) you retain without modification any\ncopyright, patent, trademark, or attribution notices that are present in the Work.\n\n3.2 Derivative Works. You may specify that additional or different terms apply to the use, reproduction, and\ndistribution of your derivative works of the Work (“Your Terms”) only if (a) Your Terms provide that the use\nlimitation in Section 3.3 applies to your derivative works, and (b) you identify the specific derivative works\nthat are subject to Your Terms. Notwithstanding Your Terms, this License (including the redistribution\nrequirements in Section 3.1) will continue to apply to the Work itself.\n\n3.3 Use Limitation. The Work and any derivative works thereof only may be used or intended for use\nnon-commercially. Notwithstanding the foregoing, NVIDIA and its affiliates may use the Work and any derivative\nworks commercially. As used herein, “non-commercially” means for research or evaluation purposes only.\n\n3.4 Patent Claims. If you bring or threaten to bring a patent claim against any Licensor (including any claim,\ncross-claim or counterclaim in a lawsuit) to enforce any patents that you allege are infringed by any Work, then\nyour rights under this License from such Licensor (including the grant in Section 2.1) will terminate immediately.\n\n3.5 Trademarks. This License does not grant any rights to use any Licensor’s or its affiliates’ names, logos,\nor trademarks, except as necessary to reproduce the notices described in this License.\n\n3.6 Termination. If you violate any term of this License, then your rights under this License (including the\ngrant in Section 2.1) will terminate immediately.\n\n4. Disclaimer of Warranty.\n\nTHE WORK IS PROVIDED “AS IS” WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING\nWARRANTIES OR CONDITIONS OF M ERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT. YOU\nBEAR THE RISK OF UNDERTAKING ANY ACTIVITIES UNDER THIS LICENSE.\n\n5. Limitation of Liability.\n\nEXCEPT AS PROHIBITED BY APPLICABLE LAW, IN NO EVENT AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING\nNEGLIGENCE), CONTRACT, OR OTHERWISE SHALL ANY LICENSOR BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY DIRECT,\nINDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR RELATED TO THIS LICENSE, THE USE OR\nINABILITY TO USE THE WORK (INCLUDING BUT NOT LIMITED TO LOSS OF GOODWILL, BUSINESS INTERRUPTION, LOST PROFITS OR\nDATA, COMPUTER FAILURE OR MALFUNCTION, OR ANY OTHER COMM ERCIAL DAMAGES OR LOSSES), EVEN IF THE LICENSOR HAS BEEN\nADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n",
+  "class_reference": "https://github.com/Junjue-Wang/LoveDA/blob/master/README.md",
+  "checkpoint_license": "Unresolved: no model card/README/license found at pinned revision",
+  "community_checkpoint_quality": "Unverified; model-name maxIoU0.54 is a claim, not a measured OSdataset score",
+  "LoveDA_dataset_license": {
+    "record": "https://zenodo.org/records/5706578",
+    "doi": "10.5281/zenodo.5706578",
+    "title": "LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "note": "Dataset CC-BY-4.0 does not settle the community checkpoint license"
+  }
+}

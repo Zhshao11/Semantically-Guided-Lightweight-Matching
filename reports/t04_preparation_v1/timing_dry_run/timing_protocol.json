@@ -1,0 +1,29 @@
+{
+  "mode": "dry-run",
+  "latency_measured": false,
+  "arguments": {
+    "checkpoint": "runs/t03_main_lr1e3_v1/best.pt",
+    "plan": "reports/t03_setup_v1/full_data_plan.json",
+    "root": "/mnt/sda/zhushihao/data/vis_sar/OSDataset2.0",
+    "output": "reports/t04_preparation_v1/timing_dry_run",
+    "split": "val",
+    "pairs": 16,
+    "gpu_uuid": null,
+    "execute": false,
+    "warmup": 5,
+    "repeats": 20
+  },
+  "protocol": "batch1 BF16 eval; fixed saved transforms; exclusive GPU UUID; synchronize each stage",
+  "stages": [
+    "data_read_decode_warp",
+    "host_to_device",
+    "optical_encode",
+    "sar_encode",
+    "coarse_correlation_and_decode",
+    "local_refinement",
+    "correspondence_to_cpu",
+    "affine_RANSAC"
+  ],
+  "end_to_end": "separate uninstrumented predict + CPU RANSAC; excludes data/transfer",
+  "required": "Stable candidate checkpoint, pinned comparison adapters/protocol, unused physical GPU"
+}

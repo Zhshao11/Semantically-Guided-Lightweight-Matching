@@ -1,0 +1,227 @@
+{
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.35",
+  "executable": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.2.6",
+    "opencv-python": "5.0.0.93",
+    "kornia": "0.8.2",
+    "timm": "1.0.30",
+    "mamba-ssm": null,
+    "causal-conv1d": null,
+    "triton": "3.6.0",
+    "yacs": "0.1.8",
+    "einops": "0.8.2",
+    "pytorch-lightning": "2.6.6"
+  },
+  "repositories": [
+    {
+      "name": "UltraMatch",
+      "path": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/external_baselines_preflight/UltraMatch",
+      "exists": true,
+      "pinned_snapshot": {
+        "repo": "JiajunLe/UltraMatch",
+        "commit": "90d8edb1782453eaea49fff506579da810daee29",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/LICENSE"
+          },
+          {
+            "path": "environment.yaml",
+            "sha256": "30717ebbfa105f3563e71cc00ea006b645eddca10edb1d464024281cf294153a",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/environment.yaml"
+          },
+          {
+            "path": "requirements.txt",
+            "sha256": "7fac751ba9934390de5c679056afecf582cb91d86891cfffa40be6309c615cb1",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/requirements.txt"
+          },
+          {
+            "path": "src/__init__.py",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/__init__.py"
+          },
+          {
+            "path": "src/config/default.py",
+            "sha256": "cc44a536a3d24fb1159fb7077524ba9821d65e945ac34ae7918914b057591e03",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/config/default.py"
+          },
+          {
+            "path": "src/datasets/megadepth.py",
+            "sha256": "f1bbad6de1d15e228cbb481c14dfd01afe8f59240e91b40cb3e562458e5c7ca3",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/datasets/megadepth.py"
+          },
+          {
+            "path": "src/datasets/sampler.py",
+            "sha256": "17b075beab8962ce3abff3ce3535543a701b3d41ab47c3e2e6ee00186d3eb4b2",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/datasets/sampler.py"
+          },
+          {
+            "path": "src/datasets/scannet.py",
+            "sha256": "b25770c98e737a30671af0d347984f3cdb2d982a706c05036e560419957f22bf",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/datasets/scannet.py"
+          },
+          {
+            "path": "src/lightning/data.py",
+            "sha256": "5827466df53b63e19a46bd33cc623e5fee3a9ec2821ba88568d4b6080a68dc54",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/lightning/data.py"
+          },
+          {
+            "path": "src/lightning/lightning_ultramatch.py",
+            "sha256": "9e1ccf22c880519ac1cb1a1490a9afd5825b85cb1f7c3e6339a97a83185c3d40",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/lightning/lightning_ultramatch.py"
+          },
+          {
+            "path": "src/losses/ultramatch_loss.py",
+            "sha256": "337e196f104ed575ab0f440069f94c865ef5ec8de8c40e0bafe7542f7fba0350",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/losses/ultramatch_loss.py"
+          },
+          {
+            "path": "src/optimizers/__init__.py",
+            "sha256": "6a1f028232132175f600f80632ac1c54a83848a3ff5c94b23380262db07f3d20",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/optimizers/__init__.py"
+          },
+          {
+            "path": "src/ultramatch/__init__.py",
+            "sha256": "c7a7ae0689a7a0e455bdcbff1bf738ff0c7a11a09a788e4bc50c6540bd775da5",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/__init__.py"
+          },
+          {
+            "path": "src/ultramatch/backbone/resnet.py",
+            "sha256": "ee61f4cfb83cf322e67657f7d9d40525c8298e0174027eede9dd571f102b44d6",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/backbone/resnet.py"
+          },
+          {
+            "path": "src/ultramatch/head/block_router.py",
+            "sha256": "58adbfc8fb7585e2da818c92b262302f3606486c9a91cd9d26cd4f0cc1814bb5",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/head/block_router.py"
+          },
+          {
+            "path": "src/ultramatch/head/coarse_matching.py",
+            "sha256": "72feb5759fec177409b278afc713d743eb48d5a2fc30175e6972526928f96642",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/head/coarse_matching.py"
+          },
+          {
+            "path": "src/ultramatch/head/fine_matching.py",
+            "sha256": "123b99c8d921a7b41dca23e2876c65473786f71932e1c6a9247835c4b3a803ba",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/head/fine_matching.py"
+          },
+          {
+            "path": "src/ultramatch/head/fused_sparse.py",
+            "sha256": "af9403cad0b77a1b09485f99aa971d0778e6f1ff9e59e078db157f58cdda729e",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/head/fused_sparse.py"
+          },
+          {
+            "path": "src/ultramatch/neck/__init__.py",
+            "sha256": "83b57741545672e825442732c266bff4133322f2f8cbfa2acd21cf207984abf9",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/neck/__init__.py"
+          },
+          {
+            "path": "src/ultramatch/neck/loftr_module/__init__.py",
+            "sha256": "1232122e580c665ef17f44f68a920884c3b2279d36d68eeb2b388e7d06d88df6",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/neck/loftr_module/__init__.py"
+          },
+          {
+            "path": "src/ultramatch/neck/loftr_module/transformer.py",
+            "sha256": "b1fdd7b11d4f8e1b38eddbebcddf3ef6415ced373dd39103b589b1c77ff60a26",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/neck/loftr_module/transformer.py"
+          },
+          {
+            "path": "src/ultramatch/neck/neck.py",
+            "sha256": "7f156177734742f6680abba6931f817a83010d5a7967eeca921e2127233981d0",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/neck/neck.py"
+          },
+          {
+            "path": "src/ultramatch/ultramatch.py",
+            "sha256": "3fa19f826614216888e5c818116d9853425b7669b02caec5722e9334fcc99bcb",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/ultramatch.py"
+          },
+          {
+            "path": "src/ultramatch/utils/geometry.py",
+            "sha256": "54d949ca4c470667ec02505fb4e5826e5c9d39cb11bfe84ba87cf9c4156a754f",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/utils/geometry.py"
+          },
+          {
+            "path": "src/ultramatch/utils/reparameter.py",
+            "sha256": "e19cdcdd41d6a241347d16a6dccb3a574c2f5a1ee41499ada5115245db6c373e",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/utils/reparameter.py"
+          },
+          {
+            "path": "src/ultramatch/utils/supervision.py",
+            "sha256": "fe398b2771871f9ffd21a79094969034ed6831cf08b7dd77e9b3b165de78c638",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/ultramatch/utils/supervision.py"
+          },
+          {
+            "path": "src/utils/checkpoint.py",
+            "sha256": "bfadb50a552349f5b86dfedb190e878b3b614a5cac740c8ae3be5c29f93385c0",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/checkpoint.py"
+          },
+          {
+            "path": "src/utils/comm.py",
+            "sha256": "a2ede27c9591438852866114411ea264b2bd40b94101bba8f2898b329cf72201",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/comm.py"
+          },
+          {
+            "path": "src/utils/dataloader.py",
+            "sha256": "d7b416e0d3bf8a035d98ef7d2afcb23d9eb6beec27e9e018de559765ba200427",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/dataloader.py"
+          },
+          {
+            "path": "src/utils/dataset.py",
+            "sha256": "d4985d44b57fcbd8d745a2119ecb8015bc0d0812699f5166944a7a62cc467d45",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/dataset.py"
+          },
+          {
+            "path": "src/utils/metrics.py",
+            "sha256": "a491babdb50c847c88da25e78965dcfd48275780f51a0932e369d244001a264a",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/metrics.py"
+          },
+          {
+            "path": "src/utils/misc.py",
+            "sha256": "215212f2642ac0c1da7787cc06e858b65caa59d768415fbbdc57a15e9244ee44",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/misc.py"
+          },
+          {
+            "path": "src/utils/plotting.py",
+            "sha256": "a3e39f2d8bdd299477bd80c417931b0be2fbf18bbd64ef9ed1dc36caf22985e0",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/plotting.py"
+          },
+          {
+            "path": "src/utils/profiler.py",
+            "sha256": "8976c06036894fb1ca35821c41ee3756f31a34284aaf88bf07f7f4d19946f282",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/profiler.py"
+          },
+          {
+            "path": "src/utils/warppers.py",
+            "sha256": "578aebe53e0eac4dfd6a9e198192b7ccbb5c8ceec026db4b416a71cf007eb2cc",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/warppers.py"
+          },
+          {
+            "path": "src/utils/warppers_utils.py",
+            "sha256": "6a388d34b3929a19d402b1fbb3764303e79c304a7fdf7f85f7d486fce2019d98",
+            "url": "https://raw.githubusercontent.com/JiajunLe/UltraMatch/90d8edb1782453eaea49fff506579da810daee29/src/utils/warppers_utils.py"
+          }
+        ]
+      },
+      "snapshot_hashes_verified": true,
+      "probe": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/external_baselines_preflight/UltraMatch/src/ultramatch/__init__.py\", line 1, in <module>\n    from .ultramatch import UltraMatch\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/external_baselines_preflight/UltraMatch/src/ultramatch/ultramatch.py\", line 4, in <module>\n    from ..utils.misc import detect_NaN\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/external_baselines_preflight/UltraMatch/src/utils/misc.py\", line 10, in <module>\n    from lightning.pytorch.utilities import rank_zero_only\nModuleNotFoundError: No module named 'lightning'\n"
+      }
+    }
+  ],
+  "hardware_inventory": {
+    "returncode": 0,
+    "stdout": "0, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n1, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n2, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n3, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n4, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n5, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n6, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n7, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n",
+    "stderr": ""
+  },
+  "CUDA_used": false,
+  "installations_performed": false,
+  "formal_benchmark": false,
+  "limitation": "CPU import/smoke is not a trained accuracy or CUDA kernel compatibility result"
+}

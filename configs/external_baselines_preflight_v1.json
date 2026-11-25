@@ -1,0 +1,316 @@
+{
+  "protocol": "external-baselines-preflight-v1",
+  "audited_at": "2026-11-25T23:40:20.815296+08:00",
+  "search_policy": "Direct arXiv submission-date search plus official repositories; no SourceMux",
+  "recent_papers": [
+    {
+      "id": "http://arxiv.org/abs/2611.03932v2",
+      "title": "CoReMatch: Recurrent Continuous Coordinate Refinement for Real-Time Robotic Feature Matching",
+      "published": "2026-11-02T20:36:30Z",
+      "updated": "2026-11-20T21:58:28Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.36980v1",
+      "title": "UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching",
+      "published": "2026-09-29T08:15:55Z",
+      "updated": "2026-09-29T08:15:55Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.03423v2",
+      "title": "SGFormer: Structure-Guided Transformer for Robust Local Feature Matching",
+      "published": "2026-08-04T10:14:16Z",
+      "updated": "2026-08-30T04:49:00Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.03437v1",
+      "title": "JamMa: Ultra-lightweight Local Feature Matching with Joint Mamba",
+      "published": "2025-03-05T12:12:51Z",
+      "updated": "2025-03-05T12:12:51Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2412.19412v2",
+      "title": "MINIMA: Modality Invariant Image Matching",
+      "published": "2024-12-27T02:39:50Z",
+      "updated": "2025-03-29T09:04:13Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2404.19174v1",
+      "title": "XFeat: Accelerated Features for Lightweight Image Matching",
+      "published": "2024-04-30T00:37:55Z",
+      "updated": "2024-04-30T00:37:55Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2404.09692v1",
+      "title": "XoFTR: Cross-modal Feature Matching Transformer",
+      "published": "2024-04-15T11:46:24Z",
+      "updated": "2024-04-15T11:46:24Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2403.04765v2",
+      "title": "Efficient LoFTR: Semi-Dense Local Feature Matching with Sparse-Like Speed",
+      "published": "2024-03-07T18:58:40Z",
+      "updated": "2024-03-11T23:42:14Z"
+    }
+  ],
+  "recent_code_link_checks": [
+    {
+      "id": "2611.03932",
+      "github_links": []
+    },
+    {
+      "id": "2608.03423",
+      "github_links": []
+    }
+  ],
+  "baselines": [
+    {
+      "name": "UltraMatch",
+      "repository": "https://github.com/JiajunLe/UltraMatch",
+      "commit": "90d8edb1782453eaea49fff506579da810daee29",
+      "paper": {
+        "id": "http://arxiv.org/abs/2609.36980v1",
+        "title": "UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching",
+        "published": "2026-09-29T08:15:55Z",
+        "updated": "2026-09-29T08:15:55Z"
+      },
+      "license_at_revision": "Apache-2.0",
+      "requirements": {
+        "environment.yaml": "name: ultramatch\nchannels:\n  - conda-forge\ndependencies:\n  - python=3.8\n  - pip\n",
+        "requirements.txt": "# Install the CUDA build of PyTorch first (see README.md).\ntorch==2.0.0\nlightning==2.3.3\npytorch-lightning==2.3.3\ntorchmetrics==1.4.0.post0\ntensorboard==2.14.0\n\nnumpy==1.24.4\nopencv-python-headless==4.4.0.46\neinops==0.3.0\nkornia==0.6.8\nloguru==0.5.3\nyacs==0.1.8\ntqdm==4.67.1\nh5py==3.1.0\njoblib==1.4.2\nmatplotlib==3.7.5\njupyterlab==4.3.6\n"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/JiajunLe/UltraMatch/blob/90d8edb1782453eaea49fff506579da810daee29/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/JiajunLe/UltraMatch/blob/90d8edb1782453eaea49fff506579da810daee29/README.md",
+          "sha256": "b5b114725df5309fbdf9c125255fe721e132f755ad08c1be1bd8076ceec9a593"
+        },
+        {
+          "path": "environment.yaml",
+          "url": "https://github.com/JiajunLe/UltraMatch/blob/90d8edb1782453eaea49fff506579da810daee29/environment.yaml",
+          "sha256": "30717ebbfa105f3563e71cc00ea006b645eddca10edb1d464024281cf294153a"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/JiajunLe/UltraMatch/blob/90d8edb1782453eaea49fff506579da810daee29/requirements.txt",
+          "sha256": "7fac751ba9934390de5c679056afecf582cb91d86891cfffa40be6309c615cb1"
+        }
+      ],
+      "readiness": "Pinned source snapshot checked; CPU import blocked by missing lightning; no weights/forward benchmark",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    },
+    {
+      "name": "JamMa",
+      "repository": "https://github.com/leoluxxx/JamMa",
+      "commit": "24acce206cdd09f60465459d7112c83f09c75f15",
+      "paper": {
+        "id": "http://arxiv.org/abs/2503.03437v1",
+        "title": "JamMa: Ultra-lightweight Local Feature Matching with Joint Mamba",
+        "published": "2025-03-05T12:12:51Z",
+        "updated": "2025-03-05T12:12:51Z"
+      },
+      "license_at_revision": "MIT",
+      "requirements": {
+        "environment.yaml": "name: jamma\nchannels:\n  - pytorch\n  - nvidia\ndependencies:\n  - python=3.8\n  - pip",
+        "requirements.txt": "torch==2.0.1\nopencv-contrib-python==3.4.8.29\nopencv-python==4.4.0.46\npytorch-lightning==1.3.5\nabsl-py==2.1.0\naiohappyeyeballs==2.4.4\naiohttp==3.10.11\naiosignal==1.3.1\nalbucore==0.0.17\nalbumentations==0.5.1\nannotated-types==0.7.0\nasync-timeout==5.0.1\nattrs==25.1.0\ncachetools==5.5.2\ncertifi==2025.1.31\ncharset-normalizer==3.4.1\ncmake==3.31.6\ncontourpy==1.1.1\ncycler==0.12.1\neinops==0.8.1\neval_type_backport==0.2.2\nfilelock==3.16.1\nfonttools==4.56.0\nfrozenlist==1.5.0\nfsspec==2025.2.0\nfuture==1.0.0\ngoogle-auth==2.38.0\ngoogle-auth-oauthlib==1.0.0\ngrpcio==1.70.0\nh5py==3.11.0\nhuggingface-hub==0.29.1\nidna==3.10\nimageio==2.35.1\nimgaug==0.4.0\nimportlib_metadata==8.5.0\nimportlib_resources==6.4.5\nJinja2==3.1.5\njoblib==1.4.2\nkiwisolver==1.4.7\nkornia==0.7.0\nlazy_loader==0.4\nlightning-utilities==0.11.9\nlit==18.1.8\nloguru==0.7.3\nMarkdown==3.7\nMarkupSafe==2.1.5\nmatplotlib==3.7.5\nmpmath==1.3.0\nmultidict==6.1.0\nnetworkx==3.1\nninja==1.11.1.3\nnumpy==1.24.4\noauthlib==3.2.2\npackaging==24.2\npillow==10.4.0\nposelib==2.0.4\npropcache==0.2.0\nprotobuf==5.29.3\npyasn1==0.6.1\npyasn1_modules==0.4.1\npydantic==2.10.6\npydantic_core==2.27.2\npyDeprecate==0.3.0\npyparsing==3.1.4\npython-dateutil==2.9.0.post0\nPyWavelets==1.4.1\nPyYAML==5.4.1\nregex==2024.11.6\nrequests==2.32.3\nrequests-oauthlib==2.0.0\nrsa==4.9\nsafetensors==0.5.3\nscikit-image==0.21.0\nscipy==1.10.1\nshapely==2.0.7\nsix==1.17.0\nsympy==1.13.3\ntensorboard==2.14.0\ntensorboard-data-server==0.7.2\nthop==0.1.1.post2209072238\ntifffile==2023.7.10\ntimm==1.0.15\ntokenizers==0.20.3\ntorchmetrics==0.6.0\ntorchvision==0.15.2\ntqdm==4.67.1\ntransformers==4.46.3\ntriton==2.0.0\ntyping_extensions==4.12.2\nurllib3==2.2.3\nWerkzeug==3.0.6\nyacs==0.1.8\nyarl==1.15.2\nzipp==3.20.2\n"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/leoluxxx/JamMa/blob/24acce206cdd09f60465459d7112c83f09c75f15/LICENSE",
+          "sha256": "55bfe9ecab330a678b537d150ff0e84aaec7a43f18876ec6bda93f90a1d6c858"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/leoluxxx/JamMa/blob/24acce206cdd09f60465459d7112c83f09c75f15/README.md",
+          "sha256": "a3cbb2dcc46bad3d92a1e3ad14b754d0044d64e3c439db93957db8a7d4b5910f"
+        },
+        {
+          "path": "environment.yaml",
+          "url": "https://github.com/leoluxxx/JamMa/blob/24acce206cdd09f60465459d7112c83f09c75f15/environment.yaml",
+          "sha256": "4b470673f72698baf84561e2c0c0df3099a9b593e4e241677b2665a299b6b1a1"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/leoluxxx/JamMa/blob/24acce206cdd09f60465459d7112c83f09c75f15/requirements.txt",
+          "sha256": "9debc76eff55bf1a2a08d3fcc15fae0bcd8de5590b3bb1bba6bf017ed92ee801"
+        }
+      ],
+      "readiness": "Official clean local checkout; import blocked by missing mamba_ssm",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    },
+    {
+      "name": "MINIMA",
+      "repository": "https://github.com/LSXI7/MINIMA",
+      "commit": "796e7721174f9f829b79b3702bf8c2ae9a3d447a",
+      "paper": {
+        "id": "http://arxiv.org/abs/2412.19412v2",
+        "title": "MINIMA: Modality Invariant Image Matching",
+        "published": "2024-12-27T02:39:50Z",
+        "updated": "2025-03-29T09:04:13Z"
+      },
+      "license_at_revision": "Apache-2.0",
+      "requirements": {
+        "environment.yaml": "name: minima\nchannels:\n  # - https://dx-mirrors.sensetime.com/anaconda/cloud/pytorch\n  - pytorch\n  - nvidia\n  - conda-forge\n  - defaults\ndependencies:\n  - python=3.8\n  - pytorch=2.0.1\n  - torchvision=0.15.2\n  - torchaudio=2.0.2\n  - pytorch-cuda=11.7\n  - pip\n  - pip:\n      - -r requirements.txt",
+        "requirements.txt": "numpy==1.23.1\nopencv_python==4.5.1.48\n# albumentations==0.5.1 --no-binary=imgaug,albumentations\n# ray>=1.0.1\neinops==0.3.0\nkornia==0.6.11\nloguru==0.5.3\nyacs>=0.1.8\ntqdm\nyq\n# autopep8\n# pylint\n# ipython\njupyterlab\nmatplotlib==3.7.5\n# h5py==3.1.0\npytorch-lightning==1.3.5\nscipy==1.10.1\n# torchmetrics==0.6.0  # version problem: https://github.com/NVIDIA/DeepLearningExamples/issues/1113#issuecomment-1102969461\njoblib>=1.0.1\n# wandb"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/LSXI7/MINIMA/blob/796e7721174f9f829b79b3702bf8c2ae9a3d447a/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/LSXI7/MINIMA/blob/796e7721174f9f829b79b3702bf8c2ae9a3d447a/README.md",
+          "sha256": "846715633ad2d186974cf08d03255589ebacd995bd3617b442066067af6868aa"
+        },
+        {
+          "path": "environment.yaml",
+          "url": "https://github.com/LSXI7/MINIMA/blob/796e7721174f9f829b79b3702bf8c2ae9a3d447a/environment.yaml",
+          "sha256": "235682b4895340b5b009c86eb47db441af85495abd89c8d1c339d42bb258db16"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/LSXI7/MINIMA/blob/796e7721174f9f829b79b3702bf8c2ae9a3d447a/requirements.txt",
+          "sha256": "73fb1e0aebc4d7800845a8671d73fca0a9865e0d0eaeb1603bc74cf48cc9b0ab"
+        }
+      ],
+      "readiness": "Official source/config/requirements audited; no local environment or forward verified",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    },
+    {
+      "name": "XFeat",
+      "repository": "https://github.com/verlab/accelerated_features",
+      "commit": "e92685f57f8318b18725c5c8c0bd28c7fe188d9a",
+      "paper": {
+        "id": "http://arxiv.org/abs/2404.19174v1",
+        "title": "XFeat: Accelerated Features for Lightweight Image Matching",
+        "published": "2024-04-30T00:37:55Z",
+        "updated": "2024-04-30T00:37:55Z"
+      },
+      "license_at_revision": "Apache-2.0",
+      "requirements": {
+        "requirements.txt": "opencv-contrib-python-headless==4.10.0.84\nposelib\nkornia==0.7.2\ntqdm\ngdown\n"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/verlab/accelerated_features/blob/e92685f57f8318b18725c5c8c0bd28c7fe188d9a/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/verlab/accelerated_features/blob/e92685f57f8318b18725c5c8c0bd28c7fe188d9a/README.md",
+          "sha256": "9f05c442c4ef0ced48deefb51307f65e8d14f72b14fb3fd65e8f75bfd3e321a5"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/verlab/accelerated_features/blob/e92685f57f8318b18725c5c8c0bd28c7fe188d9a/requirements.txt",
+          "sha256": "a2e3f506b40a43e978f72e9be482dd10de1c46d1e837a9d7e19fa7c0916303ae"
+        }
+      ],
+      "readiness": "Official clean local checkout; pretrained weights CPU zero-input smoke passed, no accuracy/latency result",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    },
+    {
+      "name": "XoFTR",
+      "repository": "https://github.com/OnderT/XoFTR",
+      "commit": "e0fbea431b30be9742effbf5577c90aa8eb938f9",
+      "paper": {
+        "id": "http://arxiv.org/abs/2404.09692v1",
+        "title": "XoFTR: Cross-modal Feature Matching Transformer",
+        "published": "2024-04-15T11:46:24Z",
+        "updated": "2024-04-15T11:46:24Z"
+      },
+      "license_at_revision": "Apache-2.0",
+      "requirements": {
+        "environment.yaml": "name: xoftr\nchannels:\n  # - https://dx-mirrors.sensetime.com/anaconda/cloud/pytorch\n  - pytorch\n  - nvidia\n  - conda-forge\n  - defaults\ndependencies:\n  - python=3.8\n  - pytorch=2.0.1\n  - pytorch-cuda=11.8\n  - pip\n  - pip:\n      - -r requirements.txt\n",
+        "requirements.txt": "numpy==1.23.1\nopencv_python==4.5.1.48 \nalbumentations==0.5.1 --no-binary=imgaug,albumentations\nray>=1.0.1\neinops==0.3.0\nkornia==0.4.1\nloguru==0.5.3\nyacs>=0.1.8\ntqdm==4.65.0\nautopep8\npylint\nipython\njupyterlab\nmatplotlib\nh5py==3.1.0\npytorch-lightning==1.3.5\ntorchmetrics==0.6.0  # version problem: https://github.com/NVIDIA/DeepLearningExamples/issues/1113#issuecomment-1102969461\njoblib>=1.0.1\nwandb\n"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/OnderT/XoFTR/blob/e0fbea431b30be9742effbf5577c90aa8eb938f9/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/OnderT/XoFTR/blob/e0fbea431b30be9742effbf5577c90aa8eb938f9/README.md",
+          "sha256": "137f33dd6f5e3705a2133666f01f40c09f61d4c5fb529d4dd3fc4960861137e0"
+        },
+        {
+          "path": "environment.yaml",
+          "url": "https://github.com/OnderT/XoFTR/blob/e0fbea431b30be9742effbf5577c90aa8eb938f9/environment.yaml",
+          "sha256": "95e9199c1e444b6607b2ac08507f37dbcd5ff199b4df7fa8ffcdb62b3f3c5d95"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/OnderT/XoFTR/blob/e0fbea431b30be9742effbf5577c90aa8eb938f9/requirements.txt",
+          "sha256": "cc9758513d863ca4563e806ac9eb04e09bf98993cb8f29c447ba82078542aa03"
+        }
+      ],
+      "readiness": "Official source audited; local xoftr_sar not accepted as verified official checkout; no forward verified",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    },
+    {
+      "name": "EfficientLoFTR",
+      "repository": "https://github.com/zju3dv/EfficientLoFTR",
+      "commit": "07e9c1401e71e9c556b1fda9d86d060af36ba176",
+      "paper": {
+        "id": "http://arxiv.org/abs/2403.04765v2",
+        "title": "Efficient LoFTR: Semi-Dense Local Feature Matching with Sparse-Like Speed",
+        "published": "2024-03-07T18:58:40Z",
+        "updated": "2024-03-11T23:42:14Z"
+      },
+      "license_at_revision": "Project Registration License v1.0 (2026 at pinned revision)",
+      "requirements": {
+        "environment.yaml": "name: eloftr\nchannels:\n  - pytorch\n  - nvidia\ndependencies:\n  - python=3.8\n  - pip",
+        "requirements.txt": "opencv_python==4.4.0.46\nalbumentations==0.5.1 --no-binary=imgaug,albumentations\nray>=1.0.1\neinops==0.3.0\nkornia==0.4.1\nloguru==0.5.3\nyacs>=0.1.8\ntqdm\nautopep8\npylint\nipython\njupyterlab\nmatplotlib\nh5py==3.1.0\npytorch-lightning==1.3.5\ntorchmetrics==0.6.0  # version problem: https://github.com/NVIDIA/DeepLearningExamples/issues/1113#issuecomment-1102969461\njoblib>=1.0.1\npillow==9.5.0",
+        "environment_training.yaml": "name: eloftr_training\nchannels:\n  - pytorch\n  - nvidia\ndependencies:\n  - python=3.8\n  - cudatoolkit=11.3\n  - pytorch=1.12.1\n  - pip"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/zju3dv/EfficientLoFTR/blob/07e9c1401e71e9c556b1fda9d86d060af36ba176/LICENSE",
+          "sha256": "8efca11dbcac37a13b1869cbe69ff986805ed87c4cb8881f8b732d698e3e1cc5"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/zju3dv/EfficientLoFTR/blob/07e9c1401e71e9c556b1fda9d86d060af36ba176/README.md",
+          "sha256": "6a45d5d15e36244e7bb3058d41181e3dc170d15d2ac3f16a704e0073cb6f560e"
+        },
+        {
+          "path": "environment.yaml",
+          "url": "https://github.com/zju3dv/EfficientLoFTR/blob/07e9c1401e71e9c556b1fda9d86d060af36ba176/environment.yaml",
+          "sha256": "1000ed363d7068297958534addf22c1945440853d9f19c1737f59a4c8a84658b"
+        },
+        {
+          "path": "requirements.txt",
+          "url": "https://github.com/zju3dv/EfficientLoFTR/blob/07e9c1401e71e9c556b1fda9d86d060af36ba176/requirements.txt",
+          "sha256": "0aea87e5d690ca8336fcbf27b3515de8e97b7f36538271046f4231474e8b0291"
+        },
+        {
+          "path": "environment_training.yaml",
+          "url": "https://github.com/zju3dv/EfficientLoFTR/blob/07e9c1401e71e9c556b1fda9d86d060af36ba176/environment_training.yaml",
+          "sha256": "3a573a0195d2784e28a13d55490c5e21d3f41a8f063204429e3790686b404577"
+        }
+      ],
+      "readiness": "Official source audited; existing local checkout is a modified user fork, excluded as clean baseline",
+      "checkpoint_license": "Must verify selected artifact separately from repository license",
+      "formal_reproduction_complete": false
+    }
+  ],
+  "current_gpu": "RTX5090 sm120; official old CUDA11/PyTorch2.0 recipes must not be assumed runnable; isolate modern CUDA12.8+ ports and verify kernels",
+  "test_used": false,
+  "formal_efficiency_comparison": false
+}

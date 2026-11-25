@@ -1,0 +1,103 @@
+{
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.35",
+  "executable": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.2.6",
+    "opencv-python": "5.0.0.93",
+    "kornia": "0.8.2",
+    "timm": "1.0.30",
+    "mamba-ssm": null,
+    "causal-conv1d": null,
+    "triton": "3.6.0",
+    "yacs": "0.1.8",
+    "einops": "0.8.2",
+    "pytorch-lightning": "2.6.6"
+  },
+  "repositories": [
+    {
+      "name": "XFeat",
+      "path": "/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/accelerated_features",
+      "exists": true,
+      "origin": {
+        "returncode": 0,
+        "stdout": "https://github.com/verlab/accelerated_features.git\n",
+        "stderr": ""
+      },
+      "revision": {
+        "returncode": 0,
+        "stdout": "e92685f57f8318b18725c5c8c0bd28c7fe188d9a\n",
+        "stderr": ""
+      },
+      "working_tree": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "probe": {
+        "returncode": 0,
+        "stdout": "loading weights from: /mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/accelerated_features/modules/../weights/xfeat.pt\n{\"cpu_smoke\": true, \"keypoints_shape\": [0, 2], \"descriptors_shape\": [0, 64], \"weights_sha256\": \"0f5187fd7bedd26c7fe6acc9685444493a165a35ecc087b33c2db3627f3ea10b\"}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "JamMa",
+      "path": "/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/JamMa",
+      "exists": true,
+      "origin": {
+        "returncode": 0,
+        "stdout": "https://github.com/leoluxxx/JamMa.git\n",
+        "stderr": ""
+      },
+      "revision": {
+        "returncode": 0,
+        "stdout": "24acce206cdd09f60465459d7112c83f09c75f15\n",
+        "stderr": ""
+      },
+      "working_tree": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "probe": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/JamMa/src/jamma/utils/utils.py:17: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.\n  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/JamMa/src/jamma/jamma.py\", line 6, in <module>\n    from src.jamma.mamba_module import JointMamba\n  File \"/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/JamMa/src/jamma/mamba_module.py\", line 5, in <module>\n    from mamba_ssm import Mamba\nModuleNotFoundError: No module named 'mamba_ssm'\n"
+      }
+    },
+    {
+      "name": "EfficientLoFTR",
+      "path": "/mnt/sda/zhushihao/\u56fe\u50cf\u5339\u914d/EfficientLoFTR",
+      "exists": true,
+      "origin": {
+        "returncode": 0,
+        "stdout": "https://github.com/Zhshao11/SemRouter-LoFTR.git\n",
+        "stderr": ""
+      },
+      "revision": {
+        "returncode": 0,
+        "stdout": "c24e627753c02675b49fb04a80a8cb925406cde4\n",
+        "stderr": ""
+      },
+      "working_tree": {
+        "returncode": 0,
+        "stdout": " M EfficientLoFTR/src/config/default.py\n M EfficientLoFTR/src/loftr/loftr.py\n M EfficientLoFTR/src/loftr/loftr_module/__init__.py\n M EfficientLoFTR/src/loftr/loftr_module/transformer.py\n M EfficientLoFTR/src/loftr/utils/coarse_matching.py\n M EfficientLoFTR/src/loftr/utils/full_config.py\n M EfficientLoFTR/src/loftr/utils/opt_config.py\n",
+        "stderr": ""
+      },
+      "probe": {
+        "status": "not_executed"
+      }
+    }
+  ],
+  "hardware_inventory": {
+    "returncode": 0,
+    "stdout": "0, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n1, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n2, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n3, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n4, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n5, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n6, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n7, NVIDIA GeForce RTX 5090, 580.178.04, 12.0\n",
+    "stderr": ""
+  },
+  "CUDA_used": false,
+  "installations_performed": false,
+  "formal_benchmark": false,
+  "limitation": "CPU import/smoke is not a trained accuracy or CUDA kernel compatibility result"
+}
