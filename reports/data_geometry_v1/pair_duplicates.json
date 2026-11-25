@@ -1,0 +1,2356 @@
+{
+  "method": "both modalities must have identical decoded pixel hashes; no split changes or automatic deduplication",
+  "summary": {
+    "256/train": {
+      "pairs": 8044,
+      "unique_decoded_pairs": 7912,
+      "redundant_pair_entries": 132,
+      "duplicate_groups": 132
+    },
+    "256/val": {
+      "pairs": 952,
+      "unique_decoded_pairs": 952,
+      "redundant_pair_entries": 0,
+      "duplicate_groups": 0
+    },
+    "256/test": {
+      "pairs": 1696,
+      "unique_decoded_pairs": 1696,
+      "redundant_pair_entries": 0,
+      "duplicate_groups": 0
+    },
+    "512/train": {
+      "pairs": 2011,
+      "unique_decoded_pairs": 1978,
+      "redundant_pair_entries": 33,
+      "duplicate_groups": 33
+    },
+    "512/val": {
+      "pairs": 238,
+      "unique_decoded_pairs": 238,
+      "redundant_pair_entries": 0,
+      "duplicate_groups": 0
+    },
+    "512/test": {
+      "pairs": 424,
+      "unique_decoded_pairs": 424,
+      "redundant_pair_entries": 0,
+      "duplicate_groups": 0
+    }
+  },
+  "groups": [
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/729",
+        "osdataset/256/train/2401"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b3f35b1517dd1bd21bf68369c29f411715746e60b2ee92dea948368ab315fb53",
+      "sar_pixel_sha256": "250e0401611c087dc7dff2180de80a1ee0b277907e5bd3da32fceb8584db2573"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/730",
+        "osdataset/256/train/2402"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "045b5bfecfbcc232c2198043242b7018e89d81c4a46f058db38c549e6efbcfc2",
+      "sar_pixel_sha256": "d2bceb479fca4a7d2627fb94d24f47cc5bcdcb7d0cbcaf6a978041d88d668774"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/731",
+        "osdataset/256/train/2403"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b2e29bfc556bacf746c492cf6ef17e929d020f65b6da8b3e1f6e8db4888d349f",
+      "sar_pixel_sha256": "716749c1aec29f326418133933caddb0de941fdedfbcb3ca1f905a90dcb0aa24"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/732",
+        "osdataset/256/train/2404"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "5ed549113355395a391caded2d3d1f0aec44c3ee10f1635f2cdb923dbb9be056",
+      "sar_pixel_sha256": "138196b481922ca5602d4f7e6730bc48df056feead83ed414b2f8bf8eee55317"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/733",
+        "osdataset/256/train/2409"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "05e4bc450d907b09a54fab1afe32f4a0ebd1a03e9b25598b0b64a193f83046fd",
+      "sar_pixel_sha256": "0234dd345dc85f3cda9732580bfb2be344dc5f62b4264a0f926547bbdb485bbd"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/734",
+        "osdataset/256/train/2410"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b1e97a3a51d4264c6f6089db12b3f522b7912662d3bc122b48fad114e8fa1720",
+      "sar_pixel_sha256": "7db0d92425119b050f159669a92b5d4adeb4bf7154e0169020beda0941ba9d5c"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/735",
+        "osdataset/256/train/2411"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "57b3dd6a2464ca0509d218350ea602c7a25c5620ddf78ef578d14478a27a6fb4",
+      "sar_pixel_sha256": "c0d443a098aa2cfa9a53f2f112c8d56d857b92bbd849cd8d108adc031ea368ce"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/736",
+        "osdataset/256/train/2412"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c7e8fb4e86c056cc764ad70eb4d2c070b189b7121ca2eca555094a251d881ed8",
+      "sar_pixel_sha256": "3dc14dab058c2d28121568bd4a8c6e6d328f1b8a38cfc3a7d8f340552355e4b1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/749",
+        "osdataset/256/train/1345"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "11ff0f6670a2272e0cecb456db869acdc52b52684bb382ca16004acd404eecc4",
+      "sar_pixel_sha256": "52e121fda584c2081226d5db869574b5774ec4f43fbe18732db074b6bf4ceb81"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/750",
+        "osdataset/256/train/1346"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "63db5f3ef3d5b7869c2c0ff37c761d6b4ec62db129b8fc340c535ec2098c2acc",
+      "sar_pixel_sha256": "109d7307e5b9b031a528071cbe7f3fd488bddb437d4970c47bc56d6122550a07"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/751",
+        "osdataset/256/train/1347"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "1e38fce13392db3acd0d930fc5dbe3bd4bc5d775d490e34a6ebdedeb7e900d16",
+      "sar_pixel_sha256": "0e39f4d1a69c2b0ad6cb3735901b3308c90ebb93acc1c73bebec4ff18655b1ad"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/752",
+        "osdataset/256/train/1348"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ef1ed487444d41eabc46a462a431ff0aa7552dd7c3a3604091729fd300162224",
+      "sar_pixel_sha256": "68558f11be2958e6af714475e62fc48e9858b1b8ee8f5cf91844622042040c1b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/753",
+        "osdataset/256/train/1417"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "10fbe932e2196add2d8fc6e1871db870a91304f26fdd0227c4363a1bf941b71b",
+      "sar_pixel_sha256": "5bd282e23f17fde25b05d229db8e42b7bb5924884bb4f99f40ade51a3870436c"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/754",
+        "osdataset/256/train/1418"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7bf99ff18495944868497f0a1fe9c7e1b3c685d4e7c50d0b9d940c95fe030751",
+      "sar_pixel_sha256": "5c34f6faf65d89477f4e345fbbc50cbd3f150a2c1e45cfcced766a51f55457c1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/755",
+        "osdataset/256/train/1419"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9f5d910f77224a51fb159c3184dbbf4cbc412f679e6ab10863db1bd4d00eb405",
+      "sar_pixel_sha256": "ee1a0bfffa792847e0a0002bc275e7ab0b55a0daf976aab65f8bb13907954132"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/756",
+        "osdataset/256/train/1420"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "f3f98a5a9dcebdce973ab19182e9505d7cf106933ad3b753912be278925b4f5f",
+      "sar_pixel_sha256": "0d19fa100fa7cb9e119f8dfa80da6d9b5666cefa8ad772702c79d86eee2ef0e6"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/757",
+        "osdataset/256/train/1501"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "541b27a33c0ff2f7b2414a15596a1b6f6bac2e096297791751f453c2ae43ccec",
+      "sar_pixel_sha256": "56cba6669413b6a379c9410ff607748e90d8964e1df191660d498b74c132e9f4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/758",
+        "osdataset/256/train/1502"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "2c19feb48d0557e8d1519d623e5946495a5309d0e4930be73e97e752d9df8d2b",
+      "sar_pixel_sha256": "0251395690aa224c04d25f4d4fb8bb652ec0aa891e3315965b94f6b9287a3eb6"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/759",
+        "osdataset/256/train/1503"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a28545b92357a13e6d774f6c35e9c8c6786e47f5956d2b0a565a2c0b58583116",
+      "sar_pixel_sha256": "8891a2b173ac8cece56452985bd051741dc16ea8448d355a5fadd69342c5e667"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/760",
+        "osdataset/256/train/1504"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "627d2f40a95fd752f8fe0397c05e65bd42432ea62ab8c7af99c8dd8034934528",
+      "sar_pixel_sha256": "d39a3d532867dc4c7a43cb407c232f5cd19e588a0f47e3736bb52789c97e2740"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/789",
+        "osdataset/256/train/1597"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "70ae6f28463cc346fea1419137848c0bea6b4fc525c90e4b9797bda7788957b2",
+      "sar_pixel_sha256": "dca8b57cd0c5e3b6a47aca3466beed049b7dbd2df28a75002dccc81ea1aa4d41"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/790",
+        "osdataset/256/train/1598"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7053c19493a7e5cb5af02fc95cdc7da9b398a6baba6f86979cebb198939c60eb",
+      "sar_pixel_sha256": "b486f86f0378b7b76c9d9634567055e3d4aed41e4d0f97ff3dda50299d2448ed"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/791",
+        "osdataset/256/train/1599"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "53423874bcc4a219dc3d14f7c8d212e3fde7dc0e1ba3352c643211f6f550066a",
+      "sar_pixel_sha256": "d411a0c516aedc5df28e34bff0029f78ddce7c9e7c371c0a0b102b0303208902"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/792",
+        "osdataset/256/train/1600"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ab55bdf66772bf1a9953eda4140a570aea6cb7c8237d87de52e64f92fe46cb55",
+      "sar_pixel_sha256": "0d239ec2147981e1f292864fd9594ef676d86be119f4860faca5e46227b0c57d"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/813",
+        "osdataset/256/train/1677"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "e3a8ae1dddde9521ace9fc8bcc3ff710a4f0364874d052dd4a0450cdc7e008dc",
+      "sar_pixel_sha256": "617ec965f7f5cad50203ec6c04ddce171de1637f8715d39f5bc0b2f45f6ed948"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/814",
+        "osdataset/256/train/1678"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "55eaf8ff25026dcb409403d115d510c79838dbdd9d1b4dcb31485ea11096ea6c",
+      "sar_pixel_sha256": "9cde112d8c35ee8188d6b0692bff98998ad9f083b111fdb381bfb8542bf788f3"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/815",
+        "osdataset/256/train/1679"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "60e6b69c698549ca2ce15538d56816e2a5ea2fc4033c74b4637389367e331b8b",
+      "sar_pixel_sha256": "a149a33ead1dafd8765a9355afd51737fadc08382166b6dfbb27c2673cda44ed"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/816",
+        "osdataset/256/train/1680"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "483f202d80415e9511db5ea94a619666050eb73989ce8b058116eb047ece53b8",
+      "sar_pixel_sha256": "8ca87064fd489ea0ed9f8c75d618a9213b32a3579d3fcb88aeb2b1d56cc03262"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/833",
+        "osdataset/256/train/1797"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "21432e4fc0064ea8eea745f84f66e0a285711efd19be1a97ecb5d38603577561",
+      "sar_pixel_sha256": "9276f6895c4a6735753bc60b4f30f10a52d764fe51d4efd9ede5825e59b99b9b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/834",
+        "osdataset/256/train/1798"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7df90c557737c45f6c4d17b7c851206f14a22962a920becc1ac6256eb589d21c",
+      "sar_pixel_sha256": "78019cf1b89d77e2db3a143447772244b10a59882af12dbb80122620af76ffa8"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/835",
+        "osdataset/256/train/1799"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fb56487ee98c801999bdd497455785c576fa330f4072ddfca07215f6b5c542cc",
+      "sar_pixel_sha256": "2ac14339594051052d3e17e1251ca8192550c1631c125027c19397fad78a6315"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/836",
+        "osdataset/256/train/1800"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c69a5594c031d6949ebee0ca4928b067e395a09b5c0bd365d2d701e2478442d1",
+      "sar_pixel_sha256": "b2adedeff1cdf9bf1b24a1c1fd3f43066ef4fee54a71792ad12a074d93d3bd9f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/885",
+        "osdataset/256/train/1893"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "de97b39855c97e94e1381e1e87adac3e405179d0c615adcc14738085da7ab07a",
+      "sar_pixel_sha256": "a1d814e37fb89993e35ff0fa35834849abcbe2270111084cd9ae7302f13b84d9"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/886",
+        "osdataset/256/train/1894"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c33d988e433f8fcdc96dbd31c10165a7f5bd85eef06e56c50cab764d2e630f19",
+      "sar_pixel_sha256": "5ec060a89e5c49f157a155d6840ea494916b9e61ca63156e0aa6331885aaf4f9"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/887",
+        "osdataset/256/train/1895"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b87ee0693215808cfa6c2ae58f8638b0bfa50f2336e0fdaa75d53f2ec941ba05",
+      "sar_pixel_sha256": "d387744be4670a7e254d3b5d96a09aec987c6478d04b57314235a47afeac6d47"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/888",
+        "osdataset/256/train/1896"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fdab2d2cfe77099c6a9fec6b992242c81699e08be2de14c750541dedff974c14",
+      "sar_pixel_sha256": "3caa82621d3332f80da8ce3cfa30a407bedc8299e03d17a04bd8066d23c1046f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/889",
+        "osdataset/256/train/1801"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "1e6385d76a1c376762380fd8017955289eefc6b54d404cafb3e1239d8502a039",
+      "sar_pixel_sha256": "cad05d96a32d78eea28260a96a41982277bcb36942a2a12ed6193ac2627374a4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/890",
+        "osdataset/256/train/1802"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "8f13a81dbac4bda3ad96e563f11c712a96688640e2ab780954c03b02624c543e",
+      "sar_pixel_sha256": "3f29951deffd9ff37d3aea14d1aaca488523f6c3f06ecd0fabd4a9f4a105f796"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/891",
+        "osdataset/256/train/1803"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "d5cdfd7e6678e3e1eb6036382f5a2c1ab8d2e5c791800be59e82700bf5c18724",
+      "sar_pixel_sha256": "12fdcfbb21368df6051995f70f174cabf11d4a622fb21c19ee3de8faedc25215"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/892",
+        "osdataset/256/train/1804"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7b80392f9aa8a0c49c557a346f1c4fbff89692258d87d45a6255df25a46a9bd9",
+      "sar_pixel_sha256": "53e492938570ebb2e913940f4b31b3c46acd1eb270bfcba5c3e482321609a574"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/925",
+        "osdataset/256/train/1933"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b1b55b3ad1d769c8f99c37c9acd77678efcb8c974a401357290fd5d52807db3d",
+      "sar_pixel_sha256": "fbdb317da5ddcdc83559e632b0c377d5a45df99146ce7176fb5e851b4fe1a564"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/926",
+        "osdataset/256/train/1934"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "267d79bd11b2038bea233ad1ad5d383232f3865fb008396f0c680bc4f2051c40",
+      "sar_pixel_sha256": "17cae6e1524f233007af5441fc1ab4af041d7436d4b077975dbba88e8d73c6cb"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/927",
+        "osdataset/256/train/1935"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "2d97663fa1f183e21fff4966c215e4d0376fe0e3393031bbe73cd73db0741626",
+      "sar_pixel_sha256": "840d29c949679c69fa31885eb77757f2dd7494708eca0f7d8e7748b366328cf5"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/928",
+        "osdataset/256/train/1936"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fe74b1836caa1535f923907a0e9713d3fab0f188dbc0d3377801c29011c2a89c",
+      "sar_pixel_sha256": "df79fa1afc9d83c77025b4be64ed5c9b78b74a14910340a4d7e2afb5fad95675"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/933",
+        "osdataset/256/train/1845"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "dd75f486ba1dfa43b8d113f4a9aa19eb633381b28d0b016180334c80bd4211b3",
+      "sar_pixel_sha256": "ad9be8eccdd1ef9732b3c4651e403d29876dfc7e2f514b165a6be59d36c99c6d"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/934",
+        "osdataset/256/train/1846"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3b3a4c0cfb5eae73c75026b9db6fe607f9e39296604dfcc72777070e39ecf362",
+      "sar_pixel_sha256": "ff46c64152b81060d297aac5f1ce2200a7256cdf8705fcbfd509ffe2ddf4908e"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/935",
+        "osdataset/256/train/1847"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "abbb9fe21094bb643003e6295df89fb431a03ae597ad44c98319030ab1970e69",
+      "sar_pixel_sha256": "1298c6f2f23bca0a4538e0ee3e50d76cf5f9ed3c52b8835b9e1272e4c5672bf0"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/936",
+        "osdataset/256/train/1848"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "2c3815cac690b481f9be0774158821ac31cba6b682614de1d00564aab61ff959",
+      "sar_pixel_sha256": "ff1a0382732b5c2c31dca143c183acf34d30c61fc987b205babc33060c680f2c"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/957",
+        "osdataset/256/train/1889"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "8a01dfae950897295a47495ec95458c57b64efdf70d4f17959e262f3aad1c563",
+      "sar_pixel_sha256": "968d01c2e47f73b96e791a97fd54d638c5978466043688e55d48db0e78de9178"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/958",
+        "osdataset/256/train/1890"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a51c5d2a419cb5c5b81b6269c562102123c1d49c049231863c982e81bcc44ba5",
+      "sar_pixel_sha256": "4009ee229150e2d3e2e97d52e92f84f1980b2deeaa00f56bd8555a301b151834"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/959",
+        "osdataset/256/train/1891"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "99d8fcd778116a84fbb9f595c9804501a2318ef94acf5830806786fe55758ad9",
+      "sar_pixel_sha256": "94154ab531f3c73d8351e423c38d153c1e76df5de6acfc395cca53d3465fe4fe"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/960",
+        "osdataset/256/train/1892"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "52a07dee13c6fc12fd796ef345bc8cae8d44f166f5005669748f2a47674cf84b",
+      "sar_pixel_sha256": "6b9214d7f755f9daa30d88db9a25f65eb6cc56e3dc9a269134fb6db6839b59c2"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/965",
+        "osdataset/256/train/1997"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "045224cb4a7bf811d4ee9ea2e7181241675494ca483fdd50a8888936d3ec388d",
+      "sar_pixel_sha256": "f614981677721521fbf5c642eb01abf77103578048cfd0ba5fa862888797d591"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/966",
+        "osdataset/256/train/1998"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "aeb6873c06d8ccec421cc8a98df554e52e867b10649cea5a0dd26df10434d498",
+      "sar_pixel_sha256": "57356863b030cf063fef9166ab4eba38c5a38933d354bace6cb014c274d855ee"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/967",
+        "osdataset/256/train/1999"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "e95a9fde1ed93a40cfc1aacf6f8d6efc68938ef895a800d48deb3084f19c3ee8",
+      "sar_pixel_sha256": "6655983555a33bd485548cc3005afb9dde2f6bd006e62bc51e4b3cae85be7ddf"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/968",
+        "osdataset/256/train/2000"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "bc1c29b74fa03ed405b5d996838a5c00f23e73338f34bbb1260cabcb553e89c3",
+      "sar_pixel_sha256": "a20c731c774a7765360e914f5463d8a15a919094d60cdccbe4d70b270d24ba4d"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/973",
+        "osdataset/256/train/2001"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "736a025ed42736bed1757fb6dece59b3edf92518997a5100de99f86d26a2cff7",
+      "sar_pixel_sha256": "e3b449598d114eb76b9640931fc6e5f21b1fc38ea41be839a28eda4465af70d1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/974",
+        "osdataset/256/train/2002"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "5402a4bd59d26e179db04a5e0d958cd8fa9085dc6c5cfc4d8ac858815feae0d6",
+      "sar_pixel_sha256": "9436ea9bee57d1a2ff791a0246056d2afceabaf725108fcae9d342dc16eee676"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/975",
+        "osdataset/256/train/2003"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7f33e5244c764f103581f466cd9f8791214d485f1189ca823ef413acf941c2c6",
+      "sar_pixel_sha256": "f22d968fc1b29299d0d36c805ffd6f48e3cee806d13d90660d59ff7327a0f270"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/976",
+        "osdataset/256/train/2004"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "6bfc8efb4e2326db62e2ed9e709de946a94eba1ed091a07e260e3b9c8fed1d96",
+      "sar_pixel_sha256": "afa6aecb246335d303891dac78daabb967322bff2bc91b9d5589f7d87b4b7071"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/989",
+        "osdataset/256/train/1305"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "d24497af3b7838570bfdcfaa5d5ff228de5bc82ecd270338aec150b6e7996dff",
+      "sar_pixel_sha256": "470769d3332e6f064d78db3c55a90fe3c3a1ad898dd4c8e2814e74ff77d12ce9"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/990",
+        "osdataset/256/train/1306"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "365babb035d9e0b1b99efdda6d748b832e051b3f489940fcd98fc91ddcccd582",
+      "sar_pixel_sha256": "92da4971cd30159137ea6cb9ab8b4e4e68fd80c47d8073df324e89038dfb0e21"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/991",
+        "osdataset/256/train/1307"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3458d766e7f35dd31739bf8945b3d441ff318d28727c436dda2852db959663ce",
+      "sar_pixel_sha256": "735b22cc9072369d0f2714772e7eccb211146602c60e6992baf76b077446670b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/992",
+        "osdataset/256/train/1308"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "4e22f7b8f72d195cdecd16cc0f237779a5401c1adc4806e39a40797c29c3a32e",
+      "sar_pixel_sha256": "e4bf0abc0297ac7032613f1af0f65958b4ffe027d3e53ee1a1f1f2b661221cef"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1001",
+        "osdataset/256/train/2009"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "bcdb9cce560dced61e433f4d2dc95b72bc8dc08cccb8aa6d43cd75fff10e5f1c",
+      "sar_pixel_sha256": "9302e484e5ae27d3c21b1b54c2d232d200cdde7dbeb999efbd22be615afc5600"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1002",
+        "osdataset/256/train/2010"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3912dee2c1996cd7e26744402206771d64951b7fd6d785154ba822a9f4737a37",
+      "sar_pixel_sha256": "0964c0cd4048a35f2ed8c47b7de5cfe72eb40a2b73c94db0ff709076a1b39983"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1003",
+        "osdataset/256/train/2011"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "28f96c4b438b3d469688b687571df421f9208a0bc45920379c92967cb9432214",
+      "sar_pixel_sha256": "18c421274fd9beab64ec88c00edc12cbef741aa64d9a13bed9e8bbdfe250f2e5"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1004",
+        "osdataset/256/train/2012"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "f2229a7a266dc5cf28bea2bf7c46170e3a0332acbf4d3e386ab313416cb8dee9",
+      "sar_pixel_sha256": "a83f09011b0a48d71cc6a0bd8f0984a50e3d5388158bb7b13cffeacba62184b2"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1013",
+        "osdataset/256/train/2013"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "d097d60383f0b1b645d2ecb5f2a0b60b1d0ea7cf6eb43b4c97051ffbfbe909a0",
+      "sar_pixel_sha256": "f4be77fb9084c9e455b6723cfedbda874ee424c80600a82d918279f9d4a2845e"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1014",
+        "osdataset/256/train/2014"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fec7fd79c92fafc7adc9989435bd82547c9d199453d6820371d7edeba4ec7812",
+      "sar_pixel_sha256": "d5ffdbf30540d17e9d5dacb9448665e38dddb91280a324158f07d776a8c88b95"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1015",
+        "osdataset/256/train/2015"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ea37142027df1d54595ede65c0f8e0cdee659d58899c25cab8fcaadb5a0a8a60",
+      "sar_pixel_sha256": "addaea41050cdf7d72910e0bc030d329197db46ccf8bdc32a4f5d4383d868154"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1016",
+        "osdataset/256/train/2016"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9d6cef099beca053e43dc0e2dae27179c7c9b39c0f46573594a3f7da009384d3",
+      "sar_pixel_sha256": "217620a63e0c13cd55983b4c688ffb99f6755a740281061bf728740c3fc277a7"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1025",
+        "osdataset/256/train/2017"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b60eda205554de6ea07f16ade40386613d23c4bd19e40dd8659e7a3307f81e65",
+      "sar_pixel_sha256": "4df75522e1f5a42fc88d4a3242e39877cc0707fe127f2947e7e616f1d2268ff0"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1026",
+        "osdataset/256/train/2018"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "79eb51c7291a4c299a04648073b0e9b621d1b26014e24eb2dac7ae598f280233",
+      "sar_pixel_sha256": "e595853f9b4a45a119a98a46e9151a6b5d19c99bc3ec9628441479334d4b4429"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1027",
+        "osdataset/256/train/2019"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "f41dd3c65412ff7c423022982035d3e2f0124de4f0f2d28410bb615f9c4ebed2",
+      "sar_pixel_sha256": "1c3c6adaa665dd6987dae3c03b39cb67078285e24fc08c4457525530f382a4c6"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1028",
+        "osdataset/256/train/2020"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "1157b99611b57bd990557927aebae7fac9af50f07c4320435fbd49a25d9337b7",
+      "sar_pixel_sha256": "e91e4c00e337622e793594673f826ccb23ad6bded9ac69786578d64f62448e35"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1145",
+        "osdataset/256/train/2173"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ef11671d98ac7b9c86f35af12a6a03337bc6d089ee3f0935bce9d1e0eb3c6754",
+      "sar_pixel_sha256": "667ada90ef0228e2e6da6ef3371d4c0fe4ebcf02c799fc72bce48efe5cd2e0c9"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1146",
+        "osdataset/256/train/2174"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "87357f702ccc0cb7353ca9508eb7cf70e711cd857e95d30a40f9ff5346b09b3a",
+      "sar_pixel_sha256": "085d48277640bb1b03014f528cadaa1fb86e0f6fb86ebfa359ff2f3e1dfd74fa"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1147",
+        "osdataset/256/train/2175"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9fe5a29016ead61f893c46b1223699d26048729fe4cda20ecd840328417ff048",
+      "sar_pixel_sha256": "380103e9807b02e30ebf0dde6a2be1fc831d4dc499ef7adbcce9169090a35bb1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1148",
+        "osdataset/256/train/2176"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b545f71762631373b1841dd9dff5f292297089927bfdc7ece3d2173c2f38e768",
+      "sar_pixel_sha256": "3f28ed1f3364cddb88961d986a8bd0e83e15303e92e7e993bcb7d4ebcf009f62"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1177",
+        "osdataset/256/train/2177"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "59cb5d026da4d21bde4a662ff38f1e7a44de0c3d1ae2aab27b763eaff398e56b",
+      "sar_pixel_sha256": "68bdf3f2d5e310a681b95f526c90da3d44d4e113d23d658241b209fc258542db"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1178",
+        "osdataset/256/train/2178"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "72b2de7489da951b1957ca190b2872f031f61a8992011b2c792d02bdb79d49e7",
+      "sar_pixel_sha256": "746c53bc1513922816049e673a4433df501a47c50038e4189a807190a333cb40"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1179",
+        "osdataset/256/train/2179"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "818d1c72734465f195d90da5d7c83b60e3465f7448930949ae5c905b891d6605",
+      "sar_pixel_sha256": "f3331bbf0bd15891d2c97b70001ae461468e005c74d0619cfc91e19eb2852748"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1180",
+        "osdataset/256/train/2180"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a03d8bdd2ea3000ad3cd3fd2f4d5c927943bcc6a8b9a9babf9d1956589deac93",
+      "sar_pixel_sha256": "07bfd0e1c826ff70d07415146de1e5ef7278c87190169b57aa468ab02f1162d4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1217",
+        "osdataset/256/train/1697"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "e1c2b89dbf21d0e1e065e793b48b747a957206d3e9f5b4e69293386f07940046",
+      "sar_pixel_sha256": "478885887fa7e5fcc131ed080bc518c9f49ca94d648b622f7d142bf37f5eba81"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1218",
+        "osdataset/256/train/1698"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "92498f737c6b0391995cc0b7dee04fcbc04a6f9848d9514b1036df86aa8b0470",
+      "sar_pixel_sha256": "1df8e325146ac6f0585fba71d48e0c02467f0ccb6b6fef378727f9d30178494c"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1219",
+        "osdataset/256/train/1699"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "4945d8be25053b2101f697587e528f0b18e715427071b5f247c580dd8fcbdeb7",
+      "sar_pixel_sha256": "f81053374d6875a0a5a5a9c746aa23c1fa0742e50725c5c5f96d4c513f382b9e"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1220",
+        "osdataset/256/train/1700"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "e7aa7c61ca0698b0b0a4d3d6d6809d536ad578f476375655a45175cc22328d2f",
+      "sar_pixel_sha256": "60c013c12e6104154232b40f2c12c39e0af9d8b408ab409311d5db5c7da40869"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1233",
+        "osdataset/256/train/2053"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "226c5f96b257de87478bceff55bb776b615f40a968ec0753ae79e2286b2c8c8a",
+      "sar_pixel_sha256": "62c1f02601405a38cd31b52466cae3b6b74497beb87a4ac45ae42075d4dcc0cb"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1234",
+        "osdataset/256/train/2054"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "8825a482267d7f398ebf733b85b147f3c221aa960e8d574c8b83fb783dbec646",
+      "sar_pixel_sha256": "5fb44c4d4da930a5e31c718c54842a272ab22d815079f681969e714f7936dec2"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1235",
+        "osdataset/256/train/2055"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "23f6eccabb1a3bf75d91f162c7e05e4d03ae386dd080a8fcf419c2f196e1cc30",
+      "sar_pixel_sha256": "ba7aca8daea3ca496f3c0bffd98538d8fa1a3c64b302f9d44cc5bbad5e141816"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1236",
+        "osdataset/256/train/2056"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "92f3c169b42e84e0df6a3b297659a91fb4c229f03012af1c8546309ae2583c07",
+      "sar_pixel_sha256": "621a881d0e2ae23bf1f8a9200b7297f9a601282149873f0635d5f7d129199a83"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1237",
+        "osdataset/256/train/2069"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b6bbf473b9ea112d3635ddd9023e3edb13dc60abe82321fb2bd5b67e041b1f7c",
+      "sar_pixel_sha256": "dd4028253f232aca2cfe0d410240d888c82defb8f14894953eee68351251c207"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1238",
+        "osdataset/256/train/2070"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "92157f075de08cacf46a2b92ae5164d626d04a0fc98879ccc6ea3f4ade4291ca",
+      "sar_pixel_sha256": "be0d36aa577769780ab4e1f314b08cd0e758c971936ce2e5246d18c93e88792d"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1239",
+        "osdataset/256/train/2071"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ffc86431adef198f319d8e87e5d56a807c917004f648605f9f2b9809412708e9",
+      "sar_pixel_sha256": "10a4d199c3ac71b9a137914881839de94a12f72aa8b0e085df053ecb388a21b4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1240",
+        "osdataset/256/train/2072"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "8f0f5885d12755826ff2741d9c47736ef3512ccdc986140b6fadf55938326f14",
+      "sar_pixel_sha256": "c226a6c49a6b6edfe8afd72e14ec3608055082cb2873df2806f8d91229a3961f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1241",
+        "osdataset/256/train/2073"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "46089b9e62632aa9c152970c131e0b2caa925f965dc823b74179eafd84e0e12f",
+      "sar_pixel_sha256": "57cf74b0618a9d0e8698c944f81f7a2c94536809688581d753a880bb9c425f6a"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1242",
+        "osdataset/256/train/2074"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0c7d9696c2a4ae7c1a31f08a117ff0d6135bd356c57ba3fd8f674c658bbb5b80",
+      "sar_pixel_sha256": "1e5c62720680013e8f711a8249335ed41dc6d9b5f905cc31bfe4d009dd79669a"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1243",
+        "osdataset/256/train/2075"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c12e2c3c4bf96dca5c7801ee12a0cf89d7dfb694ec69951df7b27309343401c4",
+      "sar_pixel_sha256": "8f554ce3298fb7c34f52263f40ec8411ff08d57ff8e365606104bfea1c2c31f2"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1244",
+        "osdataset/256/train/2076"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b111dc5a520f531731678f6a27f2ec9ac913ba94f2f119914f6d5068182ca79f",
+      "sar_pixel_sha256": "bde2ec39b7ea88540e30f8400cf8d0c68d6d45d8c1592ea70f74f7cb5f6ada24"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1245",
+        "osdataset/256/train/2077"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3d095a7f7cec69cfbecf1f0e2a1bc9ecec55f1937e2e56edb68153d72c4bf41e",
+      "sar_pixel_sha256": "7aedb8578927b32d16807c710fd64fe05f2d9822ee25964856b36efb0d248b62"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1246",
+        "osdataset/256/train/2078"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "04b1da056056a92b7b46aaaba25b62c7c0aec723b4ef3c8340a355897e98e5d5",
+      "sar_pixel_sha256": "4262ee2f8e9c30f53f4a0ae606544282add6cf9572e372452e22a244a3f08572"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1247",
+        "osdataset/256/train/2079"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3902098ecd2dd9a3cd9a64d1b422cce40222142d025163d1a0f6584d00c14816",
+      "sar_pixel_sha256": "aa012364434355c68f690912ceeef708441368502c2071c1697b002eca625bf1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1248",
+        "osdataset/256/train/2080"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c71260d4cf160fd9fe670064ccf3891f287a44a7a4babd95ca27fd6167d683ed",
+      "sar_pixel_sha256": "07564734ada9119ff3bd17af21c8e067e7167654382e055e82f440729d5dc9e1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1269",
+        "osdataset/256/train/2221"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b8b14a69c00b5d8fd5a0a6b908d55d3f06941dddb8054e13ce7930a0a74fe8db",
+      "sar_pixel_sha256": "8efd5becf6ae4af166557d34943fa7d74f4d0595c27ff4e0c2b8688886e8157d"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1270",
+        "osdataset/256/train/2222"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ccd8914b220694b7cfc3f1a0eb83c5c145fbe16ff40847ad931cba2e5ed3c212",
+      "sar_pixel_sha256": "ca67227b24bc43fd3ce84d655b5b2ecac4b20c4ad5a84d2bd1cbee6a245296dd"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1271",
+        "osdataset/256/train/2223"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "097dc17663f7ee762f72e5e5c3fd2ea55ae764c85aaffb8309c5890ce1feae4f",
+      "sar_pixel_sha256": "5cfe06a526096875663fc3013494b8083ce56ee3cc5dfc5887fd3d1ed0cfdeec"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1272",
+        "osdataset/256/train/2224"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "6dc070897cb4e4423d3a0672ef725aa1b1dd059ae8a75ba452aa0c11250913f9",
+      "sar_pixel_sha256": "e622c274dbf238a054e5d8df1bb62237d62739b4a540b31353e42fde6cc0ee44"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1273",
+        "osdataset/256/train/2233"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3cce44e749399391a80b8b22435008c0ef95304af168518b04d5bb9fc91f7b9f",
+      "sar_pixel_sha256": "73f95d8809579032e9bc9e6e9d39aa1d740cb3c7a9b4d3a7edfde0f67a6440c4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1274",
+        "osdataset/256/train/2234"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ebab4080246e2834abc234e6ff99bf9b5ef17aa83c4be411034b1d6f877acf45",
+      "sar_pixel_sha256": "3dc47af4a6b6e9d6525b48679253735a3e12ea88ef707f5c25418f09c468a7f5"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1275",
+        "osdataset/256/train/2235"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a0a87339b413fdd64deae49ec05aa1e856155a9fe485a63aeaa44695c6e2c5e3",
+      "sar_pixel_sha256": "16822ea26a198d484f7392d60b50fc2ef2c57967ffd056f53393991ddc8bd548"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1276",
+        "osdataset/256/train/2236"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0979645199080d209c4513ec6976a710c9b8d48967678d70a9fbace7e4b96196",
+      "sar_pixel_sha256": "e0047ea0b967e95db11fb9a4aacbeabe921a8207db7fc973b77bfb748c557eaa"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1277",
+        "osdataset/256/train/2241"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fde34532eb67bb14dabae4062193a46d7745b16ce8a04b93d727b8319a59d30c",
+      "sar_pixel_sha256": "5e667852f8ce2b73b199ada3bcd71b7fa8c0f936d4032fd2cc756b70319fa449"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1278",
+        "osdataset/256/train/2242"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "5d9099fbc80351a30a48a10461591fae4a79aa53874b633c371eea1f1a51f30a",
+      "sar_pixel_sha256": "0a7198a57404cb5db0e76a81c6b7232a6afbee116e76652f62520761228a77c2"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1279",
+        "osdataset/256/train/2243"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ed3a2cd1ff4339107dd9cb7e97cb14f849b0d74ccd52e9a6ced58b1d6cb7df09",
+      "sar_pixel_sha256": "fc03dfe42d51894df48bcabe10e836ac68eed661632aceb5fc288f823e933401"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1280",
+        "osdataset/256/train/2244"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0f962201bfc58843fc0b2dbd8398c6efc39df05d437cbcab5a9ec1da1da720c5",
+      "sar_pixel_sha256": "2781cb67b9ab7921761ec62e51d0bf18bfe0f68a5cfd8438cc1696a5a6fd1069"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1285",
+        "osdataset/256/train/2321"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "bdf44ac9ec2d3c619f509d8d3c336f56792d3a906bbd08792d8c21442c534317",
+      "sar_pixel_sha256": "482948dfcb8d89544bd5e542aed889f76adb07a66f792187f281e5d610375130"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1286",
+        "osdataset/256/train/2322"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "cdff38a16ad44ffa2c2f7254879da5e38b628bc7a80cec336e0a87bacfb1935c",
+      "sar_pixel_sha256": "a9e7c22b411185b3e3739ee8240a47085b694db659c538aefe5fc8b4be238c46"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1287",
+        "osdataset/256/train/2323"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "8d85f15d4698faf3d4abc91ac2f4dd45ea6bdcc244a2366266d9f476ff3e94fc",
+      "sar_pixel_sha256": "f39414874e75d7a1ce8a3de8bb70353dfc7ebf886e0ec92c001b501477f3fbef"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1288",
+        "osdataset/256/train/2324"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9c8282e02aec8ac6e62bb3d9bbd21eecdea99210804db0e4538fe3d322134cc1",
+      "sar_pixel_sha256": "192281f3ea4d132f162a4a23f5bfd4bf6679e79cdb03739f3890072df20c3991"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1289",
+        "osdataset/256/train/2337"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "aa5f8b316a4cc8cce9c8757a50b17465f93e0394f297796c5b174e7b5fca1d88",
+      "sar_pixel_sha256": "d31b7a976aaa387c0288b73856f143f0b0bb8277db0935171e8c46c612ad2f1c"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1290",
+        "osdataset/256/train/2338"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c101825ed5e78155f55afdde529c78e9b80400e5b4d7a1c05030434da85e945b",
+      "sar_pixel_sha256": "0745f8adecb22e2d3ea084f236e3ecf1e6dfb0589a41bce06c91a148016486d7"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1291",
+        "osdataset/256/train/2339"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "139f12bb49436526adf92eff0f6e211235c0b9b827c9b38c6f9a5849e1fa615a",
+      "sar_pixel_sha256": "dcab017c1f139cd240a56924d77ffbb55fca38e26a0d76488461c25798cf534b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1292",
+        "osdataset/256/train/2340"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "025eae5bea79f9f9849c71ab3d2c1a7713d798f3b5c5c36fd88a1eeda8b543ff",
+      "sar_pixel_sha256": "ff809146e59b2b7fb699c9e6a21365e1b5f5acd65071ce88edbae78fd66b7749"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1297",
+        "osdataset/256/train/2341"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "95da345515aae756d7ea78cc20ef7b06eeec6447c1ddf28a7c4e7ae6e8446715",
+      "sar_pixel_sha256": "6f2067e3305a96814b64088fdb2a1f88e0fcd9fda8ca3a2e6f940aea34dd164f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1298",
+        "osdataset/256/train/2342"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "685331bf1a2280a3b651fb2e7f71eb3bd2da4d19a4e70eeab532d40b9678312f",
+      "sar_pixel_sha256": "4a636cbd92b4cdde2e34ea3c80dc3a8765568a8c107be6ef4918e8cf6b45e1fb"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1299",
+        "osdataset/256/train/2343"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "293a2b425cc0076d363682f5c0a3e4c65a2ac455e1a92167d65e93f55e9d3cd8",
+      "sar_pixel_sha256": "fba8c17cdfdc04f218d343bc27e788c7b453f9fbb0f8f3fa531255da5d375c45"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1300",
+        "osdataset/256/train/2344"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0e26fb34c458409fcd056fde3988c9592830761b784534dfc8bb6c1823a6d26e",
+      "sar_pixel_sha256": "96a3b342b77d3c28d5dd1818adf80b2a177e71329df3fe83c2ffa2061f8c10eb"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1301",
+        "osdataset/256/train/2381"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9a2b9bd8229e723e0438ed1b50b417dff41fa91dc0dfcc48406273e938024107",
+      "sar_pixel_sha256": "fbe5d7e7ef2a12ccecdff9eee6aca4de44416009fc16c2b08fac877da78f2284"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1302",
+        "osdataset/256/train/2382"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "68ccecf9a730b3349785fd761aca2d426bc2ee9e06a20053d970fe9a938fdc8b",
+      "sar_pixel_sha256": "680ab2c5b1cf64b9256f41b0ebba5a9881c90445816b47cc8b1f26ef187ca4d1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1303",
+        "osdataset/256/train/2383"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a5d4e3539cf0290f0a913ee484697c4b50dce171842493c55f55ec2d4fe32271",
+      "sar_pixel_sha256": "38343f4a30f4a507289d8e5f3463cc67a4cd2dfb2ad501ae17bc95b98656778b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 256,
+      "pair_ids": [
+        "osdataset/256/train/1304",
+        "osdataset/256/train/2384"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "9e618a9f13a386661bdb18996270b0c4ab384ac817d46b7bfb19585c729a855f",
+      "sar_pixel_sha256": "4cf1950d6bc4848abed6063ee672e7b3523090d64b2a72e07987b2a7ff2fe2fd"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1162",
+        "osdataset/512/train/1539"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "949ac41abd8067a4518bcdc6a600659fec90cb1a9b5baf08660cc7e1294752a8",
+      "sar_pixel_sha256": "e86b90187e1cf61658b72588682593c16a8bf65b46c255caebe6b7137fec2059"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1163",
+        "osdataset/512/train/1540"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7737643861612d8996ffc59b9fdc6707176f77f2edaa1638d7d50b33a5784956",
+      "sar_pixel_sha256": "2ea3b8fdfcbc5755a1e73a7d8bc92ceb564c6ccf7b9fa354448c7f6db52f58ce"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1167",
+        "osdataset/512/train/1300"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "615e54a6f38c354c6f6788cd8d296c544da01c7489cf35f53489a37a87b860c0",
+      "sar_pixel_sha256": "2d1a43337defdc26c1c102cbfba3af79f7332aa744ad0388d67e0a5e41febad1"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1168",
+        "osdataset/512/train/1317"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "5a5af784d45650e40a524fc16e605a5d5b4927a55f101ef880ea6d151fb6259c",
+      "sar_pixel_sha256": "3d5b25cb1797c4a6808d432c2ae3001839d6b9ab8ddfb91fb0ff4e1ef5f4b3be"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1169",
+        "osdataset/512/train/1336"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "7b83034d8aa6e70b0c01ef8b6dad23504dc3a412316aea812a161d3a2d054d26",
+      "sar_pixel_sha256": "991cfa786f37d18c127cff9f790f311988f08e80fbd9c52c47c1beac04445d69"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1176",
+        "osdataset/512/train/1358"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "f24c83227aeabbe88855aa97f7c053554da81923394b15551fea438a5f07b539",
+      "sar_pixel_sha256": "ce04cc931963e6d68eacaa3d7970ea972ca1a03a0b10644a8a238310b3b2781e"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1181",
+        "osdataset/512/train/1376"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "b42245600d853d2cd8632112cb2ae8a3bab1c8b035d361824e6c24d7118853a1",
+      "sar_pixel_sha256": "1673f75862654039e60b75363e37c9d375830c0d7b9d73fddb4bfbc1ddcec573"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1186",
+        "osdataset/512/train/1402"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "d7bfb3695c3d8290b76bacf94938a10fa5278258049bd3fe37e59c42926ec0f3",
+      "sar_pixel_sha256": "8df24976abd25d06ba6eff17d4587eb02072b6076e8b46cf8fb933b05b5648fe"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1198",
+        "osdataset/512/train/1424"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "12b56641a1992c21bea0649e877e29316302eb5959dcb5944d19985be9a1a0d6",
+      "sar_pixel_sha256": "c69da758c474ba0a41336e755e41448cf0c3f4c1198c8103a318059fe536e425"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1199",
+        "osdataset/512/train/1403"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0971048fd938942bf434d69ea1ae0a0752f9e553250a818054266fa098834f6f",
+      "sar_pixel_sha256": "0ae858b53faab5c8d598024f656286223e117833041b9e9130bbf197e6401b01"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1206",
+        "osdataset/512/train/1433"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fcb1e483c8739de7b0d6ceb28aeb56b7b33a295cf510fc6d496afbe5ef3e18d4",
+      "sar_pixel_sha256": "5aa157a812225b68678e396ad9b5c814800d343f4311bfce1f9b007870454e1b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1208",
+        "osdataset/512/train/1413"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "94497b3f32fbf1e1f7793e9cbeba718b6d66e1bafc79533507f9410ba2231c78",
+      "sar_pixel_sha256": "bc07c1ed237a2333fbc2aec46eae5bcdb84e16c32738a4e4fac2c2c23272c491"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1213",
+        "osdataset/512/train/1423"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a3d99ca093b0bbb5069dc370d748ea6751c24a85daa72d5c1185880469397401",
+      "sar_pixel_sha256": "d1a1f7768a8cf51f9f78bd72c5f789afa97ff7cdc3928df7d6a70e12e148a116"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1215",
+        "osdataset/512/train/1448"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "324c5a6e362af2961bb88af1ab182c63386a54fd18e4373976997edc65ca163d",
+      "sar_pixel_sha256": "2a1a6e8787f4d91cf40e9638e432fd428f28c0fd4e45126b021931a40d2f353f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1217",
+        "osdataset/512/train/1449"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "bd94c97a549a27eae2898ee4a4e0a3d65ecd1b34c6fc6ba42b9b9eb346c566d4",
+      "sar_pixel_sha256": "d1649c22762e5f88ba16f74f92c6acf5b6aa22101969a708f9073f52658adf45"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1220",
+        "osdataset/512/train/1292"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "768842be1ad4f5494879083ce4e36c16a49d75a489438d63b1ef1dc06fe373e5",
+      "sar_pixel_sha256": "bb47de0408ef33892717089e24ded5b81c5bee9ed3e21080b70f848b7d89e083"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1223",
+        "osdataset/512/train/1450"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "a0a2556646e9c03cf7a071a71d140d6a8cf0bd2c9903e7734c5932dab881233c",
+      "sar_pixel_sha256": "c5d5fbc907bc2f5cf85500765f7bda0acaef3033a7e45c6433d40b93ec21fb01"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1226",
+        "osdataset/512/train/1451"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ba7da367185d4d16447c235711cf1cd2338882ebf1d5c9e10d64b7a913adcbc4",
+      "sar_pixel_sha256": "4187a62d0576c84d4e6e4b9fc04c74d3945ffa82503c30c733b01753b9d45962"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1229",
+        "osdataset/512/train/1452"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fa01a07e9e7572a63970ad93a8f881a497ac2c749d2aa5cd278425ef57892a24",
+      "sar_pixel_sha256": "4c6d635f886373e7eb6ac7ff8bdfd55807f69d8041766e50302a7c0f673634b4"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1256",
+        "osdataset/512/train/1488"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "592d80d908a215a1970cc95770412064e7e612f399864267a681fe726a13bb3f",
+      "sar_pixel_sha256": "f0433526b775b093cacf5b0fbe67e646da98dc7655220c0d26bbdcf8167112a5"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1263",
+        "osdataset/512/train/1489"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "3adac6e9089f40fb133a6e57000d426dae0070ce5c9edda23a5208a1871d276c",
+      "sar_pixel_sha256": "377213368da2d2e511afa45fcb0b690a4d7b31a6b151ee3f64e030b482c30958"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1272",
+        "osdataset/512/train/1380"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "c5c0318321b4c356689005262dde6112d21bedc21ceb113e463688790881f784",
+      "sar_pixel_sha256": "ae58fb2a12e8e08284a4c76fde73e557a802fea7383c31a243d7999de2371b3b"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1276",
+        "osdataset/512/train/1460"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "6b95bd14fb0e13a6ad4a547867fc14dc5538998a218476f6d56d528750b46da8",
+      "sar_pixel_sha256": "55a31564d1fa557d244ac066c36ded8c7884286a51d35052a171a6f51fe8d008"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1277",
+        "osdataset/512/train/1464"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "1a0bdc30635fa43c7927e4cb576699ea47f9c8205d2242a6a724b46e30a75479",
+      "sar_pixel_sha256": "bb6c6b66a205184f600dcd18f1894d08093183ba413a8f157e7a57858db45dc0"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1278",
+        "osdataset/512/train/1465"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "ae6d6ae9aa246e2ce6204e922fd6a91d3bebd5265e994920beef48d33aac5aac",
+      "sar_pixel_sha256": "2cfc08d6b7e64cd460484c2bcbdadf41a4533d2e180c94e6bb7b404459c9e094"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1279",
+        "osdataset/512/train/1466"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "e1ee5355414f543b59802c0cdab003c39f4b75db58b831013afc7482cf735b7e",
+      "sar_pixel_sha256": "b2c0741749591e48bb36f1db2767318d7dbea09898a32667dd1b4b4d5bda813f"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1284",
+        "osdataset/512/train/1499"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "0edc02274f2185e2b02342a14638df27e7e5bec4e335da01af1c907d9c2e2aa4",
+      "sar_pixel_sha256": "c3318e486f4440786bddfb8485a685f31584d53a5d656bb2ae60ded301ec2acb"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1285",
+        "osdataset/512/train/1500"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "afb81ac973002556821dd147f6e856cb744b2d46f642ac246683791e19235abc",
+      "sar_pixel_sha256": "2cb55b78fecd1bd26fc840467b0ff48b05ff8fc2d8f76bd129e44ef19d1baa58"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1286",
+        "osdataset/512/train/1502"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "4cf3d532547ccf778286b085b936af3641b8aeceba594c5af49014b08ad6f5db",
+      "sar_pixel_sha256": "1f4fd1fa3e014dfdead7fd46f031ef4cb1b9b42fb91e5108a4f8ff82babf535e"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1288",
+        "osdataset/512/train/1520"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "1b1c1189b7810aa26ef59dc25f37229018e92dd7c0ea45ba426583b286924664",
+      "sar_pixel_sha256": "c3c18f2fe617654c775272b24693f68d03dd51ada1dcd5e5760d4bded4071f44"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1289",
+        "osdataset/512/train/1524"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "da7b264e516685fdea7a21ee1f5e03413e818a3696685e8723a7f03035da20ed",
+      "sar_pixel_sha256": "03e866bb53d0e672fa0ce6ebdeaf7f1cc36a463e180f383430e3a6954ad7c652"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1290",
+        "osdataset/512/train/1525"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "fd5aa0d1bc4748b3d50173113e05a2e6886c41fe8c61ab9b06c8138064b9f16c",
+      "sar_pixel_sha256": "9216a4209e67f3ffd13b555486f8ab971164262c49ecc0d59a44bbafc7cdd7fa"
+    },
+    {
+      "dataset": "OSdataset",
+      "resolution": 512,
+      "pair_ids": [
+        "osdataset/512/train/1291",
+        "osdataset/512/train/1534"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "optical_pixel_sha256": "948d5c7d82297d4d63cd6990a84958077c668ac3c0e20bd7a7939fde5fe5995c",
+      "sar_pixel_sha256": "452a70684eb334fd58a0ab6b08fa71bfc00dda875258ded861272b2a7aa6363d"
+    }
+  ],
+  "ambiguous_children": 264,
+  "ambiguity_explained_by_identical_512_pair_groups": 264,
+  "cross_split_duplicate_pair_groups": 0
+}

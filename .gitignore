@@ -11,3 +11,7 @@ runs/
 *.pt
 *.pth
 *.ckpt
+# Dataset-derived images and raw annotations stay local/server; summaries are versioned.
+reports/data_geometry_v1/geometry_warp_example.png
+reports/data_geometry_v1/control_points.csv
+reports/data_geometry_v1/package_readme_extracted.txt

@@ -9,6 +9,10 @@ description = "Semantically Guided Lightweight Optical-SAR Matching"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.7", "numpy>=1.24", "opencv-python-headless>=4.8", "Pillow>=10"]
 
+[project.optional-dependencies]
+audit = ["tifffile>=2024.1"]
+test = ["pytest>=8"]
+
 [tool.setuptools.packages.find]
 include = ["sglm*"]
 

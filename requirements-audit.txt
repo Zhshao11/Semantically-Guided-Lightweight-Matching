@@ -1,0 +1,2 @@
+# In addition to requirements.txt; used only by full scene TIFF audit.
+tifffile>=2024.1

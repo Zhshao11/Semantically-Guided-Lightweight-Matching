@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "protocol": "builtin-OSdataset-data-geometry-v1",
+  "root": "<OSDataset2.0 root>",
+  "archive": {
+    "enabled": true,
+    "archive_name": "OSDataset2.0.zip",
+    "archive_size_bytes": 9511893394,
+    "files": 34342,
+    "declared_uncompressed_bytes": 18354029673,
+    "method": "extracted file size + streaming CRC32 vs local ZIP central directory; SHA256 recorded",
+    "official_checksum_verified": false,
+    "compressed_stream_tested": false,
+    "extracted_files": 34342,
+    "missing_files": [],
+    "extra_files": [],
+    "size_crc_matches": 34342,
+    "size_crc_mismatches": 0
+  },
+  "errors": [],
+  "subsets": {
+    "Patch-level Subset/American": {
+      "pairs": 297,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 297,
+          "modes": {
+            "RGB": 297
+          },
+          "dtypes": {
+            "uint8": 297
+          },
+          "channels": {
+            "3": 297
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 297,
+          "modes": {
+            "L": 297
+          },
+          "dtypes": {
+            "uint8": 297
+          },
+          "channels": {
+            "1": 297
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Argentina": {
+      "pairs": 436,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 436,
+          "modes": {
+            "RGB": 436
+          },
+          "dtypes": {
+            "uint8": 436
+          },
+          "channels": {
+            "3": 436
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 436,
+          "modes": {
+            "L": 436
+          },
+          "dtypes": {
+            "uint8": 436
+          },
+          "channels": {
+            "1": 436
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Australian": {
+      "pairs": 341,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 341,
+          "modes": {
+            "RGB": 341
+          },
+          "dtypes": {
+            "uint8": 341
+          },
+          "channels": {
+            "3": 341
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 341,
+          "modes": {
+            "L": 341
+          },
+          "dtypes": {
+            "uint8": 341
+          },
+          "channels": {
+            "1": 341
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Germany": {
+      "pairs": 409,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 409,
+          "modes": {
+            "RGB": 409
+          },
+          "dtypes": {
+            "uint8": 409
+          },
+          "channels": {
+            "3": 409
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 409,
+          "modes": {
+            "L": 409
+          },
+          "dtypes": {
+            "uint8": 409
+          },
+          "channels": {
+            "1": 409
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Japan": {
+      "pairs": 313,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 313,
+          "modes": {
+            "RGB": 313
+          },
+          "dtypes": {
+            "uint8": 313
+          },
+          "channels": {
+            "3": 313
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 313,
+          "modes": {
+            "L": 313
+          },
+          "dtypes": {
+            "uint8": 313
+          },
+          "channels": {
+            "1": 313
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Katar": {
+      "pairs": 399,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 399,
+          "modes": {
+            "RGB": 399
+          },
+          "dtypes": {
+            "uint8": 399
+          },
+          "channels": {
+            "3": 399
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 399,
+          "modes": {
+            "L": 399
+          },
+          "dtypes": {
+            "uint8": 399
+          },
+          "channels": {
+            "1": 399
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Malaysia": {
+      "pairs": 263,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 263,
+          "modes": {
+            "RGB": 263
+          },
+          "dtypes": {
+            "uint8": 263
+          },
+          "channels": {
+            "3": 263
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 263,
+          "modes": {
+            "L": 263
+          },
+          "dtypes": {
+            "uint8": 263
+          },
+          "channels": {
+            "1": 263
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/OSdataset/256/test": {
+      "pairs": 1696,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 1696,
+          "modes": {
+            "L": 1696
+          },
+          "dtypes": {
+            "uint8": 1696
+          },
+          "channels": {
+            "1": 1696
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 1696,
+          "modes": {
+            "L": 1696
+          },
+          "dtypes": {
+            "uint8": 1696
+          },
+          "channels": {
+            "1": 1696
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 1696
+    },
+    "Patch-level Subset/OSdataset/256/train": {
+      "pairs": 8044,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 8044,
+          "modes": {
+            "L": 8044
+          },
+          "dtypes": {
+            "uint8": 8044
+          },
+          "channels": {
+            "1": 8044
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 8044,
+          "modes": {
+            "L": 8044
+          },
+          "dtypes": {
+            "uint8": 8044
+          },
+          "channels": {
+            "1": 8044
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 8044
+    },
+    "Patch-level Subset/OSdataset/256/val": {
+      "pairs": 952,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 952,
+          "modes": {
+            "L": 952
+          },
+          "dtypes": {
+            "uint8": 952
+          },
+          "channels": {
+            "1": 952
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 952,
+          "modes": {
+            "L": 952
+          },
+          "dtypes": {
+            "uint8": 952
+          },
+          "channels": {
+            "1": 952
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 952
+    },
+    "Patch-level Subset/OSdataset/512/test": {
+      "pairs": 424,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 424,
+          "modes": {
+            "L": 424
+          },
+          "dtypes": {
+            "uint8": 424
+          },
+          "channels": {
+            "1": 424
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 424,
+          "modes": {
+            "L": 424
+          },
+          "dtypes": {
+            "uint8": 424
+          },
+          "channels": {
+            "1": 424
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 424
+    },
+    "Patch-level Subset/OSdataset/512/train": {
+      "pairs": 2011,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 2011,
+          "modes": {
+            "L": 2011
+          },
+          "dtypes": {
+            "uint8": 2011
+          },
+          "channels": {
+            "1": 2011
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 2011,
+          "modes": {
+            "L": 2011
+          },
+          "dtypes": {
+            "uint8": 2011
+          },
+          "channels": {
+            "1": 2011
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 2011
+    },
+    "Patch-level Subset/OSdataset/512/val": {
+      "pairs": 238,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 238,
+          "modes": {
+            "L": 238
+          },
+          "dtypes": {
+            "uint8": 238
+          },
+          "channels": {
+            "1": 238
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 238,
+          "modes": {
+            "L": 238
+          },
+          "dtypes": {
+            "uint8": 238
+          },
+          "channels": {
+            "1": 238
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": 238
+    },
+    "Patch-level Subset/Poland": {
+      "pairs": 337,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 337,
+          "modes": {
+            "RGB": 337
+          },
+          "dtypes": {
+            "uint8": 337
+          },
+          "channels": {
+            "3": 337
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 337,
+          "modes": {
+            "L": 337
+          },
+          "dtypes": {
+            "uint8": 337
+          },
+          "channels": {
+            "1": 337
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Russia": {
+      "pairs": 257,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 257,
+          "modes": {
+            "RGB": 257
+          },
+          "dtypes": {
+            "uint8": 257
+          },
+          "channels": {
+            "3": 257
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 257,
+          "modes": {
+            "L": 257
+          },
+          "dtypes": {
+            "uint8": 257
+          },
+          "channels": {
+            "1": 257
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Russia2": {
+      "pairs": 139,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 139,
+          "modes": {
+            "RGB": 139
+          },
+          "dtypes": {
+            "uint8": 139
+          },
+          "channels": {
+            "3": 139
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 139,
+          "modes": {
+            "L": 139
+          },
+          "dtypes": {
+            "uint8": 139
+          },
+          "channels": {
+            "1": 139
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Russia3": {
+      "pairs": 96,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 96,
+          "modes": {
+            "RGB": 96
+          },
+          "dtypes": {
+            "uint8": 96
+          },
+          "channels": {
+            "3": 96
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 96,
+          "modes": {
+            "L": 96
+          },
+          "dtypes": {
+            "uint8": 96
+          },
+          "channels": {
+            "1": 96
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Singapore": {
+      "pairs": 183,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 183,
+          "modes": {
+            "RGB": 183
+          },
+          "dtypes": {
+            "uint8": 183
+          },
+          "channels": {
+            "3": 183
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 183,
+          "modes": {
+            "L": 183
+          },
+          "dtypes": {
+            "uint8": 183
+          },
+          "channels": {
+            "1": 183
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    },
+    "Patch-level Subset/Turkey": {
+      "pairs": 333,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "decode_failures": [],
+      "images": {
+        "optical": {
+          "count": 333,
+          "modes": {
+            "RGB": 333
+          },
+          "dtypes": {
+            "uint8": 333
+          },
+          "channels": {
+            "3": 333
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        },
+        "sar": {
+          "count": 333,
+          "modes": {
+            "L": 333
+          },
+          "dtypes": {
+            "uint8": 333
+          },
+          "channels": {
+            "1": 333
+          },
+          "observed_min": 0,
+          "observed_max": 255,
+          "constant_images": 0,
+          "metadata_images": 0
+        }
+      },
+      "expected_pairs": null
+    }
+  },
+  "parent_lineage": {
+    "method": "exact decoded 256x256 quadrants of each builtin 512 pair; both modalities must match",
+    "children": 10692,
+    "matched": 10692,
+    "unique_match": 10428,
+    "ambiguous": 264,
+    "unmatched": [],
+    "cross_split_parent_links": [],
+    "parents_with_children": 2673,
+    "children_per_parent_histogram": {
+      "4": 2607,
+      "8": 66
+    },
+    "scene_link": "No patch-to-scene coordinates/IDs in package. Pixel parent proof does not establish geographic scene independence."
+  },
+  "scene": {
+    "optical": {
+      "path": "Optical.tif",
+      "width": 35783,
+      "height": 35873,
+      "channels": 3,
+      "shape": [
+        35873,
+        35783,
+        3
+      ],
+      "axes": "YXS",
+      "dtype": "uint16",
+      "bigtiff": true,
+      "tile_wh": [
+        128,
+        128
+      ],
+      "compression": "COMPRESSION.NONE",
+      "nodata_tag_text": "256",
+      "nodata_in_storage_dtype": 256,
+      "geotiff": {
+        "KeyDirectoryVersion": 1,
+        "KeyRevision": 1,
+        "KeyRevisionMinor": 0,
+        "GTModelTypeGeoKey": 2,
+        "GTRasterTypeGeoKey": 1,
+        "GeographicTypeGeoKey": 4326,
+        "GeogCitationGeoKey": "GCS Name = GCS_WGS_1984|Datum = D_WGS_1984|Ellipsoid = WGS_1984|Primem = Greenwich|",
+        "GeogGeodeticDatumGeoKey": 6326,
+        "GeogPrimeMeridianGeoKey": 8901,
+        "GeogAngularUnitsGeoKey": 9102,
+        "GeogAngularUnitsSizeGeoKey": 0.0174532925199433,
+        "GeogEllipsoidGeoKey": 7030,
+        "GeogSemiMajorAxisGeoKey": 6378137.0,
+        "GeogInvFlatteningGeoKey": 298.257223563,
+        "GeogPrimeMeridianLongGeoKey": 0.0,
+        "PCSCitationGeoKey": "ESRI PE String = GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+        "ModelPixelScale": [
+          3.856974181696132e-06,
+          3.856974181696035e-06,
+          0.0
+        ],
+        "ModelTiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -81.72351624413776,
+          30.349388417645255,
+          0.0
+        ]
+      },
+      "statistics_scope": "all decoded tiles, cropped to true raster bounds",
+      "decoded_segments": 78680,
+      "valid_samples_per_channel": [
+        1283643559,
+        1283643559,
+        1283643559
+      ],
+      "nodata_samples_per_channel": [
+        0,
+        0,
+        0
+      ],
+      "nonfinite_samples_per_channel": [
+        0,
+        0,
+        0
+      ],
+      "zero_samples_per_channel": [
+        87746,
+        36489,
+        240020
+      ],
+      "min": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "mean": [
+        70.77773182282606,
+        68.75252544775944,
+        68.07927406427316
+      ],
+      "std": [
+        49.966855502257644,
+        48.90359629553786,
+        44.268395918979756
+      ],
+      "gdal_geotransform": [
+        -81.72351624413776,
+        3.856974181696132e-06,
+        0.0,
+        30.349388417645255,
+        0.0,
+        -3.856974181696035e-06
+      ]
+    },
+    "sar": {
+      "path": "sar.tif",
+      "width": 35507,
+      "height": 27298,
+      "channels": 1,
+      "shape": [
+        27298,
+        35507
+      ],
+      "axes": "YX",
+      "dtype": "float32",
+      "bigtiff": true,
+      "tile_wh": [
+        128,
+        128
+      ],
+      "compression": "COMPRESSION.NONE",
+      "nodata_tag_text": "-3.40282299999999995e+38",
+      "nodata_in_storage_dtype": -3.4028230607370965e+38,
+      "geotiff": {
+        "KeyDirectoryVersion": 1,
+        "KeyRevision": 1,
+        "KeyRevisionMinor": 0,
+        "GTModelTypeGeoKey": 2,
+        "GTRasterTypeGeoKey": 1,
+        "GeographicTypeGeoKey": 4326,
+        "GeogCitationGeoKey": "GCS Name = GCS_WGS_1984|Datum = D_WGS_1984|Ellipsoid = WGS_1984|Primem = Greenwich|",
+        "GeogGeodeticDatumGeoKey": 6326,
+        "GeogPrimeMeridianGeoKey": 8901,
+        "GeogAngularUnitsGeoKey": 9102,
+        "GeogAngularUnitsSizeGeoKey": 0.0174532925199433,
+        "GeogEllipsoidGeoKey": 7030,
+        "GeogSemiMajorAxisGeoKey": 6378137.0,
+        "GeogInvFlatteningGeoKey": 298.257223563,
+        "GeogPrimeMeridianLongGeoKey": 0.0,
+        "PCSCitationGeoKey": "ESRI PE String = GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+        "ModelPixelScale": [
+          3.856974181696009e-06,
+          3.856974181696123e-06,
+          0.0
+        ],
+        "ModelTiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -81.71460329222379,
+          30.350286900668642,
+          0.0
+        ]
+      },
+      "statistics_scope": "all decoded tiles, cropped to true raster bounds",
+      "decoded_segments": 59492,
+      "valid_samples_per_channel": [
+        726391664
+      ],
+      "nodata_samples_per_channel": [
+        242878422
+      ],
+      "nonfinite_samples_per_channel": [
+        0
+      ],
+      "zero_samples_per_channel": [
+        0
+      ],
+      "min": [
+        0.028600379824638367
+      ],
+      "max": [
+        10516.8876953125
+      ],
+      "mean": [
+        12.82484817366931
+      ],
+      "std": [
+        19.45331787723287
+      ],
+      "gdal_geotransform": [
+        -81.71460329222379,
+        3.856974181696009e-06,
+        0.0,
+        30.350286900668642,
+        0.0,
+        -3.856974181696123e-06
+      ]
+    }
+  },
+  "source_evidence": {
+    "patch_readme": "Patch-level Subset/OSdataset/ReadMe.docx",
+    "patch_sar": "Gaofen-3 C-band Spotlight",
+    "patch_optical": "Google Earth; original package builtin patches are grayscale",
+    "nominal_original_patch_resolution_m": 1,
+    "scene_crs": "EPSG:4326 from GeoTIFF metadata",
+    "scene_pixel_spacing_unit": "degrees, not meters",
+    "scene_source_satellite": "not identified in package",
+    "original_large_patch_parent_scenes": "not distributed as an ID/coordinate mapping",
+    "reference_script": "Scene-level Subset/code/Evaluation.py",
+    "metadata_candidate_files": [
+      "Patch-level Subset/OSdataset/ReadMe.docx",
+      "Scene-level Subset/GT.txt",
+      "Scene-level Subset/code/Evaluation.py"
+    ]
+  },
+  "cross_split_file_duplicates": [],
+  "cross_split_decoded_duplicates": [],
+  "control_points": {
+    "rows": 72,
+    "expected_rows": 72,
+    "columns": [
+      "x_optical",
+      "y_optical",
+      "x_sar",
+      "y_sar"
+    ],
+    "coordinates_assumed": "zero_based_xy_pixel_centers",
+    "annotation_origin_verified": false,
+    "duplicate_rows": 0,
+    "duplicate_optical": 0,
+    "duplicate_sar": 0,
+    "optical_out_of_bounds": [],
+    "sar_out_of_bounds": [],
+    "optical_min_xy": [
+      3899.7182548484,
+      451.2594718952
+    ],
+    "optical_max_xy": [
+      34627.6086727963,
+      26695.3138086781
+    ],
+    "sar_min_xy": [
+      1590.8534570963,
+      684.4741580748
+    ],
+    "sar_max_xy": [
+      32319.3583463547,
+      26923.1667789054
+    ],
+    "diagnostic_fit_not_independent_accuracy": true,
+    "least_squares_affine_optical_to_sar": [
+      [
+        0.9999134598302367,
+        -0.00011822977465414386,
+        -2308.087728685378
+      ],
+      [
+        -4.927821134818144e-05,
+        0.9999510438223926,
+        230.65599406537248
+      ]
+    ],
+    "fit_rmse_px": 3.7018010723310617,
+    "fit_median_px": 2.8985687819492814,
+    "fit_max_px": 9.87828666814925,
+    "numerical_roundtrip_max_px": 1.0289757937229989e-11,
+    "diagnostic_ransac_inliers": 32,
+    "diagnostic_ransac_matrix": [
+      [
+        0.999899780792907,
+        -3.5088588875888265e-05,
+        -2307.9729269390773
+      ],
+      [
+        -2.1621369853999435e-05,
+        0.999966119630004,
+        230.1321483315727
+      ]
+    ]
+  },
+  "totals": {
+    "files": 34342,
+    "decoded_png": 34336,
+    "pairs": 17168,
+    "usable_pairs": 17168,
+    "new_region_pairs": 3803
+  },
+  "root_manifest_sha256": "ab3a20528d916de501c5826191b87910c2501fe75d679bc72f224fff43f9046c"
+}

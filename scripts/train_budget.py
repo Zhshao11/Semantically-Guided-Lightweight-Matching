@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import torch
 from sglm import Matcher
+from sglm.config import load_config
 from sglm.data import OSPairs
 
 
@@ -18,13 +19,15 @@ def main():
     ap.add_argument('--device', default='cuda')
     ap.add_argument('--limit', type=int, default=1000)
     ap.add_argument('--epochs', type=int, default=100)
+    ap.add_argument('--config')
+    ap.add_argument('--manifest')
     a = ap.parse_args()
-    torch.manual_seed(20261125)
+    torch.manual_seed(load_config(a.config)['seed'])
     torch.set_num_threads(4)
     checkpoint = torch.load(a.checkpoint, map_location=a.device, weights_only=False)
     model = Matcher(use_semantics=checkpoint['use_semantics']).to(a.device).eval()
     model.load_state_dict(checkpoint['model'])
-    data = OSPairs(a.root, split='train', limit=a.limit)
+    data = OSPairs(a.root, split='train', limit=a.limit, manifest=a.manifest, config_path=a.config)
     statistics, labels, oracle = [], [], []
     with torch.no_grad():
         for item in data:

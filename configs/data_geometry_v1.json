@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "protocol": "builtin-OSdataset-data-geometry-v1",
+  "seed": 20261125,
+  "dataset": {
+    "name": "OSDataset2.0",
+    "builtin_path": "Patch-level Subset/OSdataset/{resolution}/{split}",
+    "expected_pairs": {
+      "256": {"train": 8044, "val": 952, "test": 1696},
+      "512": {"train": 2011, "val": 238, "test": 424}
+    },
+    "expected_new_region_pairs": 3803,
+    "expected_archive_files": 34342,
+    "manifest_schema": "sglm.pair_manifest.v1",
+    "optical_input": "gray_repeat_to_rgb_or_native_rgb",
+    "normalization": "uint8_divide_255",
+    "split_policy": "preserve_builtin_splits_no_cross_resolution_mixing"
+  },
+  "coordinates": {
+    "axis_order": "xy",
+    "index_base": 0,
+    "pixel_reference": "center",
+    "align_corners": false,
+    "transform_direction": "source_to_destination"
+  },
+  "augmentation": {
+    "model": "rotation_uniform_scale_translation",
+    "rotation_deg": [-35, 35],
+    "scale": [0.7, 1.3],
+    "translation_fraction": [-0.1, 0.1],
+    "center": "((width-1)/2,(height-1)/2)",
+    "mask_min_weight": 0.999,
+    "mask_policy": "bilinear_ones_warp_strict"
+  },
+  "geometry": {
+    "model": "full_affine_6dof",
+    "ransac_threshold_px": 3.0,
+    "ransac_max_iterations": 5000,
+    "ransac_confidence": 0.999,
+    "minimum_reliability": 0.5,
+    "roundtrip_tolerance_px": 1e-9,
+    "feature_strides": [2, 8]
+  },
+  "control_points": {
+    "path": "Scene-level Subset/GT.txt",
+    "columns": ["x_optical", "y_optical", "x_sar", "y_sar"],
+    "expected_rows": 72,
+    "pixel_reference_status": "original_reference_script_assumes_zero_based_but_annotation_origin_unverified",
+    "usage": "scene_evaluation_only_not_patch_training"
+  }
+}

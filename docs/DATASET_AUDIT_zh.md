@@ -1,4 +1,6 @@
-# OSdataset 核对记录
+# OSdataset 初步核对记录
+
+更新：本文件保留首版核对历史；最新完整审计、重复项和父图证据请看 `reports/data_geometry_v1/数据审计报告.md` 与 `docs/DATA_GEOMETRY_STAGE_zh.md`。
 
 核对日期：2026-11-25。依据服务器文件实际盘点、图像解码完整性检查、SHA-256 清单、数据集内置 ReadMe.docx、Scene-level Subset/code/Evaluation.py，以及用户提供的 TAR 论文第 6、7、11 页。未使用 SourceMux。
 

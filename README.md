@@ -4,6 +4,13 @@
 
 **当前状态：核心网络、训练/评估入口与数据审计已实现；已完成真实 OSdataset 小规模运行验证。尚未完成七类语义教师训练、完整数据集训练、动态预算实验或论文级精度验证。** 目前的短训练 checkpoint 是关闭语义引导的 visual baseline，不是完整方法的最终模型。
 
+
+## 当前优先阶段：数据与几何基础
+
+本次阶段交付见 [数据与几何工程说明](docs/DATA_GEOMETRY_STAGE_zh.md)、[控制点格式](docs/CONTROL_POINTS_zh.md)及 `reports/data_geometry_v1/` 的完整审计和测试证据。配置实际读取 `configs/data_geometry_v1.json`；原有模型参考配置和短训练报告保留为历史。
+
+统一清单覆盖原版256/512六个split和2.0新增区域，加载器支持按resolution/split筛选；父图关系通过双模态像素验证。该阶段不报告新的训练精度。
+
 ## 方法
 
 1. 独立光学/SAR 输入适配器，共享卷积、模态独立 BN；三阶段 DSRes（16/32/64 通道，2/2/3 个残差块）和加法 FPN。

@@ -7,6 +7,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from sglm import Matcher
+from sglm.config import load_config
 from sglm.data import OSPairs
 from sglm.losses import matching_loss
 
@@ -19,12 +20,17 @@ def main():
     ap.add_argument('--epochs', type=int, default=10)
     ap.add_argument('--batch-size', type=int, default=4)
     ap.add_argument('--lr', type=float, default=1e-3)
-    ap.add_argument('--seed', type=int, default=20261125)
+    ap.add_argument('--seed', type=int)
     ap.add_argument('--limit', type=int)
     ap.add_argument('--max-steps', type=int)
     ap.add_argument('--semantic-cache')
     ap.add_argument('--resume')
+    ap.add_argument('--config')
+    ap.add_argument('--manifest')
+    ap.add_argument('--resolution', type=int, choices=[256, 512], default=256)
     a = ap.parse_args()
+    effective = load_config(a.config)
+    a.seed = effective['seed'] if a.seed is None else a.seed
     random.seed(a.seed)
     np.random.seed(a.seed)
     torch.manual_seed(a.seed)
@@ -32,7 +38,9 @@ def main():
     out = Path(a.output)
     out.mkdir(parents=True, exist_ok=True)
     (out / 'config.json').write_text(json.dumps(vars(a), indent=2))
-    ds = OSPairs(a.root, limit=a.limit, seed=a.seed, semantic_cache=a.semantic_cache)
+    ds = OSPairs(a.root, limit=a.limit, seed=a.seed, semantic_cache=a.semantic_cache,
+                 resolution=a.resolution, manifest=a.manifest, config_path=a.config)
+    (out / 'data_geometry_config.json').write_text(json.dumps(ds.config, indent=2))
     loader = DataLoader(ds, batch_size=a.batch_size, shuffle=True, num_workers=0)
     # Explicit visual baseline when no trained semantic teacher cache is provided.
     model = Matcher(use_semantics=bool(a.semantic_cache)).to(a.device)
