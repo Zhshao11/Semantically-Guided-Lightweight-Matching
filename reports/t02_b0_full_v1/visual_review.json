@@ -1,0 +1,15 @@
+{
+  "review_cases": 20,
+  "sheets": [
+    "gt_review_sheet_01.png",
+    "gt_review_sheet_02.png"
+  ],
+  "inspected": true,
+  "observations": [
+    "Known-forward-affine links end in supported target pixels.",
+    "Red areas mark invalid resampling support.",
+    "Original cross-modal residual misregistration remains an assumption, not verified exact GT."
+  ],
+  "cli_predictions_match_evaluation_image_only_path": true,
+  "cli_matrix_matches_evaluation": true
+}

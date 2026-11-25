@@ -1,0 +1,7 @@
+{
+  "torch": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 5090",
+  "bf16_supported": true,
+  "parameters": 37219,
+  "plan_sha256": "1eed7329d0ef8e7fde19e8476d229517f5d16b89836ef117c737ef4fc4488d3b"
+}

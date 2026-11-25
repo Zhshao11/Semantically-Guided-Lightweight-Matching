@@ -15,3 +15,4 @@ runs/
 reports/data_geometry_v1/geometry_warp_example.png
 reports/data_geometry_v1/control_points.csv
 reports/data_geometry_v1/package_readme_extracted.txt
+reports/t02_b0_full_v1/gt_review_sheet_*.png

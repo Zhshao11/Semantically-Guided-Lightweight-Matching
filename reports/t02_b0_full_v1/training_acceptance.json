@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "total_steps": 1600,
+  "checkpoint_step": 1600,
+  "resumed_from_step": 400,
+  "replay_step": 401,
+  "replay_same_batch": true,
+  "replay_max_absolute_difference": {
+    "total": 0.0,
+    "coarse": 0.0,
+    "fine": 0.0,
+    "grad_norm": 0.0,
+    "positive_coarse_accuracy": 0.0
+  },
+  "optimizer_state_entries": 147,
+  "optimizer_steps": [
+    1600
+  ],
+  "all_losses_and_gradients_finite": true,
+  "precision_evidence": {
+    "coarse_feature_dtype": "torch.bfloat16",
+    "descriptor_dtype": "torch.float32",
+    "correlation_dtype": "torch.bfloat16",
+    "parameters_dtype": "torch.float32",
+    "loss_dtype": "torch.float32",
+    "backward_finite": true,
+    "coarse_feature_shape": [
+      4,
+      64,
+      32,
+      32
+    ],
+    "fine_feature_shape": [
+      4,
+      16,
+      128,
+      128
+    ],
+    "descriptor_shape": [
+      4,
+      1024,
+      32
+    ],
+    "correlation_shape": [
+      4,
+      1024,
+      1024
+    ]
+  },
+  "first_50_mean_loss": 8.88750192642212,
+  "last_50_mean_loss": 3.7869008016586303,
+  "evaluation_reads_gt_only_after_prediction": true,
+  "post_bootstrap_training_uses_predicted_coarse": true
+}

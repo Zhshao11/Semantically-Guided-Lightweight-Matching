@@ -1,0 +1,25 @@
+{
+  "protocol": "T02-B0-Full-fixed-small-v1",
+  "seed": 20261125,
+  "input_size": 256,
+  "training_manifest": "reports/metadata_finalize_v1/train_256_dedup_v1.jsonl",
+  "reference_manifest": "reports/data_geometry_v1/dataset_manifest.jsonl",
+  "sampling": {"train_pairs": 32, "val_pairs": 16, "selection": "seeded_random_without_replacement", "mode": "fixed_images_and_matrices"},
+  "augmentation": {
+    "rotation_deg": [-10, 10], "uniform_scale": [0.9, 1.1],
+    "translation_px_each_axis": [-16, 16], "shear_deg_each_axis": [-5, 5],
+    "shear_coefficients": "tan(degrees*pi/180)",
+    "matrix_order_rightmost_first": "T_translation @ T_center @ R_rotation @ H_shear_xy @ S_uniform @ T_minus_center",
+    "H_shear_xy": "[[1,tan(shear_x)],[tan(shear_y),1]]",
+    "center_xy": [127.5, 127.5],
+    "forward_direction": "SAR_original_to_SAR_augmented",
+    "image_sampling": "I_aug(y)=I_original(inverse(A_forward)*y); OpenCV forward-matrix API",
+    "valid_mask_min_weight": 0.999,
+    "normalization": "raw_uint8_divide_255_no_log_transform"
+  },
+  "model": {"name": "B0-Full", "coarse_stride": 8, "fine_stride": 2, "descriptor_dim": 32, "local_radius_fine_cells": 3, "coarse_min_probability": 0.01, "mutual_nearest": true},
+  "disabled": ["semantics", "joint_score", "query_selection", "dynamic_budget", "local_cross_attention"],
+  "training": {"precision": "bf16", "batch_size": 4, "total_steps": 1600, "learning_rate": 0.001, "weight_decay": 0.0001, "gradient_clip_norm": 5, "checkpoint_interval": 100, "fine_gt_bootstrap_steps": 400, "fine_training_samples_per_pair": 256, "fine_loss_weight": 0.2, "no_match_loss_weight": 0.25},
+  "evaluation": {"probe_grid": [16, 16], "probe_rule": "fixed cell centers independent of fitted correspondences", "success_thresholds_px": [1, 3, 5], "ransac_threshold_px": 3, "ransac_min_inliers": 6, "ransac_max_iterations": 5000, "ransac_confidence": 0.999, "minimum_match_score": 0.0},
+  "notes": ["Synthetic correspondence supervision assumes small residual original misregistration; not exact human GT.", "No scene results used for model selection or threshold tuning.", "Training fine windows may use GT bootstrap; every reported inference window comes from predicted coarse matches."]
+}

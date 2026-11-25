@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "true_matrix_rmse_px": 0.0,
+  "wrong_matrix_rmse_px": 5.830951894845301,
+  "empty_status": "empty_matches",
+  "degenerate_status": "degenerate_matches",
+  "summary": {
+    "image_pairs": 4,
+    "solved_pairs": 2,
+    "failed_pairs": 2,
+    "failure_rate": 0.5,
+    "solved_mean_rmse_px": 2.9154759474226504,
+    "solved_median_rmse_px": 2.9154759474226504,
+    "success_rate@1px": 0.25,
+    "registration_failure_rate@1px": 0.75,
+    "successful_mean_rmse@1px": 0.0,
+    "success_rate@3px": 0.25,
+    "registration_failure_rate@3px": 0.75,
+    "successful_mean_rmse@3px": 0.0,
+    "success_rate@5px": 0.25,
+    "registration_failure_rate@5px": 0.75,
+    "successful_mean_rmse@5px": 0.0
+  },
+  "scene_interface": "same evaluate_transform(matrix, external_control_source, external_control_target); no controls in fit"
+}
