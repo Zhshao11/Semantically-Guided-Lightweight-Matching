@@ -104,7 +104,7 @@ def main():
         '图中的误差来自独立探针；彩色线与棋盘格用于诊断，不能替代数值评价。合成A监督仍假设原始跨模态配准残差较小，并非人工真实对应完全精确。'])
     (output/'六项交付核对报告.md').write_text('\n'.join(lines)+'\n')
     with (output/'初始化与训练后指标.csv').open('w',newline='') as stream:
-        writer=csv.DictWriter(stream,fieldnames=list(csv_rows[0]));writer.writeheader();writer.writerows(csv_rows)
+        writer=csv.DictWriter(stream,fieldnames=list(csv_rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(csv_rows)
     evidence=dict(dedup_counts=freeze['summary'],control_image_pairs=controls['image_pair_count'],control_points=controls['total_control_points'],
         new_interface_tests=8,total_tests=52,training_steps=1600,visual_cases=48,
         cases_reproduce_saved_predictions=True,metrics=csv_rows,
