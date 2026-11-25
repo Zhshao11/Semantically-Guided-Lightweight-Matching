@@ -1,18 +1,17 @@
 {
-  "snapshot_unix": 1795618436.7053144,
+  "snapshot_unix": 1795618495.7496958,
   "runs": {
     "main": {
       "run_directory": "runs/t03_main_lr1e3_v1",
       "status": {
         "pid": 2797703,
         "phase": "training",
-        "epoch": 3,
-        "step": 5756,
-        "updated_unix": 1795618435.6569798,
-        "batches_done": 1800,
+        "epoch": 4,
+        "step": 6684,
+        "updated_unix": 1795618493.6132843,
+        "batches_done": 750,
         "batches_total": 1978,
-        "last_loss": 4.942446708679199,
-        "validation_pairs_done": 900
+        "last_loss": 4.761264324188232
       },
       "environment": {
         "torch": "2.11.0+cu128",
@@ -53,6 +52,34 @@
           "fine": 1.7004178242326626,
           "positive_coarse_accuracy": 0.08575496766283068,
           "fine_training_pairs": 211.716380182002
+        },
+        {
+          "epoch": 3,
+          "step": 5934,
+          "batches": 1978,
+          "train_pairs": 7912,
+          "seconds": 124.37933932000306,
+          "learning_rate": 0.001,
+          "sample_and_augmentation_stream_sha256": "d0db233f021f83d7894ff27bd465dc15303cc3390a177eed7f750b8637125c2b",
+          "total": 4.564357493716858,
+          "coarse": 4.2286562274753505,
+          "fine": 1.6785063338894453,
+          "positive_coarse_accuracy": 0.10430614910718464,
+          "fine_training_pairs": 273.4969666329626
+        }
+      ],
+      "validation_state_audits": [
+        {
+          "epoch": 1,
+          "model_eval": true,
+          "BN_buffers_unchanged": true,
+          "pairs": 952
+        },
+        {
+          "epoch": 2,
+          "model_eval": true,
+          "BN_buffers_unchanged": true,
+          "pairs": 952
         }
       ],
       "validation_summaries": [
@@ -112,13 +139,12 @@
       "status": {
         "pid": 2797704,
         "phase": "training",
-        "epoch": 3,
-        "step": 5806,
-        "updated_unix": 1795618435.9429839,
-        "batches_done": 1850,
+        "epoch": 4,
+        "step": 6734,
+        "updated_unix": 1795618494.2904673,
+        "batches_done": 800,
         "batches_total": 1978,
-        "last_loss": 5.27636194229126,
-        "validation_pairs_done": 900
+        "last_loss": 5.387208938598633
       },
       "environment": {
         "torch": "2.11.0+cu128",
@@ -159,6 +185,34 @@
           "fine": 2.009041580771773,
           "positive_coarse_accuracy": 0.02970070614624501,
           "fine_training_pairs": 47.656723963599596
+        },
+        {
+          "epoch": 3,
+          "step": 5934,
+          "batches": 1978,
+          "train_pairs": 7912,
+          "seconds": 123.53761417599162,
+          "learning_rate": 0.0002,
+          "sample_and_augmentation_stream_sha256": "d0db233f021f83d7894ff27bd465dc15303cc3390a177eed7f750b8637125c2b",
+          "total": 5.268961330757103,
+          "coarse": 4.890108481456344,
+          "fine": 1.8942642641621967,
+          "positive_coarse_accuracy": 0.05067580316594309,
+          "fine_training_pairs": 101.78513650151669
+        }
+      ],
+      "validation_state_audits": [
+        {
+          "epoch": 1,
+          "model_eval": true,
+          "BN_buffers_unchanged": true,
+          "pairs": 952
+        },
+        {
+          "epoch": 2,
+          "model_eval": true,
+          "BN_buffers_unchanged": true,
+          "pairs": 952
         }
       ],
       "validation_summaries": [
@@ -224,6 +278,11 @@
       "epoch": 2,
       "matched": true,
       "sha256": "b760702af8552dcf0ff596b9e8275dc8dc07be6e20067f0651560a5f3be4be56"
+    },
+    {
+      "epoch": 3,
+      "matched": true,
+      "sha256": "d0db233f021f83d7894ff27bd465dc15303cc3390a177eed7f750b8637125c2b"
     }
   ],
   "initialization_states_equal": true,

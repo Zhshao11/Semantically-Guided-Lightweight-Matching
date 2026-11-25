@@ -23,7 +23,15 @@ def main():
         status=json.loads((p/'status.json').read_text())
         env=json.loads((p/'environment.json').read_text()) if (p/'environment.json').exists() else None
         epochs=json_lines(p/'epoch_summaries.jsonl');validations=json_lines(p/'validation_summaries.jsonl')
-        runs[label]=dict(run_directory=str(p),status=status,environment=env,epoch_summaries=epochs,
+        audits=[]
+        for validation in validations:
+            detail=json.loads((p/f'validation_epoch_{validation["epoch"]:03d}.json').read_text())
+            audit=dict(epoch=validation['epoch'],model_eval=detail['model_eval'],BN_buffers_unchanged=detail['BN_buffers_unchanged'],pairs=len(detail['pairs']))
+            assert audit['model_eval'] and audit['BN_buffers_unchanged'] and audit['pairs']==952
+            audits.append(audit)
+        if status['phase']!='validating':
+            status.pop('validation_pairs_done',None)
+        runs[label]=dict(run_directory=str(p),status=status,environment=env,epoch_summaries=epochs,validation_state_audits=audits,
             validation_summaries=validations,checkpoint_exists={n:(p/n).exists() for n in ('initial.pt','last.pt','best.pt')})
     common=min(len(runs['main']['epoch_summaries']),len(runs['lr_control']['epoch_summaries']))
     agreement=[]
