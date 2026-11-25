@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "256": {
+      "original": 8044,
+      "kept": 7912,
+      "excluded": 132,
+      "duplicate_groups": 132
+    },
+    "512": {
+      "original": 2011,
+      "kept": 1978,
+      "excluded": 33,
+      "duplicate_groups": 33
+    }
+  },
+  "lineage": {
+    "retained_children": 7912,
+    "retained_parents": 1978,
+    "verified_links": 7912,
+    "children_per_parent": 4,
+    "complete_quadrant_coverage": true,
+    "geographic_scene_provenance_verified": false
+  },
+  "original_parent_status": {
+    "unresolved": 6476,
+    "verified": 10428,
+    "candidate": 264
+  },
+  "retained_256_parent_status": {
+    "verified": 7912
+  },
+  "protocol": "joint-content-train-dedup-v1",
+  "source_manifest_sha256": "ab3a20528d916de501c5826191b87910c2501fe75d679bc72f224fff43f9046c",
+  "source_control_sha256": "a5cc78fa66a12e42fbcc6a83be666354b46be27525c49f5bc9788c37200e0acf",
+  "original_files_modified": false,
+  "original_manifest_modified": false,
+  "representative_rule": "minimum numeric sample ID independently within train/resolution",
+  "deduplication_key": "ordered optical_decoded_sha256 AND sar_decoded_sha256",
+  "control_image_pairs": 1,
+  "control_points": 72,
+  "files": {
+    "dataset_manifest_parent_status_v1.jsonl": {
+      "bytes": 33002588,
+      "sha256": "6f8684b75394855c4812962ff046d91307a40de8eee1d2c244f92f436a470a7a"
+    },
+    "train_256_dedup_v1.jsonl": {
+      "bytes": 17846603,
+      "sha256": "78cbb529047ec495b01d2caad3ab6ed699445478b1c1d9b1dd20c6e0a9d72c45"
+    },
+    "train_512_dedup_v1.jsonl": {
+      "bytes": 3802481,
+      "sha256": "6f00a80d7c73cd7a1db1aef62045d7d2b0ff7446a91a19366703308e76e8e86e"
+    },
+    "duplicate_groups_v1.jsonl": {
+      "bytes": 34751,
+      "sha256": "3fdfc9e4b2e9c217615ee2aaae2b9d8baa6a2b0ecb3d0f56bcd4b88f9b19788b"
+    },
+    "control_point_groups_v1.json": {
+      "bytes": 2559,
+      "sha256": "d7b8ae74913fc7a5840f48801a714e487c181969121d0031a28a53f1f83e4ebe"
+    },
+    "train_keep_exclude_mapping_v1.csv": {
+      "bytes": 2550080,
+      "sha256": "e7ada58bbe62306a13c68b2dd9c0bcf71482dd42f207c485c3de2ea4b3cae5fd"
+    }
+  }
+}

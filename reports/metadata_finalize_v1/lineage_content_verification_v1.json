@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "retained_512_parents": 1978,
+  "verified_256_children": 7912,
+  "modalities_checked": [
+    "optical",
+    "sar"
+  ],
+  "decoded_512_images": 3956,
+  "method": "reread retained parent pixels; verify full parent hashes and every 256 quadrant against frozen child hashes",
+  "child_hash_provenance": "original full-file audit manifest; freeze hash verified",
+  "cross_split_parent_links": 0,
+  "scene_source_provenance_verified": false,
+  "note": "Content mapping only; no scene registration, model choice or threshold tuning"
+}

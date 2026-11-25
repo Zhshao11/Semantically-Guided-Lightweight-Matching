@@ -1,0 +1,85 @@
+{
+  "image_pair_count": 1,
+  "total_control_points": 72,
+  "groups": [
+    {
+      "pair_id": "osdataset2/scene/optical-sar",
+      "point_count": 72,
+      "images": {
+        "optical": {
+          "path": "Scene-level Subset/Optical.tif",
+          "width": 35783,
+          "height": 35873
+        },
+        "sar": {
+          "path": "Scene-level Subset/sar.tif",
+          "width": 35507,
+          "height": 27298
+        }
+      },
+      "coordinate_order": [
+        "x_optical",
+        "y_optical",
+        "x_sar",
+        "y_sar"
+      ],
+      "axis_order": "xy_column_row",
+      "coordinate_origin": {
+        "project_assumption_index_base": 0,
+        "project_assumption_pixel_reference": "center",
+        "original_annotation_index_base": "unverified",
+        "original_annotation_pixel_reference": "unverified",
+        "values_modified": false,
+        "evidence": "package Evaluation.py defaults to offset_mode=none; annotation convention unproven"
+      },
+      "usage": "metadata_only_no_scene_model_selection_or_threshold_tuning",
+      "spatial_coverage": {
+        "optical": {
+          "bbox_min_xy": [
+            3899.7182548484,
+            451.2594718952
+          ],
+          "bbox_max_xy": [
+            34627.6086727963,
+            26695.3138086781
+          ],
+          "bbox_span_fraction_xy": [
+            0.8587527365141103,
+            0.7316027636257499
+          ],
+          "convex_hull_area_fraction": 0.5103131318866532,
+          "grid_4x4_occupied": 11,
+          "pca_minor_major_singular_ratio": 0.7017022448074755,
+          "near_collinear": false,
+          "near_collinear_rule": {
+            "metric": "normalized_xy_minor_major_singular_ratio",
+            "less_than": 0.01
+          }
+        },
+        "sar": {
+          "bbox_min_xy": [
+            1590.8534570963,
+            684.4741580748
+          ],
+          "bbox_max_xy": [
+            32319.3583463547,
+            26923.1667789054
+          ],
+          "bbox_span_fraction_xy": [
+            0.8654454145569312,
+            0.9612299014848005
+          ],
+          "convex_hull_area_fraction": 0.6757397196935089,
+          "grid_4x4_occupied": 13,
+          "pca_minor_major_singular_ratio": 0.8810608537550599,
+          "near_collinear": false,
+          "near_collinear_rule": {
+            "metric": "normalized_xy_minor_major_singular_ratio",
+            "less_than": 0.01
+          }
+        }
+      }
+    }
+  ],
+  "note": "72 control-point correspondences belong to one distributed image pair; not 72 image pairs"
+}

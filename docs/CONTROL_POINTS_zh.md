@@ -12,6 +12,8 @@ x_optical  y_optical  x_sar  y_sar
 
 完整审计的 CSV 保留全部 72 点，增加一基 `point_id`（只是记录序号）、两幅影像边界检查和 diagnostic affine 拟合残差。此 point_id 不改变坐标索引。
 
+最新分组元数据见 `reports/metadata_finalize_v1/control_point_groups_v1.json`：当前为 **1对影像、72个控制点对应**，包含影像尺寸、坐标起点证据、双侧空间覆盖和近共线检查。
+
 ## 统一内部约定
 
 - 图像原点左上角，x 向右，y 向下。

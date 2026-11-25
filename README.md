@@ -11,6 +11,12 @@
 
 统一清单覆盖原版256/512六个split和2.0新增区域，加载器支持按resolution/split筛选；父图关系通过双模态像素验证。该阶段不报告新的训练精度。
 
+## 冻结去重训练清单
+
+元数据收尾见 [冻结清单与状态说明](docs/METADATA_FINALIZE_V1_zh.md)。`reports/metadata_finalize_v1/train_256_dedup_v1.jsonl` 保留7912对，512版本保留1978对；原始清单和文件保留。使用双模态联合解码内容键、最小数值ID代表，全部keep/exclude映射可追溯。后续训练通过 `--manifest` 显式选择该视图，验证和测试仍使用原split。
+
+父图内容映射独立标为verified/candidate/unresolved，卫星scene来源另设状态。控制点分组为一对大场景影像的72个点对应，本轮仅检查元数据，不做scene模型选择或阈值调整。
+
 ## 方法
 
 1. 独立光学/SAR 输入适配器，共享卷积、模态独立 BN；三阶段 DSRes（16/32/64 通道，2/2/3 个残差块）和加法 FPN。
@@ -32,7 +38,7 @@
 | val | 952 |
 | test | 1696 |
 
-原版 optical 与 SAR 都是灰度图；optical 在加载时复制为三通道。patch 是已配准图像对，没有逐对矩阵/点 GT，也没有七类语义标签。使用已知 SAR 扰动生成合成几何 GT。独立 scene 子集有 72 对 GT 控制点。
+原版 optical 与 SAR 都是灰度图；optical 在加载时复制为三通道。patch 是已配准图像对，没有逐对矩阵/点 GT，也没有七类语义标签。使用已知 SAR 扰动生成合成几何 GT。独立 scene 子集有1对影像，附72个控制点对应。
 
 TAR 论文与此原版数据来源一致，但论文使用 6297 训练 / 1000 测试，未给出验证集与完整样本列表；**本项目不声称与 TAR 的样本和变换协议完全相同**。详见 [完整核对记录](docs/DATASET_AUDIT_zh.md)。
 
