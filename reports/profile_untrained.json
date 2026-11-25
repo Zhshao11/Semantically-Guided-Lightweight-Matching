@@ -1,0 +1,39 @@
+{
+  "torch": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 5090",
+  "parameters_total": 74032,
+  "mode": "untrained, visual baseline, default threshold; fine workload depends on predictions",
+  "measures": "model forward incl. selection; excludes loading and RANSAC",
+  "results": [
+    {
+      "k": 128,
+      "median_ms": 10.843682510312647,
+      "p90_ms": 15.026513987686485,
+      "correlation_shape": [
+        128,
+        1025
+      ],
+      "fine_matches": 0
+    },
+    {
+      "k": 256,
+      "median_ms": 12.88178499089554,
+      "p90_ms": 13.063367240829393,
+      "correlation_shape": [
+        256,
+        1025
+      ],
+      "fine_matches": 0
+    },
+    {
+      "k": 384,
+      "median_ms": 14.220763492630795,
+      "p90_ms": 14.674445701530203,
+      "correlation_shape": [
+        384,
+        1025
+      ],
+      "fine_matches": 0
+    }
+  ]
+}

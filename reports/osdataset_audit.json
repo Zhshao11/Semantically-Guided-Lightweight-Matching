@@ -1,0 +1,262 @@
+{
+  "root": "<OSDataset2.0 root>",
+  "subsets": {
+    "Patch-level Subset/American": {
+      "pairs": 297,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 594
+      },
+      "image_modes": {
+        "RGB": 297,
+        "L": 297
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Argentina": {
+      "pairs": 436,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 872
+      },
+      "image_modes": {
+        "RGB": 436,
+        "L": 436
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Australian": {
+      "pairs": 341,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 682
+      },
+      "image_modes": {
+        "RGB": 341,
+        "L": 341
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Germany": {
+      "pairs": 409,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 818
+      },
+      "image_modes": {
+        "RGB": 409,
+        "L": 409
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Japan": {
+      "pairs": 313,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 626
+      },
+      "image_modes": {
+        "RGB": 313,
+        "L": 313
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Katar": {
+      "pairs": 399,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 798
+      },
+      "image_modes": {
+        "RGB": 399,
+        "L": 399
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Malaysia": {
+      "pairs": 263,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 526
+      },
+      "image_modes": {
+        "RGB": 263,
+        "L": 263
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/256/test": {
+      "pairs": 1696,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(256, 256)": 3392
+      },
+      "image_modes": {
+        "L": 3392
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/256/train": {
+      "pairs": 8044,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(256, 256)": 16088
+      },
+      "image_modes": {
+        "L": 16088
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/256/val": {
+      "pairs": 952,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(256, 256)": 1904
+      },
+      "image_modes": {
+        "L": 1904
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/512/test": {
+      "pairs": 424,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 848
+      },
+      "image_modes": {
+        "L": 848
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/512/train": {
+      "pairs": 2011,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 4022
+      },
+      "image_modes": {
+        "L": 4022
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/OSdataset/512/val": {
+      "pairs": 238,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 476
+      },
+      "image_modes": {
+        "L": 476
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Poland": {
+      "pairs": 337,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 674
+      },
+      "image_modes": {
+        "RGB": 337,
+        "L": 337
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Russia": {
+      "pairs": 257,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 514
+      },
+      "image_modes": {
+        "RGB": 257,
+        "L": 257
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Russia2": {
+      "pairs": 139,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 278
+      },
+      "image_modes": {
+        "RGB": 139,
+        "L": 139
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Russia3": {
+      "pairs": 96,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 192
+      },
+      "image_modes": {
+        "RGB": 96,
+        "L": 96
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Singapore": {
+      "pairs": 183,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 366
+      },
+      "image_modes": {
+        "RGB": 183,
+        "L": 183
+      },
+      "non_image_files": []
+    },
+    "Patch-level Subset/Turkey": {
+      "pairs": 333,
+      "unpaired_optical": [],
+      "unpaired_sar": [],
+      "image_sizes": {
+        "(512, 512)": 666
+      },
+      "image_modes": {
+        "RGB": 333,
+        "L": 333
+      },
+      "non_image_files": []
+    }
+  },
+  "exact_cross_split_duplicates": {},
+  "gt_candidates": [
+    "Scene-level Subset/GT.txt"
+  ],
+  "scene_gt": {
+    "rows": 72,
+    "columns": [
+      4
+    ],
+    "first_row": [
+      3899.7182548484,
+      10191.9987742977,
+      1590.8534570963,
+      10421.1066142166
+    ]
+  }
+}

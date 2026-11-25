@@ -1,0 +1,13 @@
+{
+  "root": "<OSDataset2.0 root>",
+  "output": "runs/smoke_v01_final_20261125",
+  "device": "cuda",
+  "epochs": 7,
+  "batch_size": 4,
+  "lr": 0.001,
+  "seed": 20261125,
+  "limit": 64,
+  "max_steps": 100,
+  "semantic_cache": null,
+  "resume": null
+}
