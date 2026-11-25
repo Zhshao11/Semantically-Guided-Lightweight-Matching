@@ -8,12 +8,16 @@ import numpy as np
 from .geometry import estimate_affine,as_homogeneous,transform_points,valid_pixel_centers
 
 
-def estimate_from_correspondences(source,target,scores,config,seed=0):
+def estimate_from_correspondences(source,target,scores,config,seed=0,include_inlier_indices=False):
     source,target=np.asarray(source,dtype=float).reshape(-1,2),np.asarray(target,dtype=float).reshape(-1,2)
     scores=np.asarray(scores,dtype=float)
     if source.shape!=target.shape or scores.shape!=(len(source),):
         raise ValueError('Expected predicted Nx2/Nx2/N correspondences')
-    failure=lambda reason: dict(success=False,status=reason,matrix=None,inliers=0,matches=len(source))
+    def failure(reason):
+        result=dict(success=False,status=reason,matrix=None,inliers=0,matches=len(source))
+        if include_inlier_indices:
+            result['inlier_indices']=[]
+        return result
     if not len(source):
         return failure('empty_matches')
     valid=np.isfinite(source).all(1)&np.isfinite(target).all(1)&np.isfinite(scores)&(scores>=config['minimum_match_score'])
@@ -26,7 +30,10 @@ def estimate_from_correspondences(source,target,scores,config,seed=0):
         min_reliability=config['minimum_match_score'],max_iterations=config['ransac_max_iterations'],confidence=config['ransac_confidence'])
     if matrix is None or inliers.sum()<config['ransac_min_inliers']:
         return failure('ransac_failed_or_insufficient_inliers')
-    return dict(success=True,status='estimated',matrix=matrix.tolist(),inliers=int(inliers.sum()),matches=len(source))
+    result=dict(success=True,status='estimated',matrix=matrix.tolist(),inliers=int(inliers.sum()),matches=len(source))
+    if include_inlier_indices:
+        result['inlier_indices']=np.flatnonzero(inliers).tolist()
+    return result
 
 
 def _mask_at(points,mask):

@@ -1,0 +1,14 @@
+{
+  "protocol": "T02-controlled-ABC-layered-v1",
+  "checkpoint_sha256": "8c0600c8748d1358dac30d564368c42593c8938e86cf7a5ff690d40ddbc6fdc3",
+  "group_B_variants_per_content": 5,
+  "group_B_seed_namespace": "T02-controlled-B-new-geometry-v1",
+  "coarse_correctness_thresholds_px": [3, 5, 8],
+  "local_window_radius_fine_cells": 3,
+  "fine_stride_px": 2,
+  "near_collinear_singular_ratio": 0.01,
+  "ground_truth_usage": "posthoc_metrics_only_never_prediction_or_fitting",
+  "BN_policy": "eval_for_all_groups; optical modality 0, SAR modality 1; assert all BN buffers unchanged",
+  "inference_and_RANSAC_parameters": "exactly checkpoint config; no overrides",
+  "B_reporting_unit": "32 original image pairs with five correlated perturbations each; never 160 independent scenes"
+}

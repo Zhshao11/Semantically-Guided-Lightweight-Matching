@@ -1,0 +1,3394 @@
+[
+  {
+    "pair_id": "osdataset/256/train/106",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 10.991252469434977,
+        "solved_median_rmse_px": 10.28155285885877,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 241.4,
+      "mean_coarse_correct_fraction_5px": 0.05844349056913898,
+      "mean_truth_in_window_fraction": 0.0894202404550439,
+      "mean_refine_delta_inside_px": -0.09391600058339405,
+      "mean_refine_delta_outside_px": -0.07719854303069221,
+      "mean_inlier_source_hull_fraction": 0.3135778368074866
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 228,
+          "rmse_px": 10.28155285885877,
+          "median_px": 9.07125062655522,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 223,
+          "rmse_px": 9.793387367217747,
+          "median_px": 7.852605600187631,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 7.716183482061372,
+          "median_px": 6.833184347011069,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 255,
+          "rmse_px": 11.50944977190635,
+          "median_px": 10.832156387338266,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 248,
+          "rmse_px": 15.655688867130651,
+          "median_px": 12.796425400276705,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1081",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 16.168624464967195,
+        "solved_median_rmse_px": 8.577305614505924,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 178.4,
+      "mean_coarse_correct_fraction_5px": 0.0631040077533223,
+      "mean_truth_in_window_fraction": 0.11024641168977545,
+      "mean_refine_delta_inside_px": 0.21616496174933028,
+      "mean_refine_delta_outside_px": -0.10917381718279469,
+      "mean_inlier_source_hull_fraction": 0.49615375565098463
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 10.136335199046508,
+          "median_px": 9.3605060662333,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 209,
+          "rmse_px": 50.914151531505894,
+          "median_px": 40.777131259284445,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 8.577305614505924,
+          "median_px": 7.656356699873188,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 248,
+          "rmse_px": 6.104540161851543,
+          "median_px": 4.694954244094051,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 252,
+          "rmse_px": 5.11078981792611,
+          "median_px": 3.930314469376426,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1182",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 42.409328468803324,
+        "solved_median_rmse_px": 32.12932132595406,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 152.6,
+      "mean_coarse_correct_fraction_5px": 0.05224273075106354,
+      "mean_truth_in_window_fraction": 0.07378499059448931,
+      "mean_refine_delta_inside_px": 0.036267814683847634,
+      "mean_refine_delta_outside_px": -0.1367597659384088,
+      "mean_inlier_source_hull_fraction": 0.3539315427044917
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 254,
+          "rmse_px": 24.738366657009006,
+          "median_px": 20.190070925289042,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 248,
+          "rmse_px": 60.23937082313346,
+          "median_px": 52.0113367795327,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 32.12932132595406,
+          "median_px": 27.621261300028753,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 218,
+          "rmse_px": 81.57757397847357,
+          "median_px": 59.10079235117473,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 212,
+          "rmse_px": 13.362009559446536,
+          "median_px": 11.217143078436859,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1262",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 13.3023489863597,
+        "solved_median_rmse_px": 13.446593810540863,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 194.2,
+      "mean_coarse_correct_fraction_5px": 0.06679331210339474,
+      "mean_truth_in_window_fraction": 0.09222034900773689,
+      "mean_refine_delta_inside_px": -0.17098039414070693,
+      "mean_refine_delta_outside_px": -0.13468708711539276,
+      "mean_inlier_source_hull_fraction": 0.3742068145736192
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 232,
+          "rmse_px": 13.446593810540863,
+          "median_px": 11.361325744838823,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 8.326010364954387,
+          "median_px": 7.1316011417204335,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 230,
+          "rmse_px": 19.497524099956657,
+          "median_px": 17.763850987762446,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 16.797342438563703,
+          "median_px": 14.49231949620986,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 232,
+          "rmse_px": 8.44427421778289,
+          "median_px": 5.996533294543738,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1500",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 15.58422122563901,
+        "solved_median_rmse_px": 17.898688317660962,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.4,
+        "registration_failure_rate@5px": 0.6,
+        "successful_mean_rmse@5px": 4.039725208411544
+      },
+      "mean_predicted_matches": 205.0,
+      "mean_coarse_correct_fraction_5px": 0.08802296006696243,
+      "mean_truth_in_window_fraction": 0.1281131564952624,
+      "mean_refine_delta_inside_px": 0.03981839906736522,
+      "mean_refine_delta_outside_px": -0.20221558338195464,
+      "mean_inlier_source_hull_fraction": 0.37627371532080167
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 4.435571071102053,
+          "median_px": 3.6808011653337567,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 243,
+          "rmse_px": 33.6375789092225,
+          "median_px": 28.284050135312643,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 227,
+          "rmse_px": 18.305388484488503,
+          "median_px": 13.688057897119526,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 3.643879345721035,
+          "median_px": 3.3451754062614034,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 222,
+          "rmse_px": 17.898688317660962,
+          "median_px": 14.07097534609812,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1580",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 13.22891449640755,
+        "solved_median_rmse_px": 13.230076490839206,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 4.4682720966664
+      },
+      "mean_predicted_matches": 218.0,
+      "mean_coarse_correct_fraction_5px": 0.0730267564184961,
+      "mean_truth_in_window_fraction": 0.10856679172600389,
+      "mean_refine_delta_inside_px": -0.013721988263836481,
+      "mean_refine_delta_outside_px": -0.11427096805909265,
+      "mean_inlier_source_hull_fraction": 0.2618069859437419
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 12.70601265612066,
+          "median_px": 9.844837253590761,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 218,
+          "rmse_px": 16.844269290614132,
+          "median_px": 15.014826209870634,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 236,
+          "rmse_px": 18.895941947797354,
+          "median_px": 16.621513079479307,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 13.230076490839206,
+          "median_px": 10.31867735615474,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 4.4682720966664,
+          "median_px": 4.272356375023279,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/1963",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 40.988550817271815,
+        "solved_median_rmse_px": 36.5183559004767,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 208.2,
+      "mean_coarse_correct_fraction_5px": 0.07380615152441883,
+      "mean_truth_in_window_fraction": 0.09852452258086554,
+      "mean_refine_delta_inside_px": -0.06828194328479695,
+      "mean_refine_delta_outside_px": -0.09375542975904497,
+      "mean_inlier_source_hull_fraction": 0.1684029117185124
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 224,
+          "rmse_px": 80.67980560347718,
+          "median_px": 69.52761787488612,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 226,
+          "rmse_px": 66.34906777755975,
+          "median_px": 50.47142125824603,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 204,
+          "rmse_px": 6.44701462940375,
+          "median_px": 5.101329454035855,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 248,
+          "rmse_px": 36.5183559004767,
+          "median_px": 30.574090179512247,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 14.948510175441674,
+          "median_px": 12.580098983811887,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/2299",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 21.224143474900774,
+        "solved_median_rmse_px": 4.5840465728109825,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.2,
+        "registration_failure_rate@3px": 0.8,
+        "successful_mean_rmse@3px": 1.5386392439432395,
+        "success_rate@5px": 0.6,
+        "registration_failure_rate@5px": 0.4,
+        "successful_mean_rmse@5px": 3.5275119827330363
+      },
+      "mean_predicted_matches": 188.2,
+      "mean_coarse_correct_fraction_5px": 0.08272930847408137,
+      "mean_truth_in_window_fraction": 0.11017469996235726,
+      "mean_refine_delta_inside_px": -0.27093553744471344,
+      "mean_refine_delta_outside_px": -0.11122965115413426,
+      "mean_inlier_source_hull_fraction": 0.40609608858134044
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 4.5840465728109825,
+          "median_px": 3.7031466364992762,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 1.5386392439432395,
+          "median_px": 1.1365233407586628,
+          "success": {
+            "1": false,
+            "3": true,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 4.4598501314448855,
+          "median_px": 3.424259593695369,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 222,
+          "rmse_px": 22.97468486512078,
+          "median_px": 20.177925825375887,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 244,
+          "rmse_px": 72.56349656118398,
+          "median_px": 59.24058075908954,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/2308",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 23.179553622420066,
+        "solved_median_rmse_px": 14.495775559746502,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 3.5890010716099625
+      },
+      "mean_predicted_matches": 192.6,
+      "mean_coarse_correct_fraction_5px": 0.04554834359065382,
+      "mean_truth_in_window_fraction": 0.07662961150550845,
+      "mean_refine_delta_inside_px": -0.205232127557822,
+      "mean_refine_delta_outside_px": -0.12487602194790318,
+      "mean_inlier_source_hull_fraction": 0.35895114848834686
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 212,
+          "rmse_px": 63.41659917608931,
+          "median_px": 59.05715042821909,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 211,
+          "rmse_px": 14.495775559746502,
+          "median_px": 11.745172930001377,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 208,
+          "rmse_px": 10.799174248289974,
+          "median_px": 9.479774856460658,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 3.5890010716099625,
+          "median_px": 2.888482046675062,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 218,
+          "rmse_px": 23.597218056364575,
+          "median_px": 19.73069112193199,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/2542",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 14.036331850012905,
+        "solved_median_rmse_px": 14.570723961739512,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 4.799046057272219
+      },
+      "mean_predicted_matches": 209.4,
+      "mean_coarse_correct_fraction_5px": 0.06091438800805556,
+      "mean_truth_in_window_fraction": 0.08742984382308386,
+      "mean_refine_delta_inside_px": 0.08024295726207542,
+      "mean_refine_delta_outside_px": -0.1826119793206807,
+      "mean_inlier_source_hull_fraction": 0.35530947388295564
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 254,
+          "rmse_px": 15.213537315996113,
+          "median_px": 11.339586826257879,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 231,
+          "rmse_px": 4.799046057272219,
+          "median_px": 3.7801234501202847,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 14.570723961739512,
+          "median_px": 11.063177879063286,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 220,
+          "rmse_px": 12.387662377954975,
+          "median_px": 10.564478761457595,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 23.210689537101707,
+          "median_px": 17.68776118912425,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/2751",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 20.258303917788247,
+        "solved_median_rmse_px": 23.71243788621851,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 195.6,
+      "mean_coarse_correct_fraction_5px": 0.0755294957506098,
+      "mean_truth_in_window_fraction": 0.10391770265557956,
+      "mean_refine_delta_inside_px": -0.2028762518268017,
+      "mean_refine_delta_outside_px": -0.18887977383705762,
+      "mean_inlier_source_hull_fraction": 0.2789327000220986
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 253,
+          "rmse_px": 18.126298962943604,
+          "median_px": 13.167296909082362,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 222,
+          "rmse_px": 26.3980972198673,
+          "median_px": 24.43046908196596,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 250,
+          "rmse_px": 24.71554706411933,
+          "median_px": 19.994170011972322,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 231,
+          "rmse_px": 8.339138455792478,
+          "median_px": 6.952472733077712,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 23.71243788621851,
+          "median_px": 17.675607501651555,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/3003",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 13.384816176303477,
+        "solved_median_rmse_px": 13.01846775890305,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.2,
+        "registration_failure_rate@3px": 0.8,
+        "successful_mean_rmse@3px": 2.457291053908071,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 2.457291053908071
+      },
+      "mean_predicted_matches": 235.0,
+      "mean_coarse_correct_fraction_5px": 0.04965121530532796,
+      "mean_truth_in_window_fraction": 0.07101513956758254,
+      "mean_refine_delta_inside_px": -0.3153084644697907,
+      "mean_refine_delta_outside_px": -0.14125797380070826,
+      "mean_inlier_source_hull_fraction": 0.4113125438001334
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 2.457291053908071,
+          "median_px": 1.8623407463427868,
+          "success": {
+            "1": false,
+            "3": true,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 218,
+          "rmse_px": 26.265801956627175,
+          "median_px": 19.257049685172152,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 224,
+          "rmse_px": 13.01846775890305,
+          "median_px": 11.940926793582019,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 233,
+          "rmse_px": 8.285818962206676,
+          "median_px": 5.952263873594746,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 214,
+          "rmse_px": 16.896701149872413,
+          "median_px": 15.376781475358918,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/3123",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 18.80322961113502,
+        "solved_median_rmse_px": 12.698656655689094,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 227.0,
+      "mean_coarse_correct_fraction_5px": 0.059885095199644536,
+      "mean_truth_in_window_fraction": 0.08760213137140545,
+      "mean_refine_delta_inside_px": -0.03754912679118313,
+      "mean_refine_delta_outside_px": -0.11405542758130587,
+      "mean_inlier_source_hull_fraction": 0.23139405991388567
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 230,
+          "rmse_px": 47.109926907356346,
+          "median_px": 34.58190974696548,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 233,
+          "rmse_px": 12.698656655689094,
+          "median_px": 12.778576178422387,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 10.28878243161822,
+          "median_px": 8.803436439852494,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 255,
+          "rmse_px": 10.086794634378174,
+          "median_px": 8.667416251297288,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 239,
+          "rmse_px": 13.831987426633262,
+          "median_px": 11.355002141655847,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/3313",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 5.475224109743732,
+        "solved_median_rmse_px": 5.706951172606659,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 4.37810766139208
+      },
+      "mean_predicted_matches": 209.6,
+      "mean_coarse_correct_fraction_5px": 0.10017224750563683,
+      "mean_truth_in_window_fraction": 0.13610938969332942,
+      "mean_refine_delta_inside_px": 0.031247380984229956,
+      "mean_refine_delta_outside_px": -0.20396965923531227,
+      "mean_inlier_source_hull_fraction": 0.3555063234581395
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 254,
+          "rmse_px": 4.37810766139208,
+          "median_px": 3.1785362868127818,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 5.897281020750815,
+          "median_px": 4.388779161181965,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 5.706951172606659,
+          "median_px": 5.260556973516056,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 220,
+          "rmse_px": 5.878493841419113,
+          "median_px": 4.369231550866915,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 253,
+          "rmse_px": 5.515286852549991,
+          "median_px": 5.355169513932162,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/335",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 9.406119563838676,
+        "solved_median_rmse_px": 7.049072786869331,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.2,
+        "registration_failure_rate@3px": 0.8,
+        "successful_mean_rmse@3px": 2.050120492677889,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 2.050120492677889
+      },
+      "mean_predicted_matches": 217.8,
+      "mean_coarse_correct_fraction_5px": 0.12489629708488148,
+      "mean_truth_in_window_fraction": 0.1902146968655019,
+      "mean_refine_delta_inside_px": -0.14683643098351062,
+      "mean_refine_delta_outside_px": -0.09972451616231494,
+      "mean_inlier_source_hull_fraction": 0.4333594487679555
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 236,
+          "rmse_px": 10.913026150048854,
+          "median_px": 8.188321522471599,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 252,
+          "rmse_px": 6.50250994202532,
+          "median_px": 4.7872027809265285,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 211,
+          "rmse_px": 7.049072786869331,
+          "median_px": 5.478058524075361,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 2.050120492677889,
+          "median_px": 1.7907779919803661,
+          "success": {
+            "1": false,
+            "3": true,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 212,
+          "rmse_px": 20.515868447571982,
+          "median_px": 17.96691271522827,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/3636",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 13.695873297166496,
+        "solved_median_rmse_px": 11.189798403957642,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 4.675392465408674
+      },
+      "mean_predicted_matches": 172.8,
+      "mean_coarse_correct_fraction_5px": 0.05252682708757812,
+      "mean_truth_in_window_fraction": 0.08419742260507743,
+      "mean_refine_delta_inside_px": -0.16526985948769699,
+      "mean_refine_delta_outside_px": -0.17768406234134684,
+      "mean_inlier_source_hull_fraction": 0.360427505383534
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 226,
+          "rmse_px": 11.189798403957642,
+          "median_px": 8.898231936057513,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 248,
+          "rmse_px": 6.248723764546899,
+          "median_px": 4.488639268786621,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 224,
+          "rmse_px": 13.171961595835782,
+          "median_px": 11.689567407671943,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 226,
+          "rmse_px": 4.675392465408674,
+          "median_px": 3.9557390846673934,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 217,
+          "rmse_px": 33.1934902560835,
+          "median_px": 30.47541698308347,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/381",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 14.736961401299599,
+        "solved_median_rmse_px": 14.056424897788883,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 175.8,
+      "mean_coarse_correct_fraction_5px": 0.04694257726281736,
+      "mean_truth_in_window_fraction": 0.07782564483157392,
+      "mean_refine_delta_inside_px": -0.12029544334661044,
+      "mean_refine_delta_outside_px": -0.19971320615887206,
+      "mean_inlier_source_hull_fraction": 0.22273278120175025
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 11.928803908695533,
+          "median_px": 9.669938619537408,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 231,
+          "rmse_px": 24.568406847629237,
+          "median_px": 17.322590741588375,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 231,
+          "rmse_px": 14.056424897788883,
+          "median_px": 12.202490819283378,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 8.05105588716551,
+          "median_px": 6.702508273689099,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 214,
+          "rmse_px": 15.08011546521883,
+          "median_px": 12.025237158313846,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/3853",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 20.167533797802562,
+        "solved_median_rmse_px": 7.597506601617949,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 3.4218602467483863
+      },
+      "mean_predicted_matches": 211.6,
+      "mean_coarse_correct_fraction_5px": 0.05136922869969651,
+      "mean_truth_in_window_fraction": 0.0853053020547272,
+      "mean_refine_delta_inside_px": -0.37738046392898666,
+      "mean_refine_delta_outside_px": -0.1548607354741542,
+      "mean_inlier_source_hull_fraction": 0.3159400086508766
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 254,
+          "rmse_px": 9.501652018862428,
+          "median_px": 7.930194916518328,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 73.88886068972056,
+          "median_px": 73.11762050657634,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 3.4218602467483863,
+          "median_px": 3.113443427060691,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 6.42778943206349,
+          "median_px": 5.5251922720653255,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 243,
+          "rmse_px": 7.597506601617949,
+          "median_px": 6.318471812049684,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/4144",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 11.947902122974352,
+        "solved_median_rmse_px": 11.765244619438727,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 225.6,
+      "mean_coarse_correct_fraction_5px": 0.04704425378172912,
+      "mean_truth_in_window_fraction": 0.07407500055031245,
+      "mean_refine_delta_inside_px": 0.019996130511387412,
+      "mean_refine_delta_outside_px": -0.11887904523535564,
+      "mean_inlier_source_hull_fraction": 0.32991616951983904
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 6.810883738679574,
+          "median_px": 6.323419247680557,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 238,
+          "rmse_px": 11.765244619438727,
+          "median_px": 10.205843879430276,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 238,
+          "rmse_px": 10.859679163152634,
+          "median_px": 10.493104015382379,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 241,
+          "rmse_px": 14.839922204740532,
+          "median_px": 13.438706198476059,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 241,
+          "rmse_px": 15.463780888860303,
+          "median_px": 15.164157538168638,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/4253",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 18.377604713485802,
+        "solved_median_rmse_px": 10.468304405303645,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 231.6,
+      "mean_coarse_correct_fraction_5px": 0.05671518614491457,
+      "mean_truth_in_window_fraction": 0.08904292929591268,
+      "mean_refine_delta_inside_px": -0.10138181295008253,
+      "mean_refine_delta_outside_px": -0.12703106220491384,
+      "mean_inlier_source_hull_fraction": 0.27322412599017676
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 49.27538970832902,
+          "median_px": 36.319860101122664,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 10.468304405303645,
+          "median_px": 8.913791241702906,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 223,
+          "rmse_px": 15.341872210845223,
+          "median_px": 13.4199943137872,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 228,
+          "rmse_px": 10.113885918242573,
+          "median_px": 8.885573012826848,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 216,
+          "rmse_px": 6.688571324708543,
+          "median_px": 6.036190080367814,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/4562",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 17.977520279041208,
+        "solved_median_rmse_px": 15.206205692572587,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 4.73607643755502
+      },
+      "mean_predicted_matches": 142.8,
+      "mean_coarse_correct_fraction_5px": 0.11509715051608924,
+      "mean_truth_in_window_fraction": 0.15498214889199274,
+      "mean_refine_delta_inside_px": 0.08846915475031583,
+      "mean_refine_delta_outside_px": -0.1938027828168263,
+      "mean_inlier_source_hull_fraction": 0.2814917142998025
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 255,
+          "rmse_px": 15.206205692572587,
+          "median_px": 11.041847691162562,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 38.44245585651236,
+          "median_px": 33.48930637235643,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 20.646699233002014,
+          "median_px": 16.272361824203106,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 10.856164175564064,
+          "median_px": 8.07773569973406,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 218,
+          "rmse_px": 4.73607643755502,
+          "median_px": 3.808582446588876,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/4671",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 6.171128764774462,
+        "solved_median_rmse_px": 6.694340401917931,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.4,
+        "registration_failure_rate@5px": 0.6,
+        "successful_mean_rmse@5px": 3.704763987389928
+      },
+      "mean_predicted_matches": 145.8,
+      "mean_coarse_correct_fraction_5px": 0.10902040467840987,
+      "mean_truth_in_window_fraction": 0.162625379225608,
+      "mean_refine_delta_inside_px": -0.05120438412384772,
+      "mean_refine_delta_outside_px": -0.22038195322972523,
+      "mean_inlier_source_hull_fraction": 0.4348358036996956
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 9.521617843436537,
+          "median_px": 7.918675077149806,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 239,
+          "rmse_px": 7.230157603737984,
+          "median_px": 5.96848630337577,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 3.4624590222573555,
+          "median_px": 2.963955074574063,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 243,
+          "rmse_px": 6.694340401917931,
+          "median_px": 6.371025406053028,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 3.9470689525225002,
+          "median_px": 3.2055294659799305,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/4807",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 15.715309315590062,
+        "solved_median_rmse_px": 15.402371706687758,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 3.664542535514949
+      },
+      "mean_predicted_matches": 209.4,
+      "mean_coarse_correct_fraction_5px": 0.062453669583838335,
+      "mean_truth_in_window_fraction": 0.08875330538499984,
+      "mean_refine_delta_inside_px": -0.2083049591228412,
+      "mean_refine_delta_outside_px": -0.22277197544720054,
+      "mean_inlier_source_hull_fraction": 0.2926135930088292
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 234,
+          "rmse_px": 34.43466897657794,
+          "median_px": 25.955324221229944,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 208,
+          "rmse_px": 18.662036165025665,
+          "median_px": 13.715150147381172,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 238,
+          "rmse_px": 15.402371706687758,
+          "median_px": 13.062890061429108,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 3.664542535514949,
+          "median_px": 3.111174475545435,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 226,
+          "rmse_px": 6.412927194143987,
+          "median_px": 4.812918760337453,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/5104",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 24.054453490422777,
+        "solved_median_rmse_px": 24.618841973643317,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 163.8,
+      "mean_coarse_correct_fraction_5px": 0.04702602188565415,
+      "mean_truth_in_window_fraction": 0.06902558632120204,
+      "mean_refine_delta_inside_px": 0.18735179162440393,
+      "mean_refine_delta_outside_px": -0.17954851281610618,
+      "mean_inlier_source_hull_fraction": 0.26790924894649343
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 221,
+          "rmse_px": 19.95622668374809,
+          "median_px": 17.398871838291456,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 5.328716935205135,
+          "median_px": 3.941335500286149,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 242,
+          "rmse_px": 24.618841973643317,
+          "median_px": 21.472923832642195,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 253,
+          "rmse_px": 28.444543493573686,
+          "median_px": 23.96092520641548,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 41.92393836594365,
+          "median_px": 33.406513782854766,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/5550",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 18.32806425016502,
+        "solved_median_rmse_px": 17.187055412171254,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 242.2,
+      "mean_coarse_correct_fraction_5px": 0.052758476282031584,
+      "mean_truth_in_window_fraction": 0.07881056971740208,
+      "mean_refine_delta_inside_px": -0.10050253054770483,
+      "mean_refine_delta_outside_px": -0.1177968223724986,
+      "mean_inlier_source_hull_fraction": 0.3768642517514348
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 243,
+          "rmse_px": 7.042705195667908,
+          "median_px": 6.793172026051798,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 255,
+          "rmse_px": 17.187055412171254,
+          "median_px": 12.847549091881051,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 237,
+          "rmse_px": 19.273470262179398,
+          "median_px": 14.289601787343358,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 227,
+          "rmse_px": 39.69075016195576,
+          "median_px": 30.187756267175274,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 222,
+          "rmse_px": 8.446340218850782,
+          "median_px": 6.815513451614175,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/5986",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 8.24216819058373,
+        "solved_median_rmse_px": 6.482245832571489,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.4,
+        "registration_failure_rate@5px": 0.6,
+        "successful_mean_rmse@5px": 4.048991405890478
+      },
+      "mean_predicted_matches": 225.8,
+      "mean_coarse_correct_fraction_5px": 0.08087141947595834,
+      "mean_truth_in_window_fraction": 0.12860666346904878,
+      "mean_refine_delta_inside_px": -0.2067974199025488,
+      "mean_refine_delta_outside_px": -0.12103855636176837,
+      "mean_inlier_source_hull_fraction": 0.4329657513589784
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 4.59280519247815,
+          "median_px": 3.421650250787166,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 3.5051776193028057,
+          "median_px": 2.755104480193591,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": true
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 249,
+          "rmse_px": 8.23064054923374,
+          "median_px": 7.370708457164233,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 223,
+          "rmse_px": 18.39997175933247,
+          "median_px": 16.227530568762937,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 6.482245832571489,
+          "median_px": 4.841711538684175,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/6665",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 36.01040697406253,
+        "solved_median_rmse_px": 26.868970608566887,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 185.4,
+      "mean_coarse_correct_fraction_5px": 0.05589860272717554,
+      "mean_truth_in_window_fraction": 0.10052259982199316,
+      "mean_refine_delta_inside_px": -0.3218645426279653,
+      "mean_refine_delta_outside_px": -0.23552444637130945,
+      "mean_inlier_source_hull_fraction": 0.20649287194465069
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 245,
+          "rmse_px": 96.95249507325632,
+          "median_px": 91.35639384270385,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 246,
+          "rmse_px": 5.486708237183259,
+          "median_px": 4.813382683301198,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 244,
+          "rmse_px": 37.125002449297654,
+          "median_px": 28.193785083989788,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 241,
+          "rmse_px": 13.618858502008552,
+          "median_px": 10.699380629692035,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 242,
+          "rmse_px": 26.868970608566887,
+          "median_px": 22.52518501121019,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/6699",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 30.751888302402712,
+        "solved_median_rmse_px": 28.13036117177436,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 178.0,
+      "mean_coarse_correct_fraction_5px": 0.04261874814517827,
+      "mean_truth_in_window_fraction": 0.08884079518928154,
+      "mean_refine_delta_inside_px": -0.02583011262086523,
+      "mean_refine_delta_outside_px": -0.12133113360936905,
+      "mean_inlier_source_hull_fraction": 0.27696422808874327
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 221,
+          "rmse_px": 52.45247063861421,
+          "median_px": 40.180188821273326,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 209,
+          "rmse_px": 21.944283529749637,
+          "median_px": 20.480954126608886,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 9.578971960070715,
+          "median_px": 8.457621221440583,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 236,
+          "rmse_px": 28.13036117177436,
+          "median_px": 22.36696732712919,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 256,
+          "rmse_px": 41.65335421180463,
+          "median_px": 30.77202257779536,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/670",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 19.964911976859042,
+        "solved_median_rmse_px": 16.18273470096297,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 184.4,
+      "mean_coarse_correct_fraction_5px": 0.05041549654259399,
+      "mean_truth_in_window_fraction": 0.06566937717810742,
+      "mean_refine_delta_inside_px": 0.26433421340390567,
+      "mean_refine_delta_outside_px": -0.16664403922452747,
+      "mean_inlier_source_hull_fraction": 0.24999613636871926
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 231,
+          "rmse_px": 13.034650442037604,
+          "median_px": 10.38096087658146,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 245,
+          "rmse_px": 19.111381255797447,
+          "median_px": 13.933396843377288,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 253,
+          "rmse_px": 40.2269688150606,
+          "median_px": 29.0702328175279,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 247,
+          "rmse_px": 11.268824670436585,
+          "median_px": 10.100774311088657,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 205,
+          "rmse_px": 16.18273470096297,
+          "median_px": 13.404279284928148,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/6751",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 47.0620020127856,
+        "solved_median_rmse_px": 29.60446629979068,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 182.0,
+      "mean_coarse_correct_fraction_5px": 0.018625869246573716,
+      "mean_truth_in_window_fraction": 0.03560674879403401,
+      "mean_refine_delta_inside_px": -0.4422508183703764,
+      "mean_refine_delta_outside_px": -0.21902084448636847,
+      "mean_inlier_source_hull_fraction": 0.20216222689400215
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 213,
+          "rmse_px": 104.93979237466134,
+          "median_px": 104.83274874228418,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 252,
+          "rmse_px": 63.253578388965146,
+          "median_px": 53.13052894787974,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 240,
+          "rmse_px": 29.60446629979068,
+          "median_px": 23.15678988507942,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 251,
+          "rmse_px": 26.33539498007552,
+          "median_px": 19.604407337805057,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 236,
+          "rmse_px": 11.176778020435297,
+          "median_px": 9.705385763322314,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/7192",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 9.61478171487052,
+        "solved_median_rmse_px": 10.467089455773861,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.2,
+        "registration_failure_rate@3px": 0.8,
+        "successful_mean_rmse@3px": 2.8287889916312725,
+        "success_rate@5px": 0.2,
+        "registration_failure_rate@5px": 0.8,
+        "successful_mean_rmse@5px": 2.8287889916312725
+      },
+      "mean_predicted_matches": 204.2,
+      "mean_coarse_correct_fraction_5px": 0.11632585315290792,
+      "mean_truth_in_window_fraction": 0.16374254941948826,
+      "mean_refine_delta_inside_px": -0.1998983798111423,
+      "mean_refine_delta_outside_px": -0.16101932858442278,
+      "mean_inlier_source_hull_fraction": 0.44979620353894206
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 206,
+          "rmse_px": 12.750209916444856,
+          "median_px": 11.079990134802873,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 230,
+          "rmse_px": 10.467089455773861,
+          "median_px": 8.571459672861705,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 250,
+          "rmse_px": 8.249292651374857,
+          "median_px": 6.734074074825864,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 205,
+          "rmse_px": 13.77852755912776,
+          "median_px": 10.47523707972113,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 250,
+          "rmse_px": 2.8287889916312725,
+          "median_px": 2.2602141640124644,
+          "success": {
+            "1": false,
+            "3": true,
+            "5": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pair_id": "osdataset/256/train/7276",
+    "perturbations": 5,
+    "summary": {
+      "registration": {
+        "image_pairs": 5,
+        "solved_pairs": 5,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 15.087411853592235,
+        "solved_median_rmse_px": 12.384681379677485,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0,
+        "registration_failure_rate@5px": 1.0,
+        "successful_mean_rmse@5px": null
+      },
+      "mean_predicted_matches": 210.2,
+      "mean_coarse_correct_fraction_5px": 0.0443627259595414,
+      "mean_truth_in_window_fraction": 0.06432819002104054,
+      "mean_refine_delta_inside_px": -0.1685603514279462,
+      "mean_refine_delta_outside_px": -0.15844082706274262,
+      "mean_inlier_source_hull_fraction": 0.3553094734388426
+    },
+    "variants": [
+      {
+        "variant_index": 0,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 229,
+          "rmse_px": 12.384681379677485,
+          "median_px": 10.400197633261737,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 1,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 233,
+          "rmse_px": 6.453270312996373,
+          "median_px": 5.408536396385972,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 2,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 228,
+          "rmse_px": 36.51002212881108,
+          "median_px": 26.287348193128963,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 3,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 228,
+          "rmse_px": 13.811606262788816,
+          "median_px": 11.165306400800825,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      },
+      {
+        "variant_index": 4,
+        "evaluation": {
+          "solved": true,
+          "status": "evaluated",
+          "evaluation_points": 225,
+          "rmse_px": 6.277479183687422,
+          "median_px": 4.759770047456376,
+          "success": {
+            "1": false,
+            "3": false,
+            "5": false
+          }
+        }
+      }
+    ]
+  }
+]

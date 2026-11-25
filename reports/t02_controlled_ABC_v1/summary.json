@@ -1,0 +1,132 @@
+{
+  "protocol": "T02-controlled-ABC-layered-v1",
+  "checkpoint_sha256": "8c0600c8748d1358dac30d564368c42593c8938e86cf7a5ff690d40ddbc6fdc3",
+  "groups": {
+    "A": {
+      "registration": {
+        "image_pairs": 32,
+        "solved_pairs": 32,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 2.427075798239186,
+        "solved_median_rmse_px": 2.0556808270374143,
+        "success_rate@1px": 0.0625,
+        "registration_failure_rate@1px": 0.9375,
+        "successful_mean_rmse@1px": 0.9150549323274813,
+        "success_rate@3px": 0.8125,
+        "registration_failure_rate@3px": 0.1875,
+        "successful_mean_rmse@3px": 1.7509972453803,
+        "success_rate@5px": 0.90625,
+        "registration_failure_rate@5px": 0.09375,
+        "successful_mean_rmse@5px": 1.9770960966549784
+      },
+      "mean_predicted_matches": 249.0,
+      "mean_coarse_correct_fraction_5px": 0.37631254734056707,
+      "mean_truth_in_window_fraction": 0.4570317091995695,
+      "mean_refine_delta_inside_px": -0.3534828274944867,
+      "mean_refine_delta_outside_px": -0.16137704305584305,
+      "mean_inlier_source_hull_fraction": 0.6347096826718188
+    },
+    "B": {
+      "registration": {
+        "image_pairs": 160,
+        "solved_pairs": 160,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 18.948340178528287,
+        "solved_median_rmse_px": 13.026559100470326,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.025,
+        "registration_failure_rate@3px": 0.975,
+        "successful_mean_rmse@3px": 2.218709945540118,
+        "success_rate@5px": 0.125,
+        "registration_failure_rate@5px": 0.875,
+        "successful_mean_rmse@5px": 3.7618998130983963
+      },
+      "mean_predicted_matches": 198.8875,
+      "mean_coarse_correct_fraction_5px": 0.06640119722744926,
+      "mean_truth_in_window_fraction": 0.09924780908641648,
+      "mean_refine_delta_inside_px": -0.09535270436182217,
+      "mean_refine_delta_outside_px": -0.15406736035325955,
+      "mean_inlier_source_hull_fraction": 0.32827679511624386
+    },
+    "C": {
+      "registration": {
+        "image_pairs": 16,
+        "solved_pairs": 16,
+        "failed_pairs": 0,
+        "failure_rate": 0.0,
+        "solved_mean_rmse_px": 38.8367924068229,
+        "solved_median_rmse_px": 25.125254538950017,
+        "success_rate@1px": 0.0,
+        "registration_failure_rate@1px": 1.0,
+        "successful_mean_rmse@1px": null,
+        "success_rate@3px": 0.0,
+        "registration_failure_rate@3px": 1.0,
+        "successful_mean_rmse@3px": null,
+        "success_rate@5px": 0.0625,
+        "registration_failure_rate@5px": 0.9375,
+        "successful_mean_rmse@5px": 4.756511151683886
+      },
+      "mean_predicted_matches": 181.4375,
+      "mean_coarse_correct_fraction_5px": 0.03669969629572437,
+      "mean_truth_in_window_fraction": 0.05487905488283854,
+      "mean_refine_delta_inside_px": -0.09683741525059558,
+      "mean_refine_delta_outside_px": -0.1768426535459057,
+      "mean_inlier_source_hull_fraction": 0.3114494182832146
+    }
+  },
+  "B_original_image_pairs": 32,
+  "B_correlated_perturbations": 160,
+  "B_macro_SR3": 0.025,
+  "B_macro_SR5": 0.125,
+  "B_all_five_success_contents": 0,
+  "B_any_success_contents": 15,
+  "reproduction_A_exact": true,
+  "reproduction_C_exact": true,
+  "BN_state_audit": {
+    "all_modules_eval": true,
+    "BN_buffers_unchanged": true,
+    "modal_bn_branch_calls": {
+      "0": 5616,
+      "1": 5616
+    },
+    "adapter_bn_branch_calls": {
+      "0": 208,
+      "1": 208
+    },
+    "expected_backbone_order": "optical=0 then SAR=1",
+    "image_pairs_seen": 208
+  },
+  "preprocessing": {
+    "shared_loader": "AffinePairs256 for A/B/C",
+    "normalization": "uint8/255",
+    "masks": "same bilinear sampling-support policy",
+    "decode": "same B0 coarse_xy/sample_windows",
+    "B_optical_inputs_equal_A": true
+  },
+  "no_training": true,
+  "inference_parameters_unchanged": true,
+  "RANSAC_parameters_unchanged": true,
+  "diagnostic_config": {
+    "protocol": "T02-controlled-ABC-layered-v1",
+    "checkpoint_sha256": "8c0600c8748d1358dac30d564368c42593c8938e86cf7a5ff690d40ddbc6fdc3",
+    "group_B_variants_per_content": 5,
+    "group_B_seed_namespace": "T02-controlled-B-new-geometry-v1",
+    "coarse_correctness_thresholds_px": [
+      3,
+      5,
+      8
+    ],
+    "local_window_radius_fine_cells": 3,
+    "fine_stride_px": 2,
+    "near_collinear_singular_ratio": 0.01,
+    "ground_truth_usage": "posthoc_metrics_only_never_prediction_or_fitting",
+    "BN_policy": "eval_for_all_groups; optical modality 0, SAR modality 1; assert all BN buffers unchanged",
+    "inference_and_RANSAC_parameters": "exactly checkpoint config; no overrides",
+    "B_reporting_unit": "32 original image pairs with five correlated perturbations each; never 160 independent scenes"
+  },
+  "T03_gate_passed": true
+}
