@@ -1,0 +1,71 @@
+{
+  "dedup_counts": {
+    "256": {
+      "original": 8044,
+      "kept": 7912,
+      "excluded": 132,
+      "duplicate_groups": 132
+    },
+    "512": {
+      "original": 2011,
+      "kept": 1978,
+      "excluded": 33,
+      "duplicate_groups": 33
+    }
+  },
+  "control_image_pairs": 1,
+  "control_points": 72,
+  "new_interface_tests": 8,
+  "total_tests": 52,
+  "training_steps": 1600,
+  "visual_cases": 48,
+  "cases_reproduce_saved_predictions": true,
+  "metrics": [
+    {
+      "stage_split": "初始化train",
+      "pairs": 32,
+      "solver_failures": 32,
+      "solved_mean_rmse_px": null,
+      "success_1px": 0,
+      "success_3px": 0,
+      "success_5px": 0,
+      "registration_failures_5px": 32,
+      "successful_mean_rmse_5px": null
+    },
+    {
+      "stage_split": "训练后train",
+      "pairs": 32,
+      "solver_failures": 0,
+      "solved_mean_rmse_px": 2.427075798239186,
+      "success_1px": 2,
+      "success_3px": 26,
+      "success_5px": 29,
+      "registration_failures_5px": 3,
+      "successful_mean_rmse_5px": 1.9770960966549784
+    },
+    {
+      "stage_split": "初始化val",
+      "pairs": 16,
+      "solver_failures": 16,
+      "solved_mean_rmse_px": null,
+      "success_1px": 0,
+      "success_3px": 0,
+      "success_5px": 0,
+      "registration_failures_5px": 16,
+      "successful_mean_rmse_5px": null
+    },
+    {
+      "stage_split": "训练后val",
+      "pairs": 16,
+      "solver_failures": 0,
+      "solved_mean_rmse_px": 38.8367924068229,
+      "success_1px": 0,
+      "success_3px": 0,
+      "success_5px": 1,
+      "registration_failures_5px": 15,
+      "successful_mean_rmse_5px": 4.756511151683886
+    }
+  ],
+  "source_train_manifest_sha256": "ab3a20528d916de501c5826191b87910c2501fe75d679bc72f224fff43f9046c",
+  "fixed_plan_sha256": "1eed7329d0ef8e7fde19e8476d229517f5d16b89836ef117c737ef4fc4488d3b"
+}

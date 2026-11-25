@@ -1,0 +1,5 @@
+stage_split,pairs,solver_failures,solved_mean_rmse_px,success_1px,success_3px,success_5px,registration_failures_5px,successful_mean_rmse_5px
+初始化train,32,32,,0,0,0,32,
+训练后train,32,0,2.427075798239186,2,26,29,3,1.9770960966549784
+初始化val,16,16,,0,0,0,16,
+训练后val,16,0,38.8367924068229,0,0,1,15,4.756511151683886
