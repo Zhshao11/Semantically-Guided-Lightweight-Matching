@@ -1,0 +1,7 @@
+K,reference,variant,both_success,lost_success,gained_success,both_failure
+256,M,MS,425,83,99,345
+256,MS-shuffle,MS,440,85,84,343
+256,M,MS-shuffle,431,77,94,350
+1024,M,MS,463,74,79,336
+1024,MS-shuffle,MS,462,76,80,334
+1024,M,MS-shuffle,460,77,78,337

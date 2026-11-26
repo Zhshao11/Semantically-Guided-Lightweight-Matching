@@ -1,0 +1,263 @@
+{
+  "group": "MS-shuffle",
+  "steps": 7912,
+  "epochs": 4,
+  "train_pairs": 7912,
+  "training_plan_sha256": "4b3f31591d8c1cf4e0405051085859fda55f1b4874f6a18b6fdb36ef28b7fb37",
+  "initial_matching_state_sha256": "dd92f51b0cc76ee48c0474785ec16aadbdbab80a42a2b860f49ee1c134cb68d3",
+  "initial_semantic_state_sha256": "eea03e0636e54e864fe55f3487153dea976a1bec3fcdfb816a9348af28c72c12",
+  "frozen_matching_state_unchanged": true,
+  "sample_affine_stream_sha256": [
+    "f3d841e4b7f6abb8f609258b5390df52c6ee806a414064f38b5aeb0f53bb70b6",
+    "851392a32af28e7a6296255e27a24c6081ba5315ae71b9f6f8ce165ebb3f8ce6",
+    "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486",
+    "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "step": 1978,
+      "total": 3.812086218890816,
+      "matching": 3.304873486259468,
+      "KL": 0.5072127352294459,
+      "coarse": 2.9644147282422977,
+      "fine": 1.7022937703783518,
+      "sample_affine_stream_sha256": "f3d841e4b7f6abb8f609258b5390df52c6ee806a414064f38b5aeb0f53bb70b6"
+    },
+    {
+      "epoch": 2,
+      "step": 3956,
+      "total": 3.778297765551491,
+      "matching": 3.2854194686916647,
+      "KL": 0.49287829681044665,
+      "coarse": 2.9466922520626904,
+      "fine": 1.6936360863390538,
+      "sample_affine_stream_sha256": "851392a32af28e7a6296255e27a24c6081ba5315ae71b9f6f8ce165ebb3f8ce6"
+    },
+    {
+      "epoch": 3,
+      "step": 5934,
+      "total": 3.7695046003956887,
+      "matching": 3.278986714365991,
+      "KL": 0.49051788550423964,
+      "coarse": 2.940462261408236,
+      "fine": 1.6926222702731257,
+      "sample_affine_stream_sha256": "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486"
+    },
+    {
+      "epoch": 4,
+      "step": 7912,
+      "total": 3.7630744703618775,
+      "matching": 3.273761570393376,
+      "KL": 0.4893129004487585,
+      "coarse": 2.935168391110562,
+      "fine": 1.6929658994274506,
+      "sample_affine_stream_sha256": "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+    }
+  ],
+  "validation_history": [
+    {
+      "epoch": 0,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.7990266676236955,
+      "solved_median_rmse_px": 4.8306293563098395,
+      "success_rate@1px": 0.02415966386554622,
+      "registration_failure_rate@1px": 0.9758403361344538,
+      "successful_mean_rmse@1px": 0.7971115129652288,
+      "success_rate@3px": 0.32563025210084034,
+      "registration_failure_rate@3px": 0.6743697478991597,
+      "successful_mean_rmse@3px": 1.835904370133868,
+      "success_rate@5px": 0.5168067226890757,
+      "registration_failure_rate@5px": 0.4831932773109243,
+      "successful_mean_rmse@5px": 2.6491889420518473
+    },
+    {
+      "epoch": 1,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.172193317503178,
+      "solved_median_rmse_px": 4.407530290371332,
+      "success_rate@1px": 0.02415966386554622,
+      "registration_failure_rate@1px": 0.9758403361344538,
+      "successful_mean_rmse@1px": 0.785339682615988,
+      "success_rate@3px": 0.3634453781512605,
+      "registration_failure_rate@3px": 0.6365546218487395,
+      "successful_mean_rmse@3px": 1.9340045018265533,
+      "success_rate@5px": 0.5619747899159664,
+      "registration_failure_rate@5px": 0.4380252100840336,
+      "successful_mean_rmse@5px": 2.6488893526216803
+    },
+    {
+      "epoch": 2,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.170375830377424,
+      "solved_median_rmse_px": 4.483397241612383,
+      "success_rate@1px": 0.03046218487394958,
+      "registration_failure_rate@1px": 0.9695378151260504,
+      "successful_mean_rmse@1px": 0.7819668953823802,
+      "success_rate@3px": 0.34663865546218486,
+      "registration_failure_rate@3px": 0.6533613445378151,
+      "successful_mean_rmse@3px": 1.8788453663245095,
+      "success_rate@5px": 0.5535714285714286,
+      "registration_failure_rate@5px": 0.4464285714285714,
+      "successful_mean_rmse@5px": 2.667347501134034
+    },
+    {
+      "epoch": 4,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.041965211665343,
+      "solved_median_rmse_px": 4.380557189389676,
+      "success_rate@1px": 0.029411764705882353,
+      "registration_failure_rate@1px": 0.9705882352941176,
+      "successful_mean_rmse@1px": 0.7809143171121162,
+      "success_rate@3px": 0.3581932773109244,
+      "registration_failure_rate@3px": 0.6418067226890756,
+      "successful_mean_rmse@3px": 1.9019828378212258,
+      "success_rate@5px": 0.5514705882352942,
+      "registration_failure_rate@5px": 0.44852941176470584,
+      "successful_mean_rmse@5px": 2.6213521502160004
+    },
+    {
+      "epoch": 4,
+      "K": 1024,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 5.891480738827974,
+      "solved_median_rmse_px": 4.320566244290972,
+      "success_rate@1px": 0.037815126050420166,
+      "registration_failure_rate@1px": 0.9621848739495799,
+      "successful_mean_rmse@1px": 0.7696428279532586,
+      "success_rate@3px": 0.35714285714285715,
+      "registration_failure_rate@3px": 0.6428571428571428,
+      "successful_mean_rmse@3px": 1.8403424139111482,
+      "success_rate@5px": 0.5651260504201681,
+      "registration_failure_rate@5px": 0.43487394957983194,
+      "successful_mean_rmse@5px": 2.6017384049447
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "score": 0.5619747899159664
+  },
+  "primary": "last epoch4 not validationbest",
+  "inference_has_semantic_head": false,
+  "inference_parameters": 37219,
+  "inference_checkpoint_sha256": "031c4cb7f9391486ecfda8819d55c7d7a8edb6b6724528643b57d0df93847486",
+  "last_checkpoint_sha256": "74e1bca699cc56dfa6330473af2291f1809281639ea7eb86833ce55f14459b66",
+  "seconds": 601.7674557039863,
+  "OS_semantic_GT": false,
+  "SAR_semantic_loss": false,
+  "pseudoKL_updates_shared_coarse_encoder": true,
+  "protocol": {
+    "protocol": "T08-semantic-auxiliary-coarse-finetuning-v1",
+    "base_commit": "5be7e120d4c994217e4327060dee358aec62cb65",
+    "seed": 20261126,
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "training_plan": "reports/t08_setup_v1/training_plan.json",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "primary_K": 256,
+    "additional_evaluation_K": 1024,
+    "selection": "T05 fixed uniform grids; no score/dynamic budget",
+    "groups": [
+      "M",
+      "MS",
+      "MS-shuffle"
+    ],
+    "trainable_prefixes": [
+      "backbone.down.1.",
+      "backbone.stages.2.",
+      "backbone.lateral.2.",
+      "backbone.descriptor."
+    ],
+    "all_matching_BN_running_statistics": "frozen throughout training and evaluation; coarseBNaffine follows allowed prefixes",
+    "frozen": [
+      "adapters",
+      "stage0/1",
+      "lower down",
+      "FPN up/lower lateral/fuse",
+      "local refinement parameters",
+      "no-match and matching temperatures"
+    ],
+    "fine_feature_note": "frozen FPN weights still receive changed coarse activations; frozen parameters do not imply identical fine feature tensors",
+    "semantic_head": "same T07 semantic branch initialized from same last checkpoint forMS/shuffle; input optical coarse64 WITHOUTdetach; inference export omits head",
+    "semantic_label_source": "T07 license-explicit frozen officialTG; same train-only cache and abstention, no new teacher training",
+    "train": {
+      "epochs": 4,
+      "batch_size": 4,
+      "steps_per_epoch": 1978,
+      "total_updates": 7912,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "precision": "BF16 matcher / FP32 semantic loss",
+      "KL_weight": 1.0,
+      "scheduler": "none",
+      "semantic_head_initialization": "T07 semantic branch same state forMS/shuffle",
+      "fine_gt_bootstrap_steps": 0,
+      "fine_loss_weight": 0.2,
+      "no_match_loss_weight": 0.25,
+      "flow": "savedT06 affine pertrainimage, same seeded epoch permutation acrossgroups",
+      "checkpoint_rule": "fixed last epoch4 primary; bestSR5 diagnostic checkpoint saved separately",
+      "validation_epochs": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "original_training_pairs": 7912,
+      "annotation_reserve_pairs": 0,
+      "used_training_pairs": 7912
+    },
+    "shuffle": {
+      "policy": "permutation of active-cell whole seven-class probability vectors acrossdifferentimages within32weightquantile strata; recipient weight/mask bitwise preserved",
+      "preserve": "global unweighted softclass histogram exact up to float summation; weighted mass difference reported, not claimed exact",
+      "fixed": true,
+      "seed": 20261126
+    },
+    "annotation": {
+      "source": "16 optional fixed OS train review images; not excluded from any newrun",
+      "GT": "OS has no semanticGT; humanannotation not a training prerequisite per user clarification",
+      "T07_student_content_seen": true
+    },
+    "preflight": {
+      "routing_train_pairs": 128,
+      "K": 256,
+      "modes": [
+        "student",
+        "appearance_only",
+        "teacher_probability",
+        "teacher_reliable_probability"
+      ],
+      "no_matcher_tuning_from_diagnostic": true
+    },
+    "deferred": [
+      "SAR pixel semantic targets",
+      "learned scoring",
+      "dynamic budget",
+      "hard selection adaptation",
+      "adapter/lowlayer/local unfreezing",
+      "online acceleration claims"
+    ],
+    "stability": "single-seed observation budget; cannot claim stable multi-seed superiority",
+    "supervision_boundary": "geometry from registered OS pairs and syntheticaffine; optical semantics externalteacher softpseudolabels under reliabilitymask; never OS semanticGT",
+    "teacher_label_policy": "reuse T07 weak pseudolabel/mask unchanged; Barren dominantclass exclusion is teacher-quality abstention, never a class-matching-suitability rule"
+  }
+}

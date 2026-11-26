@@ -1,0 +1,263 @@
+{
+  "group": "M",
+  "steps": 7912,
+  "epochs": 4,
+  "train_pairs": 7912,
+  "training_plan_sha256": "4b3f31591d8c1cf4e0405051085859fda55f1b4874f6a18b6fdb36ef28b7fb37",
+  "initial_matching_state_sha256": "dd92f51b0cc76ee48c0474785ec16aadbdbab80a42a2b860f49ee1c134cb68d3",
+  "initial_semantic_state_sha256": null,
+  "frozen_matching_state_unchanged": true,
+  "sample_affine_stream_sha256": [
+    "f3d841e4b7f6abb8f609258b5390df52c6ee806a414064f38b5aeb0f53bb70b6",
+    "851392a32af28e7a6296255e27a24c6081ba5315ae71b9f6f8ce165ebb3f8ce6",
+    "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486",
+    "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "step": 1978,
+      "total": 3.3013573827107106,
+      "matching": 3.3013573827107106,
+      "KL": 0.0,
+      "coarse": 2.961568343928658,
+      "fine": 1.6989451969839082,
+      "sample_affine_stream_sha256": "f3d841e4b7f6abb8f609258b5390df52c6ee806a414064f38b5aeb0f53bb70b6"
+    },
+    {
+      "epoch": 2,
+      "step": 3956,
+      "total": 3.2837334326473115,
+      "matching": 3.2837334326473115,
+      "KL": 0.0,
+      "coarse": 2.9452919857567075,
+      "fine": 1.6922072175780973,
+      "sample_affine_stream_sha256": "851392a32af28e7a6296255e27a24c6081ba5315ae71b9f6f8ce165ebb3f8ce6"
+    },
+    {
+      "epoch": 3,
+      "step": 5934,
+      "total": 3.2778500553570815,
+      "matching": 3.2778500553570815,
+      "KL": 0.0,
+      "coarse": 2.939456079618514,
+      "fine": 1.6919698808624724,
+      "sample_affine_stream_sha256": "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486"
+    },
+    {
+      "epoch": 4,
+      "step": 7912,
+      "total": 3.2728995060655537,
+      "matching": 3.2728995060655537,
+      "KL": 0.0,
+      "coarse": 2.9344082779662553,
+      "fine": 1.6924561480902083,
+      "sample_affine_stream_sha256": "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+    }
+  ],
+  "validation_history": [
+    {
+      "epoch": 0,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.7990266676236955,
+      "solved_median_rmse_px": 4.8306293563098395,
+      "success_rate@1px": 0.02415966386554622,
+      "registration_failure_rate@1px": 0.9758403361344538,
+      "successful_mean_rmse@1px": 0.7971115129652288,
+      "success_rate@3px": 0.32563025210084034,
+      "registration_failure_rate@3px": 0.6743697478991597,
+      "successful_mean_rmse@3px": 1.835904370133868,
+      "success_rate@5px": 0.5168067226890757,
+      "registration_failure_rate@5px": 0.4831932773109243,
+      "successful_mean_rmse@5px": 2.6491889420518473
+    },
+    {
+      "epoch": 1,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 951,
+      "failed_pairs": 1,
+      "failure_rate": 0.0010504201680672268,
+      "solved_mean_rmse_px": 6.116897437906459,
+      "solved_median_rmse_px": 4.364393140694572,
+      "success_rate@1px": 0.028361344537815126,
+      "registration_failure_rate@1px": 0.9716386554621849,
+      "successful_mean_rmse@1px": 0.7996535264133414,
+      "success_rate@3px": 0.35294117647058826,
+      "registration_failure_rate@3px": 0.6470588235294117,
+      "successful_mean_rmse@3px": 1.8741353899232542,
+      "success_rate@5px": 0.5483193277310925,
+      "registration_failure_rate@5px": 0.4516806722689075,
+      "successful_mean_rmse@5px": 2.604911729213692
+    },
+    {
+      "epoch": 2,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.2588191817702725,
+      "solved_median_rmse_px": 4.462863356923213,
+      "success_rate@1px": 0.029411764705882353,
+      "registration_failure_rate@1px": 0.9705882352941176,
+      "successful_mean_rmse@1px": 0.7996987029783966,
+      "success_rate@3px": 0.35294117647058826,
+      "registration_failure_rate@3px": 0.6470588235294117,
+      "successful_mean_rmse@3px": 1.8497842733139531,
+      "success_rate@5px": 0.5441176470588235,
+      "registration_failure_rate@5px": 0.4558823529411765,
+      "successful_mean_rmse@5px": 2.5942635000401566
+    },
+    {
+      "epoch": 4,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.416912267092025,
+      "solved_median_rmse_px": 4.676324219718594,
+      "success_rate@1px": 0.037815126050420166,
+      "registration_failure_rate@1px": 0.9621848739495799,
+      "successful_mean_rmse@1px": 0.7919542022901556,
+      "success_rate@3px": 0.3392857142857143,
+      "registration_failure_rate@3px": 0.6607142857142857,
+      "successful_mean_rmse@3px": 1.8391658410038207,
+      "success_rate@5px": 0.5336134453781513,
+      "registration_failure_rate@5px": 0.46638655462184875,
+      "successful_mean_rmse@5px": 2.613811202002639
+    },
+    {
+      "epoch": 4,
+      "K": 1024,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 5.915578593231466,
+      "solved_median_rmse_px": 4.414617796939053,
+      "success_rate@1px": 0.03676470588235294,
+      "registration_failure_rate@1px": 0.9632352941176471,
+      "successful_mean_rmse@1px": 0.7447421610472786,
+      "success_rate@3px": 0.3539915966386555,
+      "registration_failure_rate@3px": 0.6460084033613445,
+      "successful_mean_rmse@3px": 1.8619505625411699,
+      "success_rate@5px": 0.5640756302521008,
+      "registration_failure_rate@5px": 0.43592436974789917,
+      "successful_mean_rmse@5px": 2.6639741418470653
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "score": 0.5483193277310925
+  },
+  "primary": "last epoch4 not validationbest",
+  "inference_has_semantic_head": false,
+  "inference_parameters": 37219,
+  "inference_checkpoint_sha256": "2b4ce591637b451de847d7aa733699cd229dfcf5cd582b8ce1aee9ee883f4c65",
+  "last_checkpoint_sha256": "47c4a6430b4ea8c414650ef643ab24851f7fb827c4f654aee36d266d8a977610",
+  "seconds": 582.5532953120419,
+  "OS_semantic_GT": false,
+  "SAR_semantic_loss": false,
+  "pseudoKL_updates_shared_coarse_encoder": false,
+  "protocol": {
+    "protocol": "T08-semantic-auxiliary-coarse-finetuning-v1",
+    "base_commit": "5be7e120d4c994217e4327060dee358aec62cb65",
+    "seed": 20261126,
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "training_plan": "reports/t08_setup_v1/training_plan.json",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "primary_K": 256,
+    "additional_evaluation_K": 1024,
+    "selection": "T05 fixed uniform grids; no score/dynamic budget",
+    "groups": [
+      "M",
+      "MS",
+      "MS-shuffle"
+    ],
+    "trainable_prefixes": [
+      "backbone.down.1.",
+      "backbone.stages.2.",
+      "backbone.lateral.2.",
+      "backbone.descriptor."
+    ],
+    "all_matching_BN_running_statistics": "frozen throughout training and evaluation; coarseBNaffine follows allowed prefixes",
+    "frozen": [
+      "adapters",
+      "stage0/1",
+      "lower down",
+      "FPN up/lower lateral/fuse",
+      "local refinement parameters",
+      "no-match and matching temperatures"
+    ],
+    "fine_feature_note": "frozen FPN weights still receive changed coarse activations; frozen parameters do not imply identical fine feature tensors",
+    "semantic_head": "same T07 semantic branch initialized from same last checkpoint forMS/shuffle; input optical coarse64 WITHOUTdetach; inference export omits head",
+    "semantic_label_source": "T07 license-explicit frozen officialTG; same train-only cache and abstention, no new teacher training",
+    "train": {
+      "epochs": 4,
+      "batch_size": 4,
+      "steps_per_epoch": 1978,
+      "total_updates": 7912,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "precision": "BF16 matcher / FP32 semantic loss",
+      "KL_weight": 1.0,
+      "scheduler": "none",
+      "semantic_head_initialization": "T07 semantic branch same state forMS/shuffle",
+      "fine_gt_bootstrap_steps": 0,
+      "fine_loss_weight": 0.2,
+      "no_match_loss_weight": 0.25,
+      "flow": "savedT06 affine pertrainimage, same seeded epoch permutation acrossgroups",
+      "checkpoint_rule": "fixed last epoch4 primary; bestSR5 diagnostic checkpoint saved separately",
+      "validation_epochs": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "original_training_pairs": 7912,
+      "annotation_reserve_pairs": 0,
+      "used_training_pairs": 7912
+    },
+    "shuffle": {
+      "policy": "permutation of active-cell whole seven-class probability vectors acrossdifferentimages within32weightquantile strata; recipient weight/mask bitwise preserved",
+      "preserve": "global unweighted softclass histogram exact up to float summation; weighted mass difference reported, not claimed exact",
+      "fixed": true,
+      "seed": 20261126
+    },
+    "annotation": {
+      "source": "16 optional fixed OS train review images; not excluded from any newrun",
+      "GT": "OS has no semanticGT; humanannotation not a training prerequisite per user clarification",
+      "T07_student_content_seen": true
+    },
+    "preflight": {
+      "routing_train_pairs": 128,
+      "K": 256,
+      "modes": [
+        "student",
+        "appearance_only",
+        "teacher_probability",
+        "teacher_reliable_probability"
+      ],
+      "no_matcher_tuning_from_diagnostic": true
+    },
+    "deferred": [
+      "SAR pixel semantic targets",
+      "learned scoring",
+      "dynamic budget",
+      "hard selection adaptation",
+      "adapter/lowlayer/local unfreezing",
+      "online acceleration claims"
+    ],
+    "stability": "single-seed observation budget; cannot claim stable multi-seed superiority",
+    "supervision_boundary": "geometry from registered OS pairs and syntheticaffine; optical semantics externalteacher softpseudolabels under reliabilitymask; never OS semanticGT",
+    "teacher_label_policy": "reuse T07 weak pseudolabel/mask unchanged; Barren dominantclass exclusion is teacher-quality abstention, never a class-matching-suitability rule"
+  }
+}

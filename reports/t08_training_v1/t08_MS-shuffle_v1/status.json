@@ -1,0 +1,10 @@
+{
+  "group": "MS-shuffle",
+  "phase": "completed",
+  "epoch": 4,
+  "step": 7912,
+  "K": 1024,
+  "validation_pairs_done": 900,
+  "last_loss": 3.807117223739624,
+  "batches": 1900
+}

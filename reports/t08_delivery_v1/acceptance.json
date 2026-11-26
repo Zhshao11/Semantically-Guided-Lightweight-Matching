@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "OS_semantic_GT": false,
+  "OS_semantic_accuracy_claim": false,
+  "external_teacher_soft_pseudolabels": true,
+  "teacher_not_retrained": true,
+  "all_groups_initial_T05_matching_state_identical": true,
+  "all_groups_train_pairs": 7912,
+  "all_groups_updates": 7912,
+  "all_groups_sample_affine_stream_identical": true,
+  "trainable_coarse_layers_only": true,
+  "original_matching_source_files_unchanged": true,
+  "changed_matching_tensors": {
+    "M": 47,
+    "MS": 47,
+    "MS-shuffle": 47
+  },
+  "matching_BN_stats_frozen": true,
+  "adapters_lower_FPN_local_temperatures_unchanged": true,
+  "optical_pseudoKL_updates_coarse_encoder": true,
+  "SAR_pixel_semantics": false,
+  "shuffle_crossimage_all_supervised_cells": true,
+  "shuffle_mask_weight_exact": true,
+  "shuffle_global_softclass_histogram_preserved": true,
+  "weighted_mass_max_relative_difference": 0.002331908030836431,
+  "inference_parameters": 37219,
+  "inference_head_removed": true,
+  "inference_K256_uniform": true,
+  "learned_scoring": false,
+  "dynamic_K": false,
+  "evaluation_K": [
+    256,
+    1024
+  ],
+  "all_validation_pairs": 952,
+  "solver_failures_in_denominator": true,
+  "primary_last_not_validationbest": true,
+  "formal_timing": false,
+  "multiseed_stability_claim": false,
+  "source_sha256": {
+    "sglm/t08_auxiliary.py": "bfe6c322d417c817cd52a41c02752bbb4aefbf7d9cbb9429541bf1ea8b64b74c",
+    "scripts/train_t08.py": "bd0dfda27bc3d89488c6a3c3d4bfa83648f012f02766fde1bce4eb8ce46164b5",
+    "scripts/prepare_t08_shuffle.py": "56a101bb57b325865d8445485d32327146ac8c6da8f364686efa34dad522a592",
+    "scripts/diagnose_t08_pretrain.py": "87987b405a28f4838a53577f4d415d982d119227fa23f884cdc69222e5ea7000"
+  }
+}

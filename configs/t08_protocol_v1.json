@@ -1,0 +1,95 @@
+{
+  "protocol": "T08-semantic-auxiliary-coarse-finetuning-v1",
+  "base_commit": "5be7e120d4c994217e4327060dee358aec62cb65",
+  "seed": 20261126,
+  "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "training_plan": "reports/t08_setup_v1/training_plan.json",
+  "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+  "primary_K": 256,
+  "additional_evaluation_K": 1024,
+  "selection": "T05 fixed uniform grids; no score/dynamic budget",
+  "groups": [
+    "M",
+    "MS",
+    "MS-shuffle"
+  ],
+  "trainable_prefixes": [
+    "backbone.down.1.",
+    "backbone.stages.2.",
+    "backbone.lateral.2.",
+    "backbone.descriptor."
+  ],
+  "all_matching_BN_running_statistics": "frozen throughout training and evaluation; coarseBNaffine follows allowed prefixes",
+  "frozen": [
+    "adapters",
+    "stage0/1",
+    "lower down",
+    "FPN up/lower lateral/fuse",
+    "local refinement parameters",
+    "no-match and matching temperatures"
+  ],
+  "fine_feature_note": "frozen FPN weights still receive changed coarse activations; frozen parameters do not imply identical fine feature tensors",
+  "semantic_head": "same T07 semantic branch initialized from same last checkpoint forMS/shuffle; input optical coarse64 WITHOUTdetach; inference export omits head",
+  "semantic_label_source": "T07 license-explicit frozen officialTG; same train-only cache and abstention, no new teacher training",
+  "train": {
+    "epochs": 4,
+    "batch_size": 4,
+    "steps_per_epoch": 1978,
+    "total_updates": 7912,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "precision": "BF16 matcher / FP32 semantic loss",
+    "KL_weight": 1.0,
+    "scheduler": "none",
+    "semantic_head_initialization": "T07 semantic branch same state forMS/shuffle",
+    "fine_gt_bootstrap_steps": 0,
+    "fine_loss_weight": 0.2,
+    "no_match_loss_weight": 0.25,
+    "flow": "savedT06 affine pertrainimage, same seeded epoch permutation acrossgroups",
+    "checkpoint_rule": "fixed last epoch4 primary; bestSR5 diagnostic checkpoint saved separately",
+    "validation_epochs": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "original_training_pairs": 7912,
+    "annotation_reserve_pairs": 0,
+    "used_training_pairs": 7912
+  },
+  "shuffle": {
+    "policy": "permutation of active-cell whole seven-class probability vectors acrossdifferentimages within32weightquantile strata; recipient weight/mask bitwise preserved",
+    "preserve": "global unweighted softclass histogram exact up to float summation; weighted mass difference reported, not claimed exact",
+    "fixed": true,
+    "seed": 20261126
+  },
+  "annotation": {
+    "source": "16 optional fixed OS train review images; not excluded from any newrun",
+    "GT": "OS has no semanticGT; humanannotation not a training prerequisite per user clarification",
+    "T07_student_content_seen": true
+  },
+  "preflight": {
+    "routing_train_pairs": 128,
+    "K": 256,
+    "modes": [
+      "student",
+      "appearance_only",
+      "teacher_probability",
+      "teacher_reliable_probability"
+    ],
+    "no_matcher_tuning_from_diagnostic": true
+  },
+  "deferred": [
+    "SAR pixel semantic targets",
+    "learned scoring",
+    "dynamic budget",
+    "hard selection adaptation",
+    "adapter/lowlayer/local unfreezing",
+    "online acceleration claims"
+  ],
+  "stability": "single-seed observation budget; cannot claim stable multi-seed superiority",
+  "supervision_boundary": "geometry from registered OS pairs and syntheticaffine; optical semantics externalteacher softpseudolabels under reliabilitymask; never OS semanticGT",
+  "teacher_label_policy": "reuse T07 weak pseudolabel/mask unchanged; Barren dominantclass exclusion is teacher-quality abstention, never a class-matching-suitability rule"
+}

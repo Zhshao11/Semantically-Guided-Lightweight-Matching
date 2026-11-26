@@ -21,3 +21,5 @@ reports/t02_b0_full_v1/gt_review_sheet_*.png
 reports/t06_selection_v1/*_K*.json
 # Raw T07 prediction records stay private; curated per-pair diagnostics remain versioned.
 reports/t07_selection_v1/*_K*.json
+# Per-correspondence T08 prediction records remain private.
+reports/t08_diagnostics_v1/*_K*.json
