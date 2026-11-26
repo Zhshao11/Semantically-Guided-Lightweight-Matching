@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "version": "MS",
+      "accepted_grids": 5478278,
+      "total_grids": 8101888,
+      "coverage": 0.6761730105377907,
+      "ignored_grids": 2623610,
+      "entropy_mean_nats": 0.4049966762691155,
+      "weighted_entropy_mean_nats": 0.3563269375941832,
+      "mean_absolute_weight": 0.535434029340985,
+      "accepted_neighbor_same_class_fraction": 0.9826016028869264,
+      "neighbor_pairs": 9919477
+    },
+    {
+      "version": "T08-shuffle",
+      "accepted_grids": 5478278,
+      "total_grids": 8101888,
+      "coverage": 0.6761730105377907,
+      "ignored_grids": 2623610,
+      "entropy_mean_nats": 0.4049966762691154,
+      "weighted_entropy_mean_nats": 0.3564607890315861,
+      "mean_absolute_weight": 0.535434029340985,
+      "accepted_neighbor_same_class_fraction": 0.5312887967782979,
+      "neighbor_pairs": 9919477
+    },
+    {
+      "version": "T09-shuffle",
+      "accepted_grids": 5478278,
+      "total_grids": 8101888,
+      "coverage": 0.6761730105377907,
+      "ignored_grids": 2623610,
+      "entropy_mean_nats": 0.4049966762691156,
+      "weighted_entropy_mean_nats": 0.35646080839256084,
+      "mean_absolute_weight": 0.535434029340985,
+      "accepted_neighbor_same_class_fraction": 0.5311028998807095,
+      "neighbor_pairs": 9919477
+    }
+  ],
+  "class_distribution": [
+    {
+      "version": "MS",
+      "class_name": "Background",
+      "accepted_dominant_count": 3473533,
+      "accepted_dominant_fraction": 0.6340556284292254,
+      "accepted_softclass_fraction": 0.589793975008986,
+      "weighted_class_mass_per_grid": 0.3173121106383993
+    },
+    {
+      "version": "MS",
+      "class_name": "Building",
+      "accepted_dominant_count": 439181,
+      "accepted_dominant_fraction": 0.08016770963430479,
+      "accepted_softclass_fraction": 0.096442470079154,
+      "weighted_class_mass_per_grid": 0.04766540263500474
+    },
+    {
+      "version": "MS",
+      "class_name": "Road",
+      "accepted_dominant_count": 42432,
+      "accepted_dominant_fraction": 0.007745499589469538,
+      "accepted_softclass_fraction": 0.013481292714011111,
+      "weighted_class_mass_per_grid": 0.00666191799761301
+    },
+    {
+      "version": "MS",
+      "class_name": "Water",
+      "accepted_dominant_count": 751224,
+      "accepted_dominant_fraction": 0.13712776167985632,
+      "accepted_softclass_fraction": 0.14287201858316712,
+      "weighted_class_mass_per_grid": 0.08344875788801322
+    },
+    {
+      "version": "MS",
+      "class_name": "Barren",
+      "accepted_dominant_count": 0,
+      "accepted_dominant_fraction": 0.0,
+      "accepted_softclass_fraction": 0.011777386119801595,
+      "weighted_class_mass_per_grid": 0.005002770870024534
+    },
+    {
+      "version": "MS",
+      "class_name": "Forest",
+      "accepted_dominant_count": 201801,
+      "accepted_dominant_fraction": 0.036836575288804255,
+      "accepted_softclass_fraction": 0.044236742108143816,
+      "weighted_class_mass_per_grid": 0.024024311955234197
+    },
+    {
+      "version": "MS",
+      "class_name": "Agricultural",
+      "accepted_dominant_count": 570107,
+      "accepted_dominant_fraction": 0.1040668253783397,
+      "accepted_softclass_fraction": 0.10139611538673651,
+      "weighted_class_mass_per_grid": 0.05131875790886321
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Background",
+      "accepted_dominant_count": 3473533,
+      "accepted_dominant_fraction": 0.6340556284292254,
+      "accepted_softclass_fraction": 0.589793975008986,
+      "weighted_class_mass_per_grid": 0.31732466405237986
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Building",
+      "accepted_dominant_count": 439181,
+      "accepted_dominant_fraction": 0.08016770963430479,
+      "accepted_softclass_fraction": 0.09644247007915396,
+      "weighted_class_mass_per_grid": 0.04766465864729247
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Road",
+      "accepted_dominant_count": 42432,
+      "accepted_dominant_fraction": 0.007745499589469538,
+      "accepted_softclass_fraction": 0.013481292714011113,
+      "weighted_class_mass_per_grid": 0.006669495358304063
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Water",
+      "accepted_dominant_count": 751224,
+      "accepted_dominant_fraction": 0.13712776167985632,
+      "accepted_softclass_fraction": 0.14287201858316728,
+      "weighted_class_mass_per_grid": 0.08343759926251047
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Barren",
+      "accepted_dominant_count": 0,
+      "accepted_dominant_fraction": 0.0,
+      "accepted_softclass_fraction": 0.011777386119801591,
+      "weighted_class_mass_per_grid": 0.005014436858227409
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Forest",
+      "accepted_dominant_count": 201801,
+      "accepted_dominant_fraction": 0.036836575288804255,
+      "accepted_softclass_fraction": 0.044236742108143816,
+      "weighted_class_mass_per_grid": 0.024015508162340257
+    },
+    {
+      "version": "T08-shuffle",
+      "class_name": "Agricultural",
+      "accepted_dominant_count": 570107,
+      "accepted_dominant_fraction": 0.1040668253783397,
+      "accepted_softclass_fraction": 0.10139611538673653,
+      "weighted_class_mass_per_grid": 0.05130766755209776
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Background",
+      "accepted_dominant_count": 3473533,
+      "accepted_dominant_fraction": 0.6340556284292254,
+      "accepted_softclass_fraction": 0.5897939750089862,
+      "weighted_class_mass_per_grid": 0.31732473531931776
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Building",
+      "accepted_dominant_count": 439181,
+      "accepted_dominant_fraction": 0.08016770963430479,
+      "accepted_softclass_fraction": 0.09644247007915396,
+      "weighted_class_mass_per_grid": 0.04766463372339551
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Road",
+      "accepted_dominant_count": 42432,
+      "accepted_dominant_fraction": 0.007745499589469538,
+      "accepted_softclass_fraction": 0.013481292714011108,
+      "weighted_class_mass_per_grid": 0.0066695034580620234
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Water",
+      "accepted_dominant_count": 751224,
+      "accepted_dominant_fraction": 0.13712776167985632,
+      "accepted_softclass_fraction": 0.1428720185831673,
+      "weighted_class_mass_per_grid": 0.08343757680086693
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Barren",
+      "accepted_dominant_count": 0,
+      "accepted_dominant_fraction": 0.0,
+      "accepted_softclass_fraction": 0.011777386119801597,
+      "weighted_class_mass_per_grid": 0.005014468445735838
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Forest",
+      "accepted_dominant_count": 201801,
+      "accepted_dominant_fraction": 0.036836575288804255,
+      "accepted_softclass_fraction": 0.04423674210814383,
+      "weighted_class_mass_per_grid": 0.02401550739351677
+    },
+    {
+      "version": "T09-shuffle",
+      "class_name": "Agricultural",
+      "accepted_dominant_count": 570107,
+      "accepted_dominant_fraction": 0.1040668253783397,
+      "accepted_softclass_fraction": 0.10139611538673649,
+      "weighted_class_mass_per_grid": 0.051307604752257506
+    }
+  ],
+  "semantic_GT": false,
+  "spatial_note": "cellwise shuffle destroys spatial continuity as well as content alignment, not a perfect correctness-only contrast"
+}

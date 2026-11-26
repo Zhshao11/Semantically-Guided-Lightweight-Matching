@@ -1,0 +1,97 @@
+[
+  {
+    "seed": 20261127,
+    "group": "MS",
+    "step": 1,
+    "epoch": 1,
+    "KL": 0.3040291368961334,
+    "matching_loss": 3.683213472366333,
+    "semantic_encoder_L2": 0.4279092252254486,
+    "matching_encoder_L2": 3.99001145362854,
+    "semantic_over_matching": 0.10724510997533798,
+    "cosine": 0.03635823354125023,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/6221",
+      "osdataset/256/train/6039",
+      "osdataset/256/train/1021",
+      "osdataset/256/train/1253"
+    ]
+  },
+  {
+    "seed": 20261127,
+    "group": "MS",
+    "step": 1978,
+    "epoch": 1,
+    "KL": 0.4688037037849426,
+    "matching_loss": 3.3859059810638428,
+    "semantic_encoder_L2": 0.7084604501724243,
+    "matching_encoder_L2": 2.4794867038726807,
+    "semantic_over_matching": 0.28572866320610046,
+    "cosine": 0.10648210346698761,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/463",
+      "osdataset/256/train/7246",
+      "osdataset/256/train/621",
+      "osdataset/256/train/7890"
+    ]
+  },
+  {
+    "seed": 20261127,
+    "group": "MS",
+    "step": 3956,
+    "epoch": 2,
+    "KL": 0.2391136735677719,
+    "matching_loss": 3.330252170562744,
+    "semantic_encoder_L2": 0.4839891493320465,
+    "matching_encoder_L2": 2.252161979675293,
+    "semantic_over_matching": 0.21489979326725006,
+    "cosine": 0.1379411220550537,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/6567",
+      "osdataset/256/train/6967",
+      "osdataset/256/train/6093",
+      "osdataset/256/train/5009"
+    ]
+  },
+  {
+    "seed": 20261127,
+    "group": "MS",
+    "step": 5934,
+    "epoch": 3,
+    "KL": 0.1839551031589508,
+    "matching_loss": 3.0831847190856934,
+    "semantic_encoder_L2": 0.35153356194496155,
+    "matching_encoder_L2": 2.8994719982147217,
+    "semantic_over_matching": 0.1212405413389206,
+    "cosine": 0.010179526172578335,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/4984",
+      "osdataset/256/train/3063",
+      "osdataset/256/train/2973",
+      "osdataset/256/train/598"
+    ]
+  },
+  {
+    "seed": 20261127,
+    "group": "MS",
+    "step": 7912,
+    "epoch": 4,
+    "KL": 0.4635375142097473,
+    "matching_loss": 3.098933458328247,
+    "semantic_encoder_L2": 0.8482937216758728,
+    "matching_encoder_L2": 1.8942468166351318,
+    "semantic_over_matching": 0.4478263854980469,
+    "cosine": 0.03411373123526573,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/5836",
+      "osdataset/256/train/5645",
+      "osdataset/256/train/3487",
+      "osdataset/256/train/3747"
+    ]
+  }
+]

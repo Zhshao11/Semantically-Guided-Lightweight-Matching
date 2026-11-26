@@ -1,0 +1,97 @@
+[
+  {
+    "seed": 20261126,
+    "group": "MS-shuffle",
+    "step": 1,
+    "epoch": 1,
+    "KL": 0.4580042064189911,
+    "matching_loss": 3.500401496887207,
+    "semantic_encoder_L2": 0.2601773738861084,
+    "matching_encoder_L2": 3.796187162399292,
+    "semantic_over_matching": 0.06853649765253067,
+    "cosine": -0.07045457512140274,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/1202",
+      "osdataset/256/train/58",
+      "osdataset/256/train/3933",
+      "osdataset/256/train/5066"
+    ]
+  },
+  {
+    "seed": 20261126,
+    "group": "MS-shuffle",
+    "step": 1978,
+    "epoch": 1,
+    "KL": 0.6995148658752441,
+    "matching_loss": 3.233736038208008,
+    "semantic_encoder_L2": 0.1542825698852539,
+    "matching_encoder_L2": 2.2192466259002686,
+    "semantic_over_matching": 0.0695202425122261,
+    "cosine": -0.008052774704992771,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/7914",
+      "osdataset/256/train/3286",
+      "osdataset/256/train/5526",
+      "osdataset/256/train/4747"
+    ]
+  },
+  {
+    "seed": 20261126,
+    "group": "MS-shuffle",
+    "step": 3956,
+    "epoch": 2,
+    "KL": 0.7496300935745239,
+    "matching_loss": 3.3674545288085938,
+    "semantic_encoder_L2": 0.13053829967975616,
+    "matching_encoder_L2": 2.283076524734497,
+    "semantic_over_matching": 0.057176489382982254,
+    "cosine": -0.02408888004720211,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/463",
+      "osdataset/256/train/7246",
+      "osdataset/256/train/621",
+      "osdataset/256/train/7890"
+    ]
+  },
+  {
+    "seed": 20261126,
+    "group": "MS-shuffle",
+    "step": 5934,
+    "epoch": 3,
+    "KL": 0.3633715808391571,
+    "matching_loss": 3.3098397254943848,
+    "semantic_encoder_L2": 0.06851290911436081,
+    "matching_encoder_L2": 2.228651762008667,
+    "semantic_over_matching": 0.030741864815354347,
+    "cosine": 0.059021688997745514,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/6567",
+      "osdataset/256/train/6967",
+      "osdataset/256/train/6093",
+      "osdataset/256/train/5009"
+    ]
+  },
+  {
+    "seed": 20261126,
+    "group": "MS-shuffle",
+    "step": 7912,
+    "epoch": 4,
+    "KL": 0.4862499535083771,
+    "matching_loss": 3.0574443340301514,
+    "semantic_encoder_L2": 0.06344939023256302,
+    "matching_encoder_L2": 2.814136266708374,
+    "semantic_over_matching": 0.022546665742993355,
+    "cosine": 0.02088952623307705,
+    "pre_globalclip": true,
+    "pair_ids": [
+      "osdataset/256/train/4984",
+      "osdataset/256/train/3063",
+      "osdataset/256/train/2973",
+      "osdataset/256/train/598"
+    ]
+  }
+]

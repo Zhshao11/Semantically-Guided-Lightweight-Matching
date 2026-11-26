@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "checkpoint": "common_initial",
+      "label_version": "MS",
+      "matched_batches": 32,
+      "KL": 0.3230539264623076,
+      "matching_loss": 3.455784559249878,
+      "semantic_encoder_L2": 0.5691812887232288,
+      "matching_encoder_L2": 3.644807852552213,
+      "semantic_over_matching": 0.16460906497677125,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    },
+    {
+      "checkpoint": "common_initial",
+      "label_version": "T08-shuffle",
+      "matched_batches": 32,
+      "KL": 0.5968442438170314,
+      "matching_loss": 3.455784559249878,
+      "semantic_encoder_L2": 0.5958260185796869,
+      "matching_encoder_L2": 3.6448056826981605,
+      "semantic_over_matching": 0.17209595802926214,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    },
+    {
+      "checkpoint": "common_initial",
+      "label_version": "T09-shuffle",
+      "matched_batches": 32,
+      "KL": 0.5968397269025445,
+      "matching_loss": 3.455784559249878,
+      "semantic_encoder_L2": 0.5955456889373429,
+      "matching_encoder_L2": 3.644807153018168,
+      "semantic_over_matching": 0.1720036836732038,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    },
+    {
+      "checkpoint": "T08_last",
+      "label_version": "MS",
+      "matched_batches": 32,
+      "KL": 0.29197701637167484,
+      "matching_loss": 3.1990954354405403,
+      "semantic_encoder_L2": 0.6840090240885941,
+      "matching_encoder_L2": 2.2442402147123572,
+      "semantic_over_matching": 0.3007174750955882,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    },
+    {
+      "checkpoint": "T08_last",
+      "label_version": "T08-shuffle",
+      "matched_batches": 32,
+      "KL": 0.4738185200840235,
+      "matching_loss": 3.1888052001595497,
+      "semantic_encoder_L2": 0.08349795419597837,
+      "matching_encoder_L2": 2.217528949833043,
+      "semantic_over_matching": 0.0382988025050989,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    },
+    {
+      "checkpoint": "T08_last",
+      "label_version": "T09-shuffle",
+      "matched_batches": 32,
+      "KL": 0.4738355530425906,
+      "matching_loss": 3.1888052001595497,
+      "semantic_encoder_L2": 0.08348516373524839,
+      "matching_encoder_L2": 2.2175304245805325,
+      "semantic_over_matching": 0.03829206819296434,
+      "accepted_fraction": 0.6656875610351562,
+      "mean_weight": 0.5280193630605936
+    }
+  ],
+  "matched_train_pairs": 128,
+  "lambda_sem": 1.0,
+  "semantic_BN": "train mode onthrowawaycopy, resetbuffers foreachbatch",
+  "matching_BN": "frozen",
+  "norm": "preclip L2 coarseencoder; excludes descriptor projection/auxhead",
+  "historical_logged_gradients": false,
+  "scope": "matched diagnostic replay at commoninitial and saved T08final snapshots; not trajectory-equivalent historical measurements",
+  "code_sha256": "cc89e000450f9799394cbc00ff31982ea5bee3cff1f2ba7071c2e6a8dffb6a01"
+}

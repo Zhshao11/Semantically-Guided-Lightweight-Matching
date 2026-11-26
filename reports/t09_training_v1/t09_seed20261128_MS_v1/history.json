@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 1,
+    "step": 1978,
+    "total": 3.668246262114499,
+    "matching": 3.305431311364362,
+    "KL": 0.3628149539330189,
+    "coarse": 2.965587287930314,
+    "fine": 1.6992201296456302,
+    "sample_affine_stream_sha256": "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486"
+  },
+  {
+    "epoch": 2,
+    "step": 3956,
+    "total": 3.6355200362277826,
+    "matching": 3.2920501802278603,
+    "KL": 0.343469860610393,
+    "coarse": 2.952956114789232,
+    "fine": 1.695470323757889,
+    "sample_affine_stream_sha256": "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+  },
+  {
+    "epoch": 3,
+    "step": 5934,
+    "total": 3.620538876560508,
+    "matching": 3.2871338802835215,
+    "KL": 0.3334049944425919,
+    "coarse": 2.9487067431482674,
+    "fine": 1.692135695499887,
+    "sample_affine_stream_sha256": "64165ba0763cc2517f4c20334bb347b16ed0a23f2bdcfad81dcbfcefd2cb807d"
+  },
+  {
+    "epoch": 4,
+    "step": 7912,
+    "total": 3.611884729927302,
+    "matching": 3.284003161323324,
+    "KL": 0.32788156825649817,
+    "coarse": 2.945251058097797,
+    "fine": 1.6937605193218157,
+    "sample_affine_stream_sha256": "4321032caaa295f7d50c7f1dc6f75cf193b0e841de8bea25ea7a4cb6e4f10ff1"
+  }
+]

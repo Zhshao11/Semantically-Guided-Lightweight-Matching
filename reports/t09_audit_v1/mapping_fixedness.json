@@ -1,0 +1,12 @@
+{
+  "T08_loader_path": "runs/t08_shuffle_v1/conditional7.npy and weight.npy loaded as read-only memmap once per TrainingPairs initialization",
+  "T08_mapping_generator": "one frozen mapping outside training loop; no epoch-dependent regeneration",
+  "source_files_sha256": {
+    "scripts/train_t08.py": "bd0dfda27bc3d89488c6a3c3d4bfa83648f012f02766fde1bce4eb8ce46164b5",
+    "scripts/prepare_t08_shuffle.py": "56a101bb57b325865d8445485d32327146ac8c6da8f364686efa34dad522a592"
+  },
+  "old_mapping_file_matches_saved_summary": true,
+  "T08_epochlogs_did_not_store_mappinghash_each_epoch": true,
+  "claim_scope": "source inspection and current artifact hash establish fixed mapping by implementation; no invented historic per-epoch hash",
+  "T09_enforcement": "every epoch hashchecks mapping/probability/weight files before and after; same cache across3seeds"
+}

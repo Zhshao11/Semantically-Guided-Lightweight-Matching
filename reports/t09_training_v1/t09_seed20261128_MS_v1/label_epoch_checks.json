@@ -1,0 +1,66 @@
+[
+  {
+    "epoch": 1,
+    "phase": "before",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 1,
+    "phase": "after",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 2,
+    "phase": "before",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 2,
+    "phase": "after",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 3,
+    "phase": "before",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 3,
+    "phase": "after",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 4,
+    "phase": "before",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  },
+  {
+    "epoch": 4,
+    "phase": "after",
+    "sha256": {
+      "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+      "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "group": "M",
+  "phase": "completed",
+  "epoch": 4,
+  "step": 7912,
+  "K": 256,
+  "validation_pairs_done": 900,
+  "last_loss": 3.6539623737335205,
+  "batches": 1900
+}

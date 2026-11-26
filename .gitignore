@@ -23,3 +23,5 @@ reports/t06_selection_v1/*_K*.json
 reports/t07_selection_v1/*_K*.json
 # Per-correspondence T08 prediction records remain private.
 reports/t08_diagnostics_v1/*_K*.json
+# Raw T09 correspondence records stay private; tables and layered CSVs are versioned.
+reports/t09_diagnostics_v1/*_K256.json

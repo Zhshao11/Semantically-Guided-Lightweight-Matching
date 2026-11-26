@@ -1,0 +1,35 @@
+{
+  "primary": "SR@5px",
+  "paired_summaries": [
+    {
+      "reference": "M",
+      "variant": "MS",
+      "mean_delta_pp": 1.0854341736694715,
+      "seed_delta_sample_std_pp": 1.0309826235529058,
+      "seeds_MS_better": 2,
+      "seeds_tied": 0,
+      "seeds_MS_worse": 1,
+      "CI95_low": -0.5602240896358524,
+      "CI95_high": 2.7310924369747873
+    },
+    {
+      "reference": "MS-shuffle",
+      "variant": "MS",
+      "mean_delta_pp": 0.31512605042016695,
+      "seed_delta_sample_std_pp": 1.4131958032640508,
+      "seeds_MS_better": 1,
+      "seeds_tied": 0,
+      "seeds_MS_worse": 2,
+      "CI95_low": -1.1904761904761898,
+      "CI95_high": 1.8557422969187682
+    }
+  ],
+  "retain_as_supported_main_mechanism": false,
+  "decision": "当前未形成同时优于匹配微调与修正版shuffle的稳定主指标证据；不把逐格KL保留为已验证的主方法收益来源。保留代码/结果作为弱语义假设的否证或有限证据，不通过加模块、挑seed/最佳轮次或调lambda掩盖。",
+  "limitations": [
+    "spatialcontinuitynotmatched",
+    "gradientstrengthnotmatched",
+    "3fixedtrainingorderseeds",
+    "satellitescenesunresolved"
+  ]
+}

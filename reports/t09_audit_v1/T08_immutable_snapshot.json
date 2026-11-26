@@ -1,0 +1,17 @@
+{
+  "runs/t08_shuffle_v1/donor_flat_index.npy": "6cf1b57e0fb7994e47d8dcc9de92ce327dea159d23dcc4bf4c742b12af55b33e",
+  "runs/t08_shuffle_v1/conditional7.npy": "604db6b7dda957e1b7a7ae77b691055b5f4f62c488afa563bf1844f959402c0b",
+  "runs/t08_shuffle_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2",
+  "runs/t08_shuffle_v1/summary.json": "692dc56fb9d23c5ebc6932860090198d8646edd6e27e124b71587c7b40c5c3b3",
+  "runs/t08_M_v1/summary.json": "6db3987e1cf026a5b8304655b8412573790027cf573d2d142d87606e8518f45a",
+  "runs/t08_M_v1/inference_last.pt": "2b4ce591637b451de847d7aa733699cd229dfcf5cd582b8ce1aee9ee883f4c65",
+  "runs/t08_M_v1/last.pt": "47c4a6430b4ea8c414650ef643ab24851f7fb827c4f654aee36d266d8a977610",
+  "runs/t08_MS_v1/summary.json": "6466f4150329e4d0cfd7ba2305e40813c5561b20410b2d60d4871de0717b9ddd",
+  "runs/t08_MS_v1/inference_last.pt": "9d8179a74a53e0350a122f8ff3c5decaf10563f292b3c92dec81b05b8b0f657d",
+  "runs/t08_MS_v1/last.pt": "2bc0d4cc8ca96d2ea09ae0abd2a7e98081c95fb25bdc290f58fda9b58514be14",
+  "runs/t08_MS-shuffle_v1/summary.json": "c9978b5f015cffcb8202833f3c9107ea80824b5ebbff2a62bdb7e610b57068b9",
+  "runs/t08_MS-shuffle_v1/inference_last.pt": "031c4cb7f9391486ecfda8819d55c7d7a8edb6b6724528643b57d0df93847486",
+  "runs/t08_MS-shuffle_v1/last.pt": "74e1bca699cc56dfa6330473af2291f1809281639ea7eb86833ce55f14459b66",
+  "scripts/train_t08.py": "bd0dfda27bc3d89488c6a3c3d4bfa83648f012f02766fde1bce4eb8ce46164b5",
+  "scripts/prepare_t08_shuffle.py": "56a101bb57b325865d8445485d32327146ac8c6da8f364686efa34dad522a592"
+}

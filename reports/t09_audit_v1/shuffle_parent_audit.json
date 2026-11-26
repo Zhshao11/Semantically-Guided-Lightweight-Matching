@@ -1,0 +1,63 @@
+{
+  "corrected_version": "T09-parent-exclusion-v1",
+  "pairs": 7912,
+  "verified512parents": 1978,
+  "active_cells": 5478278,
+  "old_same_parent_cells": 4274,
+  "old_same_parent_fraction": 0.0007801721635886313,
+  "old_recipient_images_with_same_parent": 173,
+  "corrected_same_parent_cells": 0,
+  "swaps": 4273,
+  "changed_recipient_cells": 8538,
+  "unchanged_recipient_fraction": 0.9984414810639402,
+  "recipient_mask_and_weights_bitwise_preserved": true,
+  "global_soft_class_histogram_preserved": true,
+  "global_entropy_histogram_preserved": true,
+  "active_class_mass": [
+    3231055.229679048,
+    528338.653006196,
+    73854.19587701559,
+    782692.2075913548,
+    64519.77375894785,
+    242342.0710016489,
+    555476.0401514769
+  ],
+  "original_weighted_class_mass": [
+    2570827.1389548937,
+    386179.7461504316,
+    53974.06520459034,
+    676092.0831583253,
+    40531.87821696961,
+    194643.17526686413,
+    415778.80034567043
+  ],
+  "corrected_weighted_class_mass": [
+    2570929.420900125,
+    386173.51717199397,
+    54035.52169664509,
+    676001.4952528683,
+    40626.65073957409,
+    194571.83931837848,
+    415688.43788998097
+  ],
+  "weighted_class_mass_relative_difference": [
+    3.978561750867109e-05,
+    -1.6129738806079077e-05,
+    0.0011386300405907244,
+    -0.00013398752583203505,
+    0.002338221833618356,
+    -0.0003664960170724898,
+    -0.00021733300402603284
+  ],
+  "accepted_label_entropy_mean_nats": 0.4049966762691157,
+  "accepted_label_entropy_P10_P50_P90": [
+    0.04872359709618005,
+    0.39093624010274214,
+    0.7674428724595302
+  ],
+  "mapping_sha256": "a1dec317b3169ee5017a03704f414ff274ca387c58ac0b4e478041b589bd3f7d",
+  "old_mapping_sha256": "6cf1b57e0fb7994e47d8dcc9de92ce327dea159d23dcc4bf4c742b12af55b33e",
+  "fixed_for_all_epochs_and_all_training_seeds": true,
+  "T08_files_overwritten": false,
+  "limitations": "cellwise shuffle also destroys spatial continuity; known512parent exclusion does not establish independent satellite scenes"
+}

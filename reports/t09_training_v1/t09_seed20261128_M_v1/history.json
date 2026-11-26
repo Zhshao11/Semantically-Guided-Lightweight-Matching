@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 1,
+    "step": 1978,
+    "total": 3.301619350729384,
+    "matching": 3.301619350729384,
+    "KL": 0.0,
+    "coarse": 2.961849363255187,
+    "fine": 1.6988499342370684,
+    "sample_affine_stream_sha256": "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486"
+  },
+  {
+    "epoch": 2,
+    "step": 3956,
+    "total": 3.284217001815657,
+    "matching": 3.284217001815657,
+    "KL": 0.0,
+    "coarse": 2.9454803511997567,
+    "fine": 1.6936832514522773,
+    "sample_affine_stream_sha256": "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+  },
+  {
+    "epoch": 3,
+    "step": 5934,
+    "total": 3.2777885256450023,
+    "matching": 3.2777885256450023,
+    "KL": 0.0,
+    "coarse": 2.939344734706821,
+    "fine": 1.6922189546306405,
+    "sample_affine_stream_sha256": "64165ba0763cc2517f4c20334bb347b16ed0a23f2bdcfad81dcbfcefd2cb807d"
+  },
+  {
+    "epoch": 4,
+    "step": 7912,
+    "total": 3.27323566119519,
+    "matching": 3.27323566119519,
+    "KL": 0.0,
+    "coarse": 2.934959379257399,
+    "fine": 1.6913814071577167,
+    "sample_affine_stream_sha256": "4321032caaa295f7d50c7f1dc6f75cf193b0e841de8bea25ea7a4cb6e4f10ff1"
+  }
+]

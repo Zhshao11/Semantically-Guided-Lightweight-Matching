@@ -1,0 +1,89 @@
+{
+  "protocol": "T09-paired-training-seeds-parent-shuffle-audit-v1",
+  "base_commit": "4496e4bf2ca1ad26af624d7b7f2d8b0af5943b1b",
+  "seeds": [
+    20261126,
+    20261127,
+    20261128
+  ],
+  "groups": [
+    "M",
+    "MS",
+    "MS-shuffle"
+  ],
+  "primary_metric": "SR@5px",
+  "secondary_metrics": [
+    "SR@3px",
+    "RMSEmedian",
+    "RMSEP90"
+  ],
+  "diagnostic_metrics": [
+    "coarse_correct5",
+    "window_hit",
+    "refinement_inside_before_after"
+  ],
+  "K": 256,
+  "initialization": "sameT05state and sameT07semanticheadstate, allseeds; seeds vary trainingorder only; saved perimageaffines reused",
+  "training": {
+    "epochs": 4,
+    "batch_size": 4,
+    "updates": 7912,
+    "lr": 0.0002,
+    "KL_weight": 1.0,
+    "scheduler": "none",
+    "gradient_clip": 5.0,
+    "weight_decay": 0.0001,
+    "trainable_prefixes": [
+      "backbone.down.1.",
+      "backbone.stages.2.",
+      "backbone.lateral.2.",
+      "backbone.descriptor."
+    ],
+    "training_plan": "reports/t08_setup_v1/training_plan.json",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "primary_checkpoint": "last epoch4",
+    "validation_epochs": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "augmentation": "same savedT06perimageaffines acrossallgroups/seeds"
+  },
+  "shuffle": {
+    "cache": "runs/t09_shuffle_parent_v1",
+    "repair": "minimal donor swaps within original32weight strata; exclude sameverified512parent",
+    "fixed_across_epochs_and_seeds": true,
+    "old_T08_not_overwritten": true,
+    "original_seed_reuse": "T08 M/MS retained, shuffle replaced forT09pairedtriplet; originalT08shuffle separately reported"
+  },
+  "gradient_audit": {
+    "trainer_steps": [
+      1,
+      1978,
+      3956,
+      5934,
+      7912
+    ],
+    "lambda_unchanged": 1.0,
+    "norm": "pre-globalclip L2 autograd gradients oflambdaKL onallowedcoarseencoderparams excludingdescriptorprojection andauxhead; also matchingL2/cosine",
+    "historical_T08": "reconstruct same fixed32trainbatch probes atcommoninitialstate and savedfinalstates, headBNtrain on throwaway copies; not historical loggedgradients"
+  },
+  "bootstrap": {
+    "seed": 20261126,
+    "replicates": 20000,
+    "cluster": "verified distributed512parent of validationpairs",
+    "interval": "paired percentile95%CI forSR5/SR3/RMSEmedian/P90; failures retainedSRdenominator",
+    "seed_aggregation": "average paired metric difference over3seed indices using SAME resampled parents acrossseeds; seeds arefixed not n=3independent scenes",
+    "unknown_parent_policy": "report separately; never labelunresolvedasverified",
+    "satellite_scene_independence": false
+  },
+  "deferred": [
+    "newnetworkmodules",
+    "lossweightretuning",
+    "newbudgets",
+    "bestcheckpointselection",
+    "teacherretraining",
+    "OSsemanticaccuracyclaims"
+  ]
+}

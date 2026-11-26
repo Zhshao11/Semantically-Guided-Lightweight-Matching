@@ -1,0 +1,501 @@
+{
+  "seed": 20261128,
+  "label_files_sha256": {
+    "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+    "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+  },
+  "label_epoch_checks": [
+    {
+      "epoch": 1,
+      "phase": "before",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 1,
+      "phase": "after",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 2,
+      "phase": "before",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 2,
+      "phase": "after",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 3,
+      "phase": "before",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 3,
+      "phase": "after",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 4,
+      "phase": "before",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    },
+    {
+      "epoch": 4,
+      "phase": "after",
+      "sha256": {
+        "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+        "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+      }
+    }
+  ],
+  "semantic_gradient_probes": [
+    {
+      "seed": 20261128,
+      "group": "M",
+      "step": 1,
+      "epoch": 1,
+      "KL": 0.0,
+      "matching_loss": 3.8553504943847656,
+      "semantic_encoder_L2": 0.0,
+      "matching_encoder_L2": 2.9947800636291504,
+      "semantic_over_matching": 0.0,
+      "cosine": null,
+      "pre_globalclip": true,
+      "pair_ids": [
+        "osdataset/256/train/8011",
+        "osdataset/256/train/2953",
+        "osdataset/256/train/695",
+        "osdataset/256/train/3344"
+      ]
+    },
+    {
+      "seed": 20261128,
+      "group": "M",
+      "step": 1978,
+      "epoch": 1,
+      "KL": 0.0,
+      "matching_loss": 3.3218133449554443,
+      "semantic_encoder_L2": 0.0,
+      "matching_encoder_L2": 2.2184643745422363,
+      "semantic_over_matching": 0.0,
+      "cosine": null,
+      "pre_globalclip": true,
+      "pair_ids": [
+        "osdataset/256/train/6567",
+        "osdataset/256/train/6967",
+        "osdataset/256/train/6093",
+        "osdataset/256/train/5009"
+      ]
+    },
+    {
+      "seed": 20261128,
+      "group": "M",
+      "step": 3956,
+      "epoch": 2,
+      "KL": 0.0,
+      "matching_loss": 3.067535877227783,
+      "semantic_encoder_L2": 0.0,
+      "matching_encoder_L2": 2.8513875007629395,
+      "semantic_over_matching": 0.0,
+      "cosine": null,
+      "pre_globalclip": true,
+      "pair_ids": [
+        "osdataset/256/train/4984",
+        "osdataset/256/train/3063",
+        "osdataset/256/train/2973",
+        "osdataset/256/train/598"
+      ]
+    },
+    {
+      "seed": 20261128,
+      "group": "M",
+      "step": 5934,
+      "epoch": 3,
+      "KL": 0.0,
+      "matching_loss": 3.0940630435943604,
+      "semantic_encoder_L2": 0.0,
+      "matching_encoder_L2": 1.7873510122299194,
+      "semantic_over_matching": 0.0,
+      "cosine": null,
+      "pre_globalclip": true,
+      "pair_ids": [
+        "osdataset/256/train/5836",
+        "osdataset/256/train/5645",
+        "osdataset/256/train/3487",
+        "osdataset/256/train/3747"
+      ]
+    },
+    {
+      "seed": 20261128,
+      "group": "M",
+      "step": 7912,
+      "epoch": 4,
+      "KL": 0.0,
+      "matching_loss": 2.7669315338134766,
+      "semantic_encoder_L2": 0.0,
+      "matching_encoder_L2": 2.0423471927642822,
+      "semantic_over_matching": 0.0,
+      "cosine": null,
+      "pre_globalclip": true,
+      "pair_ids": [
+        "osdataset/256/train/758",
+        "osdataset/256/train/6548",
+        "osdataset/256/train/891",
+        "osdataset/256/train/1778"
+      ]
+    }
+  ],
+  "group": "M",
+  "steps": 7912,
+  "epochs": 4,
+  "train_pairs": 7912,
+  "training_plan_sha256": "4b3f31591d8c1cf4e0405051085859fda55f1b4874f6a18b6fdb36ef28b7fb37",
+  "initial_matching_state_sha256": "dd92f51b0cc76ee48c0474785ec16aadbdbab80a42a2b860f49ee1c134cb68d3",
+  "initial_semantic_state_sha256": null,
+  "frozen_matching_state_unchanged": true,
+  "sample_affine_stream_sha256": [
+    "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486",
+    "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45",
+    "64165ba0763cc2517f4c20334bb347b16ed0a23f2bdcfad81dcbfcefd2cb807d",
+    "4321032caaa295f7d50c7f1dc6f75cf193b0e841de8bea25ea7a4cb6e4f10ff1"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "step": 1978,
+      "total": 3.301619350729384,
+      "matching": 3.301619350729384,
+      "KL": 0.0,
+      "coarse": 2.961849363255187,
+      "fine": 1.6988499342370684,
+      "sample_affine_stream_sha256": "592d8d7f9b471c3f36bc157a79880e5451edccb64e1e365a06d75bea60987486"
+    },
+    {
+      "epoch": 2,
+      "step": 3956,
+      "total": 3.284217001815657,
+      "matching": 3.284217001815657,
+      "KL": 0.0,
+      "coarse": 2.9454803511997567,
+      "fine": 1.6936832514522773,
+      "sample_affine_stream_sha256": "f69d65f58a3c4ef056ab0ed937ba2eeb250056487a62d78c8a48cb31add17b45"
+    },
+    {
+      "epoch": 3,
+      "step": 5934,
+      "total": 3.2777885256450023,
+      "matching": 3.2777885256450023,
+      "KL": 0.0,
+      "coarse": 2.939344734706821,
+      "fine": 1.6922189546306405,
+      "sample_affine_stream_sha256": "64165ba0763cc2517f4c20334bb347b16ed0a23f2bdcfad81dcbfcefd2cb807d"
+    },
+    {
+      "epoch": 4,
+      "step": 7912,
+      "total": 3.27323566119519,
+      "matching": 3.27323566119519,
+      "KL": 0.0,
+      "coarse": 2.934959379257399,
+      "fine": 1.6913814071577167,
+      "sample_affine_stream_sha256": "4321032caaa295f7d50c7f1dc6f75cf193b0e841de8bea25ea7a4cb6e4f10ff1"
+    }
+  ],
+  "validation_history": [
+    {
+      "epoch": 0,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.7990266676236955,
+      "solved_median_rmse_px": 4.8306293563098395,
+      "success_rate@1px": 0.02415966386554622,
+      "registration_failure_rate@1px": 0.9758403361344538,
+      "successful_mean_rmse@1px": 0.7971115129652288,
+      "success_rate@3px": 0.32563025210084034,
+      "registration_failure_rate@3px": 0.6743697478991597,
+      "successful_mean_rmse@3px": 1.835904370133868,
+      "success_rate@5px": 0.5168067226890757,
+      "registration_failure_rate@5px": 0.4831932773109243,
+      "successful_mean_rmse@5px": 2.6491889420518473
+    },
+    {
+      "epoch": 1,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.226364148787761,
+      "solved_median_rmse_px": 4.384158571521744,
+      "success_rate@1px": 0.03571428571428571,
+      "registration_failure_rate@1px": 0.9642857142857143,
+      "successful_mean_rmse@1px": 0.8123322177401111,
+      "success_rate@3px": 0.34243697478991597,
+      "registration_failure_rate@3px": 0.657563025210084,
+      "successful_mean_rmse@3px": 1.832767964286878,
+      "success_rate@5px": 0.5514705882352942,
+      "registration_failure_rate@5px": 0.44852941176470584,
+      "successful_mean_rmse@5px": 2.6114313879464697
+    },
+    {
+      "epoch": 2,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.259836984200859,
+      "solved_median_rmse_px": 4.352462536478114,
+      "success_rate@1px": 0.03466386554621849,
+      "registration_failure_rate@1px": 0.9653361344537815,
+      "successful_mean_rmse@1px": 0.8375997571673247,
+      "success_rate@3px": 0.34978991596638653,
+      "registration_failure_rate@3px": 0.6502100840336135,
+      "successful_mean_rmse@3px": 1.8194493036868025,
+      "success_rate@5px": 0.5483193277310925,
+      "registration_failure_rate@5px": 0.4516806722689075,
+      "successful_mean_rmse@5px": 2.568469723090396
+    },
+    {
+      "epoch": 4,
+      "K": 256,
+      "image_pairs": 952,
+      "solved_pairs": 952,
+      "failed_pairs": 0,
+      "failure_rate": 0.0,
+      "solved_mean_rmse_px": 6.301339169617093,
+      "solved_median_rmse_px": 4.468276556687494,
+      "success_rate@1px": 0.029411764705882353,
+      "registration_failure_rate@1px": 0.9705882352941176,
+      "successful_mean_rmse@1px": 0.8372510480528611,
+      "success_rate@3px": 0.33718487394957986,
+      "registration_failure_rate@3px": 0.6628151260504201,
+      "successful_mean_rmse@3px": 1.8703137910816428,
+      "success_rate@5px": 0.5388655462184874,
+      "registration_failure_rate@5px": 0.46113445378151263,
+      "successful_mean_rmse@5px": 2.6320122290257437
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "score": 0.5514705882352942
+  },
+  "primary": "last epoch4 not validationbest",
+  "inference_has_semantic_head": false,
+  "inference_parameters": 37219,
+  "inference_checkpoint_sha256": "71e94f491056ffa9f92a6411704ee54acffce1e9301f82b89e849df1ae6d7355",
+  "last_checkpoint_sha256": "758625f8213c4b8c6f5b0d7533eb87a733e1ff6405c310e1c3086a582969b33a",
+  "seconds": 584.4458620380028,
+  "OS_semantic_GT": false,
+  "SAR_semantic_loss": false,
+  "pseudoKL_updates_shared_coarse_encoder": false,
+  "protocol": {
+    "protocol": "T09-paired-training-seeds-parent-shuffle-audit-v1",
+    "base_commit": "5be7e120d4c994217e4327060dee358aec62cb65",
+    "seed": 20261128,
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "training_plan": "reports/t08_setup_v1/training_plan.json",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "primary_K": 256,
+    "additional_evaluation_K": 1024,
+    "selection": "T05 fixed uniform grids; no score/dynamic budget",
+    "groups": [
+      "M",
+      "MS",
+      "MS-shuffle"
+    ],
+    "trainable_prefixes": [
+      "backbone.down.1.",
+      "backbone.stages.2.",
+      "backbone.lateral.2.",
+      "backbone.descriptor."
+    ],
+    "all_matching_BN_running_statistics": "frozen throughout training and evaluation; coarseBNaffine follows allowed prefixes",
+    "frozen": [
+      "adapters",
+      "stage0/1",
+      "lower down",
+      "FPN up/lower lateral/fuse",
+      "local refinement parameters",
+      "no-match and matching temperatures"
+    ],
+    "fine_feature_note": "frozen FPN weights still receive changed coarse activations; frozen parameters do not imply identical fine feature tensors",
+    "semantic_head": "same T07 semantic branch initialized from same last checkpoint forMS/shuffle; input optical coarse64 WITHOUTdetach; inference export omits head",
+    "semantic_label_source": "T07 license-explicit frozen officialTG; same train-only cache and abstention, no new teacher training",
+    "train": {
+      "epochs": 4,
+      "batch_size": 4,
+      "steps_per_epoch": 1978,
+      "total_updates": 7912,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "precision": "BF16 matcher / FP32 semantic loss",
+      "KL_weight": 1.0,
+      "scheduler": "none",
+      "semantic_head_initialization": "T07 semantic branch same state forMS/shuffle",
+      "fine_gt_bootstrap_steps": 0,
+      "fine_loss_weight": 0.2,
+      "no_match_loss_weight": 0.25,
+      "flow": "savedT06 affine pertrainimage, same seeded epoch permutation acrossgroups",
+      "checkpoint_rule": "fixed last epoch4 primary; bestSR5 diagnostic checkpoint saved separately",
+      "validation_epochs": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "original_training_pairs": 7912,
+      "annotation_reserve_pairs": 0,
+      "used_training_pairs": 7912
+    },
+    "shuffle": {
+      "policy": "permutation of active-cell whole seven-class probability vectors acrossdifferentimages within32weightquantile strata; recipient weight/mask bitwise preserved",
+      "preserve": "global unweighted softclass histogram exact up to float summation; weighted mass difference reported, not claimed exact",
+      "fixed": true,
+      "seed": 20261126
+    },
+    "annotation": {
+      "source": "16 optional fixed OS train review images; not excluded from any newrun",
+      "GT": "OS has no semanticGT; humanannotation not a training prerequisite per user clarification",
+      "T07_student_content_seen": true
+    },
+    "preflight": {
+      "routing_train_pairs": 128,
+      "K": 256,
+      "modes": [
+        "student",
+        "appearance_only",
+        "teacher_probability",
+        "teacher_reliable_probability"
+      ],
+      "no_matcher_tuning_from_diagnostic": true
+    },
+    "deferred": [
+      "SAR pixel semantic targets",
+      "learned scoring",
+      "dynamic budget",
+      "hard selection adaptation",
+      "adapter/lowlayer/local unfreezing",
+      "online acceleration claims"
+    ],
+    "stability": "single-seed observation budget; cannot claim stable multi-seed superiority",
+    "supervision_boundary": "geometry from registered OS pairs and syntheticaffine; optical semantics externalteacher softpseudolabels under reliabilitymask; never OS semanticGT",
+    "teacher_label_policy": "reuse T07 weak pseudolabel/mask unchanged; Barren dominantclass exclusion is teacher-quality abstention, never a class-matching-suitability rule",
+    "T09": {
+      "protocol": "T09-paired-training-seeds-parent-shuffle-audit-v1",
+      "base_commit": "4496e4bf2ca1ad26af624d7b7f2d8b0af5943b1b",
+      "seeds": [
+        20261126,
+        20261127,
+        20261128
+      ],
+      "groups": [
+        "M",
+        "MS",
+        "MS-shuffle"
+      ],
+      "primary_metric": "SR@5px",
+      "secondary_metrics": [
+        "SR@3px",
+        "RMSEmedian",
+        "RMSEP90"
+      ],
+      "diagnostic_metrics": [
+        "coarse_correct5",
+        "window_hit",
+        "refinement_inside_before_after"
+      ],
+      "K": 256,
+      "initialization": "sameT05state and sameT07semanticheadstate, allseeds; seeds vary trainingorder only; saved perimageaffines reused",
+      "training": {
+        "epochs": 4,
+        "batch_size": 4,
+        "updates": 7912,
+        "lr": 0.0002,
+        "KL_weight": 1.0,
+        "scheduler": "none",
+        "gradient_clip": 5.0,
+        "weight_decay": 0.0001,
+        "trainable_prefixes": [
+          "backbone.down.1.",
+          "backbone.stages.2.",
+          "backbone.lateral.2.",
+          "backbone.descriptor."
+        ],
+        "training_plan": "reports/t08_setup_v1/training_plan.json",
+        "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+        "primary_checkpoint": "last epoch4",
+        "validation_epochs": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "augmentation": "same savedT06perimageaffines acrossallgroups/seeds"
+      },
+      "shuffle": {
+        "cache": "runs/t09_shuffle_parent_v1",
+        "repair": "minimal donor swaps within original32weight strata; exclude sameverified512parent",
+        "fixed_across_epochs_and_seeds": true,
+        "old_T08_not_overwritten": true,
+        "original_seed_reuse": "T08 M/MS retained, shuffle replaced forT09pairedtriplet; originalT08shuffle separately reported"
+      },
+      "gradient_audit": {
+        "trainer_steps": [
+          1,
+          1978,
+          3956,
+          5934,
+          7912
+        ],
+        "lambda_unchanged": 1.0,
+        "norm": "pre-globalclip L2 autograd gradients oflambdaKL onallowedcoarseencoderparams excludingdescriptorprojection andauxhead; also matchingL2/cosine",
+        "historical_T08": "reconstruct same fixed32trainbatch probes atcommoninitialstate and savedfinalstates, headBNtrain on throwaway copies; not historical loggedgradients"
+      },
+      "bootstrap": {
+        "seed": 20261126,
+        "replicates": 20000,
+        "cluster": "verified distributed512parent of validationpairs",
+        "interval": "paired percentile95%CI forSR5/SR3/RMSEmedian/P90; failures retainedSRdenominator",
+        "seed_aggregation": "average paired metric difference over3seed indices using SAME resampled parents acrossseeds; seeds arefixed not n=3independent scenes",
+        "unknown_parent_policy": "report separately; never labelunresolvedasverified",
+        "satellite_scene_independence": false
+      },
+      "deferred": [
+        "newnetworkmodules",
+        "lossweightretuning",
+        "newbudgets",
+        "bestcheckpointselection",
+        "teacherretraining",
+        "OSsemanticaccuracyclaims"
+      ]
+    }
+  }
+}
