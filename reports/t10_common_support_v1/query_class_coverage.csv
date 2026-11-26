@@ -1,0 +1,43 @@
+stage,query_pseudoclass,queries,fraction_of_stage,fraction_of_all_queries_of_this_pseudoclass,note
+all_queries,Background,159468,0.6083221435546875,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Building,19992,0.076263427734375,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Road,2526,0.00963592529296875,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Water,24545,0.09363174438476562,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Barren,12531,0.047801971435546875,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Forest,7139,0.027233123779296875,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+all_queries,Agricultural,35943,0.13711166381835938,1.0,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Background,142555,0.607288915395757,0.8939411041713698,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Building,17780,0.07574337564965494,0.8893557422969187,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Road,2203,0.00938485132487007,0.8721298495645289,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Water,22066,0.09400187441424555,0.8990018333672846,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Barren,11139,0.04745250063900486,0.8889154895858271,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Forest,6235,0.02656130186589418,0.8733716206751646,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+geometry_valid,Agricultural,32762,0.1395671807105734,0.9114987619286092,unreliable-label argmax is diagnostic only; not an accepted pseudolabel
+reliable_label,Background,118617,0.6250665289539277,0.7438294830310783,external teacher pseudo-class; not GT
+reliable_label,Building,14755,0.07775324476858464,0.7380452180872349,external teacher pseudo-class; not GT
+reliable_label,Road,1862,0.00981203265056622,0.7371338083927158,external teacher pseudo-class; not GT
+reliable_label,Water,21251,0.1119846970231916,0.865797514768792,external teacher pseudo-class; not GT
+reliable_label,Barren,0,0.0,0.0,external teacher pseudo-class; not GT
+reliable_label,Forest,5710,0.030089530845721333,0.7998319092309847,external teacher pseudo-class; not GT
+reliable_label,Agricultural,27572,0.14529396575800851,0.7671034693820772,external teacher pseudo-class; not GT
+geometry_and_label,Background,106129,0.6236096013162147,0.6655191010108611,external teacher pseudo-class; not GT
+geometry_and_label,Building,13136,0.07718659106266709,0.657062825130052,external teacher pseudo-class; not GT
+geometry_and_label,Road,1630,0.009577812380644592,0.6452889944576405,external teacher pseudo-class; not GT
+geometry_and_label,Water,19085,0.112142668272762,0.7775514361377063,external teacher pseudo-class; not GT
+geometry_and_label,Barren,0,0.0,0.0,external teacher pseudo-class; not GT
+geometry_and_label,Forest,4987,0.02930340511795987,0.6985572208992856,external teacher pseudo-class; not GT
+geometry_and_label,Agricultural,25218,0.14817992184975173,0.7016108838995075,external teacher pseudo-class; not GT
+reliable_hard,Background,101345,0.6279353631485681,0.6355193518448843,external teacher pseudo-class; not GT
+reliable_hard,Building,12128,0.07514529660334338,0.6066426570628252,external teacher pseudo-class; not GT
+reliable_hard,Road,1465,0.00907716519821059,0.5799683293745052,external teacher pseudo-class; not GT
+reliable_hard,Water,18109,0.11220367547740312,0.7377877368099409,external teacher pseudo-class; not GT
+reliable_hard,Barren,0,0.0,0.0,external teacher pseudo-class; not GT
+reliable_hard,Forest,4726,0.02928237728787935,0.6619974786384648,external teacher pseudo-class; not GT
+reliable_hard,Agricultural,23621,0.14635612228459546,0.6571794229752664,external teacher pseudo-class; not GT
+common_support,Background,100610,0.6281725492154867,0.6309102766699275,external teacher pseudo-class; not GT
+common_support,Building,11971,0.0747426059701679,0.5987895158063226,external teacher pseudo-class; not GT
+common_support,Road,1445,0.0090220587776203,0.5720506730007918,external teacher pseudo-class; not GT
+common_support,Water,17950,0.11207332529985077,0.7313098390710939,external teacher pseudo-class; not GT
+common_support,Barren,0,0.0,0.0,external teacher pseudo-class; not GT
+common_support,Forest,4682,0.029232719167348264,0.6558341504412383,external teacher pseudo-class; not GT
+common_support,Agricultural,23505,0.14675674156952603,0.6539520908104499,external teacher pseudo-class; not GT

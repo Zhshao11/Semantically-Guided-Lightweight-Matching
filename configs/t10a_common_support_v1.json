@@ -1,0 +1,27 @@
+{
+  "protocol": "T10A-common-support-composition-audit-v1",
+  "frozen_before_new_analysis": true,
+  "base_commit": "7115f3a579716c1ea0004c329f280f8c3a479d8c",
+  "source_protocol": "configs/t10a_protocol_v1.json",
+  "candidates": "runs/t10a_candidates_v1",
+  "plan": "reports/t10_setup_v1/plan.json",
+  "output": "reports/t10_common_support_v1",
+  "private_output": "runs/t10a_common_support_v1",
+  "controls": ["uncontrolled", "distance_weight", "distance_weight_class"],
+  "primary_control": "distance_weight",
+  "common_support": "retain original hard relation row iff all three saved control sets have >=1 valid individual; retain query iff >=1 such row; same queries AND hard rows in every comparison",
+  "weights": "equal hard slots/query, queries/image, available images/verified512parent, available parents; split each random relation weight equally over its saved available controls",
+  "fixed_class_weights": "49 query-pseudoclass x candidate-pseudoclass cells; pool hard and primary-random hierarchical masses 1:1; restrict to cells observed in hard and every random view; normalize ONCE and use same weights for both groups and all views",
+  "unmatched_cells": "report all 49 cells and excluded probability mass; never impute absent means as zero",
+  "decomposition": "raw difference = within + composition + unilateral-support contribution; symmetric within=sum((pH+pR)/2*(muH-muR)), composition=sum((muH+muR)/2*(pH-pR)); only bilateral cells; unilateral terms reported separately; descriptive not causal",
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 20261126,
+    "unit": "all128 verified512 parents with all children retained; same parent draws across groups and controls",
+    "fixed_weights": "retain original fixed cell weights in every replicate; if any positive-weight cell missing either group, whole standardized replicate is undefined; report count and conditional interval, no per-replicate weight renormalization"
+  },
+  "quantiles": [0.1, 0.25, 0.5, 0.75, 0.9, 0.95],
+  "near_one_thresholds": [0.99, 0.999],
+  "similarity": "reuse saved soft7 cosine; no recomputation or alternative metric selection",
+  "restrictions": ["no training", "no matcher or teacher inference", "no candidate resampling", "no affine changes", "no threshold changes", "no validation/test selection", "teacher pseudoclasses are not GT"]
+}

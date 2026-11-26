@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "ef8ffbeb0f5f3494a252a7357957a364eaac6c8a4113e78ebb5b8129b330688f",
+  "relations_sha256": "0f14c498621520596e2ed9f06d630f88e909f61a858a94f6563d4a2a17465130",
+  "plan_sha256": "e0787d6ea7b5023f2b1dfaa1c136128ea02fc232ff8a6dde932874773fca69a8",
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "candidate_summary_sha256": "e6cf5f25ede9c8804766e071ff62d23e40e8a6d1ead1ddd56c577cf765be7063",
+  "support_sha256": "84477f081117a1d9ba3b14f2357da15380bff115c3add7b00dcda6d0131d3a44",
+  "query_keys_sha256": "d301ccb7542af5948c17f882fe34d55bfd6b051ac49bd475e5629c1905b0d8b1",
+  "relation_rows_sha256": "629b9c54542786a06027fb8c30d55c174ebb8f5c52f0f11e4a440b125055b66d",
+  "common_queries": 160163,
+  "common_relations": 637136,
+  "pairs": 256,
+  "parents": 128,
+  "no_candidate_changes": true,
+  "no_training": true,
+  "no_teacher_inference": true
+}
