@@ -1,0 +1,65 @@
+{
+  "protocol": "T10A-offline-wrongcandidate-semantic-enrichment-v1",
+  "seed": 20261126,
+  "base_commit": "276b023d037a1ff71b7246dd8f0e98928c956d6d",
+  "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "teacher_cache": "runs/t07_semantic_cache_v1",
+  "teacher_sha256": "2b54fa6c104cbbac36de78632324d3e79a2d2fa24841bde0c82a8c7470abf714",
+  "samples": {
+    "pairs": 256,
+    "parents": 128,
+    "children_each": 2,
+    "source": "7912dedupTRAIN; seededparentthenchilddraw, nosemanticselection",
+    "plan": "reports/t10_setup_v1/plan.json"
+  },
+  "query": "all1024opticalcoarsepositions, notuniformK256only; scalar analysis doesnotimplementonline selection",
+  "descriptor_precision": "originalT05 BF16encode/correlation; no model updates, evalBN frozen",
+  "semantic_mapping": {
+    "candidate_xy": "y_j augmentedSAR32coarsegrid pixelcenters",
+    "nominal_source": "x_j=inverse(A_forward)*y_j",
+    "sampling": "T07conditional7 at32grid, bilinear align_cornersFalse oninput256half-pixel coordinates; retains coarseaggregation resolution, not fullpixelnewteacher",
+    "mask": "queryexistingweight>0; allbilinear supportcorners candidateweight>0, maskinterpolation>.999; originalmappedxy inside conservativecoarsegrid support[3.5,251.5] and2pxvalidframe",
+    "SAR_teacher_run": false,
+    "SAR_semantic_GT": false,
+    "original_registration_residual": "unknown inherited; nominalwrong andnominalSARsemantics not humanGT"
+  },
+  "negatives": {
+    "exclusion_radius_px": 16.0,
+    "distance": "Euclidean in augmentedSAR frame from A*x_query",
+    "target_valid": "T05full8x8SARcoarsemask; sourceopticalmask; truthinsideerodedSARvalidmask2px",
+    "top_wrong": 5,
+    "selection": "descriptor tops among geometricallyvalidnegativepositions BEFOREsemanticmask; then applyteacherreliability; nosemanticranking",
+    "random_repeats": 5,
+    "uncontrolled": "uniformreliable negatives excluding all5hardcandidates",
+    "controlled": "samequery,GTdistancebin16px ANDcandidateweightbin0.1; uniformwithoutreplacement upto5 excluding5hardcandidates",
+    "class_controlled": "add exactnominalcandidatedominantclass to distance+weight strata; querydominantclass stratifiedseparately",
+    "no_match_stratum": "no match => excluded from specificcomparison, neverdrop fromcoverage denominators",
+    "fix_candidates": true
+  },
+  "similarity": "soft7cosine dot/(L2normproduct+1e-8)",
+  "permutation": {
+    "policy": "candidate opticalprobability vectors only permuted amongreliablecoarsecells from otherverified512parents in full7912traincache",
+    "control": "exactdominantclass and8withinclassweightquantile strata; recipientmask andweightfixed; probabilities fullvectors, fixedmappingSHA",
+    "scope": "candidate sideonly; queryp unpermuted; nominalsameclass softshape null, notpuresemanticcorrectness intervention",
+    "spatialcontinuity_not_preserved": true
+  },
+  "analysis": {
+    "primary": "hard minusdistance+reliability matchedrandom, pairmacrothen128parentbootstrap",
+    "secondary": "furthercandidatedominantclassmatched andclassconditionalcandidatepermutation difference; classspecific; leaveBackgroundout",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261126,
+    "histogram_bins": 50,
+    "cluster": "128verifieddistributed512parents, retain2children; no satellite scene independence",
+    "decision": "no fulltraining inT10A; onlyif positiveparentCI primary androbustclasscontrolled support acrossatleast2nonbackgroundclasses with>=16representedparents,else hypothesisrevision",
+    "case_order": "first16frozenpairs planorder; deterministic validquery+rank1, no similarityselection; showineligiblecase explicitly"
+  },
+  "forbidden": [
+    "training",
+    "validationsemanticrulemining",
+    "teacheronSAR",
+    "semanticGTclaim",
+    "newlossimplementation",
+    "RANSACthresholdchanges"
+  ]
+}

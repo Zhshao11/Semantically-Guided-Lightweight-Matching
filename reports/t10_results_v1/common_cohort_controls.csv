@@ -1,0 +1,4 @@
+control,mean,CI95_low,CI95_high,valid_pairs,valid_parents,total_pairs,total_parents,defined_parent_bootstraps,relations,queries,cohort
+uncontrolled,0.07210670363802088,0.06138072644997886,0.08312557925278367,233,126,256,128,20000,637136,160163,samehardrelations withall3controls
+distance_weight,0.013339201356920204,0.010357480916294641,0.016534660482976835,233,126,256,128,20000,637136,160163,samehardrelations withall3controls
+distance_weight_class,0.0010189892907774805,0.000763269997376957,0.001275888962628114,233,126,256,128,20000,637136,160163,samehardrelations withall3controls

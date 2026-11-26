@@ -1,0 +1,50 @@
+{
+  "added_after_primary": true,
+  "candidate_sets_unchanged": true,
+  "primary_results_unchanged": true,
+  "attenuation_is_descriptive_not_causal_explained_variance": true,
+  "rows": [
+    {
+      "control": "uncontrolled",
+      "mean": 0.07210670363802088,
+      "CI95_low": 0.06138072644997886,
+      "CI95_high": 0.08312557925278367,
+      "valid_pairs": 233,
+      "valid_parents": 126,
+      "total_pairs": 256,
+      "total_parents": 128,
+      "defined_parent_bootstraps": 20000,
+      "relations": 637136,
+      "queries": 160163,
+      "cohort": "samehardrelations withall3controls"
+    },
+    {
+      "control": "distance_weight",
+      "mean": 0.013339201356920204,
+      "CI95_low": 0.010357480916294641,
+      "CI95_high": 0.016534660482976835,
+      "valid_pairs": 233,
+      "valid_parents": 126,
+      "total_pairs": 256,
+      "total_parents": 128,
+      "defined_parent_bootstraps": 20000,
+      "relations": 637136,
+      "queries": 160163,
+      "cohort": "samehardrelations withall3controls"
+    },
+    {
+      "control": "distance_weight_class",
+      "mean": 0.0010189892907774805,
+      "CI95_low": 0.000763269997376957,
+      "CI95_high": 0.001275888962628114,
+      "valid_pairs": 233,
+      "valid_parents": 126,
+      "total_pairs": 256,
+      "total_parents": 128,
+      "defined_parent_bootstraps": 20000,
+      "relations": 637136,
+      "queries": 160163,
+      "cohort": "samehardrelations withall3controls"
+    }
+  ]
+}

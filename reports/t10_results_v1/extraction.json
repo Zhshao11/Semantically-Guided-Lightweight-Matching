@@ -1,0 +1,1885 @@
+{
+  "protocol": {
+    "protocol": "T10A-offline-wrongcandidate-semantic-enrichment-v1",
+    "seed": 20261126,
+    "base_commit": "276b023d037a1ff71b7246dd8f0e98928c956d6d",
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "teacher_cache": "runs/t07_semantic_cache_v1",
+    "teacher_sha256": "2b54fa6c104cbbac36de78632324d3e79a2d2fa24841bde0c82a8c7470abf714",
+    "samples": {
+      "pairs": 256,
+      "parents": 128,
+      "children_each": 2,
+      "source": "7912dedupTRAIN; seededparentthenchilddraw, nosemanticselection",
+      "plan": "reports/t10_setup_v1/plan.json"
+    },
+    "query": "all1024opticalcoarsepositions, notuniformK256only; scalar analysis doesnotimplementonline selection",
+    "descriptor_precision": "originalT05 BF16encode/correlation; no model updates, evalBN frozen",
+    "semantic_mapping": {
+      "candidate_xy": "y_j augmentedSAR32coarsegrid pixelcenters",
+      "nominal_source": "x_j=inverse(A_forward)*y_j",
+      "sampling": "T07conditional7 at32grid, bilinear align_cornersFalse oninput256half-pixel coordinates; retains coarseaggregation resolution, not fullpixelnewteacher",
+      "mask": "queryexistingweight>0; allbilinear supportcorners candidateweight>0, maskinterpolation>.999; originalmappedxy inside conservativecoarsegrid support[3.5,251.5] and2pxvalidframe",
+      "SAR_teacher_run": false,
+      "SAR_semantic_GT": false,
+      "original_registration_residual": "unknown inherited; nominalwrong andnominalSARsemantics not humanGT"
+    },
+    "negatives": {
+      "exclusion_radius_px": 16.0,
+      "distance": "Euclidean in augmentedSAR frame from A*x_query",
+      "target_valid": "T05full8x8SARcoarsemask; sourceopticalmask; truthinsideerodedSARvalidmask2px",
+      "top_wrong": 5,
+      "selection": "descriptor tops among geometricallyvalidnegativepositions BEFOREsemanticmask; then applyteacherreliability; nosemanticranking",
+      "random_repeats": 5,
+      "uncontrolled": "uniformreliable negatives excluding all5hardcandidates",
+      "controlled": "samequery,GTdistancebin16px ANDcandidateweightbin0.1; uniformwithoutreplacement upto5 excluding5hardcandidates",
+      "class_controlled": "add exactnominalcandidatedominantclass to distance+weight strata; querydominantclass stratifiedseparately",
+      "no_match_stratum": "no match => excluded from specificcomparison, neverdrop fromcoverage denominators",
+      "fix_candidates": true
+    },
+    "similarity": "soft7cosine dot/(L2normproduct+1e-8)",
+    "permutation": {
+      "policy": "candidate opticalprobability vectors only permuted amongreliablecoarsecells from otherverified512parents in full7912traincache",
+      "control": "exactdominantclass and8withinclassweightquantile strata; recipientmask andweightfixed; probabilities fullvectors, fixedmappingSHA",
+      "scope": "candidate sideonly; queryp unpermuted; nominalsameclass softshape null, notpuresemanticcorrectness intervention",
+      "spatialcontinuity_not_preserved": true
+    },
+    "analysis": {
+      "primary": "hard minusdistance+reliability matchedrandom, pairmacrothen128parentbootstrap",
+      "secondary": "furthercandidatedominantclassmatched andclassconditionalcandidatepermutation difference; classspecific; leaveBackgroundout",
+      "bootstrap_replicates": 20000,
+      "bootstrap_seed": 20261126,
+      "histogram_bins": 50,
+      "cluster": "128verifieddistributed512parents, retain2children; no satellite scene independence",
+      "decision": "no fulltraining inT10A; onlyif positiveparentCI primary androbustclasscontrolled support acrossatleast2nonbackgroundclasses with>=16representedparents,else hypothesisrevision",
+      "case_order": "first16frozenpairs planorder; deterministic validquery+rank1, no similarityselection; showineligiblecase explicitly"
+    },
+    "forbidden": [
+      "training",
+      "validationsemanticrulemining",
+      "teacheronSAR",
+      "semanticGTclaim",
+      "newlossimplementation",
+      "RANSACthresholdchanges"
+    ]
+  },
+  "pairs": 256,
+  "parents": 128,
+  "relations": 653721,
+  "inputs_sha256": {
+    "runs/t07_semantic_cache_v1/conditional7.npy": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0",
+    "runs/t07_semantic_cache_v1/weight.npy": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2",
+    "runs/t07_semantic_cache_v1/pair_ids.json": "76aa82d1af21372dbfa30610db661f515ac161faa416e14658ef705400689819",
+    "runs/t10a_permutation_v1/selected_candidate_probability7.npy": "90d04acc7144fb8723c02bd090c3c0ee64cefcb59bc0603f76af5f9b0037b24b"
+  },
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "plan_sha256": "e0787d6ea7b5023f2b1dfaa1c136128ea02fc232ff8a6dde932874773fca69a8",
+  "candidate_files": [
+    {
+      "pair_index": 0,
+      "pair_id": "osdataset/256/train/101",
+      "verified512_parent": "osdataset/512/train/1020",
+      "file": "pair_000.npz",
+      "sha256": "9927c8d0d97001cf829765eeb003abf099f8b39a0549cb95819460725bcbf1e5"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "osdataset/256/train/104",
+      "verified512_parent": "osdataset/512/train/1020",
+      "file": "pair_001.npz",
+      "sha256": "697030210f32c1a1bd086f9a48985f4e04ad5d027e51af999e5e15ed0612763a"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "osdataset/256/train/170",
+      "verified512_parent": "osdataset/512/train/1036",
+      "file": "pair_002.npz",
+      "sha256": "202e97a3032999b4b881f4cbdfd7a30fa03a0c9f94d2420273ead137a8720eb2"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "osdataset/256/train/171",
+      "verified512_parent": "osdataset/512/train/1036",
+      "file": "pair_003.npz",
+      "sha256": "37fa2033207148534e6bf54f9363846eb0bc941f6447910622accc99c75abf5b"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "osdataset/256/train/311",
+      "verified512_parent": "osdataset/512/train/1068",
+      "file": "pair_004.npz",
+      "sha256": "826e4febcd46e5536efb2e9655e4a71a8dc7f4fe643d1fcccf5b8d5e1e19aa90"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "osdataset/256/train/312",
+      "verified512_parent": "osdataset/512/train/1068",
+      "file": "pair_005.npz",
+      "sha256": "3eacfb243005058ada1e44234814e019cf0f025827554a66e1b2fcf627f10ecb"
+    },
+    {
+      "pair_index": 6,
+      "pair_id": "osdataset/256/train/363",
+      "verified512_parent": "osdataset/512/train/108",
+      "file": "pair_006.npz",
+      "sha256": "a84b9c37eea49f003360a5c0f942aeef2e60f50a9d50c698da9e3183d1f2ab5c"
+    },
+    {
+      "pair_index": 7,
+      "pair_id": "osdataset/256/train/364",
+      "verified512_parent": "osdataset/512/train/108",
+      "file": "pair_007.npz",
+      "sha256": "2b2d405ee95efb5cd37366ae5830723d35c07aa1cba573111e3377f5b4f609b7"
+    },
+    {
+      "pair_index": 8,
+      "pair_id": "osdataset/256/train/393",
+      "verified512_parent": "osdataset/512/train/1087",
+      "file": "pair_008.npz",
+      "sha256": "c7cf38b2d4ebe19af021a919319caacb723cc9129ef227ee9051101915ee5b8d"
+    },
+    {
+      "pair_index": 9,
+      "pair_id": "osdataset/256/train/395",
+      "verified512_parent": "osdataset/512/train/1087",
+      "file": "pair_009.npz",
+      "sha256": "5a6f473bf5d6be27a5079e37af8ddd2d81733cf5c5cdf75ed6c976624cc678e1"
+    },
+    {
+      "pair_index": 10,
+      "pair_id": "osdataset/256/train/503",
+      "verified512_parent": "osdataset/512/train/1110",
+      "file": "pair_010.npz",
+      "sha256": "c1309f8aa54e26a9fbf936dcdb1f6be70a4d7b974d10e07004293680621f9803"
+    },
+    {
+      "pair_index": 11,
+      "pair_id": "osdataset/256/train/504",
+      "verified512_parent": "osdataset/512/train/1110",
+      "file": "pair_011.npz",
+      "sha256": "a559f2e27f99638aa29e56f0c78f065f3e5b9a369f6961c5531d0a62cc2789dd"
+    },
+    {
+      "pair_index": 12,
+      "pair_id": "osdataset/256/train/535",
+      "verified512_parent": "osdataset/512/train/1118",
+      "file": "pair_012.npz",
+      "sha256": "083b7eb912eadd4cf23b9b721f9d53916f5955d15e89331ca7495cbbe8b750c4"
+    },
+    {
+      "pair_index": 13,
+      "pair_id": "osdataset/256/train/536",
+      "verified512_parent": "osdataset/512/train/1118",
+      "file": "pair_013.npz",
+      "sha256": "f7483ccb886df1a74779c6ce4ce37b3763c14558c9f34be570d8e99f0fefc605"
+    },
+    {
+      "pair_index": 14,
+      "pair_id": "osdataset/256/train/743",
+      "verified512_parent": "osdataset/512/train/1165",
+      "file": "pair_014.npz",
+      "sha256": "f96b5f77b26a04f6cea777841fe546caabf3f9cef5eb3201626b499b723220f8"
+    },
+    {
+      "pair_index": 15,
+      "pair_id": "osdataset/256/train/744",
+      "verified512_parent": "osdataset/512/train/1165",
+      "file": "pair_015.npz",
+      "sha256": "029e0729935beb65357cbe099b30e2e0616eb1e464f018fd6c9b8353efd75174"
+    },
+    {
+      "pair_index": 16,
+      "pair_id": "osdataset/256/train/811",
+      "verified512_parent": "osdataset/512/train/1180",
+      "file": "pair_016.npz",
+      "sha256": "7c50a584a0ebfddce4d47a450b24e13f1f12b759c539c4273ed95070c34febf7"
+    },
+    {
+      "pair_index": 17,
+      "pair_id": "osdataset/256/train/812",
+      "verified512_parent": "osdataset/512/train/1180",
+      "file": "pair_017.npz",
+      "sha256": "9dc6188b7ef2c5af3dca338cb1af7f44b1f2c8967c694824581c592bec160719"
+    },
+    {
+      "pair_index": 18,
+      "pair_id": "osdataset/256/train/910",
+      "verified512_parent": "osdataset/512/train/1202",
+      "file": "pair_018.npz",
+      "sha256": "577fe66bc26c427b7a501df6ef53d4108dae8a637ad3d0fad17d6728a0df8db4"
+    },
+    {
+      "pair_index": 19,
+      "pair_id": "osdataset/256/train/912",
+      "verified512_parent": "osdataset/512/train/1202",
+      "file": "pair_019.npz",
+      "sha256": "81a9bd355772ab4ae9ee1e701345fb65c249f7f14fb423681537d8f7d7491c4a"
+    },
+    {
+      "pair_index": 20,
+      "pair_id": "osdataset/256/train/1053",
+      "verified512_parent": "osdataset/512/train/1235",
+      "file": "pair_020.npz",
+      "sha256": "07ba09200359fa19e41daf2b8cb51bccdf3292540a580f91d307d6895e646c34"
+    },
+    {
+      "pair_index": 21,
+      "pair_id": "osdataset/256/train/1055",
+      "verified512_parent": "osdataset/512/train/1235",
+      "file": "pair_021.npz",
+      "sha256": "b6a52ef6327f72e498956d7851ffd79c946dab2bfc5c274cd3631578c707ec2e"
+    },
+    {
+      "pair_index": 22,
+      "pair_id": "osdataset/256/train/1098",
+      "verified512_parent": "osdataset/512/train/1245",
+      "file": "pair_022.npz",
+      "sha256": "da1151766944bc531029c324b1d996e89e4ec7c70f5e744728ffe60a224319eb"
+    },
+    {
+      "pair_index": 23,
+      "pair_id": "osdataset/256/train/1099",
+      "verified512_parent": "osdataset/512/train/1245",
+      "file": "pair_023.npz",
+      "sha256": "ef16c2296d31699645e9fc464eb2971c18b3fd9efecf6f7ee80fae3811194f30"
+    },
+    {
+      "pair_index": 24,
+      "pair_id": "osdataset/256/train/1258",
+      "verified512_parent": "osdataset/512/train/1281",
+      "file": "pair_024.npz",
+      "sha256": "690e5b8ee1c3c7ce4ce1dead1ec39c94110a1b4a93bd2dd2d5584ca048848948"
+    },
+    {
+      "pair_index": 25,
+      "pair_id": "osdataset/256/train/1260",
+      "verified512_parent": "osdataset/512/train/1281",
+      "file": "pair_025.npz",
+      "sha256": "d71e6b2e66278d9ee5e0783491f06d5bb4487b8e719a1d44353352000555a423"
+    },
+    {
+      "pair_index": 26,
+      "pair_id": "osdataset/256/train/1270",
+      "verified512_parent": "osdataset/512/train/1284",
+      "file": "pair_026.npz",
+      "sha256": "d9b6fd4175a23ae93e1f874020b61c9984089088e7f25cccba6ec5762e57fd01"
+    },
+    {
+      "pair_index": 27,
+      "pair_id": "osdataset/256/train/1272",
+      "verified512_parent": "osdataset/512/train/1284",
+      "file": "pair_027.npz",
+      "sha256": "245cce622b33f7a17bbb00a083b879150d69ac62fbb20bac380a772f03ac0166"
+    },
+    {
+      "pair_index": 28,
+      "pair_id": "osdataset/256/train/1391",
+      "verified512_parent": "osdataset/512/train/1310",
+      "file": "pair_028.npz",
+      "sha256": "6683d756cf3a4318ee64675cf50f51097d3df0d490d4fe1de4c68074e014cc71"
+    },
+    {
+      "pair_index": 29,
+      "pair_id": "osdataset/256/train/1392",
+      "verified512_parent": "osdataset/512/train/1310",
+      "file": "pair_029.npz",
+      "sha256": "d93163d8534e24396fbd97ea1e40f39178b07f05edac5eb5c43c8576bd4c6430"
+    },
+    {
+      "pair_index": 30,
+      "pair_id": "osdataset/256/train/1449",
+      "verified512_parent": "osdataset/512/train/1324",
+      "file": "pair_030.npz",
+      "sha256": "06ef4806de20618fa8fc324ab4d6b807a2703002d274e7134536a936ee326d5e"
+    },
+    {
+      "pair_index": 31,
+      "pair_id": "osdataset/256/train/1450",
+      "verified512_parent": "osdataset/512/train/1324",
+      "file": "pair_031.npz",
+      "sha256": "d57cabd0dfb3b711dbdba4fa414fae532dc11f381885cb892cbdf85309e54f5f"
+    },
+    {
+      "pair_index": 32,
+      "pair_id": "osdataset/256/train/1491",
+      "verified512_parent": "osdataset/512/train/1333",
+      "file": "pair_032.npz",
+      "sha256": "1e174fca23cef2ba1e810eacea927a0bf6c4f37fa69f2afce40776af643e8042"
+    },
+    {
+      "pair_index": 33,
+      "pair_id": "osdataset/256/train/1492",
+      "verified512_parent": "osdataset/512/train/1333",
+      "file": "pair_033.npz",
+      "sha256": "6b1216bc23d2aed37c20cfafd1239c5d3ec7d21792d9e8173156d6f8de09457f"
+    },
+    {
+      "pair_index": 34,
+      "pair_id": "osdataset/256/train/1518",
+      "verified512_parent": "osdataset/512/train/134",
+      "file": "pair_034.npz",
+      "sha256": "0b05d76a651d14a041a30dc498e4df64c123b563008cfbb38389c66d169b8e6b"
+    },
+    {
+      "pair_index": 35,
+      "pair_id": "osdataset/256/train/1519",
+      "verified512_parent": "osdataset/512/train/134",
+      "file": "pair_035.npz",
+      "sha256": "c629a07a0f1b9f7d1c9dbd2937945af1d141d1f3293f130faec2cdddebc78f0e"
+    },
+    {
+      "pair_index": 36,
+      "pair_id": "osdataset/256/train/1549",
+      "verified512_parent": "osdataset/512/train/1347",
+      "file": "pair_036.npz",
+      "sha256": "d685b2e766363a0db3ad7601f1fb0a61c15dd0403be2cf1cf214dcc08d5060ab"
+    },
+    {
+      "pair_index": 37,
+      "pair_id": "osdataset/256/train/1552",
+      "verified512_parent": "osdataset/512/train/1347",
+      "file": "pair_037.npz",
+      "sha256": "f27998e89b25059d21433c091ce5920862c92e9ec5207512ba37ec1b356a9d0f"
+    },
+    {
+      "pair_index": 38,
+      "pair_id": "osdataset/256/train/1610",
+      "verified512_parent": "osdataset/512/train/1360",
+      "file": "pair_038.npz",
+      "sha256": "47cd48efe8ff63a964e8e39cea9b098b990471865e9bcc124b4be3a27ae97196"
+    },
+    {
+      "pair_index": 39,
+      "pair_id": "osdataset/256/train/1611",
+      "verified512_parent": "osdataset/512/train/1360",
+      "file": "pair_039.npz",
+      "sha256": "8dac060d1f6a3046e2aa3d0e02209de41b35807f840839724723cac3d62fc7c4"
+    },
+    {
+      "pair_index": 40,
+      "pair_id": "osdataset/256/train/1642",
+      "verified512_parent": "osdataset/512/train/1368",
+      "file": "pair_040.npz",
+      "sha256": "b2e6c1dc34d2f919c4dda4bc61734d487f0941d88dad67f7eafc235d22323982"
+    },
+    {
+      "pair_index": 41,
+      "pair_id": "osdataset/256/train/1643",
+      "verified512_parent": "osdataset/512/train/1368",
+      "file": "pair_041.npz",
+      "sha256": "b2ef11cc82695f9dc8141b50c2f184e10867838d9dcc742fa84f4b046ca8056c"
+    },
+    {
+      "pair_index": 42,
+      "pair_id": "osdataset/256/train/1737",
+      "verified512_parent": "osdataset/512/train/139",
+      "file": "pair_042.npz",
+      "sha256": "b66dcf86fa93c40b43339fdcf6dd51bcb6a4f34de3ec772a825352e9c1b74c66"
+    },
+    {
+      "pair_index": 43,
+      "pair_id": "osdataset/256/train/1738",
+      "verified512_parent": "osdataset/512/train/139",
+      "file": "pair_043.npz",
+      "sha256": "5330f72b5d6393ca5e750632914e5b233a13ae75f2b8d8a9406e48991fc5a675"
+    },
+    {
+      "pair_index": 44,
+      "pair_id": "osdataset/256/train/1762",
+      "verified512_parent": "osdataset/512/train/1395",
+      "file": "pair_044.npz",
+      "sha256": "cef79b11b43cdcd4ed0777183b00b15964ad24d0bb1104b00bd322a2575925f9"
+    },
+    {
+      "pair_index": 45,
+      "pair_id": "osdataset/256/train/1763",
+      "verified512_parent": "osdataset/512/train/1395",
+      "file": "pair_045.npz",
+      "sha256": "cb05689be01c33d70124cb34cfb7351623060f3385cd8a839f3c5e8415e7f059"
+    },
+    {
+      "pair_index": 46,
+      "pair_id": "osdataset/256/train/1838",
+      "verified512_parent": "osdataset/512/train/1411",
+      "file": "pair_046.npz",
+      "sha256": "ebabd28ae01479018a70231126979b74e608eeafa678b70728df63952627b632"
+    },
+    {
+      "pair_index": 47,
+      "pair_id": "osdataset/256/train/1839",
+      "verified512_parent": "osdataset/512/train/1411",
+      "file": "pair_047.npz",
+      "sha256": "d2a6f7b27dcfc049680eddfe57ac8cfba216cc7b454ff3ed83b8ceadc9202714"
+    },
+    {
+      "pair_index": 48,
+      "pair_id": "osdataset/256/train/1858",
+      "verified512_parent": "osdataset/512/train/1416",
+      "file": "pair_048.npz",
+      "sha256": "eadbe22d5be2b88a3bfaca82912a08534d5c1888b6ad2719401b00dd4e7ba09d"
+    },
+    {
+      "pair_index": 49,
+      "pair_id": "osdataset/256/train/1859",
+      "verified512_parent": "osdataset/512/train/1416",
+      "file": "pair_049.npz",
+      "sha256": "9e456748b0f857f8cc294ebbdbcfd44c5d9948e667b7e9e452f92744f7d1ccbf"
+    },
+    {
+      "pair_index": 50,
+      "pair_id": "osdataset/256/train/1943",
+      "verified512_parent": "osdataset/512/train/1435",
+      "file": "pair_050.npz",
+      "sha256": "5f3ba6302e25a26c46393da03c91c62c7691e30abed1be5ae8fb429d988849cb"
+    },
+    {
+      "pair_index": 51,
+      "pair_id": "osdataset/256/train/1944",
+      "verified512_parent": "osdataset/512/train/1435",
+      "file": "pair_051.npz",
+      "sha256": "35baeb98346f34162f798b473623127a904b7c3f1fcb2032410d2b042dc75767"
+    },
+    {
+      "pair_index": 52,
+      "pair_id": "osdataset/256/train/2198",
+      "verified512_parent": "osdataset/512/train/1493",
+      "file": "pair_052.npz",
+      "sha256": "4a34f448f5ab4895415f11632aa855404efec8ef77e8dee665ae7f55ed3da316"
+    },
+    {
+      "pair_index": 53,
+      "pair_id": "osdataset/256/train/2200",
+      "verified512_parent": "osdataset/512/train/1493",
+      "file": "pair_053.npz",
+      "sha256": "864a002bdbf7c42829bcf43784a68873b020dfd16832da68433ede735f65db2b"
+    },
+    {
+      "pair_index": 54,
+      "pair_id": "osdataset/256/train/2215",
+      "verified512_parent": "osdataset/512/train/1497",
+      "file": "pair_054.npz",
+      "sha256": "b5c7f5a4d4fd2ba4e85a5fe364f98534ef57d3c4b65a6f0e146aababa8a6a9ba"
+    },
+    {
+      "pair_index": 55,
+      "pair_id": "osdataset/256/train/2216",
+      "verified512_parent": "osdataset/512/train/1497",
+      "file": "pair_055.npz",
+      "sha256": "f383a8139d852e0794ff7800617cda2e6f68e1d3a87b8b1bf5935999aa6769a4"
+    },
+    {
+      "pair_index": 56,
+      "pair_id": "osdataset/256/train/2253",
+      "verified512_parent": "osdataset/512/train/1505",
+      "file": "pair_056.npz",
+      "sha256": "f2f42b433c61950948e60619d981e88c6404c75226f22f1170c3a50ee929e5d7"
+    },
+    {
+      "pair_index": 57,
+      "pair_id": "osdataset/256/train/2256",
+      "verified512_parent": "osdataset/512/train/1505",
+      "file": "pair_057.npz",
+      "sha256": "3ca4869d23442875ddce39b9f40407d1201fe53128ae13f01dc9941ebd643f87"
+    },
+    {
+      "pair_index": 58,
+      "pair_id": "osdataset/256/train/2285",
+      "verified512_parent": "osdataset/512/train/1512",
+      "file": "pair_058.npz",
+      "sha256": "0e80efa50b893ba6206a8f758ee6c839b955cd0fc9a0874d9c68ae0d5465ab1e"
+    },
+    {
+      "pair_index": 59,
+      "pair_id": "osdataset/256/train/2288",
+      "verified512_parent": "osdataset/512/train/1512",
+      "file": "pair_059.npz",
+      "sha256": "886430479b7c5ae4ee580009419e0d6de969a9dc4b79ffd4301901337ac0aa49"
+    },
+    {
+      "pair_index": 60,
+      "pair_id": "osdataset/256/train/2307",
+      "verified512_parent": "osdataset/512/train/1517",
+      "file": "pair_060.npz",
+      "sha256": "5608e3022eb0fd4a011193bbfd4f7945711af7402a67abc52a367c5191210534"
+    },
+    {
+      "pair_index": 61,
+      "pair_id": "osdataset/256/train/2308",
+      "verified512_parent": "osdataset/512/train/1517",
+      "file": "pair_061.npz",
+      "sha256": "f0e4352db597f9984980edba8db7c6c0d675ac034c3102c21a47ee70c0dd136b"
+    },
+    {
+      "pair_index": 62,
+      "pair_id": "osdataset/256/train/2369",
+      "verified512_parent": "osdataset/512/train/1531",
+      "file": "pair_062.npz",
+      "sha256": "6bda1635bc455c6216134f6332d6a8b9b5003b6a1351b5cbcd0bd4cf7d95ae8e"
+    },
+    {
+      "pair_index": 63,
+      "pair_id": "osdataset/256/train/2371",
+      "verified512_parent": "osdataset/512/train/1531",
+      "file": "pair_063.npz",
+      "sha256": "cae9791b32167e974727931e5f96ea2cdd0dc93c29db50397bb99e1910a19496"
+    },
+    {
+      "pair_index": 64,
+      "pair_id": "osdataset/256/train/2498",
+      "verified512_parent": "osdataset/512/train/1560",
+      "file": "pair_064.npz",
+      "sha256": "e31097954cc4b24ec6611edc440238593bea16c21bc84cf65c9e7ef9d2d3af56"
+    },
+    {
+      "pair_index": 65,
+      "pair_id": "osdataset/256/train/2500",
+      "verified512_parent": "osdataset/512/train/1560",
+      "file": "pair_065.npz",
+      "sha256": "aac036eee8b8a69dc49a222c882cf977f2366624667bf8ec3ec296853de1b4f0"
+    },
+    {
+      "pair_index": 66,
+      "pair_id": "osdataset/256/train/2765",
+      "verified512_parent": "osdataset/512/train/1620",
+      "file": "pair_066.npz",
+      "sha256": "281ee36ddba33d32bca5627bbbb85750300babf1c2585864b1756cf89ee11641"
+    },
+    {
+      "pair_index": 67,
+      "pair_id": "osdataset/256/train/2768",
+      "verified512_parent": "osdataset/512/train/1620",
+      "file": "pair_067.npz",
+      "sha256": "a9599d690813f23543fcf821ab561f5b4885e1ac857ef26e94ede787c30887f0"
+    },
+    {
+      "pair_index": 68,
+      "pair_id": "osdataset/256/train/2846",
+      "verified512_parent": "osdataset/512/train/1639",
+      "file": "pair_068.npz",
+      "sha256": "9d8e727a32d662f2a82355be23177b6a77649e0ed33552ad9e46ec0922b4ee35"
+    },
+    {
+      "pair_index": 69,
+      "pair_id": "osdataset/256/train/2847",
+      "verified512_parent": "osdataset/512/train/1639",
+      "file": "pair_069.npz",
+      "sha256": "13db611a8e5de3833736736c1708a67fa52cb1e499c3e4d8f9489215ee66066a"
+    },
+    {
+      "pair_index": 70,
+      "pair_id": "osdataset/256/train/2882",
+      "verified512_parent": "osdataset/512/train/1647",
+      "file": "pair_070.npz",
+      "sha256": "f88523a07b69ea42b2923b3658e49e1a7d667b4d27689d25dc1e00ded589434c"
+    },
+    {
+      "pair_index": 71,
+      "pair_id": "osdataset/256/train/2883",
+      "verified512_parent": "osdataset/512/train/1647",
+      "file": "pair_071.npz",
+      "sha256": "5c5a59d5e89e0c0bf591a0d09137731e317eb3eb8ad7de4047c8273146770b59"
+    },
+    {
+      "pair_index": 72,
+      "pair_id": "osdataset/256/train/2990",
+      "verified512_parent": "osdataset/512/train/1671",
+      "file": "pair_072.npz",
+      "sha256": "37fc5ebe653c4739c9f65975d4d4ba114f91367ee80f1ee83509f7d9d1997b29"
+    },
+    {
+      "pair_index": 73,
+      "pair_id": "osdataset/256/train/2991",
+      "verified512_parent": "osdataset/512/train/1671",
+      "file": "pair_073.npz",
+      "sha256": "8e41a1ff544d1fce95e45d591f757e96fac1946d8b5f9b3d211e7ec37c0e92e3"
+    },
+    {
+      "pair_index": 74,
+      "pair_id": "osdataset/256/train/2993",
+      "verified512_parent": "osdataset/512/train/1672",
+      "file": "pair_074.npz",
+      "sha256": "0c69b9c0f289a28d32d0af50ce60daeb2bc2e576b3419fbbbaeab8edcd844800"
+    },
+    {
+      "pair_index": 75,
+      "pair_id": "osdataset/256/train/2996",
+      "verified512_parent": "osdataset/512/train/1672",
+      "file": "pair_075.npz",
+      "sha256": "33c52a730d819eaa92b943c9b0d51fd8bec2149fa22341c35b213d150183cecf"
+    },
+    {
+      "pair_index": 76,
+      "pair_id": "osdataset/256/train/3145",
+      "verified512_parent": "osdataset/512/train/1706",
+      "file": "pair_076.npz",
+      "sha256": "b404e5e1f21cbd52ef45b00103503ce1a503ab918c2ffc71db67c0a077b1c07a"
+    },
+    {
+      "pair_index": 77,
+      "pair_id": "osdataset/256/train/3148",
+      "verified512_parent": "osdataset/512/train/1706",
+      "file": "pair_077.npz",
+      "sha256": "6c9579b8f724d4dcfd88442964504e8840209afa33759942667751b5dea9004a"
+    },
+    {
+      "pair_index": 78,
+      "pair_id": "osdataset/256/train/3187",
+      "verified512_parent": "osdataset/512/train/1715",
+      "file": "pair_078.npz",
+      "sha256": "5474d917b20a294bc0c99d8c320e3ac0f9b02a117df34034d79e72b7ab8797f4"
+    },
+    {
+      "pair_index": 79,
+      "pair_id": "osdataset/256/train/3188",
+      "verified512_parent": "osdataset/512/train/1715",
+      "file": "pair_079.npz",
+      "sha256": "ae8608a5ebc1fdc542d5cf654a6a3fbe4c7ba7420752f965e7756dcd38f35784"
+    },
+    {
+      "pair_index": 80,
+      "pair_id": "osdataset/256/train/3221",
+      "verified512_parent": "osdataset/512/train/1723",
+      "file": "pair_080.npz",
+      "sha256": "2aad77a0803cf66257a01a60e9dc7f11fe5338b3fd7569da48140df3a644b775"
+    },
+    {
+      "pair_index": 81,
+      "pair_id": "osdataset/256/train/3222",
+      "verified512_parent": "osdataset/512/train/1723",
+      "file": "pair_081.npz",
+      "sha256": "5647f5439b98acac3453f6e9b631ce58cde59eb464bac225f2b032d82ee52a5b"
+    },
+    {
+      "pair_index": 82,
+      "pair_id": "osdataset/256/train/3227",
+      "verified512_parent": "osdataset/512/train/1724",
+      "file": "pair_082.npz",
+      "sha256": "b5a3919320a7429191b6cc4680252446c0675dd3ab31ceb5d8c57d267130c86d"
+    },
+    {
+      "pair_index": 83,
+      "pair_id": "osdataset/256/train/3228",
+      "verified512_parent": "osdataset/512/train/1724",
+      "file": "pair_083.npz",
+      "sha256": "3e5b24b56030316d34f662effc4c3bfe8949164ecc5c5f38b6f69e01bd51184a"
+    },
+    {
+      "pair_index": 84,
+      "pair_id": "osdataset/256/train/3265",
+      "verified512_parent": "osdataset/512/train/1733",
+      "file": "pair_084.npz",
+      "sha256": "fdf9f57c2a71a54a154918e57e0a96ba5ed0712580b85d10c37b67f703e5c466"
+    },
+    {
+      "pair_index": 85,
+      "pair_id": "osdataset/256/train/3266",
+      "verified512_parent": "osdataset/512/train/1733",
+      "file": "pair_085.npz",
+      "sha256": "5511efb7f39b30b24071d68cbb5c761bae569e4b666a39b2e7792ae1003e7e42"
+    },
+    {
+      "pair_index": 86,
+      "pair_id": "osdataset/256/train/3378",
+      "verified512_parent": "osdataset/512/train/1759",
+      "file": "pair_086.npz",
+      "sha256": "b0e57e5e0acfe95820bc71369a358e64b7176a2cac4bd081be676624047e88d4"
+    },
+    {
+      "pair_index": 87,
+      "pair_id": "osdataset/256/train/3379",
+      "verified512_parent": "osdataset/512/train/1759",
+      "file": "pair_087.npz",
+      "sha256": "db016c43bbc4b16799b102a8458044a92c5058616721ae62ff699aa2e6e32880"
+    },
+    {
+      "pair_index": 88,
+      "pair_id": "osdataset/256/train/3545",
+      "verified512_parent": "osdataset/512/train/1797",
+      "file": "pair_088.npz",
+      "sha256": "98006765c98bd5bb0a1695b145c7f2887294de71299baf9a91b44b6ec4605684"
+    },
+    {
+      "pair_index": 89,
+      "pair_id": "osdataset/256/train/3546",
+      "verified512_parent": "osdataset/512/train/1797",
+      "file": "pair_089.npz",
+      "sha256": "8376b2452c14ec8b4cbed7d898e8beb864a9b87bf9c4e88a89e6c89608b88ea7"
+    },
+    {
+      "pair_index": 90,
+      "pair_id": "osdataset/256/train/3558",
+      "verified512_parent": "osdataset/512/train/18",
+      "file": "pair_090.npz",
+      "sha256": "83aaab658fec722c6df99c550c38aefdd8bdafe4bd1207a6f112f62033fdf46d"
+    },
+    {
+      "pair_index": 91,
+      "pair_id": "osdataset/256/train/3559",
+      "verified512_parent": "osdataset/512/train/18",
+      "file": "pair_091.npz",
+      "sha256": "cc45b642db876279f7694e78cebedc9141139ee826452bb7c6bcee550c5509a8"
+    },
+    {
+      "pair_index": 92,
+      "pair_id": "osdataset/256/train/3589",
+      "verified512_parent": "osdataset/512/train/1806",
+      "file": "pair_092.npz",
+      "sha256": "5165cfb1091c4fb95fe546a35d35348c7b424aaf5e4ccdb6854478b245731f3e"
+    },
+    {
+      "pair_index": 93,
+      "pair_id": "osdataset/256/train/3592",
+      "verified512_parent": "osdataset/512/train/1806",
+      "file": "pair_093.npz",
+      "sha256": "e1318a4ee79249717c27884e7023acd9826bde9d33c245f2132d696a8002d267"
+    },
+    {
+      "pair_index": 94,
+      "pair_id": "osdataset/256/train/3610",
+      "verified512_parent": "osdataset/512/train/1810",
+      "file": "pair_094.npz",
+      "sha256": "168edccfb77b00930cd909bdd4a3cfc5798993eb28fb568ce416e45602de1f3a"
+    },
+    {
+      "pair_index": 95,
+      "pair_id": "osdataset/256/train/3611",
+      "verified512_parent": "osdataset/512/train/1810",
+      "file": "pair_095.npz",
+      "sha256": "dab605592b0c31b4737db76033fd6e7cf0de16a1cac089053a31e29f5d4c10cf"
+    },
+    {
+      "pair_index": 96,
+      "pair_id": "osdataset/256/train/3710",
+      "verified512_parent": "osdataset/512/train/1833",
+      "file": "pair_096.npz",
+      "sha256": "43efb38f8f6adffcfa3dca98c8c4a642d2d9ae0501fb86b402080c350058b76e"
+    },
+    {
+      "pair_index": 97,
+      "pair_id": "osdataset/256/train/3712",
+      "verified512_parent": "osdataset/512/train/1833",
+      "file": "pair_097.npz",
+      "sha256": "b334ab58804499a127be990be48cdb36effdb41baafebbb342c56ff1e3c62c3e"
+    },
+    {
+      "pair_index": 98,
+      "pair_id": "osdataset/256/train/3719",
+      "verified512_parent": "osdataset/512/train/1835",
+      "file": "pair_098.npz",
+      "sha256": "7b9f6f95b29dbb5b19efd2bf0b5696e875336dc77cc345131313b90532a030ab"
+    },
+    {
+      "pair_index": 99,
+      "pair_id": "osdataset/256/train/3720",
+      "verified512_parent": "osdataset/512/train/1835",
+      "file": "pair_099.npz",
+      "sha256": "95ccf18a1c94277ddf9706201ad7d256c6a0abe222b7593e017fd9c28ee1f09f"
+    },
+    {
+      "pair_index": 100,
+      "pair_id": "osdataset/256/train/3729",
+      "verified512_parent": "osdataset/512/train/1838",
+      "file": "pair_100.npz",
+      "sha256": "c948c5d01aaef1cd3f6ace0e2f2a4fdb9b029fb1171ccc6ccaad8aa64ee4558d"
+    },
+    {
+      "pair_index": 101,
+      "pair_id": "osdataset/256/train/3730",
+      "verified512_parent": "osdataset/512/train/1838",
+      "file": "pair_101.npz",
+      "sha256": "b49118ee2fcf27c6a5b7d31bbc7310bb9a4159f1d3fc4e811333f1b60797205f"
+    },
+    {
+      "pair_index": 102,
+      "pair_id": "osdataset/256/train/3741",
+      "verified512_parent": "osdataset/512/train/1840",
+      "file": "pair_102.npz",
+      "sha256": "69a63242640cd11a14dbbd4b833b2de674ddc9323dabd00b3edda534482fbd19"
+    },
+    {
+      "pair_index": 103,
+      "pair_id": "osdataset/256/train/3742",
+      "verified512_parent": "osdataset/512/train/1840",
+      "file": "pair_103.npz",
+      "sha256": "666c4d9a0314582256c645ded585dde093cb2d26ab3cfd785e870105540d09e6"
+    },
+    {
+      "pair_index": 104,
+      "pair_id": "osdataset/256/train/3773",
+      "verified512_parent": "osdataset/512/train/1848",
+      "file": "pair_104.npz",
+      "sha256": "3efd4adf771c5e13daac4b7288a56ed288e9e8b4deff9dd36b418b05f0c4a0af"
+    },
+    {
+      "pair_index": 105,
+      "pair_id": "osdataset/256/train/3775",
+      "verified512_parent": "osdataset/512/train/1848",
+      "file": "pair_105.npz",
+      "sha256": "e7b9a5a7f7bb98e2eaba2cdf042e2c69445f05e8b0a1cf486186bdc987251060"
+    },
+    {
+      "pair_index": 106,
+      "pair_id": "osdataset/256/train/3817",
+      "verified512_parent": "osdataset/512/train/1858",
+      "file": "pair_106.npz",
+      "sha256": "7b3265aac179feb581101d89642eb33bf1ab8490999977ba0047ad8ca661515a"
+    },
+    {
+      "pair_index": 107,
+      "pair_id": "osdataset/256/train/3820",
+      "verified512_parent": "osdataset/512/train/1858",
+      "file": "pair_107.npz",
+      "sha256": "b63f285537ab1380c3f61a497bd95ea249fd81b9202f05f1aa6652365cb79455"
+    },
+    {
+      "pair_index": 108,
+      "pair_id": "osdataset/256/train/3826",
+      "verified512_parent": "osdataset/512/train/186",
+      "file": "pair_108.npz",
+      "sha256": "fe4bbf9b6bd7a7d3b28a0683581f85256cada64a63aac86f0699592ce56d60e9"
+    },
+    {
+      "pair_index": 109,
+      "pair_id": "osdataset/256/train/3827",
+      "verified512_parent": "osdataset/512/train/186",
+      "file": "pair_109.npz",
+      "sha256": "a118cb30080af40f1a78d7d8959b556b02bcba4fda428d89bbfc88c1399480a7"
+    },
+    {
+      "pair_index": 110,
+      "pair_id": "osdataset/256/train/3837",
+      "verified512_parent": "osdataset/512/train/1862",
+      "file": "pair_110.npz",
+      "sha256": "3a731951d74274e14fb6647a365816790b8f2d9c9a0c8a4807a895fc11b24e5e"
+    },
+    {
+      "pair_index": 111,
+      "pair_id": "osdataset/256/train/3839",
+      "verified512_parent": "osdataset/512/train/1862",
+      "file": "pair_111.npz",
+      "sha256": "7c9cf922f3ad5a9bb0215dbbe5cc488be187eeb817f331a3a420fd4f43a5b98d"
+    },
+    {
+      "pair_index": 112,
+      "pair_id": "osdataset/256/train/3974",
+      "verified512_parent": "osdataset/512/train/1893",
+      "file": "pair_112.npz",
+      "sha256": "7f5e43a666c70774f4709af69506e26720cdf39acaccce5c5cc540011ac660a1"
+    },
+    {
+      "pair_index": 113,
+      "pair_id": "osdataset/256/train/3976",
+      "verified512_parent": "osdataset/512/train/1893",
+      "file": "pair_113.npz",
+      "sha256": "e838f30c16cf50600652b3bfc9ad8a91852c004fb3dbe94584d170723a7a8c26"
+    },
+    {
+      "pair_index": 114,
+      "pair_id": "osdataset/256/train/4063",
+      "verified512_parent": "osdataset/512/train/1912",
+      "file": "pair_114.npz",
+      "sha256": "34e232214f853181dd47f0254e7c3cf3902a0b11b9ae79e206fcae021e839379"
+    },
+    {
+      "pair_index": 115,
+      "pair_id": "osdataset/256/train/4064",
+      "verified512_parent": "osdataset/512/train/1912",
+      "file": "pair_115.npz",
+      "sha256": "3311292f8c3ce3b4138d6a8e7cbcc6dd496f3152fa63318656bd9c87b356b249"
+    },
+    {
+      "pair_index": 116,
+      "pair_id": "osdataset/256/train/4065",
+      "verified512_parent": "osdataset/512/train/1913",
+      "file": "pair_116.npz",
+      "sha256": "97f9bd12dee09b85929850c4c52ac30f7f56c32497992a05e18018be118c924c"
+    },
+    {
+      "pair_index": 117,
+      "pair_id": "osdataset/256/train/4066",
+      "verified512_parent": "osdataset/512/train/1913",
+      "file": "pair_117.npz",
+      "sha256": "54d534423941be8dadc1ca65c96da3afb08fc1229028cd584c5a354273137855"
+    },
+    {
+      "pair_index": 118,
+      "pair_id": "osdataset/256/train/4135",
+      "verified512_parent": "osdataset/512/train/1929",
+      "file": "pair_118.npz",
+      "sha256": "f34151c0bf28bd8fc76e0237974c0548ce2b0a377464eb492644ef3333a12fed"
+    },
+    {
+      "pair_index": 119,
+      "pair_id": "osdataset/256/train/4136",
+      "verified512_parent": "osdataset/512/train/1929",
+      "file": "pair_119.npz",
+      "sha256": "b8e53d923cc0720b1eb6011e5e10c151157c130a48d00d1af39d6df15c890528"
+    },
+    {
+      "pair_index": 120,
+      "pair_id": "osdataset/256/train/4267",
+      "verified512_parent": "osdataset/512/train/1959",
+      "file": "pair_120.npz",
+      "sha256": "87f6fdac49648e239f4558e591218e80c492007924ce29563f48e2e929276bbc"
+    },
+    {
+      "pair_index": 121,
+      "pair_id": "osdataset/256/train/4268",
+      "verified512_parent": "osdataset/512/train/1959",
+      "file": "pair_121.npz",
+      "sha256": "d159f606eaeb015e5b9ba1ef8f3251128848f8710140f229f861c73f7b44d857"
+    },
+    {
+      "pair_index": 122,
+      "pair_id": "osdataset/256/train/4317",
+      "verified512_parent": "osdataset/512/train/1970",
+      "file": "pair_122.npz",
+      "sha256": "bc6d4e229ac332e18f780660f19fcd871603f20daf36f9e87a7ede32a3992e71"
+    },
+    {
+      "pair_index": 123,
+      "pair_id": "osdataset/256/train/4319",
+      "verified512_parent": "osdataset/512/train/1970",
+      "file": "pair_123.npz",
+      "sha256": "7f754675b4ce06cc9a395b26160a60865e0aab9835a5193a33915cdc8fed7278"
+    },
+    {
+      "pair_index": 124,
+      "pair_id": "osdataset/256/train/4338",
+      "verified512_parent": "osdataset/512/train/1975",
+      "file": "pair_124.npz",
+      "sha256": "cc4603b2dab81d53e8503ff7f1d494f2992581cd2fd1dcc822e8bc884c272f37"
+    },
+    {
+      "pair_index": 125,
+      "pair_id": "osdataset/256/train/4339",
+      "verified512_parent": "osdataset/512/train/1975",
+      "file": "pair_125.npz",
+      "sha256": "dfc1aad6899fb1cd74f00fec9298acefc7f97b4e8a49a7d3af3107beece414fa"
+    },
+    {
+      "pair_index": 126,
+      "pair_id": "osdataset/256/train/4363",
+      "verified512_parent": "osdataset/512/train/1980",
+      "file": "pair_126.npz",
+      "sha256": "05396d3f77ecef99ca49f90da7031737b013787db88d114804f55cbf5bd2036b"
+    },
+    {
+      "pair_index": 127,
+      "pair_id": "osdataset/256/train/4364",
+      "verified512_parent": "osdataset/512/train/1980",
+      "file": "pair_127.npz",
+      "sha256": "16d3fae7d5c683f5d3da4e1378904e2c061add54dc3bb28365ebe749256ad327"
+    },
+    {
+      "pair_index": 128,
+      "pair_id": "osdataset/256/train/4371",
+      "verified512_parent": "osdataset/512/train/1982",
+      "file": "pair_128.npz",
+      "sha256": "776295c4b8e6352d7915a84b9fa1073b1bb1c6bf38236ebc8f0e0f55624ff666"
+    },
+    {
+      "pair_index": 129,
+      "pair_id": "osdataset/256/train/4372",
+      "verified512_parent": "osdataset/512/train/1982",
+      "file": "pair_129.npz",
+      "sha256": "ee93804c22b885f1853cdafa551931854864160ca2a9d58201894f01fb18afbf"
+    },
+    {
+      "pair_index": 130,
+      "pair_id": "osdataset/256/train/4465",
+      "verified512_parent": "osdataset/512/train/2002",
+      "file": "pair_130.npz",
+      "sha256": "e7e87ebbb654188bda64b8e159a1a3cb94f550b99fa0e720a059909af930cc66"
+    },
+    {
+      "pair_index": 131,
+      "pair_id": "osdataset/256/train/4467",
+      "verified512_parent": "osdataset/512/train/2002",
+      "file": "pair_131.npz",
+      "sha256": "6815726ea76266589f6b548db931ebf34c39269a7983795f010790f126e5b6bb"
+    },
+    {
+      "pair_index": 132,
+      "pair_id": "osdataset/256/train/4470",
+      "verified512_parent": "osdataset/512/train/2003",
+      "file": "pair_132.npz",
+      "sha256": "99696b4d423cfdb22ff8fa16b5f8b69e1b8e2185d0d75842c2e806c9b8bb5781"
+    },
+    {
+      "pair_index": 133,
+      "pair_id": "osdataset/256/train/4472",
+      "verified512_parent": "osdataset/512/train/2003",
+      "file": "pair_133.npz",
+      "sha256": "6e1b198fe19280b7074400e12ca18b3c62ba252badb12643ac14de01eeca6810"
+    },
+    {
+      "pair_index": 134,
+      "pair_id": "osdataset/256/train/4499",
+      "verified512_parent": "osdataset/512/train/201",
+      "file": "pair_134.npz",
+      "sha256": "f376f5ace84dd3a06860d15342e86f4c373c8ee369a83a9603483439cc99c4fc"
+    },
+    {
+      "pair_index": 135,
+      "pair_id": "osdataset/256/train/4500",
+      "verified512_parent": "osdataset/512/train/201",
+      "file": "pair_135.npz",
+      "sha256": "e53d26c24dc719b92b5f72349d5e583226eab18a1672164e84d857a0112bdf0b"
+    },
+    {
+      "pair_index": 136,
+      "pair_id": "osdataset/256/train/4517",
+      "verified512_parent": "osdataset/512/train/204",
+      "file": "pair_136.npz",
+      "sha256": "9a647fc1d5fdff4cca4c9e82b86dfaaeceee1af82be88be36c08048f3cc59989"
+    },
+    {
+      "pair_index": 137,
+      "pair_id": "osdataset/256/train/4520",
+      "verified512_parent": "osdataset/512/train/204",
+      "file": "pair_137.npz",
+      "sha256": "25d8388f49cf344998c81b5cb7ef6f0d6ab4fbfcd9bc314940f12a21f0f91202"
+    },
+    {
+      "pair_index": 138,
+      "pair_id": "osdataset/256/train/4606",
+      "verified512_parent": "osdataset/512/train/224",
+      "file": "pair_138.npz",
+      "sha256": "e1ec18e5cfd7c2cb2114f3f31874ad0ea66abe8916b3fba2a1fb696bba89eb24"
+    },
+    {
+      "pair_index": 139,
+      "pair_id": "osdataset/256/train/4607",
+      "verified512_parent": "osdataset/512/train/224",
+      "file": "pair_139.npz",
+      "sha256": "fa1f8b4fe9d9c80fa0684d8cf45505c04d6d9030f47ee2a18abd99f48171dadc"
+    },
+    {
+      "pair_index": 140,
+      "pair_id": "osdataset/256/train/4810",
+      "verified512_parent": "osdataset/512/train/270",
+      "file": "pair_140.npz",
+      "sha256": "045cf3af16531483939719b637ced61665a4291b4e332ca87671e194647716d1"
+    },
+    {
+      "pair_index": 141,
+      "pair_id": "osdataset/256/train/4811",
+      "verified512_parent": "osdataset/512/train/270",
+      "file": "pair_141.npz",
+      "sha256": "ec210ab22bbcb46ecaedae4da222cec2b586b43ad770eaaa03cd9de9ac44e137"
+    },
+    {
+      "pair_index": 142,
+      "pair_id": "osdataset/256/train/4893",
+      "verified512_parent": "osdataset/512/train/29",
+      "file": "pair_142.npz",
+      "sha256": "7cf58554ad819f052d238725d8e9daaf9bb6c934549ee6821570c47709c3ddf1"
+    },
+    {
+      "pair_index": 143,
+      "pair_id": "osdataset/256/train/4894",
+      "verified512_parent": "osdataset/512/train/29",
+      "file": "pair_143.npz",
+      "sha256": "919fe7235fbf2764d4dcfd5f63ec160356605ca5a22d957116b851dbd57f11d7"
+    },
+    {
+      "pair_index": 144,
+      "pair_id": "osdataset/256/train/4897",
+      "verified512_parent": "osdataset/512/train/290",
+      "file": "pair_144.npz",
+      "sha256": "823d4faa5d7442aba7ea32c6a1d9cb434a422fac12ad2b30a53b40692126e5b2"
+    },
+    {
+      "pair_index": 145,
+      "pair_id": "osdataset/256/train/4900",
+      "verified512_parent": "osdataset/512/train/290",
+      "file": "pair_145.npz",
+      "sha256": "30a7e23e76e078840a3e4f8882ba2b0fb12f9b355329fed78497ee8d2f343897"
+    },
+    {
+      "pair_index": 146,
+      "pair_id": "osdataset/256/train/4906",
+      "verified512_parent": "osdataset/512/train/292",
+      "file": "pair_146.npz",
+      "sha256": "70701f2f2b64222d9adefbb41ca1e99b14a2b093d7c279aa0ceb06e867af5bae"
+    },
+    {
+      "pair_index": 147,
+      "pair_id": "osdataset/256/train/4907",
+      "verified512_parent": "osdataset/512/train/292",
+      "file": "pair_147.npz",
+      "sha256": "dc1cb642b258fde856c064aa0e055a4b1c1786c58d6bd82c31851bcf8c8d632a"
+    },
+    {
+      "pair_index": 148,
+      "pair_id": "osdataset/256/train/4987",
+      "verified512_parent": "osdataset/512/train/31",
+      "file": "pair_148.npz",
+      "sha256": "a119962eb9049189b5710dd46e5b4e3fb33b595b086025512a60854d4a65ebc0"
+    },
+    {
+      "pair_index": 149,
+      "pair_id": "osdataset/256/train/4988",
+      "verified512_parent": "osdataset/512/train/31",
+      "file": "pair_149.npz",
+      "sha256": "393df467f91e3f3cd987b8092983988947a4697af89fef41b2f9cc457b4684be"
+    },
+    {
+      "pair_index": 150,
+      "pair_id": "osdataset/256/train/5013",
+      "verified512_parent": "osdataset/512/train/316",
+      "file": "pair_150.npz",
+      "sha256": "a81b7a7700d19864f01560863d35fe880472b20165e5dd2e1cfd6a422cee30c1"
+    },
+    {
+      "pair_index": 151,
+      "pair_id": "osdataset/256/train/5014",
+      "verified512_parent": "osdataset/512/train/316",
+      "file": "pair_151.npz",
+      "sha256": "a99bbcef9ef081ce46dc81b4bc3931b418cef0d3aefe31ca868d2750ba7240e7"
+    },
+    {
+      "pair_index": 152,
+      "pair_id": "osdataset/256/train/5023",
+      "verified512_parent": "osdataset/512/train/318",
+      "file": "pair_152.npz",
+      "sha256": "db7633ae5b3a32674a04d1223ef0b0add2fac1e8af0acea07ac02d9cbf34b1e0"
+    },
+    {
+      "pair_index": 153,
+      "pair_id": "osdataset/256/train/5024",
+      "verified512_parent": "osdataset/512/train/318",
+      "file": "pair_153.npz",
+      "sha256": "e840b6870b6474d802ec63d35128708667b47781a55fe125b1b3e70d7be7f3a8"
+    },
+    {
+      "pair_index": 154,
+      "pair_id": "osdataset/256/train/5041",
+      "verified512_parent": "osdataset/512/train/322",
+      "file": "pair_154.npz",
+      "sha256": "efd6819eed53cb70c4b8d8e6feb671c47e7cd235258bad7eb68cb9c90790f2af"
+    },
+    {
+      "pair_index": 155,
+      "pair_id": "osdataset/256/train/5043",
+      "verified512_parent": "osdataset/512/train/322",
+      "file": "pair_155.npz",
+      "sha256": "937f85f2aac3251ca393dfeeaacb55f90cd723ccbaa8affe43b91bf8645183cf"
+    },
+    {
+      "pair_index": 156,
+      "pair_id": "osdataset/256/train/5095",
+      "verified512_parent": "osdataset/512/train/334",
+      "file": "pair_156.npz",
+      "sha256": "8d3db3d6c8056ab9a6ecb6714b81438be4838bd2816756f10d851d7209bf6f95"
+    },
+    {
+      "pair_index": 157,
+      "pair_id": "osdataset/256/train/5096",
+      "verified512_parent": "osdataset/512/train/334",
+      "file": "pair_157.npz",
+      "sha256": "b6f4e26fe2b5724e36e503b24de8a44224b753b5ff245fbfdc8eb682d6295468"
+    },
+    {
+      "pair_index": 158,
+      "pair_id": "osdataset/256/train/5105",
+      "verified512_parent": "osdataset/512/train/337",
+      "file": "pair_158.npz",
+      "sha256": "6d05d4ced3dc0cb4762351b62573052f497267c318df89ae45dcd461976c035c"
+    },
+    {
+      "pair_index": 159,
+      "pair_id": "osdataset/256/train/5106",
+      "verified512_parent": "osdataset/512/train/337",
+      "file": "pair_159.npz",
+      "sha256": "536851d0de4755ead48a8d8679479c7e628e3b38ca06898fd628cac4de1f3267"
+    },
+    {
+      "pair_index": 160,
+      "pair_id": "osdataset/256/train/5138",
+      "verified512_parent": "osdataset/512/train/344",
+      "file": "pair_160.npz",
+      "sha256": "14993acb8b4524995368e1675bf6d7b621f794fe5d07e4ff70ec260c2e587073"
+    },
+    {
+      "pair_index": 161,
+      "pair_id": "osdataset/256/train/5140",
+      "verified512_parent": "osdataset/512/train/344",
+      "file": "pair_161.npz",
+      "sha256": "e3e0c96c09b3e027d2bd89190a30f0f8211b383dcafc3665156bd15f1262e327"
+    },
+    {
+      "pair_index": 162,
+      "pair_id": "osdataset/256/train/5149",
+      "verified512_parent": "osdataset/512/train/347",
+      "file": "pair_162.npz",
+      "sha256": "ea4e3facc77e37080c6ee9b9c741567f001a6da8357b3c984c80a745ac45e084"
+    },
+    {
+      "pair_index": 163,
+      "pair_id": "osdataset/256/train/5150",
+      "verified512_parent": "osdataset/512/train/347",
+      "file": "pair_163.npz",
+      "sha256": "5f02950f33d6edf726fdb59d3b83cf2c2f97b02e75cb6ca8bd20f6b0d616e3cb"
+    },
+    {
+      "pair_index": 164,
+      "pair_id": "osdataset/256/train/5173",
+      "verified512_parent": "osdataset/512/train/352",
+      "file": "pair_164.npz",
+      "sha256": "962f53f84c4a11e75d416648f1c55c323bb821698602cdef6c0ab178c538c11d"
+    },
+    {
+      "pair_index": 165,
+      "pair_id": "osdataset/256/train/5175",
+      "verified512_parent": "osdataset/512/train/352",
+      "file": "pair_165.npz",
+      "sha256": "a0ee16e09be64856192c8f0745589fda83b9195165e920bd93fa58b76f605960"
+    },
+    {
+      "pair_index": 166,
+      "pair_id": "osdataset/256/train/5189",
+      "verified512_parent": "osdataset/512/train/356",
+      "file": "pair_166.npz",
+      "sha256": "562b4ec0ae2f3676d47f5e56aa3a6129d2d9437c1262f8c3bad1623c5eba50a5"
+    },
+    {
+      "pair_index": 167,
+      "pair_id": "osdataset/256/train/5191",
+      "verified512_parent": "osdataset/512/train/356",
+      "file": "pair_167.npz",
+      "sha256": "0511f0bb243076f59a4fad1fbfbdc6a521d462b0247c6f9e2222c5dc3f53da46"
+    },
+    {
+      "pair_index": 168,
+      "pair_id": "osdataset/256/train/5249",
+      "verified512_parent": "osdataset/512/train/37",
+      "file": "pair_168.npz",
+      "sha256": "48f0109d1a44485bed22015e9d69bddd2809bfaf25df2a10a63a2ba4762a90a2"
+    },
+    {
+      "pair_index": 169,
+      "pair_id": "osdataset/256/train/5252",
+      "verified512_parent": "osdataset/512/train/37",
+      "file": "pair_169.npz",
+      "sha256": "65e057e23c01c5d81a2dec36e82b10325bc8a87c3e72a29b7a76b7555a79cd4d"
+    },
+    {
+      "pair_index": 170,
+      "pair_id": "osdataset/256/train/5389",
+      "verified512_parent": "osdataset/512/train/400",
+      "file": "pair_170.npz",
+      "sha256": "da76b633fed20437e55e1f71bc1330e5e696e6183acf193101deda725b881d14"
+    },
+    {
+      "pair_index": 171,
+      "pair_id": "osdataset/256/train/5390",
+      "verified512_parent": "osdataset/512/train/400",
+      "file": "pair_171.npz",
+      "sha256": "7775436cf49a94eff8721008eb3f77b55de7701b8694bd9f58f823bb5292b2b0"
+    },
+    {
+      "pair_index": 172,
+      "pair_id": "osdataset/256/train/5422",
+      "verified512_parent": "osdataset/512/train/408",
+      "file": "pair_172.npz",
+      "sha256": "84c62175f173bbc3f926507c657798d482e73d00fc7215e5911b4f4476f99191"
+    },
+    {
+      "pair_index": 173,
+      "pair_id": "osdataset/256/train/5423",
+      "verified512_parent": "osdataset/512/train/408",
+      "file": "pair_173.npz",
+      "sha256": "b98e2a38853ea50a4cd622ae750bd75acdf90a7e389e8464d098c1befec5a847"
+    },
+    {
+      "pair_index": 174,
+      "pair_id": "osdataset/256/train/5777",
+      "verified512_parent": "osdataset/512/train/489",
+      "file": "pair_174.npz",
+      "sha256": "f7468a9946cae1b5a1d6c80bbc8a024659a4ec996184a5c009f6b0aa14bef9b4"
+    },
+    {
+      "pair_index": 175,
+      "pair_id": "osdataset/256/train/5778",
+      "verified512_parent": "osdataset/512/train/489",
+      "file": "pair_175.npz",
+      "sha256": "96b566e373c0f2ee558d769c866dd8fa42a050cf79e0cd7cae2258274c2f1d4a"
+    },
+    {
+      "pair_index": 176,
+      "pair_id": "osdataset/256/train/5786",
+      "verified512_parent": "osdataset/512/train/490",
+      "file": "pair_176.npz",
+      "sha256": "e888b99edd4a99392fc0473a832993937e5eb55365de4c3e8d8515ce9515ba94"
+    },
+    {
+      "pair_index": 177,
+      "pair_id": "osdataset/256/train/5788",
+      "verified512_parent": "osdataset/512/train/490",
+      "file": "pair_177.npz",
+      "sha256": "abe2d2c9b63c71324803c48e99fd4460284a8ea48a0a56081d79fea521a6ddcf"
+    },
+    {
+      "pair_index": 178,
+      "pair_id": "osdataset/256/train/5821",
+      "verified512_parent": "osdataset/512/train/499",
+      "file": "pair_178.npz",
+      "sha256": "c2bb2bb6285a19789faaf4fed6da4bfad2b64ea3df27e7350204b5158192feea"
+    },
+    {
+      "pair_index": 179,
+      "pair_id": "osdataset/256/train/5824",
+      "verified512_parent": "osdataset/512/train/499",
+      "file": "pair_179.npz",
+      "sha256": "cb1509332e5eaa7bfb978e4ec5659592cfec19ebead811e0c3987fda1079b0a6"
+    },
+    {
+      "pair_index": 180,
+      "pair_id": "osdataset/256/train/5829",
+      "verified512_parent": "osdataset/512/train/50",
+      "file": "pair_180.npz",
+      "sha256": "c2e3ba8f79fd5635997f2dc87cf5626825e8fc548bf1df9e8370600436a2e233"
+    },
+    {
+      "pair_index": 181,
+      "pair_id": "osdataset/256/train/5831",
+      "verified512_parent": "osdataset/512/train/50",
+      "file": "pair_181.npz",
+      "sha256": "639a32e7acc9f88f3cef7e110359a9fec637c687f0074a99fbda9a1e9260e87b"
+    },
+    {
+      "pair_index": 182,
+      "pair_id": "osdataset/256/train/5846",
+      "verified512_parent": "osdataset/512/train/503",
+      "file": "pair_182.npz",
+      "sha256": "112baa7ef4af5996d8504cae0b2d31581d8f5a6f5a5313812e61c792ea7dbe9d"
+    },
+    {
+      "pair_index": 183,
+      "pair_id": "osdataset/256/train/5847",
+      "verified512_parent": "osdataset/512/train/503",
+      "file": "pair_183.npz",
+      "sha256": "35440e0fe8bb9f147fb209ed143b06351c868d896038106ccc61680ba8902a90"
+    },
+    {
+      "pair_index": 184,
+      "pair_id": "osdataset/256/train/5873",
+      "verified512_parent": "osdataset/512/train/51",
+      "file": "pair_184.npz",
+      "sha256": "67f77dc0fae74d4ca35446b59949462a1c9a436f97440f6aac0f7443870b3745"
+    },
+    {
+      "pair_index": 185,
+      "pair_id": "osdataset/256/train/5874",
+      "verified512_parent": "osdataset/512/train/51",
+      "file": "pair_185.npz",
+      "sha256": "e81a1ac5636753033ed7e98a8512c749cc97639b11fd96828686f1eb9eadcf76"
+    },
+    {
+      "pair_index": 186,
+      "pair_id": "osdataset/256/train/5918",
+      "verified512_parent": "osdataset/512/train/52",
+      "file": "pair_186.npz",
+      "sha256": "ac529f22f89ed6f2a6012fe4cdec45ff4886c2bf909753d1a3fb3ba4f3a10c2d"
+    },
+    {
+      "pair_index": 187,
+      "pair_id": "osdataset/256/train/5920",
+      "verified512_parent": "osdataset/512/train/52",
+      "file": "pair_187.npz",
+      "sha256": "1500fe3c38492d589e65346fc6dea6cc293bbc8d5d2c2304385e6aa586f983f4"
+    },
+    {
+      "pair_index": 188,
+      "pair_id": "osdataset/256/train/6009",
+      "verified512_parent": "osdataset/512/train/540",
+      "file": "pair_188.npz",
+      "sha256": "f5ea54698babf3b2f8d703d83061fc49974e4c58ac5533c4e5ffcb619fb6e1e7"
+    },
+    {
+      "pair_index": 189,
+      "pair_id": "osdataset/256/train/6012",
+      "verified512_parent": "osdataset/512/train/540",
+      "file": "pair_189.npz",
+      "sha256": "f3ddc10e94a365faf0adfba41e1565659ab7b8b0fa61e26fdc78d7a8c6745534"
+    },
+    {
+      "pair_index": 190,
+      "pair_id": "osdataset/256/train/6030",
+      "verified512_parent": "osdataset/512/train/545",
+      "file": "pair_190.npz",
+      "sha256": "6efb32c833150cdc836ddfcca577cf966608da4d3b47985b280e2fef2856c6ad"
+    },
+    {
+      "pair_index": 191,
+      "pair_id": "osdataset/256/train/6032",
+      "verified512_parent": "osdataset/512/train/545",
+      "file": "pair_191.npz",
+      "sha256": "45b2aa87a4c249d2b708b2777cd8bea1cec496b40c407c2adfa6d7f0748a77b8"
+    },
+    {
+      "pair_index": 192,
+      "pair_id": "osdataset/256/train/6111",
+      "verified512_parent": "osdataset/512/train/563",
+      "file": "pair_192.npz",
+      "sha256": "1b73a01235563eac34da19995c3de4f38a8e59aff86905000af102b14c09b502"
+    },
+    {
+      "pair_index": 193,
+      "pair_id": "osdataset/256/train/6112",
+      "verified512_parent": "osdataset/512/train/563",
+      "file": "pair_193.npz",
+      "sha256": "b1195a4b5630b0d78c792a8de228b9102d1d43d7f6c5ab8e2cbe7a72e520c31c"
+    },
+    {
+      "pair_index": 194,
+      "pair_id": "osdataset/256/train/6257",
+      "verified512_parent": "osdataset/512/train/597",
+      "file": "pair_194.npz",
+      "sha256": "7fb87bb3dc32466ff197fc658d2f84b2cdd49d6e312bc74d577c5d5790465d17"
+    },
+    {
+      "pair_index": 195,
+      "pair_id": "osdataset/256/train/6258",
+      "verified512_parent": "osdataset/512/train/597",
+      "file": "pair_195.npz",
+      "sha256": "50889eb6a3aae56471ff6f55fc5250a7dc26716a1522583531ff19569bd1bed3"
+    },
+    {
+      "pair_index": 196,
+      "pair_id": "osdataset/256/train/6265",
+      "verified512_parent": "osdataset/512/train/599",
+      "file": "pair_196.npz",
+      "sha256": "c9eba271c5fc51d9f89f52a567a8e6a25fd5adef12b09cf51750cfbaaccdc5ea"
+    },
+    {
+      "pair_index": 197,
+      "pair_id": "osdataset/256/train/6267",
+      "verified512_parent": "osdataset/512/train/599",
+      "file": "pair_197.npz",
+      "sha256": "7f4caae3c18428d29f396aacc20a34976bdee89d482547eb7c748a87b3861673"
+    },
+    {
+      "pair_index": 198,
+      "pair_id": "osdataset/256/train/6309",
+      "verified512_parent": "osdataset/512/train/608",
+      "file": "pair_198.npz",
+      "sha256": "1e576e1451dc651daf12c78c60b5b748d57226a9cfaae11be8f1f14d018c2a56"
+    },
+    {
+      "pair_index": 199,
+      "pair_id": "osdataset/256/train/6312",
+      "verified512_parent": "osdataset/512/train/608",
+      "file": "pair_199.npz",
+      "sha256": "6b6593c10fb7c6f244562569a10748c5f5c694d2de422c58bfcbe555e8ab148d"
+    },
+    {
+      "pair_index": 200,
+      "pair_id": "osdataset/256/train/6366",
+      "verified512_parent": "osdataset/512/train/620",
+      "file": "pair_200.npz",
+      "sha256": "f25c1c0ca1c181cb01fb8a6a23a0123fdad66b5c6414448aa1e5850bcf625294"
+    },
+    {
+      "pair_index": 201,
+      "pair_id": "osdataset/256/train/6367",
+      "verified512_parent": "osdataset/512/train/620",
+      "file": "pair_201.npz",
+      "sha256": "a24e875fd75065ea576bba82a290b1050a96da50e4c7eacaa24e5c7532af5b72"
+    },
+    {
+      "pair_index": 202,
+      "pair_id": "osdataset/256/train/6377",
+      "verified512_parent": "osdataset/512/train/623",
+      "file": "pair_202.npz",
+      "sha256": "596c6de871e5e012fd08a7cfa87ef7c6491e04dccd12ae82c7c5a3f3a65e3b6c"
+    },
+    {
+      "pair_index": 203,
+      "pair_id": "osdataset/256/train/6379",
+      "verified512_parent": "osdataset/512/train/623",
+      "file": "pair_203.npz",
+      "sha256": "0f77c86ff9b873d5045f97fb8795644074914ba15978d446c53e38d9cbac6e80"
+    },
+    {
+      "pair_index": 204,
+      "pair_id": "osdataset/256/train/6426",
+      "verified512_parent": "osdataset/512/train/634",
+      "file": "pair_204.npz",
+      "sha256": "c9bea881cc1cb5a94343b696679bb6384f82c4161bedacbff1112278a3418a93"
+    },
+    {
+      "pair_index": 205,
+      "pair_id": "osdataset/256/train/6427",
+      "verified512_parent": "osdataset/512/train/634",
+      "file": "pair_205.npz",
+      "sha256": "ba736e80a6ee03716b1a951678e642d8f7a578aa5fff9af6aa282b1675e5a9d7"
+    },
+    {
+      "pair_index": 206,
+      "pair_id": "osdataset/256/train/6482",
+      "verified512_parent": "osdataset/512/train/647",
+      "file": "pair_206.npz",
+      "sha256": "34a9fef777266727d0ff22577125b60613efcff2f69fba1917e006f32f27acf9"
+    },
+    {
+      "pair_index": 207,
+      "pair_id": "osdataset/256/train/6483",
+      "verified512_parent": "osdataset/512/train/647",
+      "file": "pair_207.npz",
+      "sha256": "5d9574efb3ebde86e1a567991e7f3782d897a5ace3d004e156cd86a1579a31bf"
+    },
+    {
+      "pair_index": 208,
+      "pair_id": "osdataset/256/train/6614",
+      "verified512_parent": "osdataset/512/train/677",
+      "file": "pair_208.npz",
+      "sha256": "c7e3fa42397b830cf1a96dba63b33edb29ba2bef32cbfb7d223bc2a3b82f33d2"
+    },
+    {
+      "pair_index": 209,
+      "pair_id": "osdataset/256/train/6616",
+      "verified512_parent": "osdataset/512/train/677",
+      "file": "pair_209.npz",
+      "sha256": "0ee60b71df9db00728dcb54701d9f97efba7bffa4b55fba4eef5cfc3f66bdb86"
+    },
+    {
+      "pair_index": 210,
+      "pair_id": "osdataset/256/train/6761",
+      "verified512_parent": "osdataset/512/train/71",
+      "file": "pair_210.npz",
+      "sha256": "46818ee2d89037b1f7921812095442ee455e0a6934f00a9b7bc1b62719121b27"
+    },
+    {
+      "pair_index": 211,
+      "pair_id": "osdataset/256/train/6764",
+      "verified512_parent": "osdataset/512/train/71",
+      "file": "pair_211.npz",
+      "sha256": "75a7392ed00be49aa1d4ce308550c26dc928d1f517a62ca3bf0ad894ac1295db"
+    },
+    {
+      "pair_index": 212,
+      "pair_id": "osdataset/256/train/6785",
+      "verified512_parent": "osdataset/512/train/715",
+      "file": "pair_212.npz",
+      "sha256": "a5eec08ae36a911b48f24737b2d61c8f049e473f055fae32ee091d500204a055"
+    },
+    {
+      "pair_index": 213,
+      "pair_id": "osdataset/256/train/6788",
+      "verified512_parent": "osdataset/512/train/715",
+      "file": "pair_213.npz",
+      "sha256": "354aaf47e006dea0ccc9c1e884e179aeec9aa963f84fcb4e91a01be1031f3d23"
+    },
+    {
+      "pair_index": 214,
+      "pair_id": "osdataset/256/train/6805",
+      "verified512_parent": "osdataset/512/train/72",
+      "file": "pair_214.npz",
+      "sha256": "18dbb20348574b31bce8b199b03542a3b9b21c0116f0ca79f7cc28ce783433cd"
+    },
+    {
+      "pair_index": 215,
+      "pair_id": "osdataset/256/train/6808",
+      "verified512_parent": "osdataset/512/train/72",
+      "file": "pair_215.npz",
+      "sha256": "07fb1109d352978390ebe2f0a008d7918a9e307504439b480f189c6bd0b9fd76"
+    },
+    {
+      "pair_index": 216,
+      "pair_id": "osdataset/256/train/6849",
+      "verified512_parent": "osdataset/512/train/73",
+      "file": "pair_216.npz",
+      "sha256": "f3bf8bb3ce54fd53c4ce3673392c01dd9e8354d24a54109cf4caf0b8c1f37d7b"
+    },
+    {
+      "pair_index": 217,
+      "pair_id": "osdataset/256/train/6850",
+      "verified512_parent": "osdataset/512/train/73",
+      "file": "pair_217.npz",
+      "sha256": "573b0fdb914e7fc297e1b9fc1ce0d5c422a49525f710c22cfe56fbb0d04e6633"
+    },
+    {
+      "pair_index": 218,
+      "pair_id": "osdataset/256/train/6902",
+      "verified512_parent": "osdataset/512/train/741",
+      "file": "pair_218.npz",
+      "sha256": "26545b073a3abc028faaedba2ec025176728807a8e6fe1344037d9057b7774b8"
+    },
+    {
+      "pair_index": 219,
+      "pair_id": "osdataset/256/train/6904",
+      "verified512_parent": "osdataset/512/train/741",
+      "file": "pair_219.npz",
+      "sha256": "41f0b6501a564a4a0485c91dfaba63b4bd50dad90078e89a46c96a4a2eb9ab7f"
+    },
+    {
+      "pair_index": 220,
+      "pair_id": "osdataset/256/train/7030",
+      "verified512_parent": "osdataset/512/train/770",
+      "file": "pair_220.npz",
+      "sha256": "c284e9e6dc3d6e335ab459ecf2f8947300e47dee594c185f2309d6b05127fce1"
+    },
+    {
+      "pair_index": 221,
+      "pair_id": "osdataset/256/train/7031",
+      "verified512_parent": "osdataset/512/train/770",
+      "file": "pair_221.npz",
+      "sha256": "f9383a1c4f15fbea192c042a680362b5114de851c06bb3588826bae60fdd6188"
+    },
+    {
+      "pair_index": 222,
+      "pair_id": "osdataset/256/train/7166",
+      "verified512_parent": "osdataset/512/train/800",
+      "file": "pair_222.npz",
+      "sha256": "d7aad421520eb6d3d9b6f919827ddd56831e383df711b7e83aeec4f5eeeda8a9"
+    },
+    {
+      "pair_index": 223,
+      "pair_id": "osdataset/256/train/7167",
+      "verified512_parent": "osdataset/512/train/800",
+      "file": "pair_223.npz",
+      "sha256": "5b65fe3b68a11f3bbd98b30b61433b855cb537753df410fded1aa7a9ff14ca32"
+    },
+    {
+      "pair_index": 224,
+      "pair_id": "osdataset/256/train/7178",
+      "verified512_parent": "osdataset/512/train/803",
+      "file": "pair_224.npz",
+      "sha256": "c303632ebee2dbdffbbcd75e067e7c245ea2b142f371901f2ba575734eb19592"
+    },
+    {
+      "pair_index": 225,
+      "pair_id": "osdataset/256/train/7180",
+      "verified512_parent": "osdataset/512/train/803",
+      "file": "pair_225.npz",
+      "sha256": "40a9aabf42ed334d43fef520afa14bcb6c57079060bd95f54682e6cd3c5505d5"
+    },
+    {
+      "pair_index": 226,
+      "pair_id": "osdataset/256/train/7213",
+      "verified512_parent": "osdataset/512/train/811",
+      "file": "pair_226.npz",
+      "sha256": "260ed88d4d3f8c16bcd6b52ae12642958c6879476c1030c339f24f994146f1d6"
+    },
+    {
+      "pair_index": 227,
+      "pair_id": "osdataset/256/train/7216",
+      "verified512_parent": "osdataset/512/train/811",
+      "file": "pair_227.npz",
+      "sha256": "929a1707be4c992578728d69008036c1558e59f8da95d837e91916983020942a"
+    },
+    {
+      "pair_index": 228,
+      "pair_id": "osdataset/256/train/7289",
+      "verified512_parent": "osdataset/512/train/829",
+      "file": "pair_228.npz",
+      "sha256": "ce265a98062d5c1e9272d5c3112a4eef9915f46394a5cd449ec60597397e13f2"
+    },
+    {
+      "pair_index": 229,
+      "pair_id": "osdataset/256/train/7292",
+      "verified512_parent": "osdataset/512/train/829",
+      "file": "pair_229.npz",
+      "sha256": "845613c7a236ca7db9bd2536f864dcb87b1f82b9f99dacb6354c20b823ede6bc"
+    },
+    {
+      "pair_index": 230,
+      "pair_id": "osdataset/256/train/7350",
+      "verified512_parent": "osdataset/512/train/842",
+      "file": "pair_230.npz",
+      "sha256": "0870d46d274f79b7d47882cba3cf0d575916b8a96e6c3383fd262ce0af8d32c3"
+    },
+    {
+      "pair_index": 231,
+      "pair_id": "osdataset/256/train/7352",
+      "verified512_parent": "osdataset/512/train/842",
+      "file": "pair_231.npz",
+      "sha256": "d5e457660a59c1eb61825b6f1fb3a7455f309d9de8a3971ed0df3b8a08b1a956"
+    },
+    {
+      "pair_index": 232,
+      "pair_id": "osdataset/256/train/7361",
+      "verified512_parent": "osdataset/512/train/845",
+      "file": "pair_232.npz",
+      "sha256": "f6bb305ef918fb5b1193440e9d551a79013952c3bda72d035d4584e9b413deab"
+    },
+    {
+      "pair_index": 233,
+      "pair_id": "osdataset/256/train/7364",
+      "verified512_parent": "osdataset/512/train/845",
+      "file": "pair_233.npz",
+      "sha256": "fb05845229b19db14f14768d2a08b7d0d888c8df83a1c2f47f40518e051d9798"
+    },
+    {
+      "pair_index": 234,
+      "pair_id": "osdataset/256/train/7414",
+      "verified512_parent": "osdataset/512/train/857",
+      "file": "pair_234.npz",
+      "sha256": "180f85ba58512be48c9a9507aa300e527db55a7e9f00e8aa7e680b8f7c8718d3"
+    },
+    {
+      "pair_index": 235,
+      "pair_id": "osdataset/256/train/7415",
+      "verified512_parent": "osdataset/512/train/857",
+      "file": "pair_235.npz",
+      "sha256": "02ca425de6d5e20e18918dfb72a4a76d71e16d126ea10b4be5c92e7898bd4b01"
+    },
+    {
+      "pair_index": 236,
+      "pair_id": "osdataset/256/train/7441",
+      "verified512_parent": "osdataset/512/train/863",
+      "file": "pair_236.npz",
+      "sha256": "1664cdf57ad61d98ad21402732ae98b91eba12d39854cdbe2d81ffd7fd41697b"
+    },
+    {
+      "pair_index": 237,
+      "pair_id": "osdataset/256/train/7443",
+      "verified512_parent": "osdataset/512/train/863",
+      "file": "pair_237.npz",
+      "sha256": "9be9bdd44500c5b1d7916d71f8a5e9f97b3b5fa1d437812e8f5e2740ebc2638c"
+    },
+    {
+      "pair_index": 238,
+      "pair_id": "osdataset/256/train/7458",
+      "verified512_parent": "osdataset/512/train/867",
+      "file": "pair_238.npz",
+      "sha256": "d280fda4f9ee893d3b7c353a0a9bcc533fad010bb08fd8b02ae6f0c9870eb391"
+    },
+    {
+      "pair_index": 239,
+      "pair_id": "osdataset/256/train/7459",
+      "verified512_parent": "osdataset/512/train/867",
+      "file": "pair_239.npz",
+      "sha256": "9c1cce086678efc97a059ed7b73ed0b80f56c6cfb0b78e2b694019c31b59d613"
+    },
+    {
+      "pair_index": 240,
+      "pair_id": "osdataset/256/train/7526",
+      "verified512_parent": "osdataset/512/train/882",
+      "file": "pair_240.npz",
+      "sha256": "4a99a25eafb39172ebb286f0367ef98146d8c93fd11fb507785d608cdc4a6de1"
+    },
+    {
+      "pair_index": 241,
+      "pair_id": "osdataset/256/train/7528",
+      "verified512_parent": "osdataset/512/train/882",
+      "file": "pair_241.npz",
+      "sha256": "bdcff978463fd3093f8409dd6f578a7169eddd43cfade5447ea12982072a8061"
+    },
+    {
+      "pair_index": 242,
+      "pair_id": "osdataset/256/train/7710",
+      "verified512_parent": "osdataset/512/train/923",
+      "file": "pair_242.npz",
+      "sha256": "c0dc0e025909da825ed9cabd07c7283d44f4e2afcf611eadce96206707059b69"
+    },
+    {
+      "pair_index": 243,
+      "pair_id": "osdataset/256/train/7711",
+      "verified512_parent": "osdataset/512/train/923",
+      "file": "pair_243.npz",
+      "sha256": "80ae15d058ec989864429ecfe27505d36aa12d2c4a346d9d9b73d407b03cb8c7"
+    },
+    {
+      "pair_index": 244,
+      "pair_id": "osdataset/256/train/7714",
+      "verified512_parent": "osdataset/512/train/924",
+      "file": "pair_244.npz",
+      "sha256": "702e7e281232cba150148bed3d45ba0f12e64fdcc957e60d7466f83a835ae55f"
+    },
+    {
+      "pair_index": 245,
+      "pair_id": "osdataset/256/train/7715",
+      "verified512_parent": "osdataset/512/train/924",
+      "file": "pair_245.npz",
+      "sha256": "740152c45b8f1ab83e5670852cba3aee96a6751d691030a4221068bc85344ca5"
+    },
+    {
+      "pair_index": 246,
+      "pair_id": "osdataset/256/train/7822",
+      "verified512_parent": "osdataset/512/train/949",
+      "file": "pair_246.npz",
+      "sha256": "aeb39a933512cd0b0801b0e43b1b0c021a9561afc89bb465413125f937b15818"
+    },
+    {
+      "pair_index": 247,
+      "pair_id": "osdataset/256/train/7824",
+      "verified512_parent": "osdataset/512/train/949",
+      "file": "pair_247.npz",
+      "sha256": "863f047878f0e3d7dbddd4372583fe868e2494a649806fa181b5af6262b608bb"
+    },
+    {
+      "pair_index": 248,
+      "pair_id": "osdataset/256/train/7878",
+      "verified512_parent": "osdataset/512/train/961",
+      "file": "pair_248.npz",
+      "sha256": "60847402175474b8b67aa8fe56813495368a8a99004c6cb871c9d75db1406434"
+    },
+    {
+      "pair_index": 249,
+      "pair_id": "osdataset/256/train/7880",
+      "verified512_parent": "osdataset/512/train/961",
+      "file": "pair_249.npz",
+      "sha256": "22f7eea5c73fee31616e2f1648ededc9ef729a7d37474e4d396e9631627fbbee"
+    },
+    {
+      "pair_index": 250,
+      "pair_id": "osdataset/256/train/7909",
+      "verified512_parent": "osdataset/512/train/969",
+      "file": "pair_250.npz",
+      "sha256": "5d6532d17326fba2ec539919bfae18ca77a09eab90984a9cf3f2a66a26d5abf3"
+    },
+    {
+      "pair_index": 251,
+      "pair_id": "osdataset/256/train/7911",
+      "verified512_parent": "osdataset/512/train/969",
+      "file": "pair_251.npz",
+      "sha256": "78833261c858a46d559b826c1e9409a0edbc8fb9308cbde8a677ac0f8b3edc47"
+    },
+    {
+      "pair_index": 252,
+      "pair_id": "osdataset/256/train/7989",
+      "verified512_parent": "osdataset/512/train/987",
+      "file": "pair_252.npz",
+      "sha256": "2148ede9b9dfbd4d5e3d3602a18b1c20041ab19ba34a6124c00e14f05817b511"
+    },
+    {
+      "pair_index": 253,
+      "pair_id": "osdataset/256/train/7991",
+      "verified512_parent": "osdataset/512/train/987",
+      "file": "pair_253.npz",
+      "sha256": "8ddbcf3b35a982488198540d9ded99be83f784fea3df2b99287df88352d1e3e2"
+    },
+    {
+      "pair_index": 254,
+      "pair_id": "osdataset/256/train/8025",
+      "verified512_parent": "osdataset/512/train/995",
+      "file": "pair_254.npz",
+      "sha256": "0c186df6966dce0c1f9b8495521f6307926a927b9964f70898e50d60bf368dd9"
+    },
+    {
+      "pair_index": 255,
+      "pair_id": "osdataset/256/train/8028",
+      "verified512_parent": "osdataset/512/train/995",
+      "file": "pair_255.npz",
+      "sha256": "8c397436f519a09843b4a57ab519eea8cddbfcee060abf220daf71de44b0b69e"
+    }
+  ],
+  "relations_sha256": "0f14c498621520596e2ed9f06d630f88e909f61a858a94f6563d4a2a17465130",
+  "BN_unchanged": true,
+  "model_eval": true,
+  "model_all_parameters_require_grad_false": true,
+  "training_started": false,
+  "teacher_on_SAR": false,
+  "validation_test_used": false,
+  "original_affine_precision": "stored float64 for all nominalcoordinates; warp follows same storedplan",
+  "negative_exclusion_radius_px": 16.0,
+  "candidate_selection_independent_of_semantic_similarity": true,
+  "hard_candidates_selected_before_semantic_mask": true,
+  "controls_fixed": true,
+  "cases_fixed_order_first16": true
+}

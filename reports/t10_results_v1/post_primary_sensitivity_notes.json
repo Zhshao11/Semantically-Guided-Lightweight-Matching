@@ -1,0 +1,9 @@
+{
+  "timing": "added after inspecting primaryresults; clearlyposthoc, not preregisteredgate",
+  "fixed_candidates_unchanged": true,
+  "primaryanalysis_unchanged": true,
+  "training_started": false,
+  "tighter_matching": "withinoriginalclassmatched randompool5 draws only, no reselection; partialcoverage explicitly counted",
+  "exclusion_sensitivity": "filter existinghardtop5 andrandomsets; not reextracting top5undernewradius",
+  "multiple_class_CIs": "exploratory percentileintervals, no multiplicitycorrection"
+}

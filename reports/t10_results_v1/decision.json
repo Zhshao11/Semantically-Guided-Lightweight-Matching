@@ -1,0 +1,42 @@
+{
+  "predeclared_gate_positive": true,
+  "nonbackground_classes_with_strict_support": [
+    "Building",
+    "Road",
+    "Forest",
+    "Agricultural"
+  ],
+  "primary": {
+    "comparison": "hard_minus_distance_weight",
+    "mean": 0.013235043527594784,
+    "CI95_low": 0.010040220302353483,
+    "CI95_high": 0.01666963463609855,
+    "valid_pairs": 233,
+    "valid_parents": 126,
+    "total_pairs": 256,
+    "total_parents": 128,
+    "defined_parent_bootstraps": 20000,
+    "relations": 644114,
+    "queries": 160786,
+    "positive_pair_fraction": 0.7725321888412017,
+    "positive_parent_fraction": 0.8412698412698413
+  },
+  "strict": {
+    "comparison": "hard_minus_distance_weight_class",
+    "mean": 0.0010189892907774805,
+    "CI95_low": 0.000763269997376957,
+    "CI95_high": 0.001275888962628114,
+    "valid_pairs": 233,
+    "valid_parents": 126,
+    "total_pairs": 256,
+    "total_parents": 128,
+    "defined_parent_bootstraps": 20000,
+    "relations": 637136,
+    "queries": 160163,
+    "positive_pair_fraction": 0.7296137339055794,
+    "positive_parent_fraction": 0.753968253968254
+  },
+  "full_training_started": false,
+  "next_step": "no training inT10A; candidatehypothesis only, not validatedobjective",
+  "teacher_is_not_GT": true
+}

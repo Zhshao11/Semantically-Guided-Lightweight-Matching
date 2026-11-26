@@ -1,0 +1,14 @@
+{
+  "offline_signal": "positive but small afterconditioning; exists in several pseudoclasses, not Backgroundonly",
+  "primary_delta": 0.013235043527594784,
+  "classcontrolled_delta": 0.0010189892907774805,
+  "raw_to_classcontrolled_attenuation": 0.9858683140489565,
+  "tighter_posthoc_delta": 0.00032092283437647103,
+  "predeclared_exploratory_gate": true,
+  "training_started": false,
+  "training_recommended_now": false,
+  "why_no_fulltraining": "classcontrolledcosine difference about0.00102 andposthoc tightdifference0.000321, strong ceiling andremainingdomain/pseudolabel/smoothnessconfounding; enrichment doesnotprove usable loss or suppressionbenefit",
+  "not_negative_signal_claim": true,
+  "labels_not_SAR_semanticGT": true,
+  "validation_test_used": false
+}

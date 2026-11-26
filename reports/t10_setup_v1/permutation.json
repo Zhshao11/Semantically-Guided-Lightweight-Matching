@@ -1,0 +1,499 @@
+{
+  "pairs": 7912,
+  "active_cells": 5478278,
+  "selected_diagnostic_pairs": 256,
+  "no_same_verified512parent": true,
+  "dominant_class_preserved_at_all_active_grid_nodes": true,
+  "global_active_probability_vectors_bijective": true,
+  "recipient_mask_weights_unchanged": true,
+  "quality_strata": [
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 434192,
+      "parents": 1916,
+      "recipient_weight_mean": 0.561771035194397,
+      "donor_weight_mean": 0.5617710947990417,
+      "mean_abs_weight_difference": 0.05368553474545479
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 434192,
+      "parents": 1897,
+      "recipient_weight_mean": 0.6501947641372681,
+      "donor_weight_mean": 0.6501950025558472,
+      "mean_abs_weight_difference": 0.017051123082637787
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 434192,
+      "parents": 1877,
+      "recipient_weight_mean": 0.7056503891944885,
+      "donor_weight_mean": 0.7056504487991333,
+      "mean_abs_weight_difference": 0.020029596984386444
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 434192,
+      "parents": 1851,
+      "recipient_weight_mean": 0.7673720717430115,
+      "donor_weight_mean": 0.7673719525337219,
+      "mean_abs_weight_difference": 0.020804207772016525
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 434192,
+      "parents": 1809,
+      "recipient_weight_mean": 0.8282215595245361,
+      "donor_weight_mean": 0.8282215595245361,
+      "mean_abs_weight_difference": 0.019563721492886543
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 434191,
+      "parents": 1751,
+      "recipient_weight_mean": 0.8835912942886353,
+      "donor_weight_mean": 0.8835911154747009,
+      "mean_abs_weight_difference": 0.017248647287487984
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 434191,
+      "parents": 1670,
+      "recipient_weight_mean": 0.931351363658905,
+      "donor_weight_mean": 0.931351363658905,
+      "mean_abs_weight_difference": 0.014569779857993126
+    },
+    {
+      "dominant_class": 0,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 434191,
+      "parents": 1459,
+      "recipient_weight_mean": 0.9718365669250488,
+      "donor_weight_mean": 0.9718366861343384,
+      "mean_abs_weight_difference": 0.01295491587370634
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 54898,
+      "parents": 1323,
+      "recipient_weight_mean": 0.5989683270454407,
+      "donor_weight_mean": 0.5989683270454407,
+      "mean_abs_weight_difference": 0.03946332260966301
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 54898,
+      "parents": 1307,
+      "recipient_weight_mean": 0.6479789018630981,
+      "donor_weight_mean": 0.6479788422584534,
+      "mean_abs_weight_difference": 0.006861182861030102
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 54898,
+      "parents": 1269,
+      "recipient_weight_mean": 0.6706467866897583,
+      "donor_weight_mean": 0.6706467866897583,
+      "mean_abs_weight_difference": 0.008666547946631908
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 54898,
+      "parents": 1247,
+      "recipient_weight_mean": 0.7004326581954956,
+      "donor_weight_mean": 0.7004326581954956,
+      "mean_abs_weight_difference": 0.011202339082956314
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 54898,
+      "parents": 1198,
+      "recipient_weight_mean": 0.7378200888633728,
+      "donor_weight_mean": 0.7378200888633728,
+      "mean_abs_weight_difference": 0.013751945458352566
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 54897,
+      "parents": 1139,
+      "recipient_weight_mean": 0.7837748527526855,
+      "donor_weight_mean": 0.7837748527526855,
+      "mean_abs_weight_difference": 0.01702454872429371
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 54897,
+      "parents": 1028,
+      "recipient_weight_mean": 0.8416480422019958,
+      "donor_weight_mean": 0.8416481018066406,
+      "mean_abs_weight_difference": 0.022234251722693443
+    },
+    {
+      "dominant_class": 1,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 54897,
+      "parents": 754,
+      "recipient_weight_mean": 0.9249752759933472,
+      "donor_weight_mean": 0.9249752759933472,
+      "mean_abs_weight_difference": 0.03545974940061569
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 5304,
+      "parents": 309,
+      "recipient_weight_mean": 0.5437159538269043,
+      "donor_weight_mean": 0.5437159538269043,
+      "mean_abs_weight_difference": 0.053796011954545975
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 5304,
+      "parents": 400,
+      "recipient_weight_mean": 0.6335632801055908,
+      "donor_weight_mean": 0.6335633397102356,
+      "mean_abs_weight_difference": 0.013579105027019978
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 5304,
+      "parents": 359,
+      "recipient_weight_mean": 0.6690070629119873,
+      "donor_weight_mean": 0.6690070629119873,
+      "mean_abs_weight_difference": 0.012502276338636875
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 5304,
+      "parents": 326,
+      "recipient_weight_mean": 0.7118930816650391,
+      "donor_weight_mean": 0.7118930816650391,
+      "mean_abs_weight_difference": 0.015742260962724686
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 5304,
+      "parents": 275,
+      "recipient_weight_mean": 0.7644669413566589,
+      "donor_weight_mean": 0.7644670009613037,
+      "mean_abs_weight_difference": 0.01883423514664173
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 5304,
+      "parents": 233,
+      "recipient_weight_mean": 0.8249924182891846,
+      "donor_weight_mean": 0.8249924778938293,
+      "mean_abs_weight_difference": 0.021245421841740608
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 5304,
+      "parents": 178,
+      "recipient_weight_mean": 0.8888784646987915,
+      "donor_weight_mean": 0.8888784646987915,
+      "mean_abs_weight_difference": 0.021491117775440216
+    },
+    {
+      "dominant_class": 2,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 5304,
+      "parents": 120,
+      "recipient_weight_mean": 0.9559062719345093,
+      "donor_weight_mean": 0.9559062719345093,
+      "mean_abs_weight_difference": 0.023426800966262817
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 93903,
+      "parents": 1126,
+      "recipient_weight_mean": 0.6012848019599915,
+      "donor_weight_mean": 0.6012848019599915,
+      "mean_abs_weight_difference": 0.05954461917281151
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 93903,
+      "parents": 1026,
+      "recipient_weight_mean": 0.7175238132476807,
+      "donor_weight_mean": 0.7175239324569702,
+      "mean_abs_weight_difference": 0.03525931015610695
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 93903,
+      "parents": 958,
+      "recipient_weight_mean": 0.8253759145736694,
+      "donor_weight_mean": 0.8253759145736694,
+      "mean_abs_weight_difference": 0.03433367982506752
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 93903,
+      "parents": 866,
+      "recipient_weight_mean": 0.9120344519615173,
+      "donor_weight_mean": 0.9120343327522278,
+      "mean_abs_weight_difference": 0.022701362147927284
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 93903,
+      "parents": 753,
+      "recipient_weight_mean": 0.9617211222648621,
+      "donor_weight_mean": 0.9617210626602173,
+      "mean_abs_weight_difference": 0.010834804736077785
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 93903,
+      "parents": 594,
+      "recipient_weight_mean": 0.9832004308700562,
+      "donor_weight_mean": 0.9832004308700562,
+      "mean_abs_weight_difference": 0.004460671450942755
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 93903,
+      "parents": 426,
+      "recipient_weight_mean": 0.9925928115844727,
+      "donor_weight_mean": 0.9925927519798279,
+      "mean_abs_weight_difference": 0.0020577125251293182
+    },
+    {
+      "dominant_class": 3,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 93903,
+      "parents": 259,
+      "recipient_weight_mean": 0.9973302483558655,
+      "donor_weight_mean": 0.9973301887512207,
+      "mean_abs_weight_difference": 0.0012006622273474932
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 25226,
+      "parents": 399,
+      "recipient_weight_mean": 0.6088066101074219,
+      "donor_weight_mean": 0.6088066101074219,
+      "mean_abs_weight_difference": 0.04274175316095352
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 25225,
+      "parents": 374,
+      "recipient_weight_mean": 0.6659558415412903,
+      "donor_weight_mean": 0.6659558415412903,
+      "mean_abs_weight_difference": 0.013345462270081043
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 25225,
+      "parents": 340,
+      "recipient_weight_mean": 0.7163090109825134,
+      "donor_weight_mean": 0.7163090109825134,
+      "mean_abs_weight_difference": 0.020083654671907425
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 25225,
+      "parents": 301,
+      "recipient_weight_mean": 0.7872338891029358,
+      "donor_weight_mean": 0.7872338891029358,
+      "mean_abs_weight_difference": 0.027243558317422867
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 25225,
+      "parents": 237,
+      "recipient_weight_mean": 0.8732231855392456,
+      "donor_weight_mean": 0.8732231259346008,
+      "mean_abs_weight_difference": 0.029222527518868446
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 25225,
+      "parents": 200,
+      "recipient_weight_mean": 0.9494740962982178,
+      "donor_weight_mean": 0.9494740962982178,
+      "mean_abs_weight_difference": 0.020403794944286346
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 25225,
+      "parents": 155,
+      "recipient_weight_mean": 0.9899293780326843,
+      "donor_weight_mean": 0.9899292588233948,
+      "mean_abs_weight_difference": 0.006763082463294268
+    },
+    {
+      "dominant_class": 5,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 25225,
+      "parents": 56,
+      "recipient_weight_mean": 0.9992449283599854,
+      "donor_weight_mean": 0.9992449283599854,
+      "mean_abs_weight_difference": 0.0007635450456291437
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 0,
+      "cells": 71264,
+      "parents": 615,
+      "recipient_weight_mean": 0.5256533026695251,
+      "donor_weight_mean": 0.5256533622741699,
+      "mean_abs_weight_difference": 0.03457511216402054
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 1,
+      "cells": 71264,
+      "parents": 620,
+      "recipient_weight_mean": 0.5922435522079468,
+      "donor_weight_mean": 0.5922435522079468,
+      "mean_abs_weight_difference": 0.016482427716255188
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 2,
+      "cells": 71264,
+      "parents": 570,
+      "recipient_weight_mean": 0.6388853192329407,
+      "donor_weight_mean": 0.6388852596282959,
+      "mean_abs_weight_difference": 0.015955183655023575
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 3,
+      "cells": 71263,
+      "parents": 510,
+      "recipient_weight_mean": 0.6957723498344421,
+      "donor_weight_mean": 0.6957724094390869,
+      "mean_abs_weight_difference": 0.021899232640862465
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 4,
+      "cells": 71263,
+      "parents": 441,
+      "recipient_weight_mean": 0.7675887942314148,
+      "donor_weight_mean": 0.7675887942314148,
+      "mean_abs_weight_difference": 0.025549281388521194
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 5,
+      "cells": 71263,
+      "parents": 359,
+      "recipient_weight_mean": 0.8443721532821655,
+      "donor_weight_mean": 0.8443723320960999,
+      "mean_abs_weight_difference": 0.02526380866765976
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 6,
+      "cells": 71263,
+      "parents": 280,
+      "recipient_weight_mean": 0.9134489893913269,
+      "donor_weight_mean": 0.9134489297866821,
+      "mean_abs_weight_difference": 0.02066994458436966
+    },
+    {
+      "dominant_class": 6,
+      "quality_bins": 8,
+      "bin": 7,
+      "cells": 71263,
+      "parents": 193,
+      "recipient_weight_mean": 0.9701521396636963,
+      "donor_weight_mean": 0.9701521396636963,
+      "mean_abs_weight_difference": 0.0170397087931633
+    }
+  ],
+  "query_probabilities_unpermuted": true,
+  "candidate_side_only": true,
+  "all_donors_train": true,
+  "validation_test_used": false,
+  "nominal_semantics_not_GT": true,
+  "bilinear_sample_note": "class is preserved atgridnodes; sampledclassmaychange nearboundaries; strict sampledclassstable comparison separately reported",
+  "mapping_sha256": "a3d68efa1da1cbf632ccb4300a12402351e6606054bb83ffd41dd3155857214f",
+  "selected_probability_sha256": "90d04acc7144fb8723c02bd090c3c0ee64cefcb59bc0603f76af5f9b0037b24b"
+}
