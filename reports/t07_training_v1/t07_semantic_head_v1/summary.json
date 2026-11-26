@@ -1,0 +1,416 @@
+{
+  "protocol": {
+    "protocol": "T07-semantic-global-selection-v1",
+    "seed": 20261126,
+    "base_commit": "e208fc66d33272e02fae1d65feb952c0b265f3f2",
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "training_plan": "reports/t06_setup_v1/training_plan.json",
+    "budgets": [
+      256,
+      512
+    ],
+    "head": {
+      "width": 16,
+      "capacity_control_width": 29,
+      "baseline_parameters": 3489,
+      "joint_score_reference_parameters": 7977,
+      "capacity_control_parameters": 7831,
+      "input": "detached optical coarse64 plus masked SAR coarse GAP64; no cross-image correlation input",
+      "epochs": 12,
+      "batch_size": 32,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "loss": "train-global positive-balanced masked BCE",
+      "checkpoint_rule": "last of fixed12epochs; never select on952 validation",
+      "probe_train_pairs": 128,
+      "small_fit_steps": 300
+    },
+    "coverage": {
+      "grid": [
+        4,
+        4
+      ],
+      "base_per_cell": 2,
+      "max_per_cell": 32,
+      "utility": "mean top8 score, softmax over cells; capped Hamilton allocation",
+      "NMS_radius": 0,
+      "same_head_for_A_and_AC": true
+    },
+    "teacher_aggregation": {
+      "policy": "resize logits to native256 -> softmax8 -> masked8x8 area mean -> explicit8to7 mapping",
+      "factor": 8,
+      "min_valid_fraction": 1.0,
+      "min_retained_mass": 0.8,
+      "min_confidence": 0.6
+    },
+    "replacement_teacher": {
+      "initialization": "nvidia/mit-b2",
+      "revision": "3bb39e8739149c3777d0325349b2a6c32c6413db",
+      "reason": "community TG research conditions unconfirmed",
+      "steps": 3000,
+      "learning_rate": 6e-05,
+      "effective_batch": 4,
+      "micro_batch": 2,
+      "accumulation": 2,
+      "validation_every": 500,
+      "selection": "fixed64 gray pooled seven-class mIoU; earlier on ties",
+      "two_runs": "TR RGB / TG grayscale, otherwise identical; no mixed branch"
+    },
+    "semantic_student": {
+      "architecture": "v0.1 JointScore semantic branch and detached semantic residual; masked SAR GAP",
+      "parameters": 7977,
+      "KL_weight": 1.0,
+      "appearance_control_parameters": 7831,
+      "selection": "last fixed12epochs, no OS validation head selection",
+      "gradient": "matching BCE stops at semantic probability; semantic KL updates semantic branch only; no backbone instantiated",
+      "A_cap_checkpoint": "runs/t06_head_capacity_v1/last.pt",
+      "A_cap_reuse": "same head already trained12epochs with same7912 saved perturbations, cache, ordering, seed and last rule; newly evaluate global topK"
+    },
+    "modes": [
+      "U",
+      "A",
+      "A_cap",
+      "S",
+      "AC",
+      "SC"
+    ],
+    "deferred": [
+      "backbone unfreezing",
+      "hard selection adaptation",
+      "dynamic K",
+      "threshold changes",
+      "RANSAC changes"
+    ],
+    "SC": "secondary paired coverage only",
+    "teacher_abstention_policy": "same T06 >=95% Background AND >=90% mean raw maxp => zero whole-image supervision; additionally quarantine explicit fixed32 visual ambiguities; no base mask threshold increase; dominant Barren cells zeroed based on source64 accepted precision36.97%, seven probabilities retained"
+  },
+  "steps": 2976,
+  "train_pairs": 7912,
+  "head_parameters": 7977,
+  "backbone_instantiated": false,
+  "backbone_gradients": false,
+  "teacher_at_inference": false,
+  "appearance_control_sample_stream_equal": true,
+  "sample_stream_sha256": "8298e8e6c697b335e26cc20e813fefa57816a6d00e79d4023858df97e411454b",
+  "train_plan_sha256": "4b3f31591d8c1cf4e0405051085859fda55f1b4874f6a18b6fdb36ef28b7fb37",
+  "initial_train_probe": {
+    "BCE": 1.009236678481102,
+    "KL": 0.7599380873143673,
+    "student_class_fraction": [
+      0.1598081011325121,
+      0.14189594984054565,
+      0.12752120569348335,
+      0.1621152926236391,
+      0.13966390676796436,
+      0.13228223286569118,
+      0.13671331107616425
+    ],
+    "average_precision": 0.28955671808932626,
+    "ROC_AUC": 0.5106101889056941,
+    "positive_fraction": 0.2760470548083999,
+    "supervised_queries": 93763
+  },
+  "final_train_probe": {
+    "BCE": 0.8712893947958946,
+    "KL": 0.3171053007245064,
+    "student_class_fraction": [
+      0.6220534942305878,
+      0.09153074753688219,
+      0.013380979647632869,
+      0.1278461219134129,
+      0.008932386365975186,
+      0.04148401819930474,
+      0.09477225210620438
+    ],
+    "average_precision": 0.514748374374693,
+    "ROC_AUC": 0.7337415416197602,
+    "positive_fraction": 0.2760470548083999,
+    "supervised_queries": 93763
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 248,
+      "BCE": 0.9604093961177333,
+      "KL": 0.48469636769544694,
+      "probe": {
+        "BCE": 0.9628205522894859,
+        "KL": 0.36897120252251625,
+        "student_class_fraction": [
+          0.5749864263025648,
+          0.10269507043189083,
+          0.013755229897277139,
+          0.16918721152718086,
+          0.010234083584268874,
+          0.04517720148557837,
+          0.08396477677123919
+        ],
+        "average_precision": 0.41697673888818415,
+        "ROC_AUC": 0.6513089107001179,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 496,
+      "BCE": 0.9379263541871502,
+      "KL": 0.40025979160301145,
+      "probe": {
+        "BCE": 0.9457559809088707,
+        "KL": 0.3474488742649555,
+        "student_class_fraction": [
+          0.5586755738082019,
+          0.09204582260267695,
+          0.012581342581554529,
+          0.16334675358788173,
+          0.009868143487488728,
+          0.04924345476539405,
+          0.1142389091668021
+        ],
+        "average_precision": 0.4326512627077271,
+        "ROC_AUC": 0.6707983464231897,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 744,
+      "BCE": 0.9228588147990165,
+      "KL": 0.3843139131823855,
+      "probe": {
+        "BCE": 0.9248784184455872,
+        "KL": 0.34975109063088894,
+        "student_class_fraction": [
+          0.6146001347749124,
+          0.089442978154328,
+          0.011312377230473519,
+          0.13024478668956097,
+          0.008246706146637995,
+          0.05404898766247324,
+          0.09210402934161388
+        ],
+        "average_precision": 0.45676817950329,
+        "ROC_AUC": 0.6941410970303767,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 992,
+      "BCE": 0.9064761705456241,
+      "KL": 0.37894356238745874,
+      "probe": {
+        "BCE": 0.9040476530790329,
+        "KL": 0.3434169329702854,
+        "student_class_fraction": [
+          0.5114656697422721,
+          0.1055162920487148,
+          0.01453480300010145,
+          0.1597587390390108,
+          0.012203865422070114,
+          0.06912259593193085,
+          0.1273980348158999
+        ],
+        "average_precision": 0.4808507073514638,
+        "ROC_AUC": 0.7115257007014316,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 1240,
+      "BCE": 0.8952592664187954,
+      "KL": 0.3743849597390621,
+      "probe": {
+        "BCE": 0.8868190571665764,
+        "KL": 0.32313623279333115,
+        "student_class_fraction": [
+          0.6014696862969766,
+          0.0732638647424918,
+          0.01262444347047299,
+          0.16441170635229158,
+          0.008902410251150994,
+          0.037033419012689396,
+          0.10229446987392658
+        ],
+        "average_precision": 0.493170470882171,
+        "ROC_AUC": 0.7211195728905727,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 6,
+      "step": 1488,
+      "BCE": 0.8882694761118581,
+      "KL": 0.368438325942524,
+      "probe": {
+        "BCE": 0.8997078239917755,
+        "KL": 0.330577602609992,
+        "student_class_fraction": [
+          0.6170805505074127,
+          0.09418048298789936,
+          0.012449696848923905,
+          0.13446264885402429,
+          0.009282496928251912,
+          0.0451144760306603,
+          0.08742964784282753
+        ],
+        "average_precision": 0.5002978598547058,
+        "ROC_AUC": 0.7251229138393519,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 7,
+      "step": 1736,
+      "BCE": 0.8858017121111194,
+      "KL": 0.3643283074301097,
+      "probe": {
+        "BCE": 0.8801146298646927,
+        "KL": 0.3116324245929718,
+        "student_class_fraction": [
+          0.5599827080220467,
+          0.08047449659423578,
+          0.013596604074547242,
+          0.18870696465846068,
+          0.00908733389595337,
+          0.03689092014853586,
+          0.11126097260622037
+        ],
+        "average_precision": 0.5049399830055676,
+        "ROC_AUC": 0.726905306233793,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 8,
+      "step": 1984,
+      "BCE": 0.8855766976071943,
+      "KL": 0.36247970271975766,
+      "probe": {
+        "BCE": 0.8824786394834518,
+        "KL": 0.30585727095603943,
+        "student_class_fraction": [
+          0.5648697561864627,
+          0.08324030166805373,
+          0.010917854420874408,
+          0.21061579684614218,
+          0.008132973717105125,
+          0.039241005817306364,
+          0.0829823113440555
+        ],
+        "average_precision": 0.5075918731996952,
+        "ROC_AUC": 0.7285261442685822,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 9,
+      "step": 2232,
+      "BCE": 0.8800569316071849,
+      "KL": 0.3585833553825655,
+      "probe": {
+        "BCE": 0.8776489123702049,
+        "KL": 0.31212880462408066,
+        "student_class_fraction": [
+          0.5689295242230807,
+          0.09985921968448538,
+          0.011586402446706319,
+          0.15850371522567652,
+          0.008751893664160558,
+          0.038934471619317436,
+          0.1134347731365731
+        ],
+        "average_precision": 0.5099267129238825,
+        "ROC_AUC": 0.7297183920612247,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 10,
+      "step": 2480,
+      "BCE": 0.8787692689126537,
+      "KL": 0.35678266667790953,
+      "probe": {
+        "BCE": 0.8742857724428177,
+        "KL": 0.31094612181186676,
+        "student_class_fraction": [
+          0.59009815022457,
+          0.08428775454776075,
+          0.012238055937433618,
+          0.15288208325654568,
+          0.008178775802639602,
+          0.03553521613317982,
+          0.11677996409787049
+        ],
+        "average_precision": 0.512163957681161,
+        "ROC_AUC": 0.7305352996398211,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 11,
+      "step": 2728,
+      "BCE": 0.8774917584753805,
+      "KL": 0.35528106626964384,
+      "probe": {
+        "BCE": 0.87131317704916,
+        "KL": 0.29991859570145607,
+        "student_class_fraction": [
+          0.5738838425940626,
+          0.08475412558403504,
+          0.012894963177967246,
+          0.18247896311789508,
+          0.009975909887740055,
+          0.03995608325611139,
+          0.09605611238218863
+        ],
+        "average_precision": 0.5144484269408525,
+        "ROC_AUC": 0.7334478360432106,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    },
+    {
+      "epoch": 12,
+      "step": 2976,
+      "BCE": 0.8771337395714175,
+      "KL": 0.353794033368749,
+      "probe": {
+        "BCE": 0.8712893947958946,
+        "KL": 0.3171053007245064,
+        "student_class_fraction": [
+          0.6220534942305878,
+          0.09153074753688219,
+          0.013380979647632869,
+          0.1278461219134129,
+          0.008932386365975186,
+          0.04148401819930474,
+          0.09477225210620438
+        ],
+        "average_precision": 0.514748374374693,
+        "ROC_AUC": 0.7337415416197602,
+        "positive_fraction": 0.2760470548083999,
+        "supervised_queries": 93763
+      }
+    }
+  ],
+  "semantic_cache_summary_sha256": "374436c27ae13188a175867c96f0695565d72e5edb2090872e63c36a0d9b4de0",
+  "checkpoint_sha256": "0e54f9db878a52112efb62be29afe771ba58da449b394f0443bbe88de4e9bc39",
+  "selection": "last",
+  "validation_training_labels": false
+}

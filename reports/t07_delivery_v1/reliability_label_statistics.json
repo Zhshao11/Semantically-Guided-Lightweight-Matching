@@ -1,0 +1,167 @@
+{
+  "protocol": {
+    "protocol": "T06-frozen-appearance-teacher-controls-efficiency-v1",
+    "seed": 20261126,
+    "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+    "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+    "budgets": [
+      256,
+      512
+    ],
+    "labels": {
+      "train_pairs": 7912,
+      "transforms_per_pair": 1,
+      "positive_tolerance_px": 5.0,
+      "negative_tolerance_px": 8.0,
+      "GT_valid_boundary_margin_px": 2.0,
+      "annulus_policy": "(5,8) ignored; registration residual is unknown, not asserted to equal3px",
+      "candidate_policy": "row argmax including no-match; raw best SAR candidate also saved; no mutual/threshold filtering for dense query labels",
+      "ambiguity_margin": "best frozen logit within5px of GT minus best frozen logit at least8px from GT; diagnostic only",
+      "ignore": "GT outside eroded valid region; no valid positive candidate; error tolerance annulus; invalid optical query",
+      "supervision": "geometric_correctness only; no weighted blend with ambiguity"
+    },
+    "head": {
+      "width": 16,
+      "capacity_control_width": 29,
+      "baseline_parameters": 3489,
+      "joint_score_reference_parameters": 7977,
+      "capacity_control_parameters": 7831,
+      "input": "detached optical coarse64 plus masked SAR coarse GAP64; no cross-image correlation input",
+      "epochs": 12,
+      "batch_size": 32,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5.0,
+      "loss": "train-global positive-balanced masked BCE",
+      "checkpoint_rule": "last of fixed12epochs; never select on952 validation",
+      "probe_train_pairs": 128,
+      "small_fit_steps": 300
+    },
+    "coverage": {
+      "grid": [
+        4,
+        4
+      ],
+      "base_per_cell": 2,
+      "max_per_cell": 32,
+      "utility": "mean top8 score, softmax over cells; capped Hamilton allocation",
+      "NMS_radius": 0,
+      "same_head_for_A_and_AC": true
+    },
+    "teacher": {
+      "train_split": "official full LoveDA Train,2522 images",
+      "steps": 1000,
+      "micro_batch": 2,
+      "accumulation": 2,
+      "effective_batch": 4,
+      "crop_hw": [
+        512,
+        512
+      ],
+      "input_hw": [
+        512,
+        512
+      ],
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "optimizer": "AdamW",
+      "scheduler": "none",
+      "clip_norm": 1.0,
+      "precision": "BF16 training, FP32 validation",
+      "validation_steps": [
+        0,
+        200,
+        400,
+        600,
+        800,
+        1000
+      ],
+      "best_metric": "fixed64 grayscale pooled seven-class mIoU, same rule forTR/TG; retain earlier on ties",
+      "validation_per_domain": 32,
+      "validation_excludes_previous8": true,
+      "longitudinal8": true,
+      "augmentation": "saved native512 crop only; TR RGB vsTG PIL grayscale repeatedRGB; no other augmentation",
+      "GT_ignore": 0,
+      "GT_valid_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "loss_ignore_value": 255,
+      "weights_release": "neither original nor derived weights published while license unresolved",
+      "OS_review_train_pairs": 32
+    },
+    "fold_tolerances": {
+      "FP32": {
+        "descriptor_max_abs": 5e-05,
+        "coarse_pair_Jaccard_min": 0.995,
+        "common_refinement_p95_px": 0.05,
+        "matrix_probe_RMSE_px": 0.1
+      },
+      "BF16": {
+        "descriptor_max_abs": 0.02,
+        "coarse_pair_Jaccard_min": 0.99,
+        "common_refinement_p95_px": 0.1,
+        "matrix_probe_RMSE_px": 0.25
+      },
+      "policy": "predeclared; never relax after seeing results; only gate-passed copy timed as an optimization"
+    },
+    "efficiency": {
+      "profile_pairs": 4,
+      "profile_gpu": 7,
+      "formal_gpu": 6,
+      "rounds": 3,
+      "warmup": 5,
+      "repeats_per_pair_round": 10,
+      "timing_pairs": "same24 asT05",
+      "no_hook_primary": true,
+      "all_custom_baselines_same_optimization": true
+    },
+    "SC_status": "waiting teacher quality and review; matched-capacity appearance control prepared; no semantic-only backbone adaptation now",
+    "deferred": [
+      "dynamic budgets",
+      "complex refinement",
+      "backbone unfreezing",
+      "RGB-gray mixed third teacher branch",
+      "OS semantic accuracy claims withoutGT"
+    ]
+  },
+  "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "train_plan_sha256": "4b3f31591d8c1cf4e0405051085859fda55f1b4874f6a18b6fdb36ef28b7fb37",
+  "pairs": 7912,
+  "coarse_queries": 8101888,
+  "label_counts": {
+    "positive": 1611266,
+    "negative": 4235185,
+    "ignored": 2255437
+  },
+  "label_fractions": {
+    "positive": 0.19887537324633467,
+    "negative": 0.522740501966949,
+    "ignored": 0.27838412478671637
+  },
+  "optical_valid_fraction": 1.0,
+  "GT_reliable_fraction": 0.8993037178494692,
+  "positive_candidate_exists_fraction": 0.865748946418415,
+  "ambiguity_margin_valid_fraction": 0.8439969794694767,
+  "margin_percentiles": [
+    -21.251476287841797,
+    -3.003420829772949,
+    -0.6370887756347656,
+    1.1376590728759766,
+    10.329947471618652
+  ],
+  "features": "FP32 promotion of frozen BF16 coarse outputs, exact cached input for FP32 head",
+  "BN_buffers_unchanged": true,
+  "backbone_requires_grad": false,
+  "labels_from_train_only": true,
+  "val_test_read": false,
+  "ambiguity_used_for_training": false,
+  "original_registration_residual": "unknown;5..8px annulus is an explicit conservative ignore band, not measured residual"
+}

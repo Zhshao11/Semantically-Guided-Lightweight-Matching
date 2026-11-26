@@ -1,0 +1,81 @@
+{
+  "checkpoint_sha256": "2b54fa6c104cbbac36de78632324d3e79a2d2fa24841bde0c82a8c7470abf714",
+  "all_four_pages_inspected": true,
+  "reviewer": "assistant visual inspection, no human semanticGT",
+  "human_semantic_GT": false,
+  "quarantine_image_ids": [
+    "osdataset/256/train/1500",
+    "osdataset/256/train/6090",
+    "osdataset/256/train/6537",
+    "osdataset/256/train/7524",
+    "osdataset/256/train/1154",
+    "osdataset/256/train/1182",
+    "osdataset/256/train/4410"
+  ],
+  "observations": [
+    {
+      "pair_id": "osdataset/256/train/1500",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "large visible roof/block structures remain high-confidence Background; conservative whole-image abstention"
+    },
+    {
+      "pair_id": "osdataset/256/train/6090",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "Water dominates field-like rectangular structures and passes mask; class identity ambiguous withoutGT, quarantine"
+    },
+    {
+      "pair_id": "osdataset/256/train/6537",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "large apron/tarmac areas around aircraft predicted Building; accepted broad regions, quarantine"
+    },
+    {
+      "pair_id": "osdataset/256/train/7524",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "Water extends over some field-like areas; ambiguous withoutGT, conservative quarantine"
+    },
+    {
+      "pair_id": "osdataset/256/train/1154",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "one large warehouse roof mostly omitted while opposite roof is Building; accepted Background, quarantine"
+    },
+    {
+      "pair_id": "osdataset/256/train/1182",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "broad roads at intersection omitted as Background and much passes mask"
+    },
+    {
+      "pair_id": "osdataset/256/train/4410",
+      "decision": "conservative whole-image semantic abstention",
+      "observation": "large road-intersection area omitted while a few small segments are Road; conservative quarantine"
+    }
+  ],
+  "retained_examples": [
+    {
+      "pair_id": "osdataset/256/train/5218",
+      "observation": "main road recovered; boundary omissions retained"
+    },
+    {
+      "pair_id": "osdataset/256/train/1963",
+      "observation": "several warehouses recovered; imperfect boundaries retained"
+    },
+    {
+      "pair_id": "osdataset/256/train/3027",
+      "observation": "dominant field pattern mostly Agricultural; no correctness claim"
+    },
+    {
+      "pair_id": "osdataset/256/train/4310",
+      "observation": "water texture mostly Water; no correctness claim"
+    }
+  ],
+  "class_abstention": {
+    "names": [
+      "Barren"
+    ],
+    "indices_zero_based7": [
+      4
+    ],
+    "reason": "source64 accepted coarse-cell precision0.3696933 despite existing confidence mask; not reliable enough as dominant pseudo class",
+    "no_class_removal_or_renormalization": true
+  },
+  "not_OS_accuracy": true
+}

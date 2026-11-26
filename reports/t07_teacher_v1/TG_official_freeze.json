@@ -1,0 +1,1723 @@
+{
+  "candidate": "TG_official",
+  "checkpoint_path": "runs/t07_teacher_TG_v1/best.pt",
+  "checkpoint_sha256": "2b54fa6c104cbbac36de78632324d3e79a2d2fa24841bde0c82a8c7470abf714",
+  "selected_step": 2500,
+  "code_base": "e208fc66d33272e02fae1d65feb952c0b265f3f2",
+  "training_source_sha256": "a643f295998bcc48481c2e76b5b69f31f4347e28e6bd983b7fb3bc49a3f2244e",
+  "preprocessing": {
+    "input": "uint8 optical grayscale repeated to RGB",
+    "resize_hw": [
+      512,
+      512
+    ],
+    "rescale": 0.00392156862745098,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "do_reduce_labels": false,
+    "policy": "saved image processor; no double rescale, no recoloring"
+  },
+  "native_gray": "OS PNG L uint8; explicitly L->RGB; no recoloring; identical ImageNet processor",
+  "source_classes": [
+    "Ignore",
+    "Background",
+    "Building",
+    "Road",
+    "Water",
+    "Barren",
+    "Forest",
+    "Agricultural"
+  ],
+  "target_classes": [
+    "Background",
+    "Building",
+    "Road",
+    "Water",
+    "Barren",
+    "Forest",
+    "Agricultural"
+  ],
+  "class_mapping": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "ignore": {
+    "GT0": "masked as255 in training; never a land-cover class",
+    "student": "retain a=1-pIgnore; conditional7; weight=mask*a*(1-H/log7)"
+  },
+  "aggregation": {
+    "policy": "resize logits to native256 -> softmax8 -> masked8x8 area mean -> explicit8to7 mapping",
+    "factor": 8,
+    "min_valid_fraction": 1.0,
+    "min_retained_mass": 0.8,
+    "min_confidence": 0.6
+  },
+  "selection": "best new64 gray pooled seven-class mIoU; earlier on ties; both input versions/old8 reported; OS not used for checkpoint choice",
+  "validation64": [
+    {
+      "pair_id": "Rural/2555",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2555.png",
+          "sha256": "d3c44ecce31b184d8e9240f889b8d8ea3a08eb4a01d6cb4ac3b5e62958962b9c",
+          "archive_member": "Val/Rural/images_png/2555.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2555.png",
+          "sha256": "4814f2066ef9b58c63e9120cd79bc3bb29350f94c2e6e3f0fcbf66744f34081f",
+          "archive_member": "Val/Rural/masks_png/2555.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2605",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2605.png",
+          "sha256": "940417c12d001ea149293151b987e6f6008b02e4ef9009e8587d0355cbbf7160",
+          "archive_member": "Val/Rural/images_png/2605.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2605.png",
+          "sha256": "d4a3a03eac27ce6f7c3ce213a9d4d07f7109ea56d785aaab4053d4194ea415cb",
+          "archive_member": "Val/Rural/masks_png/2605.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2629",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2629.png",
+          "sha256": "b253d35de12bde7618d13b635502c9105168e48b753f980b5c0189df0223dfce",
+          "archive_member": "Val/Rural/images_png/2629.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2629.png",
+          "sha256": "d28cec6b375ab93279d1d6fa0fdad58bcf8ab8aa47c2538af28a77f3412a0648",
+          "archive_member": "Val/Rural/masks_png/2629.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2654",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2654.png",
+          "sha256": "0be3e216b3caf12db63402c5cc74054c79b0cb246fc7e4cad0956d6ed5d9fb6b",
+          "archive_member": "Val/Rural/images_png/2654.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2654.png",
+          "sha256": "02a3cdf3274d0a1a7f746c8f3c5a8c62c2de9d3e93e4da1c7cd439d23a58f215",
+          "archive_member": "Val/Rural/masks_png/2654.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2732",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2732.png",
+          "sha256": "5ea7c203f5773bff2ad4bc97ed8f91f8395e2e81f2aeb628419fc3f07020feb1",
+          "archive_member": "Val/Rural/images_png/2732.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2732.png",
+          "sha256": "9cd886018bfde35020b38602d5b340d01241daf2c156a9c653dad3b435c9d3e0",
+          "archive_member": "Val/Rural/masks_png/2732.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2753",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2753.png",
+          "sha256": "b245727bfb68dcf185263a02a497b0fe7fff311d5d56473249aa840ed56fe87e",
+          "archive_member": "Val/Rural/images_png/2753.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2753.png",
+          "sha256": "64af6384b905fe7aef9a4ac49b27aecb29ee9c5b41e562c0f08bf7a8d9f953e8",
+          "archive_member": "Val/Rural/masks_png/2753.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2775",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2775.png",
+          "sha256": "7402df8610420d17af315d08530903d3befcb88bd51ea96f9314727f9aa60ba4",
+          "archive_member": "Val/Rural/images_png/2775.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2775.png",
+          "sha256": "07e818c6038b99c684bf82567c62503123612c7c8b3a996d3f79fde49d34a9aa",
+          "archive_member": "Val/Rural/masks_png/2775.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2821",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2821.png",
+          "sha256": "11e77febac7889e4d1d47855fc33be0c9bfc41d373e1015681a52b084bb9303d",
+          "archive_member": "Val/Rural/images_png/2821.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2821.png",
+          "sha256": "2d1ff818dcf9669e5c410634ba6a358cde7ec209647e28434e3fe67975ca473c",
+          "archive_member": "Val/Rural/masks_png/2821.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2824",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2824.png",
+          "sha256": "24332cffab721f6afbbb86191febf4d6220d85e4233079faaa4005d199b5fd02",
+          "archive_member": "Val/Rural/images_png/2824.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2824.png",
+          "sha256": "0999d03eb9b3bf359967cfcd04c8322788f221bac8069b76cfaff8ce0e7d28ac",
+          "archive_member": "Val/Rural/masks_png/2824.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2855",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2855.png",
+          "sha256": "f9e102288372df06da0b2816174f850b7e08746eb8ea8cf66bb8fa5105afc373",
+          "archive_member": "Val/Rural/images_png/2855.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2855.png",
+          "sha256": "6a8e7777474a8d4d90f514fd95649b83c891de36cfdb8d7165edc64382ba2f43",
+          "archive_member": "Val/Rural/masks_png/2855.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2876",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2876.png",
+          "sha256": "93459b24245a1e26f3b2cb8032010e1c2b1cbafb865709074fc26b77e65bdc3a",
+          "archive_member": "Val/Rural/images_png/2876.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2876.png",
+          "sha256": "4bc72e3e923ebc753da451a773c66f9cab11b646841eab24f3457df919b0b55f",
+          "archive_member": "Val/Rural/masks_png/2876.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2900",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2900.png",
+          "sha256": "0b00e00b839bb1e806380236e805b541d1767718cfb67c95b377cceb29073cea",
+          "archive_member": "Val/Rural/images_png/2900.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2900.png",
+          "sha256": "7eff3067f3aee5372ac35ed5f3215cf2addd3b5aae287ebefc18e1243cd6b2fa",
+          "archive_member": "Val/Rural/masks_png/2900.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2903",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2903.png",
+          "sha256": "2c3e8824efc8c7068a1f27140c5976282ed45242ecd92cde384707f1dc043bd6",
+          "archive_member": "Val/Rural/images_png/2903.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2903.png",
+          "sha256": "e868dcbb91da6d55a3f321472de2714b0dd19a8fcae077102f74b4130d79b60a",
+          "archive_member": "Val/Rural/masks_png/2903.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2926",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2926.png",
+          "sha256": "edbb92bb90d5ef751e8995fea2c405dcfa675dffcccb7570249eb796dbbadbe7",
+          "archive_member": "Val/Rural/images_png/2926.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2926.png",
+          "sha256": "39aa24099b23554dc2ac15cd06c26d5563eadb8baf631183765816884e6d0e9e",
+          "archive_member": "Val/Rural/masks_png/2926.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2938",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2938.png",
+          "sha256": "a23bd987261a2b59c7014047a3a92d66d8e63771cd3396412aeddf2d776707ea",
+          "archive_member": "Val/Rural/images_png/2938.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2938.png",
+          "sha256": "b3f6c023bdeeafc9e809eef3061818e8e1a760bb603e50fcace207761fde0eda",
+          "archive_member": "Val/Rural/masks_png/2938.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2940",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2940.png",
+          "sha256": "f71168ecad8479cc356ab98c649a61f2fa573c79ce6c84bc8dffd6a3bb765998",
+          "archive_member": "Val/Rural/images_png/2940.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2940.png",
+          "sha256": "f32ea003a66fd900c095da77eb701e7b1ce2da6fd10f4d10524187e7abfa4d4a",
+          "archive_member": "Val/Rural/masks_png/2940.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/2979",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/2979.png",
+          "sha256": "22c8fd9f737e4e6970f95aa3f0012ca3a4fc18f52a70fb68bd15b0e1dc353518",
+          "archive_member": "Val/Rural/images_png/2979.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/2979.png",
+          "sha256": "95407c2a290ef0c6b4893bd3dc1e438657c2bdb0211f22fb313ffad124da30f6",
+          "archive_member": "Val/Rural/masks_png/2979.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3011",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3011.png",
+          "sha256": "339f88e7d64e8a2b2234484726d565a8ff5c1d8cfd937ce9e7ffc952327e12fa",
+          "archive_member": "Val/Rural/images_png/3011.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3011.png",
+          "sha256": "8ad0f93845f0eaff0f5cebf032a5b17da2f641c9c7cbdd7bddb2aff4ba8f6788",
+          "archive_member": "Val/Rural/masks_png/3011.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3073",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3073.png",
+          "sha256": "02274b02aea59163e7ed1cd6c626e795ddb1c8a318e626b456c2e9fdbeb446df",
+          "archive_member": "Val/Rural/images_png/3073.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3073.png",
+          "sha256": "b90cbbb07132a9918b2f26cd6fd330eea009508e9506c010eecbd7bf99d7c9bd",
+          "archive_member": "Val/Rural/masks_png/3073.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3081",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3081.png",
+          "sha256": "f2b8c629efff04cbc1d223c51a924d6995017535f8a3c1a5a071f3e0f171d22b",
+          "archive_member": "Val/Rural/images_png/3081.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3081.png",
+          "sha256": "303a144640176955747d9abc258738cdc0709324005cd58ca8a5754afcc490da",
+          "archive_member": "Val/Rural/masks_png/3081.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3107",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3107.png",
+          "sha256": "9ba8501f1e97c5010c878ed08fad3f0a8d1bdcea1dbc58a238eefe3131286502",
+          "archive_member": "Val/Rural/images_png/3107.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3107.png",
+          "sha256": "5cc2ba8289fda6fdb2f89aca1cfc1fff19763e47e511fa6a2b6aca0f4e253741",
+          "archive_member": "Val/Rural/masks_png/3107.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3164",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3164.png",
+          "sha256": "ee8b67f8f546fa367632c5a24b5fb38957e66d0d5b2fffc83d51ae0b2f2773ef",
+          "archive_member": "Val/Rural/images_png/3164.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3164.png",
+          "sha256": "889dee49754f36ee8add61d54435af3a5486b7fa23f24b0412b3c0d0fadfa874",
+          "archive_member": "Val/Rural/masks_png/3164.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3167",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3167.png",
+          "sha256": "2ea64e05fcc0899b8ffa001f389648d146fa1a432177308d64ecdbc0de890556",
+          "archive_member": "Val/Rural/images_png/3167.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3167.png",
+          "sha256": "53fdd5109f7aa42cd43c2357c05bfc0cd8f367e5a3aef79866410cadf7f307d8",
+          "archive_member": "Val/Rural/masks_png/3167.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3173",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3173.png",
+          "sha256": "d6f4380d0ec7514125e1db6acf53436308ce204dc5f8e1e2f2ee2bb37f47c59c",
+          "archive_member": "Val/Rural/images_png/3173.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3173.png",
+          "sha256": "8774f478173936e4b3afc2b0a3c5fef967f069588d63b1e1372cdb33002c442f",
+          "archive_member": "Val/Rural/masks_png/3173.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3180",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3180.png",
+          "sha256": "0852ead56813ac9d135073f9c2c8a3f4c74752b656ec12f7d79e3424d0fd3ddd",
+          "archive_member": "Val/Rural/images_png/3180.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3180.png",
+          "sha256": "1ca2e95f90e79d33a6874132e905b069e5b8b976666bd70724ac44375642302f",
+          "archive_member": "Val/Rural/masks_png/3180.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3194",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3194.png",
+          "sha256": "57bcab5b953df130815b6e9e398b0387d5567c66b4b5724d896ce96123fce7b7",
+          "archive_member": "Val/Rural/images_png/3194.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3194.png",
+          "sha256": "febc16cb1d13a3311bb6ee811460cd5f60f09e1258eb4f03716b56f7bd9aaf82",
+          "archive_member": "Val/Rural/masks_png/3194.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3213",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3213.png",
+          "sha256": "bf89ced43891c916c0340711171832cbcce37787c1fd8986da9f6fed03e2fe82",
+          "archive_member": "Val/Rural/images_png/3213.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3213.png",
+          "sha256": "fefe04cbbb594f555b813a1b614075d3cd0d863b51c9554262b8ecbfe047fc4e",
+          "archive_member": "Val/Rural/masks_png/3213.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3235",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3235.png",
+          "sha256": "5886d8ce3a7fc1ad0bea76a0ba2391d09e1d5cf2cecc9fc0f88bf05ba3b97bae",
+          "archive_member": "Val/Rural/images_png/3235.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3235.png",
+          "sha256": "209ffb3a23cade05c1877ae56f85fd3f25e609c4f67a9f17b6a03a2c898a21d2",
+          "archive_member": "Val/Rural/masks_png/3235.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3333",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3333.png",
+          "sha256": "021f6ff23ef5263a058512ab2220369b0cb93f9b5c001d0d711ac9763208949f",
+          "archive_member": "Val/Rural/images_png/3333.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3333.png",
+          "sha256": "8d647005dae1502102dd0b87d815073c9d98cb9e70a5a0a2b6f4cf319637c36d",
+          "archive_member": "Val/Rural/masks_png/3333.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3400",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3400.png",
+          "sha256": "ebc9a80c99f4f656273b54b41a51411b49237cec4ef9be812646642124068a4d",
+          "archive_member": "Val/Rural/images_png/3400.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3400.png",
+          "sha256": "1fc50093abffa1690380edf5760edb9d1f6d25d6b11d913c19ac2d0e4b44868f",
+          "archive_member": "Val/Rural/masks_png/3400.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3402",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3402.png",
+          "sha256": "ae3e66292c72ab0e653659ecd8cb62b903fc5da8429c48a1bfeb85f511c93e61",
+          "archive_member": "Val/Rural/images_png/3402.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3402.png",
+          "sha256": "7cafa52a088f5f5b2b0d90480aad375733a9bd3c2d787c66ebec688d5b49d3f4",
+          "archive_member": "Val/Rural/masks_png/3402.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Rural/3504",
+      "domain": "Rural",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Rural/image/3504.png",
+          "sha256": "24877cecb73bc0ba92686d31008349a1f556cf47bf632b524abb42e109268f72",
+          "archive_member": "Val/Rural/images_png/3504.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Rural/label/3504.png",
+          "sha256": "f7424750d5ef149d9b3006d4eedec81bc9093ece6a38c0024ad016ebe5257f81",
+          "archive_member": "Val/Rural/masks_png/3504.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3542",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3542.png",
+          "sha256": "2451d71e4211c0c3f4a9d16c1087b880444e0d1d042f20142f91d378e9ce7108",
+          "archive_member": "Val/Urban/images_png/3542.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3542.png",
+          "sha256": "6eb1103ef697540c651643b47691f7c46fc6ac1329872da5e1d7e9f85532b4ac",
+          "archive_member": "Val/Urban/masks_png/3542.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3551",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3551.png",
+          "sha256": "8f333690d22c1177edd9b33cc1f058fa0c2b712bee5f0c016715799714c7ee49",
+          "archive_member": "Val/Urban/images_png/3551.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3551.png",
+          "sha256": "cd9df4a1ea9b1a15ebd9eb411ae80fd9ddaa8d1587a96deadce4a6cf504360a5",
+          "archive_member": "Val/Urban/masks_png/3551.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3590",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3590.png",
+          "sha256": "d6b1d44c0fff2fd7895ac692a8139e42b08137e3bd1f9c79be8c2a013b8e05e9",
+          "archive_member": "Val/Urban/images_png/3590.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3590.png",
+          "sha256": "ec2e4a790dc97a14fb39b7dc60c03678605bbe6b6c1988c6387f93cedf3277af",
+          "archive_member": "Val/Urban/masks_png/3590.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3623",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3623.png",
+          "sha256": "3ed8457e69982bf045eb2e1b2816d8565c246431033ec3010ac36a9c12b845d6",
+          "archive_member": "Val/Urban/images_png/3623.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3623.png",
+          "sha256": "321eca525237aad048dedd34693b0d6096460bb6fbb47670a0c0cd61c74aaae6",
+          "archive_member": "Val/Urban/masks_png/3623.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3651",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3651.png",
+          "sha256": "e73b19137157c293f096970b27f2a2a924d53801d9145e0cef6b93b9abcd2451",
+          "archive_member": "Val/Urban/images_png/3651.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3651.png",
+          "sha256": "386f4165b8ede430e0a2e3dbd47037e89c6e7a069f521b85395b42a3020c2512",
+          "archive_member": "Val/Urban/masks_png/3651.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3653",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3653.png",
+          "sha256": "b227a14c8b0b77e9546959c8e4497d8bc50695dec90caaa0c1cd44610c017fc5",
+          "archive_member": "Val/Urban/images_png/3653.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3653.png",
+          "sha256": "e8eff46f67b1a7b9c5d6cc241c0ccfb2be83299ad44ae1fc9744fcc80526f688",
+          "archive_member": "Val/Urban/masks_png/3653.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3696",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3696.png",
+          "sha256": "e681eceefe050c7b6418ccf85a035333df004a9ca36892736ded4ffef8f998d8",
+          "archive_member": "Val/Urban/images_png/3696.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3696.png",
+          "sha256": "a3795ca894e84794ff1dab657b5eb8743661d6966c89ef7ac7fb9bad78438107",
+          "archive_member": "Val/Urban/masks_png/3696.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3700",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3700.png",
+          "sha256": "ae54d361bf918e62137d932c5b339d1dcda07b3d647603a964d95bb84ac621ad",
+          "archive_member": "Val/Urban/images_png/3700.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3700.png",
+          "sha256": "545d4e189e6260e0d91879fed410cab8dab1c9553e2e313e44d37ede7a230c19",
+          "archive_member": "Val/Urban/masks_png/3700.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3731",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3731.png",
+          "sha256": "22257f27acf767c3d0b14d0c7634df1684427c4af8134ce891e2868c24c165c5",
+          "archive_member": "Val/Urban/images_png/3731.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3731.png",
+          "sha256": "430457d3fdf25ab237ad4ba9028b3fca699650cd35aac454242318622ab1f865",
+          "archive_member": "Val/Urban/masks_png/3731.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3757",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3757.png",
+          "sha256": "ff0c26335b9b846a5511bc9a02ceaf2d61acea858a85dfda5fbd8c5a01365c1a",
+          "archive_member": "Val/Urban/images_png/3757.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3757.png",
+          "sha256": "d47dfe967028c27018c73fb5eda624364d6fb1a421bcd9471151855ef3dcaf0f",
+          "archive_member": "Val/Urban/masks_png/3757.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3777",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3777.png",
+          "sha256": "94e2dc93069671952d4e35ae23247bdfa923a7fb2ebb78a6fb8d349a2b83378a",
+          "archive_member": "Val/Urban/images_png/3777.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3777.png",
+          "sha256": "7920dbbbd7d1fb04fca081cf85c5fd629e6c2c216c6d7f0c78950e52063adbe2",
+          "archive_member": "Val/Urban/masks_png/3777.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3781",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3781.png",
+          "sha256": "186713a8cf53d4fb1d64793ca0c07547c5c7e20dc404b9aed11e78c0c1cd4c12",
+          "archive_member": "Val/Urban/images_png/3781.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3781.png",
+          "sha256": "57ea5686614388b32929af5330127488861729ce6be3a2815773740420295b0a",
+          "archive_member": "Val/Urban/masks_png/3781.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3819",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3819.png",
+          "sha256": "16f6f8c14053e9de9454155cb57e84d85117ae4aafdd549de5eb00ce334ae8c4",
+          "archive_member": "Val/Urban/images_png/3819.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3819.png",
+          "sha256": "a7c1f487964bdd52aebcdb2e9facc919485d00be85d215711a4446614a00e5c8",
+          "archive_member": "Val/Urban/masks_png/3819.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3863",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3863.png",
+          "sha256": "636e30e8e397cdde285a17942f07b44420536e2e09ea3c87ce0a03a3283c4465",
+          "archive_member": "Val/Urban/images_png/3863.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3863.png",
+          "sha256": "151a87d6c5b145ba0d48faf225ed9fcf02d2d2fec38eaade76a0fcc950524a7c",
+          "archive_member": "Val/Urban/masks_png/3863.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3864",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3864.png",
+          "sha256": "226502385353f733649f3fd7f8fd10ea53c0048d8fe79dec4bb27b976a62f9a8",
+          "archive_member": "Val/Urban/images_png/3864.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3864.png",
+          "sha256": "9428230dbd6dde8feedff3dde4587ee0b623abb32a9d21d6d630eba28966158b",
+          "archive_member": "Val/Urban/masks_png/3864.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3867",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3867.png",
+          "sha256": "baecde0c54e49980513ac773ba35366151faba74649311c9a28a6dd4b69cb373",
+          "archive_member": "Val/Urban/images_png/3867.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3867.png",
+          "sha256": "33b87eb9e4c999b3ffda1cac2c744868aa304216d4f7df1e14ad67d42d02731b",
+          "archive_member": "Val/Urban/masks_png/3867.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3877",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3877.png",
+          "sha256": "d5eb6927b96a8bcab31d60baf8a0c158c878736ca8985b5e8c520b0124f89053",
+          "archive_member": "Val/Urban/images_png/3877.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3877.png",
+          "sha256": "321eca525237aad048dedd34693b0d6096460bb6fbb47670a0c0cd61c74aaae6",
+          "archive_member": "Val/Urban/masks_png/3877.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3891",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3891.png",
+          "sha256": "7eec6c678fb3b6a22a32f022ab8e02f54a20d22709e7cdbad0d27889f6caf36d",
+          "archive_member": "Val/Urban/images_png/3891.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3891.png",
+          "sha256": "4c3761fe9835501e1387d359bb2eb34646c973421f7c6bb24d9bff2d99599905",
+          "archive_member": "Val/Urban/masks_png/3891.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3924",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3924.png",
+          "sha256": "1216f39afb44996cc415fb3955b5c38153e0baca5e53e309645b35606de8395b",
+          "archive_member": "Val/Urban/images_png/3924.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3924.png",
+          "sha256": "685775825e759e828e8d007294b6b36e352d634bd0634ad2252da0de12226c25",
+          "archive_member": "Val/Urban/masks_png/3924.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3929",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3929.png",
+          "sha256": "3f9dfbfcc1726fda2839bed5deea2a61867dcac3e807b168b366d6c8463afaef",
+          "archive_member": "Val/Urban/images_png/3929.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3929.png",
+          "sha256": "a5557af8937e531ee785e95ef7e2f96544288db7dd6e47ad2d3e2c57f35165a1",
+          "archive_member": "Val/Urban/masks_png/3929.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3943",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3943.png",
+          "sha256": "5efe1107015c39c51630e7990ad8456d0f9d3460ad7079d07102aba0b1fe0d9f",
+          "archive_member": "Val/Urban/images_png/3943.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3943.png",
+          "sha256": "9924775e297caa109d2bb7e58947754827ef4532415c8b42a420dde2c83ff037",
+          "archive_member": "Val/Urban/masks_png/3943.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3980",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3980.png",
+          "sha256": "83f395de348dcd0d22b643a61fd1ed6ae8ea5ef332908d9c8dcc0543e58d45dd",
+          "archive_member": "Val/Urban/images_png/3980.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3980.png",
+          "sha256": "6437cc716a6166c5c71afdae787579828bd097d823b13aa0eae9065e8bbb8dbf",
+          "archive_member": "Val/Urban/masks_png/3980.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3986",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3986.png",
+          "sha256": "62d48c2bef2122e442eec6c212041182e972c84ed399c600359439492d369517",
+          "archive_member": "Val/Urban/images_png/3986.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3986.png",
+          "sha256": "95732cfc225c5a65d2cf2cd32d2619211384c4e0aa8de29809ef723ea37b6729",
+          "archive_member": "Val/Urban/masks_png/3986.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/3992",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/3992.png",
+          "sha256": "8e62a0a03d41bf5fd658958d61cef68686f57aca09e97c4cd75fa3b2f0879015",
+          "archive_member": "Val/Urban/images_png/3992.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/3992.png",
+          "sha256": "d0b197afba61c0fa28ed2923d3755f35f28769a92b122dbfdb98067f44799aed",
+          "archive_member": "Val/Urban/masks_png/3992.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4022",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4022.png",
+          "sha256": "fea1ae38bf9d0c93833c17188ba2d8cff8d03ae1928079d872c641ccc6b9a4a6",
+          "archive_member": "Val/Urban/images_png/4022.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4022.png",
+          "sha256": "5653f4746d6700e4042474f626d75242cb5805bc7d2f813caa1548f7f8011e1a",
+          "archive_member": "Val/Urban/masks_png/4022.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4055",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4055.png",
+          "sha256": "e6ed6a015b0ec27fff40e167dc80263f40fe779705aa61c5c8697f17e48dd99c",
+          "archive_member": "Val/Urban/images_png/4055.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4055.png",
+          "sha256": "0fa6b4be06a91243b341ae6eec0a676c215d6bc980d060703cdd966112a0d39e",
+          "archive_member": "Val/Urban/masks_png/4055.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4103",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4103.png",
+          "sha256": "bc8d72f6f997a2aaf23f30d7df17990c60a98fd3b2be03ab74f43745d5a31610",
+          "archive_member": "Val/Urban/images_png/4103.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4103.png",
+          "sha256": "d3db533f816ff9efd8102fb6ddd336ef9f38039d96d1b254668601fe11b595c6",
+          "archive_member": "Val/Urban/masks_png/4103.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4104",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4104.png",
+          "sha256": "c779d04d2540f5dc420eba30c37c17a714ffc6491dbe53b6fa262510c5094ece",
+          "archive_member": "Val/Urban/images_png/4104.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4104.png",
+          "sha256": "c73036265fb41a4cb9e87c6295016d476027ef3e0a898608863320ea86f0d428",
+          "archive_member": "Val/Urban/masks_png/4104.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4133",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4133.png",
+          "sha256": "aa551b559fca85f669746954b9d8dc0ce6054e016653795a53632338cf555e1d",
+          "archive_member": "Val/Urban/images_png/4133.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4133.png",
+          "sha256": "aaff818115a59d875c0813aed5710f193be888cb849918617090ab0f197260b6",
+          "archive_member": "Val/Urban/masks_png/4133.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4136",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4136.png",
+          "sha256": "8b7f9c16ccf732c5cb07eb0ddf8c966e794f0af0930ae940a1e2779ea4665745",
+          "archive_member": "Val/Urban/images_png/4136.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4136.png",
+          "sha256": "6b452157d7b18c1a364c7deca78c5f7c966e489b0ec36290bcf1a69f0817c2a0",
+          "archive_member": "Val/Urban/masks_png/4136.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4152",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4152.png",
+          "sha256": "5c0fb316e303bfc8f0f4b8f8cc19a8f9616032acf24acabbdb032da4c5b99991",
+          "archive_member": "Val/Urban/images_png/4152.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4152.png",
+          "sha256": "77aeac70785ab312ed083daeb92f50b1d584602e9b8d11c9cf1ec5c2d586234f",
+          "archive_member": "Val/Urban/masks_png/4152.png",
+          "CRC_verified": true
+        }
+      }
+    },
+    {
+      "pair_id": "Urban/4154",
+      "domain": "Urban",
+      "split": "Val",
+      "files": {
+        "image": {
+          "path": "Val64/Urban/image/4154.png",
+          "sha256": "52836f37dd2a17200d774f8bc7220df50441ed44ab373c61dd8165fa0cd08eac",
+          "archive_member": "Val/Urban/images_png/4154.png",
+          "CRC_verified": true
+        },
+        "label": {
+          "path": "Val64/Urban/label/4154.png",
+          "sha256": "321eca525237aad048dedd34693b0d6096460bb6fbb47670a0c0cd61c74aaae6",
+          "archive_member": "Val/Urban/masks_png/4154.png",
+          "CRC_verified": true
+        }
+      }
+    }
+  ],
+  "validation64_manifest_sha256": "c1f657f3db21890ee9d65424d7992038e9be710858686ccc4688d99d65a80771",
+  "class_audit": [
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 1,
+      "name": "Background",
+      "GT_pixels": 23681529,
+      "predicted_pixels": 28414788,
+      "IoU": 0.4500957548382205,
+      "precision": 0.5690767427158,
+      "recall": 0.6828188754197417,
+      "predicted_fraction_on_valid_GT": 0.42972804416611887,
+      "GT_fraction": 0.3581451017700088
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 2,
+      "name": "Building",
+      "GT_pixels": 4903323,
+      "predicted_pixels": 7887630,
+      "IoU": 0.49020331313106835,
+      "precision": 0.5334418576936292,
+      "recall": 0.858110306010842,
+      "predicted_fraction_on_valid_GT": 0.11928773894093471,
+      "GT_fraction": 0.07415488733207323
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 3,
+      "name": "Road",
+      "GT_pixels": 3258386,
+      "predicted_pixels": 2062233,
+      "IoU": 0.4882001138955987,
+      "precision": 0.8463713848047238,
+      "recall": 0.5356685794746233,
+      "predicted_fraction_on_valid_GT": 0.031187962891182853,
+      "GT_fraction": 0.049277856407665736
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 4,
+      "name": "Water",
+      "GT_pixels": 10175908,
+      "predicted_pixels": 12117797,
+      "IoU": 0.667817386616617,
+      "precision": 0.7366612099542516,
+      "recall": 0.8772397509883147,
+      "predicted_fraction_on_valid_GT": 0.18326222262900793,
+      "GT_fraction": 0.15389426950693288
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 5,
+      "name": "Barren",
+      "GT_pixels": 2746822,
+      "predicted_pixels": 2454208,
+      "IoU": 0.166496773144488,
+      "precision": 0.30248251166975254,
+      "recall": 0.2702595945423475,
+      "predicted_fraction_on_valid_GT": 0.03711595538973728,
+      "GT_fraction": 0.0415412723027343
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 6,
+      "name": "Forest",
+      "GT_pixels": 4470465,
+      "predicted_pixels": 1887111,
+      "IoU": 0.28054019115925216,
+      "precision": 0.7380673420906348,
+      "recall": 0.3115593120626154,
+      "predicted_fraction_on_valid_GT": 0.028539523826620446,
+      "GT_fraction": 0.06760860510249411
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/RGB",
+      "id": 7,
+      "name": "Agricultural",
+      "GT_pixels": 16886289,
+      "predicted_pixels": 11298955,
+      "IoU": 0.5216953218194427,
+      "precision": 0.8552099729576762,
+      "recall": 0.5722381631630253,
+      "predicted_fraction_on_valid_GT": 0.1708785521563979,
+      "GT_fraction": 0.2553780075780909
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 1,
+      "name": "Background",
+      "GT_pixels": 23681529,
+      "predicted_pixels": 29196218,
+      "IoU": 0.45893074305807835,
+      "precision": 0.5697165297231306,
+      "recall": 0.7023857285566316,
+      "predicted_fraction_on_valid_GT": 0.4415459182094772,
+      "GT_fraction": 0.3581451017700088
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 2,
+      "name": "Building",
+      "GT_pixels": 4903323,
+      "predicted_pixels": 7621165,
+      "IoU": 0.49893053965141526,
+      "precision": 0.5470124318263677,
+      "recall": 0.8502136204365897,
+      "predicted_fraction_on_valid_GT": 0.11525788366667664,
+      "GT_fraction": 0.07415488733207323
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 3,
+      "name": "Road",
+      "GT_pixels": 3258386,
+      "predicted_pixels": 2090936,
+      "IoU": 0.4902610934052464,
+      "precision": 0.8416336033240616,
+      "recall": 0.5400839556762151,
+      "predicted_fraction_on_valid_GT": 0.03162204967908006,
+      "GT_fraction": 0.049277856407665736
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 4,
+      "name": "Water",
+      "GT_pixels": 10175908,
+      "predicted_pixels": 11913129,
+      "IoU": 0.6730594107408129,
+      "precision": 0.7459212436967652,
+      "recall": 0.8732641843853148,
+      "predicted_fraction_on_valid_GT": 0.1801669477551151,
+      "GT_fraction": 0.15389426950693288
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 5,
+      "name": "Barren",
+      "GT_pixels": 2746822,
+      "predicted_pixels": 2762565,
+      "IoU": 0.1895326322298597,
+      "precision": 0.31775940113626283,
+      "recall": 0.3195805916801307,
+      "predicted_fraction_on_valid_GT": 0.04177935989991459,
+      "GT_fraction": 0.0415412723027343
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 6,
+      "name": "Forest",
+      "GT_pixels": 4470465,
+      "predicted_pixels": 1831929,
+      "IoU": 0.2875003421815699,
+      "precision": 0.7682240960211886,
+      "recall": 0.31480662526157793,
+      "predicted_fraction_on_valid_GT": 0.027704984679850293,
+      "GT_fraction": 0.06760860510249411
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "fixed64/gray_RGB",
+      "id": 7,
+      "name": "Agricultural",
+      "GT_pixels": 16886289,
+      "predicted_pixels": 10706780,
+      "IoU": 0.5227698304361706,
+      "precision": 0.8847434989791515,
+      "recall": 0.5609731066429101,
+      "predicted_fraction_on_valid_GT": 0.1619228561098861,
+      "GT_fraction": 0.2553780075780909
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 1,
+      "name": "Background",
+      "GT_pixels": 1838135,
+      "predicted_pixels": 2695386,
+      "IoU": 0.38971916062393763,
+      "precision": 0.47167121889035557,
+      "recall": 0.691644520125018,
+      "predicted_fraction_on_valid_GT": 0.32131505012512207,
+      "GT_fraction": 0.2191227674484253
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 2,
+      "name": "Building",
+      "GT_pixels": 256437,
+      "predicted_pixels": 452289,
+      "IoU": 0.38814275389427627,
+      "precision": 0.43814684858574937,
+      "recall": 0.7727784992025332,
+      "predicted_fraction_on_valid_GT": 0.0539170503616333,
+      "GT_fraction": 0.03056967258453369
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 3,
+      "name": "Road",
+      "GT_pixels": 505422,
+      "predicted_pixels": 468712,
+      "IoU": 0.5315801720668143,
+      "precision": 0.7213427435184079,
+      "recall": 0.6689499072062554,
+      "predicted_fraction_on_valid_GT": 0.05587482452392578,
+      "GT_fraction": 0.06025099754333496
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 4,
+      "name": "Water",
+      "GT_pixels": 348444,
+      "predicted_pixels": 272204,
+      "IoU": 0.36408252434652844,
+      "precision": 0.608569308312883,
+      "recall": 0.4754135528234092,
+      "predicted_fraction_on_valid_GT": 0.03244924545288086,
+      "GT_fraction": 0.04153776168823242
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 5,
+      "name": "Barren",
+      "GT_pixels": 629954,
+      "predicted_pixels": 337086,
+      "IoU": 0.1665926769480206,
+      "precision": 0.40967586906605435,
+      "recall": 0.21921600624807525,
+      "predicted_fraction_on_valid_GT": 0.04018378257751465,
+      "GT_fraction": 0.07509636878967285
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 6,
+      "name": "Forest",
+      "GT_pixels": 310209,
+      "predicted_pixels": 162099,
+      "IoU": 0.3660943610153412,
+      "precision": 0.7808314671898038,
+      "recall": 0.4080216886034899,
+      "predicted_fraction_on_valid_GT": 0.01932370662689209,
+      "GT_fraction": 0.0369797945022583
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/RGB",
+      "id": 7,
+      "name": "Agricultural",
+      "GT_pixels": 4500007,
+      "predicted_pixels": 4000832,
+      "IoU": 0.7372252466258752,
+      "precision": 0.9016864492185626,
+      "recall": 0.8016645307440633,
+      "predicted_fraction_on_valid_GT": 0.47693634033203125,
+      "GT_fraction": 0.5364426374435425
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 1,
+      "name": "Background",
+      "GT_pixels": 1838135,
+      "predicted_pixels": 2998937,
+      "IoU": 0.35933559070921867,
+      "precision": 0.42637207783958114,
+      "recall": 0.6956306256069331,
+      "predicted_fraction_on_valid_GT": 0.35750114917755127,
+      "GT_fraction": 0.2191227674484253
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 2,
+      "name": "Building",
+      "GT_pixels": 256437,
+      "predicted_pixels": 435096,
+      "IoU": 0.3710147800830698,
+      "precision": 0.43010737860150405,
+      "recall": 0.7297620858144496,
+      "predicted_fraction_on_valid_GT": 0.05186748504638672,
+      "GT_fraction": 0.03056967258453369
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 3,
+      "name": "Road",
+      "GT_pixels": 505422,
+      "predicted_pixels": 473362,
+      "IoU": 0.528435326984008,
+      "precision": 0.7148883940831753,
+      "recall": 0.6695414920601003,
+      "predicted_fraction_on_valid_GT": 0.056429147720336914,
+      "GT_fraction": 0.06025099754333496
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 4,
+      "name": "Water",
+      "GT_pixels": 348444,
+      "predicted_pixels": 237257,
+      "IoU": 0.3311446870213046,
+      "precision": 0.6141146520439861,
+      "recall": 0.4181532757057088,
+      "predicted_fraction_on_valid_GT": 0.028283238410949707,
+      "GT_fraction": 0.04153776168823242
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 5,
+      "name": "Barren",
+      "GT_pixels": 629954,
+      "predicted_pixels": 256869,
+      "IoU": 0.21976356346581022,
+      "precision": 0.6220213416177117,
+      "recall": 0.2536343923524575,
+      "predicted_fraction_on_valid_GT": 0.03062117099761963,
+      "GT_fraction": 0.07509636878967285
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 6,
+      "name": "Forest",
+      "GT_pixels": 310209,
+      "predicted_pixels": 169365,
+      "IoU": 0.3789698571210862,
+      "precision": 0.7781832137690786,
+      "recall": 0.42486517154563536,
+      "predicted_fraction_on_valid_GT": 0.020189881324768066,
+      "GT_fraction": 0.0369797945022583
+    },
+    {
+      "teacher": "TG_official",
+      "input_group": "old8/gray_RGB",
+      "id": 7,
+      "name": "Agricultural",
+      "GT_pixels": 4500007,
+      "predicted_pixels": 3817722,
+      "IoU": 0.72940032680452,
+      "precision": 0.9189055672466461,
+      "recall": 0.7795823428719111,
+      "predicted_fraction_on_valid_GT": 0.4551079273223877,
+      "GT_fraction": 0.5364426374435425
+    }
+  ],
+  "source_class_collapse": false,
+  "near_absent_source_classes": [],
+  "license": "explicit research/evaluation only",
+  "use_for_T07_student_labels": true,
+  "weight_release": false,
+  "deployment_authorization_claimed": false
+}

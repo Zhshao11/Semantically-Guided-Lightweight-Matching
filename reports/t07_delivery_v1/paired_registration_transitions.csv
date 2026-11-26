@@ -1,0 +1,11 @@
+K,reference,variant,both_success,lost_success,gained_success,both_failure
+256,A,A_cap,443,69,71,369
+256,A_cap,S,446,68,67,371
+256,A,S,439,73,74,366
+256,AC,SC,431,69,85,367
+256,S,SC,439,74,77,362
+512,A,A_cap,441,69,79,363
+512,A_cap,S,460,60,50,382
+512,A,S,445,65,65,377
+512,AC,SC,445,70,69,368
+512,S,SC,438,72,76,366

@@ -1,0 +1,25 @@
+{
+  "train_pairs": 7912,
+  "positive_weight_fraction": 0.6761730105377907,
+  "raw_teacher_class_fractions": {
+    "Ignore": 0.0,
+    "Background": 0.6208658748738566,
+    "Building": 0.07490218637927357,
+    "Road": 0.007648043733756872,
+    "Water": 0.1063405606816584,
+    "Barren": 0.0620544576307399,
+    "Forest": 0.032391919405081876,
+    "Agricultural": 0.09579695729563283
+  },
+  "pre_abstention_mask_fraction": 0.8464413479919742,
+  "quarantined_images": 967,
+  "class_effective_mass": {
+    "Background": 0.31731212660303026,
+    "Building": 0.047665396926377265,
+    "Road": 0.006661916719774436,
+    "Water": 0.0834487569415391,
+    "Barren": 0.005002769838139407,
+    "Forest": 0.02402430689052315,
+    "Agricultural": 0.05131875639454563
+  }
+}

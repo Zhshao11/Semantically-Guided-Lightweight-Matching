@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-26",
+  "community_TG_research_conditions": "unconfirmed; not used to produce T07 student labels",
+  "replacement": "nvidia/mit-b2",
+  "revision": "3bb39e8739149c3777d0325349b2a6c32c6413db",
+  "license": "NVIDIA Source Code License for SegFormer; research/evaluation only, non-commercial",
+  "model_card_links_license_explicitly": true,
+  "redistribution": "not performed",
+  "deployment_authorization_claimed": false,
+  "files": [
+    {
+      "file": "config.json",
+      "bytes": 70044,
+      "sha256": "d9a879499e7d73e2b33af0638cee320b1070c8f0dadb620eac8907df3d18caa9",
+      "url": "https://huggingface.co/nvidia/mit-b2/resolve/3bb39e8739149c3777d0325349b2a6c32c6413db/config.json"
+    },
+    {
+      "file": "preprocessor_config.json",
+      "bytes": 272,
+      "sha256": "d96ab2cb112985c19d5ea32f1d1f2369104fc78b1379f5ce26e33ca8646202a7",
+      "url": "https://huggingface.co/nvidia/mit-b2/resolve/3bb39e8739149c3777d0325349b2a6c32c6413db/preprocessor_config.json"
+    },
+    {
+      "file": "pytorch_model.bin",
+      "bytes": 98978917,
+      "sha256": "4500b5665471b593e6757e15bcca5034f433fe3902fe8ec2b7230774a57f264f",
+      "url": "https://huggingface.co/nvidia/mit-b2/resolve/3bb39e8739149c3777d0325349b2a6c32c6413db/pytorch_model.bin"
+    }
+  ],
+  "pinned_license": {
+    "repository": "NVlabs/SegFormer",
+    "commit": "65fa8cfa9b52b6ee7e8897a98705abf8570f9e32",
+    "url": "https://raw.githubusercontent.com/NVlabs/SegFormer/65fa8cfa9b52b6ee7e8897a98705abf8570f9e32/LICENSE",
+    "sha256": "f549820c06519e3105e5174a2fd7285224ffd2268a7f879a843b1a255fd04a61",
+    "quoted_use_limitation": "The Work and any derivative works thereof only may be used or intended for use non-commercially. ... non-commercially means for research or evaluation purposes only."
+  }
+}

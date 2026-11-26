@@ -1,0 +1,52 @@
+{
+  "step": 2500,
+  "source_val64": true,
+  "OS_semantic_accuracy": false,
+  "definition": "coarse32 majority conditional class expanded to native1024; compare all valid GT pixels in accepted cells; mixed boundaries count as errors too",
+  "accepted_fraction": 0.6809597917036748,
+  "wrong_fraction_among_accepted": 0.2513232141264841,
+  "classes": [
+    {
+      "class_name": "Background",
+      "accepted_pixels": 16672601,
+      "wrong_pixels": 5429482,
+      "accepted_coarse_semantic_precision": 0.6743470319957876
+    },
+    {
+      "class_name": "Building",
+      "accepted_pixels": 6014976,
+      "wrong_pixels": 2326567,
+      "accepted_coarse_semantic_precision": 0.6132042754617808
+    },
+    {
+      "class_name": "Road",
+      "accepted_pixels": 1670623,
+      "wrong_pixels": 198490,
+      "accepted_coarse_semantic_precision": 0.8811880358405217
+    },
+    {
+      "class_name": "Water",
+      "accepted_pixels": 10324285,
+      "wrong_pixels": 1915167,
+      "accepted_coarse_semantic_precision": 0.8144988248580894
+    },
+    {
+      "class_name": "Barren",
+      "accepted_pixels": 1281024,
+      "wrong_pixels": 807438,
+      "accepted_coarse_semantic_precision": 0.369693307853717
+    },
+    {
+      "class_name": "Forest",
+      "accepted_pixels": 1033055,
+      "wrong_pixels": 94314,
+      "accepted_coarse_semantic_precision": 0.9087037960224771
+    },
+    {
+      "class_name": "Agricultural",
+      "accepted_pixels": 8030351,
+      "wrong_pixels": 544851,
+      "accepted_coarse_semantic_precision": 0.9321510354902295
+    }
+  ]
+}

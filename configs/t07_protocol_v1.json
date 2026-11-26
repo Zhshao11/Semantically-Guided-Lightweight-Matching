@@ -1,0 +1,89 @@
+{
+  "protocol": "T07-semantic-global-selection-v1",
+  "seed": 20261126,
+  "base_commit": "e208fc66d33272e02fae1d65feb952c0b265f3f2",
+  "matcher_checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "matcher_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "validation_plan": "reports/t05_frozen_v1/validation_plan.json",
+  "training_plan": "reports/t06_setup_v1/training_plan.json",
+  "budgets": [
+    256,
+    512
+  ],
+  "head": {
+    "width": 16,
+    "capacity_control_width": 29,
+    "baseline_parameters": 3489,
+    "joint_score_reference_parameters": 7977,
+    "capacity_control_parameters": 7831,
+    "input": "detached optical coarse64 plus masked SAR coarse GAP64; no cross-image correlation input",
+    "epochs": 12,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "loss": "train-global positive-balanced masked BCE",
+    "checkpoint_rule": "last of fixed12epochs; never select on952 validation",
+    "probe_train_pairs": 128,
+    "small_fit_steps": 300
+  },
+  "coverage": {
+    "grid": [
+      4,
+      4
+    ],
+    "base_per_cell": 2,
+    "max_per_cell": 32,
+    "utility": "mean top8 score, softmax over cells; capped Hamilton allocation",
+    "NMS_radius": 0,
+    "same_head_for_A_and_AC": true
+  },
+  "teacher_aggregation": {
+    "policy": "resize logits to native256 -> softmax8 -> masked8x8 area mean -> explicit8to7 mapping",
+    "factor": 8,
+    "min_valid_fraction": 1.0,
+    "min_retained_mass": 0.8,
+    "min_confidence": 0.6
+  },
+  "replacement_teacher": {
+    "initialization": "nvidia/mit-b2",
+    "revision": "3bb39e8739149c3777d0325349b2a6c32c6413db",
+    "reason": "community TG research conditions unconfirmed",
+    "steps": 3000,
+    "learning_rate": 6e-05,
+    "effective_batch": 4,
+    "micro_batch": 2,
+    "accumulation": 2,
+    "validation_every": 500,
+    "selection": "fixed64 gray pooled seven-class mIoU; earlier on ties",
+    "two_runs": "TR RGB / TG grayscale, otherwise identical; no mixed branch"
+  },
+  "semantic_student": {
+    "architecture": "v0.1 JointScore semantic branch and detached semantic residual; masked SAR GAP",
+    "parameters": 7977,
+    "KL_weight": 1.0,
+    "appearance_control_parameters": 7831,
+    "selection": "last fixed12epochs, no OS validation head selection",
+    "gradient": "matching BCE stops at semantic probability; semantic KL updates semantic branch only; no backbone instantiated",
+    "A_cap_checkpoint": "runs/t06_head_capacity_v1/last.pt",
+    "A_cap_reuse": "same head already trained12epochs with same7912 saved perturbations, cache, ordering, seed and last rule; newly evaluate global topK"
+  },
+  "modes": [
+    "U",
+    "A",
+    "A_cap",
+    "S",
+    "AC",
+    "SC"
+  ],
+  "deferred": [
+    "backbone unfreezing",
+    "hard selection adaptation",
+    "dynamic K",
+    "threshold changes",
+    "RANSAC changes"
+  ],
+  "SC": "secondary paired coverage only",
+  "teacher_abstention_policy": "same T06 >=95% Background AND >=90% mean raw maxp => zero whole-image supervision; additionally quarantine explicit fixed32 visual ambiguities; no base mask threshold increase; dominant Barren cells zeroed based on source64 accepted precision36.97%, seven probabilities retained"
+}

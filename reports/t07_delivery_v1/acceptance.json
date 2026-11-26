@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "matcher_and_protected_code_unchanged": true,
+  "license_explicit_research_only": true,
+  "community_TG_excluded_from_T07_student_labels": true,
+  "teacher_cache_train_pairs": 7912,
+  "quarantined_images": 967,
+  "semantic_student_parameters": 7977,
+  "appearance_control_parameters": 7831,
+  "same_training_budget_and_stream": true,
+  "teacher_not_in_online_inference": true,
+  "selected_before_Kx1024_correlation": true,
+  "all_fixed952": true,
+  "all_validation_BN_buffers_frozen": true,
+  "matching_threshold_RANSAC_unchanged": true,
+  "SC_secondary_same_head_as_S": true,
+  "backbone_unfrozen": false,
+  "dynamic_K": false,
+  "weights_published": false,
+  "source_sha256": {
+    "sglm/t07_semantic.py": "73b24d8d155ddfd8a61cc997c3441068fbe4401440e9f5415cda1294572c520b",
+    "scripts/train_t07_teacher.py": "a643f295998bcc48481c2e76b5b69f31f4347e28e6bd983b7fb3bc49a3f2244e",
+    "scripts/train_t07_head.py": "35f30d545a8e1d5dc4fb343853f3720073e07884feccec64c2d45c88262d6248",
+    "scripts/cache_t07_semantics.py": "812a092eb126c03544d930a685735f26507e2cf27859af7ebaf4d7a595c6e2e6",
+    "scripts/evaluate_t07_selection.py": "de3f727a74c27c642ab6a88773c9ad9d8766b5e010de530bf71c0742feccfe93"
+  }
+}

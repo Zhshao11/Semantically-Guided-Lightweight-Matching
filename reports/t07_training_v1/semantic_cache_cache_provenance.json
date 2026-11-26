@@ -1,0 +1,32 @@
+{
+  "computed_after_generation": true,
+  "artifacts": {
+    "runs/t07_semantic_cache_v1/semantic_targets.npz": {
+      "bytes": 134562063,
+      "sha256": "1d3d35b4cc9761fc9ea3fcf678775f8c1d2b66b310a12473a7992d26085f61c7"
+    },
+    "runs/t07_semantic_cache_v1/conditional7.npy": {
+      "bytes": 113426560,
+      "sha256": "5d52ea7687ca94cc55688d9da61270469dc1377079f7aaad88949b39fe3198b0"
+    },
+    "runs/t07_semantic_cache_v1/weight.npy": {
+      "bytes": 32407680,
+      "sha256": "5f30ca36f3aecd9aae5b1b27f698e1ef9cd373ef926f75225c1d22af54fee7a2"
+    },
+    "runs/t07_semantic_cache_v1/retained_mass.npy": {
+      "bytes": 32407680,
+      "sha256": "48ec85b87b0988f5f2c7a6f8317abcabd52115b66b8219ec06ede8f83f4f32aa"
+    },
+    "reports/t07_teacher_v1/teacher_freeze.json": {
+      "bytes": 91172,
+      "sha256": "7dae4480c59fa5da40875ef92c4361bd611657ae2831469189238d09661715b9"
+    }
+  },
+  "batch_size": 8,
+  "precision": "FP32 teacher inference, conditional7 storedfloat16, weight/retained_massfloat32",
+  "cudnn_TF32_allowed": true,
+  "cudnn_deterministic": false,
+  "cudnn_benchmark": false,
+  "matmul_TF32_allowed": false,
+  "source_validation_note": "teacher training validation sets cudnn.deterministic=True; other settings same; no bitwise claim across batch1 preview/batch8 cache"
+}
