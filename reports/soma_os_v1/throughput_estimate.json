@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "world_size": 4,
+  "effective_batch": 4,
+  "mean_update_seconds": 0.27336695541938144,
+  "median_update_seconds": 0.2720990478992462,
+  "images_per_second": 14.63234645117756,
+  "train_epoch_estimate_seconds": 540.7198378195365,
+  "validation_epoch_estimate_seconds": 82.88150639086962,
+  "base_epoch_estimate_seconds": 623.6013442104061,
+  "estimated_hours_20epochs": 3.4644519122800332,
+  "estimated_hours_100epochs": 17.32225956140017,
+  "estimated_range_hours_100epochs": [
+    14.723920627190143,
+    23.38505040789023
+  ],
+  "estimated_range_hours_20epochs": [
+    2.9447841254380283,
+    4.677010081578045
+  ],
+  "peak_perGPU_allocated_MiB": 7603.77099609375,
+  "weights_discarded": true,
+  "no_test_used": true,
+  "losses": [
+    190.30812072753906,
+    186.80113220214844,
+    187.64247131347656,
+    181.15980529785156,
+    166.58372497558594,
+    169.66293334960938,
+    142.16732788085938,
+    135.82736206054688,
+    170.48110961914062,
+    221.62306213378906,
+    304.78729248046875,
+    158.400390625
+  ]
+}
