@@ -1,0 +1,26 @@
+untrained_T05 100
+untrained_T05 200
+untrained_T05 300
+untrained_T05 400
+untrained_T05 500
+untrained_T05 600
+untrained_T05 700
+untrained_T05 800
+untrained_T05 900
+original_refiner 100
+original_refiner 200
+original_refiner 300
+original_refiner 400
+original_refiner 500
+original_refiner 600
+original_refiner 700
+original_refiner 800
+original_refiner 900
+Traceback (most recent call last):
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/evaluate_local_refinement.py", line 78, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/evaluate_local_refinement.py", line 33, in main
+    audit=InferenceStateAudit(model);audit.check();records=[];pooled={key:[] for key in ['before_inside','after_inside','before_outside','after_outside']}
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/sglm/diagnostics.py", line 57, in check
+    raise AssertionError('Evaluation requires model.eval() for every module')
+AssertionError: Evaluation requires model.eval() for every module

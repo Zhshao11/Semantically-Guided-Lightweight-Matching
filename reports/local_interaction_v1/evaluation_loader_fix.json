@@ -1,0 +1,13 @@
+{
+  "initial_evaluation_failure": "InferenceStateAudit correctly rejected newly replaced interaction module with training=True before any interaction-group evaluation",
+  "change": "build_local_group returns model.eval() after replacing/loading local module",
+  "training_unchanged": true,
+  "reason": "Training script already calls m.eval(); m.local.train() for bothgroups before every update. Local refiners have neither BN nor dropout.",
+  "weights_unchanged": true,
+  "thresholds_RANSAC_budget_unchanged": true,
+  "full_evaluation_rerun": true,
+  "original_training_local_source_sha256": "10d0fd50f0aa7f8b2ba205b8a8edf30dd38a85daeeb3269fd8b8e4abc29a4f09",
+  "evaluation_local_source_sha256": "a39c7d782ecacf5a253f7db333dec765e9ac7fc60b34a895b7ac0eb6786e978c",
+  "training_script_sha256": "c6c1da0d6cdf49a2ef26675e179ad1c024b83de1a4e3899448d5d1c074a2c620",
+  "new_regression": "test_replaced_refiner_is_also_eval_after_checkpoint_loading"
+}

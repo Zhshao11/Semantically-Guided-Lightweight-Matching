@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "pair_id": "osdataset/256/val/1",
+  "untrained_T05_exact_matrix_and_evaluation": true,
+  "diagnostic_interface": true,
+  "not_final_result": true
+}

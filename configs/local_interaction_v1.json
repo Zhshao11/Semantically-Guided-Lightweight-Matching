@@ -1,0 +1,21 @@
+{
+  "protocol":"paired-refiner-only-local-interaction-v1",
+  "date":"2026-11-27",
+  "base_revision":"9c980388e36e538dcaf43b5b7d3ea98e3f73212f",
+  "seed":20261127,
+  "frozen":"reports/t05_frozen_v1",
+  "checkpoint":"runs/t05_frozen_v1/checkpoint.pt",
+  "checkpoint_sha256":"f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "K":256,
+  "refinement_budget":null,
+  "budget_reason":"128 was only a K1024 ablation, not adopted for UniformK256. Preserve original UniformB0 K256: refine every thresholded mutual coarse candidate; pairwise counts identical for all variants, no new truncation.",
+  "coarse_selection":"originalT05 uniform256 query grid, originalno-match/mutual/confidence threshold; same frozen descriptors and scores",
+  "groups":["original_refiner","local_cross_attention"],
+  "interaction":{"layers":1,"heads":1,"attention_dim":16,"input_dim":32,"query_tokens":1,"SAR_tokens":49,"FFN":false,"dropout":0,"extra_parameters":2048,"readout":"existing normalized dotproduct/temperature/softmax/expected offset after residual optical query update","initialization":"qkv Xavier uniform,outputprojection zero => exactT05 initial local outputs"},
+  "window":"unchanged opticalradius0 + SARradius3 atfine stride2,7x7; same sample_windows/halfpixel/align_cornersFalse/validmask",
+  "training":{"epochs":4,"batch_size":4,"updates_per_epoch":1978,"updates":7912,"lr":0.0002,"weight_decay":0.0001,"gradient_clip":5,"precision":"original BF16 autocast; original local FP32 normalization/logits with autocast linears/readout","scheduler":"none","checkpoint":"fixed last epoch4 primary; no per-group best selection","trainable":"only each group's local refiner including shared projection and local temperature; encoder/coarse/allBNfrozen","data":"same7912dedupT03trainingpairs, samepresentation permutation and onlineaffines for bothgroups","supervision":"identical SmoothL1(original fine loss) on same predicted coarse correspondences with nominal truth in7x7window and validSAR/optical masks; noGT-bootstrap","no_supervised_pairs_step":"both optimizers still receive connected zero loss, update counts identical; report zero-supervision batches","loss_weight":0.2},
+  "evaluation":{"pairs":952,"plan":"reports/t05_frozen_v1/validation_plan.json","solver_seed":20261125,"evaluator":"originalT05 full affine RANSAC and independent16x16probes, allfailures retained","diagnostics":"same actual predicted correspondences, before/after nominal point errors; truth-visible+windowinside vs outside; pairmacro and pooled counts separate; noGT in prediction","reference_untrained":"originalT05K256 re-evaluated, additional context not an extra trainedgroup","no_test":true},
+  "timing":{"subset":"original24 T05timingindices","gpu_uuid":"GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b","rounds":3,"repeats":10,"warmup":5,"batch_size":1,"threads":4,"precision":"sameBF16","boundary":"CPUresident256uint8images+masks through H2D/uncached encode/coarse/predicted local refinement/coordinateD2H/originalaffineRANSAC, no IO orGT","order":"randomized interleaving perpair/repeat","peak_memory":"separate freshprocess pertrainedgroup, same24inputs, full PyTorchallocated peak including native library workspaces","exclusive":true},
+  "SOMA":"training/evaluation may share ourGPU6; formal timing temporarily releases ownSOMA from validlast checkpoint and restores same4GPU protocol afterward; never stop other users' processes",
+  "restrictions":["no semantics","no dynamicbudget","no encoder adaptation","no coarse threshold changes","no RANSAC/window changes","no heavierFFN or multicrosslayers","no test tuning"]
+}

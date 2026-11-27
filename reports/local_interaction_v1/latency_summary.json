@@ -1,0 +1,57 @@
+{
+  "summaries": [
+    {
+      "group": "original_refiner",
+      "pairs": 24,
+      "repeats_per_pair": 30,
+      "median_ms": 9.376867034006864,
+      "p90_ms": 10.2347711334005,
+      "round_medians_ms": [
+        7.219027495011687,
+        9.409144462551922,
+        9.421459515579045
+      ],
+      "peak_allocated_MiB": 41.392578125,
+      "peak_reserved_MiB": 62.0
+    },
+    {
+      "group": "local_cross_attention",
+      "pairs": 24,
+      "repeats_per_pair": 30,
+      "median_ms": 9.786485461518168,
+      "p90_ms": 10.609674779698253,
+      "round_medians_ms": [
+        7.601059507578611,
+        9.819015045650303,
+        9.831334406044334
+      ],
+      "peak_allocated_MiB": 43.05126953125,
+      "peak_reserved_MiB": 62.0
+    }
+  ],
+  "exclusive_guards": 144,
+  "protocol": {
+    "subset": "original24 T05timingindices",
+    "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+    "rounds": 3,
+    "repeats": 10,
+    "warmup": 5,
+    "batch_size": 1,
+    "threads": 4,
+    "precision": "sameBF16",
+    "boundary": "CPUresident256uint8images+masks through H2D/uncached encode/coarse/predicted local refinement/coordinateD2H/originalaffineRANSAC, no IO orGT",
+    "order": "randomized interleaving perpair/repeat",
+    "peak_memory": "separate freshprocess pertrainedgroup, same24inputs, full PyTorchallocated peak including native library workspaces",
+    "exclusive": true
+  },
+  "fresh_single_model_process": false,
+  "pid": 1467796,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "hardware_before": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 5581 MiB, 93 %, 329.82 W, 2820 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 1553 MiB, 25 %, 161.43 W, 2887 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 29939 MiB, 96 %, 416.23 W, 2835 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 16701 MiB, 89 %, 191.15 W, 2857 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 42.65 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 42.12 W, 337 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 1260 MiB, 22 %, 151.74 W, 2662 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 524 MiB, 0 %, 101.52 W, 2910 MHz\n",
+  "hardware_after": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 5581 MiB, 96 %, 321.25 W, 2820 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 1553 MiB, 23 %, 161.53 W, 2887 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 29939 MiB, 96 %, 424.52 W, 2850 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 16701 MiB, 89 %, 194.10 W, 2857 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 19.27 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 18.54 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 527 MiB, 0 %, 52.43 W, 2400 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 709 MiB, 4 %, 71.46 W, 2587 MHz\n",
+  "source_sha256": "05f9fa07e2f752211cce6d54efee8a34a6cea5c9bfa29fdd47b53acfbb4e2a13",
+  "no_hooks": true,
+  "no_feature_cache": true,
+  "GT_used": false
+}

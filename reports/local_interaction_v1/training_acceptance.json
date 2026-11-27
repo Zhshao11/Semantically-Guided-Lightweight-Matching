@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "updates_per_group": 7912,
+  "epochs": 4,
+  "train_pairs": 7912,
+  "candidates_and_supervision_identical": true,
+  "frozen_encoder_coarse_and_BN_unchanged": true,
+  "initial_prediction_bitwise_identical_on_first_real_batch": true,
+  "zero_supervision_batches": 0,
+  "frozen_sha256": {
+    "original_refiner": "c656c5aabdf9481e56e4bb5a730f65127286e2d11ac2c90a943ebb56a4f18162",
+    "local_cross_attention": "c656c5aabdf9481e56e4bb5a730f65127286e2d11ac2c90a943ebb56a4f18162"
+  },
+  "actual_parameters": {
+    "original_refiner": 37219,
+    "local_cross_attention": 39267
+  },
+  "trainable_parameters": {
+    "original_refiner": 513,
+    "local_cross_attention": 2561
+  },
+  "wall_seconds": 1307.515936784912,
+  "test_used": false,
+  "no_semantics": true,
+  "no_dynamic_budget": true
+}

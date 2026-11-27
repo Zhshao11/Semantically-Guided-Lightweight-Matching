@@ -9,6 +9,9 @@ SOMA另完成[复现可行性核查](reports/soma_audit_v1/SOMA复现核查.md)�
 在新的训练授权下，SOMA已另立[OS适配训练任务](reports/soma_os_v1/训练启动与耗时估计.md)：保持原上游文件，修正几何并使用正确register版DINO，7912训练/952验证选模/1696最终测试，4张空闲5090后台训练，上限100轮。实测估计满100轮约18–26小时；127项测试通过。训练后自动做测试与单卡计时，最终SR和推理成本当前待产生，不替代官方复现核查结论。
 
 
+固定K256局部精化受控比较已完成：冻结T05编码/粗匹配，两组仅微调精化器、相同7912次更新。952对验证，原精化器/一层2048参数局部交互的SR@5为52.63%/51.89%，窗口内平均定位误差仅额外改善0.011px；单卡无hook中位端到端9.377/9.786ms，独立进程峰值allocated41.11/42.78MiB。该单种子、4epoch预算结果不支持采用新模块；未改变查询、精化数、阈值或RANSAC。133项测试通过。见[精度—开销报告](reports/local_interaction_v1/report.md)及[复现说明](docs/LOCAL_REFINEMENT_REPRODUCTION_zh.md)。SOMA在测速后已从检查点恢复原4卡训练。
+
+
 ## 当前优先阶段：数据与几何基础
 
 本次阶段交付见 [数据与几何工程说明](docs/DATA_GEOMETRY_STAGE_zh.md)、[控制点格式](docs/CONTROL_POINTS_zh.md)及 `reports/data_geometry_v1/` 的完整审计和测试证据。配置实际读取 `configs/data_geometry_v1.json`；原有模型参考配置和短训练报告保留为历史。
