@@ -1,0 +1,75 @@
+{
+  "selection": {
+    "per_type": 3,
+    "selection": "first fixed validation-plan order satisfying full5success-prefix128failure or global128failure-coverage128success; never used to change rules"
+  },
+  "cases": [
+    {
+      "type": "full_success_prefix_failure",
+      "pair_index": 1,
+      "pair_id": "osdataset/256/val/2",
+      "file": "full_success_prefix_failure_0001.png",
+      "variants": [
+        "A0_all",
+        "A2_prefix128"
+      ]
+    },
+    {
+      "type": "full_success_prefix_failure",
+      "pair_index": 2,
+      "pair_id": "osdataset/256/val/3",
+      "file": "full_success_prefix_failure_0002.png",
+      "variants": [
+        "A0_all",
+        "A2_prefix128"
+      ]
+    },
+    {
+      "type": "full_success_prefix_failure",
+      "pair_index": 3,
+      "pair_id": "osdataset/256/val/4",
+      "file": "full_success_prefix_failure_0003.png",
+      "variants": [
+        "A0_all",
+        "A2_prefix128"
+      ]
+    },
+    {
+      "type": "global_failure_coverage_success",
+      "pair_index": 12,
+      "pair_id": "osdataset/256/val/13",
+      "file": "global_failure_coverage_success_0012.png",
+      "variants": [
+        "B0_global128",
+        "B1_coverage128"
+      ]
+    },
+    {
+      "type": "global_failure_coverage_success",
+      "pair_index": 56,
+      "pair_id": "osdataset/256/val/57",
+      "file": "global_failure_coverage_success_0056.png",
+      "variants": [
+        "B0_global128",
+        "B1_coverage128"
+      ]
+    },
+    {
+      "type": "global_failure_coverage_success",
+      "pair_index": 68,
+      "pair_id": "osdataset/256/val/69",
+      "file": "global_failure_coverage_success_0068.png",
+      "variants": [
+        "B0_global128",
+        "B1_coverage128"
+      ]
+    }
+  ],
+  "eligible_counts": {
+    "full_success_prefix_failure": 349,
+    "global_failure_coverage_success": 77
+  },
+  "arrows": "nominal affine reference probe -> predicted transformed probe; length is residual in pixels",
+  "teacher_or_GT_used_in_prediction": false,
+  "original_satellite_scene_known": false
+}

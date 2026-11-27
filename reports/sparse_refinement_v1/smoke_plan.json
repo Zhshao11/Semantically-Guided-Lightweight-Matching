@@ -1,0 +1,1345 @@
+{
+  "config": {
+    "protocol": "T03-B0-Full-online20-v1",
+    "seed": 20261125,
+    "input_size": 256,
+    "training_manifest": "reports/metadata_finalize_v1/train_256_dedup_v1.jsonl",
+    "reference_manifest": "reports/data_geometry_v1/dataset_manifest.jsonl",
+    "sampling": {
+      "train_pairs": 7912,
+      "val_pairs": 952,
+      "mode": "fresh_online_per_presentation",
+      "seed_namespace": "T03-online-v1"
+    },
+    "augmentation": {
+      "rotation_deg": [
+        -10,
+        10
+      ],
+      "uniform_scale": [
+        0.9,
+        1.1
+      ],
+      "translation_px_each_axis": [
+        -16,
+        16
+      ],
+      "shear_deg_each_axis": [
+        -5,
+        5
+      ],
+      "shear_coefficients": "tan(degrees*pi/180)",
+      "matrix_order_rightmost_first": "T_translation @ T_center @ R_rotation @ H_shear_xy @ S_uniform @ T_minus_center",
+      "H_shear_xy": "[[1,tan(shear_x)],[tan(shear_y),1]]",
+      "center_xy": [
+        127.5,
+        127.5
+      ],
+      "forward_direction": "SAR_original_to_SAR_augmented",
+      "image_sampling": "I_aug(y)=I_original(inverse(A_forward)*y); OpenCV forward-matrix API",
+      "valid_mask_min_weight": 0.999,
+      "normalization": "raw_uint8_divide_255_no_log_transform"
+    },
+    "model": {
+      "name": "B0-Full",
+      "coarse_stride": 8,
+      "fine_stride": 2,
+      "descriptor_dim": 32,
+      "local_radius_fine_cells": 3,
+      "coarse_min_probability": 0.01,
+      "mutual_nearest": true
+    },
+    "disabled": [
+      "semantics",
+      "joint_score",
+      "query_selection",
+      "dynamic_budget",
+      "local_cross_attention"
+    ],
+    "training": {
+      "precision": "bf16",
+      "batch_size": 4,
+      "total_steps": 39560,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip_norm": 5,
+      "checkpoint_interval": 100,
+      "fine_gt_bootstrap_steps": 400,
+      "fine_training_samples_per_pair": 256,
+      "fine_loss_weight": 0.2,
+      "no_match_loss_weight": 0.25,
+      "epochs": 20,
+      "num_workers": 4
+    },
+    "evaluation": {
+      "probe_grid": [
+        16,
+        16
+      ],
+      "probe_rule": "fixed cell centers independent of fitted correspondences",
+      "success_thresholds_px": [
+        1,
+        3,
+        5
+      ],
+      "ransac_threshold_px": 3,
+      "ransac_min_inliers": 6,
+      "ransac_max_iterations": 5000,
+      "ransac_confidence": 0.999,
+      "minimum_match_score": 0.0
+    },
+    "notes": [
+      "Same B0-Full architecture, distribution, losses, batch and evaluator as T02.",
+      "20 epochs are an observation budget, not a convergence claim.",
+      "No test images or scene controls used for model selection."
+    ],
+    "initialization": "from_scratch_same_seed_no_T02_weights",
+    "validation": {
+      "epochs": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "pairs": 952,
+      "batch_size": 1,
+      "best_metric": "success_rate@5px",
+      "best_direction": "maximize",
+      "tie_rule": "keep_earlier",
+      "test_used": false,
+      "all_affines_saved": true
+    },
+    "comparison": {
+      "only_variable": "training.learning_rate",
+      "main": 0.001,
+      "control": 0.0002,
+      "sample_order": "torch randperm(seed+epoch)",
+      "augmentation_token": "epoch*7912+position_in_epoch"
+    }
+  },
+  "samples": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt101.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar101.png",
+      "optical_sha256": "6b91ce0e7df41f0e92c96040d11ca820686355f9014c0b625f1c4b89d7697806",
+      "sar_sha256": "6d8fef3c4ca485318c10db483ecde8eefb93cebed9867ad4a23e0e220fe902ce",
+      "A_forward": [
+        [
+          0.9739162852971402,
+          -0.02955817217839112,
+          -6.044129492576218
+        ],
+        [
+          -0.04734668822619061,
+          0.9773408203403738,
+          7.201775038630771
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -2.549668124453566,
+        "uniform_scale": 0.9750583782868745,
+        "translation_px": [
+          -13.138470069935703,
+          -1.7239731168108676
+        ],
+        "shear_deg": [
+          -4.281962955957176,
+          -0.23356013168588152
+        ]
+      },
+      "original_cache_index": 13,
+      "verified512_parent": "osdataset/512/train/1020",
+      "crop_xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt104.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar104.png",
+      "optical_sha256": "8d00915a49f51e79ba404a2bb7a836a3e276dfb6996714f8e224c7dbbe7d445a",
+      "sar_sha256": "de65f79513ce07828c3ab85105c4c90dfe7d14843eab561ef3c7d221fad09962",
+      "A_forward": [
+        [
+          0.9094042874536851,
+          0.013202151713750932,
+          25.713338726958142
+        ],
+        [
+          -0.11936548095980783,
+          0.9177120296482603,
+          31.4312041255846
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -4.474525167007977,
+        "uniform_scale": 0.9159449301308011,
+        "translation_px": [
+          15.845659720806239,
+          5.7203890833622815
+        ],
+        "shear_deg": [
+          -3.6503282800806627,
+          -3.00318717911797
+        ]
+      },
+      "original_cache_index": 46,
+      "verified512_parent": "osdataset/512/train/1020",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/170",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt170.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar170.png",
+      "optical_sha256": "bd60da3d62d3fbc88cd6201f26210262060858d570a585788db9d9a498d15636",
+      "sar_sha256": "ea63c8b607c45df400c6d3f7d7cde023717555f6ab89cafeefcadee62e156985",
+      "A_forward": [
+        [
+          1.0117189272114664,
+          -0.09453788579036246,
+          9.777858061222148
+        ],
+        [
+          0.22311712590308427,
+          1.029046060703964,
+          -23.608941928133873
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 7.674852800891937,
+        "uniform_scale": 1.032453425294088,
+        "translation_px": [
+          -0.7815591575870968,
+          8.541864364264764
+        ],
+        "shear_deg": [
+          2.4258556755097027,
+          4.7616759299499805
+        ]
+      },
+      "original_cache_index": 752,
+      "verified512_parent": "osdataset/512/train/1036",
+      "crop_xy": [
+        256,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/171",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt171.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar171.png",
+      "optical_sha256": "03c0d895ea24bd8ebbeff9107bc2609af610a407c6b1833f7e61ef3d2f8ee509",
+      "sar_sha256": "ad2aa1cb1c8b8670d3acd93c823ded5a5d0772e2239f7fda7d360c7aa383b6f7",
+      "A_forward": [
+        [
+          1.0617912520713555,
+          -0.09835589830509199,
+          -2.328817200073857
+        ],
+        [
+          -0.04373098326492506,
+          1.0589621288960651,
+          -15.885347528430316
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 1.140678150680225,
+        "uniform_scale": 1.0607102728331756,
+        "translation_px": [
+          -6.990809594875255,
+          -13.943376460459945
+        ],
+        "shear_deg": [
+          -4.165702826879297,
+          -3.499131818638749
+        ]
+      },
+      "original_cache_index": 762,
+      "verified512_parent": "osdataset/512/train/1036",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/311",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt311.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar311.png",
+      "optical_sha256": "eb2171d2d39d0f42595e6197f01d5b72c209032f35b89257e294614b04319d23",
+      "sar_sha256": "d62fe8e845d586ddb8737743c45ba2fe6c2b54b305c7f9d44f4b1b7ed166c5a9",
+      "A_forward": [
+        [
+          0.89869135788097,
+          0.15099406477672025,
+          2.6919827998965786
+        ],
+        [
+          -0.12571308420406802,
+          0.8962391055860416,
+          24.331260953075528
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.540351256625913,
+        "uniform_scale": 0.906630266690855,
+        "translation_px": [
+          9.0268741887521,
+          -4.926671320722832
+        ],
+        "shear_deg": [
+          4.0227621762400165,
+          -2.4227743974946545
+        ]
+      },
+      "original_cache_index": 2214,
+      "verified512_parent": "osdataset/512/train/1068",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/312",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt312.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar312.png",
+      "optical_sha256": "38781d39cdbec3fabedf77031068862d84d1eb94072e3b280daf8d939bea73d3",
+      "sar_sha256": "afc48590428afc11c976515e9cd00efd3312ba6ae5fbcd076c90133c28daa981",
+      "A_forward": [
+        [
+          0.9479773984382133,
+          0.052491829167211526,
+          -10.253356385306063
+        ],
+        [
+          -0.06476521839844256,
+          0.9492324810507179,
+          2.8876326022191847
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.8387975732338155,
+        "uniform_scale": 0.9496479025978709,
+        "translation_px": [
+          -10.193529865614398,
+          -11.84279140961571
+        ],
+        "shear_deg": [
+          -2.6736086114542146,
+          1.9304592477423563
+        ]
+      },
+      "original_cache_index": 2225,
+      "verified512_parent": "osdataset/512/train/1068",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/363",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt363.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar363.png",
+      "optical_sha256": "480458a3ddf8e4c06fddc6546cd52a8314d8b5d9581ae371cedf68059a8a9792",
+      "sar_sha256": "c14bc1eeef9aaea1a6c1b727e9b602c8ffb94df1e854d152b1b6740e71eb0898",
+      "A_forward": [
+        [
+          1.097158833679867,
+          0.051808997219008036,
+          -23.38621612421376
+        ],
+        [
+          -0.05207983634651234,
+          1.097154790867436,
+          -9.370805322970867
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 0.8551899059183015,
+        "uniform_scale": 1.096259313890323,
+        "translation_px": [
+          -4.392817684607181,
+          -3.6237486215531085
+        ],
+        "shear_deg": [
+          3.55875869059256,
+          -3.5728608596754476
+        ]
+      },
+      "original_cache_index": 2791,
+      "verified512_parent": "osdataset/512/train/108",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/364",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt364.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar364.png",
+      "optical_sha256": "aa5e8356366c493f9d8de270343c4b6d72cfa51e2a7378c785856d7e38fabedf",
+      "sar_sha256": "3cecbec73d9121c03bb0b09848221fe0e7a99a4ffeaaaa4141e430acd8691b6a",
+      "A_forward": [
+        [
+          0.9534495391509064,
+          0.040461311559311285,
+          4.076004241386784
+        ],
+        [
+          -0.06403049364809472,
+          0.9559312820972153,
+          12.337112842644174
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -6.010872691553115,
+        "uniform_scale": 0.9549126064579707,
+        "translation_px": [
+          3.2996377069395457,
+          -1.445536630092942
+        ],
+        "shear_deg": [
+          -3.587184404081103,
+          2.168848016171733
+        ]
+      },
+      "original_cache_index": 2802,
+      "verified512_parent": "osdataset/512/train/108",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/393",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt393.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar393.png",
+      "optical_sha256": "c71f6072d70f2ea8ec38bb3e4d4e017df0ffa991dcce93ce9d882124904c8f6f",
+      "sar_sha256": "4ec81bc56fd33c9c9a80cdbba9e30790d3355ebcab717e75a21781ac62979fd2",
+      "A_forward": [
+        [
+          1.0699739096830432,
+          -0.09801855091416256,
+          4.996144268522727
+        ],
+        [
+          0.08176973021794144,
+          1.0687817013345948,
+          -30.70288810149117
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 4.196385934823256,
+        "uniform_scale": 1.0730889348268016,
+        "translation_px": [
+          1.4204525115549984,
+          -11.507580578542818
+        ],
+        "shear_deg": [
+          -1.0435831419445893,
+          0.17378741660029107
+        ]
+      },
+      "original_cache_index": 3124,
+      "verified512_parent": "osdataset/512/train/1087",
+      "crop_xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/395",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt395.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar395.png",
+      "optical_sha256": "2c6c0996f46ef5ab406182ed102c9f09664e4662e7439c118cacff08d02ce960",
+      "sar_sha256": "4c9909c620a30a8897b60375b6ff9541908497bd1696e7626e211f93c8609fa8",
+      "A_forward": [
+        [
+          0.9540840758734931,
+          -0.12740616307698857,
+          32.8687062712868
+        ],
+        [
+          0.13863197190073392,
+          0.9558055878290941,
+          -10.33586275760382
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 8.71856036286124,
+        "uniform_scale": 0.9640734538486325,
+        "translation_px": [
+          10.770140152841122,
+          1.7049261079492233
+        ],
+        "shear_deg": [
+          1.1259538105235878,
+          -0.45112995439577386
+        ]
+      },
+      "original_cache_index": 3146,
+      "verified512_parent": "osdataset/512/train/1087",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/503",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt503.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar503.png",
+      "optical_sha256": "122b4ab0b813a17d9c48a558c3cd9566318e2a82a08a0e82d87c7a22caca9a36",
+      "sar_sha256": "2bc230238ecc502bf80f4be0ec8b3d7935cb40f5a97594d770d5cfee23bf45a9",
+      "A_forward": [
+        [
+          0.8905223281098912,
+          -0.05948566858224448,
+          27.36567164046923
+        ],
+        [
+          0.1586803478321318,
+          0.9017171642128672,
+          -13.446778293857335
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.438997532826452,
+        "uniform_scale": 0.9027000075281437,
+        "translation_px": [
+          5.822845730244172,
+          -5.746095508119964
+        ],
+        "shear_deg": [
+          2.664702735056343,
+          3.6643799688424874
+        ]
+      },
+      "original_cache_index": 4347,
+      "verified512_parent": "osdataset/512/train/1110",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/504",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt504.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar504.png",
+      "optical_sha256": "60ae22606997afd1e7f115d6da68befe6a6d42b8996fea7775bc8973b96f46e9",
+      "sar_sha256": "0222beb48f08f3577176d4ff412da25da9105699248753e6a9372b4b9df9f5cb",
+      "A_forward": [
+        [
+          0.9432099240383298,
+          -0.12754745325009445,
+          22.120520651600728
+        ],
+        [
+          0.0553213998360963,
+          0.9353706336279393,
+          11.54039857453516
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.194535336958577,
+        "uniform_scale": 0.9436721965802575,
+        "translation_px": [
+          -1.3825143228992687,
+          10.353632841199708
+        ],
+        "shear_deg": [
+          -1.570444998307443,
+          -2.8378535765836688
+        ]
+      },
+      "original_cache_index": 4358,
+      "verified512_parent": "osdataset/512/train/1110",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/535",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt535.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar535.png",
+      "optical_sha256": "9592753c7babe4b819cda578f62dff0538498bfdd93517b81d6c989f67d942a7",
+      "sar_sha256": "d4a3bf775bdfb33fe33bb660ae752b16d4b6fef5fc2dd707a0605b7ec3141d63",
+      "A_forward": [
+        [
+          1.0629418034989535,
+          0.17390367515650432,
+          -37.11819024312612
+        ],
+        [
+          -0.17416469511863886,
+          1.062963577832813,
+          20.57615636494063
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -4.768583642117918,
+        "uniform_scale": 1.0737410888192742,
+        "translation_px": [
+          -6.9203917145552545,
+          6.398013910997843
+        ],
+        "shear_deg": [
+          4.522844563566371,
+          -4.53673402138694
+        ]
+      },
+      "original_cache_index": 4702,
+      "verified512_parent": "osdataset/512/train/1118",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/536",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt536.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar536.png",
+      "optical_sha256": "477bb6fcac3df31c145313ee0eeb4832176a0946ff0dcaa65e48df9cb40a8c7f",
+      "sar_sha256": "89f1367ef82955c9c03621588d9af184b9462e9158e2fc5b6a5ecaa1e57aad14",
+      "A_forward": [
+        [
+          1.009052773444968,
+          0.026288273725458153,
+          2.0533682217662204
+        ],
+        [
+          -0.03305711540445598,
+          1.009762510176958,
+          -5.465237449253124
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -5.9857904486523195,
+        "uniform_scale": 1.006998460009852,
+        "translation_px": [
+          6.559351735995534,
+          -8.43529961575912
+        ],
+        "shear_deg": [
+          -4.494482375354299,
+          4.109420759121576
+        ]
+      },
+      "original_cache_index": 4713,
+      "verified512_parent": "osdataset/512/train/1118",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/743",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt743.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar743.png",
+      "optical_sha256": "3a8dd035be3bec67b41a1fd20a39692d990af29c7d111272c280f0a069cea931",
+      "sar_sha256": "0c226097d6c9ccf6b89a6a264a4928e577e9fd2d5944bbb4d6e450538b1fd3f9",
+      "A_forward": [
+        [
+          1.0874091595426878,
+          0.1391825474131415,
+          -34.51233286814899
+        ],
+        [
+          -0.10291922072212631,
+          1.0810628043440673,
+          -2.95338570066464
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -9.926664069291233,
+        "uniform_scale": 1.0888717730340935,
+        "translation_px": [
+          -5.621890231280744,
+          -5.740078788867162
+        ],
+        "shear_deg": [
+          -2.590416217931052,
+          4.519938209200582
+        ]
+      },
+      "original_cache_index": 7013,
+      "verified512_parent": "osdataset/512/train/1165",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/744",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt744.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar744.png",
+      "optical_sha256": "ef38ee6fff728c7e4ef6feb84e5d52bd8256b4f978f32c7694a0783c779695b4",
+      "sar_sha256": "86bf0ce814914350bbb4889f12aed1e88e74c5cfb36c2e4fb68e1b650920684c",
+      "A_forward": [
+        [
+          0.9120698000492818,
+          -0.058550796335017724,
+          27.42369958509059
+        ],
+        [
+          -0.025191463052631823,
+          0.9076375688446768,
+          6.318751852798414
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 3.0296700306558417,
+        "uniform_scale": 0.9094635529884162,
+        "translation_px": [
+          8.74737255865928,
+          -8.669369658715858
+        ],
+        "shear_deg": [
+          -0.6613094622694335,
+          -4.6117832058364225
+        ]
+      },
+      "original_cache_index": 7024,
+      "verified512_parent": "osdataset/512/train/1165",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/811",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt811.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar811.png",
+      "optical_sha256": "e8d47694b2a7c559da6e2ee60cb3d0bf40187b0165377ae386895e5fc896a8fe",
+      "sar_sha256": "a53aec83b367604ea5b8a28744abb8feb4ee23e220abf2e6a47b2544a89e5cc9",
+      "A_forward": [
+        [
+          0.947004822878335,
+          -0.045750501070857985,
+          28.11713518219817
+        ],
+        [
+          0.14706506471779457,
+          0.9582535144072727,
+          1.4204976938843856
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.33545331109233,
+        "uniform_scale": 0.9574498671231938,
+        "translation_px": [
+          15.527061212651482,
+          14.848616532330443
+        ],
+        "shear_deg": [
+          3.6020204741441013,
+          2.4917817332122247
+        ]
+      },
+      "original_cache_index": 7704,
+      "verified512_parent": "osdataset/512/train/1180",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/812",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt812.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar812.png",
+      "optical_sha256": "b5af171bce273a85e7e1aeb564eaa71c0b3f0216ec5c51187ff2ef8f01e96f6f",
+      "sar_sha256": "c82867b9bed8eba81327e0ac05a9bbd3a0de9911a8ff0327678bb5283e856722",
+      "A_forward": [
+        [
+          0.9182368649419282,
+          -0.05640133132645485,
+          11.051910582760172
+        ],
+        [
+          0.17313921889591827,
+          0.93241184025874,
+          -16.185572755738832
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 6.923284657484892,
+        "uniform_scale": 0.9324117328872603,
+        "translation_px": [
+          -6.564058881266977,
+          -2.727812713519917
+        ],
+        "shear_deg": [
+          3.4616968650067967,
+          3.7548178526075215
+        ]
+      },
+      "original_cache_index": 7705,
+      "verified512_parent": "osdataset/512/train/1180",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/910",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt910.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar910.png",
+      "optical_sha256": "ce8bb7bc7890f6fd768ec5cd1ffbaa4d6c45c809607c07d7b2c80ac3913e2c44",
+      "sar_sha256": "e2dbd896e572a42e4640b424009dc32b6787c881444f9979ae84be95bcb5d0a4",
+      "A_forward": [
+        [
+          0.9204040203071926,
+          0.1673374500526099,
+          4.063357196142931
+        ],
+        [
+          -0.04697175709256198,
+          0.9050509879250124,
+          12.812667608608152
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -7.269009244091562,
+        "uniform_scale": 0.9189500031263008,
+        "translation_px": [
+          15.250394667017765,
+          -5.2822304602544286
+        ],
+        "shear_deg": [
+          3.2062723079593027,
+          4.347519787400726
+        ]
+      },
+      "original_cache_index": 7814,
+      "verified512_parent": "osdataset/512/train/1202",
+      "crop_xy": [
+        256,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/912",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt912.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar912.png",
+      "optical_sha256": "2e40068a3d2df88cc15395920917eab8f7bb54a7f846f815b07c00d165207f20",
+      "sar_sha256": "33cf4dc535f45532d6aede26cdf5cc792e5af9418af6f6964048ee0288362471",
+      "A_forward": [
+        [
+          1.02119109260183,
+          -0.25306967365837196,
+          34.566861394030724
+        ],
+        [
+          0.21337943072820784,
+          1.0146986228147405,
+          -14.271402760257246
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 9.290078820660238,
+        "uniform_scale": 1.0422432963265313,
+        "translation_px": [
+          5.002342309321612,
+          14.80854906646865
+        ],
+        "shear_deg": [
+          -4.714008797348372,
+          2.512152033342004
+        ]
+      },
+      "original_cache_index": 7816,
+      "verified512_parent": "osdataset/512/train/1202",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1053",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1053.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1053.png",
+      "optical_sha256": "5ad417a2a3b628fa985cc33d031d56aa662ec345c1874d3e2317ec782bd05e57",
+      "sar_sha256": "cc9aa6d2e9c8279042eeca9e658c7b0beae0cece997c110d49358e9b2a298fae",
+      "A_forward": [
+        [
+          1.0080181392474006,
+          -0.08821601156372748,
+          24.55399028462172
+        ],
+        [
+          0.03057887468673672,
+          1.0060132797011925,
+          9.470217308972423
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 1.9921825027818336,
+        "uniform_scale": 1.0084718900141132,
+        "translation_px": [
+          14.32876156429004,
+          14.135716993433416
+        ],
+        "shear_deg": [
+          -3.0191923254250916,
+          -0.25461127150743934
+        ]
+      },
+      "original_cache_index": 61,
+      "verified512_parent": "osdataset/512/train/1235",
+      "crop_xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1055",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1055.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1055.png",
+      "optical_sha256": "ca9b4ac7e4e0d4e895d6d10fec0b0798d55a66d8b3b10c78a24d3ae027649817",
+      "sar_sha256": "e625d42ba3c603e2cae5aa54681d403dd58f2a1f6664d3e6d469e0b7fbb9fda7",
+      "A_forward": [
+        [
+          0.9755308291778908,
+          0.04875424941266525,
+          -14.712949561065855
+        ],
+        [
+          0.0066867547864549355,
+          0.9761734212766595,
+          -5.053949353798657
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 0.6640602413057337,
+        "uniform_scale": 0.9755428068889626,
+        "translation_px": [
+          -11.616602040769958,
+          -7.239276905751563
+        ],
+        "shear_deg": [
+          3.5232791855376817,
+          -0.2713337211229607
+        ]
+      },
+      "original_cache_index": 63,
+      "verified512_parent": "osdataset/512/train/1235",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1098",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1098.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1098.png",
+      "optical_sha256": "b602d940ec77fef32e97ddb482670e2ac0840f4a0165daaa348584b92e5cbeb1",
+      "sar_sha256": "f83bbd3b1fa36dd207f43238c1cd2a7abcca2899ce0cbe82eea9ebb33cc02e9d",
+      "A_forward": [
+        [
+          1.04842119168219,
+          0.016094558164692928,
+          0.13134681173914942
+        ],
+        [
+          -0.04535188983748263,
+          1.048587480557753,
+          -10.25128550304099
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -0.32564651706396397,
+        "uniform_scale": 1.0486620187586932,
+        "translation_px": [
+          8.357104917216706,
+          -9.838747686206496
+        ],
+        "shear_deg": [
+          0.5537058194666304,
+          -2.1512711270064933
+        ]
+      },
+      "original_cache_index": 110,
+      "verified512_parent": "osdataset/512/train/1245",
+      "crop_xy": [
+        256,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1099",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1099.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1099.png",
+      "optical_sha256": "ca1c40decc53ffd3e1f08f81cbb7443ea60f40396716c89b0fea2135c403d5fc",
+      "sar_sha256": "dea9544584fd416b868fa39d4950b5331faeb326d5fc491671ebfab787a9048e",
+      "A_forward": [
+        [
+          1.0586381463560228,
+          0.12325581907666801,
+          -32.490515679846865
+        ],
+        [
+          -0.08225318085294725,
+          1.0553150043800124,
+          18.309944904982416
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -4.633525077634708,
+        "uniform_scale": 1.0618228743734595,
+        "translation_px": [
+          -9.29903508717878,
+          14.875327404683233
+        ],
+        "shear_deg": [
+          2.0281703183250777,
+          0.19073135650337658
+        ]
+      },
+      "original_cache_index": 111,
+      "verified512_parent": "osdataset/512/train/1245",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1258",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1258.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1258.png",
+      "optical_sha256": "efd6b29187b9568e0af88d3f41a051fe1a40f24cf156fbcc267c59986d50df75",
+      "sar_sha256": "2f341eec44aa293a7deb30c7826bc9871e79975dcb3db85a84d6a71c69250264",
+      "A_forward": [
+        [
+          1.0564199234771592,
+          -0.02046639028106232,
+          -18.786185114353202
+        ],
+        [
+          -0.02804134785275366,
+          1.0593334209785428,
+          -1.819171988586021
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -3.437200231542481,
+        "uniform_scale": 1.0562007467898615,
+        "translation_px": [
+          -14.202109631850842,
+          2.170567334952107
+        ],
+        "shear_deg": [
+          -4.544020702709518,
+          1.9167123322787214
+        ]
+      },
+      "original_cache_index": 288,
+      "verified512_parent": "osdataset/512/train/1281",
+      "crop_xy": [
+        256,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1260",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1260.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1260.png",
+      "optical_sha256": "29305866a47c8caa069ba3f5b0187117c5f55d035cba583dea52faa8fa8eafc6",
+      "sar_sha256": "408bd6fc62f5d312cb8fb732f5485b09d5bdc838e9c0d9135ad77e06e149b12c",
+      "A_forward": [
+        [
+          0.9174835568265792,
+          -0.20669002761530605,
+          48.199057584353454
+        ],
+        [
+          0.16976866157688264,
+          0.9121004927188013,
+          4.939623621546275
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 8.295166894596754,
+        "uniform_scale": 0.9323777978081784,
+        "translation_px": [
+          11.325232558790802,
+          15.377940794245976
+        ],
+        "shear_deg": [
+          -4.4729238962750415,
+          2.1881165240029485
+        ]
+      },
+      "original_cache_index": 291,
+      "verified512_parent": "osdataset/512/train/1281",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1270",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1270.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1270.png",
+      "optical_sha256": "fbf7864e96d79da3b9b3177e4560b4278b89869401a6d0d30380ce49b34fdd31",
+      "sar_sha256": "a342d0a325b73f383423a1a7c3dac53a74cce09920e427d08cf0c61f4eb797f1",
+      "A_forward": [
+        [
+          0.9624691827088762,
+          -0.032299949390125135,
+          4.537089955986971
+        ],
+        [
+          -0.03150884355809966,
+          0.9628777925327705,
+          12.227850221152593
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": -0.36689768432479575,
+        "uniform_scale": 0.962651217183351,
+        "translation_px": [
+          -4.36633279587226,
+          3.477391215423129
+        ],
+        "shear_deg": [
+          -2.288176888430158,
+          -1.5081537474032878
+        ]
+      },
+      "original_cache_index": 302,
+      "verified512_parent": "osdataset/512/train/1284",
+      "crop_xy": [
+        256,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1272",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1272.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1272.png",
+      "optical_sha256": "c67e1f470cac2c2371b79acf8d2a104d48f2e2058fbe22374b30db5b242cea83",
+      "sar_sha256": "781f7f5e1833522088812ccc7ad175f13d8569a18efc7fa9109f45b0c0c20726",
+      "A_forward": [
+        [
+          0.9200500026120154,
+          -0.12871923481853956,
+          38.50363341075547
+        ],
+        [
+          0.09475891941956435,
+          0.9167114599862068,
+          2.7231087326013323
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 5.61454564332834,
+        "uniform_scale": 0.924906941175274,
+        "translation_px": [
+          11.898306304423652,
+          4.18558210683717
+        ],
+        "shear_deg": [
+          -2.378334753640549,
+          0.265797991872323
+        ]
+      },
+      "original_cache_index": 304,
+      "verified512_parent": "osdataset/512/train/1284",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1391",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1391.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1391.png",
+      "optical_sha256": "7540e2f4901b65c3177379b3e7987babc9342646531f50c32dcf3a5353be05cb",
+      "sar_sha256": "9479a6c50b9c9d085e49a43cd01db667aca2b4a54ed73a4e95d12bb2b494e650",
+      "A_forward": [
+        [
+          0.9216858567800195,
+          -0.0932055114122285,
+          18.087530476280122
+        ],
+        [
+          0.11084069439606034,
+          0.9246211797285817,
+          -4.759835208382086
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 9.4500748428188,
+        "uniform_scale": 0.9273764242847469,
+        "translation_px": [
+          -3.7812254893265305,
+          -0.2384462574902244
+        ],
+        "shear_deg": [
+          3.6938757577632835,
+          -2.5926928473444946
+        ]
+      },
+      "original_cache_index": 428,
+      "verified512_parent": "osdataset/512/train/1310",
+      "crop_xy": [
+        0,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1392",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1392.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1392.png",
+      "optical_sha256": "e0587d803ebeeab0403185200e73af21ffeb095237c935be575907fd9073664b",
+      "sar_sha256": "e595984b906a1c8a3999b27cfd685802a7f499e6837258c9748caaf4f78ee041",
+      "A_forward": [
+        [
+          1.0680400580917284,
+          -0.08779793169690452,
+          7.0118566406382286
+        ],
+        [
+          0.13378706667731813,
+          1.0699562200735193,
+          -23.074121222934906
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 2.385879388408984,
+        "uniform_scale": 1.072683673241631,
+        "translation_px": [
+          4.4927277559782794,
+          2.9031478377968902
+        ],
+        "shear_deg": [
+          -2.3051589026571415,
+          4.75403496785448
+        ]
+      },
+      "original_cache_index": 429,
+      "verified512_parent": "osdataset/512/train/1310",
+      "crop_xy": [
+        256,
+        256
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1449",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1449.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1449.png",
+      "optical_sha256": "067eef4387f0461b4e8e1bf6f16aaed9d8ad9005fbe43dc3c83d1d25f254b672",
+      "sar_sha256": "bdb41bb899ccad35f23eb74c2889498dcabdccd8baf5b76117b1cfbbd047535c",
+      "A_forward": [
+        [
+          1.0115123981684133,
+          -0.16144252301202713,
+          24.879871090600986
+        ],
+        [
+          0.15592971715425918,
+          1.0106168096733497,
+          -14.49369829258481
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 9.227431149974457,
+        "uniform_scale": 1.023426948520581,
+        "translation_px": [
+          5.763780173040232,
+          6.740983877935317
+        ],
+        "shear_deg": [
+          0.1513153511042864,
+          -0.4639819600237951
+        ]
+      },
+      "original_cache_index": 488,
+      "verified512_parent": "osdataset/512/train/1324",
+      "crop_xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/train/1450",
+      "split": "train",
+      "optical_path": "Patch-level Subset/OSdataset/256/train/opt1450.png",
+      "sar_path": "Patch-level Subset/OSdataset/256/train/sar1450.png",
+      "optical_sha256": "ffe61eed7f7b06717f1745c45f82a6eedac1f16734a43ef63aa34d7fa8e4fe9c",
+      "sar_sha256": "9380801de2e4fc446cb39601ab1bf5224387a941368e137e5a121b59b1bbc2b3",
+      "A_forward": [
+        [
+          1.0229133575932021,
+          -0.100691362321782,
+          19.383675689820066
+        ],
+        [
+          0.1355679618296722,
+          1.025061683483034,
+          -26.267193182181998
+        ]
+      ],
+      "parameters": {
+        "rotation_deg": 3.5248470729607266,
+        "uniform_scale": 1.0293131473324002,
+        "translation_px": [
+          9.466980086926114,
+          -5.786913404811987
+        ],
+        "shear_deg": [
+          -2.085294394627162,
+          4.024636968576335
+        ]
+      },
+      "original_cache_index": 490,
+      "verified512_parent": "osdataset/512/train/1324",
+      "crop_xy": [
+        256,
+        0
+      ]
+    }
+  ]
+}

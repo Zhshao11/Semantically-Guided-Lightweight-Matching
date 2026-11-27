@@ -1,0 +1,741 @@
+{
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "protocol": {
+    "pairs": 24,
+    "subset": "original T05 timing_indices",
+    "rounds": 3,
+    "warmup": 5,
+    "repeats_per_round": 10,
+    "threads": 4,
+    "precision": "original BF16 autocast; logits/local FP32 as original",
+    "batch_size": 1,
+    "seed": 20261127,
+    "boundary": "GPU-resident inputs; network includes selector and local filtering; complete includes GPU->CPU predicted correspondences and unchanged full affine RANSAC; excludes IO, host->GPU, GT, logging and visualization",
+    "primary": "no hooks; uncached full forward every call; interleaved variants and independently measured network/complete calls",
+    "exclusive_gpu": true
+  },
+  "guards": [
+    {
+      "round": 0,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 0,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 0,
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 1,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 1,
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 2,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 2,
+      "pair_index": 936,
+      "after": true
+    }
+  ],
+  "source_sha256": "6c9323740ea7a681670bf5ddd40f4bc8425d0b0433e6d4cd279ab4486b722ce7",
+  "note": "Both identical-weight modules are resident throughout this calibration; use primary six-way benchmark for comparable single-model peak memory. Three-way order is interleaved; no hooks or caches."
+}

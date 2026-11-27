@@ -1,0 +1,7 @@
+reference,candidate,failure_to_success,success_to_failure,both_success,both_failure,net_success_change
+A0_all,A1_prefix256,36,102,418,396,-66
+A0_all,A2_prefix128,28,349,171,404,-321
+A0_all,A3_prefix64,20,421,99,412,-401
+A0_all,B0_global128,84,79,441,348,5
+A0_all,B1_coverage128,82,102,418,350,-20
+B0_global128,B1_coverage128,77,102,423,350,-25

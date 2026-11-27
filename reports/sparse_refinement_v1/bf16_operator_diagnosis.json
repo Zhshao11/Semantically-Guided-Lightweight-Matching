@@ -1,0 +1,38 @@
+{
+  "source": {
+    "dtype": "torch.float32",
+    "max_diff": 0.0
+  },
+  "candidates": {
+    "dtype": "torch.float32",
+    "max_diff": 0.0
+  },
+  "q_projection": {
+    "dtype": "torch.bfloat16",
+    "max_diff": 0.03125
+  },
+  "k_projection": {
+    "dtype": "torch.bfloat16",
+    "max_diff": 0.0
+  },
+  "q": {
+    "dtype": "torch.float32",
+    "max_diff": 0.0025535225868225098
+  },
+  "k": {
+    "dtype": "torch.float32",
+    "max_diff": 0.0
+  },
+  "logits": {
+    "dtype": "torch.float32",
+    "max_diff": 0.022279739379882812
+  },
+  "heatmap": {
+    "dtype": "torch.float32",
+    "max_diff": 0.0003970712423324585
+  },
+  "offset": {
+    "dtype": "torch.bfloat16",
+    "max_diff": 0.01171875
+  }
+}

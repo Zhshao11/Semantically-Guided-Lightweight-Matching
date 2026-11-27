@@ -1,0 +1,35 @@
+{
+  "checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "base_revision": "10c8c04768ad576d14283ee01c4b352a5604d55c",
+  "inputs_sha256": {
+    "configs/sparse_refinement_v1.json": "30d0482258ebdfb1b1273d47ca4c623972d9ae76906598e2d359c531743edff5",
+    "reports/t05_frozen_v1/validation_plan.json": "0b1c9033e3935bb8234126f852a3d39495cd59c3790bcd7e042d0a416b12ac51",
+    "reports/t05_frozen_v1/subsets.json": "5caa7172b05f26532e37f9815d54aca7bd86d5941aa0f0eec1a9b95870fdfe02",
+    "reports/t05_frozen_v1/candidate_config.json": "c531159cbdf29ddeac3e19e9427184249c24107cba44b91d034a5dd5ee32447e",
+    "reports/t05_results_v1/K1024_validation.json": "db0d0a1041880c0e7255c593ca12c3299fcbda3d3aa774a8ea807b1b3d7a9e01",
+    "reports/sparse_refinement_v1/smoke_plan.json": "4497c79d8c742a70926b9c7c6ac5672fc50dcd363d6ddc8e8c2f99a7f081d626",
+    "reports/sparse_refinement_v1/frozen_config.yaml": "643aff64b4a0a2df3a59aea3941079f8138bc1879918a41b919467f1a84c8a72",
+    "sglm/model.py": "faf8bbebf0f0f89cd67136c61bb5cb8c5593b7935ad4a8e6443541678166220a",
+    "sglm/t02/model.py": "598f7cc7c04477ca5b855532dd106c9ce4ccaec36608f62ea2e71f602d019e0a",
+    "sglm/t05.py": "ec6783ab569ad619bec0c70467da482e96b36c835a1dcd63e4fb59ca7aba664f",
+    "sglm/evaluation.py": "cc543598f71e25e869fb56c2abe1e343c32a4e400a9271d8ffdbcbf121b4be8b",
+    "sglm/geometry.py": "6c977bf49c725ae576ba3490d066b00afd7ed7cb772ba3d5fa21442852944c95",
+    "sglm/sparse_refinement.py": "e3587eef05fd2b50d604fa7f29dd26e2a7eaf56cdac5e3af5fe929b68896abf9"
+  },
+  "original_candidate_count_distribution": {
+    "pairs": 952,
+    "min": 86,
+    "P10": 202.0,
+    "median": 270.5,
+    "P90": 348.9,
+    "max": 461,
+    "fraction_below64": 0.0,
+    "fraction_below128": 0.004201680672268907,
+    "fraction_below256": 0.40441176470588236,
+    "budgets_retained": true
+  },
+  "no_training": true,
+  "test_used": false,
+  "prior_freeze_sha256": "211aa11ed27551eb1d30eb2e423f56e1828cf291a00c972a3475c5f7c2ef71f7"
+}

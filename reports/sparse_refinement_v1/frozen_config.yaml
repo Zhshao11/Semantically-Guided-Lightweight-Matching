@@ -1,0 +1,211 @@
+{
+  "protocol": {
+    "protocol": "fixed-budget-sparse-refinement-v1",
+    "date": "2026-11-27",
+    "base_revision": "10c8c04768ad576d14283ee01c4b352a5604d55c",
+    "frozen": "reports/t05_frozen_v1",
+    "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+    "coarse_query_budget": 1024,
+    "variants": [
+      {
+        "name": "A0_all",
+        "mode": "all",
+        "budget": null
+      },
+      {
+        "name": "A1_prefix256",
+        "mode": "prefix",
+        "budget": 256
+      },
+      {
+        "name": "A2_prefix128",
+        "mode": "prefix",
+        "budget": 128
+      },
+      {
+        "name": "A3_prefix64",
+        "mode": "prefix",
+        "budget": 64
+      },
+      {
+        "name": "B0_global128",
+        "mode": "global_conf",
+        "budget": 128
+      },
+      {
+        "name": "B1_coverage128",
+        "mode": "coverage_conf",
+        "budget": 128
+      }
+    ],
+    "budget_precheck": "inspect original T05 full validation N distribution before running variants; retain proposed budgets if majority N>=64",
+    "coverage_grid_hw": [
+      4,
+      4
+    ],
+    "coverage_rule": "row-major round-robin water filling; within-cell stable descending coarse confidence; no local suppression; output original index ascending",
+    "global_order": "stable descending confidence selects set; return original index ascending, same as coverage, to avoid additional RANSAC order confound",
+    "regression": {
+      "all_and_overbudget": "bitwise predictions, exact matrices and errors versus original T05",
+      "subset_atol_px": 0.125,
+      "subset_rtol": 0.0,
+      "heatmap_atol": 0.01,
+      "fp32_subset_atol_px": 0.0001,
+      "fp32_heatmap_atol": 1e-06,
+      "smoke_train_pairs": 32,
+      "tolerance_amendment": "initial 1e-4px/1e-6 BF16 test failed on first train smoke pair; windows exactly equal, shape-dependent BF16 optical linear projection differs; FP32 identical. Preserve initial freeze and diagnosis. BEFORE remaining32 smoke and formal validation, bound BF16 at1/8pixel and heatmap.01, retain strict FP32 diagnostic. Formal BF16 operator and weights unchanged; this is explained numerical tolerance, not bitwise subset equivalence."
+    },
+    "accuracy": "all952 unchanged T05 fixed validation transforms; independent frozen probes; failures retained; no test use",
+    "timing": {
+      "pairs": 24,
+      "subset": "original T05 timing_indices",
+      "rounds": 3,
+      "warmup": 5,
+      "repeats_per_round": 10,
+      "threads": 4,
+      "precision": "original BF16 autocast; logits/local FP32 as original",
+      "batch_size": 1,
+      "seed": 20261127,
+      "boundary": "GPU-resident inputs; network includes selector and local filtering; complete includes GPU->CPU predicted correspondences and unchanged full affine RANSAC; excludes IO, host->GPU, GT, logging and visualization",
+      "primary": "no hooks; uncached full forward every call; interleaved variants and independently measured network/complete calls",
+      "exclusive_gpu": true
+    },
+    "cases": {
+      "per_type": 3,
+      "selection": "first fixed validation-plan order satisfying full5success-prefix128failure or global128failure-coverage128success; never used to change rules"
+    },
+    "forbidden": [
+      "training",
+      "semantic scoring",
+      "threshold/window/RANSAC changes",
+      "mixed coarse/fine fitting",
+      "full-refinement fallback",
+      "feature cache in formal timing"
+    ]
+  },
+  "original_matcher_config": {
+    "protocol": "T03-B0-Full-online20-v1",
+    "seed": 20261125,
+    "input_size": 256,
+    "training_manifest": "reports/metadata_finalize_v1/train_256_dedup_v1.jsonl",
+    "reference_manifest": "reports/data_geometry_v1/dataset_manifest.jsonl",
+    "sampling": {
+      "train_pairs": 7912,
+      "val_pairs": 952,
+      "mode": "fresh_online_per_presentation",
+      "seed_namespace": "T03-online-v1"
+    },
+    "augmentation": {
+      "rotation_deg": [
+        -10,
+        10
+      ],
+      "uniform_scale": [
+        0.9,
+        1.1
+      ],
+      "translation_px_each_axis": [
+        -16,
+        16
+      ],
+      "shear_deg_each_axis": [
+        -5,
+        5
+      ],
+      "shear_coefficients": "tan(degrees*pi/180)",
+      "matrix_order_rightmost_first": "T_translation @ T_center @ R_rotation @ H_shear_xy @ S_uniform @ T_minus_center",
+      "H_shear_xy": "[[1,tan(shear_x)],[tan(shear_y),1]]",
+      "center_xy": [
+        127.5,
+        127.5
+      ],
+      "forward_direction": "SAR_original_to_SAR_augmented",
+      "image_sampling": "I_aug(y)=I_original(inverse(A_forward)*y); OpenCV forward-matrix API",
+      "valid_mask_min_weight": 0.999,
+      "normalization": "raw_uint8_divide_255_no_log_transform"
+    },
+    "model": {
+      "name": "B0-Full",
+      "coarse_stride": 8,
+      "fine_stride": 2,
+      "descriptor_dim": 32,
+      "local_radius_fine_cells": 3,
+      "coarse_min_probability": 0.01,
+      "mutual_nearest": true
+    },
+    "disabled": [
+      "semantics",
+      "joint_score",
+      "query_selection",
+      "dynamic_budget",
+      "local_cross_attention"
+    ],
+    "training": {
+      "precision": "bf16",
+      "batch_size": 4,
+      "total_steps": 39560,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip_norm": 5,
+      "checkpoint_interval": 100,
+      "fine_gt_bootstrap_steps": 400,
+      "fine_training_samples_per_pair": 256,
+      "fine_loss_weight": 0.2,
+      "no_match_loss_weight": 0.25,
+      "epochs": 20,
+      "num_workers": 4
+    },
+    "evaluation": {
+      "probe_grid": [
+        16,
+        16
+      ],
+      "probe_rule": "fixed cell centers independent of fitted correspondences",
+      "success_thresholds_px": [
+        1,
+        3,
+        5
+      ],
+      "ransac_threshold_px": 3,
+      "ransac_min_inliers": 6,
+      "ransac_max_iterations": 5000,
+      "ransac_confidence": 0.999,
+      "minimum_match_score": 0.0
+    },
+    "notes": [
+      "Same B0-Full architecture, distribution, losses, batch and evaluator as T02.",
+      "20 epochs are an observation budget, not a convergence claim.",
+      "No test images or scene controls used for model selection."
+    ],
+    "initialization": "from_scratch_same_seed_no_T02_weights",
+    "validation": {
+      "epochs": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "pairs": 952,
+      "batch_size": 1,
+      "best_metric": "success_rate@5px",
+      "best_direction": "maximize",
+      "tie_rule": "keep_earlier",
+      "test_used": false,
+      "all_affines_saved": true
+    },
+    "comparison": {
+      "only_variable": "training.learning_rate",
+      "main": 0.001,
+      "control": 0.0002,
+      "sample_order": "torch randperm(seed+epoch)",
+      "augmentation_token": "epoch*7912+position_in_epoch"
+    }
+  }
+}

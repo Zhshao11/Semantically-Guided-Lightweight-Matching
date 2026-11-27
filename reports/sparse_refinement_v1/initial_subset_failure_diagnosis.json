@@ -1,0 +1,98 @@
+[
+  {
+    "precision": "bf16",
+    "variant": "A0_all",
+    "N": 262,
+    "M": 262,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "bf16",
+    "variant": "A1_prefix256",
+    "N": 262,
+    "M": 256,
+    "max_coord": 0.0234375,
+    "max_heat": 0.00046375393867492676
+  },
+  {
+    "precision": "bf16",
+    "variant": "A2_prefix128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.0234375,
+    "max_heat": 0.0003970712423324585
+  },
+  {
+    "precision": "bf16",
+    "variant": "A3_prefix64",
+    "N": 262,
+    "M": 64,
+    "max_coord": 0.015625,
+    "max_heat": 0.0003970712423324585
+  },
+  {
+    "precision": "bf16",
+    "variant": "B0_global128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.015625,
+    "max_heat": 0.00046375393867492676
+  },
+  {
+    "precision": "bf16",
+    "variant": "B1_coverage128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.0234375,
+    "max_heat": 0.00039865076541900635
+  },
+  {
+    "precision": "fp32",
+    "variant": "A0_all",
+    "N": 262,
+    "M": 262,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "fp32",
+    "variant": "A1_prefix256",
+    "N": 262,
+    "M": 256,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "fp32",
+    "variant": "A2_prefix128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "fp32",
+    "variant": "A3_prefix64",
+    "N": 262,
+    "M": 64,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "fp32",
+    "variant": "B0_global128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  },
+  {
+    "precision": "fp32",
+    "variant": "B1_coverage128",
+    "N": 262,
+    "M": 128,
+    "max_coord": 0.0,
+    "max_heat": 0.0
+  }
+]

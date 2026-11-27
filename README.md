@@ -2,7 +2,7 @@
 
 面向光学–SAR 影像配准的轻量稀疏匹配网络，按当前 **v0.1 设计材料**建立的首版 PyTorch 实现。
 
-**当前状态：已完成T10-A冻结候选的共同支持审计。160,163查询、637,136条高分错误记录固定比较；主总体差0.013339，统一类别权重后的类内差0.001647。完整类内bootstrap仅4,473/20,000次可定义，其区间只能作条件描述；不据此启动全量训练。111项测试通过。** 见[审计报告与数据表](reports/t10_common_support_v1/审计报告.md)、[复现说明](docs/T10A_COMMON_SUPPORT_REPRODUCTION_zh.md)。
+**当前状态：已完成固定预算稀疏精化的实现、回归与受控评价。** 同一T05、全量粗查询K1024，952对SR@5：all54.62%、prefix256/128/64为47.69%/20.90%/12.50%、global_conf128为55.15%、coverage128为52.52%。全量逐对精确复现；119项测试通过。global128相对新增all入口完整延迟仅省约0.12ms，相对真正原T05入口反而多约0.12ms，尚无整网加速。见[报告](reports/sparse_refinement_v1/report.md)、[调用链审计](reports/sparse_refinement_v1/implementation_audit.md)、[复现说明](docs/SPARSE_REFINEMENT_REPRODUCTION_zh.md)。此前[T10共同支持审计](reports/t10_common_support_v1/审计报告.md)保留。
 
 
 ## 当前优先阶段：数据与几何基础

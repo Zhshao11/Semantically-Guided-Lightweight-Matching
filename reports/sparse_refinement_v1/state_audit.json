@@ -1,0 +1,14 @@
+{
+  "all_modules_eval": true,
+  "BN_buffers_unchanged": true,
+  "modal_bn_branch_calls": {
+    "0": 154224,
+    "1": 154224
+  },
+  "adapter_bn_branch_calls": {
+    "0": 5712,
+    "1": 5712
+  },
+  "expected_backbone_order": "optical=0 then SAR=1",
+  "image_pairs_seen": 5712
+}

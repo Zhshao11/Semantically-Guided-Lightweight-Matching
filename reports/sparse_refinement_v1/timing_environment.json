@@ -1,0 +1,898 @@
+{
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "pid": 3941867,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "protocol": {
+    "pairs": 24,
+    "subset": "original T05 timing_indices",
+    "rounds": 3,
+    "warmup": 5,
+    "repeats_per_round": 10,
+    "threads": 4,
+    "precision": "original BF16 autocast; logits/local FP32 as original",
+    "batch_size": 1,
+    "seed": 20261127,
+    "boundary": "GPU-resident inputs; network includes selector and local filtering; complete includes GPU->CPU predicted correspondences and unchanged full affine RANSAC; excludes IO, host->GPU, GT, logging and visualization",
+    "primary": "no hooks; uncached full forward every call; interleaved variants and independently measured network/complete calls",
+    "exclusive_gpu": true
+  },
+  "hardware_before": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 5581 MiB, 59 %, 326.50 W, 2820 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 2361 MiB, 37 %, 241.29 W, 2842 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 4791 MiB, 0 %, 97.54 W, 2895 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 19433 MiB, 85 %, 194.55 W, 2850 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 15.68 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 12.34 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 11.16 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 523 MiB, 0 %, 23.94 W, 1777 MHz\n",
+  "hardware_after": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 5581 MiB, 60 %, 328.20 W, 2812 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 2361 MiB, 34 %, 239.70 W, 2842 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 4791 MiB, 0 %, 72.80 W, 2535 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 19433 MiB, 82 %, 244.07 W, 2850 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 16.30 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 12.74 W, 195 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 11.54 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 733 MiB, 0 %, 55.08 W, 2400 MHz\n",
+  "no_hooks": true,
+  "no_feature_cache": true,
+  "all_formal_calls_original_sample_windows": true,
+  "exclusive_guards": [
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 0,
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 1,
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "phase": "formal",
+      "round": 2,
+      "pair_index": 936,
+      "after": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/benchmark_sparse_refinement.py": "c1dcc7893add34f9ac412bb98c518865057f5e01dfb358b61aafebf5a0038e7a",
+    "sglm/sparse_refinement.py": "e3587eef05fd2b50d604fa7f29dd26e2a7eaf56cdac5e3af5fe929b68896abf9",
+    "sglm/t02/model.py": "598f7cc7c04477ca5b855532dd106c9ce4ccaec36608f62ea2e71f602d019e0a",
+    "sglm/model.py": "faf8bbebf0f0f89cd67136c61bb5cb8c5593b7935ad4a8e6443541678166220a"
+  },
+  "stage_warning": "separate synchronized diagnostic pass; local remainder includes instrumentation overhead; never sum stages as formal end-to-end latency"
+}

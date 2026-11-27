@@ -1,0 +1,95 @@
+formal round finished 1
+formal round finished 2
+formal round finished 3
+[
+  {
+    "variant": "A0_all",
+    "network_mean_ms": 7.1117104810481475,
+    "network_median_ms": 7.771195494569838,
+    "network_p95_ms": 8.3998762012925,
+    "network_round_medians_ms": "[6.172282970510423, 5.809166003018618, 7.915182097349316]",
+    "network_round_median_std_ms": 1.1258222985886175,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 8.051733008728156,
+    "complete_median_ms": 8.77689546905458,
+    "complete_p95_ms": 9.527676808647811,
+    "complete_round_medians_ms": "[7.010192552115768, 6.568374985363334, 8.97573004476726]",
+    "complete_round_median_std_ms": 1.2815289552813753,
+    "complete_peak_allocated_MiB": 53.91357421875
+  },
+  {
+    "variant": "A1_prefix256",
+    "network_mean_ms": 7.114750840830514,
+    "network_median_ms": 7.786954985931516,
+    "network_p95_ms": 8.441331540234387,
+    "network_round_medians_ms": "[6.135781004559249, 5.786802503280342, 7.942305994220078]",
+    "network_round_median_std_ms": 1.1569726179471809,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 8.04380658874935,
+    "complete_median_ms": 8.758724492508918,
+    "complete_p95_ms": 9.51196847599931,
+    "complete_round_medians_ms": "[7.070609019137919, 6.608991476241499, 8.963192522060126]",
+    "complete_round_median_std_ms": 1.247479167199232,
+    "complete_peak_allocated_MiB": 53.91357421875
+  },
+  {
+    "variant": "A2_prefix128",
+    "network_mean_ms": 7.101520758846568,
+    "network_median_ms": 7.771008997224271,
+    "network_p95_ms": 8.428537211148068,
+    "network_round_medians_ms": "[6.127165514044464, 5.8128744713030756, 7.899923482909799]",
+    "network_round_median_std_ms": 1.1252572485563481,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 7.9367112282650645,
+    "complete_median_ms": 8.652389515191317,
+    "complete_p95_ms": 9.38133139279671,
+    "complete_round_medians_ms": "[6.90755998948589, 6.538451940286905, 8.855923020746559]",
+    "complete_round_median_std_ms": 1.2451928540279469,
+    "complete_peak_allocated_MiB": 53.91357421875
+  },
+  {
+    "variant": "A3_prefix64",
+    "network_mean_ms": 7.0995337219857095,
+    "network_median_ms": 7.76953948661685,
+    "network_p95_ms": 8.424238202860579,
+    "network_round_medians_ms": "[6.2076415051706135, 5.779202445410192, 7.919890980701894]",
+    "network_round_median_std_ms": 1.132688961388994,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 7.834546800101331,
+    "complete_median_ms": 8.566313015762717,
+    "complete_p95_ms": 9.209596348227933,
+    "complete_round_medians_ms": "[6.919100531376898, 6.457709998358041, 8.736778981983662]",
+    "complete_round_median_std_ms": 1.20491988709374,
+    "complete_peak_allocated_MiB": 53.91357421875
+  },
+  {
+    "variant": "B0_global128",
+    "network_mean_ms": 7.180666916246992,
+    "network_median_ms": 7.866279978770763,
+    "network_p95_ms": 8.463651192141697,
+    "network_round_medians_ms": "[6.2095074681565166, 5.86524949176237, 8.00259440438822]",
+    "network_round_median_std_ms": 1.1476002200769067,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 7.93718636414269,
+    "complete_median_ms": 8.682683517690748,
+    "complete_p95_ms": 9.352861950173974,
+    "complete_round_medians_ms": "[6.990712485276163, 6.5161725506186485, 8.8440504623577]",
+    "complete_round_median_std_ms": 1.2301128253700966,
+    "complete_peak_allocated_MiB": 53.91357421875
+  },
+  {
+    "variant": "B1_coverage128",
+    "network_mean_ms": 8.222246337552658,
+    "network_median_ms": 8.996977005153894,
+    "network_p95_ms": 9.68063116306439,
+    "network_round_medians_ms": "[7.128429540898651, 6.724636419676244, 9.162801434285939]",
+    "network_round_median_std_ms": 1.3068005792658524,
+    "network_peak_allocated_MiB": 53.91357421875,
+    "complete_mean_ms": 9.053217774877945,
+    "complete_median_ms": 9.899414551910013,
+    "complete_p95_ms": 10.601968655828387,
+    "complete_round_medians_ms": "[7.876649498939514, 7.423050526995212, 10.108461021445692]",
+    "complete_round_median_std_ms": 1.4374841577703874,
+    "complete_peak_allocated_MiB": 53.91357421875
+  }
+]

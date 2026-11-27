@@ -1,0 +1,10 @@
+{
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "warmup_per_variant_per_pair": 5,
+  "repeats": 3,
+  "interleaved": true,
+  "seed": 20261129,
+  "source_sha256": "14d0af107b4fb5bd041eb93db1c5935b3ca7bf38ddc6145afb30bd3813675e10",
+  "reason": "Initial stage pass used fixed variant order without explicit stage warmup and showed first-variant startup contamination; retain initialCSV, redo only diagnostic timing; primary no-hook timings unchanged.",
+  "warning": "Synchronized instrumentation includes CPU and synchronization overhead; do not sum or compare it as formal end-to-end latency."
+}

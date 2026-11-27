@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/regress_sparse_refinement.py", line 60, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/regress_sparse_refinement.py", line 34, in main
+    assert difference<=p['regression']['subset_atol_px'] and heat_difference<=p['regression']['heatmap_atol']
+AssertionError

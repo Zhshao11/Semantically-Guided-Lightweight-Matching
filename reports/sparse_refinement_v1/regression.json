@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "train_pairs": 32,
+  "variant_runs": 192,
+  "no_training": true,
+  "all_original_predictions_bitwise_equal": true,
+  "overbudget_original_order_and_outputs_equal": true,
+  "actual_local_counts_equal_selection": true,
+  "subset_vs_full_max_coordinate_difference_px": 0.03125,
+  "subset_vs_full_max_heatmap_difference": 0.0008722245693206787,
+  "fp32_subset_max_coordinate_difference_px": 0.0,
+  "fp32_subset_max_heatmap_difference": 0.0,
+  "tolerance": {
+    "all_and_overbudget": "bitwise predictions, exact matrices and errors versus original T05",
+    "subset_atol_px": 0.125,
+    "subset_rtol": 0.0,
+    "heatmap_atol": 0.01,
+    "fp32_subset_atol_px": 0.0001,
+    "fp32_heatmap_atol": 1e-06,
+    "smoke_train_pairs": 32,
+    "tolerance_amendment": "initial 1e-4px/1e-6 BF16 test failed on first train smoke pair; windows exactly equal, shape-dependent BF16 optical linear projection differs; FP32 identical. Preserve initial freeze and diagnosis. BEFORE remaining32 smoke and formal validation, bound BF16 at1/8pixel and heatmap.01, retain strict FP32 diagnostic. Formal BF16 operator and weights unchanged; this is explained numerical tolerance, not bitwise subset equivalence."
+  },
+  "state_audit": {
+    "all_modules_eval": true,
+    "BN_buffers_unchanged": true,
+    "modal_bn_branch_calls": {
+      "0": 864,
+      "1": 864
+    },
+    "adapter_bn_branch_calls": {
+      "0": 32,
+      "1": 32
+    },
+    "expected_backbone_order": "optical=0 then SAR=1",
+    "image_pairs_seen": 32
+  }
+}
