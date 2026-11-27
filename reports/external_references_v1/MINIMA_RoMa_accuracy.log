@@ -1,0 +1,82 @@
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Using coarse resolution (560, 560), and upsample res (864, 864)
+MINIMA_RoMa 20 952 elapsed 11.2
+MINIMA_RoMa 40 952 elapsed 19.2
+MINIMA_RoMa 60 952 elapsed 27.3
+MINIMA_RoMa 80 952 elapsed 35.7
+MINIMA_RoMa 100 952 elapsed 43.8
+MINIMA_RoMa 120 952 elapsed 52.0
+MINIMA_RoMa 140 952 elapsed 60.0
+MINIMA_RoMa 160 952 elapsed 67.9
+MINIMA_RoMa 180 952 elapsed 76.7
+MINIMA_RoMa 200 952 elapsed 84.6
+MINIMA_RoMa 220 952 elapsed 92.5
+MINIMA_RoMa 240 952 elapsed 100.3
+MINIMA_RoMa 260 952 elapsed 108.0
+MINIMA_RoMa 280 952 elapsed 115.7
+MINIMA_RoMa 300 952 elapsed 123.7
+MINIMA_RoMa 320 952 elapsed 132.0
+MINIMA_RoMa 340 952 elapsed 140.3
+MINIMA_RoMa 360 952 elapsed 148.3
+MINIMA_RoMa 380 952 elapsed 156.2
+MINIMA_RoMa 400 952 elapsed 164.1
+MINIMA_RoMa 420 952 elapsed 172.0
+MINIMA_RoMa 440 952 elapsed 180.0
+MINIMA_RoMa 460 952 elapsed 187.8
+MINIMA_RoMa 480 952 elapsed 195.8
+MINIMA_RoMa 500 952 elapsed 203.7
+MINIMA_RoMa 520 952 elapsed 211.9
+MINIMA_RoMa 540 952 elapsed 219.9
+MINIMA_RoMa 560 952 elapsed 228.2
+MINIMA_RoMa 580 952 elapsed 236.2
+MINIMA_RoMa 600 952 elapsed 244.3
+MINIMA_RoMa 620 952 elapsed 252.1
+MINIMA_RoMa 640 952 elapsed 260.1
+MINIMA_RoMa 660 952 elapsed 268.1
+MINIMA_RoMa 680 952 elapsed 276.2
+MINIMA_RoMa 700 952 elapsed 284.2
+MINIMA_RoMa 720 952 elapsed 292.2
+MINIMA_RoMa 740 952 elapsed 300.4
+MINIMA_RoMa 760 952 elapsed 308.6
+MINIMA_RoMa 780 952 elapsed 316.7
+MINIMA_RoMa 800 952 elapsed 325.0
+MINIMA_RoMa 820 952 elapsed 333.2
+MINIMA_RoMa 840 952 elapsed 341.0
+MINIMA_RoMa 860 952 elapsed 349.1
+MINIMA_RoMa 880 952 elapsed 357.2
+MINIMA_RoMa 900 952 elapsed 365.9
+MINIMA_RoMa 920 952 elapsed 374.0
+MINIMA_RoMa 940 952 elapsed 382.2
+{
+  "method": "MINIMA_RoMa",
+  "image_pairs": 952,
+  "solved_pairs": 952,
+  "failed_pairs": 0,
+  "failure_rate": 0.0,
+  "solved_mean_rmse_px": 22.471771111844884,
+  "solved_median_rmse_px": 12.727652609758191,
+  "success_rate@1px": 0.0,
+  "registration_failure_rate@1px": 1.0,
+  "successful_mean_rmse@1px": null,
+  "success_rate@3px": 0.05672268907563025,
+  "registration_failure_rate@3px": 0.9432773109243697,
+  "successful_mean_rmse@3px": 2.395378644750113,
+  "success_rate@5px": 0.17331932773109243,
+  "registration_failure_rate@5px": 0.8266806722689075,
+  "successful_mean_rmse@5px": 3.432062251062132,
+  "solved_p90_rmse_px": 50.464120930680394,
+  "registration_failures5": 787,
+  "mean_raw_matches": 10000.0,
+  "mean_valid_matches": 9881.252100840336,
+  "removed_invalid_total": 113048,
+  "parameters_registered": 111288336,
+  "parameters_dino_hidden": 304368640,
+  "actual_parameters_total": 415656976,
+  "BN_unchanged": true,
+  "accuracy_wall_seconds": 387.6408183469903,
+  "formal_timing": false,
+  "original_T05_exact_pairs": null
+}

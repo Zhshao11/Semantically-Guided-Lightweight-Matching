@@ -1,0 +1,24 @@
+{
+  "protocol": "external-official-zero-shot-reference-v1",
+  "date": "2026-11-27",
+  "base_revision": "d602f8f7b98f81d0badc92ef661bab928c35785a",
+  "source_root": "runs/external_references_v1",
+  "output": "reports/external_references_v1",
+  "frozen": "reports/t05_frozen_v1",
+  "validation": "same952 T05 saved inputs, masks and A_forward; no test; no selection from validation for architecture/thresholds",
+  "methods": ["T05", "XoFTR", "MINIMA_RoMa"],
+  "method_protocols": {
+    "T05": {"code":"original B0Full.predict, unmodified; epoch18", "input":"RGB-repeated optical3 + SAR1,256x256", "precision":"original BF16 autocast with FP32 logits and original local ops"},
+    "XoFTR": {"repository":"https://github.com/OnderT/XoFTR", "commit":"e0fbea431b30be9742effbf5577c90aa8eb938f9", "checkpoint":"weights/weights_xoftr_640.ckpt", "checkpoint_url":"https://drive.google.com/drive/folders/1RAI243OHuyZ4Weo1NiTy280bCE_82s4q", "artifact_download":"https://drive.usercontent.google.com/download?id=1oRkEGsLpPIxlulc6a7c2q5H1XTNbfkVj&export=download&confirm=t", "input_resize":640, "coarse_threshold":0.3,"fine_threshold":0.1,"denser":false,"precision":"official FP32; no added autocast"},
+    "MINIMA_RoMa": {"repository":"https://github.com/LSXI7/MINIMA", "commit":"796e7721174f9f829b79b3702bf8c2ae9a3d447a", "roma_repository":"https://github.com/LSXI7/RoMa_minima", "roma_commit":"0d3fd22dfaf5b7e463a93c3d7f0cbc26df953663", "checkpoint":"weights/minima_roma.pth", "checkpoint_url":"https://github.com/LSXI7/storage/releases/download/MINIMA/minima_roma.pth", "dinov2":"weights/dinov2_vitl14_pretrain.pth", "dinov2_url":"https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth", "outer_resize":640,"coarse_resolution":560,"upsample_resolution":864,"sample_count":10000,"sample_mode":"official threshold_balanced; default threshold0.05","precision":"official mixed FP16/FP32, no added global autocast; xformers unavailable => official attention fallback"}
+  },
+  "coordinate_restore": "official public interface convention: XoFTR resized pixel coords multiplied by256/640; RoMa official to_pixel_coordinates at640 then multiplied256/640; no undocumented half-pixel or stride correction",
+  "common_postfilter": "finite Nx2 scores, original pixel centers within[0,255], both supplied affine-valid masks bilinear sampled>.999; no GT/correctness filtering; same for all methods",
+  "geometry": "original T05 full affine RANSAC and independent16x16 probes, original seed/thresholds/failure denominator; external native homography/pose estimators not used",
+  "randomness": "RoMa official stochastic sampler seeded by SHA256(original matcher seed/pair_id/external-reference) before each independent call, identical in accuracy and timing",
+  "smoke": "first2 original T10 training pairs, unchanged affine; forwards, checkpoint load, finite outputs and repeatability before full validation",
+  "timing": {"gpu_index":7,"gpu_uuid":"GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b","batch_size":1,"threads":4,"subset":"same24 T05 timing_indices;24 verified parents, scene unresolved","rounds":3,"warmup_per_pair":3,"repeats_per_pair_per_round":5,"method_order":"rotate fixed methods by round; load only one matcher on GPU at a time","boundary":"CPU resident original256 uint8 arrays+valid masks -> all method preprocessing/resize/normalization + H2D + unmodified matching + sampling + coordinate restore + common valid filtering + D2H + original affine RANSAC; exclude disk IO, synthetic-image creation, GT probes, initialization and per-call logging","no_feature_cache":true,"exclusive_gpu_required":true,"seed":20261127},
+  "comparison_scope": "same source data/hardware/geometry/batch/timing boundary; official internal sizes and native precision differ and must be explicit. T05 trained OS-train; externals zero-shot SAR; no claim of identical training data or official published benchmark replication.",
+  "development_budget": "set only after results; distinguish precision acceptance, latency stretch goal and memory ceiling; no changing model in this task",
+  "forbidden": ["fine-tuning","retraining","threshold tuning on validation/test","test selection","drop solver failures","redistribute weights"]
+}

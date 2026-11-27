@@ -1,0 +1,14 @@
+{
+  "runs/external_references_v1/weights/minima_roma.pth": {
+    "bytes": 445638463,
+    "sha256": "17f3923bd780e8f1450792706e0643f70c8864ad11bf5fd4f2b54714bac23538"
+  },
+  "runs/external_references_v1/weights/weights_xoftr_640.ckpt": {
+    "bytes": 44486099,
+    "sha256": "6e7f24e553f76746ef49061bf44c7d11252e56057470d1421bcd4e6506af3a67"
+  },
+  "runs/external_references_v1/weights/dinov2_vitl14_pretrain.pth": {
+    "bytes": 1217586395,
+    "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428"
+  }
+}

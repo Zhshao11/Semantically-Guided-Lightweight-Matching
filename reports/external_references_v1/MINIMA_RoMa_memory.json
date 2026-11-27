@@ -1,0 +1,234 @@
+{
+  "method": "MINIMA_RoMa",
+  "fresh_process": true,
+  "pid": 894249,
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "initial_allocated_MiB": 0.0,
+  "pairs": 24,
+  "rows": [
+    {
+      "pair_index": 2,
+      "pair_id": "osdataset/256/val/3",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9936,
+      "fit_status": "estimated",
+      "inliers": 612
+    },
+    {
+      "pair_index": 23,
+      "pair_id": "osdataset/256/val/24",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9820,
+      "fit_status": "estimated",
+      "inliers": 3642
+    },
+    {
+      "pair_index": 103,
+      "pair_id": "osdataset/256/val/104",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9821,
+      "fit_status": "estimated",
+      "inliers": 715
+    },
+    {
+      "pair_index": 146,
+      "pair_id": "osdataset/256/val/147",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9873,
+      "fit_status": "estimated",
+      "inliers": 2168
+    },
+    {
+      "pair_index": 172,
+      "pair_id": "osdataset/256/val/173",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9879,
+      "fit_status": "estimated",
+      "inliers": 1305
+    },
+    {
+      "pair_index": 220,
+      "pair_id": "osdataset/256/val/221",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9913,
+      "fit_status": "estimated",
+      "inliers": 1256
+    },
+    {
+      "pair_index": 243,
+      "pair_id": "osdataset/256/val/244",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9799,
+      "fit_status": "estimated",
+      "inliers": 678
+    },
+    {
+      "pair_index": 306,
+      "pair_id": "osdataset/256/val/307",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9890,
+      "fit_status": "estimated",
+      "inliers": 1337
+    },
+    {
+      "pair_index": 313,
+      "pair_id": "osdataset/256/val/314",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9912,
+      "fit_status": "estimated",
+      "inliers": 2287
+    },
+    {
+      "pair_index": 405,
+      "pair_id": "osdataset/256/val/406",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9894,
+      "fit_status": "estimated",
+      "inliers": 653
+    },
+    {
+      "pair_index": 426,
+      "pair_id": "osdataset/256/val/427",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9919,
+      "fit_status": "estimated",
+      "inliers": 1663
+    },
+    {
+      "pair_index": 591,
+      "pair_id": "osdataset/256/val/592",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9908,
+      "fit_status": "estimated",
+      "inliers": 1363
+    },
+    {
+      "pair_index": 644,
+      "pair_id": "osdataset/256/val/645",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9933,
+      "fit_status": "estimated",
+      "inliers": 874
+    },
+    {
+      "pair_index": 714,
+      "pair_id": "osdataset/256/val/715",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9892,
+      "fit_status": "estimated",
+      "inliers": 1739
+    },
+    {
+      "pair_index": 725,
+      "pair_id": "osdataset/256/val/726",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9901,
+      "fit_status": "estimated",
+      "inliers": 2347
+    },
+    {
+      "pair_index": 733,
+      "pair_id": "osdataset/256/val/734",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9896,
+      "fit_status": "estimated",
+      "inliers": 662
+    },
+    {
+      "pair_index": 755,
+      "pair_id": "osdataset/256/val/756",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9867,
+      "fit_status": "estimated",
+      "inliers": 1268
+    },
+    {
+      "pair_index": 792,
+      "pair_id": "osdataset/256/val/793",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9895,
+      "fit_status": "estimated",
+      "inliers": 1340
+    },
+    {
+      "pair_index": 819,
+      "pair_id": "osdataset/256/val/820",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9827,
+      "fit_status": "estimated",
+      "inliers": 1518
+    },
+    {
+      "pair_index": 822,
+      "pair_id": "osdataset/256/val/823",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9923,
+      "fit_status": "estimated",
+      "inliers": 811
+    },
+    {
+      "pair_index": 843,
+      "pair_id": "osdataset/256/val/844",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9942,
+      "fit_status": "estimated",
+      "inliers": 2950
+    },
+    {
+      "pair_index": 850,
+      "pair_id": "osdataset/256/val/851",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9893,
+      "fit_status": "estimated",
+      "inliers": 727
+    },
+    {
+      "pair_index": 905,
+      "pair_id": "osdataset/256/val/906",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9928,
+      "fit_status": "estimated",
+      "inliers": 2985
+    },
+    {
+      "pair_index": 936,
+      "pair_id": "osdataset/256/val/937",
+      "peak_allocated_MiB": 7183.18115234375,
+      "peak_reserved_MiB": 12768.0,
+      "valid_matches": 9785,
+      "fit_status": "estimated",
+      "inliers": 858
+    }
+  ],
+  "peak_allocated_MiB": 7183.18115234375,
+  "peak_reserved_MiB": 12768.0,
+  "model_collected": true,
+  "dino_collected": true,
+  "after_model_delete_MiB": 33.0,
+  "after_diagnostic_clear_cublas_MiB": 0.0,
+  "diagnostic_clear_available": true,
+  "note": "One new process per method; same24 inputs, native inference and postprocessing;3warmups then1peak sample/pair. No initialization peak, diskIO or GT. Residual workspaces investigated only after all peak measurements; latency uses original unmodified3round run."
+}

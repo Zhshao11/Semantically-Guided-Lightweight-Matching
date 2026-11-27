@@ -1,0 +1,77 @@
+T05 20 952 elapsed 1.1
+T05 40 952 elapsed 1.4
+T05 60 952 elapsed 1.7
+T05 80 952 elapsed 1.9
+T05 100 952 elapsed 2.2
+T05 120 952 elapsed 2.5
+T05 140 952 elapsed 2.7
+T05 160 952 elapsed 3.0
+T05 180 952 elapsed 3.3
+T05 200 952 elapsed 3.6
+T05 220 952 elapsed 3.8
+T05 240 952 elapsed 4.1
+T05 260 952 elapsed 4.4
+T05 280 952 elapsed 4.6
+T05 300 952 elapsed 4.9
+T05 320 952 elapsed 5.2
+T05 340 952 elapsed 5.4
+T05 360 952 elapsed 5.7
+T05 380 952 elapsed 6.0
+T05 400 952 elapsed 6.2
+T05 420 952 elapsed 6.5
+T05 440 952 elapsed 6.8
+T05 460 952 elapsed 7.1
+T05 480 952 elapsed 7.3
+T05 500 952 elapsed 7.6
+T05 520 952 elapsed 7.9
+T05 540 952 elapsed 8.2
+T05 560 952 elapsed 8.4
+T05 580 952 elapsed 8.7
+T05 600 952 elapsed 9.0
+T05 620 952 elapsed 9.3
+T05 640 952 elapsed 9.6
+T05 660 952 elapsed 9.8
+T05 680 952 elapsed 10.1
+T05 700 952 elapsed 10.4
+T05 720 952 elapsed 10.6
+T05 740 952 elapsed 10.9
+T05 760 952 elapsed 11.2
+T05 780 952 elapsed 11.5
+T05 800 952 elapsed 11.7
+T05 820 952 elapsed 12.0
+T05 840 952 elapsed 12.3
+T05 860 952 elapsed 12.5
+T05 880 952 elapsed 12.8
+T05 900 952 elapsed 13.1
+T05 920 952 elapsed 13.4
+T05 940 952 elapsed 13.7
+{
+  "method": "T05",
+  "image_pairs": 952,
+  "solved_pairs": 952,
+  "failed_pairs": 0,
+  "failure_rate": 0.0,
+  "solved_mean_rmse_px": 5.994600093880608,
+  "solved_median_rmse_px": 4.36490064496164,
+  "success_rate@1px": 0.032563025210084036,
+  "registration_failure_rate@1px": 0.967436974789916,
+  "successful_mean_rmse@1px": 0.7612405044560757,
+  "success_rate@3px": 0.3487394957983193,
+  "registration_failure_rate@3px": 0.6512605042016807,
+  "successful_mean_rmse@3px": 1.821832187080198,
+  "success_rate@5px": 0.5462184873949579,
+  "registration_failure_rate@5px": 0.45378151260504207,
+  "successful_mean_rmse@5px": 2.5696870231214635,
+  "solved_p90_rmse_px": 12.886038916343756,
+  "registration_failures5": 432,
+  "mean_raw_matches": 272.70168067226894,
+  "mean_valid_matches": 272.70168067226894,
+  "removed_invalid_total": 0,
+  "parameters_registered": 37219,
+  "parameters_dino_hidden": 0,
+  "actual_parameters_total": 37219,
+  "BN_unchanged": true,
+  "accuracy_wall_seconds": 13.823487712070346,
+  "formal_timing": false,
+  "original_T05_exact_pairs": 952
+}

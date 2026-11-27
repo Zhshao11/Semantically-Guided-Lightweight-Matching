@@ -1,0 +1,51 @@
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Using coarse resolution (560, 560), and upsample res (864, 864)
+{
+  "passed": true,
+  "method": "MINIMA_RoMa",
+  "train_source_pairs": 2,
+  "rows": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "raw_matches": 10000,
+      "valid_matches": 9887,
+      "removed_invalid": 113,
+      "solver_status": "estimated",
+      "inliers": 1860,
+      "unwarmed_seconds": 4.817998897982761,
+      "peak_allocated_MiB": 7183.18115234375,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "raw_matches": 10000,
+      "valid_matches": 9750,
+      "removed_invalid": 250,
+      "solver_status": "estimated",
+      "inliers": 1563,
+      "unwarmed_seconds": 0.3716467209160328,
+      "peak_allocated_MiB": 7183.18115234375,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    }
+  ],
+  "load_seconds": 7.751776980003342,
+  "parameters_registered": 111288336,
+  "dinov2_unregistered_parameters": 304368640,
+  "total_parameters_including_hidden": 415656976,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "train": false,
+  "formal_timing": false
+}

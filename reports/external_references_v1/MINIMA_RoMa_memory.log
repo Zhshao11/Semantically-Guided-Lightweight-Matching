@@ -1,0 +1,21 @@
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Using coarse resolution (560, 560), and upsample res (864, 864)
+{
+  "method": "MINIMA_RoMa",
+  "fresh_process": true,
+  "pid": 894249,
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "initial_allocated_MiB": 0.0,
+  "pairs": 24,
+  "peak_allocated_MiB": 7183.18115234375,
+  "peak_reserved_MiB": 12768.0,
+  "model_collected": true,
+  "dino_collected": true,
+  "after_model_delete_MiB": 33.0,
+  "after_diagnostic_clear_cublas_MiB": 0.0,
+  "diagnostic_clear_available": true,
+  "note": "One new process per method; same24 inputs, native inference and postprocessing;3warmups then1peak sample/pair. No initialization peak, diskIO or GT. Residual workspaces investigated only after all peak measurements; latency uses original unmodified3round run."
+}

@@ -2,7 +2,7 @@
 
 面向光学–SAR 影像配准的轻量稀疏匹配网络，按当前 **v0.1 设计材料**建立的首版 PyTorch 实现。
 
-**当前状态：已完成固定预算稀疏精化的实现、回归与受控评价。** 同一T05、全量粗查询K1024，952对SR@5：all54.62%、prefix256/128/64为47.69%/20.90%/12.50%、global_conf128为55.15%、coverage128为52.52%。全量逐对精确复现；119项测试通过。global128相对新增all入口完整延迟仅省约0.12ms，相对真正原T05入口反而多约0.12ms，尚无整网加速。见[报告](reports/sparse_refinement_v1/report.md)、[调用链审计](reports/sparse_refinement_v1/implementation_audit.md)、[复现说明](docs/SPARSE_REFINEMENT_REPRODUCTION_zh.md)。此前[T10共同支持审计](reports/t10_common_support_v1/审计报告.md)保留。
+**当前状态：已完成MINIMA-RoMa、XoFTR官方预训练权重的零样本参照，不微调、不重训。** 同952对，SR@5为T05 54.62%、MINIMA-RoMa 17.33%、XoFTR 1.37%；统一CPU原图到仿射边界的5090单卡中位延迟分别10.14/405.00/36.74ms，独立进程峰值allocated显存53.90/7183.18/1237.58MiB。原生内部尺寸、精度、训练域不同，不能宣称同域公平架构对比或泛化SOTA。122项测试通过。见[外部对比表](reports/external_references_v1/外部对比表.md)、[开发预算v1](reports/external_references_v1/开发预算_v1.md)、[复现说明](docs/EXTERNAL_REFERENCES_REPRODUCTION_zh.md)。此前[稀疏精化](reports/sparse_refinement_v1/report.md)与[T10审计](reports/t10_common_support_v1/审计报告.md)保留。
 
 
 ## 当前优先阶段：数据与几何基础

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/verify_external_references.py", line 68, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/verify_external_references.py", line 49, in main
+    for row in env['initial_allocated']:assert row['before_model_MiB']<1,'Previous model leaked onto GPU'
+AssertionError: Previous model leaked onto GPU

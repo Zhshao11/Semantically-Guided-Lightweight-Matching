@@ -1,0 +1,48 @@
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{
+  "passed": true,
+  "method": "XoFTR",
+  "train_source_pairs": 2,
+  "rows": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "raw_matches": 326,
+      "valid_matches": 326,
+      "removed_invalid": 0,
+      "solver_status": "estimated",
+      "inliers": 24,
+      "unwarmed_seconds": 0.6414388580014929,
+      "peak_allocated_MiB": 1236.5595703125,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "raw_matches": 115,
+      "valid_matches": 114,
+      "removed_invalid": 1,
+      "solver_status": "estimated",
+      "inliers": 22,
+      "unwarmed_seconds": 0.04880285693798214,
+      "peak_allocated_MiB": 1237.5830078125,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    }
+  ],
+  "load_seconds": 1.1559448729967698,
+  "parameters_registered": 11091722,
+  "dinov2_unregistered_parameters": 0,
+  "total_parameters_including_hidden": 11091722,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "train": false,
+  "formal_timing": false
+}

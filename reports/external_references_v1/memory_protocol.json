@@ -1,0 +1,12 @@
+{
+  "protocol": "fresh-process-inference-memory-after-cross-method-workspace-audit-v1",
+  "reason": "Initial verifier expected <1MiB after model deletion, but shared timing process retains32MiB afterT05 and33MiB afterXoFTR. Preserve initial failure and all original latency data; obtain authoritative peaks in independent processes.",
+  "methods": ["T05", "XoFTR", "MINIMA_RoMa"],
+  "same_gpu": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "inputs": "same24 T05 timing pairs, original fixed transformations",
+  "inference": "unchanged native method and commonCPU-array-to-affine boundary;3warmups perpair then1peak measurement; initialization excluded",
+  "measurement": "PyTorch maximum allocated includes weights, activations, native sampling and own library workspaces; max over24 pairs; context/driver memory excluded; reserved saved separately",
+  "post_measurement_diagnostic": "Weak references must show model and hiddenDINO collected after deletion. Only then clear cuBLAS workspaces if diagnostic API exists, distinguishing persistent library memory from live model parameters. Not used to optimize formal latency or peak sample.",
+  "original_latency": "all original3round shared-process latency records retained; no selection of fastest rerun",
+  "published_peak": "fresh process per method, not cumulative shared-process peak"
+}

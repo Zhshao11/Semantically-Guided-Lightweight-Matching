@@ -1,0 +1,16 @@
+{
+  "method": "T05",
+  "fresh_process": true,
+  "pid": 888881,
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "initial_allocated_MiB": 0.0,
+  "pairs": 24,
+  "peak_allocated_MiB": 53.90478515625,
+  "peak_reserved_MiB": 80.0,
+  "model_collected": true,
+  "dino_collected": true,
+  "after_model_delete_MiB": 32.0,
+  "after_diagnostic_clear_cublas_MiB": 0.0,
+  "diagnostic_clear_available": true,
+  "note": "One new process per method; same24 inputs, native inference and postprocessing;3warmups then1peak sample/pair. No initialization peak, diskIO or GT. Residual workspaces investigated only after all peak measurements; latency uses original unmodified3round run."
+}

@@ -1,0 +1,2671 @@
+{
+  "protocol": {
+    "gpu_index": 7,
+    "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+    "batch_size": 1,
+    "threads": 4,
+    "subset": "same24 T05 timing_indices;24 verified parents, scene unresolved",
+    "rounds": 3,
+    "warmup_per_pair": 3,
+    "repeats_per_pair_per_round": 5,
+    "method_order": "rotate fixed methods by round; load only one matcher on GPU at a time",
+    "boundary": "CPU resident original256 uint8 arrays+valid masks -> all method preprocessing/resize/normalization + H2D + unmodified matching + sampling + coordinate restore + common valid filtering + D2H + original affine RANSAC; exclude disk IO, synthetic-image creation, GT probes, initialization and per-call logging",
+    "no_feature_cache": true,
+    "exclusive_gpu_required": true,
+    "seed": 20261127
+  },
+  "hardware_before": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 22954 MiB, 97 %, 387.19 W, 2805 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 1553 MiB, 18 %, 162.19 W, 2887 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 31209 MiB, 99 %, 428.06 W, 2835 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 17685 MiB, 91 %, 192.52 W, 2865 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 16.23 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 13.71 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 11.67 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 14.06 W, 180 MHz\n",
+  "hardware_after": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 22954 MiB, 95 %, 322.29 W, 2842 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 1553 MiB, 24 %, 164.46 W, 2887 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 31209 MiB, 100 %, 425.68 W, 2827 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 17685 MiB, 39 %, 180.27 W, 2857 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 18.03 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 14.46 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 18 MiB, 0 %, 11.41 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 687 MiB, 0 %, 152.07 W, 2917 MHz\n",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "pid": 836456,
+  "exclusive_guards": [
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "T05",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "pair_index": 936,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 2,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 23,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 103,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 146,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 172,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 220,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 243,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 306,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 313,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 405,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 426,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 591,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 644,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 714,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 725,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 733,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 755,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 792,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 819,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 822,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 843,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 850,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 905,
+      "after": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "before": true
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "pair_index": 936,
+      "after": true
+    }
+  ],
+  "initial_allocated": [
+    {
+      "round": 0,
+      "method": "T05",
+      "before_model_MiB": 0.0
+    },
+    {
+      "round": 0,
+      "method": "XoFTR",
+      "before_model_MiB": 32.0
+    },
+    {
+      "round": 0,
+      "method": "MINIMA_RoMa",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 1,
+      "method": "XoFTR",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 1,
+      "method": "MINIMA_RoMa",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 1,
+      "method": "T05",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 2,
+      "method": "MINIMA_RoMa",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 2,
+      "method": "T05",
+      "before_model_MiB": 33.0
+    },
+    {
+      "round": 2,
+      "method": "XoFTR",
+      "before_model_MiB": 33.0
+    }
+  ],
+  "no_hooks": true,
+  "no_feature_cache": true,
+  "only_one_model_at_a_time": true,
+  "source_sha256": {
+    "sglm/external_reference.py": "d753b05a4175792ae112d5aa6bc7f56d115cc49cbe7b958a6ec4e22c8d589cff",
+    "scripts/benchmark_external_references.py": "2f43383416c3ff18fff6006c788ef7568f18e2b8c20d8ffca21093317e36e800"
+  },
+  "note": "Same CPU-array-to-affine boundary, physical GPU, batch and supplied pairs; native internal precision/resolution differ. Memory is full PyTorch peak allocated including registered AND unregistered DINO. Reserved includes caching. Repeats correlated within24 pairs."
+}

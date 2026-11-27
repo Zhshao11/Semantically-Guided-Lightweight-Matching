@@ -1,0 +1,79 @@
+/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+XoFTR 20 952 elapsed 1.5
+XoFTR 40 952 elapsed 2.3
+XoFTR 60 952 elapsed 3.2
+XoFTR 80 952 elapsed 4.0
+XoFTR 100 952 elapsed 4.8
+XoFTR 120 952 elapsed 5.8
+XoFTR 140 952 elapsed 6.5
+XoFTR 160 952 elapsed 7.3
+XoFTR 180 952 elapsed 8.1
+XoFTR 200 952 elapsed 8.9
+XoFTR 220 952 elapsed 9.6
+XoFTR 240 952 elapsed 10.4
+XoFTR 260 952 elapsed 11.2
+XoFTR 280 952 elapsed 12.0
+XoFTR 300 952 elapsed 12.9
+XoFTR 320 952 elapsed 13.7
+XoFTR 340 952 elapsed 14.5
+XoFTR 360 952 elapsed 15.3
+XoFTR 380 952 elapsed 16.1
+XoFTR 400 952 elapsed 16.8
+XoFTR 420 952 elapsed 17.6
+XoFTR 440 952 elapsed 18.4
+XoFTR 460 952 elapsed 19.1
+XoFTR 480 952 elapsed 19.9
+XoFTR 500 952 elapsed 20.7
+XoFTR 520 952 elapsed 21.5
+XoFTR 540 952 elapsed 22.3
+XoFTR 560 952 elapsed 23.2
+XoFTR 580 952 elapsed 24.0
+XoFTR 600 952 elapsed 24.8
+XoFTR 620 952 elapsed 25.7
+XoFTR 640 952 elapsed 26.5
+XoFTR 660 952 elapsed 27.3
+XoFTR 680 952 elapsed 28.0
+XoFTR 700 952 elapsed 28.8
+XoFTR 720 952 elapsed 29.6
+XoFTR 740 952 elapsed 30.3
+XoFTR 760 952 elapsed 31.1
+XoFTR 780 952 elapsed 31.9
+XoFTR 800 952 elapsed 32.6
+XoFTR 820 952 elapsed 33.4
+XoFTR 840 952 elapsed 34.2
+XoFTR 860 952 elapsed 34.9
+XoFTR 880 952 elapsed 35.7
+XoFTR 900 952 elapsed 36.5
+XoFTR 920 952 elapsed 37.2
+XoFTR 940 952 elapsed 38.0
+{
+  "method": "XoFTR",
+  "image_pairs": 952,
+  "solved_pairs": 871,
+  "failed_pairs": 81,
+  "failure_rate": 0.08508403361344538,
+  "solved_mean_rmse_px": 76.54186018897101,
+  "solved_median_rmse_px": 66.87745740145667,
+  "success_rate@1px": 0.0,
+  "registration_failure_rate@1px": 1.0,
+  "successful_mean_rmse@1px": null,
+  "success_rate@3px": 0.0021008403361344537,
+  "registration_failure_rate@3px": 0.9978991596638656,
+  "successful_mean_rmse@3px": 2.7423945132985974,
+  "success_rate@5px": 0.01365546218487395,
+  "registration_failure_rate@5px": 0.9863445378151261,
+  "successful_mean_rmse@5px": 4.047974977997034,
+  "solved_p90_rmse_px": 141.52543699570936,
+  "registration_failures5": 939,
+  "mean_raw_matches": 156.57457983193277,
+  "mean_valid_matches": 155.79306722689077,
+  "removed_invalid_total": 744,
+  "parameters_registered": 11091722,
+  "parameters_dino_hidden": 0,
+  "actual_parameters_total": 11091722,
+  "BN_unchanged": true,
+  "accuracy_wall_seconds": 38.400430700043216,
+  "formal_timing": false,
+  "original_T05_exact_pairs": null
+}

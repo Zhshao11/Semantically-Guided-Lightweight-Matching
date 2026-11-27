@@ -1,0 +1,56 @@
+{
+  "passed": false,
+  "records": [
+    {
+      "method": "XoFTR",
+      "pair_id": "osdataset/256/train/101",
+      "official_matches": 326,
+      "adapter_raw_matches": 326,
+      "max_abs_difference": {
+        "source": 0.0,
+        "target": 0.0,
+        "score": 0.0
+      },
+      "passed": true
+    },
+    {
+      "method": "XoFTR",
+      "pair_id": "osdataset/256/train/104",
+      "official_matches": 115,
+      "adapter_raw_matches": 115,
+      "max_abs_difference": {
+        "source": 0.0,
+        "target": 0.0,
+        "score": 0.0
+      },
+      "passed": true
+    },
+    {
+      "method": "MINIMA_RoMa",
+      "pair_id": "osdataset/256/train/101",
+      "official_matches": 10000,
+      "adapter_raw_matches": 10000,
+      "max_abs_difference": {
+        "source": 1.52587890625e-05,
+        "target": 1.52587890625e-05,
+        "score": 0.0
+      },
+      "passed": false
+    },
+    {
+      "method": "MINIMA_RoMa",
+      "pair_id": "osdataset/256/train/104",
+      "official_matches": 10000,
+      "adapter_raw_matches": 10000,
+      "max_abs_difference": {
+        "source": 1.52587890625e-05,
+        "target": 1.52587890625e-05,
+        "score": 0.0
+      },
+      "passed": false
+    }
+  ],
+  "train_pairs_only": true,
+  "GT_not_used": true,
+  "np_float_compatibility_only_in_diagnostic": true
+}
