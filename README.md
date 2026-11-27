@@ -4,6 +4,8 @@
 
 **当前状态：已完成MINIMA-RoMa、XoFTR官方预训练权重的零样本参照，不微调、不重训。** 同952对，SR@5为T05 54.62%、MINIMA-RoMa 17.33%、XoFTR 1.37%；统一CPU原图到仿射边界的5090单卡中位延迟分别10.14/405.00/36.74ms，独立进程峰值allocated显存53.90/7183.18/1237.58MiB。原生内部尺寸、精度、训练域不同，不能宣称同域公平架构对比或泛化SOTA。122项测试通过。见[外部对比表](reports/external_references_v1/外部对比表.md)、[开发预算v1](reports/external_references_v1/开发预算_v1.md)、[复现说明](docs/EXTERNAL_REFERENCES_REPRODUCTION_zh.md)。此前[稀疏精化](reports/sparse_refinement_v1/report.md)与[T10审计](reports/t10_common_support_v1/审计报告.md)保留。
 
+SOMA另完成[复现可行性核查](reports/soma_audit_v1/SOMA复现核查.md)：有官方SAR—光学代码，但未找到公开训练权重；原Encoder路径不可用，512的GLAM随机特征前向可运行、256路径报错，两项几何恒等检查未通过。未训练、未报告模型精度，也未加入已复现外部表。
+
 
 ## 当前优先阶段：数据与几何基础
 

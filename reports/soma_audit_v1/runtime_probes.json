@@ -1,0 +1,173 @@
+{
+  "source": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/soma_audit_v1/SOMA",
+  "source_sha256": {
+    "train.py": "c32acc372025ee6397ca6bd46178fecc42f36d84684ab37540cba3f255739477",
+    "test.py": "b9b9042258464973ced66b07331928a6c92528ea98f8475f2dcdd12511a16215",
+    "models/backbones.py": "95569a5c8a56b135ac77f59b5135f988849e06162cf557462b0a8b3025486479",
+    "models/encoder.py": "a1c7611143b3b3f4249ae9389e3419f14f3bab5fc4d89d47d20422f55fc1454e",
+    "models/utils.py": "bac37fafd1f57daeb85b71e088792aa8216a5fb98c34b7fa4c7588f848143f65",
+    "models/loss.py": "70dbbe315b251cb619581f7916f378ce71caa14e236dafa2fc1479da145731d1",
+    "models/matcher.py": "4d4dfcac25e428d43865ccd2be3caba52ff6a39315a96f39ce34e6cd89e67f71",
+    "datasets/dataloader.py": "da5443d0b6890c56f477eccf5cd0c3899f37bfa9328d00f9a89d71417048a5c4"
+  },
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 5090",
+  "trained_SOMA_weights_loaded": false,
+  "training_started": false,
+  "tests_are_geometry_and_random_feature_smoke_only": true,
+  "deform_conv2d": {
+    "passed": true,
+    "shape": [
+      1,
+      4,
+      16,
+      16
+    ],
+    "finite": true
+  },
+  "identity_theta_to_flow": [
+    {
+      "size": 16,
+      "max_abs_component_px": 0.46875,
+      "max_vector_norm_px": 0.6629126071929932,
+      "zero_flow_expected": true,
+      "zero_flow_passed": false
+    },
+    {
+      "size": 256,
+      "max_abs_component_px": 0.498046875,
+      "max_vector_norm_px": 0.704344630241394,
+      "zero_flow_expected": true,
+      "zero_flow_passed": false
+    },
+    {
+      "size": 512,
+      "max_abs_component_px": 0.4990234375,
+      "max_vector_norm_px": 0.7057257294654846,
+      "zero_flow_expected": true,
+      "zero_flow_passed": false
+    }
+  ],
+  "refinement_zero_flow_warp": {
+    "shape": [
+      8,
+      12
+    ],
+    "max_abs_grid_vs_expected_xy": 1.7916667461395264,
+    "max_abs_warp_minus_original": 75.04167175292969,
+    "identity_expected": true,
+    "identity_passed": false,
+    "cause": "upstream stacks meshgrid(y,x) without swapping to grid_sample(x,y)"
+  },
+  "GLAM_parameters": 10046932,
+  "GLAM_random_feature_forward": [
+    {
+      "size": 512,
+      "passed": true,
+      "shapes": {
+        "coarse_theta": [
+          1,
+          2,
+          3
+        ],
+        "flow_8_pred": [
+          1,
+          2,
+          64,
+          64
+        ],
+        "flow_8_delta": [
+          1,
+          2,
+          64,
+          64
+        ],
+        "flow_4_pred": [
+          1,
+          2,
+          128,
+          128
+        ],
+        "flow_4_delta": [
+          1,
+          2,
+          128,
+          128
+        ],
+        "flow_2_delta": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "flow_1_delta": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "flow_final": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "certainty": [
+          1,
+          1,
+          512,
+          512
+        ],
+        "flow_8": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "flow_4": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "flow_2": [
+          1,
+          2,
+          512,
+          512
+        ],
+        "flow_1": [
+          1,
+          2,
+          512,
+          512
+        ]
+      },
+      "finite": true
+    },
+    {
+      "size": 256,
+      "passed": false,
+      "error_type": "RuntimeError",
+      "error": "The size of tensor a (128) must match the size of tensor b (256) at non-singleton dimension 3",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/audit_soma_runtime.py\", line 63, in main\n    output=model(*features);probes.append(dict(size=size,passed=True,\n  File \"/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/zzvr/miniconda3/envs/compared/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/runs/soma_audit_v1/SOMA/models/matcher.py\", line 401, in forward\n    computed_flow_2 = delta_flow_2 + flow_2\nRuntimeError: The size of tensor a (128) must match the size of tensor b (256) at non-singleton dimension 3\n"
+    }
+  ],
+  "original_Encoder_constructor": {
+    "passed": false,
+    "error_type": "FileNotFoundError",
+    "error": "[Errno 2] No such file or directory: '/home/F/whd/proj/somatchv5/facebookresearch_dinov2_main/hubconf.py'"
+  },
+  "dependency_imports": {
+    "torch": true,
+    "torchvision": true,
+    "numpy": true,
+    "cv2": true,
+    "PIL": true,
+    "kornia": true,
+    "wandb": false,
+    "torchsummary": false
+  },
+  "original_source_unchanged": true
+}

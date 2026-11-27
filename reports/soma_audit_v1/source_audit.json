@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-27",
+  "repository": "https://github.com/traslauc/SOMA",
+  "commit": "481a28cf0b4ef1086a5cb03d605ed7ac2dc158f3",
+  "code_license": "MIT",
+  "trained_weights_found_in_main": false,
+  "official_releases_found": false,
+  "remote_branches": [
+    "main"
+  ],
+  "remote_tags": [],
+  "sources": {
+    "paper": {
+      "url": "https://arxiv.org/html/2511.13168v1",
+      "sha256": "85f7e342ac4f9153332e231f4a5a0ca3f0ef2d7ca8a432088f3d830e518aeef0",
+      "status": 200,
+      "excerpts": {
+        "Datasets We evaluate": "nce, as validated by our experiments. Experiments Datasets We evaluate SOMA’s registration performance on two public datasets: SEN1-2 ( Schmitt et al. 2018 ) dataset and GFGE_SO ( Yang et al. 2025 ) dataset. The SEN1-2 dataset encompasses diverse land cover types at 10-meter spatial resolution. Since the original image pairs are not strictly aligned, we use the finely registered version provided by SOPatch ( Xu et al. 2023b ) . GFGE_SO dataset contains multi-temporal, multi-satellite SAR-Optical pairs with a higher spatial resolution of 5m. Compared to SEN1-2, it presents more severe spectral discrepancies and radiometric noise, posing greater challenges for cross-modal registration. We further test SOMA on two external datasets for generalizability analysis, which are not used during training: WHU-SEN-City ( Wang et al. 2019 ) and OSdataset ( Xiang et al. 2020 ) . To replicate realistic registration scenarios, random geometric transformations are applied to the SAR images. Specifically, following the previous protocols, we introduce translations of up to 32 pixels, scale variations of 0.2, and rotations within ±5°. In ablation, we further extend the range by increasing the maximum translation to 50 pixels and the rotation span to",
+        "Implementation Details We adopt": "ation to 50 pixels and the rotation span to ±20°. Implementation Details We adopt an end-to-end training strategy, where the DINOv2 backbone is kept frozen. All other components are trained from scratch. Training is conducted for 100 epochs with a batch size of 4, using the AdamW optimizer with a learning rate of 5 × 10 − 5 5\\times 10^{-5} . A warm-up phase of 5 epochs is applied at the beginning of training. All experiments and evaluations are performed on two NVIDIA RTX 4090 GPUs. Figure 4: Registration Results of SOMA on the SEN1-2 (Left) and the GFGE_SO dataset (Right). Method CMR@Threshold (%) ↑ \\uparrow 1px 2px 3px 4px 5px MI 44.03 53.45 57.16 58.78 60.01 ( Suri and Reinartz 2009 ) CFOG 46.02 59.73 64.87 66.58 67.53 ( Ye et al. 2019 ) DDFN 49.64 65.63 72.76 74.95 76.00 ( Zhang et al. 2020 ) FFT U-Net 54.87 73.43 79.90 83.52 86.56 ( Fang et al. 2021 ) MoPSI 60.87 81.71 90.18 92.27 93.60 ( Liu et al. 2023 ) OSMNet 62.58 83.04 91.13 93.13 94.46 ( Zhang et al. 2021 ) RMSO-ConvNeXt 68.67 86.18 92.46 94.46 95.60 ( Yang et al. 2025 ) SO-ConvNeXt 74.38 90.27 94.36 95.70 96.27 ( Yang et al. 2025 ) SOMA 86.67 94.50 95.97 97.56 98.78 (+12.29) (+4.23) (+1.61) (+1.86) (+2.51) Table 1: Comparison of correctly match rate (CMR) at varying p",
+        "The second, OSdataset": " exhibiting different geographical distributions. The second, OSdataset ( Xiang et al. 2020 ) , is constructed from Google Earth optical images and GaoFen-3 SAR data, which feature significantly higher spatial resolution and diverse image characteristics of multiple sources. Here, we use image pairs provided by SOPatch for both datasets, consistent with the SEN1-2 setting. The experimental results in Table 4 show that SOMA maintains strong performance on WHU-SEN-City, indicating good generalization across scenes with similar resolution and sensor characteristics, but varying geographic content. On OSdataset, despite the lack of high-resolution training supervision, SOMA still shows reasonably good performance at 5px. This suggests that SOMA retains generalizability under cross-sensor and high-resolution domain shifts, even without explicit adaptation. Dataset Resolution Source CMR@5px (%) R avg WHU-SEN-City 10m Sentinel-1 Sentinel-2 96.75 1.80 OSdataset 1m Google Earth GaoFen-3 92.96 3.37 Table 4: Generalization performance of SOMA . Runtime Analysis We evaluated the runtime of SOMA in comparison to the baseline. SOMA processes each image pair with a size of 512 × 512 512\\times 512 pixels in 94 ms on average, incurring just a 6.8%",
+        "Runtime Analysis We evaluated": ".37 Table 4: Generalization performance of SOMA . Runtime Analysis We evaluated the runtime of SOMA in comparison to the baseline. SOMA processes each image pair with a size of 512 × 512 512\\times 512 pixels in 94 ms on average, incurring just a 6.8% overhead compared to the baseline’s 88 ms, while delivering significantly improved accuracy. Conclusion We have proposed SOMA, a high-precision and robust framework for SAR-optical image registration. SOMA employs the Feature Gradient Enhancer (FGE) to refine deep features, guiding the model to focus on structural cues that are more conducive to establishing accurate matching. A frozen DINOv2 further stabilize coarse alignment. The Global-Local Affine-Flow Matcher (GLAM) jointly predicts affine and flow fields, enabling mutual guidance between global and local transformations and achieving accurate dense matching in a coarse-to-fine manner. Experimental results demonstrate that SOMA delivers significant improvements in pixel-level accuracy on different datasets and generalizes well across varying scenarios. Acknowledgments This work was supported by the National Natural Science Foundation of China under Grant Nos. 62476220 and 61971356, as well as the Natural Science Basic Research Pr"
+      }
+    },
+    "releases": {
+      "url": "https://github.com/traslauc/SOMA/releases",
+      "sha256": "30bc1ced7011b7e552c675ab8cf8eea7f4d6a700504cace1bbd2716fe239dcc7",
+      "status": 200,
+      "no_releases_page_message": true
+    }
+  },
+  "source_sha256": {
+    "LICENSE": "4d187f5b4a3ba565287bd7122ef7e3070f091e42688216ed4b7b16afb24ae8a7",
+    "test.py": "b9b9042258464973ced66b07331928a6c92528ea98f8475f2dcdd12511a16215",
+    "README.md": "7d541dbe140cf92b7b01099dcb9cd8ebd67dc2add7fa81f1399637cd48563e0f",
+    ".gitignore": "48b33f9f89ef24f8a66f461ea9278e7ecf21b4660c26088989d231e53c578724",
+    "train.py": "c32acc372025ee6397ca6bd46178fecc42f36d84684ab37540cba3f255739477",
+    "datasets/dataloader.py": "da5443d0b6890c56f477eccf5cd0c3899f37bfa9328d00f9a89d71417048a5c4",
+    "models/matcher.py": "4d4dfcac25e428d43865ccd2be3caba52ff6a39315a96f39ce34e6cd89e67f71",
+    "models/backbones.py": "95569a5c8a56b135ac77f59b5135f988849e06162cf557462b0a8b3025486479",
+    "models/encoder.py": "a1c7611143b3b3f4249ae9389e3419f14f3bab5fc4d89d47d20422f55fc1454e",
+    "models/loss.py": "70dbbe315b251cb619581f7916f378ce71caa14e236dafa2fc1479da145731d1",
+    "models/utils.py": "bac37fafd1f57daeb85b71e088792aa8216a5fb98c34b7fa4c7588f848143f65"
+  },
+  "no_training": true,
+  "no_matching_accuracy_claim": true
+}

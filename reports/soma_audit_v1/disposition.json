@@ -1,0 +1,18 @@
+{
+  "audit_complete": true,
+  "official_commit": "481a28cf0b4ef1086a5cb03d605ed7ac2dc158f3",
+  "paper": "https://arxiv.org/abs/2511.13168",
+  "native_pretrained_reproduction_ready": false,
+  "full_forward_verified": false,
+  "original_native_trained_weights_publicly_found": false,
+  "trained_weights_search_scope": "main tracked files, README, official releases page, public heads/tags; not a claim about private author files",
+  "partial_GLAM512_random_feature_forward_verified": true,
+  "RTX5090_DeformConv2d_verified": true,
+  "unchanged_256_path_supported": false,
+  "identity_geometry_checks_passed": false,
+  "no_training": true,
+  "no_model_accuracy_or_latency_claim": true,
+  "recommended_status": "blocked_pending_author_weights_and_coordinate_protocol_confirmation",
+  "source_checksums_verified": true,
+  "script_sha256": "ffdc5e42c4938a48bd89931a92df1956eec09fc51ef5a4526cb42ad61da9df97"
+}
