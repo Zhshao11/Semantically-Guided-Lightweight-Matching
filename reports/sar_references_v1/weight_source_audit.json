@@ -1,0 +1,26 @@
+{
+  "FHReg": {
+    "public_weight_url": "https://drive.google.com/drive/folders/1T1Ic0uxSIBx_qdQJQEV68jzGlwBFR3TU",
+    "downloaded_direct_public_file_id": "1M6zXAddCIY9QJtJsjCbN9X7dMsZLDmHx",
+    "sha256": "8eda4899bf45c730c67812c5d5efd2d6172c36b821e8ac054c90fd2952838077",
+    "training_domain_source": "OfficialREADME explicitly describes GUSO-based weight for OS/MSAW zero-shot",
+    "OS_adaptation_in_this_run": false,
+    "code_license": "MIT",
+    "full_GUSO_training_dataset_downloaded": false
+  },
+  "GDROS": {
+    "public_weight_url": "https://pan.baidu.com/s/1YKbw6FSWjcuJidtAeogjdg?pwd=4ykn",
+    "public_share_HTTP_verify_errno": 105,
+    "cached_copy_source": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-whu-opt-sar512.pth",
+    "sha256": "b6ebe175e59429272ae6aecda5f8fe5c5da2d451a283ac95b4892b5732d22a16",
+    "bytes": 51534966,
+    "strict_official_architecture": true,
+    "code_license": "Apache-2.0",
+    "training_domain_source": "OfficialREADME separate WHU/OS weights and cached originalWHU filename; original author training manifests not independently audited",
+    "OS_weight_used": false,
+    "OS_weight_exclusion_reason": "No verified author sample split proving no overlap with current952validation",
+    "other_project_finetuned_checkpoints_used": false
+  },
+  "scene_independence": "Dataset-domain labels do not prove original satellite scenes completely disjoint; no sceneGT claim",
+  "redistribution": "No weights or dataset images published; code license does not imply unspecified weight/data deployment rights"
+}

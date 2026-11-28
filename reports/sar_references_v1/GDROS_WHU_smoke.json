@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "method": "GDROS_WHU",
+  "native_sample": {
+    "paths": [
+      "/mnt/sda/zhushihao/data/vis_sar/WHU_OPT_SAR/extracted_e077a/training/whu_opt_sar512/opt/000000_opt.tif",
+      "/mnt/sda/zhushihao/data/vis_sar/WHU_OPT_SAR/extracted_e077a/training/whu_opt_sar512/sar_warped/000000_sar_warped.tif"
+    ],
+    "sha256": [
+      "b0b78da117a0f7b66b771bf831c5bdcea97112d68ed9fecfb3e121a026cc2dcc",
+      "263cec8deacd213a33cf163310a573a3f688b4353f1ce4296de41372e1a4218e"
+    ],
+    "source": "cached author WHU training input in official512 format; no test/val selection",
+    "native512_32iterations_LSR_passed": true,
+    "LSR_affine_oracle_max_error_native_px": 0.0002288818359375
+  },
+  "train_source_smoke": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "raw_matches": 262144,
+      "valid_matches": 243085,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "estimated",
+      "inliers": 241383,
+      "smoke_wall_seconds": 0.9197481829905882,
+      "formal_timing": false
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "raw_matches": 262144,
+      "valid_matches": 248341,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "estimated",
+      "inliers": 228508,
+      "smoke_wall_seconds": 0.8939782219240442,
+      "formal_timing": false
+    }
+  ],
+  "parameters": 12847408,
+  "compatibility": {},
+  "all_modules_eval": true,
+  "BN_unchanged": true,
+  "precision": "nativeFP32",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "no_training": true,
+  "test_used": false,
+  "threshold_tuning": false,
+  "official_model_forward_unchanged": true
+}

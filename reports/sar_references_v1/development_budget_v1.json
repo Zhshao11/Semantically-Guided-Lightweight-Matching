@@ -1,0 +1,58 @@
+{
+  "version": "measured-SAR-reference-development-budget-v1",
+  "reference_method": "FHReg_GUSO",
+  "reference_point": {
+    "method": "FHReg_GUSO",
+    "label": "FHReg-GUSO\uff0f512\u4e3b\u8bbe\u7f6e",
+    "SR3_percent": 43.59243697478992,
+    "SR5_percent": 65.44117647058823,
+    "median_RMSE_px": 3.448359391223924,
+    "P90_RMSE_px": 12.115850919523531,
+    "solved_mean_RMSE_px": 82.12162180912358,
+    "solver_failures": 21,
+    "registration_failures5": 329,
+    "mean_valid_matches": 3052.985294117647,
+    "parameters": 4912464,
+    "accuracy_reused": false,
+    "median_E2E_ms": 57.451949454844,
+    "p95_E2E_ms": 61.04249324416742,
+    "peak_allocated_MiB": 1133.85693359375,
+    "peak_reserved_MiB": 1776.0,
+    "round_medians_ms": [
+      57.177393056917936,
+      58.558274467941374,
+      50.38047902053222
+    ],
+    "process_peak_RSS_MiB": 2972.953125,
+    "repeats_per_pair": 15,
+    "distinct_timing_pairs": 24,
+    "dominated_by": [],
+    "non_dominated": true
+  },
+  "primary_accuracy_floor": {
+    "SR5_percent_at_least": 65.44117647058823,
+    "SR3_percent_at_least": 43.59243697478992
+  },
+  "latency_goal": {
+    "median_E2E_ms_strictly_below": 57.451949454844,
+    "boundary": "CPUresident256uint8 images+masks -> all preprocessing/H2D/uncached native model/postprocessing/coordinateD2H/filter/full affineRANSAC; excludes IO/GT/synthetic image creation/initialization"
+  },
+  "memory_goal": {
+    "peak_allocated_MiB_strictly_below": 1133.85693359375,
+    "measurement": "freshsingleprocess, fullPyTorchpeak, idleRTX5090"
+  },
+  "secondary": {
+    "reference_median_RMSE_px": 3.448359391223924,
+    "reference_P90_RMSE_px": 12.115850919523531,
+    "reference_solver_failures": 21,
+    "report_extreme_failures_without_clipping": true
+  },
+  "baseline_precision_gap_pp": 10.819327731092436,
+  "one_actual_joint_point": true,
+  "not_achieved_by_our_model": true,
+  "no_mixing_best_metrics": true,
+  "not_a_promise_of_feasibility": true,
+  "no_new_training": true,
+  "test_used": false,
+  "decision": "Main reference chosen among actual common-affine non-dominated SAR-specific primary configurations;256resolution sensitivity does not replace preregistered512FHprimary."
+}

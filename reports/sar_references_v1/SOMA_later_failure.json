@@ -1,0 +1,53 @@
+{
+  "resume_executed": true,
+  "actual_training_progress_after_resume": true,
+  "resume_updates": 17750,
+  "later_updates": 22050,
+  "replayed_updates": 52,
+  "original_soma_python": ".venv/bin/python",
+  "reference_environment_did_not_replace_training_environment": true,
+  "resumed_supervisor_pid": 1596585,
+  "current_phase": "failed",
+  "status": {
+    "pid": 1596830,
+    "world_size": 4,
+    "physical_gpus": "4,5,6,7",
+    "phase": "failed",
+    "epoch": 12,
+    "updates": 22050,
+    "updates_in_epoch": 292,
+    "updates_per_epoch": 1978,
+    "best": {
+      "epoch": 9,
+      "SR5": 0.46008403361344535,
+      "bad_epochs": 2
+    },
+    "updated_unix": 1795802687.3955443,
+    "last_loss": 5.56011962890625,
+    "seconds_per_update": 0.2793757671164189,
+    "validation_done": 900,
+    "validation_total": 952,
+    "error": "FloatingPointError('Nonfinite SOMA loss')",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/train_soma_os.py\", line 70, in main\n    if not bool(torch.isfinite(loss)):raise FloatingPointError('Nonfinite SOMA loss')\nFloatingPointError: Nonfinite SOMA loss\n"
+  },
+  "pipeline": {
+    "pid": 1596585,
+    "phase": "failed",
+    "error": "CalledProcessError(1, ['/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python', '-m', 'torch.distributed.run', '--standalone', '--nproc_per_node=4', 'scripts/train_soma_os.py', '--root', '/mnt/sda/zhushihao/data/vis_sar/OSDataset2.0', '--resume', 'runs/soma_os_v1/training/last.pt'])",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/scripts/run_soma_pipeline.py\", line 16, in main\n    with (run/'training_console.log').open('a') as log:subprocess.run(launcher,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)\n  File \"/home/zzvr/miniconda3/envs/compared/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python', '-m', 'torch.distributed.run', '--standalone', '--nproc_per_node=4', 'scripts/train_soma_os.py', '--root', '/mnt/sda/zhushihao/data/vis_sar/OSDataset2.0', '--resume', 'runs/soma_os_v1/training/last.pt']' returned non-zero exit status 1.\n",
+    "instruction": "Inspect training_console.log/final_console.log. Resume last.pt if training failed. Finaltest existingfile is reused, not used to change model."
+  },
+  "note": "Training progressed after timing restoration then independently failed at epoch12 on nonfinite loss. Not currently running; checkpoint/logs preserved, no silent altered-protocol restart.",
+  "recorded_unix": 1795872304.9501207,
+  "last_checkpoint": {
+    "sha256": "b6e53190c02ded6973b1cf7806406ef6dad9d700e25749c48faeded580ea2dd5",
+    "epoch": 11,
+    "updates": 22000,
+    "next_update": 242,
+    "best": {
+      "epoch": 9,
+      "SR5": 0.46008403361344535,
+      "bad_epochs": 2
+    }
+  }
+}

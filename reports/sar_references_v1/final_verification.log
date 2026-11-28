@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "full952_new_accuracy": {
+    "T05_Full": {
+      "pairs": 952,
+      "SR5_successes": 520,
+      "solver_failures": 0
+    },
+    "T05_Uniform256": {
+      "pairs": 952,
+      "SR5_successes": 492,
+      "solver_failures": 0
+    },
+    "FHReg_GUSO": {
+      "pairs": 952,
+      "SR5_successes": 623,
+      "solver_failures": 21
+    },
+    "FHReg_GUSO_256": {
+      "pairs": 952,
+      "SR5_successes": 1,
+      "solver_failures": 639
+    },
+    "GDROS_WHU": {
+      "pairs": 952,
+      "SR5_successes": 303,
+      "solver_failures": 0
+    }
+  },
+  "formal_timing_methods": [
+    "T05_Full",
+    "T05_Uniform256",
+    "FHReg_GUSO",
+    "FHReg_GUSO_256",
+    "GDROS_WHU",
+    "GDROS_WHU_native32_LSR",
+    "XoFTR",
+    "MINIMA_RoMa"
+  ],
+  "formal_processes": 24,
+  "formal_runs": 2880,
+  "official_core_sources_unchanged": true,
+  "frozen_protocol_and_source_hashes_match": true,
+  "old_accuracy_reuse_explicit": true,
+  "one_measured_budget_anchor": true,
+  "RIFT2_only_runtime_audit": true,
+  "new_training": false,
+  "test_used": false,
+  "SOMA_resumed_then_later_nonfinite_loss_separate": true
+}

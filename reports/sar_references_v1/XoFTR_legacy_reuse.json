@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "method": "XoFTR",
+  "checks": [
+    {
+      "pair_id": "osdataset/256/val/1",
+      "exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/2",
+      "exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    }
+  ],
+  "full952_accuracy_path": "reports/external_references_v1/XoFTR_accuracy.json",
+  "full952_accuracy_sha256": "cab598084ab83a08d4d78c83546c3e76a76754e0773239f0895a214fd5b35781",
+  "original_freeze_sha256": "76c8fbb6e5b0a403e52cf01aac1e650dc75208a8f9a3c05c6bdd9de6dfbb6a27",
+  "same_sources_weights_data": true,
+  "note": "Accuracy reuses original complete952 run, not a new952 run;2fixed predictions rechecked bitwise. Resources measured afresh this round."
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "method": "T05_Full",
+  "native_sample": {},
+  "train_source_smoke": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "raw_matches": 262,
+      "valid_matches": 262,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "estimated",
+      "inliers": 110,
+      "smoke_wall_seconds": 0.719511353992857,
+      "formal_timing": false
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "raw_matches": 272,
+      "valid_matches": 272,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "estimated",
+      "inliers": 85,
+      "smoke_wall_seconds": 0.07463642407674342,
+      "formal_timing": false
+    }
+  ],
+  "parameters": 37219,
+  "compatibility": {},
+  "all_modules_eval": true,
+  "BN_unchanged": true,
+  "precision": "originalBF16",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "no_training": true,
+  "test_used": false,
+  "threshold_tuning": false,
+  "official_model_forward_unchanged": true
+}

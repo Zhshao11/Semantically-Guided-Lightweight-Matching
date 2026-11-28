@@ -1,0 +1,41 @@
+{
+  "FHReg": {
+    "source": "https://api.crossref.org/works/10.1016/j.isprsjprs.2026.03.010",
+    "DOI": "10.1016/j.isprsjprs.2026.03.010",
+    "title": [
+      "Ultra-high-resolution SAR and optical image registration: From global benchmark dataset to frequency-guided registration method"
+    ],
+    "container-title": [
+      "ISPRS Journal of Photogrammetry and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1016/j.isprsjprs.2026.03.010"
+  },
+  "GDROS": {
+    "source": "https://api.crossref.org/works?query.title=GDROS+A+Geometry-Guided+Dense+Registration+Framework+for+Optical-SAR+Images+under+Large+Geometric+Transformations&rows=1",
+    "DOI": "10.1109/tgrs.2025.3627132",
+    "title": [
+      "GDROS: A Geometry-Guided Dense Registration Framework for Optical–SAR Images Under Large Geometric Transformations"
+    ],
+    "container-title": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1109/tgrs.2025.3627132"
+  }
+}

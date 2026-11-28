@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "method": "MINIMA_RoMa",
+  "checks": [
+    {
+      "pair_id": "osdataset/256/val/1",
+      "exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/2",
+      "exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      }
+    }
+  ],
+  "full952_accuracy_path": "reports/external_references_v1/MINIMA_RoMa_accuracy.json",
+  "full952_accuracy_sha256": "7ee0fc0dc93c572ca459914df83a2826fb66ca5a07a443a54f17551fb782cda9",
+  "original_freeze_sha256": "76c8fbb6e5b0a403e52cf01aac1e650dc75208a8f9a3c05c6bdd9de6dfbb6a27",
+  "same_sources_weights_data": true,
+  "note": "Accuracy reuses original complete952 run, not a new952 run;2fixed predictions rechecked bitwise. Resources measured afresh this round."
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_native_training_datum": "/mnt/sda/zhushihao/data/vis_sar/WHU_OPT_SAR/extracted_e077a/training/whu_opt_sar512/datum/000000.npy",
+  "native_matrix": [
+    [
+      0.9563047289848328,
+      -0.2923716902732849,
+      -22.0
+    ],
+    [
+      0.2923716902732849,
+      0.9563047289848328,
+      -4.0
+    ]
+  ],
+  "native_flow_sha256": "2cfd1547e397de29b9d2bb5ab1f322784eaf7fe460df33ff9fc895532758af9c",
+  "flow_definition": "GT(x,y) = M*[x,y,1] - [x,y]; x/y0-based integers",
+  "maximum_flow_oracle_error_native_px": 7.62939453125e-06,
+  "image_direction_checks": {
+    "M_forward": {
+      "mean_absolute_difference": 0.1619720458984375,
+      "exact": false
+    },
+    "M_inverse": {
+      "mean_absolute_difference": 56.08003616333008,
+      "exact": false
+    }
+  },
+  "diagnosis_only": true,
+  "inference_or_evaluation_not_changed": true
+}

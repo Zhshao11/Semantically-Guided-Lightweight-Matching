@@ -1,0 +1,153 @@
+{
+  "solved_mean_rmse_px": 82.12162180912358,
+  "no_error_capping": true,
+  "no_posthoc_geometry_threshold": true,
+  "worst_solved_pairs": [
+    {
+      "pair_id": "osdataset/256/val/845",
+      "probe_rmse_px": 67988.65606202191,
+      "valid_matches": 7,
+      "inliers": 7,
+      "estimation": {
+        "success": true,
+        "status": "estimated",
+        "matrix": [
+          [
+            1.3194976547145492,
+            0.002108638264046392,
+            -1.829179493341353
+          ],
+          [
+            -520.3892202873108,
+            0.42506446865888176,
+            2985.109335142251
+          ]
+        ],
+        "inliers": 7,
+        "matches": 7
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/487",
+      "probe_rmse_px": 225.78626102455826,
+      "valid_matches": 40,
+      "inliers": 16,
+      "estimation": {
+        "success": true,
+        "status": "estimated",
+        "matrix": [
+          [
+            0.0008533737854947397,
+            0.0017630077265544193,
+            5.51743118516733
+          ],
+          [
+            0.3989839003389425,
+            0.09559336159479409,
+            220.3061403763121
+          ]
+        ],
+        "inliers": 16,
+        "matches": 40
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/813",
+      "probe_rmse_px": 198.36015116170495,
+      "valid_matches": 30,
+      "inliers": 23,
+      "estimation": {
+        "success": true,
+        "status": "estimated",
+        "matrix": [
+          [
+            0.35243061570330964,
+            0.432205531083022,
+            -105.87301449671268
+          ],
+          [
+            0.0013716269229455014,
+            -0.009005144315984124,
+            243.93010528891327
+          ]
+        ],
+        "inliers": 23,
+        "matches": 30
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/806",
+      "probe_rmse_px": 194.53203116503158,
+      "valid_matches": 34,
+      "inliers": 27,
+      "estimation": {
+        "success": true,
+        "status": "estimated",
+        "matrix": [
+          [
+            0.2687974392270315,
+            0.31461211987817383,
+            -73.7527676108263
+          ],
+          [
+            0.0012378967608956675,
+            -0.008604077137028826,
+            243.84349492129004
+          ]
+        ],
+        "inliers": 27,
+        "matches": 34
+      }
+    },
+    {
+      "pair_id": "osdataset/256/val/156",
+      "probe_rmse_px": 192.71316377737688,
+      "valid_matches": 123,
+      "inliers": 81,
+      "estimation": {
+        "success": true,
+        "status": "estimated",
+        "matrix": [
+          [
+            0.0001980708483428111,
+            0.001632862443458983,
+            241.52528349660932
+          ],
+          [
+            -0.0014419530818460206,
+            -0.0014354394066528322,
+            242.52222028816863
+          ]
+        ],
+        "inliers": 81,
+        "matches": 123
+      }
+    }
+  ],
+  "note": "Finite estimated matrices can be catastrophic wrong registrations; included as SR failures. Original RANSAC/degeneracy handling unchanged, no clipping.",
+  "worst_pair_posthoc_source_coverage": {
+    "count": 7,
+    "rank": 2,
+    "minor_major_singular_ratio": 0.000728944809506599,
+    "near_collinear": true,
+    "bbox_span_fraction_xy": [
+      9.595646577722702e-05,
+      0.09437584970511642
+    ],
+    "hull_area_fraction": 4.047376062965569e-06,
+    "grid_4x4_occupied": 1
+  },
+  "worst_pair_posthoc_target_coverage": {
+    "count": 7,
+    "rank": 2,
+    "minor_major_singular_ratio": 0.0017475063151463123,
+    "near_collinear": true,
+    "bbox_span_fraction_xy": [
+      0.00015384636673273014,
+      0.06277425429400274
+    ],
+    "hull_area_fraction": 6.1746580311550225e-06,
+    "grid_4x4_occupied": 1
+  },
+  "coverage_did_not_change_inference_or_RANSAC": true
+}

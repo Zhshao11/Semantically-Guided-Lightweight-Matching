@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "method": "FHReg_GUSO_256",
+  "native_sample": {
+    "paths": [
+      "runs/sar_references_v1/GUSO/assert/guso_testpairs/18_opt.png",
+      "runs/sar_references_v1/GUSO/assert/guso_testpairs/18_sar.png"
+    ],
+    "sha256": [
+      "c11b14b6acc061f16e931201b9f7b17277cdd2bf8778da4addcf74e7994aed3b",
+      "ad270187215179d8e66252a86b8d702535677610d3e6548d8b8240796b12bc37"
+    ],
+    "native_demo_raw255_forward": true,
+    "matches": 4277,
+    "note": "Native demo.py uses rawfloat0..255; OSzero_shot uses TF.to_tensor/255. Primary OS protocol follows zero_shot, never chooses normalization by validation results."
+  },
+  "train_source_smoke": [
+    {
+      "pair_id": "osdataset/256/train/101",
+      "raw_matches": 1,
+      "valid_matches": 1,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "insufficient_matches",
+      "inliers": 0,
+      "smoke_wall_seconds": 0.11633581598289311,
+      "formal_timing": false
+    },
+    {
+      "pair_id": "osdataset/256/train/104",
+      "raw_matches": 1,
+      "valid_matches": 1,
+      "repeat_exact": {
+        "source": true,
+        "target": true,
+        "score": true
+      },
+      "fit_status": "insufficient_matches",
+      "inliers": 0,
+      "smoke_wall_seconds": 0.11105520091950893,
+      "formal_timing": false
+    }
+  ],
+  "parameters": 4912464,
+  "compatibility": {
+    "lightning_profiler_namespace_alias": true
+  },
+  "all_modules_eval": true,
+  "BN_unchanged": true,
+  "precision": "nativeFP32",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "no_training": true,
+  "test_used": false,
+  "threshold_tuning": false,
+  "official_model_forward_unchanged": true
+}

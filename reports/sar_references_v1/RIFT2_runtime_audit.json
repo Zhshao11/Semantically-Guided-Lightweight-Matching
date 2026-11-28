@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/LJY-RS/RIFT2-multimodal-matching-rotation",
+  "commit": "0e980ce4124d2abd62727dcf040198db0a18b269",
+  "entry": "demo_RIFT2.m",
+  "native_parameters": {
+    "scales": 4,
+    "orientations": 6,
+    "max_keypoints": 5000,
+    "patch_size": 96,
+    "descriptor_cells": 6,
+    "max_ratio": 1,
+    "match_threshold": 100
+  },
+  "runtime": "MATLAB; detectFASTFeatures/matchFeatures ComputerVision functions; imresize/rgb2gray ImageProcessing functions; parfor parallel execution support",
+  "local_matlab": null,
+  "local_octave": null,
+  "local_common_installs": [],
+  "server_runtime": "Neither matlab nor octave found by command -v; no licensed ComputerVision runtime confirmed",
+  "native_FSC": "demo fits similarity; common experiment would replace only estimator with unchanged full affineRANSAC, requiring explicit protocol distinction",
+  "coordinates": "MATLAB feature locations are1-basedxy; subtract1 at common zero-origin interface; regression required before numerical use",
+  "status": "source_and_dependencies_audited_not_numerically_reproduced",
+  "no_python_reimplementation_substituted": true,
+  "metrics": null,
+  "resource_note": "If later runCPU, report CPUlatency+RAM; no zeroGPUMiB superiority claim"
+}

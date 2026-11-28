@@ -12,6 +12,11 @@ SOMA另完成[复现可行性核查](reports/soma_audit_v1/SOMA复现核查.md)�
 固定K256局部精化受控比较已完成：冻结T05编码/粗匹配，两组仅微调精化器、相同7912次更新。952对验证，原精化器/一层2048参数局部交互的SR@5为52.63%/51.89%，窗口内平均定位误差仅额外改善0.011px；单卡无hook中位端到端9.377/9.786ms，独立进程峰值allocated41.11/42.78MiB。该单种子、4epoch预算结果不支持采用新模块；未改变查询、精化数、阈值或RANSAC。133项测试通过。见[精度—开销报告](reports/local_interaction_v1/report.md)及[复现说明](docs/LOCAL_REFINEMENT_REPRODUCTION_zh.md)。SOMA在测速后已从检查点恢复原4卡训练。
 
 
+新增SAR专用公开权重参照已完成：FHReg-GUSO（512主设置）/GDROS-WHU在同952对公共仿射协议的SR@5为65.44%/31.83%，独占5090三轮新进程中位端到端57.45/261.03ms、峰值allocated1133.86/335.72MiB。GDROS原生32次+LSR另列31.51%、60.99ms，协议不与公共仿射拼接。FH的256尺寸对照仅0.11%；512有21对求解失败及极端近共线坏例，全部保留。T05两预算逐对复现；旧MINIMA/XoFTR精度经哈希与2输入逐位复核后复用，资源本轮重测。实测非支配集合为T05全量、均匀K256和FH512；开发预算取FH512这一个完整点。RIFT2仅核查MATLAB运行条件，未数值复现。138项测试通过，本轮无新训练。见[外部对比报告](reports/sar_references_v1/外部对比报告.md)、[预算v1](reports/sar_references_v1/开发预算_v1.md)、[复现说明](docs/SAR_REFERENCES_REPRODUCTION_zh.md)。
+
+SOMA测速后恢复原4卡并继续更新，但于epoch12/update22050出现非有限loss自动停止；稳定checkpoint保留在update22000，当前未运行、未产生最终测试成绩。本轮未为续跑修改SOMA协议，见[故障记录](reports/sar_references_v1/SOMA_later_failure.json)。
+
+
 ## 当前优先阶段：数据与几何基础
 
 本次阶段交付见 [数据与几何工程说明](docs/DATA_GEOMETRY_STAGE_zh.md)、[控制点格式](docs/CONTROL_POINTS_zh.md)及 `reports/data_geometry_v1/` 的完整审计和测试证据。配置实际读取 `configs/data_geometry_v1.json`；原有模型参考配置和短训练报告保留为历史。

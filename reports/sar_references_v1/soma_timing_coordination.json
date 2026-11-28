@@ -1,0 +1,75 @@
+{
+  "original_supervisor": 1472383,
+  "processes": {
+    "1472640": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python -u scripts/train_soma_os.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --resume runs/soma_os_v1/training/last.pt ",
+    "1472641": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python -u scripts/train_soma_os.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --resume runs/soma_os_v1/training/last.pt ",
+    "1472642": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python -u scripts/train_soma_os.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --resume runs/soma_os_v1/training/last.pt ",
+    "1472639": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python -u scripts/train_soma_os.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --resume runs/soma_os_v1/training/last.pt ",
+    "1472603": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python -m torch.distributed.run --standalone --nproc_per_node=4 scripts/train_soma_os.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --resume runs/soma_os_v1/training/last.pt ",
+    "1472383": "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python scripts/run_soma_pipeline.py --root /mnt/sda/zhushihao/data/vis_sar/OSDataset2.0 --gpus 4,5,6,7 --resume runs/soma_os_v1/training/last.pt "
+  },
+  "pause_unix": 1795800124.643668,
+  "prior_pipeline": {
+    "pid": 1472383,
+    "phase": "training",
+    "started_unix": 1795796229.993161,
+    "gpus": "4,5,6,7",
+    "world_size": 4,
+    "command": [
+      "/mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/.venv/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc_per_node=4",
+      "scripts/train_soma_os.py",
+      "--root",
+      "/mnt/sda/zhushihao/data/vis_sar/OSDataset2.0",
+      "--resume",
+      "runs/soma_os_v1/training/last.pt"
+    ]
+  },
+  "status_before": {
+    "pid": 1472639,
+    "world_size": 4,
+    "physical_gpus": "4,5,6,7",
+    "phase": "validating",
+    "epoch": 9,
+    "updates": 17802,
+    "updates_in_epoch": 1976,
+    "updates_per_epoch": 1978,
+    "best": {
+      "epoch": 8,
+      "SR5": 0.3949579831932773,
+      "bad_epochs": 0
+    },
+    "updated_unix": 1795800119.2427504,
+    "last_loss": 3.706054925918579,
+    "seconds_per_update": 0.32683302619839033,
+    "validation_done": 600,
+    "validation_total": 952
+  },
+  "checkpoints_preserved": true,
+  "last_logged_update_at_pause": 17802,
+  "replayed_updates": 52,
+  "resume_checkpoint_sha256": "9ece69e18f4d423fac21cbd86c10b6d8d3cd17fedcb1e485ad6aa15d04457ed7",
+  "resume_updates": 17750,
+  "resume_epoch": 8,
+  "resume_next_update": 1926,
+  "checkpoint_keys": [
+    "model",
+    "config",
+    "epoch",
+    "updates",
+    "next_update",
+    "best",
+    "plan_sha256",
+    "dinov2_sha256",
+    "optimizer",
+    "scaler",
+    "scheduler"
+  ],
+  "timing_completed": true,
+  "resumed_supervisor_pid": 1596585,
+  "resume_unix": 1795801152.4727328,
+  "resume_command_same_4GPU": true
+}

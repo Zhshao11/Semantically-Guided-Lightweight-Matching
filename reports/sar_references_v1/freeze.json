@@ -1,0 +1,143 @@
+{
+  "protocol": {
+    "protocol": "SAR-specific-public-weights-common-affine-v1",
+    "date": "2026-11-28",
+    "base_revision": "a0062fb52db159834a073dedeff0f4bda9dfd77e",
+    "source_root": "runs/sar_references_v1",
+    "output": "reports/sar_references_v1",
+    "frozen": "reports/t05_frozen_v1",
+    "methods": [
+      "T05_Full",
+      "T05_Uniform256",
+      "FHReg_GUSO",
+      "FHReg_GUSO_256",
+      "GDROS_WHU"
+    ],
+    "FHReg_GUSO": {
+      "repository": "https://github.com/vision-heng/GUSO",
+      "commit": "f3e5420d59902edd025f06159b9a2b2320ea51d4",
+      "weight": "weights/fhreg_guso.ckpt",
+      "sha256": "8eda4899bf45c730c67812c5d5efd2d6172c36b821e8ac054c90fd2952838077",
+      "weight_url": "https://drive.usercontent.google.com/download?id=1M6zXAddCIY9QJtJsjCbN9X7dMsZLDmHx&export=download&confirm=t",
+      "training_domain": "author-described GUSO-based pretraining; no OS adaptation here; satellite-scene overlap cannot be independently excluded",
+      "input": "primary OpenCVlinear256->512 optical3/SARrepeated3; CPU TF.to_tensor-equivalent/255; native sample512; retain full4096coarse positions",
+      "precision": "official FP32; no added autocast",
+      "coarse_threshold": 0.1,
+      "fine_threshold": 0.1,
+      "geometry": "raw official correspondences -> common affine RANSAC, replacing native FSC; no additional KDE cap",
+      "input_resize": 512,
+      "coordinate_restore": "OpenCV halfpixel512->256 for both predicted endpoints; no ad-hoc stride shift"
+    },
+    "GDROS_WHU": {
+      "repository": "https://github.com/Zi-Xuan-Sun/GDROS",
+      "commit": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+      "weight": "weights/GDROS-whu-opt-sar512.pth",
+      "sha256": "b6ebe175e59429272ae6aecda5f8fe5c5da2d451a283ac95b4892b5732d22a16",
+      "official_weight_link": "https://pan.baidu.com/s/1YKbw6FSWjcuJidtAeogjdg?pwd=4ykn",
+      "cached_source": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-whu-opt-sar512.pth",
+      "input_resize": 512,
+      "input": "OpenCV linear256->512, opticalRGB + SARrepeatedRGB, FP32 raw0..255; official model internally normalizes2*(image/255)-1",
+      "precision": "official FP32; no added autocast",
+      "iterations": 32,
+      "native_LSR_points": 200000,
+      "native_LSR_slice": "flattened[10000:210000], unchanged official unweighted LSR function; LSRnet checkpoint not used by test.py",
+      "main_geometry": "every original raw512 dense flow position -> predicted correspondence -> common validity filter -> common affine RANSAC; no fixedK or extra truncation",
+      "coordinate_restore": "OpenCV/align_cornersFalse halfpixel: x256=(x512+.5)/2-.5; flow512/2; optical->augmentedSAR",
+      "supplementary": "native raw dense and native32+LSR dense independently evaluated at same fixed valid probes; separate protocol, not common-affine frontier",
+      "OS_weight": "excluded: author training sample split overlap with our952 cannot be confirmed"
+    },
+    "RIFT2": {
+      "repository": "https://github.com/LJY-RS/RIFT2-multimodal-matching-rotation",
+      "commit": "0e980ce4124d2abd62727dcf040198db0a18b269",
+      "scope": "runtime/dependency audit only; MATLAB ComputerVision FAST/matchFeatures, ImageProcessing, parfor support; no silent Python replacement",
+      "status": "MATLAB/Octave not found in local/server PATH, no numerical baseline until official runtime can run",
+      "resource_reporting": "CPU RAM and latency separately; zero CUDA allocation is not total-memory advantage"
+    },
+    "validation": "all952 fixed T05 validation pairs and saved affine transforms; test unused; no threshold selection",
+    "common_geometry": "unchanged T05 independent16x16probes, full affine RANSAC config/seed/failure denominator; only predicted correspondences fit the transform",
+    "common_validity": "same finite/bounds0..255/bilinear suppliedmask>.999; estimator retains originalscore>=0 check; chunkedremap for>32767points; noGT filtering",
+    "native_budgets": "FH512 complete64x64 coarse/fine, FH256 complete32x32; GDROS32iterations/dense512^2; no sharedK cap; only T05_Uniform256 fixed256 descriptor queries",
+    "smoke": "official repository native sample, exact wrapper preprocessing/coordinate checks, then first2 fixedT10 train-source pairs; no test/val tuning",
+    "timing": {
+      "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+      "batch_size": 1,
+      "threads": 4,
+      "rounds": 3,
+      "warmup": 3,
+      "repeats": 5,
+      "subset": "original24 T05 timing_indices",
+      "boundary": "CPUresident256uint8 images+masks -> all preprocessing/H2D/uncached native model/postprocessing/coordinateD2H/filter/full affineRANSAC; excludes IO/GT/synthetic image creation/initialization",
+      "no_hooks": true,
+      "exclusive": true,
+      "memory": "fresh process per method, full PyTorch peak allocated; context/reserved separately noted",
+      "native_GDROS_timing": "separate32+LSR output boundary, do not substitute native timing for common-affine accuracy"
+    },
+    "budget": "set from jointly measured non-dominated points; pick one actual qualifying reference, never mix independent maxima/minima across methods",
+    "no_training": true,
+    "no_test": true,
+    "no_core_model_changes": true,
+    "no_weight_redistribution": true,
+    "FHReg_GUSO_256": {
+      "scope": "predeclared input-resolution sensitivity, not selected by validation outcome",
+      "input_resize": 256,
+      "weights_and_core": "identical FHReg_GUSO",
+      "note": "officialOSscript does not enforce resize; unusedimsize512 field is not an implementation guarantee"
+    }
+  },
+  "code_base_revision": "a0062fb52db159834a073dedeff0f4bda9dfd77e",
+  "checkpoint": "runs/t05_frozen_v1/checkpoint.pt",
+  "checkpoint_sha256": "f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90",
+  "input_sha256": {
+    "configs/sar_references_v1.json": "aacd15110ad4e33b981f19481e4c4bc799cf8a39d1f3b19a9f4672e7fe612e1e",
+    "reports/t05_frozen_v1/validation_plan.json": "0b1c9033e3935bb8234126f852a3d39495cd59c3790bcd7e042d0a416b12ac51",
+    "reports/t05_frozen_v1/subsets.json": "5caa7172b05f26532e37f9815d54aca7bd86d5941aa0f0eec1a9b95870fdfe02",
+    "reports/t05_frozen_v1/candidate_config.json": "c531159cbdf29ddeac3e19e9427184249c24107cba44b91d034a5dd5ee32447e",
+    "reports/t10_setup_v1/plan.json": "e0787d6ea7b5023f2b1dfaa1c136128ea02fc232ff8a6dde932874773fca69a8",
+    "sglm/sar_references.py": "2836a2834e577e74f4ef8ef4adb551cf9da7f04e9f8a0a176fd25b001e94fc06",
+    "sglm/sar_reference_geometry.py": "6e2ef5ec9bf84fe39896d0a4defccd2aac5c243ba041bafcbec4ece8d70e59fe",
+    "sglm/external_reference.py": "d753b05a4175792ae112d5aa6bc7f56d115cc49cbe7b958a6ec4e22c8d589cff",
+    "sglm/t05.py": "ec6783ab569ad619bec0c70467da482e96b36c835a1dcd63e4fb59ca7aba664f",
+    "sglm/t02/model.py": "598f7cc7c04477ca5b855532dd106c9ce4ccaec36608f62ea2e71f602d019e0a",
+    "sglm/model.py": "faf8bbebf0f0f89cd67136c61bb5cb8c5593b7935ad4a8e6443541678166220a",
+    "sglm/evaluation.py": "cc543598f71e25e869fb56c2abe1e343c32a4e400a9271d8ffdbcbf121b4be8b",
+    "sglm/geometry.py": "6c977bf49c725ae576ba3490d066b00afd7ed7cb772ba3d5fa21442852944c95",
+    "scripts/evaluate_sar_references.py": "c8f5b0802facd9e38298dca41a08fd01914f6ed9867288085da9b535ac4394d4"
+  },
+  "official_source_snapshot_sha256": "9e9973dfd98cc4227c113f7911e9035e64f2644c88aeb7efec23def62132b931",
+  "weights": {
+    "FHReg_GUSO": {
+      "path": "runs/sar_references_v1/weights/fhreg_guso.ckpt",
+      "bytes": 78646305,
+      "sha256": "8eda4899bf45c730c67812c5d5efd2d6172c36b821e8ac054c90fd2952838077"
+    },
+    "GDROS_WHU": {
+      "path": "runs/sar_references_v1/weights/GDROS-whu-opt-sar512.pth",
+      "bytes": 51534966,
+      "sha256": "b6ebe175e59429272ae6aecda5f8fe5c5da2d451a283ac95b4892b5732d22a16"
+    }
+  },
+  "native_smoke_sha256": {
+    "T05_Full": "b8e9e5fdf5ba0ca44cb16cae69ff463f67639954076f31d20ca114451fcfd8f2",
+    "T05_Uniform256": "3e9dec39e767e3c692042b4c7d1c94252cf0738ffbd3717b99a7c8ec7e21771f",
+    "FHReg_GUSO": "5df0e068c84705e58a597bbf2994c19ed6c84aa1a79e385e0553b8ef93df8d73",
+    "FHReg_GUSO_256": "fd95309a80076df1e469dec5e05ce041429109892464446c1d9501fecc677780",
+    "GDROS_WHU": "af1a84fb1f9068111fa9e19f6130fd542d6646e62811f226b291eac678cf6af0"
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "mamba-ssm": "2.3.2.post1",
+    "PyWavelets": "1.8.0",
+    "pytorch-lightning": "2.6.6",
+    "kornia": "0.8.2",
+    "numpy": "2.2.6",
+    "opencv-python": "5.0.0.93"
+  },
+  "dependency_environment": "runs/sar_references_v1/.venv; system-site torch shared read-only; new deps installed only here",
+  "compatibility": "FH uses PL2profilers namespace alias for native PL1import; native inference only PassThroughProfiler; no core model/forward changes; mamba built with CUDA12.8includingSM120",
+  "GDROS_cached_weight_origin": "byte-identical copy of existing author-named official_models_reference cache; no remote checksum supplied by authors; training source follows official WHU filename and README, not independently audited original training samples",
+  "GDROS_OS_weight_excluded": true,
+  "no_training": true,
+  "test_used": false
+}
