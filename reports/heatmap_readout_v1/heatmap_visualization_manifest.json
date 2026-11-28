@@ -1,0 +1,62 @@
+{
+  "fixed_indices": [
+    2,
+    18,
+    23,
+    25,
+    34,
+    59
+  ],
+  "cases": [
+    {
+      "index": 2,
+      "pair_id": "osdataset/256/val/3",
+      "candidate_id": 33826,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0002.png",
+      "nominal_GT_in_display": true
+    },
+    {
+      "index": 18,
+      "pair_id": "osdataset/256/val/19",
+      "candidate_id": 36002,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0018.png",
+      "nominal_GT_in_display": true
+    },
+    {
+      "index": 23,
+      "pair_id": "osdataset/256/val/24",
+      "candidate_id": 33857,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0023.png",
+      "nominal_GT_in_display": true
+    },
+    {
+      "index": 25,
+      "pair_id": "osdataset/256/val/26",
+      "candidate_id": 33858,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0025.png",
+      "nominal_GT_in_display": true
+    },
+    {
+      "index": 34,
+      "pair_id": "osdataset/256/val/35",
+      "candidate_id": 33921,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0034.png",
+      "nominal_GT_in_display": true
+    },
+    {
+      "index": 59,
+      "pair_id": "osdataset/256/val/60",
+      "candidate_id": 33826,
+      "selection": "firstfitcandidate in frozen originalorder, noGT/error selection",
+      "path": "runs/heatmap_readout_v1/heatmap_case_0059.png",
+      "nominal_GT_in_display": true
+    }
+  ],
+  "private": true,
+  "no_network": true
+}

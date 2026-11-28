@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "pairs": 952,
+  "candidates": 122881,
+  "inside_hit_count": 45974,
+  "success_counts": {
+    "A": {
+      "3": 310,
+      "5": 492
+    },
+    "B": {
+      "3": 294,
+      "5": 475
+    },
+    "C": {
+      "3": 315,
+      "5": 494
+    }
+  },
+  "originalA_bitwise_reconstructed": true,
+  "allthree_readouts_on_all_original_candidates": true,
+  "all952_geometry_and_probe_results_replayed": true,
+  "peak_and_localmask_independently_checked": true,
+  "no_original_heatmap_or_filter_change": true,
+  "source_confidence_ID_order_mask_unchanged": true,
+  "GTnotin_readout_API": true,
+  "no_model_or_training": true,
+  "no_test": true,
+  "max_C_BF16_coordinate_difference_from_FP64_conditional_expectation_px": 0.04284615968043681,
+  "decision": "retain_A; no extra onlinecost experiment or training",
+  "source_sha256": {
+    "sglm/heatmap_readout.py": "5a6ae519f260cfd979ac493fbeb0fe761f234edc6d2df54d0e553105812d2866",
+    "scripts/evaluate_heatmap_readout.py": "ba19900859f291e1f837a8d179574c963313115189ba87ee0ccb0158e2770b1b",
+    "scripts/render_heatmap_readout.py": "751c7c5494c43b95126d5ccf7607f9860df048711782e9c343d681499b2cac89",
+    "scripts/report_heatmap_readout.py": "a9f808f5553bea37fdd962d46c9ce36596ae6029b8de5ac1beaba5faf497a4c6",
+    "scripts/verify_heatmap_readout.py": "527e46dade5a9acbb9c84122799312460d8709719be42f3fceb6d41c44781671",
+    "tests/test_heatmap_readout.py": "0a9c974f2992cbf47e254dbdfaebd7aff1665d5ca9e351e625cbc4828d208a00"
+  }
+}

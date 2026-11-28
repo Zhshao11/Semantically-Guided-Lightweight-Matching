@@ -1,0 +1,12 @@
+{
+  "decision": "retain_A_do_not_adopt_B_or_C",
+  "reason": "CnetSR5+2pairs but45974inside-localizationworse, probeP90worse and116rescuedvs114lost; Bdegrades. Maximumpeak oftenwrong ratherthanreliablycorrectbutmisread.",
+  "supports_readout_only_hypothesis": false,
+  "primary_seed": 20261125,
+  "validation_only": true,
+  "significance_not_established": true,
+  "no_further_readout_temperature_window_or_threshold_search": true,
+  "no_training_started": true,
+  "no_online_timing_in_this_run": true,
+  "next_research_scope": "If separately authorized later, investigate localfeaturediscrimination/localizationsupervision; testfuturefrozenconfiguration on previouslyunselectedtestsplit."
+}

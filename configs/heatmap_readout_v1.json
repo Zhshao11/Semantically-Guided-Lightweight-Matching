@@ -1,0 +1,23 @@
+{
+ "protocol":"T05K256-frozen-heatmap-coordinate-readout-ABC-v1",
+ "date":"2026-11-28",
+ "base_revision":"8e79d808f21f59c28ee6c1eab0441edd6c40b471",
+ "source_freeze":"reports/window_oracle_v1/cache_freeze.json",
+ "source_candidates":"runs/window_oracle_v1/candidates",
+ "output":"reports/heatmap_readout_v1",
+ "private":"runs/heatmap_readout_v1",
+ "checkpoint":"original T05epoch18 SHA f9ff3f377394514fce2dd72ef349d7a0a71a10d0b2d73a3bd59ce131e23efe90; no finetuned refiner",
+ "K":256,
+ "expected_pairs":952,
+ "expected_fit_candidates":122881,
+ "expected_window_hits":45974,
+ "branches":{"A":"exactoriginal fullvalidwindowsoftmax expectation, cachedoriginaltarget; replay originalBF16readout bitwise", "B":"maximumoriginalheatmap probability amongoriginalvalidtokens; firstrow-major index for exacttie; output exactsampleposition", "C":"same maximumpeak asB; intersection of originalvalidtokens and fixed3x3fine-grid neighborhood ofthatpeak; renormalize originalprobabilitymass only, originaltemperatureunchanged; samecenter+2expectationreadout"},
+ "arithmetic":"original heatmapsFP32, original coordinatesFP32, same originalBF16autocast matrix-multiplication readout forA/C; no temperature/logits/re-softmax or precisionchange; reconstructA on wholeoriginal refinepacket before frozenfitmask, no shapechange",
+ "intervention_scope":"B/C applieduniformly to everyoriginalfitcandidate; never useGThit to selectwhichreadout; freezecandidateID/order/source/confidence/originalfilters; no new bounds/confidence/GTfilter; no candidate recovery",
+ "geometry":"original affineRANSAC config and originalseed20261125 reset perbranch perpair; recomputeinliers independently",
+ "evaluation":"all952 sameindependent16x16probes and failuredenominator; no GT entersreadout; validationusedfordevelopment nottestconfirmation",
+ "posthoc_diagnostics":{"subset":"same45974nominalGTinsideactualvalidsupport, maskfrozenfrompriororacle", "truth_neighborhood":"nearestoriginalVALIDsamplingtoken to nominalGT, firstrowmajor tie; fixed3x3fine-gridvalidintersection; mass is sum of originalglobalprobability (not conditionalrenormalization)", "peak_neighborhood":"same3x3 usedbyC; diagnostic mass uses originalprobability", "peak_GT_distance":"Euclidean originalpixel distance fromBsampleposition to nominalGT", "secondary_peak":"strongestoriginalvalid3x3localmaximum OUTSIDE mainpeak3x3; localmaximum>=allvalidneighbors and>atleastonevalidneighbor, exactties firstrowmajor; flatmaximumplateau separately counted", "obvious_competing_peak":"secondaryexists and secondary/mainpeak probability ratio>=0.5, fixeddiagnosticthreshold only, no inferencegating", "error_thresholds_px":[1,3,5],"error_quantiles":[0,10,25,50,75,90,95,99,100],"GT_neighborhood_or_competition_never_selectsstrategy":true},
+ "visualization":"first6 originalT05diagnosticindices, firstfitcandidate in originalorder, irrespectiveofGT/errors; mark A/B/C/nominalGT/invalidtokens/peak3x3",
+ "no_training":true,"no_network_rerun":true,"no_temperature_or_threshold_scan":true,"no_filter_change":true,"no_test":true,
+ "timing":"notpartofthisofflinefrozenheatmapcomparison; neverclaimcachedreadoutcostasdeployableend-to-end; if mechanismuseful, onlinecost requiresseparate sameprotocolmeasurement"
+}

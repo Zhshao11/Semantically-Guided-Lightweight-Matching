@@ -1,0 +1,19 @@
+........................................................................ [ 44%]
+........................................................................ [ 89%]
+.................                                                        [100%]
+=============================== warnings summary ===============================
+../../../../home/zzvr/.local/lib/python3.10/site-packages/anyio/pytest_plugin.py:14
+  /home/zzvr/.local/lib/python3.10/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_window_oracle.py::test_degenerate_support_point_line_and_empty
+tests/test_window_oracle.py::test_degenerate_support_point_line_and_empty
+tests/test_window_oracle.py::test_degenerate_support_point_line_and_empty
+  /mnt/sda/zhushihao/Semantically-Guided-Lightweight-Matching/sglm/window_oracle.py:34: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+    distance=abs(np.cross(vector,point-hull[0]))/length
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+161 passed, 4 warnings in 8.24s
