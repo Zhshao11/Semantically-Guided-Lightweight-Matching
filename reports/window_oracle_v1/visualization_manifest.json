@@ -1,0 +1,56 @@
+{
+  "fixed_indices": [
+    2,
+    18,
+    23,
+    25,
+    34,
+    59
+  ],
+  "selection": "first6 originalT05diagnostic_indices; no result-based choice",
+  "cases": [
+    {
+      "index": 2,
+      "pair_id": "osdataset/256/val/3",
+      "path": "runs/window_oracle_v1/visualizations/case_0002.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    },
+    {
+      "index": 18,
+      "pair_id": "osdataset/256/val/19",
+      "path": "runs/window_oracle_v1/visualizations/case_0018.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    },
+    {
+      "index": 23,
+      "pair_id": "osdataset/256/val/24",
+      "path": "runs/window_oracle_v1/visualizations/case_0023.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    },
+    {
+      "index": 25,
+      "pair_id": "osdataset/256/val/26",
+      "path": "runs/window_oracle_v1/visualizations/case_0025.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    },
+    {
+      "index": 34,
+      "pair_id": "osdataset/256/val/35",
+      "path": "runs/window_oracle_v1/visualizations/case_0034.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    },
+    {
+      "index": 59,
+      "pair_id": "osdataset/256/val/60",
+      "path": "runs/window_oracle_v1/visualizations/case_0059.png",
+      "display_candidate_selection": "10uniformpositions in originalfit order; zoom firstfit candidate",
+      "candidate_selection_does_not_read_outcome_orGT": true
+    }
+  ],
+  "private_images": true
+}

@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "pair_id": "osdataset/256/val/300",
+      "base_rmse_px": 0.6706345083143321,
+      "oracle_rmse_px": 5.556121078632001,
+      "fit_candidates": 117,
+      "replacements": 37,
+      "original_inliers": 27,
+      "oracle_inliers": 39,
+      "oracle_inliers_replaced_nominal": 31,
+      "oracle_inliers_unreplaced": 8,
+      "nominal_transform_consensus": 37
+    }
+  ],
+  "seed_probe": [
+    20261125,
+    20261126,
+    20261127
+  ],
+  "probe_numerical_seed_sensitivity": false,
+  "not_a_new_filter_or_seed_selection": true
+}

@@ -17,6 +17,9 @@ SOMA另完成[复现可行性核查](reports/soma_audit_v1/SOMA复现核查.md)�
 SOMA测速后恢复原4卡并继续更新，但于epoch12/update22050出现非有限loss自动停止；稳定checkpoint保留在update22000，当前未运行、未产生最终测试成绩。本轮未为续跑修改SOMA协议，见[故障记录](reports/sar_references_v1/SOMA_later_failure.json)。
 
 
+原始T05 K256的[窗口内理想定位诊断](reports/window_oracle_v1/实验报告.md)已完成：同952对、固定全部122881条拟合候选与原RANSAC，按真实有效采样点凸包+影像mask判断45974条可替换对应（比旧box少116条）。SR@5从原始51.68%升至理想92.54%，救回390/460个原失败、1个原成功退化；SR@3为32.56%→91.07%。此为名义GT目标替换的条件式潜力诊断，不是可部署成绩或严格单调性能上界；没有训练、测速、新候选/过滤或新精化器。145项测试通过，952对空干预完全一致；退化个例在3个配对RANSAC种子下不变，未扩大多种子。见[复现说明](docs/WINDOW_ORACLE_REPRODUCTION_zh.md)。
+
+
 ## 当前优先阶段：数据与几何基础
 
 本次阶段交付见 [数据与几何工程说明](docs/DATA_GEOMETRY_STAGE_zh.md)、[控制点格式](docs/CONTROL_POINTS_zh.md)及 `reports/data_geometry_v1/` 的完整审计和测试证据。配置实际读取 `configs/data_geometry_v1.json`；原有模型参考配置和短训练报告保留为历史。

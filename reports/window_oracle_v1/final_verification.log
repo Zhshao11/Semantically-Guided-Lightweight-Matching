@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "totals": {
+    "refine_candidates": 122881,
+    "fit_candidates": 122881,
+    "refine_hits": 45974,
+    "fit_hits": 45974,
+    "baseline_exact_pairs": 952,
+    "empty_intervention_exact_pairs": 952,
+    "oracle_fit_exact_pairs": 952,
+    "mask_local_removed": 0,
+    "mask_estimator_removed": 0
+  },
+  "real_sampler_support_recomputed": true,
+  "all952_oracle_and_original_fits_replayed": true,
+  "all952_probes_independent": true,
+  "original_model_and_estimator_sources_unchanged": true,
+  "one_main_paired_seed": 20261125,
+  "posthoc_single_regression_pair_seed_check_only": true,
+  "no_best_seed_selection": true,
+  "no_model_training": true,
+  "no_timing_or_memory_ranking": true,
+  "no_test": true,
+  "source_sha256": {
+    "sglm/window_oracle.py": "dc700730d0fdd6aaf014221a17ea0cf3f6ed272a760e80dd3b532520f14f4f4c",
+    "scripts/cache_window_oracle.py": "df6782457a4b08ac8eccefd18389f164bd1159a3cd88d2e8928d1249b17d9097",
+    "scripts/check_window_oracle_ransac.py": "1262d11251bfa36f4539f2c493076a94bfe44e2617a4b251a873245be4590bf6",
+    "scripts/evaluate_window_oracle.py": "8140d96b433bc4085c16d20b3f6e690eee211ac18076ff06678682ff9ecf5d3f",
+    "scripts/render_window_oracle.py": "ada2f8852f1a4d7649231e4360f9e66cbd1755c0d34458fb11714a6f885338aa",
+    "scripts/report_window_oracle.py": "15790d37b983cedc2b25f1cadb3e0e0f9bc9171aec3ef4c05bbb309b1bca20c6",
+    "scripts/verify_window_oracle.py": "328621edb953918557aae25f945f689f074e4fa4b2e3751890fc8ce49495bd9b",
+    "tests/test_window_oracle.py": "b14578de49f53ca565468f550b3b140b823f2532d68b7bc6a9d4db3787150a5e"
+  }
+}
