@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "all952_SR_denominator": 952,
+  "FHReg_success5": 623,
+  "fit_failures_in_denominator": 21,
+  "RMSE_scope931_solved": true,
+  "random_pairs": 30,
+  "each_class10": true,
+  "all30_reproduce_original": true,
+  "private_all_evidence_files_present_and_hashes_match": true,
+  "known_coordinate_cases": 7,
+  "coordinate_max_error_px": 4.4250277853356566e-05,
+  "qualitative_all30_notes_present": true,
+  "formal_processes": 6,
+  "formal_runs": 720,
+  "exclusive_guards": 288,
+  "same24_CPUinputs": true,
+  "unified_outer_boundary": true,
+  "no_model_training": true,
+  "no_full952_network_rerun": true,
+  "test_used": false,
+  "source_sha256": {
+    "sglm/fhreg_coordinate_audit.py": "9e6d75fa34f4b5e3e312f9f188b69c132d3e8a9c8e1f095c1cfa768bc91acf83",
+    "scripts/benchmark_fhreg_t05_audit.py": "cbcb4f4928144cbc921a5305ed2b965f8620fc44e674d7709b3fb58e4a0b8868",
+    "scripts/extend_fhreg_visual_audit.py": "70deed96a80114f2928998184e64ad314a513f3bc4814625b8669a27766ba220",
+    "scripts/prepare_fhreg_result_audit.py": "bcb5592349aa0068611c7b9c2ff68d0d192385aebe304798be3ad0c4ad0fae93",
+    "scripts/report_fhreg_result_audit.py": "576a15f17c381dbb74c1023caa9983a94f3fc9a20369b09865cd6bbadc63a758",
+    "scripts/verify_fhreg_result_audit.py": "4698657995a526d457569b9ca95ca11d0fa4068c773de0e21e6c67f7e0738711",
+    "scripts/capture_fhreg_evidence.py": "b212fc31f49312683fbed0e6875e0b8b34f70aa90c5e8639dcfde2ebe2f75f8a",
+    "tests/test_fhreg_coordinate_audit.py": "57b5d8f7a3b0323cfcc297940a7e3550c16256ebfb675dc411b7d59f7798576d"
+  }
+}

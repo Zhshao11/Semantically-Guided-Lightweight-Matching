@@ -1,0 +1,153 @@
+{
+  "method": "T05_Full",
+  "round": 3,
+  "pairs": 24,
+  "runs": 120,
+  "median_ms": 9.878708922769874,
+  "peak_allocated_MiB": 53.90478515625,
+  "peak_reserved_MiB": 80.0,
+  "exclusive_guards": 48,
+  "pid": 2716805,
+  "gpu_uuid": "GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b",
+  "fresh_single_model_process": true,
+  "no_hooks": true,
+  "no_feature_cache": true,
+  "GT_used": false,
+  "sameCPUinput_hashes": [
+    {
+      "pair_index": 2,
+      "pair_id": "osdataset/256/val/3",
+      "CPU_input_sha256": "2177516e062d0c66a46d6912e1bfbd5c9ff31d34473b7ca91e16b6dff5630489"
+    },
+    {
+      "pair_index": 23,
+      "pair_id": "osdataset/256/val/24",
+      "CPU_input_sha256": "6c9862fba1ed22ebbc49ec054f049722a6ff29049166dd596808de4ef8100bb4"
+    },
+    {
+      "pair_index": 103,
+      "pair_id": "osdataset/256/val/104",
+      "CPU_input_sha256": "39624fbf41b3a7a7ee4f5d996c1287094ad04b50a6bc2d0a7f5252ae8fcbc5ee"
+    },
+    {
+      "pair_index": 146,
+      "pair_id": "osdataset/256/val/147",
+      "CPU_input_sha256": "0ac954fd21cf01f9eff14442e3789a6e27a21d138eea0be84de793486184ee4b"
+    },
+    {
+      "pair_index": 172,
+      "pair_id": "osdataset/256/val/173",
+      "CPU_input_sha256": "c1fdaca3bed52d14ac9042e4e6f7fefec5430d3660ee17aa422202a4cd126e16"
+    },
+    {
+      "pair_index": 220,
+      "pair_id": "osdataset/256/val/221",
+      "CPU_input_sha256": "adee288e6f395686c62768cd083da212b738198cc405a916396c937ff246ddec"
+    },
+    {
+      "pair_index": 243,
+      "pair_id": "osdataset/256/val/244",
+      "CPU_input_sha256": "a86c417b6caa213025eb33c31031459e3bd1bedd6e48ea47bebbc5b0965efb90"
+    },
+    {
+      "pair_index": 306,
+      "pair_id": "osdataset/256/val/307",
+      "CPU_input_sha256": "de3803f70f71b2789e7f5c80f12ca1c0ed07330abcbd18f8c90fafe5b742dfd0"
+    },
+    {
+      "pair_index": 313,
+      "pair_id": "osdataset/256/val/314",
+      "CPU_input_sha256": "9a297e78df1066b6bb1ce004310fb5176604efe0bbc3aa456fc9ea86fc0d1b1c"
+    },
+    {
+      "pair_index": 405,
+      "pair_id": "osdataset/256/val/406",
+      "CPU_input_sha256": "84c6a7ee0ffec705dedb88bf3ceb0cfc09e1dbdf7858bc17f7b5554bef1a159b"
+    },
+    {
+      "pair_index": 426,
+      "pair_id": "osdataset/256/val/427",
+      "CPU_input_sha256": "a4cafc7d953496503e64e0f3941a13cf01a0ba4db894499fc4f09f031ca7683c"
+    },
+    {
+      "pair_index": 591,
+      "pair_id": "osdataset/256/val/592",
+      "CPU_input_sha256": "639c3f6ba1d92463bae637da9f83ce1bfef1e9367610aa70e16e3d61e11dfbde"
+    },
+    {
+      "pair_index": 644,
+      "pair_id": "osdataset/256/val/645",
+      "CPU_input_sha256": "b6112bb89c62a605d16353a638f060c197b813915b5791c17028f24358a5ac18"
+    },
+    {
+      "pair_index": 714,
+      "pair_id": "osdataset/256/val/715",
+      "CPU_input_sha256": "4e5c4e6a099d4db3e70bc119f046ddbeb6a459d1464ad1b116537dfce88ac5a4"
+    },
+    {
+      "pair_index": 725,
+      "pair_id": "osdataset/256/val/726",
+      "CPU_input_sha256": "1d1e4d056e88ae5a96d64e894e813e9b2046fe1727cd2d0c2e3811a7c0adf2cb"
+    },
+    {
+      "pair_index": 733,
+      "pair_id": "osdataset/256/val/734",
+      "CPU_input_sha256": "4173af59fbbe75f3d8a260a15560e06b4438a92bbd6fc398a32e5e7c384c4029"
+    },
+    {
+      "pair_index": 755,
+      "pair_id": "osdataset/256/val/756",
+      "CPU_input_sha256": "f73569f6774e05f8d6cc18caef2471cad6991fe375a77e6b461f79aa3ff1e8cb"
+    },
+    {
+      "pair_index": 792,
+      "pair_id": "osdataset/256/val/793",
+      "CPU_input_sha256": "9038d95253b9f1cd8c01a2677178cea78e9b8704655d33d6b3774f1f137c73fe"
+    },
+    {
+      "pair_index": 819,
+      "pair_id": "osdataset/256/val/820",
+      "CPU_input_sha256": "86a7f772f6e5db7245210f91a654b765fe59f90387b5e1d880c6737e3845636c"
+    },
+    {
+      "pair_index": 822,
+      "pair_id": "osdataset/256/val/823",
+      "CPU_input_sha256": "e01a6ddd65cba8af2f947cde16b7130f6cb24aad97267b8b4c963e0f3365c684"
+    },
+    {
+      "pair_index": 843,
+      "pair_id": "osdataset/256/val/844",
+      "CPU_input_sha256": "db55a41f50a54694436fa5cf686ac53c1b5b7d316bb260e0e7c6f54e6a5c0c4c"
+    },
+    {
+      "pair_index": 850,
+      "pair_id": "osdataset/256/val/851",
+      "CPU_input_sha256": "1b553f6ee910921a89e5d570bc80b53a629aa08260ab0dc7009d8b768aa41996"
+    },
+    {
+      "pair_index": 905,
+      "pair_id": "osdataset/256/val/906",
+      "CPU_input_sha256": "79a6b2006550ce0a5b62bd0c604997e6d86a4b6db688fbfeee2b07d32b3c1eab"
+    },
+    {
+      "pair_index": 936,
+      "pair_id": "osdataset/256/val/937",
+      "CPU_input_sha256": "2cc07eaf5b5952be8343845e5548f41bf57fb188f172a1b387fb65ca4a0ef14f"
+    }
+  ],
+  "warmup_per_pair": 3,
+  "repeats_per_pair": 5,
+  "cuda_sync_before_after": true,
+  "boundary": "CPUoriginal256uint8images+masks -> originalmethodpreprocessing/H2D/uncachednativeinference/coordinateD2H/commonvalidfilter/originalfullaffineRANSAC, synchronizedwallclock; excludesIO/syntheticimagecreation/GT/modelinitialization",
+  "include_RANSAC": true,
+  "include_common_filter": true,
+  "precision": "BF16",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "opencv": "5.0.0",
+  "torch_threads": 4,
+  "opencv_native_threads": 192,
+  "hardware_before": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 3325 MiB, 61 %, 353.56 W, 2812 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 4361 MiB, 89 %, 168.36 W, 2902 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 19333 MiB, 34 %, 349.17 W, 2835 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 15761 MiB, 53 %, 184.49 W, 2865 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 14.60 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 12.25 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 11.70 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 523 MiB, 0 %, 50.35 W, 2467 MHz\n",
+  "hardware_after": "0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 580.178.04, 3325 MiB, 97 %, 343.89 W, 2820 MHz\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 580.178.04, 4457 MiB, 87 %, 140.60 W, 2895 MHz\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 580.178.04, 19333 MiB, 97 %, 299.52 W, 2880 MHz\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 580.178.04, 15761 MiB, 56 %, 183.01 W, 2857 MHz\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 16.96 W, 180 MHz\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 12.39 W, 180 MHz\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 580.178.04, 15 MiB, 0 %, 10.09 W, 180 MHz\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 580.178.04, 727 MiB, 1 %, 57.29 W, 2400 MHz\n",
+  "source_sha256": "cbcb4f4928144cbc921a5305ed2b965f8620fc44e674d7709b3fb58e4a0b8868"
+}

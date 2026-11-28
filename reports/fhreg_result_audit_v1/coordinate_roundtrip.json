@@ -1,0 +1,599 @@
+{
+  "passed": true,
+  "tolerance_px": 0.0001,
+  "no_network": true,
+  "production_restore": "sglm.sar_reference_geometry.restore_resized_coordinates exactlyused byFHReg",
+  "production_geometry": "crop/pad zero; syntheticextensions do not implyactualcrop/padding inpriorFH table",
+  "cases": [
+    {
+      "name": "256_to512_to256_translation",
+      "points": 1005,
+      "original_hw": [
+        256,
+        256
+      ],
+      "resized_hw": [
+        512,
+        512
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.0,
+          0.0,
+          13.25
+        ],
+        [
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 1.1666861869761672e-05,
+          "mean_px": 4.049431768127321e-06
+        },
+        "target_roundtrip": {
+          "max_px": 2.1648301161962895e-05,
+          "mean_px": 4.357250774965175e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 1.5377536293599222e-05,
+          "mean_px": 1.2312216509306967e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 2.1648301161962895e-05,
+          "mean_px": 4.357250775028965e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 120.90088917287338,
+      "known_affine_independent_probe_rmse_px": 2.44855517222642e-07,
+      "passed": true
+    },
+    {
+      "name": "256_to512_to256_fullaffine",
+      "points": 1005,
+      "original_hw": [
+        256,
+        256
+      ],
+      "resized_hw": [
+        512,
+        512
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 1.1666861869761672e-05,
+          "mean_px": 4.049431768127321e-06
+        },
+        "target_roundtrip": {
+          "max_px": 1.5790652591346623e-05,
+          "mean_px": 4.729631023468592e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 2.355562683244067e-05,
+          "mean_px": 5.945553792409579e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 1.5654439909616445e-05,
+          "mean_px": 4.739127041456042e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 128.8871459180703,
+      "known_affine_independent_probe_rmse_px": 1.2699223312714564e-06,
+      "passed": true
+    },
+    {
+      "name": "512_to256_to512_fullaffine",
+      "points": 1005,
+      "original_hw": [
+        512,
+        512
+      ],
+      "resized_hw": [
+        256,
+        256
+      ],
+      "source_transform": [
+        [
+          0.5,
+          0.0,
+          -0.25
+        ],
+        [
+          0.0,
+          0.5,
+          -0.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          0.5,
+          0.0,
+          -0.25
+        ],
+        [
+          0.0,
+          0.5,
+          -0.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 2.2379995037634293e-05,
+          "mean_px": 8.073856540452879e-06
+        },
+        "target_roundtrip": {
+          "max_px": 3.335531614699773e-05,
+          "mean_px": 8.727520190546438e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 4.4250277853356566e-05,
+          "mean_px": 1.1520537085274492e-05
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 3.2449741516483775e-05,
+          "mean_px": 8.817775182500943e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 248.15525530425134,
+      "known_affine_independent_probe_rmse_px": 2.3240286379010128e-06,
+      "passed": true
+    },
+    {
+      "name": "non_square_xy_scale",
+      "points": 1005,
+      "original_hw": [
+        192,
+        320
+      ],
+      "resized_hw": [
+        512,
+        640
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.6666666666666665,
+          0.8333333333333333
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.6666666666666665,
+          0.8333333333333333
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 1.677117125940592e-05,
+          "mean_px": 5.384215775834048e-06
+        },
+        "target_roundtrip": {
+          "max_px": 1.6127198043248294e-05,
+          "mean_px": 5.269956655143183e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 2.713924811052393e-05,
+          "mean_px": 7.223342975187694e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 1.6125854029118064e-05,
+          "mean_px": 5.265780990046164e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 151.2692608205595,
+      "known_affine_independent_probe_rmse_px": 1.4637370317447254e-06,
+      "passed": true
+    },
+    {
+      "name": "different_source_target_crops",
+      "points": 1005,
+      "original_hw": [
+        256,
+        256
+      ],
+      "resized_hw": [
+        512,
+        512
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          -22.5
+        ],
+        [
+          0.0,
+          2.0,
+          -10.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          -6.5
+        ],
+        [
+          0.0,
+          2.0,
+          -30.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 1.1666861869761672e-05,
+          "mean_px": 4.111734314335086e-06
+        },
+        "target_roundtrip": {
+          "max_px": 2.2636119889240698e-05,
+          "mean_px": 4.856985658912065e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 2.355562683244067e-05,
+          "mean_px": 6.04227378132743e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 2.1791835763171935e-05,
+          "mean_px": 4.875635488109358e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 136.43017103971104,
+      "known_affine_independent_probe_rmse_px": 6.326628217388952e-07,
+      "passed": true
+    },
+    {
+      "name": "asymmetric_padding",
+      "points": 1005,
+      "original_hw": [
+        256,
+        256
+      ],
+      "resized_hw": [
+        512,
+        512
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          17.5
+        ],
+        [
+          0.0,
+          2.0,
+          9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          3.5
+        ],
+        [
+          0.0,
+          2.0,
+          27.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 1.5548702039272064e-05,
+          "mean_px": 4.392487648863732e-06
+        },
+        "target_roundtrip": {
+          "max_px": 1.6720609539284788e-05,
+          "mean_px": 4.866663476240819e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 2.6339560603466033e-05,
+          "mean_px": 6.3122402394224436e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 1.669660936950458e-05,
+          "mean_px": 4.893440221977644e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 122.68217217381134,
+      "known_affine_independent_probe_rmse_px": 6.883661902175641e-07,
+      "passed": true
+    },
+    {
+      "name": "crop_and_padding_both_sides",
+      "points": 1005,
+      "original_hw": [
+        256,
+        256
+      ],
+      "resized_hw": [
+        512,
+        512
+      ],
+      "source_transform": [
+        [
+          2.0,
+          0.0,
+          -17.5
+        ],
+        [
+          0.0,
+          2.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_transform": [
+        [
+          2.0,
+          0.0,
+          14.5
+        ],
+        [
+          0.0,
+          2.0,
+          -29.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "known_affine": [
+        [
+          1.037,
+          0.083,
+          11.25
+        ],
+        [
+          -0.047,
+          0.923,
+          -7.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "errors": {
+        "source_roundtrip": {
+          "max_px": 2.3734648260743015e-05,
+          "mean_px": 4.703618266646286e-06
+        },
+        "target_roundtrip": {
+          "max_px": 1.6731693516567375e-05,
+          "mean_px": 5.032405598152532e-06
+        },
+        "forward_from_recovered_source": {
+          "max_px": 3.358353746771154e-05,
+          "mean_px": 6.680679588253174e-06
+        },
+        "affine_inverse_roundtrip": {
+          "max_px": 1.6433733743730112e-05,
+          "mean_px": 5.046171854232984e-06
+        }
+      },
+      "xy_swap_negative_mean_px": 143.6254140891135,
+      "known_affine_independent_probe_rmse_px": 9.649017276391176e-07,
+      "passed": true
+    }
+  ],
+  "max_error_px": 4.4250277853356566e-05,
+  "mean_error_px_mean_across_equal_size_cases": 5.555579290213323e-06
+}

@@ -1,0 +1,512 @@
+{
+  "pairs": 30,
+  "uniform_inlier_patches_per_pair": 6,
+  "no_GT_selection": true,
+  "no_network": true,
+  "note": "Contrast/texture patches are qualitative, not independent physical GT. Patch display is resized and must not be used for geometric measurement.",
+  "pairs_manifest": [
+    {
+      "pair_id": "osdataset/256/val/119",
+      "FHReg_probe_rmse_px": 1.549227955126091,
+      "identity_probe_rmse_px": 17.791630941997315,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 25.45699158646611,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        710,
+        1423,
+        2153,
+        2869,
+        3576
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/698",
+      "FHReg_probe_rmse_px": 0.6715970704365113,
+      "identity_probe_rmse_px": 14.752567365159667,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 22.538141465234954,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        709,
+        1429,
+        2146,
+        2857,
+        3570
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/875",
+      "FHReg_probe_rmse_px": 4.812389158081275,
+      "identity_probe_rmse_px": 14.245443871539642,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 11.008551689406188,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        585,
+        1063,
+        1609,
+        2090,
+        2581
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/907",
+      "FHReg_probe_rmse_px": 4.619056948834114,
+      "identity_probe_rmse_px": 17.360621968073108,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 23.857086614485706,
+      "uniformly_displayed_filtered_inlier_ids": [
+        5,
+        510,
+        1000,
+        1583,
+        2313,
+        3077
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/932",
+      "FHReg_probe_rmse_px": 3.560537318205242,
+      "identity_probe_rmse_px": 17.929244769073016,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 25.52888608106935,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        888,
+        1567,
+        2233,
+        2900,
+        3616
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/473",
+      "FHReg_probe_rmse_px": 2.507666413760843,
+      "identity_probe_rmse_px": 19.66405293420988,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 34.570698491654305,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        783,
+        1499,
+        2218,
+        2934,
+        3659
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/460",
+      "FHReg_probe_rmse_px": 1.2641630496560894,
+      "identity_probe_rmse_px": 19.842629190419267,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 33.43090225439144,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        710,
+        1421,
+        2138,
+        2850,
+        3561
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/91",
+      "FHReg_probe_rmse_px": 3.9942719881391713,
+      "identity_probe_rmse_px": 27.43841277516332,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 44.7686919355731,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        641,
+        1207,
+        1785,
+        2405,
+        3019
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/669",
+      "FHReg_probe_rmse_px": 3.5284606740337967,
+      "identity_probe_rmse_px": 26.980908591768284,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 51.344957907170375,
+      "uniformly_displayed_filtered_inlier_ids": [
+        5,
+        800,
+        1563,
+        2220,
+        2875,
+        3599
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/708",
+      "FHReg_probe_rmse_px": 3.470429343709361,
+      "identity_probe_rmse_px": 25.16285220273032,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 40.83239065357047,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        465,
+        932,
+        1449,
+        1965,
+        2464
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/364",
+      "FHReg_probe_rmse_px": 153.0356839291959,
+      "identity_probe_rmse_px": 11.24157569151713,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 253.63466373894565,
+      "uniformly_displayed_filtered_inlier_ids": [
+        1,
+        8,
+        34,
+        54,
+        94,
+        108
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/734",
+      "FHReg_probe_rmse_px": 6.137334837594363,
+      "identity_probe_rmse_px": 16.497133113699896,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 30.603502545928848,
+      "uniformly_displayed_filtered_inlier_ids": [
+        4,
+        616,
+        1211,
+        1813,
+        2687,
+        3676
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/439",
+      "FHReg_probe_rmse_px": 18.88227428528344,
+      "identity_probe_rmse_px": 19.29054842583106,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 1.8505856476252667,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        1282,
+        2143,
+        2835,
+        3477,
+        4100
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/534",
+      "FHReg_probe_rmse_px": 12.283444084509027,
+      "identity_probe_rmse_px": 12.275658098027353,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 0.25953223493192923,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        719,
+        1439,
+        2159,
+        2879,
+        3599
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/726",
+      "FHReg_probe_rmse_px": null,
+      "identity_probe_rmse_px": 11.825562085271619,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": false,
+      "FHReg_vs_identity_probe_max_displacement_px": null,
+      "uniformly_displayed_filtered_inlier_ids": []
+    },
+    {
+      "pair_id": "osdataset/256/val/942",
+      "FHReg_probe_rmse_px": 9.040176707623488,
+      "identity_probe_rmse_px": 9.072298839772827,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 0.20269365068286202,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        719,
+        1439,
+        2159,
+        2879,
+        3599
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/74",
+      "FHReg_probe_rmse_px": 6.676190314844284,
+      "identity_probe_rmse_px": 18.580117849300777,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 28.681876368985357,
+      "uniformly_displayed_filtered_inlier_ids": [
+        445,
+        1646,
+        2393,
+        2872,
+        3310,
+        3795
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/170",
+      "FHReg_probe_rmse_px": 156.39604074358746,
+      "identity_probe_rmse_px": 10.547414345460805,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 266.3080211506137,
+      "uniformly_displayed_filtered_inlier_ids": [
+        18,
+        21,
+        25,
+        27,
+        33,
+        37
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/938",
+      "FHReg_probe_rmse_px": 5.041653187081813,
+      "identity_probe_rmse_px": 17.05561261145404,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 19.973079809776106,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        857,
+        1466,
+        1910,
+        2322,
+        2775
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/784",
+      "FHReg_probe_rmse_px": 5.4390218393176255,
+      "identity_probe_rmse_px": 21.18200368622007,
+      "identity_SR5": false,
+      "FHReg_SR5": false,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 40.66506044366741,
+      "uniformly_displayed_filtered_inlier_ids": [
+        2,
+        31,
+        75,
+        87,
+        107,
+        117
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/428",
+      "FHReg_probe_rmse_px": 0.9741950440294639,
+      "identity_probe_rmse_px": 25.736845772131037,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 44.897515325029,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        716,
+        1429,
+        2141,
+        2858,
+        3641
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/752",
+      "FHReg_probe_rmse_px": 4.211753013444451,
+      "identity_probe_rmse_px": 20.805747284517,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 29.839933829970214,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        493,
+        987,
+        1526,
+        2109,
+        3054
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/896",
+      "FHReg_probe_rmse_px": 0.4623018539308774,
+      "identity_probe_rmse_px": 19.3917000342906,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 34.83439381463893,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        720,
+        1440,
+        2160,
+        2883,
+        3629
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/741",
+      "FHReg_probe_rmse_px": 1.770861670315875,
+      "identity_probe_rmse_px": 17.32848414079183,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 24.682138035102025,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        717,
+        1431,
+        2152,
+        2869,
+        3575
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/9",
+      "FHReg_probe_rmse_px": 4.7410115391119945,
+      "identity_probe_rmse_px": 25.409650424430666,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 43.97080523270171,
+      "uniformly_displayed_filtered_inlier_ids": [
+        37,
+        889,
+        1542,
+        2195,
+        2848,
+        3521
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/743",
+      "FHReg_probe_rmse_px": 2.971384653384827,
+      "identity_probe_rmse_px": 16.687309823880252,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 26.088371244815814,
+      "uniformly_displayed_filtered_inlier_ids": [
+        15,
+        796,
+        1432,
+        2068,
+        2789,
+        3609
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/462",
+      "FHReg_probe_rmse_px": 1.4543973047327443,
+      "identity_probe_rmse_px": 12.618656479254986,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 21.886758362024565,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        717,
+        1435,
+        2153,
+        2870,
+        3588
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/693",
+      "FHReg_probe_rmse_px": 0.8196621205688307,
+      "identity_probe_rmse_px": 20.832564772881337,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 37.77512647780763,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        703,
+        1406,
+        2109,
+        2812,
+        3545
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/789",
+      "FHReg_probe_rmse_px": 0.4641939883568464,
+      "identity_probe_rmse_px": 18.817443415230816,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 31.90269477731247,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        717,
+        1435,
+        2153,
+        2871,
+        3589
+      ]
+    },
+    {
+      "pair_id": "osdataset/256/val/146",
+      "FHReg_probe_rmse_px": 1.7857232801938099,
+      "identity_probe_rmse_px": 16.852707630888965,
+      "identity_SR5": false,
+      "FHReg_SR5": true,
+      "FHReg_has_transform": true,
+      "FHReg_vs_identity_probe_max_displacement_px": 29.75980770716478,
+      "uniformly_displayed_filtered_inlier_ids": [
+        0,
+        720,
+        1440,
+        2161,
+        2881,
+        3606
+      ]
+    }
+  ]
+}

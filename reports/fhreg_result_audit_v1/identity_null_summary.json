@@ -1,0 +1,12 @@
+{
+  "pairs": 952,
+  "no_network": true,
+  "no_refit": true,
+  "does_not_change_published_table": true,
+  "identity_SR3": 0.0,
+  "identity_SR5": 0.005252100840336135,
+  "FHReg_SR5": 0.6544117647058824,
+  "FHReg_near_identity_matrices": 0,
+  "FHReg_success_identity_failed": 619,
+  "interpretation": "Rules out fixedidentity transform as explanation of aggregateFH score; does not prove every match is physical or modeldependscausally on pixels."
+}

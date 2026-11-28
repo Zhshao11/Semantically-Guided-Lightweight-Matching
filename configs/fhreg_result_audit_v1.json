@@ -1,0 +1,18 @@
+{
+ "protocol":"FHReg-pairwise-coordinate-denominator-and-common-timing-audit-v1",
+ "date":"2026-11-28",
+ "base_revision":"83b7d3f1752b61cb0ef6069fd5e6bed3df286a04",
+ "output":"reports/fhreg_result_audit_v1",
+ "private":"runs/fhreg_result_audit_v1",
+ "source_protocol":"configs/sar_references_v1.json",
+ "FHReg":"FHReg_GUSO512 primary publicGUSO weight, unchanged normalization/thresholds/core/coordinates/filter/RANSAC",
+ "T05":"T05_Full K1024 originalepoch18; same comparator as9.787/10.14ms tables, not K256 or finetunedrefiner",
+ "sample_selection":{"seed":20261128,"per_category":10,"success_threshold_px":5,"categories":["FHReg_success_T05_failure","T05_success_FHReg_failure","both_success"],"rule":"sort pair_id lexicographically percategory, seeded sampling withoutreplacement, preserve RNG draw order; no manual replacement/curation"},
+ "evidence":"all30 save originaloptical, unaugmentedSAR, actualaugmentedSARinput, native512rawcorrespondences, raw256restored, commonfilteredmatches, independentRANSACinliers, fixedprobes, predictedaffineoverlay/checkerboard, nominalGToverlayseparately; noGT used for fit",
+ "visualization":"fullpointcloud+uniform80lines from originalorder, exactallpoints savedCSV/NPZ; displayedsubsampling never affects fit; manualobservations qualitative, no independentphysicalGT accuracy claim",
+ "coordinate_tests":"no network: knowntranslations/fullaffine with distinctxy,256/512/non-square dimensions, pixelcenterresize, differingcroporigins andasymmetricpadding, forward/inverse points and affineconjugation, originalT05independentprobe fit; productioncrop/padzero, syntheticextensions separate",
+ "ledger":"all952pair_id/fit_success/num_matches/num_inliers/probe_error/success_at3px/success_at5px/failure_reason; recompute booleanflags andSR counts directly from finiteerror/status, never drop21failures; RMSEscope=all931solvedpairs, not only623SR5successes",
+ "timing":{"methods":["T05_Full","FHReg_GUSO"],"gpu_uuid":"GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b","batch_size":1,"threads":4,"rounds":3,"warmup_per_pair":3,"repeats_per_pair_per_round":5,"subset":"same24 originalT05timing_indices","order":"round1T05/FH,round2FH/T05,round3T05/FH;freshsinglemodelprocess eachmethodround","boundary":"CPUoriginal256uint8images+masks -> originalmethodpreprocessing/H2D/uncachednativeinference/coordinateD2H/commonvalidfilter/originalfullaffineRANSAC, synchronizedwallclock; excludesIO/syntheticimagecreation/GT/modelinitialization","precision":"unchanged T05BF16 / FHRegFP32; not claimedidenticalprecision","exclusive":true,"no_hooks":true,"memory":"freshsinglemodelprocess, resetPyTorchpeakafterperpairwarmups, maxallocatedacrossall24/rounds, never subtractworkspace; reserved+RSSseparate","CPU":"torchthreads4, CPUshared, no new pinning/clocks or externalprocess interventions"},
+ "history":"compare exact stored configs/callchains/freshprocess and rounddrift for10.138vs9.787, do not assigncausality without evidence; newjointtable authoritativeforthisaudit",
+ "no_training":true,"no_full952_network_rerun":true,"no_test":true,"no_threshold_or_RANSAC_tuning":true,"no_weight_redistribution":true
+}

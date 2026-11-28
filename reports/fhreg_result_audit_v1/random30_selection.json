@@ -1,0 +1,282 @@
+{
+  "seed": 20261128,
+  "threshold_px": 5,
+  "eligible_pools": {
+    "FHReg_success_T05_failure": 190,
+    "T05_success_FHReg_failure": 87,
+    "both_success": 433
+  },
+  "pairs": [
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 0,
+      "pair_id": "osdataset/256/val/119",
+      "FHReg_rmse_px": 1.549227955126091,
+      "T05_rmse_px": 7.122177752169873,
+      "FHReg_valid_matches": 3577,
+      "FHReg_inliers": 3522
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 1,
+      "pair_id": "osdataset/256/val/698",
+      "FHReg_rmse_px": 0.6715970704365113,
+      "T05_rmse_px": 15.180605519558078,
+      "FHReg_valid_matches": 3571,
+      "FHReg_inliers": 3542
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 2,
+      "pair_id": "osdataset/256/val/875",
+      "FHReg_rmse_px": 4.812389158081275,
+      "T05_rmse_px": 22.439349959847117,
+      "FHReg_valid_matches": 2582,
+      "FHReg_inliers": 2378
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 3,
+      "pair_id": "osdataset/256/val/907",
+      "FHReg_rmse_px": 4.619056948834114,
+      "T05_rmse_px": 13.076455256803918,
+      "FHReg_valid_matches": 3078,
+      "FHReg_inliers": 2422
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 4,
+      "pair_id": "osdataset/256/val/932",
+      "FHReg_rmse_px": 3.560537318205242,
+      "T05_rmse_px": 11.315533651110327,
+      "FHReg_valid_matches": 3625,
+      "FHReg_inliers": 3212
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 5,
+      "pair_id": "osdataset/256/val/473",
+      "FHReg_rmse_px": 2.507666413760843,
+      "T05_rmse_px": 5.069998086563168,
+      "FHReg_valid_matches": 3669,
+      "FHReg_inliers": 3583
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 6,
+      "pair_id": "osdataset/256/val/460",
+      "FHReg_rmse_px": 1.2641630496560894,
+      "T05_rmse_px": 5.311373287744129,
+      "FHReg_valid_matches": 3562,
+      "FHReg_inliers": 3552
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 7,
+      "pair_id": "osdataset/256/val/91",
+      "FHReg_rmse_px": 3.9942719881391713,
+      "T05_rmse_px": 18.55899791142542,
+      "FHReg_valid_matches": 3022,
+      "FHReg_inliers": 2717
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 8,
+      "pair_id": "osdataset/256/val/669",
+      "FHReg_rmse_px": 3.5284606740337967,
+      "T05_rmse_px": 12.730756020702945,
+      "FHReg_valid_matches": 3600,
+      "FHReg_inliers": 3247
+    },
+    {
+      "category": "FHReg_success_T05_failure",
+      "draw_order": 9,
+      "pair_id": "osdataset/256/val/708",
+      "FHReg_rmse_px": 3.470429343709361,
+      "T05_rmse_px": 7.782631235708926,
+      "FHReg_valid_matches": 2467,
+      "FHReg_inliers": 2323
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 0,
+      "pair_id": "osdataset/256/val/364",
+      "FHReg_rmse_px": 153.0356839291959,
+      "T05_rmse_px": 4.110826298249969,
+      "FHReg_valid_matches": 112,
+      "FHReg_inliers": 36
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 1,
+      "pair_id": "osdataset/256/val/734",
+      "FHReg_rmse_px": 6.137334837594363,
+      "T05_rmse_px": 1.7747659767649462,
+      "FHReg_valid_matches": 3694,
+      "FHReg_inliers": 2862
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 2,
+      "pair_id": "osdataset/256/val/439",
+      "FHReg_rmse_px": 18.88227428528344,
+      "T05_rmse_px": 3.4571885940593994,
+      "FHReg_valid_matches": 4101,
+      "FHReg_inliers": 3099
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 3,
+      "pair_id": "osdataset/256/val/534",
+      "FHReg_rmse_px": 12.283444084509027,
+      "T05_rmse_px": 4.835536332203275,
+      "FHReg_valid_matches": 3600,
+      "FHReg_inliers": 3600
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 4,
+      "pair_id": "osdataset/256/val/726",
+      "FHReg_rmse_px": null,
+      "T05_rmse_px": 4.731502490667656,
+      "FHReg_valid_matches": 0,
+      "FHReg_inliers": 0
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 5,
+      "pair_id": "osdataset/256/val/942",
+      "FHReg_rmse_px": 9.040176707623488,
+      "T05_rmse_px": 4.305200608850136,
+      "FHReg_valid_matches": 3600,
+      "FHReg_inliers": 3600
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 6,
+      "pair_id": "osdataset/256/val/74",
+      "FHReg_rmse_px": 6.676190314844284,
+      "T05_rmse_px": 0.7472648405415452,
+      "FHReg_valid_matches": 3798,
+      "FHReg_inliers": 2152
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 7,
+      "pair_id": "osdataset/256/val/170",
+      "FHReg_rmse_px": 156.39604074358746,
+      "T05_rmse_px": 4.284369628277689,
+      "FHReg_valid_matches": 39,
+      "FHReg_inliers": 14
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 8,
+      "pair_id": "osdataset/256/val/938",
+      "FHReg_rmse_px": 5.041653187081813,
+      "T05_rmse_px": 3.8240727742887812,
+      "FHReg_valid_matches": 2776,
+      "FHReg_inliers": 1987
+    },
+    {
+      "category": "T05_success_FHReg_failure",
+      "draw_order": 9,
+      "pair_id": "osdataset/256/val/784",
+      "FHReg_rmse_px": 5.4390218393176255,
+      "T05_rmse_px": 2.0780762339183556,
+      "FHReg_valid_matches": 122,
+      "FHReg_inliers": 43
+    },
+    {
+      "category": "both_success",
+      "draw_order": 0,
+      "pair_id": "osdataset/256/val/428",
+      "FHReg_rmse_px": 0.9741950440294639,
+      "T05_rmse_px": 1.4852705144276752,
+      "FHReg_valid_matches": 3657,
+      "FHReg_inliers": 3564
+    },
+    {
+      "category": "both_success",
+      "draw_order": 1,
+      "pair_id": "osdataset/256/val/752",
+      "FHReg_rmse_px": 4.211753013444451,
+      "T05_rmse_px": 4.763272448133598,
+      "FHReg_valid_matches": 3127,
+      "FHReg_inliers": 2457
+    },
+    {
+      "category": "both_success",
+      "draw_order": 2,
+      "pair_id": "osdataset/256/val/896",
+      "FHReg_rmse_px": 0.4623018539308774,
+      "T05_rmse_px": 1.704198857733288,
+      "FHReg_valid_matches": 3637,
+      "FHReg_inliers": 3601
+    },
+    {
+      "category": "both_success",
+      "draw_order": 3,
+      "pair_id": "osdataset/256/val/741",
+      "FHReg_rmse_px": 1.770861670315875,
+      "T05_rmse_px": 4.448096189643381,
+      "FHReg_valid_matches": 3576,
+      "FHReg_inliers": 3530
+    },
+    {
+      "category": "both_success",
+      "draw_order": 4,
+      "pair_id": "osdataset/256/val/9",
+      "FHReg_rmse_px": 4.7410115391119945,
+      "T05_rmse_px": 2.0372436862543073,
+      "FHReg_valid_matches": 3539,
+      "FHReg_inliers": 3265
+    },
+    {
+      "category": "both_success",
+      "draw_order": 5,
+      "pair_id": "osdataset/256/val/743",
+      "FHReg_rmse_px": 2.971384653384827,
+      "T05_rmse_px": 2.0579898194048987,
+      "FHReg_valid_matches": 3610,
+      "FHReg_inliers": 3117
+    },
+    {
+      "category": "both_success",
+      "draw_order": 6,
+      "pair_id": "osdataset/256/val/462",
+      "FHReg_rmse_px": 1.4543973047327443,
+      "T05_rmse_px": 2.5122147877041594,
+      "FHReg_valid_matches": 3589,
+      "FHReg_inliers": 3588
+    },
+    {
+      "category": "both_success",
+      "draw_order": 7,
+      "pair_id": "osdataset/256/val/693",
+      "FHReg_rmse_px": 0.8196621205688307,
+      "T05_rmse_px": 4.839163159213369,
+      "FHReg_valid_matches": 3549,
+      "FHReg_inliers": 3516
+    },
+    {
+      "category": "both_success",
+      "draw_order": 8,
+      "pair_id": "osdataset/256/val/789",
+      "FHReg_rmse_px": 0.4641939883568464,
+      "T05_rmse_px": 1.2147599350789904,
+      "FHReg_valid_matches": 3590,
+      "FHReg_inliers": 3590
+    },
+    {
+      "category": "both_success",
+      "draw_order": 9,
+      "pair_id": "osdataset/256/val/146",
+      "FHReg_rmse_px": 1.7857232801938099,
+      "T05_rmse_px": 4.397538047273586,
+      "FHReg_valid_matches": 3607,
+      "FHReg_inliers": 3603
+    }
+  ],
+  "no_manual_replacement": true
+}

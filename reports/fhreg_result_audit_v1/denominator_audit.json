@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "pairs": 952,
+  "fit_successes": 931,
+  "fit_failures": 21,
+  "success3": 415,
+  "success5": 623,
+  "SR3": 0.43592436974789917,
+  "SR5": 0.6544117647058824,
+  "registration_failures5": 329,
+  "failure_reasons": {
+    "probe_RMSE_ge_5px": 308,
+    "insufficient_matches": 6,
+    "empty_matches": 14,
+    "ransac_failed_or_insufficient_inliers": 1
+  },
+  "SR_denominator": 952,
+  "RMSE_scope": "all931 fit-success pairs, including308 solvedbutSR5fail pairs; exclude only21undefinederrors, explicitly reported",
+  "RMSE_denominator": 931,
+  "solved_mean_RMSE_px": 82.12162180912358,
+  "solved_median_RMSE_px": 3.448359391223924,
+  "solved_P90_RMSE_px": 12.115850919523531,
+  "SR5_success_only_count": 623,
+  "SR5_success_only_median_RMSE_px": 2.290601951674653,
+  "no_network_rerun": true,
+  "source_validation_sha256": "8f51565245bc29e081769d92ee2f18ecc5e3527b0c0698854d4c5b15a2e5b016"
+}

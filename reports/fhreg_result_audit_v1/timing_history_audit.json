@@ -1,0 +1,75 @@
+{
+  "records": [
+    {
+      "record": "older_external_table",
+      "median_ms": 10.13813802273944,
+      "round_medians_ms": [
+        9.982518036849797,
+        10.41916897520423,
+        9.926824481226504
+      ],
+      "model": "originalT05FullK1024",
+      "pairs": 24,
+      "warmup_per_pair": 3,
+      "repeats_per_pair_per_round": 5,
+      "rounds": 3,
+      "CPUuint8_to_affine": true,
+      "includes_preprocessing_H2D_D2H_filter_RANSAC": true,
+      "process_policy": "one long process cyclingT05/XoFTR/RoMa; load one model at a time; separate freshprocess authorityforpeak",
+      "filter_implementation": "sglm.external_reference.valid_correspondences",
+      "precision": "BF16",
+      "memory_authority": "reports/external_references_v1/T05_memory.json"
+    },
+    {
+      "record": "SAR_reference_table",
+      "median_ms": 9.78714250959456,
+      "round_medians_ms": [
+        10.153088951483369,
+        9.5666375127621,
+        9.82499698875472
+      ],
+      "model": "originalT05FullK1024",
+      "pairs": 24,
+      "warmup_per_pair": 3,
+      "repeats_per_pair_per_round": 5,
+      "rounds": 3,
+      "CPUuint8_to_affine": true,
+      "includes_preprocessing_H2D_D2H_filter_RANSAC": true,
+      "process_policy": "freshsinglemodelprocess eachround, rotatedorderamongallmethods",
+      "filter_implementation": "sglm.sar_reference_geometry.filter_correspondences (chunk capable)",
+      "precision": "BF16",
+      "memory_authority": "samefreshprocessroundrecords"
+    },
+    {
+      "record": "this_controlled_audit",
+      "method": "T05_Full",
+      "median_E2E_ms": 10.36465895595029,
+      "P95_E2E_ms": 16.209672240074724,
+      "mean_E2E_ms": 11.34175411651894,
+      "peak_allocated_MiB": 53.90478515625,
+      "peak_reserved_MiB": 80.0,
+      "round_medians_ms": [
+        10.147824010346085,
+        11.11029094317928,
+        9.878708922769874
+      ],
+      "pairs": 24,
+      "repeats_per_pair_total": 15,
+      "precision": "BF16",
+      "model": "originalT05FullK1024",
+      "warmup_per_pair": 3,
+      "repeats_per_pair_per_round": 5,
+      "rounds": 3,
+      "CPUuint8_to_affine": true,
+      "includes_preprocessing_H2D_D2H_filter_RANSAC": true,
+      "process_policy": "freshsinglemodelprocess eachround, T05/FH alternation",
+      "filter_implementation": "sameSARReference adapter as priorSARtable",
+      "memory_authority": "samefreshprocessroundrecords"
+    }
+  ],
+  "common_input_indices_sha256": "5caa7172b05f26532e37f9815d54aca7bd86d5941aa0f0eec1a9b95870fdfe02",
+  "conclusion": "BotholdvaluesalreadyincludeRANSAC and CPUinputboundary; processlifecycle/filterimplementation/timingstatesdiffer. No causalattribution or speedup inferredfrom3.5percenthistoricalgap; currentjointtableused consistently.",
+  "shared_CPU_not_isolated": true,
+  "uncontrolled_GPU_clocks_logged": true,
+  "no_cherry_picking_rounds": true
+}
